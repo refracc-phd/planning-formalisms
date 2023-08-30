@@ -1,23 +1,33 @@
-;Header and description
 
-(define (domain domain_name)
+(define (domain castillo)
 
-;remove requirements that are not needed
-(:requirements :strips :fluents :durative-actions :timed-initial-literals :typing :conditional-effects :negative-preconditions :duration-inequalities :equality)
+(:requirements :strips :negative-preconditions)
 
-(:types ;todo: enumerate types and their hierarchy here, e.g. car truck bus - vehicle
-)
+    (:types 
+        course
+        student
+        language
+        component
+    )
 
-; un-comment following line if constants are needed
-;(:constants )
+    (:predicates
+        (is-component ?c - component ?k - course)
+        (is-prerequisite ?c - course ?k - course)
+        (is-proficient ?l - language ?s - student)
+        (has-completed-component ?c - component ?s - student)
+        (has-completed-course ?c - course ?s - student)
+        (has-multimedia ?s - student)
+    )
 
-(:predicates ;todo: define predicates here
-)
-
-
-(:functions ;todo: define numeric functions here
-)
-
-;define actions here
-
+    ;define actions here
+    (:action begin-ai-search
+        :parameters (?s - student)
+        :precondition (and 
+            (has-completed-course ds-graphs ?s)
+            (not(has-completed-course ds-graphs ?s))
+        )
+        :effect (and 
+            (has-completed ds-graphs ?s)
+        )
+    )
 )
