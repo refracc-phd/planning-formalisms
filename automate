@@ -1,20 +1,10 @@
 #!/usr/bin/env bash
-# created by: https://toolstud.io/bash/boilerplate.php
-# template  : https://github.com/pforret/bashew/blob/master/template/normal.sh
-### ==============================================================================
-### SO HOW DO YOU PROCEED WITH YOUR SCRIPT?
-### 1. define the flags/options/parameters and defaults you need in Option:config()
-### 2. implement the different actions in Script:main() with helper functions
-### 3. implement helper functions you defined in previous step
-### ==============================================================================
 
-### Created by author_name ( author_username ) on meta_today
-### Based on https://github.com/pforret/bashew bashew_version
-script_version="0.0.1" # if there is a VERSION.md in this script's folder, that will have priority over this version number
-readonly script_author="s.anderson.23@abdn.ac.uk"
+script_version="1.2.0" # if there is a VERSION.md in this script's folder, that will have priority over this version number
+readonly script_author="Stewart Anderson (s.anderson.23@abdn.ac.uk)"
 readonly script_created="meta_today"
 readonly run_as_root=-1 # run_as_root: 0 = don't check anything / 1 = script MUST run as root / -1 = script MAY NOT run as root
-readonly script_description="package_description"
+readonly script_description="A handy tool for automating the use of FastDownward"
 ## some initialisation
 action=""
 script_prefix=""
@@ -53,7 +43,7 @@ flag|v|verbose|also show debug messages
 flag|f|force|do not ask for confirmation (always yes)
 option|l|log_dir|folder for log files |$HOME/log/$script_prefix
 option|t|tmp_dir|folder for temp files|/tmp/$script_prefix
-choice|1|action|action to perform|action1,action2,check,env,update
+choice|1|action|action to perform|fd,check,env,update
 #param|?|input|input file/text
 " -v -e '^#' -e '^\s*$'
 }
@@ -72,10 +62,10 @@ Script:main() {
   Os:require "awk"
 
   case "${action,,}" in
-    action1)
+    fd)
       #TIP: use «$script_prefix action1» to ...
       #TIP:> $script_prefix action1
-      do_action1
+      perform_task
       ;;
 
     check | env)
@@ -107,12 +97,43 @@ Script:main() {
 ## Put your helper scripts here
 #####################################################################
 
-do_action1() {
-  IO:log "action1"
-  # Examples of required binaries/scripts and how to install them
-  Os:require "ffmpeg"
-  Os:require "convert" "imagemagick"
-  Os:require "IO:progressbar" "basher install pforret/IO:progressbar"
+perform_task() {
+  # Prompt the user for the location of the executable
+  read -p "Please provide the location of fast-downward: " executable_location
+
+  # Prompt the user for the domain file
+  read -p "Please enter the domain file: " domain_file
+
+  # Prompt the user for the directory containing the problem files
+  read -p "Please enter the directory containing the problem files: " problem_dir
+
+  # Check if the executable exists
+  if [ ! -f "$executable_location" ]; then
+      IO:die "Executable not found at the specified location. ${executable_location}"
+  fi
+
+  # Check if the domain file exists
+  if [ ! -f "$domain_file" ]; then
+      IO:die "Domain file not found."
+  fi
+
+  # Check if the problem directory exists
+  if [ ! -d "$problem_dir" ]; then
+      IO:die "Problem directory not found."
+  fi
+
+  # Iterate over each problem file in the directory
+  for problem_file in "$problem_dir"/*; do
+      if [ -f "$problem_file" ]; then
+          IO:debug "Running $executable_location on $domain_file and $problem_file"
+          "$executable_location" --sas-file "$problem_file-fFyY.sas" --plan-file "$problem_file-fFyY.plan" "$domain_file" "$problem_file" --evaluator "hff=ff(verbosity=silent)" --evaluator "hcea=cea(verbosity=silent)" --search "lazy_greedy([hff, hcea], preferred=[hff, hcea])" &
+          "$executable_location" --sas-file "$problem_file-fF.sas" --plan-file "$problem_file-fF.plan" "$domain_file" "$problem_file" --evaluator "hff=ff(verbosity=silent)" --search "lazy_greedy([hff], preferred=[hff])" &
+          "$executable_location" --sas-file "$problem_file-yY.sas" --plan-file "$problem_file-yY.plan" "$domain_file" "$problem_file" --evaluator "hcea=cea(verbosity=silent)" --search "lazy_greedy([hcea], preferred=[hcea])" &
+          "$executable_location" --sas-file "$problem_file-lmcut.sas" --plan-file "$problem_file-lmcut.plan" "$domain_file" "$problem_file" --search "astar(lmcut(verbosity=silent))" &
+          "$executable_location" --sas-file "$problem_file-ipbd.sas" --plan-file "$problem_file-ipbd.plan" "$domain_file" "$problem_file" --search "astar(ipdb(verbosity=silent))" &
+          "$executable_location" --sas-file "$problem_file-blind.sas" --plan-file "$problem_file-blind.plan" "$domain_file" "$problem_file" --search "astar(blind(verbosity=silent))" &
+      fi
+  done
 }
 
 #####################################################################
@@ -561,7 +582,7 @@ Script:check() {
 }
 
 Option:usage() {
-  IO:print "Program : ${txtInfo}$script_basename${txtReset}  by ${txtWarn}$script_author${txtReset}"
+  IO:print "Program : ${txtInfo}$script_basename${txtReset} by ${txtWarn}$script_author${txtReset}"
   IO:print "Version : ${txtInfo}v$script_version${txtReset} (${txtWarn}$script_modified${txtReset})"
   IO:print "Purpose : ${txtInfo}$script_description${txtReset}"
   echo -n  "Usage   : $script_basename"
@@ -569,21 +590,21 @@ Option:usage() {
     awk '
   BEGIN { FS="|"; OFS=" "; oneline="" ; fulltext="Flags, options and parameters:"}
   $1 ~ /flag/  {
-    fulltext = fulltext sprintf("\n    -%1s|--%-12s: [flag] %s [default: off]",$2,$3,$4) ;
+    fulltext = fulltext sprintf("\n    -%1s | --%-12s: [flag] %s [default: off]",$2,$3,$4) ;
     oneline  = oneline " [-" $2 "]"
     }
   $1 ~ /option/  {
-    fulltext = fulltext sprintf("\n    -%1s|--%-12s: [option] %s",$2,$3 " <?>",$4) ;
+    fulltext = fulltext sprintf("\n    -%1s | --%-12s: [option] %s",$2,$3 " <?>",$4) ;
     if($5!=""){fulltext = fulltext "  [default: " $5 "]"; }
     oneline  = oneline " [-" $2 " <" $3 ">]"
     }
   $1 ~ /list/  {
-    fulltext = fulltext sprintf("\n    -%1s|--%-12s: [list] %s (array)",$2,$3 " <?>",$4) ;
+    fulltext = fulltext sprintf("\n    -%1s | --%-12s: [list] %s (array)",$2,$3 " <?>",$4) ;
     fulltext = fulltext "  [default empty]";
     oneline  = oneline " [-" $2 " <" $3 ">]"
     }
   $1 ~ /secret/  {
-    fulltext = fulltext sprintf("\n    -%1s|--%s <%s>: [secret] %s",$2,$3,"?",$4) ;
+    fulltext = fulltext sprintf("\n    -%1s | --%s <%s>: [secret] %s",$2,$3,"?",$4) ;
       oneline  = oneline " [-" $2 " <" $3 ">]"
     }
   $1 ~ /param/ {
