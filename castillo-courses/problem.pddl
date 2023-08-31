@@ -2,12 +2,16 @@
 
 (:objects 
     ds-graphs ai-search ai-blind-search ai-dfs ai-bfs - course
-    ai-search-intro ai-blind-search-intro ai-dfs-algorithm-mm ai-dfs-algorithm ai-dfs-properties ai-dfs-lecture ai-dfs-examples ai-bfs-algorithm-mm ai-bfs-algorithm ai-bfs-properties ai-bfs-lecture ai-bfs-examples - component
+    ai-search-intro ai-blind-search-intro ai-dfs-algorithm-mm ai-dfs-algorithm ai-dfs-properties ai-dfs-lecture ai-dfs-examples ai-bfs-algorithm-mm ai-bfs-algorithm ai-bfs-properties ai-bfs-lecture ai-bfs-examples graphs-basics directed-graphs non-directed-graphs graph-analysis - component
     jack jane peter - student
     english - language
 )
 
 (:init
+    (is-component graphs-basics ds-graphs)
+    (is-component directed-graphs ds-graphs)
+    (is-component non-directed-graphs ds-graphs)
+    (is-component graph-analysis ds-graphs)
     (is-component ai-search-intro ai-search)
     (is-component ai-blind-search-intro ai-blind-search)
     (is-component ai-dfs-algorithm-mm ai-dfs)
@@ -37,7 +41,9 @@
 )
 
 (:goal (and
-    ;todo: put the goal condition here
+    (has-completed-ai-course jack)
+    (has-completed-ai-course jane)
+    (has-completed-ai-course peter)
 ))
 
 ;un-comment the following line if metric is needed
