@@ -1,4 +1,3 @@
-
 (define (domain castillo)
 
 (:requirements :strips :negative-preconditions)
