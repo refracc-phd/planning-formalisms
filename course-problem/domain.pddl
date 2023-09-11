@@ -4,14 +4,13 @@
     (:requirements :strips :typing :negative-preconditions :fluents)
 
     (:types
-        english-literacy expressive-arts health-wellbeing maths-numeracy languages sciences social-subjects technologies - subject-group
+        english-literacy expressive-arts health-wellbeing maths-numeracy languages sciences social-subjects technologies - course
+        nq bge - course-level
         vark-type 
         strategy 
         support-requirement
-        nq 
-        bge 
+        support-received
         student
-        
     )
     
     (:predicates

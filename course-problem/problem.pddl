@@ -14,6 +14,7 @@
         visual audio read-write kinaesthetic multimodal - vark-type
         visualisation teamwork student-led-class inquiry-based-teaching technological-tools flex-seating summ-assessment form-assessment pomodoro gamification project-based blended-learning interdisc-teaching - strategy
         adhd asc-asd dyslexia dyscalculia diff-attention-listening dysfluency reluct-selec-talk diff-understand-comm cerebral-palsy fibromyalgia hypermobility multiple-sclerosis spina-bifida tourettes attachment fight-flight freeze-fold low-level social-other deaf-hearing blind-visual - support-requirement
+        none - support-received
     )
 
     (:init
