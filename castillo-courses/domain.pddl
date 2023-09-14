@@ -1,6 +1,6 @@
 (define (domain castillo)
 
-(:requirements :strips :negative-preconditions)
+(:requirements :strips :negative-preconditions :existential-preconditions)
 
     (:types 
         course
@@ -95,22 +95,22 @@
         :effect (and 
             (can-take-component ?s ai-dfs-algorithm)
             (can-take-component ?s ai-dfs-properties)
-            (can-take-component ?s ai-dfs-examples)
-        )
-    )
-
-    (:action begin-ai-dfs-lecture
-        :parameters (?s - student)
-        :precondition (and 
-            (has-completed-course ai-blind-search ?s)
-            (not(has-completed-course ai-dfs ?s))
-        )
-        :effect (and 
-            (can-take-component ?s ai-dfs-algorithm)
-            (can-take-component ?s ai-dfs-properties)
-            (can-take-component ?s ai-dfs-examples)
-            (can-take-component ?s ai-dfs-lecture)
-        )
+            (can-take-component ?s ai-dfs-examples) 
+        ) 
+    ) 
+ 
+    (:action begin-ai-dfs-lecture 
+        :parameters (?s - student) 
+        :precondition (and  
+            (has-completed-course ai-blind-search ?s) 
+            (not(has-completed-course ai-dfs ?s)) 
+        ) 
+        :effect (and  
+            (can-take-component ?s ai-dfs-algorithm) 
+            (can-take-component ?s ai-dfs-properties) 
+            (can-take-component ?s ai-dfs-examples) 
+            (can-take-component ?s ai-dfs-lecture) 
+        ) 
     )
 
     (:action begin-ai-bfs-mm
@@ -169,8 +169,6 @@
             (can-take-component ?s ai-bfs-lecture)
         )
     )
-
-    ; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
     (:action complete-ds-graphs
         :parameters (?s - student)

@@ -19,23 +19,25 @@
 
     (:init
         (=(duration) 0)
-        (=(weeks-to-achieve-unit maths higher) 7)
-        (=(maximum-units maths higher) 4)
+        (=(weeks-to-achieve-unit maths adv-higher) 7)
+        (=(maximum-units maths adv-higher) 4)
 
-        (takes-course stewart maths higher)
-        (=(week stewart maths higher) 0)
-        (=(units-taken stewart maths higher) 0)
+        (takes-course stewart maths adv-higher)
+        (=(week stewart maths adv-higher) 0)
+        (=(units-taken stewart maths adv-higher) 0)
         (uses-strategy stewart pomodoro)
         (has-received-support stewart none)
     )
 
     (:goal
         (and
-            (finished-course stewart maths higher)
+            (finished-course stewart maths adv-higher)
+            (= (units-taken stewart maths adv-higher) 4)
+            (= (week stewart maths adv-higher) 7)
         )
     )
 
-    (:metric minimize
+    (:metric maximize
         (duration)
     )
 )
