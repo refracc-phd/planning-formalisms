@@ -130,7 +130,8 @@ perform_task() {
           "$executable_location" --sas-file "$problem_file-fF.sas" --plan-file "$problem_file-fF.plan" "$domain_file" "$problem_file" --evaluator "hff=ff(verbosity=silent)" --search "lazy_greedy([hff], preferred=[hff])" &
           "$executable_location" --sas-file "$problem_file-yY.sas" --plan-file "$problem_file-yY.plan" "$domain_file" "$problem_file" --evaluator "hcea=cea(verbosity=silent)" --search "lazy_greedy([hcea], preferred=[hcea])" &
           "$executable_location" --sas-file "$problem_file-lmcut.sas" --plan-file "$problem_file-lmcut.plan" "$domain_file" "$problem_file" --search "astar(lmcut(verbosity=silent))" &
-          "$executable_location" --sas-file "$problem_file-ipbd.sas" --plan-file "$problem_file-ipbd.plan" "$domain_file" "$problem_file" --search "astar(ipdb(verbosity=silent))" &
+          # "$executable_location" --sas-file "$problem_file-ipbd.sas" --plan-file "$problem_file-ipbd.plan" "$domain_file" "$problem_file" --search "astar(ipdb(verbosity=silent))" &
+          # "$executable_location" --sas-file "$problem_file-blind.sas" --plan-file "$problem_file-blind.plan" "$domain_file" "$problem_file" --search "astar(blind(verbosity=silent))" &
       fi
   done
 }
@@ -621,7 +622,7 @@ Option:usage() {
      }
     }
   $1 ~ /choice/ {
-        fulltext = fulltext sprintf("\n    %-17s: [choice] %s","<"$3">",$4);
+        fulltext = fulltext sprintf("\n      %-17s: [choice] %s","<"$3">",$4);
         if($5!=""){fulltext = fulltext "  [options: " $5 "]"; }
         oneline  = oneline " <" $3 ">"
     }
