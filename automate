@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-script_version="1.2.0" # if there is a VERSION.md in this script's folder, that will have priority over this version number
+script_version="1.2.5" # if there is a VERSION.md in this script's folder, that will have priority over this version number
 readonly script_author="Stewart Anderson (s.anderson.23@abdn.ac.uk)"
 readonly script_created="meta_today"
 readonly run_as_root=-1 # run_as_root: 0 = don't check anything / 1 = script MUST run as root / -1 = script MAY NOT run as root
-readonly script_description="A handy tool for automating the use of FastDownward"
+readonly script_description="A handy tool for automating the use of planners"
 ## some initialisation
 action=""
 script_prefix=""
@@ -43,7 +43,7 @@ flag|v|verbose|also show debug messages
 flag|f|force|do not ask for confirmation (always yes)
 option|l|log_dir|folder for log files |$HOME/log/$script_prefix
 option|t|tmp_dir|folder for temp files|/tmp/$script_prefix
-choice|1|action|action to perform|fd,check,env,update
+choice|1|action|action to perform|fd, enhsp, check, env, update
 #param|?|input|input file/text
 " -v -e '^#' -e '^\s*$'
 }
@@ -65,9 +65,13 @@ Script:main() {
     fd)
       #TIP: use «$script_prefix action1» to ...
       #TIP:> $script_prefix action1
-      perform_task
+      perform_downward
       ;;
 
+    enhsp)
+      perform_enhsp
+      ;;
+      
     check | env)
       ## leave this default action, it will make it easier to test your script
       #TIP: use «$script_prefix check» to check if this script is ready to execute and what values the options/flags are
@@ -97,14 +101,14 @@ Script:main() {
 ## Put your helper scripts here
 #####################################################################
 
-perform_task() {
+perform_downward() {
   # Prompt the user for the location of the executable
   read -p "Please provide the location of fast-downward: " executable_location
 
   # Prompt the user for the domain file
   read -p "Please enter the domain file: " domain_file
 
-  # Prompt the user for the directory containing the problem files
+  # Prompt the user for the directory containing the pro blem files
   read -p "Please enter the directory containing the problem files: " problem_dir
 
   # Check if the executable exists
@@ -132,6 +136,54 @@ perform_task() {
           "$executable_location" --sas-file "$problem_file-lmcut.sas" --plan-file "$problem_file-lmcut.plan" "$domain_file" "$problem_file" --search "astar(lmcut(verbosity=silent))" &
           # "$executable_location" --sas-file "$problem_file-ipbd.sas" --plan-file "$problem_file-ipbd.plan" "$domain_file" "$problem_file" --search "astar(ipdb(verbosity=silent))" &
           # "$executable_location" --sas-file "$problem_file-blind.sas" --plan-file "$problem_file-blind.plan" "$domain_file" "$problem_file" --search "astar(blind(verbosity=silent))" &
+      fi
+  done
+}
+
+perform_enhsp() {
+  # Prompt the user for the location of the executable
+  read -p "Please provide the location of ENHSP: " executable_location
+
+  # Prompt the user for the domain file
+  read -p "Please enter the domain file: " domain_file
+
+  # Prompt the user for the directory containing the pro blem files
+  read -p "Please enter the directory containing the problem files: " problem_dir
+
+  # Check if the executable exists
+  if [ ! -f "$executable_location" ]; then
+      IO:die "Executable not found at the specified location. ${executable_location}"
+  fi
+
+  # Check if the domain file exists
+  if [ ! -f "$domain_file" ]; then
+      IO:die "Domain file not found."
+  fi
+
+  # Check if the problem directory exists
+  if [ ! -d "$problem_dir" ]; then
+      IO:die "Problem directory not found."
+  fi
+
+  # Iterate over each problem file in the directory
+  for problem_file in "$problem_dir"/*; do
+      if [ -f "$problem_file" ]; then
+          IO:debug "Running $executable_location on $domain_file and $problem_file"
+          "$executable_location" -o "$domain_file" -f "$problem_file" -planner "sas" > sas.out &
+          "$executable_location" -o "$domain_file" -f "$problem_file" -planner "opt" > opt.out &
+          "$executable_location" -o "$domain_file" -f "$problem_file" -planner "aibr" > aibr.out &
+          "$executable_location" -o "$domain_file" -f "$problem_file" -planner "lm_opt" > lm-opt.out &
+          "$executable_location" -o "$domain_file" -f "$problem_file" -planner "sat-hmrp" > sat-hmrp.out &
+          "$executable_location" -o "$domain_file" -f "$problem_file" -planner "sat-hmrph" > sat-hmrph.out &
+          "$executable_location" -o "$domain_file" -f "$problem_file" -planner "sat-hmrphj" > sat-hmrphj.out &
+          "$executable_location" -o "$domain_file" -f "$problem_file" -planner "sat-hadd" > sat-hadd.out &
+          "$executable_location" -o "$domain_file" -f "$problem_file" -planner "sat-hradd" > sat-hradd.out &
+          "$executable_location" -o "$domain_file" -f "$problem_file" -planner "sat-aibr" > sat-aibr.out &
+          "$executable_location" -o "$domain_file" -f "$problem_file" -planner "sat-haddabs" > sat-haddabs.out &
+          "$executable_location" -o "$domain_file" -f "$problem_file" -planner "opt-hmax" > opt-hmax.out &
+          "$executable_location" -o "$domain_file" -f "$problem_file" -planner "opt-hrmax" > opt-hrmax.out &
+          "$executable_location" -o "$domain_file" -f "$problem_file" -planner "opt-hlm" > opt-hlm.out &
+          "$executable_location" -o "$domain_file" -f "$problem_file" -planner "opt-hlmrc" > opt-hlmrc.out &
       fi
   done
 }
