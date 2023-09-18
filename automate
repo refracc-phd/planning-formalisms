@@ -93,8 +93,6 @@ Script:main() {
       ;;
   esac
   IO:log "[$script_basename] ended after $SECONDS secs"
-  #TIP: >>> bash script created with «pforret/bashew»
-  #TIP: >>> for bash development, also check out «pforret/setver» and «pforret/progressbar»
 }
 
 #####################################################################
@@ -1063,9 +1061,7 @@ function Script:meta() {
     IO:debug "$info_icon git folder : $git_repo_root"
   fi
 
-  # get script version from VERSION.md file - which is automatically updated by pforret/setver
   [[ -f "$script_install_folder/VERSION.md" ]] && script_version=$(cat "$script_install_folder/VERSION.md")
-  # get script version from git tag file - which is automatically updated by pforret/setver
   [[ -n "$git_repo_root" ]] && [[ -n "$(git tag &> /dev/null)" ]] && script_version=$(git tag --sort=version:refname | tail -1)
 }
 
