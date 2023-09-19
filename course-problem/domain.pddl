@@ -7,6 +7,7 @@
         course course-level - object
         english-literacy expressive-arts health-wellbeing maths-numeracy languages sciences social-subjects technologies - course
         nq bge - course-level
+        grade
         vark-type 
         strategy 
         support-requirement

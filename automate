@@ -167,21 +167,21 @@ perform_enhsp() {
   for problem_file in "$problem_dir"/*; do
       if [ -f "$problem_file" ]; then
           IO:debug "Running $executable_location on $domain_file and $problem_file"
-          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "sas" -sp "sas.plan" &
-          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "opt" -sp "opt.plan" &
-          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "aibr" -sp "aibr.plan" &
-          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "lm_opt" -sp "lm-opt.plan" &
-          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "sat-hmrp" -sp "sat-hmrp.plan" &
-          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "sat-hmrph" -sp "sat-hmrph.plan" &
-          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "sat-hmrphj" -sp "sat-hmrphj.plan" &
-          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "sat-hadd" -sp "sat-hadd.plan" &
-          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "sat-hradd" -sp "sat-hradd.plan" &
-          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "sat-aibr" -sp "sat-aibr.plan" &
-          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "sat-haddabs" -sp "sat-haddabs.plan" &
-          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "opt-hmax" -sp "opt-hmax.plan" &
-          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "opt-hrmax" -sp "opt-hrmax.plan" &
-          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "opt-hlm" -sp "opt-hlm.plan" &
-          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "opt-hlmrc" -sp "opt-hlmrc.plan" &
+          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "sas" -sp "$problem_file-sas.plan" &
+          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "opt" -sp "$problem_file-opt.plan" &
+          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "aibr" -sp "$problem_file-aibr.plan" &
+          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "lm_opt" -sp "$problem_file-lm-opt.plan" &
+          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "sat-hmrp" -sp "$problem_file-sat-hmrp.plan" &
+          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "sat-hmrph" -sp "$problem_file-sat-hmrph.plan" &
+          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "sat-hmrphj" -sp "$problem_file-sat-hmrphj.plan" &
+          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "sat-hadd" -sp "$problem_file-sat-hadd.plan" &
+          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "sat-hradd" -sp "$problem_file-sat-hradd.plan" &
+          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "sat-aibr" -sp "$problem_file-sat-aibr.plan" &
+          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "sat-haddabs" -sp "$problem_file-sat-haddabs.plan" &
+          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "opt-hmax" -sp "$problem_file-opt-hmax.plan" &
+          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "opt-hrmax" -sp "$problem_file-opt-hrmax.plan" &
+          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "opt-hlm" -sp "$problem_file-opt-hlm.plan" &
+          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "opt-hlmrc" -sp "$problem_file-opt-hlmrc.plan" &
       fi
   done
 }
