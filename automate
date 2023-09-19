@@ -167,21 +167,21 @@ perform_enhsp() {
   for problem_file in "$problem_dir"/*; do
       if [ -f "$problem_file" ]; then
           IO:debug "Running $executable_location on $domain_file and $problem_file"
-          "$executable_location" -o "$domain_file" -f "$problem_file" -planner "sas" > sas.out &
-          "$executable_location" -o "$domain_file" -f "$problem_file" -planner "opt" > opt.out &
-          "$executable_location" -o "$domain_file" -f "$problem_file" -planner "aibr" > aibr.out &
-          "$executable_location" -o "$domain_file" -f "$problem_file" -planner "lm_opt" > lm-opt.out &
-          "$executable_location" -o "$domain_file" -f "$problem_file" -planner "sat-hmrp" > sat-hmrp.out &
-          "$executable_location" -o "$domain_file" -f "$problem_file" -planner "sat-hmrph" > sat-hmrph.out &
-          "$executable_location" -o "$domain_file" -f "$problem_file" -planner "sat-hmrphj" > sat-hmrphj.out &
-          "$executable_location" -o "$domain_file" -f "$problem_file" -planner "sat-hadd" > sat-hadd.out &
-          "$executable_location" -o "$domain_file" -f "$problem_file" -planner "sat-hradd" > sat-hradd.out &
-          "$executable_location" -o "$domain_file" -f "$problem_file" -planner "sat-aibr" > sat-aibr.out &
-          "$executable_location" -o "$domain_file" -f "$problem_file" -planner "sat-haddabs" > sat-haddabs.out &
-          "$executable_location" -o "$domain_file" -f "$problem_file" -planner "opt-hmax" > opt-hmax.out &
-          "$executable_location" -o "$domain_file" -f "$problem_file" -planner "opt-hrmax" > opt-hrmax.out &
-          "$executable_location" -o "$domain_file" -f "$problem_file" -planner "opt-hlm" > opt-hlm.out &
-          "$executable_location" -o "$domain_file" -f "$problem_file" -planner "opt-hlmrc" > opt-hlmrc.out &
+          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "sas" -sp "sas.out" &
+          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "opt" -sp "opt.out" &
+          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "aibr" -sp "aibr.out" &
+          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "lm_opt" -sp "lm-opt.out" &
+          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "sat-hmrp" -sp "sat-hmrp.out" &
+          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "sat-hmrph" -sp "sat-hmrph.out" &
+          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "sat-hmrphj" -sp "sat-hmrphj.out" &
+          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "sat-hadd" -sp "sat-hadd.out" &
+          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "sat-hradd" -sp "sat-hradd.out" &
+          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "sat-aibr" -sp "sat-aibr.out" &
+          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "sat-haddabs" -sp "sat-haddabs.out" &
+          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "opt-hmax" -sp "opt-hmax.out" &
+          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "opt-hrmax" -sp "opt-hrmax.out" &
+          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "opt-hlm" -sp "opt-hlm.out" &
+          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "opt-hlmrc" -sp "opt-hlmrc.out" &
       fi
   done
 }
