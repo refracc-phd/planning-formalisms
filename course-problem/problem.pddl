@@ -31,9 +31,7 @@
 
     (:goal
         (and
-            ; (finished-course stewart maths adv-higher)
-            ; (= (units-taken stewart maths adv-higher) 4)
-            (= (week stewart maths adv-higher) 7)
+            (finished-course stewart maths adv-higher)
         )
     )
 

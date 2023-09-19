@@ -72,6 +72,7 @@
             (increase (units-taken ?s ?c ?l) 1)
             (assign (week ?s ?c ?l) 0)
             (increase (duration) 60)
+            (not(can-take-unit ?s ?c ?l))
         )
     )
     
