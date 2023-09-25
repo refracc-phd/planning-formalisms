@@ -3,7 +3,6 @@
         stewart - student
         adv-higher higher national-five national-four - nq
         year-one year-two year-three - bge
-        A B C D F P - grade
         english esol - english-literacy
         drama art-design music music-tech dance - expressive-arts
         phys-ed home-economics textiles - health-wellbeing
@@ -19,15 +18,15 @@
     )
 
     (:init
-        (=(duration) 0)
-        (=(weeks-to-achieve-unit maths adv-higher) 7)
-        (=(maximum-units maths adv-higher) 4)
-        (= (extra-curricular-count stewart maths adv-higher B) 0)
+        (= (duration) 0)
+        (= (weeks-to-achieve-unit maths adv-higher) 7)
+        (= (maximum-units maths adv-higher) 4)
+        (= (extra-curricular-count stewart maths adv-higher) 0)
 
         (takes-course stewart maths adv-higher)
-        (predicted-grade stewart maths adv-higher B)
-        (=(week stewart maths adv-higher) 0)
-        (=(units-taken stewart maths adv-higher) 0)
+        (grade-b stewart maths adv-higher)
+        (= (week stewart maths adv-higher) 0)
+        (= (units-taken stewart maths adv-higher) 0)
         (uses-strategy stewart pomodoro)
         (has-received-support stewart none)
     )

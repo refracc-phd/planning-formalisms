@@ -7,7 +7,6 @@
         course course-level - object
         english-literacy expressive-arts health-wellbeing maths-numeracy languages sciences social-subjects technologies - course
         nq bge - course-level
-        grade
         vark-type 
         strategy 
         support-requirement
@@ -26,7 +25,13 @@
         (takes-course ?s - student ?c - course ?l - course-level)
         (finished-course ?s - student ?c - course ?l - course-level)
         (can-take-unit ?s - student ?c - course ?l - course-level)
-        (predicted-grade ?s - student ?c - course ?l - course-level ?g - grade)
+        (predicted-grade ?s - student ?c - course ?l - course-level)
+        (grade-a ?s - student ?c - course ?l - course-level)
+        (grade-b ?s - student ?c - course ?l - course-level)
+        (grade-c ?s - student ?c - course ?l - course-level)
+        (grade-d ?s - student ?c - course ?l - course-level)
+        (grade-f ?s - student ?c - course ?l - course-level)
+        (grade-p ?s - student ?c - course ?l - course-level)
     )
 
     (:functions
@@ -36,7 +41,7 @@
         (duration)
         (weeks-to-achieve-unit ?c - course ?l - course-level)
         (week ?s - student ?c - course ?l - course-level)
-        (extra-curricular-count ?s - student ?c - course ?l - course-level ?g - grade)
+        (extra-curricular-count ?s - student ?c - course ?l - course-level)
     )
 
     (:action make-unit-available
@@ -58,9 +63,10 @@
             (<= (units-taken ?s ?c ?l) (maximum-units ?c ?l))
             (can-take-unit ?s ?c ?l)
             (or
-                (predicted-grade ?s ?c ?l F)
-                (predicted-grade ?s ?c ?l D)
-                (predicted-grade ?s ?c ?l C)
+                (grade-p ?s ?c ?l)
+                (grade-f ?s ?c ?l)
+                (grade-d ?s ?c ?l)
+                (grade-c ?s ?c ?l)
             )
         )
         :effect (and 
@@ -72,18 +78,18 @@
     )
 
     (:action take-unit-extra-curriculuar
-        :parameters (?s - student ?c - course ?l - course-level ?g - grade)
+        :parameters (?s - student ?c - course ?l - course-level)
         :precondition (and 
             (takes-course ?s ?c ?l)
             (<= (units-taken ?s ?c ?l) (maximum-units ?c ?l))
             (or
                 (and 
-                    (predicted-grade ?s ?c ?l A)
-                    (<= (extra-curricular-count ?s ?c ?l A) 4)
+                    (grade-a ?s ?c ?l)
+                    (<= (extra-curricular-count ?s ?c ?l) 4)
                 )
                 (and 
-                    (predicted-grade ?s ?c ?l B)
-                    (<= (extra-curricular-count ?s ?c ?l B) 2)
+                    (grade-b ?s ?c ?l)
+                    (<= (extra-curricular-count ?s ?c ?l) 2)
                 )
             )
             (can-take-unit ?s ?c ?l)
@@ -91,7 +97,7 @@
         :effect (and 
             (increase (units-taken ?s ?c ?l) 1)
             (assign (week ?s ?c ?l) 0)
-            (assign (extra-curricular-count ?s ?c ?l ?g) 0)
+            (assign (extra-curricular-count ?s ?c ?l) 0)
             (increase (duration) 60)
             (not(can-take-unit ?s ?c ?l))
         )
@@ -102,9 +108,10 @@
         :precondition (and 
             (= (units-taken ?s ?c ?l) (maximum-units ?c ?l))
             (or
-                (predicted-grade ?s ?c ?l C)
-                (predicted-grade ?s ?c ?l F)
-                (predicted-grade ?s ?c ?l P)
+                (grade-p ?s ?c ?l)
+                (grade-f ?s ?c ?l)
+                (grade-d ?s ?c ?l)
+                (grade-c ?s ?c ?l)
             )
             (takes-course ?s ?c ?l)
         )
@@ -138,27 +145,27 @@
     )
     
     (:action do-extra-curricular
-        :parameters (?s - student ?c - course ?l - course-level ?g - grade)
+        :parameters (?s - student ?c - course ?l - course-level)
         :precondition (and 
             (takes-course ?s ?c ?l)
             (or
-                (predicted-grade ?s ?c ?l B)
-                (predicted-grade ?s ?c ?l A)
+                (grade-a ?s ?c ?l)
+                (grade-b ?s ?c ?l)
             )
             (<= (units-taken ?s ?c ?l) (maximum-units ?c ?l))
         )
         :effect (and 
             (increase (duration) 120)
-            (increase (extra-curricular-count ?s ?c ?l ?g) 1)
+            (increase (extra-curricular-count ?s ?c ?l) 1)
         )
     )
 
     (:action finish-extra-curricular-course
-        :parameters (?s - student ?c - course ?l - course-level ?g - grade)
+        :parameters (?s - student ?c - course ?l - course-level)
         :precondition (and 
             (or 
-                (predicted-grade ?s ?c ?l A)
-                (predicted-grade ?s ?c ?l B)
+                (grade-a ?s ?c ?l)
+                (grade-b ?s ?c ?l)
             )
             (= (units-taken ?s ?c ?l) (maximum-units ?c ?l))
             (takes-course ?s ?c ?l)
