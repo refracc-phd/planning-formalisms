@@ -61,8 +61,6 @@ Script:main() {
 
   Os:require "awk"
 
-  find "$problem_dir" -type f -name "*.plan" -exec rm -f {} \;
-
   case "${action,,}" in
     fd)
       #TIP: use «$script_prefix action1» to ...
@@ -126,6 +124,8 @@ perform_downward() {
       IO:die "Problem directory not found."
   fi
 
+  find "$problem_dir" -type f -name "*.plan" -exec rm -f {} \;
+
   # Iterate over each problem file in the directory
   for problem_file in "$problem_dir"/*; do
       if [ -f "$problem_file" ]; then
@@ -164,6 +164,8 @@ perform_enhsp() {
   if [ ! -d "$problem_dir" ]; then
       IO:die "Problem directory not found."
   fi
+
+  find "$problem_dir" -type f -name "*.plan" -exec rm -f {} \;
 
   # Iterate over each problem file in the directory
   for problem_file in "$problem_dir"/*; do
