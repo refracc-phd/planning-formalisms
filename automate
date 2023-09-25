@@ -129,7 +129,7 @@ perform_downward() {
   # Iterate over each problem file in the directory
   for problem_file in "$problem_dir"/*; do
       if [ -f "$problem_file" ]; then
-          IO:debug "Running $executable_location on $domain_file and $problem_file"
+          IO:log "Running 4 searches from $executable_location on $domain_file and $problem_file ($SECONDS)"
           "$executable_location" --sas-file "$problem_file-fFyY.sas" --plan-file "$problem_file-fFyY.plan" "$domain_file" "$problem_file" --evaluator "hff=ff(verbosity=silent)" --evaluator "hcea=cea(verbosity=silent)" --search "lazy_greedy([hff, hcea], preferred=[hff, hcea])" &
           "$executable_location" --sas-file "$problem_file-fF.sas" --plan-file "$problem_file-fF.plan" "$domain_file" "$problem_file" --evaluator "hff=ff(verbosity=silent)" --search "lazy_greedy([hff], preferred=[hff])" &
           "$executable_location" --sas-file "$problem_file-yY.sas" --plan-file "$problem_file-yY.plan" "$domain_file" "$problem_file" --evaluator "hcea=cea(verbosity=silent)" --search "lazy_greedy([hcea], preferred=[hcea])" &
@@ -171,7 +171,7 @@ perform_enhsp() {
   for problem_file in "$problem_dir"/*; do
       if [ -f "$problem_file" ]; then
         if [ "$problem_file" != "domain.pddl" ]; then
-          IO:debug "Running $executable_location on $domain_file and $problem_file"
+          IO:log "Running 15 searches from $executable_location on $domain_file and $problem_file ($SECONDS)"
           java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "sas" -sp "$problem_file-sas.plan" & 
           java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "opt" -sp "$problem_file-opt.plan" & 
           java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "aibr" -sp "$problem_file-aibr.plan" & 

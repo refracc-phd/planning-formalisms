@@ -1,7 +1,7 @@
 (define (domain courses)
 
     ;remove requirements that are not needed
-    (:requirements :strips :typing :negative-preconditions :fluents )
+    (:requirements :strips :typing :fluents :adl)
 
     (:types
         course course-level - object
@@ -34,7 +34,6 @@
     )
 
     (:functions
-        (class-length ?c - course ?l - course-level)
         (units-taken ?s - student ?c - course ?l - course-level)
         (maximum-units ?c - course ?l - course-level)
         (weeks-to-achieve-unit ?c - course ?l - course-level)
@@ -51,6 +50,16 @@
         :effect (and 
             (can-take-unit ?s ?c ?l)
         )
+    )
+    
+    (:action recommend-practical-first
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (= (week ?s ?c ?l) 0)
+             
+        )
+        :effect (and )
     )
     
 
