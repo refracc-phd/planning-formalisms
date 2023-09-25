@@ -25,6 +25,7 @@
         (takes-course ?s - student ?c - course ?l - course-level)
         (finished-course ?s - student ?c - course ?l - course-level)
         (can-take-unit ?s - student ?c - course ?l - course-level)
+        (practical-first ?s - student ?c - course ?l - course-level)
         (grade-a ?s - student ?c - course ?l - course-level)
         (grade-b ?s - student ?c - course ?l - course-level)
         (grade-c ?s - student ?c - course ?l - course-level)
@@ -39,6 +40,7 @@
         (weeks-to-achieve-unit ?c - course ?l - course-level)
         (week ?s - student ?c - course ?l - course-level)
         (extra-curricular-count ?s - student ?c - course ?l - course-level)
+        (duration)
     )
 
     (:action make-unit-available
@@ -57,9 +59,16 @@
         :precondition (and 
             (takes-course ?s ?c ?l)
             (= (week ?s ?c ?l) 0)
-             
+            (= (units-taken ?s ?c ?l) 0)
+            (or
+                (student-vark-type ?s multimodal)
+                (student-vark-type ?s visual)
+                (student-vark-type ?s kinaesthetic)
+            )
         )
-        :effect (and )
+        :effect (and 
+            (practical-first ?s ?c ?l)
+        )
     )
     
 
@@ -159,7 +168,7 @@
                 (grade-a ?s ?c ?l)
                 (grade-b ?s ?c ?l)
             )
-            (<= (units-taken ?s ?c ?l) (maximum-units ?c ?l))
+            (< (units-taken ?s ?c ?l) (maximum-units ?c ?l))
         )
         :effect (and 
             (increase (duration) 120)
