@@ -181,7 +181,7 @@ perform_enhsp() {
           java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "sat-hmrphj" -sp "$problem_file-sat-hmrphj.plan" & 
           java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "sat-hadd" -sp "$problem_file-sat-hadd.plan" & 
           java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "sat-hradd" -sp "$problem_file-sat-hradd.plan" & 
-          # java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "sat-aibr" -sp "$problem_file-sat-aibr.plan" &  -- This task runs out of memory :(
+          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "sat-aibr" -sp "$problem_file-sat-aibr.plan" &  # -- THIS TASK NO LONGER RUNS OUT OF MEMORY :COGGERS:
           java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "sat-haddabs" -sp "$problem_file-sat-haddabs.plan" &
           java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "opt-hmax" -sp "$problem_file-opt-hmax.plan" &
           java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "opt-hrmax" -sp "$problem_file-opt-hrmax.plan" &
