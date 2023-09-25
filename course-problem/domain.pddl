@@ -168,10 +168,9 @@
                 (grade-a ?s ?c ?l)
                 (grade-b ?s ?c ?l)
             )
-            (< (units-taken ?s ?c ?l) (maximum-units ?c ?l))
         )
         :effect (and 
-            (increase (duration) 120)
+            (increase (duration) 60)
             (increase (extra-curricular-count ?s ?c ?l) 1)
         )
     )
@@ -190,6 +189,4 @@
             (finished-course ?s ?c ?l)
          )
     )
-    
-    
 )
