@@ -18,15 +18,10 @@
 
     (:init
         (= (duration) 0)
-
-        (= (weeks-to-achieve-unit maths adv-higher) 7)
-        (= (maximum-units maths adv-higher) 4)
         
         (= (extra-curricular-count stewart maths adv-higher) 0)
         (takes-course stewart maths adv-higher)
         (grade-b stewart maths adv-higher)
-        (= (week stewart maths adv-higher) 0)
-        (= (units-taken stewart maths adv-higher) 0)
         (uses-strategy stewart pomodoro)
         (has-received-support stewart none)
         (student-vark-type stewart multimodal)

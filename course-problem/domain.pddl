@@ -4,7 +4,7 @@
     (:requirements :strips :typing :fluents :adl)
 
     (:types
-        course course-level - object
+        course course-level week unit - object
         english-literacy expressive-arts health-wellbeing maths-numeracy languages sciences social-subjects technologies - course
         nq bge - course-level
         vark-type
@@ -16,6 +16,8 @@
 
     (:constants
         pomodoro - strategy
+        week-one week-two week-three week-four week-five week-six week-seven week-eight - week
+        unit-one unit-two unit-three unit-four - unit
     )
     
     (:predicates
@@ -32,161 +34,231 @@
         (grade-d ?s - student ?c - course ?l - course-level)
         (grade-f ?s - student ?c - course ?l - course-level)
         (grade-p ?s - student ?c - course ?l - course-level)
+        (done-week-one ?s - student ?c - course ?l - course-level)
+        (done-week-two ?s - student ?c - course ?l - course-level)
+        (done-week-three ?s - student ?c - course ?l - course-level)
+        (done-week-four ?s - student ?c - course ?l - course-level)
+        (done-week-five ?s - student ?c - course ?l - course-level)
+        (done-week-six ?s - student ?c - course ?l - course-level)
+        (done-week-seven ?s - student ?c - course ?l - course-level)
+        (done-week-eight ?s - student ?c - course ?l - course-level)
+        (done-unit-one ?s - student ?c - course ?l - course-level)
+        (done-unit-two ?s - student ?c - course ?l - course-level)
+        (done-unit-three ?s - student ?c - course ?l - course-level)
+        (done-unit-four ?s - student ?c - course ?l - course-level)
     )
 
     (:functions
-        (units-taken ?s - student ?c - course ?l - course-level)
-        (maximum-units ?c - course ?l - course-level)
-        (weeks-to-achieve-unit ?c - course ?l - course-level)
-        (week ?s - student ?c - course ?l - course-level)
         (extra-curricular-count ?s - student ?c - course ?l - course-level)
         (duration)
     )
-
-    (:action make-unit-available
-        :parameters (?s - student ?c - course ?l - course-level)
-        :precondition (and 
-            (takes-course ?s ?c ?l)
-            (= (week ?s ?c ?l) (weeks-to-achieve-unit ?c ?l))
-        )
-        :effect (and 
-            (can-take-unit ?s ?c ?l)
-        )
-    )
     
-    (:action recommend-practical-first
-        :parameters (?s - student ?c - course ?l - course-level)
-        :precondition (and 
-            (takes-course ?s ?c ?l)
-            (= (week ?s ?c ?l) 0)
-            (= (units-taken ?s ?c ?l) 0)
-            (or
-                (student-vark-type ?s multimodal)
-                (student-vark-type ?s visual)
-                (student-vark-type ?s kinaesthetic)
-            )
-        )
-        :effect (and 
-            (practical-first ?s ?c ?l)
-        )
-    )
-    
+    ; (:action recommend-practical-first
+    ;     :parameters (?s - student ?c - course ?l - course-level)
+    ;     :precondition (and 
+    ;         (takes-course ?s ?c ?l)
+    ;         (or
+    ;             (student-vark-type ?s multimodal)
+    ;             (student-vark-type ?s visual)
+    ;             (student-vark-type ?s kinaesthetic)
+    ;         )
+    ;     )
+    ;     :effect (and 
+    ;         (practical-first ?s ?c ?l)
+    ;     )
+    ; )
 
-    (:action take-unit
+    (:action take-unit-one
         :parameters (?s - student ?c - course ?l - course-level)
         :precondition (and 
             (takes-course ?s ?c ?l)
-            (<= (units-taken ?s ?c ?l) (maximum-units ?c ?l))
-            (can-take-unit ?s ?c ?l)
-            (or
-                (grade-p ?s ?c ?l)
-                (grade-f ?s ?c ?l)
-                (grade-d ?s ?c ?l)
-                (grade-c ?s ?c ?l)
-            )
+            (not(done-unit-one ?s ?c ?l))
+            (done-week-eight ?s ?c ?l)
         )
-        :effect (and 
-            (increase (units-taken ?s ?c ?l) 1)
-            (assign (week ?s ?c ?l) 0)
+        :effect (and
             (increase (duration) 60)
-            (not(can-take-unit ?s ?c ?l))
+            (done-unit-one ?s ?c ?l)
+            (not(done-week-eight ?s ?c ?l))
+            (not(done-week-seven ?s ?c ?l))
+            (not(done-week-six ?s ?c ?l))
+            (not(done-week-five ?s ?c ?l))
+            (not(done-week-four ?s ?c ?l))
+            (not(done-week-three ?s ?c ?l))
+            (not(done-week-two ?s ?c ?l))
+            (not(done-week-one ?s ?c ?l))
         )
     )
 
-    (:action take-unit-extra-curriculuar
+    (:action take-unit-two
         :parameters (?s - student ?c - course ?l - course-level)
         :precondition (and 
             (takes-course ?s ?c ?l)
-            (<= (units-taken ?s ?c ?l) (maximum-units ?c ?l))
-            (or
-                (and 
-                    (grade-a ?s ?c ?l)
-                    (<= (extra-curricular-count ?s ?c ?l) 4)
-                )
-                (and 
-                    (grade-b ?s ?c ?l)
-                    (<= (extra-curricular-count ?s ?c ?l) 2)
-                )
-            )
-            (can-take-unit ?s ?c ?l)
+            (not(done-unit-two ?s ?c ?l))
+            (done-unit-one ?s ?c ?l)
+            (done-week-eight ?s ?c ?l)
+        )
+        :effect (and
+            (increase (duration) 60)
+            (done-unit-two ?s ?c ?l)
+            (not(done-week-eight ?s ?c ?l))
+            (not(done-week-seven ?s ?c ?l))
+            (not(done-week-six ?s ?c ?l))
+            (not(done-week-five ?s ?c ?l))
+            (not(done-week-four ?s ?c ?l))
+            (not(done-week-three ?s ?c ?l))
+            (not(done-week-two ?s ?c ?l))
+            (not(done-week-one ?s ?c ?l))
+        )
+    )
+
+    (:action take-unit-three
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (not(done-unit-three ?s ?c ?l))
+            (done-unit-two ?s ?c ?l)
+            (done-week-eight ?s ?c ?l)
+        )
+        :effect (and
+            (increase (duration) 60)
+            (done-unit-three ?s ?c ?l)
+            (not(done-week-eight ?s ?c ?l))
+            (not(done-week-seven ?s ?c ?l))
+            (not(done-week-six ?s ?c ?l))
+            (not(done-week-five ?s ?c ?l))
+            (not(done-week-four ?s ?c ?l))
+            (not(done-week-three ?s ?c ?l))
+            (not(done-week-two ?s ?c ?l))
+            (not(done-week-one ?s ?c ?l))
+        )
+    )
+
+    (:action take-unit-four
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (not(done-unit-four ?s ?c ?l))
+            (done-unit-three ?s ?c ?l)
+            (done-week-eight ?s ?c ?l)
+        )
+        :effect (and
+            (increase (duration) 60)
+            (done-unit-four ?s ?c ?l)
+            (not(done-week-eight ?s ?c ?l))
+            (not(done-week-seven ?s ?c ?l))
+            (not(done-week-six ?s ?c ?l))
+            (not(done-week-five ?s ?c ?l))
+            (not(done-week-four ?s ?c ?l))
+            (not(done-week-three ?s ?c ?l))
+            (not(done-week-two ?s ?c ?l))
+            (not(done-week-one ?s ?c ?l))
+        )
+    )
+
+    (:action do-week-one
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (not(done-week-one ?s ?c ?l))
         )
         :effect (and 
-            (increase (units-taken ?s ?c ?l) 1)
-            (assign (week ?s ?c ?l) 0)
-            (assign (extra-curricular-count ?s ?c ?l) 0)
-            (increase (duration) 60)
-            (not(can-take-unit ?s ?c ?l))
+            (done-week-one ?s ?c ?l)
+            (increase (duration) 360)
+        )
+    )
+
+    (:action do-week-two
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (not(done-week-two ?s ?c ?l))
+            (done-week-one ?s ?c ?l)
+        )
+        :effect (and 
+            (done-week-two ?s ?c ?l)
+            (increase (duration) 360)
+        )
+    )
+
+    (:action do-week-three
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (not(done-week-three ?s ?c ?l))
+            (done-week-two ?s ?c ?l)
+        )
+        :effect (and 
+            (done-week-three ?s ?c ?l)
+            (increase (duration) 360)
+        )
+    )
+
+    (:action do-week-four
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (not(done-week-four ?s ?c ?l))
+            (done-week-three ?s ?c ?l)
+        )
+        :effect (and 
+            (done-week-four ?s ?c ?l)
+            (increase (duration) 360)
+        )
+    )
+
+    (:action do-week-five
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (not(done-week-five ?s ?c ?l))
+            (done-week-four ?s ?c ?l)
+        )
+        :effect (and 
+            (done-week-five ?s ?c ?l)
+            (increase (duration) 360)
+        )
+    )
+
+    (:action do-week-six
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (not(done-week-six ?s ?c ?l))
+            (done-week-five ?s ?c ?l)
+        )
+        :effect (and 
+            (done-week-six ?s ?c ?l)
+            (increase (duration) 360)
+        )
+    )
+
+    (:action do-week-seven
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (not(done-week-seven ?s ?c ?l))
+            (done-week-six ?s ?c ?l)
+        )
+        :effect (and 
+            (done-week-seven ?s ?c ?l)
+            (increase (duration) 360)
+        )
+    )
+
+    (:action do-week-eight
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (not(done-week-eight ?s ?c ?l))
+            (done-week-seven ?s ?c ?l)
+        )
+        :effect (and 
+            (done-week-eight ?s ?c ?l)
+            (increase (duration) 360)
         )
     )
     
     (:action finish-course
         :parameters (?s - student ?c - course ?l - course-level)
         :precondition (and 
-            (= (units-taken ?s ?c ?l) (maximum-units ?c ?l))
-            (or
-                (grade-p ?s ?c ?l)
-                (grade-f ?s ?c ?l)
-                (grade-d ?s ?c ?l)
-                (grade-c ?s ?c ?l)
-            )
+            (done-unit-four ?s ?c ?l)
             (takes-course ?s ?c ?l)
         )
         :effect (and 
             (finished-course ?s ?c ?l)
         )
-    )
-
-    (:action take-week-pomodoro
-        :parameters (?s - student ?c - course ?l - course-level)
-        :precondition (and 
-            (uses-strategy ?s pomodoro)
-            (< (week ?s ?c ?l) (weeks-to-achieve-unit ?c ?l))
-        )
-        :effect (and 
-            (increase (week ?s ?c ?l) 1)
-            (increase (duration) 450)
-        )
-    )
-
-    (:action take-week
-        :parameters (?s - student ?c - course ?l - course-level)
-        :precondition (and 
-            (takes-course ?s ?c ?l)
-            (< (week ?s ?c ?l) (weeks-to-achieve-unit ?c ?l))
-        )
-        :effect (and 
-            (increase (week ?s ?c ?l) 1)
-            (increase (duration) 360)
-        )
-    )
-    
-    (:action do-extra-curricular
-        :parameters (?s - student ?c - course ?l - course-level)
-        :precondition (and 
-            (takes-course ?s ?c ?l)
-            (or
-                (grade-a ?s ?c ?l)
-                (grade-b ?s ?c ?l)
-            )
-        )
-        :effect (and 
-            (increase (duration) 60)
-            (increase (extra-curricular-count ?s ?c ?l) 1)
-        )
-    )
-
-    (:action finish-extra-curricular-course
-        :parameters (?s - student ?c - course ?l - course-level)
-        :precondition (and 
-            (or 
-                (grade-a ?s ?c ?l)
-                (grade-b ?s ?c ?l)
-            )
-            (= (units-taken ?s ?c ?l) (maximum-units ?c ?l))
-            (takes-course ?s ?c ?l)
-        )
-        :effect (and 
-            (finished-course ?s ?c ?l)
-         )
     )
 )
