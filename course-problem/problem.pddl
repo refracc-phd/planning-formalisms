@@ -22,6 +22,12 @@
         (= (extra-curricular-count stewart maths adv-higher) 0)
         (takes-course stewart maths adv-higher)
         (grade-b stewart maths adv-higher)
+        (takes-course stewart music adv-higher)
+        (grade-a stewart music adv-higher)
+        (takes-course stewart english adv-higher)
+        (grade-b stewart english adv-higher)
+        (takes-course stewart comp-sci adv-higher)
+        (grade-a stewart comp-sci adv-higher)
         (uses-strategy stewart pomodoro)
         (has-received-support stewart none)
         (student-vark-type stewart multimodal)
@@ -30,6 +36,9 @@
     (:goal
         (and
             (finished-course stewart maths adv-higher)
+            (finished-course stewart comp-sci adv-higher)
+            (finished-course stewart english adv-higher)
+            (finished-course stewart music adv-higher)
         )
     )
 
