@@ -18,8 +18,7 @@
 
     (:init
         (= (duration) 0)
-        
-        (= (extra-curricular-count stewart maths adv-higher) 0)
+
         (takes-course stewart maths national-four)
         (grade-p stewart maths national-four)
         (takes-course stewart music adv-higher)
@@ -35,9 +34,9 @@
 
     (:goal
         (and
-            (finished-course stewart maths adv-higher)
-            (finished-course stewart comp-sci adv-higher)
-            (finished-course stewart english adv-higher)
+            (finished-course stewart maths national-four)
+            (finished-course stewart comp-sci higher)
+            (finished-course stewart english national-five)
             (finished-course stewart music adv-higher)
         )
     )
