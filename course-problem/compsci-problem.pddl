@@ -18,13 +18,7 @@
 
     (:init
         (= (duration) 0)
-
-        (takes-course stewart maths national-four)
-        (grade-p stewart maths national-four)
-        (takes-course stewart music adv-higher)
-        (grade-a stewart music adv-higher)
-        (takes-course stewart english national-five)
-        (grade-b stewart english national-five)
+        
         (takes-course stewart comp-sci higher)
         (grade-a stewart comp-sci higher)
         (uses-strategy stewart pomodoro)
