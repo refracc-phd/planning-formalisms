@@ -41,7 +41,7 @@
         )
     )
 
-    (:metric maximize
+    (:metric minimize
         (duration)
     )
 )

@@ -26,8 +26,6 @@
         (has-received-support ?s - student ?r - support-received)
         (takes-course ?s - student ?c - course ?l - course-level)
         (finished-course ?s - student ?c - course ?l - course-level)
-        (can-take-unit ?s - student ?c - course ?l - course-level)
-        (practical-first ?s - student ?c - course ?l - course-level)
         (grade-a ?s - student ?c - course ?l - course-level)
         (grade-b ?s - student ?c - course ?l - course-level)
         (grade-c ?s - student ?c - course ?l - course-level)
@@ -46,27 +44,170 @@
         (done-unit-two ?s - student ?c - course ?l - course-level)
         (done-unit-three ?s - student ?c - course ?l - course-level)
         (done-unit-four ?s - student ?c - course ?l - course-level)
+
+        (done-extra-curricular-one ?s - student ?c - course ?l - course-level)
+        (done-extra-curricular-two ?s - student ?c - course ?l - course-level)
+        (done-extra-curricular-three ?s - student ?c - course ?l - course-level)
+        (done-extra-curricular-four ?s - student ?c - course ?l - course-level)
+        (done-extra-curricular-five ?s - student ?c - course ?l - course-level)
+        (done-extra-curricular-six ?s - student ?c - course ?l - course-level)
+        (done-extra-curricular-seven ?s - student ?c - course ?l - course-level)
+        (done-extra-curricular-eight ?s - student ?c - course ?l - course-level)
     )
 
     (:functions
-        (extra-curricular-count ?s - student ?c - course ?l - course-level)
         (duration)
     )
+
+    (:action do-extra-curricular-one
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (or
+                (grade-a ?s ?c ?l)
+                (grade-b ?s ?c ?l)
+            )
+            (not
+                (done-extra-curricular-one ?s ?c ?l)
+            )
+        )
+        :effect (and 
+            (done-extra-curricular-one ?s ?c ?l)
+        )
+    )
+
+    (:action do-extra-curricular-two
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (or
+                (grade-a ?s ?c ?l)
+                (grade-b ?s ?c ?l)
+            )
+            (not
+                (done-extra-curricular-two ?s ?c ?l)
+            )
+            (done-extra-curricular-one ?s ?c ?l)
+        )
+        :effect (and 
+            (done-extra-curricular-two ?s ?c ?l)
+        )
+    )
+
+    (:action do-extra-curricular-three
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (or
+                (grade-a ?s ?c ?l)
+                (grade-b ?s ?c ?l)
+            )
+            (not
+                (done-extra-curricular-three ?s ?c ?l)
+            )
+            (done-extra-curricular-two ?s ?c ?l)
+            (done-unit-one ?s ?c ?l)
+        )
+        :effect (and 
+            (done-extra-curricular-three ?s ?c ?l)
+        )
+    )
+
+    (:action do-extra-curricular-four
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (or
+                (grade-a ?s ?c ?l)
+                (grade-b ?s ?c ?l)
+            )
+            (not
+                (done-extra-curricular-four ?s ?c ?l)
+            )
+            (done-extra-curricular-three ?s ?c ?l)
+            (done-unit-one ?s ?c ?l)
+        )
+        :effect (and 
+            (done-extra-curricular-four ?s ?c ?l)
+        )
+    )
+
+    (:action do-extra-curricular-five
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (or
+                (grade-a ?s ?c ?l)
+                (grade-b ?s ?c ?l)
+            )
+            (not
+                (done-extra-curricular-five ?s ?c ?l)
+            )
+            (done-extra-curricular-four ?s ?c ?l)
+            (done-unit-two ?s ?c ?l)
+        )
+        :effect (and 
+            (done-extra-curricular-five ?s ?c ?l)
+        )
+    )
+
+    (:action do-extra-curricular-six
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (or
+                (grade-a ?s ?c ?l)
+                (grade-b ?s ?c ?l)
+            )
+            (not
+                (done-extra-curricular-six ?s ?c ?l)
+            )
+            (done-extra-curricular-five ?s ?c ?l)
+            (done-unit-two ?s ?c ?l)
+        )
+        :effect (and 
+            (done-extra-curricular-six ?s ?c ?l)
+        )
+    )
+
+    (:action do-extra-curricular-seven
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (or
+                (grade-a ?s ?c ?l)
+                (grade-b ?s ?c ?l)
+            )
+            (not
+                (done-extra-curricular-seven ?s ?c ?l)
+            )
+            (done-extra-curricular-six ?s ?c ?l)
+            (done-unit-three ?s ?c ?l)
+        )
+        :effect (and 
+            (done-extra-curricular-seven ?s ?c ?l)
+        )
+    )
+
+    (:action do-extra-curricular-eight
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (or
+                (grade-a ?s ?c ?l)
+                (grade-b ?s ?c ?l)
+            )
+            (not
+                (done-extra-curricular-eight ?s ?c ?l)
+            )
+            (done-extra-curricular-seven ?s ?c ?l)
+            (done-unit-three ?s ?c ?l)
+        )
+        :effect (and 
+            (done-extra-curricular-eight ?s ?c ?l)
+        )
+    )
     
-    ; (:action recommend-practical-first
-    ;     :parameters (?s - student ?c - course ?l - course-level)
-    ;     :precondition (and 
-    ;         (takes-course ?s ?c ?l)
-    ;         (or
-    ;             (student-vark-type ?s multimodal)
-    ;             (student-vark-type ?s visual)
-    ;             (student-vark-type ?s kinaesthetic)
-    ;         )
-    ;     )
-    ;     :effect (and 
-    ;         (practical-first ?s ?c ?l)
-    ;     )
-    ; )
 
     (:action take-unit-one
         :parameters (?s - student ?c - course ?l - course-level)
