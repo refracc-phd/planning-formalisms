@@ -32,12 +32,10 @@
         (student-vark-type stewart multimodal)
     )
 
+    ; Split it into 4 separate files
     (:goal
         (and
-            (finished-course stewart maths national-four)
-            (finished-course stewart comp-sci higher)
             (finished-course stewart english national-five)
-            (finished-course stewart music adv-higher)
         )
     )
 
