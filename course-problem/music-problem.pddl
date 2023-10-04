@@ -26,7 +26,6 @@
         (student-vark-type stewart multimodal)
     )
 
-    ; Split it into 4 separate files
     (:goal
         (and
             (finished-course stewart music adv-higher)
