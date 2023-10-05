@@ -80,7 +80,7 @@ Script:main() {
       read -p "Enter the file prefix: " file_prefix
 
       # Use 'find' to locate files with the specified prefix in the specified directory
-      find "$directory_path" -type f -name "${file_prefix}*" > file_list.txt
+      find "$directory_path" -type f -name "${file_prefix}*.plan" > file_list.txt
 
       # Check if there are at least two files with the prefix
       file_count=$(wc -l < file_list.txt)
@@ -101,8 +101,8 @@ Script:main() {
           exit 1
         fi
       done
-
-      echo "All files with the prefix $file_prefix in the directory $directory_path contain the same information."
+      
+      IO:success "All files with the prefix $file_prefix in the directory $directory_path contain the same information."
       ;;
       
     check | env)
