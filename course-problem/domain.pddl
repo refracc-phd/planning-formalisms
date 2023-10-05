@@ -61,6 +61,7 @@
         (duration)
     )
 
+    ; This action needs to be recognised by the planner irrespective of maximisation/minimisation problem.
     (:action recommend-practical-first
         :parameters (?s - student ?c - course ?l - course-level)
         :precondition (and 
