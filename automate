@@ -98,10 +98,11 @@ Script:main() {
         other_file="${files[$i]}"
         if ! diff -q "$first_file" "$other_file" &>/dev/null; then
           echo "Files $first_file and $other_file do not contain the same information."
+          diff "$first_file" "$other_file"
           exit 1
         fi
       done
-      
+
       IO:success "All files with the prefix $file_prefix in the directory $directory_path contain the same information."
       ;;
       
