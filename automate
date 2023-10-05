@@ -63,16 +63,20 @@ Script:main() {
 
   case "${action,,}" in
     fd)
-      #TIP: use «$script_prefix action1» to ...
-      #TIP:> $script_prefix action1
+      #TIP: Use «$script_prefix fd to run a few heuristics on many problems with the fast-downward planner.
+      #TIP:> $script_prefix fd
       perform_downward
       ;;
 
     enhsp)
+      #TIP: Use «$script_prefix enhsp to run a few heuristics on many problems with the ENHSP planner.
+      #TIP:> $script_prefix enhsp
       perform_enhsp
       ;;
 
     compare)
+      #TIP: Use «$script_prefix compare to check if all files in a given directory contain the same information (useful for plan checking).
+      #TIP:> $script_prefix compare
       # Prompt the user for the directory path
       read -p "Enter the directory path where the files are located: " directory_path
 
@@ -104,20 +108,21 @@ Script:main() {
       done
 
       IO:success "All files with the prefix $file_prefix in the directory $directory_path contain the same information."
+      rm -f file_list.txt
       ;;
       
     check | env)
       ## leave this default action, it will make it easier to test your script
-      #TIP: use «$script_prefix check» to check if this script is ready to execute and what values the options/flags are
+      #TIP: Use «$script_prefix check» to check if this script is ready to execute and what values the options/flags are
       #TIP:> $script_prefix check
-      #TIP: use «$script_prefix env» to generate an example .env file
+      #TIP: Use «$script_prefix env» to generate an example .env file
       #TIP:> $script_prefix env > .env
       Script:check
       ;;
 
     update)
       ## leave this default action, it will make it easier to test your script
-      #TIP: use «$script_prefix update» to update to the latest version
+      #TIP: Use «$script_prefix update» to update to the latest version
       #TIP:> $script_prefix update
       Script:git_pull
       ;;
@@ -510,7 +515,7 @@ function Gha:finish() {
 }
 
 trap "IO:die \"ERROR \$? after \$SECONDS seconds \n\
-\${error_prefix} last command : '\$BASH_COMMAND' \" \
+\${error_prefix} last command: '\$BASH_COMMAND' \" \
 \$(< \$script_install_path awk -v lineno=\$LINENO \
 'NR == lineno {print \"\${error_prefix} from line \" lineno \" : \" \$0}')" INT TERM EXIT
 # cf https://askubuntu.com/questions/513932/what-is-the-bash-command-variable-good-for

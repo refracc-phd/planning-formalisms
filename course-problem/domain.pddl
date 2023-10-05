@@ -63,7 +63,7 @@
 
     ; This action needs to be recognised by the planner irrespective of maximisation/minimisation problem.
     (:action recommend-practical-first
-        :parameters (?s - student ?c - course ?l - course-level)
+        :parameters (?s - student)
         :precondition (and 
             (or 
                 (student-vark-type ?s kinaesthetic)
@@ -74,6 +74,17 @@
         )
         :effect (and 
             (increase (duration) 0)
+        )
+    )
+    
+    (:action do-pomo
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (not(done-unit-four ?s ?c ?l))
+        )
+        :effect (and 
+            (increase (duration) 15)
         )
     )
     
