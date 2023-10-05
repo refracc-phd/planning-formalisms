@@ -26,14 +26,13 @@
         (student-vark-type stewart multimodal)
     )
 
-    ; Split it into 4 separate files
     (:goal
         (and
             (finished-course stewart english national-five)
         )
     )
 
-    (:metric minimize
+    (:metric maximize
         (duration)
     )
 )

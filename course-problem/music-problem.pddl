@@ -32,7 +32,7 @@
         )
     )
 
-    (:metric minimize
+    (:metric maximize
         (duration)
     )
 )

@@ -59,154 +59,181 @@
         (duration)
     )
 
-    (:action do-extra-curricular-one
+    (:action do-extra-curriculuar
         :parameters (?s - student ?c - course ?l - course-level)
         :precondition (and 
             (takes-course ?s ?c ?l)
             (or
-                (grade-a ?s ?c ?l)
-                (grade-b ?s ?c ?l)
-            )
-            (not
-                (done-extra-curricular-one ?s ?c ?l)
+                (not
+                    (done-unit-one ?s ?c ?l)
+                    (done-unit-two ?s ?c ?l)
+                    (done-unit-three ?s ?c ?l)
+                    (done-unit-four ?s ?c ?l)
+                )
             )
         )
         :effect (and 
-            (done-extra-curricular-one ?s ?c ?l)
+            (increase (duration) 60)
         )
     )
+    
 
-    (:action do-extra-curricular-two
-        :parameters (?s - student ?c - course ?l - course-level)
-        :precondition (and 
-            (takes-course ?s ?c ?l)
-            (or
-                (grade-a ?s ?c ?l)
-                (grade-b ?s ?c ?l)
-            )
-            (not
-                (done-extra-curricular-two ?s ?c ?l)
-            )
-            (done-extra-curricular-one ?s ?c ?l)
-        )
-        :effect (and 
-            (done-extra-curricular-two ?s ?c ?l)
-        )
-    )
+    ; (:action do-extra-curricular-one
+    ;     :parameters (?s - student ?c - course ?l - course-level)
+    ;     :precondition (and 
+    ;         (takes-course ?s ?c ?l)
+    ;         (or
+    ;             (grade-a ?s ?c ?l)
+    ;             (grade-b ?s ?c ?l)
+    ;         )
+    ;         (not
+    ;             (done-extra-curricular-one ?s ?c ?l)
+    ;         )
+    ;     )
+    ;     :effect (and 
+    ;         (done-extra-curricular-one ?s ?c ?l)
+    ;         (increase (duration) 60)
+    ;     )
+    ; )
 
-    (:action do-extra-curricular-three
-        :parameters (?s - student ?c - course ?l - course-level)
-        :precondition (and 
-            (takes-course ?s ?c ?l)
-            (or
-                (grade-a ?s ?c ?l)
-                (grade-b ?s ?c ?l)
-            )
-            (not
-                (done-extra-curricular-three ?s ?c ?l)
-            )
-            (done-extra-curricular-two ?s ?c ?l)
-            (done-unit-one ?s ?c ?l)
-        )
-        :effect (and 
-            (done-extra-curricular-three ?s ?c ?l)
-        )
-    )
+    ; (:action do-extra-curricular-two
+    ;     :parameters (?s - student ?c - course ?l - course-level)
+    ;     :precondition (and 
+    ;         (takes-course ?s ?c ?l)
+    ;         (or
+    ;             (grade-a ?s ?c ?l)
+    ;             (grade-b ?s ?c ?l)
+    ;         )
+    ;         (not
+    ;             (done-extra-curricular-two ?s ?c ?l)
+    ;         )
+    ;         (done-extra-curricular-one ?s ?c ?l)
+    ;     )
+    ;     :effect (and 
+    ;         (done-extra-curricular-two ?s ?c ?l)
+    ;         (increase (duration) 60)
+    ;     )
+    ; )
 
-    (:action do-extra-curricular-four
-        :parameters (?s - student ?c - course ?l - course-level)
-        :precondition (and 
-            (takes-course ?s ?c ?l)
-            (or
-                (grade-a ?s ?c ?l)
-                (grade-b ?s ?c ?l)
-            )
-            (not
-                (done-extra-curricular-four ?s ?c ?l)
-            )
-            (done-extra-curricular-three ?s ?c ?l)
-            (done-unit-one ?s ?c ?l)
-        )
-        :effect (and 
-            (done-extra-curricular-four ?s ?c ?l)
-        )
-    )
+    ; (:action do-extra-curricular-three
+    ;     :parameters (?s - student ?c - course ?l - course-level)
+    ;     :precondition (and 
+    ;         (takes-course ?s ?c ?l)
+    ;         (or
+    ;             (grade-a ?s ?c ?l)
+    ;             (grade-b ?s ?c ?l)
+    ;         )
+    ;         (not
+    ;             (done-extra-curricular-three ?s ?c ?l)
+    ;         )
+    ;         (done-extra-curricular-two ?s ?c ?l)
+    ;         (done-unit-one ?s ?c ?l)
+    ;     )
+    ;     :effect (and 
+    ;         (done-extra-curricular-three ?s ?c ?l)
+    ;         (increase (duration) 60)
+    ;     )
+    ; )
 
-    (:action do-extra-curricular-five
-        :parameters (?s - student ?c - course ?l - course-level)
-        :precondition (and 
-            (takes-course ?s ?c ?l)
-            (or
-                (grade-a ?s ?c ?l)
-                (grade-b ?s ?c ?l)
-            )
-            (not
-                (done-extra-curricular-five ?s ?c ?l)
-            )
-            (done-extra-curricular-four ?s ?c ?l)
-            (done-unit-two ?s ?c ?l)
-        )
-        :effect (and 
-            (done-extra-curricular-five ?s ?c ?l)
-        )
-    )
+    ; (:action do-extra-curricular-four
+    ;     :parameters (?s - student ?c - course ?l - course-level)
+    ;     :precondition (and 
+    ;         (takes-course ?s ?c ?l)
+    ;         (or
+    ;             (grade-a ?s ?c ?l)
+    ;             (grade-b ?s ?c ?l)
+    ;         )
+    ;         (not
+    ;             (done-extra-curricular-four ?s ?c ?l)
+    ;         )
+    ;         (done-extra-curricular-three ?s ?c ?l)
+    ;         (done-unit-one ?s ?c ?l)
+    ;     )
+    ;     :effect (and 
+    ;         (done-extra-curricular-four ?s ?c ?l)
+    ;         (increase (duration) 60)
+    ;     )
+    ; )
 
-    (:action do-extra-curricular-six
-        :parameters (?s - student ?c - course ?l - course-level)
-        :precondition (and 
-            (takes-course ?s ?c ?l)
-            (or
-                (grade-a ?s ?c ?l)
-                (grade-b ?s ?c ?l)
-            )
-            (not
-                (done-extra-curricular-six ?s ?c ?l)
-            )
-            (done-extra-curricular-five ?s ?c ?l)
-            (done-unit-two ?s ?c ?l)
-        )
-        :effect (and 
-            (done-extra-curricular-six ?s ?c ?l)
-        )
-    )
+    ; (:action do-extra-curricular-five
+    ;     :parameters (?s - student ?c - course ?l - course-level)
+    ;     :precondition (and 
+    ;         (takes-course ?s ?c ?l)
+    ;         (or
+    ;             (grade-a ?s ?c ?l)
+    ;             (grade-b ?s ?c ?l)
+    ;         )
+    ;         (not
+    ;             (done-extra-curricular-five ?s ?c ?l)
+    ;         )
+    ;         (done-extra-curricular-four ?s ?c ?l)
+    ;         (done-unit-two ?s ?c ?l)
+    ;     )
+    ;     :effect (and 
+    ;         (done-extra-curricular-five ?s ?c ?l)
+    ;         (increase (duration) 60)
+    ;     )
+    ; )
 
-    (:action do-extra-curricular-seven
-        :parameters (?s - student ?c - course ?l - course-level)
-        :precondition (and 
-            (takes-course ?s ?c ?l)
-            (or
-                (grade-a ?s ?c ?l)
-                (grade-b ?s ?c ?l)
-            )
-            (not
-                (done-extra-curricular-seven ?s ?c ?l)
-            )
-            (done-extra-curricular-six ?s ?c ?l)
-            (done-unit-three ?s ?c ?l)
-        )
-        :effect (and 
-            (done-extra-curricular-seven ?s ?c ?l)
-        )
-    )
+    ; (:action do-extra-curricular-six
+    ;     :parameters (?s - student ?c - course ?l - course-level)
+    ;     :precondition (and 
+    ;         (takes-course ?s ?c ?l)
+    ;         (or
+    ;             (grade-a ?s ?c ?l)
+    ;             (grade-b ?s ?c ?l)
+    ;         )
+    ;         (not
+    ;             (done-extra-curricular-six ?s ?c ?l)
+    ;         )
+    ;         (done-extra-curricular-five ?s ?c ?l)
+    ;         (done-unit-two ?s ?c ?l)
+    ;     )
+    ;     :effect (and 
+    ;         (done-extra-curricular-six ?s ?c ?l)
+    ;         (increase (duration) 60)
+    ;     )
+    ; )
 
-    (:action do-extra-curricular-eight
-        :parameters (?s - student ?c - course ?l - course-level)
-        :precondition (and 
-            (takes-course ?s ?c ?l)
-            (or
-                (grade-a ?s ?c ?l)
-                (grade-b ?s ?c ?l)
-            )
-            (not
-                (done-extra-curricular-eight ?s ?c ?l)
-            )
-            (done-extra-curricular-seven ?s ?c ?l)
-            (done-unit-three ?s ?c ?l)
-        )
-        :effect (and 
-            (done-extra-curricular-eight ?s ?c ?l)
-        )
-    )
+    ; (:action do-extra-curricular-seven
+    ;     :parameters (?s - student ?c - course ?l - course-level)
+    ;     :precondition (and 
+    ;         (takes-course ?s ?c ?l)
+    ;         (or
+    ;             (grade-a ?s ?c ?l)
+    ;             (grade-b ?s ?c ?l)
+    ;         )
+    ;         (not
+    ;             (done-extra-curricular-seven ?s ?c ?l)
+    ;         )
+    ;         (done-extra-curricular-six ?s ?c ?l)
+    ;         (done-unit-three ?s ?c ?l)
+    ;     )
+    ;     :effect (and 
+    ;         (done-extra-curricular-seven ?s ?c ?l)
+    ;         (increase (duration) 60)
+    ;     )
+    ; )
+
+    ; (:action do-extra-curricular-eight
+    ;     :parameters (?s - student ?c - course ?l - course-level)
+    ;     :precondition (and 
+    ;         (takes-course ?s ?c ?l)
+    ;         (or
+    ;             (grade-a ?s ?c ?l)
+    ;             (grade-b ?s ?c ?l)
+    ;         )
+    ;         (not
+    ;             (done-extra-curricular-eight ?s ?c ?l)
+    ;         )
+    ;         (done-extra-curricular-seven ?s ?c ?l)
+    ;         (done-unit-three ?s ?c ?l)
+    ;     )
+    ;     :effect (and 
+    ;         (done-extra-curricular-eight ?s ?c ?l)
+    ;         (increase (duration) 60)
+    ;     )
+    ; )
     
 
     (:action take-unit-one
