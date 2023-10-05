@@ -401,8 +401,8 @@
             (increase (duration) 360)
         )
     )
-
-    (:action do-pomo-week-one
+    
+    (:action do-pomodoro
         :parameters (?s - student ?c - course ?l - course-level)
         :precondition (and 
             (takes-course ?s ?c ?l)
@@ -410,101 +410,10 @@
             (not(done-week-one ?s ?c ?l))
         )
         :effect (and 
-            (done-week-one ?s ?c ?l)
-            (increase (duration) 450)
+            (increase (duration) 720)
         )
     )
-
-    (:action do-pomo-week-two
-        :parameters (?s - student ?c - course ?l - course-level)
-        :precondition (and 
-            (not(done-week-two ?s ?c ?l))
-            (uses-strategy ?s pomodoro)
-            (done-week-one ?s ?c ?l)
-        )
-        :effect (and 
-            (done-week-two ?s ?c ?l)
-            (increase (duration) 450)
-        )
-    )
-
-    (:action do-pomo-week-three
-        :parameters (?s - student ?c - course ?l - course-level)
-        :precondition (and 
-            (not(done-week-three ?s ?c ?l))
-            (uses-strategy ?s pomodoro)
-            (done-week-two ?s ?c ?l)
-        )
-        :effect (and 
-            (done-week-three ?s ?c ?l)
-            (increase (duration) 450)
-        )
-    )
-
-    (:action do-pomo-week-four
-        :parameters (?s - student ?c - course ?l - course-level)
-        :precondition (and 
-            (not(done-week-four ?s ?c ?l))
-            (uses-strategy ?s pomodoro)
-            (done-week-three ?s ?c ?l)
-        )
-        :effect (and 
-            (done-week-four ?s ?c ?l)
-            (increase (duration) 450)
-        )
-    )
-
-    (:action do-pomo-week-five
-        :parameters (?s - student ?c - course ?l - course-level)
-        :precondition (and 
-            (not(done-week-five ?s ?c ?l))
-            (uses-strategy ?s pomodoro)
-            (done-week-four ?s ?c ?l)
-        )
-        :effect (and 
-            (done-week-five ?s ?c ?l)
-            (increase (duration) 450)
-        )
-    )
-
-    (:action do-pomo-week-six
-        :parameters (?s - student ?c - course ?l - course-level)
-        :precondition (and 
-            (not(done-week-six ?s ?c ?l))
-            (uses-strategy ?s pomodoro)
-            (done-week-five ?s ?c ?l)
-        )
-        :effect (and 
-            (done-week-six ?s ?c ?l)
-            (increase (duration) 450)
-        )
-    )
-
-    (:action do-pomo-week-seven
-        :parameters (?s - student ?c - course ?l - course-level)
-        :precondition (and 
-            (not(done-week-seven ?s ?c ?l))
-            (uses-strategy ?s pomodoro)
-            (done-week-six ?s ?c ?l)
-        )
-        :effect (and 
-            (done-week-seven ?s ?c ?l)
-            (increase (duration) 450)
-        )
-    )
-
-    (:action do-pomo-week-eight
-        :parameters (?s - student ?c - course ?l - course-level)
-        :precondition (and 
-            (not(done-week-eight ?s ?c ?l))
-            (uses-strategy ?s pomodoro)
-            (done-week-seven ?s ?c ?l)
-        )
-        :effect (and 
-            (done-week-eight ?s ?c ?l)
-            (increase (duration) 450)
-        )
-    )
+    
     
     (:action finish-course
         :parameters (?s - student ?c - course ?l - course-level)
