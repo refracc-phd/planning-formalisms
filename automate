@@ -163,7 +163,6 @@ perform_downward() {
   # Iterate over each problem file in the directory
   for problem_file in "$problem_dir"/*; do
       if [ -f "$problem_file" ]; then
-          IO:log "Running 4 searches from $executable_location on $domain_file and $problem_file ($SECONDS)"
           "$executable_location" --sas-file "$problem_file-fFyY.sas" --plan-file "$problem_file-fFyY.plan" "$domain_file" "$problem_file" --evaluator "hff=ff(verbosity=silent)" --evaluator "hcea=cea(verbosity=silent)" --search "lazy_greedy([hff, hcea], preferred=[hff, hcea])" &
           "$executable_location" --sas-file "$problem_file-fF.sas" --plan-file "$problem_file-fF.plan" "$domain_file" "$problem_file" --evaluator "hff=ff(verbosity=silent)" --search "lazy_greedy([hff], preferred=[hff])" &
           "$executable_location" --sas-file "$problem_file-yY.sas" --plan-file "$problem_file-yY.plan" "$domain_file" "$problem_file" --evaluator "hcea=cea(verbosity=silent)" --search "lazy_greedy([hcea], preferred=[hcea])" &
