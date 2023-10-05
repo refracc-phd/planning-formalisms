@@ -53,10 +53,27 @@
         (done-extra-curricular-six ?s - student ?c - course ?l - course-level)
         (done-extra-curricular-seven ?s - student ?c - course ?l - course-level)
         (done-extra-curricular-eight ?s - student ?c - course ?l - course-level)
+
+        (student-led ?c - course ?l - course-level)
     )
 
     (:functions
         (duration)
+    )
+
+    (:action recommend-practical-first
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (or 
+                (student-vark-type ?s kinaesthetic)
+                (student-vark-type ?s multimodal)
+                (uses-strategy ?s gamification)
+                (uses-strategy ?s project-based)
+            )
+        )
+        :effect (and 
+            (increase (duration) 0)
+        )
     )
     
 
