@@ -175,57 +175,37 @@ perform_downward() {
 }
 
 perform_enhsp() {
-  # Prompt the user for the location of the executable
-  read -p "Please provide the location of ENHSP: " executable_location
+  # Prompt for user inputs and validate existence
+  read -p "ENHSP Executable Location: " executable_location
+  read -p "Domain File: " domain_file
+  read -p "Problem Files Directory: " problem_dir
 
-  # Prompt the user for the domain file
-  read -p "Please enter the domain file: " domain_file
+  for file in "$executable_location" "$domain_file" "$problem_dir"; do
+    [ ! -e "$file" ] && IO:die "$file not found."
+  done
 
-  # Prompt the user for the directory containing the problem files
-  read -p "Please enter the directory containing the problem files: " problem_dir
-
-  # Check if the executable exists
-  if [ ! -f "$executable_location" ]; then
-      IO:die "Executable not found at the specified location. ${executable_location}"
-  fi
-
-  # Check if the domain file exists
-  if [ ! -f "$domain_file" ]; then
-      IO:die "Domain file not found."
-  fi
-
-  # Check if the problem directory exists
-  if [ ! -d "$problem_dir" ]; then
-      IO:die "Problem directory not found."
-  fi
-
+  # Remove existing plan files
   find "$problem_dir" -type f -name "*.plan" -exec rm -f {} \;
 
-  # Iterate over each problem file in the directory
-  for problem_file in "$problem_dir"/*; do
-      if [ -f "$problem_file" ]; then
-        if [ "$problem_file" != "domain.pddl" ]; then
-          IO:log "Running 15 searches from $executable_location on $domain_file and $problem_file ($SECONDS)"
-          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "sas" -sp "$problem_file-sas.plan" & 
-          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "opt" -sp "$problem_file-opt.plan" & 
-          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "aibr" -sp "$problem_file-aibr.plan" & 
-          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "lm_opt" -sp "$problem_file-lm-opt.plan" & 
-          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "sat-hmrp" -sp "$problem_file-sat-hmrp.plan" & 
-          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "sat-hmrph" -sp "$problem_file-sat-hmrph.plan" & 
-          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "sat-hmrphj" -sp "$problem_file-sat-hmrphj.plan" & 
-          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "sat-hadd" -sp "$problem_file-sat-hadd.plan" & 
-          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "sat-hradd" -sp "$problem_file-sat-hradd.plan" & 
-          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "sat-aibr" -sp "$problem_file-sat-aibr.plan" &  # -- THIS TASK NO LONGER RUNS OUT OF MEMORY :COGGERS:
-          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "sat-haddabs" -sp "$problem_file-sat-haddabs.plan" &
-          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "opt-hmax" -sp "$problem_file-opt-hmax.plan" &
-          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "opt-hrmax" -sp "$problem_file-opt-hrmax.plan" &
-          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "opt-hlm" -sp "$problem_file-opt-hlm.plan" & 
-          java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "opt-hlmrc" -sp "$problem_file-opt-hlmrc.plan" &
-        fi
-      fi
-  done
-}
+  # Heuristics to run
+  heuristics=("sas" "opt" "aibr" "lm_opt" "sat-hmrp" "sat-hmrph" "sat-hmrphj"
+             "sat-hadd" "sat-hradd" "sat-aibr" "sat-haddabs" "opt-hmax"
+             "opt-hrmax" "opt-hlm" "opt-hlmrc")
 
+  # Iterate over problem files and run heuristics
+  for problem_file in "$problem_dir"/*; do
+    [ ! -f "$problem_file" ] || [ "$problem_file" = "domain.pddl" ] && continue
+    
+    # Run all heuristics in parallel for the current problem file
+    for heuristic in "${heuristics[@]}"; do
+      java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "$heuristic" -sp "$problem_file-$heuristic.plan" &
+    done
+  done
+
+  wait
+
+  IO:success "All planning tasks completed."
+}
 #####################################################################
 ################### DO NOT MODIFY BELOW THIS LINE ###################
 #####################################################################
