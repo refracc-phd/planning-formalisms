@@ -78,37 +78,7 @@ Script:main() {
       #TIP: Use «$script_prefix compare to check if all files in a given directory contain the same information (useful for plan checking).
       #TIP:> $script_prefix compare
       # Prompt the user for the directory path
-      read -p "Enter the directory path where the files are located: " directory_path
-
-      # Prompt the user for the file prefix
-      read -p "Enter the file prefix: " file_prefix
-
-      # Use 'find' to locate files with the specified prefix in the specified directory
-      find "$directory_path" -type f -name "${file_prefix}*.plan" > file_list.txt
-
-      # Check if there are at least two files with the prefix
-      file_count=$(wc -l < file_list.txt)
-      if [ "$file_count" -lt 2 ]; then
-        echo "Not enough files with the prefix to compare."
-        exit 1
-      fi
-
-      # Read the file names into an array
-      mapfile -t files < file_list.txt
-
-      # Compare the contents of the first file with the rest using 'diff'
-      first_file="${files[0]}"
-      for ((i = 1; i < ${#files[@]}; i++)); do
-        other_file="${files[$i]}"
-        if ! diff -q "$first_file" "$other_file" &>/dev/null; then
-          echo "Files $first_file and $other_file do not contain the same information."
-          diff "$first_file" "$other_file"
-          exit 1
-        fi
-      done
-
-      IO:success "All files with the prefix $file_prefix in the directory $directory_path contain the same information."
-      rm -f file_list.txt
+      compare
       ;;
       
     check | env)
@@ -209,6 +179,40 @@ perform_enhsp() {
   wait
 
   IO:success "All planning tasks completed."
+}
+
+compare() {
+  read -p "Enter the directory path where the files are located: " directory_path
+
+      # Prompt the user for the file prefix
+      read -p "Enter the file prefix: " file_prefix
+
+      # Use 'find' to locate files with the specified prefix in the specified directory
+      find "$directory_path" -type f -name "${file_prefix}*.plan" > file_list.txt
+
+      # Check if there are at least two files with the prefix
+      file_count=$(wc -l < file_list.txt)
+      if [ "$file_count" -lt 2 ]; then
+        echo "Not enough files with the prefix to compare."
+        exit 1
+      fi
+
+      # Read the file names into an array
+      mapfile -t files < file_list.txt
+
+      # Compare the contents of the first file with the rest using 'diff'
+      first_file="${files[0]}"
+      for ((i = 1; i < ${#files[@]}; i++)); do
+        other_file="${files[$i]}"
+        if ! diff -q "$first_file" "$other_file" &>/dev/null; then
+          echo "Files $first_file and $other_file do not contain the same information."
+          diff "$first_file" "$other_file"
+          exit 1
+        fi
+      done
+
+      IO:success "All files with the prefix $file_prefix in the directory $directory_path contain the same information."
+      rm -f file_list.txt
 }
 #####################################################################
 ################### DO NOT MODIFY BELOW THIS LINE ###################
