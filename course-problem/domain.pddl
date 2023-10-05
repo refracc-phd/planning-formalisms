@@ -400,19 +400,7 @@
             (done-week-eight ?s ?c ?l)
             (increase (duration) 360)
         )
-    )
-    
-    (:action do-pomodoro
-        :parameters (?s - student ?c - course ?l - course-level)
-        :precondition (and 
-            (takes-course ?s ?c ?l)
-            (uses-strategy ?s pomodoro)
-        )
-        :effect (and 
-            (increase (duration) 720)
-        )
-    )
-    
+    )    
     
     (:action finish-course
         :parameters (?s - student ?c - course ?l - course-level)
