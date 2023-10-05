@@ -43,7 +43,7 @@ flag|v|verbose|also show debug messages
 flag|f|force|do not ask for confirmation (always yes)
 option|l|log_dir|folder for log files |$HOME/log/$script_prefix
 option|t|tmp_dir|folder for temp files|/tmp/$script_prefix
-choice|1|action|action to perform|fd, enhsp, check, env, update
+choice|1|action|action to perform|fd, enhsp, compare, check, env, update
 #param|?|input|input file/text
 " -v -e '^#' -e '^\s*$'
 }
@@ -70,6 +70,39 @@ Script:main() {
 
     enhsp)
       perform_enhsp
+      ;;
+
+    compare)
+      # Prompt the user for the directory path
+      read -p "Enter the directory path where the files are located: " directory_path
+
+      # Prompt the user for the file prefix
+      read -p "Enter the file prefix: " file_prefix
+
+      # Use 'find' to locate files with the specified prefix in the specified directory
+      find "$directory_path" -type f -name "${file_prefix}*" > file_list.txt
+
+      # Check if there are at least two files with the prefix
+      file_count=$(wc -l < file_list.txt)
+      if [ "$file_count" -lt 2 ]; then
+        echo "Not enough files with the prefix to compare."
+        exit 1
+      fi
+
+      # Read the file names into an array
+      mapfile -t files < file_list.txt
+
+      # Compare the contents of the first file with the rest using 'diff'
+      first_file="${files[0]}"
+      for ((i = 1; i < ${#files[@]}; i++)); do
+        other_file="${files[$i]}"
+        if ! diff -q "$first_file" "$other_file" &>/dev/null; then
+          echo "Files $first_file and $other_file do not contain the same information."
+          exit 1
+        fi
+      done
+
+      echo "All files with the prefix $file_prefix in the directory $directory_path contain the same information."
       ;;
       
     check | env)

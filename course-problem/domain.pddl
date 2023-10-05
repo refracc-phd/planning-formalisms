@@ -64,12 +64,10 @@
         :precondition (and 
             (takes-course ?s ?c ?l)
             (or
-                (not
-                    (done-unit-one ?s ?c ?l)
-                    (done-unit-two ?s ?c ?l)
-                    (done-unit-three ?s ?c ?l)
-                    (done-unit-four ?s ?c ?l)
-                )
+                (not (done-unit-one ?s ?c ?l))
+                (not (done-unit-two ?s ?c ?l))
+                (not (done-unit-three ?s ?c ?l))
+                (not (done-unit-four ?s ?c ?l))
             )
         )
         :effect (and 
