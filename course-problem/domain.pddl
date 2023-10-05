@@ -407,7 +407,6 @@
         :precondition (and 
             (takes-course ?s ?c ?l)
             (uses-strategy ?s pomodoro)
-            (not(done-week-one ?s ?c ?l))
         )
         :effect (and 
             (increase (duration) 720)
