@@ -175,9 +175,7 @@ perform_enhsp() {
       java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "$heuristic" -sp "$problem_file-$heuristic.plan" &
     done
   done
-
   wait
-
   IO:success "All planning tasks completed."
 }
 
@@ -194,6 +192,7 @@ compare() {
       file_count=$(wc -l < file_list.txt)
       if [ "$file_count" -lt 2 ]; then
         echo "Not enough files with the prefix to compare."
+        rm -f file_list.txt
         exit 1
       fi
 
@@ -207,6 +206,7 @@ compare() {
         if ! diff -q "$first_file" "$other_file" &>/dev/null; then
           echo "Files $first_file and $other_file do not contain the same information."
           diff "$first_file" "$other_file"
+          rm -f file_list.txt
           exit 1
         fi
       done
