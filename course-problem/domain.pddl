@@ -61,34 +61,6 @@
         (duration)
     )
 
-    ; This action needs to be recognised by the planner irrespective of maximisation/minimisation problem.
-    (:action recommend-practical-first
-        :parameters (?s - student)
-        :precondition (and 
-            (or 
-                (student-vark-type ?s kinaesthetic)
-                (student-vark-type ?s multimodal)
-                (uses-strategy ?s gamification)
-                (uses-strategy ?s project-based)
-            )
-        )
-        :effect (and 
-            (increase (duration) 0)
-        )
-    )
-    
-    (:action do-pomo
-        :parameters (?s - student ?c - course ?l - course-level)
-        :precondition (and 
-            (takes-course ?s ?c ?l)
-            (not(done-unit-four ?s ?c ?l))
-        )
-        :effect (and 
-            (increase (duration) 15)
-        )
-    )
-    
-
     (:action do-extra-curricular-one
         :parameters (?s - student ?c - course ?l - course-level)
         :precondition (and 
@@ -427,6 +399,110 @@
         :effect (and 
             (done-week-eight ?s ?c ?l)
             (increase (duration) 360)
+        )
+    )
+
+    (:action do-pomo-week-one
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (uses-strategy ?s pomodoro)
+            (not(done-week-one ?s ?c ?l))
+        )
+        :effect (and 
+            (done-week-one ?s ?c ?l)
+            (increase (duration) 450)
+        )
+    )
+
+    (:action do-pomo-week-two
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (not(done-week-two ?s ?c ?l))
+            (uses-strategy ?s pomodoro)
+            (done-week-one ?s ?c ?l)
+        )
+        :effect (and 
+            (done-week-two ?s ?c ?l)
+            (increase (duration) 450)
+        )
+    )
+
+    (:action do-pomo-week-three
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (not(done-week-three ?s ?c ?l))
+            (uses-strategy ?s pomodoro)
+            (done-week-two ?s ?c ?l)
+        )
+        :effect (and 
+            (done-week-three ?s ?c ?l)
+            (increase (duration) 450)
+        )
+    )
+
+    (:action do-pomo-week-four
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (not(done-week-four ?s ?c ?l))
+            (uses-strategy ?s pomodoro)
+            (done-week-three ?s ?c ?l)
+        )
+        :effect (and 
+            (done-week-four ?s ?c ?l)
+            (increase (duration) 450)
+        )
+    )
+
+    (:action do-pomo-week-five
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (not(done-week-five ?s ?c ?l))
+            (uses-strategy ?s pomodoro)
+            (done-week-four ?s ?c ?l)
+        )
+        :effect (and 
+            (done-week-five ?s ?c ?l)
+            (increase (duration) 450)
+        )
+    )
+
+    (:action do-pomo-week-six
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (not(done-week-six ?s ?c ?l))
+            (uses-strategy ?s pomodoro)
+            (done-week-five ?s ?c ?l)
+        )
+        :effect (and 
+            (done-week-six ?s ?c ?l)
+            (increase (duration) 450)
+        )
+    )
+
+    (:action do-pomo-week-seven
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (not(done-week-seven ?s ?c ?l))
+            (uses-strategy ?s pomodoro)
+            (done-week-six ?s ?c ?l)
+        )
+        :effect (and 
+            (done-week-seven ?s ?c ?l)
+            (increase (duration) 450)
+        )
+    )
+
+    (:action do-pomo-week-eight
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (not(done-week-eight ?s ?c ?l))
+            (uses-strategy ?s pomodoro)
+            (done-week-seven ?s ?c ?l)
+        )
+        :effect (and 
+            (done-week-eight ?s ?c ?l)
+            (increase (duration) 450)
         )
     )
     
