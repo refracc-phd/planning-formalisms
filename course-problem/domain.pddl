@@ -54,7 +54,7 @@
         (done-extra-curricular-seven ?s - student ?c - course ?l - course-level)
         (done-extra-curricular-eight ?s - student ?c - course ?l - course-level)
 
-        (student-led ?c - course ?l - course-level)
+        (can-pomodoro ?s - student ?c - course ?l - course-level)
     )
 
     (:functions
@@ -412,4 +412,30 @@
             (finished-course ?s ?c ?l)
         )
     )
+
+    (:action do-pomodoro
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (uses-strategy ?s pomodoro)
+        )
+        :effect (and 
+            (increase (duration) 576) ; 18 additional mins per lesson * 8 weeks * 4 units
+            (can-pomodoro ?s ?c ?l)
+        )
+    )
+    
+
+    (:action finish-course-pomodoro
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (done-unit-four ?s ?c ?l)
+            (takes-course ?s ?c ?l)
+            (can-pomodoro ?s ?c ?l)
+        )
+        :effect (and 
+            (finished-course ?s ?c ?l)
+        )
+    )
+    
 )
