@@ -12,6 +12,7 @@
         support-requirement
         support-received
         student
+        team
     )
 
     (:constants
@@ -55,6 +56,8 @@
         (done-extra-curricular-eight ?s - student ?c - course ?l - course-level)
 
         (can-pomodoro ?s - student ?c - course ?l - course-level)
+
+        (on-team ?t - team ?s - student)
     )
 
     (:functions
@@ -400,7 +403,836 @@
             (done-week-eight ?s ?c ?l)
             (increase (duration) 360)
         )
-    )    
+    )
+
+    (:action do-team-one-extra-curricular-one
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (or
+                (grade-a ?s ?c ?l)
+                (grade-b ?s ?c ?l)
+            )
+            (on-team one ?s)
+            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
+            (and (not (= ?s1 ?s2))
+                (on-team one ?s1)
+                (on-team one ?s2)
+                (takes-course ?s1 ?c ?l)
+                (takes-course ?s2 ?c ?l)
+                ))
+            (not
+                (done-extra-curricular-one ?s ?c ?l)
+            )
+        )
+        :effect (and 
+            (done-extra-curricular-one ?s ?c ?l)
+            (increase (duration) 45)
+        )
+    )
+
+    (:action do-team-two-extra-curricular-one
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (or
+                (grade-a ?s ?c ?l)
+                (grade-b ?s ?c ?l)
+            )
+            (on-team two ?s)
+            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
+            (and (not (= ?s1 ?s2))
+                (on-team two ?s1)
+                (on-team two ?s2)
+                (takes-course ?s1 ?c ?l)
+                (takes-course ?s2 ?c ?l)))
+            (not
+                (done-extra-curricular-one ?s ?c ?l)
+            )
+        )
+        :effect (and 
+            (done-extra-curricular-one ?s ?c ?l)
+            (increase (duration) 45)
+        )
+    )
+
+    (:action do-team-three-extra-curricular-one
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (or
+                (grade-a ?s ?c ?l)
+                (grade-b ?s ?c ?l)
+            )
+            (on-team three ?s)
+            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
+            (and (not (= ?s1 ?s2))
+                (on-team three ?s1)
+                (on-team three ?s2)
+                (takes-course ?s1 ?c ?l)
+                (takes-course ?s2 ?c ?l)))
+            (not
+                (done-extra-curricular-one ?s ?c ?l)
+            )
+        )
+        :effect (and 
+            (done-extra-curricular-one ?s ?c ?l)
+            (increase (duration) 45)
+        )
+    )
+
+    (:action do-team-four-extra-curricular-one
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (or
+                (grade-a ?s ?c ?l)
+                (grade-b ?s ?c ?l)
+            )
+            (on-team four ?s)
+            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
+            (and (not (= ?s1 ?s2))
+                (on-team four ?s1)
+                (on-team four ?s2)
+                (takes-course ?s1 ?c ?l)
+                (takes-course ?s2 ?c ?l)))
+            (not
+                (done-extra-curricular-one ?s ?c ?l)
+            )
+        )
+        :effect (and 
+            (done-extra-curricular-one ?s ?c ?l)
+            (increase (duration) 45)
+        )
+    )
+
+    (:action do-team-one-extra-curricular-two
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (or
+                (grade-a ?s ?c ?l)
+                (grade-b ?s ?c ?l)
+            )
+            (on-team one ?s)
+            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
+            (and (not (= ?s1 ?s2))
+                (on-team one ?s1)
+                (on-team one ?s2)
+                (takes-course ?s1 ?c ?l)
+                (takes-course ?s2 ?c ?l)))
+            (not
+                (done-extra-curricular-two ?s ?c ?l)
+            )
+            (done-extra-curricular-one ?s ?c ?l)
+        )
+        :effect (and 
+            (done-extra-curricular-two ?s ?c ?l)
+            (increase (duration) 45)
+        )
+    )
+
+    (:action do-team-two-extra-curricular-two
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (or
+                (grade-a ?s ?c ?l)
+                (grade-b ?s ?c ?l)
+            )
+            (on-team two ?s)
+            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
+            (and (not (= ?s1 ?s2))
+                (on-team two ?s1)
+                (on-team two ?s2)
+                (takes-course ?s1 ?c ?l)
+                (takes-course ?s2 ?c ?l)))
+            (not
+                (done-extra-curricular-two ?s ?c ?l)
+            )
+            (done-extra-curricular-one ?s ?c ?l)
+        )
+        :effect (and 
+            (done-extra-curricular-two ?s ?c ?l)
+            (increase (duration) 45)
+        )
+    )
+
+    (:action do-team-three-extra-curricular-two
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (or
+                (grade-a ?s ?c ?l)
+                (grade-b ?s ?c ?l)
+            )
+            (on-team three ?s)
+            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
+            (and (not (= ?s1 ?s2))
+                (on-team three ?s1)
+                (on-team three ?s2)
+                (takes-course ?s1 ?c ?l)
+                (takes-course ?s2 ?c ?l)))
+            (not
+                (done-extra-curricular-two ?s ?c ?l)
+            )
+            (done-extra-curricular-one ?s ?c ?l)
+        )
+        :effect (and 
+            (done-extra-curricular-two ?s ?c ?l)
+            (increase (duration) 45)
+        )
+    )
+
+    (:action do-team-four-extra-curricular-two
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (or
+                (grade-a ?s ?c ?l)
+                (grade-b ?s ?c ?l)
+            )
+            (on-team four ?s)
+            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
+            (and (not (= ?s1 ?s2))
+                (on-team four ?s1)
+                (on-team four ?s2)
+                (takes-course ?s1 ?c ?l)
+                (takes-course ?s2 ?c ?l)))
+            (not
+                (done-extra-curricular-two ?s ?c ?l)
+            )
+            (done-extra-curricular-one ?s ?c ?l)
+        )
+        :effect (and 
+            (done-extra-curricular-two ?s ?c ?l)
+            (increase (duration) 45)
+        )
+    )
+
+    (:action do-team-one-extra-curricular-three
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (or
+                (grade-a ?s ?c ?l)
+                (grade-b ?s ?c ?l)
+            )
+            (on-team one ?s)
+            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
+            (and (not (= ?s1 ?s2))
+                (on-team one ?s1)
+                (on-team one ?s2)
+                (takes-course ?s1 ?c ?l)
+                (takes-course ?s2 ?c ?l)))
+            (not
+                (done-extra-curricular-three ?s ?c ?l)
+            )
+            (done-extra-curricular-two ?s ?c ?l)
+        )
+        :effect (and 
+            (done-extra-curricular-three ?s ?c ?l)
+            (increase (duration) 45)
+        )
+    )
+
+    (:action do-team-two-extra-curricular-three
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (or
+                (grade-a ?s ?c ?l)
+                (grade-b ?s ?c ?l)
+            )
+            (on-team two ?s)
+            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
+            (and (not (= ?s1 ?s2))
+                (on-team two ?s1)
+                (on-team two ?s2)
+                (takes-course ?s1 ?c ?l)
+                (takes-course ?s2 ?c ?l)))
+            (not
+                (done-extra-curricular-three ?s ?c ?l)
+            )
+            (done-extra-curricular-two ?s ?c ?l)
+        )
+        :effect (and 
+            (done-extra-curricular-three ?s ?c ?l)
+            (increase (duration) 45)
+        )
+    )
+
+    (:action do-team-three-extra-curricular-three
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (or
+                (grade-a ?s ?c ?l)
+                (grade-b ?s ?c ?l)
+            )
+            (on-team three ?s)
+            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
+            (and (not (= ?s1 ?s2))
+                (on-team three ?s1)
+                (on-team three ?s2)
+                (takes-course ?s1 ?c ?l)
+                (takes-course ?s2 ?c ?l)))
+            (not
+                (done-extra-curricular-three ?s ?c ?l)
+            )
+            (done-extra-curricular-two ?s ?c ?l)
+        )
+        :effect (and 
+            (done-extra-curricular-three ?s ?c ?l)
+            (increase (duration) 45)
+        )
+    )
+
+    (:action do-team-four-extra-curricular-three
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (or
+                (grade-a ?s ?c ?l)
+                (grade-b ?s ?c ?l)
+            )
+            (on-team four ?s)
+            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
+            (and (not (= ?s1 ?s2))
+                (on-team four ?s1)
+                (on-team four ?s2)
+                (takes-course ?s1 ?c ?l)
+                (takes-course ?s2 ?c ?l)))
+            (not
+                (done-extra-curricular-three ?s ?c ?l)
+            )
+            (done-extra-curricular-two ?s ?c ?l)
+        )
+        :effect (and 
+            (done-extra-curricular-three ?s ?c ?l)
+            (increase (duration) 45)
+        )
+    )
+
+    (:action do-team-one-extra-curricular-four
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (or
+                (grade-a ?s ?c ?l)
+                (grade-b ?s ?c ?l)
+            )
+            (on-team one ?s)
+            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
+            (and (not (= ?s1 ?s2))
+                (on-team one ?s1)
+                (on-team one ?s2)
+                (takes-course ?s1 ?c ?l)
+                (takes-course ?s2 ?c ?l)))
+            (not
+                (done-extra-curricular-four ?s ?c ?l)
+            )
+            (done-extra-curricular-three ?s ?c ?l)
+        )
+        :effect (and 
+            (done-extra-curricular-four ?s ?c ?l)
+            (increase (duration) 45)
+        )
+    )
+
+    (:action do-team-two-extra-curricular-four
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (or
+                (grade-a ?s ?c ?l)
+                (grade-b ?s ?c ?l)
+            )
+            (on-team two ?s)
+            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
+            (and (not (= ?s1 ?s2))
+                (on-team two ?s1)
+                (on-team two ?s2)
+                (takes-course ?s1 ?c ?l)
+                (takes-course ?s2 ?c ?l)))
+            (not
+                (done-extra-curricular-four ?s ?c ?l)
+            )
+            (done-extra-curricular-three ?s ?c ?l)
+        )
+        :effect (and 
+            (done-extra-curricular-four ?s ?c ?l)
+            (increase (duration) 45)
+        )
+    )
+
+    (:action do-team-three-extra-curricular-four
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (or
+                (grade-a ?s ?c ?l)
+                (grade-b ?s ?c ?l)
+            )
+            (on-team three ?s)
+            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
+            (and (not (= ?s1 ?s2))
+                (on-team three ?s1)
+                (on-team three ?s2)
+                (takes-course ?s1 ?c ?l)
+                (takes-course ?s2 ?c ?l)))
+            (not
+                (done-extra-curricular-four ?s ?c ?l)
+            )
+            (done-extra-curricular-three ?s ?c ?l)
+        )
+        :effect (and 
+            (done-extra-curricular-four ?s ?c ?l)
+            (increase (duration) 45)
+        )
+    )
+
+    (:action do-team-four-extra-curricular-four
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (or
+                (grade-a ?s ?c ?l)
+                (grade-b ?s ?c ?l)
+            )
+            (on-team four ?s)
+            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
+            (and (not (= ?s1 ?s2))
+                (on-team four ?s1)
+                (on-team four ?s2)
+                (takes-course ?s1 ?c ?l)
+                (takes-course ?s2 ?c ?l)))
+            (not
+                (done-extra-curricular-four ?s ?c ?l)
+            )
+            (done-extra-curricular-three ?s ?c ?l)
+        )
+        :effect (and 
+            (done-extra-curricular-four ?s ?c ?l)
+            (increase (duration) 45)
+        )
+    )
+
+    (:action do-team-one-extra-curricular-five
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (or
+                (grade-a ?s ?c ?l)
+                (grade-b ?s ?c ?l)
+            )
+            (on-team one ?s)
+            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
+            (and (not (= ?s1 ?s2))
+                (on-team one ?s1)
+                (on-team one ?s2)
+                (takes-course ?s1 ?c ?l)
+                (takes-course ?s2 ?c ?l)))
+            (not
+                (done-extra-curricular-five ?s ?c ?l)
+            )
+            (done-extra-curricular-four ?s ?c ?l)
+        )
+        :effect (and 
+            (done-extra-curricular-five ?s ?c ?l)
+            (increase (duration) 45)
+        )
+    )
+
+    (:action do-team-two-extra-curricular-five
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (or
+                (grade-a ?s ?c ?l)
+                (grade-b ?s ?c ?l)
+            )
+            (on-team two ?s)
+            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
+            (and (not (= ?s1 ?s2))
+                (on-team two ?s1)
+                (on-team two ?s2)
+                (takes-course ?s1 ?c ?l)
+                (takes-course ?s2 ?c ?l)))
+            (not
+                (done-extra-curricular-five ?s ?c ?l)
+            )
+            (done-extra-curricular-four ?s ?c ?l)
+        )
+        :effect (and 
+            (done-extra-curricular-five ?s ?c ?l)
+            (increase (duration) 45)
+        )
+    )
+
+    (:action do-team-three-extra-curricular-five
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (or
+                (grade-a ?s ?c ?l)
+                (grade-b ?s ?c ?l)
+            )
+            (on-team three ?s)
+            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
+            (and (not (= ?s1 ?s2))
+                (on-team three ?s1)
+                (on-team three ?s2)
+                (takes-course ?s1 ?c ?l)
+                (takes-course ?s2 ?c ?l)))
+            (not
+                (done-extra-curricular-five ?s ?c ?l)
+            )
+            (done-extra-curricular-four ?s ?c ?l)
+        )
+        :effect (and 
+            (done-extra-curricular-five ?s ?c ?l)
+            (increase (duration) 45)
+        )
+    )
+
+    (:action do-team-four-extra-curricular-five
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (or
+                (grade-a ?s ?c ?l)
+                (grade-b ?s ?c ?l)
+            )
+            (on-team four ?s)
+            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
+            (and (not (= ?s1 ?s2))
+                (on-team four ?s1)
+                (on-team four ?s2)
+                (takes-course ?s1 ?c ?l)
+                (takes-course ?s2 ?c ?l)))
+            (not
+                (done-extra-curricular-five ?s ?c ?l)
+            )
+            (done-extra-curricular-four ?s ?c ?l)
+        )
+        :effect (and 
+            (done-extra-curricular-five ?s ?c ?l)
+            (increase (duration) 45)
+        )
+    )
+
+    (:action do-team-one-extra-curricular-six
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (or
+                (grade-a ?s ?c ?l)
+                (grade-b ?s ?c ?l)
+            )
+            (on-team one ?s)
+            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
+            (and (not (= ?s1 ?s2))
+                (on-team one ?s1)
+                (on-team one ?s2)
+                (takes-course ?s1 ?c ?l)
+                (takes-course ?s2 ?c ?l)))
+            (not
+                (done-extra-curricular-six ?s ?c ?l)
+            )
+            (done-extra-curricular-five ?s ?c ?l)
+        )
+        :effect (and 
+            (done-extra-curricular-six ?s ?c ?l)
+            (increase (duration) 45)
+        )
+    )
+
+    (:action do-team-two-extra-curricular-six
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (or
+                (grade-a ?s ?c ?l)
+                (grade-b ?s ?c ?l)
+            )
+            (on-team two ?s)
+            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
+            (and (not (= ?s1 ?s2))
+                (on-team two ?s1)
+                (on-team two ?s2)
+                (takes-course ?s1 ?c ?l)
+                (takes-course ?s2 ?c ?l)))
+            (not
+                (done-extra-curricular-six ?s ?c ?l)
+            )
+            (done-extra-curricular-five ?s ?c ?l)
+        )
+        :effect (and 
+            (done-extra-curricular-six ?s ?c ?l)
+            (increase (duration) 45)
+        )
+    )
+
+    (:action do-team-three-extra-curricular-six
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (or
+                (grade-a ?s ?c ?l)
+                (grade-b ?s ?c ?l)
+            )
+            (on-team three ?s)
+            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
+            (and (not (= ?s1 ?s2))
+                (on-team three ?s1)
+                (on-team three ?s2)
+                (takes-course ?s1 ?c ?l)
+                (takes-course ?s2 ?c ?l)))
+            (not
+                (done-extra-curricular-six ?s ?c ?l)
+            )
+            (done-extra-curricular-five ?s ?c ?l)
+        )
+        :effect (and 
+            (done-extra-curricular-six ?s ?c ?l)
+            (increase (duration) 45)
+        )
+    )
+
+    (:action do-team-four-extra-curricular-six
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (or
+                (grade-a ?s ?c ?l)
+                (grade-b ?s ?c ?l)
+            )
+            (on-team four ?s)
+            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
+            (and (not (= ?s1 ?s2))
+                (on-team four ?s1)
+                (on-team four ?s2)
+                (takes-course ?s1 ?c ?l)
+                (takes-course ?s2 ?c ?l)))
+            (not
+                (done-extra-curricular-six ?s ?c ?l)
+            )
+            (done-extra-curricular-five ?s ?c ?l)
+        )
+        :effect (and 
+            (done-extra-curricular-six ?s ?c ?l)
+            (increase (duration) 45)
+        )
+    )
+
+    (:action do-team-one-extra-curricular-seven
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (or
+                (grade-a ?s ?c ?l)
+                (grade-b ?s ?c ?l)
+            )
+            (on-team one ?s)
+            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
+            (and (not (= ?s1 ?s2))
+                (on-team one ?s1)
+                (on-team one ?s2)
+                (takes-course ?s1 ?c ?l)
+                (takes-course ?s2 ?c ?l)))
+            (not
+                (done-extra-curricular-seven ?s ?c ?l)
+            )
+            (done-extra-curricular-six ?s ?c ?l)
+        )
+        :effect (and 
+            (done-extra-curricular-seven ?s ?c ?l)
+            (increase (duration) 45)
+        )
+    )
+
+    (:action do-team-two-extra-curricular-seven
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (or
+                (grade-a ?s ?c ?l)
+                (grade-b ?s ?c ?l)
+            )
+            (on-team two ?s)
+            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
+            (and (not (= ?s1 ?s2))
+                (on-team two ?s1)
+                (on-team two ?s2)
+                (takes-course ?s1 ?c ?l)
+                (takes-course ?s2 ?c ?l)))
+            (not
+                (done-extra-curricular-seven ?s ?c ?l)
+            )
+            (done-extra-curricular-six ?s ?c ?l)
+        )
+        :effect (and 
+            (done-extra-curricular-seven ?s ?c ?l)
+            (increase (duration) 45)
+        )
+    )
+
+    (:action do-team-three-extra-curricular-seven
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (or
+                (grade-a ?s ?c ?l)
+                (grade-b ?s ?c ?l)
+            )
+            (on-team three ?s)
+            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
+            (and (not (= ?s1 ?s2))
+                (on-team three ?s1)
+                (on-team three ?s2)
+                (takes-course ?s1 ?c ?l)
+                (takes-course ?s2 ?c ?l)))
+            (not
+                (done-extra-curricular-seven ?s ?c ?l)
+            )
+            (done-extra-curricular-six ?s ?c ?l)
+        )
+        :effect (and 
+            (done-extra-curricular-seven ?s ?c ?l)
+            (increase (duration) 45)
+        )
+    )
+
+    (:action do-team-four-extra-curricular-seven
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (or
+                (grade-a ?s ?c ?l)
+                (grade-b ?s ?c ?l)
+            )
+            (on-team four ?s)
+            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
+            (and (not (= ?s1 ?s2))
+                (on-team four ?s1)
+                (on-team four ?s2)
+                (takes-course ?s1 ?c ?l)
+                (takes-course ?s2 ?c ?l)))
+            (not
+                (done-extra-curricular-seven ?s ?c ?l)
+            )
+            (done-extra-curricular-six ?s ?c ?l)
+        )
+        :effect (and 
+            (done-extra-curricular-seven ?s ?c ?l)
+            (increase (duration) 45)
+        )
+    )
+
+    (:action do-team-one-extra-curricular-eight
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (or
+                (grade-a ?s ?c ?l)
+                (grade-b ?s ?c ?l)
+            )
+            (on-team one ?s)
+            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
+            (and (not (= ?s1 ?s2))
+                (on-team one ?s1)
+                (on-team one ?s2)
+                (takes-course ?s1 ?c ?l)
+                (takes-course ?s2 ?c ?l)))
+            (not
+                (done-extra-curricular-eight ?s ?c ?l)
+            )
+            (done-extra-curricular-seven ?s ?c ?l)
+        )
+        :effect (and 
+            (done-extra-curricular-eight ?s ?c ?l)
+            (increase (duration) 45)
+        )
+    )
+
+    (:action do-team-two-extra-curricular-eight
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (or
+                (grade-a ?s ?c ?l)
+                (grade-b ?s ?c ?l)
+            )
+            (on-team two ?s)
+            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
+            (and (not (= ?s1 ?s2))
+                (on-team two ?s1)
+                (on-team two ?s2)
+                (takes-course ?s1 ?c ?l)
+                (takes-course ?s2 ?c ?l)))
+            (not
+                (done-extra-curricular-eight ?s ?c ?l)
+            )
+            (done-extra-curricular-seven ?s ?c ?l)
+        )
+        :effect (and 
+            (done-extra-curricular-eight ?s ?c ?l)
+            (increase (duration) 45)
+        )
+    )
+
+    (:action do-team-three-extra-curricular-eight
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (or
+                (grade-a ?s ?c ?l)
+                (grade-b ?s ?c ?l)
+            )
+            (on-team three ?s)
+            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
+            (and (not (= ?s1 ?s2))
+                (on-team three ?s1)
+                (on-team three ?s2)
+                (takes-course ?s1 ?c ?l)
+                (takes-course ?s2 ?c ?l)))
+            (not
+                (done-extra-curricular-eight ?s ?c ?l)
+            )
+            (done-extra-curricular-seven ?s ?c ?l)
+        )
+        :effect (and 
+            (done-extra-curricular-eight ?s ?c ?l)
+            (increase (duration) 45)
+        )
+    )
+
+    (:action do-team-four-extra-curricular-eight
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (or
+                (grade-a ?s ?c ?l)
+                (grade-b ?s ?c ?l)
+            )
+            (on-team four ?s)
+            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
+            (and (not (= ?s1 ?s2))
+                (on-team four ?s1)
+                (on-team four ?s2)
+                (takes-course ?s1 ?c ?l)
+                (takes-course ?s2 ?c ?l)))
+            (not
+                (done-extra-curricular-eight ?s ?c ?l)
+            )
+            (done-extra-curricular-seven ?s ?c ?l)
+        )
+        :effect (and 
+            (done-extra-curricular-eight ?s ?c ?l)
+            (increase (duration) 45)
+        )
+    )
     
     (:action finish-course
         :parameters (?s - student ?c - course ?l - course-level)
@@ -425,5 +1257,4 @@
             (finished-course ?s ?c ?l)
         )
     )
-    
 )
