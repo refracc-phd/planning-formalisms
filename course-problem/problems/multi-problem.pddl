@@ -34,7 +34,7 @@
         (can-pomodoro stewart music adv-higher)
         (can-pomodoro stewart english national-five)
         (can-pomodoro stewart maths national-four)
-        (can-pomodoro stewart compsci higher)
+        (can-pomodoro stewart comp-sci higher)
     )
 
     (:goal
