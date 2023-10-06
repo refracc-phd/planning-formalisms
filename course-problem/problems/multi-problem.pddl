@@ -31,6 +31,10 @@
         (uses-strategy stewart pomodoro)
         (has-received-support stewart none)
         (student-vark-type stewart multimodal)
+        (can-pomodoro stewart music adv-higher)
+        (can-pomodoro stewart english national-five)
+        (can-pomodoro stewart maths national-four)
+        (can-pomodoro stewart compsci higher)
     )
 
     (:goal

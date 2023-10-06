@@ -413,19 +413,6 @@
         )
     )
 
-    (:action do-pomodoro
-        :parameters (?s - student ?c - course ?l - course-level)
-        :precondition (and 
-            (takes-course ?s ?c ?l)
-            (uses-strategy ?s pomodoro)
-        )
-        :effect (and 
-            (increase (duration) 576) ; 18 additional mins per lesson * 8 weeks * 4 units
-            (can-pomodoro ?s ?c ?l)
-        )
-    )
-    
-
     (:action finish-course-pomodoro
         :parameters (?s - student ?c - course ?l - course-level)
         :precondition (and 
@@ -434,6 +421,7 @@
             (can-pomodoro ?s ?c ?l)
         )
         :effect (and 
+            (increase (duration) 576) ; 18 additional mins per lesson * 8 weeks * 4 units
             (finished-course ?s ?c ?l)
         )
     )
