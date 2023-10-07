@@ -106,6 +106,19 @@
         (takes-course sam textiles national-four) (grade-p sam textiles national-four)
         (takes-course sam spanish national-five) (grade-a sam spanish national-five)
         (takes-course sam practical-woodwork national-four) (grade-p sam practical-woodwork national-four)
+
+        (team emily four)
+        (team james three)
+        (team sophia one)
+        (team ben two)
+        (team olivia three)
+        (team daniel four)
+        (team mia one)
+        (team alex two)
+        (team charlotte four)
+        (team will three)
+        (team ava one)
+        (team sam two)
     )
 
     (:goal
