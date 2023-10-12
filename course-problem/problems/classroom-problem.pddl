@@ -63,7 +63,7 @@
         ; (takes-course daniel mandarin national-five) (grade-b daniel mandarin national-five)
         ; (takes-course daniel politics national-four) (grade-p daniel politics national-four)
 
-        (takes-course mia esol national-four) (grade-p mia esol national-four)
+        (takes-course mia english higher) (grade-a mia english higher)
         (takes-course mia drama higher) (grade-b mia drama higher)
         (takes-course mia music-tech national-five) (grade-c mia music-tech national-five)
         (takes-course mia phys-ed national-four) (grade-p mia phys-ed national-four)
@@ -91,7 +91,7 @@
         ; (takes-course will german national-five) (grade-a will german national-five)
         ; (takes-course will design-manufacture national-four) (grade-p will design-manufacture national-four)
 
-        (takes-course ava english national-four) (grade-p ava english national-four)
+        (takes-course ava english higher) (grade-a ava english higher)
         (takes-course ava dance higher) (grade-a ava dance higher)
         (takes-course ava maths national-five) (grade-a ava maths national-five)
         (takes-course ava textiles national-four) (grade-p ava textiles national-four)
