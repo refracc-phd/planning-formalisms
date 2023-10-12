@@ -163,7 +163,7 @@
             ; (finished-course daniel mandarin national-five)
             ; (finished-course daniel politics national-four)
 
-            (finished-course mia esol national-four)
+            (finished-course mia english higher)
             (finished-course mia drama higher)
             (finished-course mia music-tech national-five)
             (finished-course mia phys-ed national-four)
@@ -191,7 +191,7 @@
             ; (finished-course will german national-five)
             ; (finished-course will design-manufacture national-four)
 
-            (finished-course ava english national-four)
+            (finished-course ava english higher)
             (finished-course ava dance higher)
             (finished-course ava maths national-five)
             (finished-course ava textiles national-four)
