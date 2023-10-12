@@ -88,7 +88,6 @@
             (takes-course ?s ?c ?l)
             (or
                 (grade-a ?s ?c ?l)
-                (grade-b ?s ?c ?l)
             )
             (not
                 (done-extra-curricular-two ?s ?c ?l)
@@ -127,7 +126,6 @@
             (takes-course ?s ?c ?l)
             (or
                 (grade-a ?s ?c ?l)
-                (grade-b ?s ?c ?l)
             )
             (not
                 (done-extra-curricular-four ?s ?c ?l)
@@ -167,7 +165,6 @@
             (takes-course ?s ?c ?l)
             (or
                 (grade-a ?s ?c ?l)
-                (grade-b ?s ?c ?l)
             )
             (not
                 (done-extra-curricular-six ?s ?c ?l)
@@ -207,7 +204,6 @@
             (takes-course ?s ?c ?l)
             (or
                 (grade-a ?s ?c ?l)
-                (grade-b ?s ?c ?l)
             )
             (not
                 (done-extra-curricular-eight ?s ?c ?l)
@@ -512,7 +508,6 @@
             (takes-course ?s ?c ?l)
             (or
                 (grade-a ?s ?c ?l)
-                (grade-b ?s ?c ?l)
             )
             (on-team one ?s)
             (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
@@ -538,7 +533,6 @@
             (takes-course ?s ?c ?l)
             (or
                 (grade-a ?s ?c ?l)
-                (grade-b ?s ?c ?l)
             )
             (on-team two ?s)
             (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
@@ -564,7 +558,6 @@
             (takes-course ?s ?c ?l)
             (or
                 (grade-a ?s ?c ?l)
-                (grade-b ?s ?c ?l)
             )
             (on-team three ?s)
             (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
@@ -590,7 +583,6 @@
             (takes-course ?s ?c ?l)
             (or
                 (grade-a ?s ?c ?l)
-                (grade-b ?s ?c ?l)
             )
             (on-team four ?s)
             (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
@@ -720,7 +712,6 @@
             (takes-course ?s ?c ?l)
             (or
                 (grade-a ?s ?c ?l)
-                (grade-b ?s ?c ?l)
             )
             (on-team one ?s)
             (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
@@ -746,7 +737,6 @@
             (takes-course ?s ?c ?l)
             (or
                 (grade-a ?s ?c ?l)
-                (grade-b ?s ?c ?l)
             )
             (on-team two ?s)
             (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
@@ -772,7 +762,6 @@
             (takes-course ?s ?c ?l)
             (or
                 (grade-a ?s ?c ?l)
-                (grade-b ?s ?c ?l)
             )
             (on-team three ?s)
             (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
@@ -798,7 +787,6 @@
             (takes-course ?s ?c ?l)
             (or
                 (grade-a ?s ?c ?l)
-                (grade-b ?s ?c ?l)
             )
             (on-team four ?s)
             (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
@@ -928,7 +916,6 @@
             (takes-course ?s ?c ?l)
             (or
                 (grade-a ?s ?c ?l)
-                (grade-b ?s ?c ?l)
             )
             (on-team one ?s)
             (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
@@ -954,7 +941,6 @@
             (takes-course ?s ?c ?l)
             (or
                 (grade-a ?s ?c ?l)
-                (grade-b ?s ?c ?l)
             )
             (on-team two ?s)
             (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
@@ -980,7 +966,6 @@
             (takes-course ?s ?c ?l)
             (or
                 (grade-a ?s ?c ?l)
-                (grade-b ?s ?c ?l)
             )
             (on-team three ?s)
             (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
@@ -1006,7 +991,6 @@
             (takes-course ?s ?c ?l)
             (or
                 (grade-a ?s ?c ?l)
-                (grade-b ?s ?c ?l)
             )
             (on-team four ?s)
             (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
@@ -1136,7 +1120,6 @@
             (takes-course ?s ?c ?l)
             (or
                 (grade-a ?s ?c ?l)
-                (grade-b ?s ?c ?l)
             )
             (on-team one ?s)
             (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
@@ -1162,7 +1145,6 @@
             (takes-course ?s ?c ?l)
             (or
                 (grade-a ?s ?c ?l)
-                (grade-b ?s ?c ?l)
             )
             (on-team two ?s)
             (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
@@ -1188,7 +1170,6 @@
             (takes-course ?s ?c ?l)
             (or
                 (grade-a ?s ?c ?l)
-                (grade-b ?s ?c ?l)
             )
             (on-team three ?s)
             (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
@@ -1214,7 +1195,6 @@
             (takes-course ?s ?c ?l)
             (or
                 (grade-a ?s ?c ?l)
-                (grade-b ?s ?c ?l)
             )
             (on-team four ?s)
             (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
