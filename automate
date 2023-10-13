@@ -172,7 +172,7 @@ perform_enhsp() {
     
     # Run all heuristics in parallel for the current problem file
     for heuristic in "${heuristics[@]}"; do
-      java -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "$heuristic" -sp "$problem_file-$heuristic.plan" &
+      java -Xmx10G -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "$heuristic" -sp "$problem_file-$heuristic.plan" &
     done
   done
   wait

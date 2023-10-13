@@ -19,7 +19,7 @@
     )
 
     (:init
-        (= (duration) 0)
+        (= (reward) 0)
 
         ; (takes-course emily english national-five) (grade-b emily english national-five)
         ; (takes-course emily drama higher) (grade-a emily drama higher)
@@ -35,12 +35,13 @@
         ; (takes-course james spanish national-five) (grade-a james spanish national-five)
         ; (takes-course james history national-four) (grade-p james history national-four)
 
-        (takes-course sophia english higher) (grade-a sophia english higher)
-        (takes-course sophia dance higher) (grade-a sophia dance higher)
-        (takes-course sophia music-tech national-five) (grade-c sophia music-tech national-five)
-        (takes-course sophia maths national-four) (grade-p sophia maths national-four)
-        (takes-course sophia italian national-five) (grade-a sophia italian national-five)
-        (takes-course sophia modern-studies national-four) (grade-p sophia modern-studies national-four)
+        (takes-course sophia english higher) 
+        (grade-b sophia english higher)
+        ; (takes-course sophia dance higher) (grade-a sophia dance higher)
+        ; (takes-course sophia music-tech national-five) (grade-c sophia music-tech national-five)
+        ; (takes-course sophia maths national-four) (grade-p sophia maths national-four)
+        ; (takes-course sophia italian national-five) (grade-a sophia italian national-five)
+        ; (takes-course sophia modern-studies national-four) (grade-p sophia modern-studies national-four)
 
         ; (takes-course ben esol national-four) (grade-p ben esol national-four)
         ; (takes-course ben drama higher) (grade-c ben drama higher)
@@ -63,12 +64,13 @@
         ; (takes-course daniel mandarin national-five) (grade-b daniel mandarin national-five)
         ; (takes-course daniel politics national-four) (grade-p daniel politics national-four)
 
-        (takes-course mia english higher) (grade-a mia english higher)
-        (takes-course mia drama higher) (grade-b mia drama higher)
-        (takes-course mia music-tech national-five) (grade-c mia music-tech national-five)
-        (takes-course mia phys-ed national-four) (grade-p mia phys-ed national-four)
-        (takes-course mia spanish national-five) (grade-a mia spanish national-five)
-        (takes-course mia admin-it national-four) (grade-p mia admin-it national-four)
+        (takes-course mia english higher) 
+        (grade-a mia english higher)
+        ; (takes-course mia drama higher) (grade-b mia drama higher)
+        ; (takes-course mia music-tech national-five) (grade-c mia music-tech national-five)
+        ; (takes-course mia phys-ed national-four) (grade-p mia phys-ed national-four)
+        ; (takes-course mia spanish national-five) (grade-a mia spanish national-five)
+        ; (takes-course mia admin-it national-four) (grade-p mia admin-it national-four)
 
         ; (takes-course alex english national-four) (grade-p alex english national-four)
         ; (takes-course alex art-design higher) (grade-a alex art-design higher)
@@ -91,12 +93,13 @@
         ; (takes-course will german national-five) (grade-a will german national-five)
         ; (takes-course will design-manufacture national-four) (grade-p will design-manufacture national-four)
 
-        (takes-course ava english higher) (grade-a ava english higher)
-        (takes-course ava dance higher) (grade-a ava dance higher)
-        (takes-course ava maths national-five) (grade-a ava maths national-five)
-        (takes-course ava textiles national-four) (grade-p ava textiles national-four)
-        (takes-course ava mandarin national-five) (grade-c ava mandarin national-five)
-        (takes-course ava graph-comm national-four) (grade-p ava graph-comm national-four)
+        (takes-course ava english higher) 
+        (grade-a ava english higher)
+        ; (takes-course ava dance higher) (grade-a ava dance higher)
+        ; (takes-course ava maths national-five) (grade-a ava maths national-five)
+        ; (takes-course ava textiles national-four) (grade-p ava textiles national-four)
+        ; (takes-course ava mandarin national-five) (grade-c ava mandarin national-five)
+        ; (takes-course ava graph-comm national-four) (grade-p ava graph-comm national-four)
 
         ; (takes-course sam esol national-four) (grade-p sam esol national-four)
         ; (takes-course sam drama higher) (grade-c sam drama higher)
@@ -107,16 +110,18 @@
 
         ; (team emily four)
         ; (team james three)
-        (team sophia one)
+        (on-team sophia one)
         ; (team ben two)
         ; (team olivia three)
         ; (team daniel four)
-        (team mia one)
+        (on-team mia one)
         ; (team alex two)
         ; (team charlotte four)
         ; (team will three)
-        (team ava one)
+        (on-team ava one)
         ; (team sam two)
+
+        (team-not-empty one)
     )
 
     (:goal
@@ -136,11 +141,11 @@
             ; (finished-course james history national-four)
 
             (finished-course sophia english higher)
-            (finished-course sophia dance higher)
-            (finished-course sophia music-tech national-five)
-            (finished-course sophia maths national-four)
-            (finished-course sophia italian national-five)
-            (finished-course sophia modern-studies national-four)
+            ; (finished-course sophia dance higher)
+            ; (finished-course sophia music-tech national-five)
+            ; (finished-course sophia maths national-four)
+            ; (finished-course sophia italian national-five)
+            ; (finished-course sophia modern-studies national-four)
 
             ; (finished-course ben esol national-four)
             ; (finished-course ben drama higher)
@@ -164,11 +169,11 @@
             ; (finished-course daniel politics national-four)
 
             (finished-course mia english higher)
-            (finished-course mia drama higher)
-            (finished-course mia music-tech national-five)
-            (finished-course mia phys-ed national-four)
-            (finished-course mia spanish national-five)
-            (finished-course mia admin-it national-four)
+            ; (finished-course mia drama higher)
+            ; (finished-course mia music-tech national-five)
+            ; (finished-course mia phys-ed national-four)
+            ; (finished-course mia spanish national-five)
+            ; (finished-course mia admin-it national-four)
 
             ; (finished-course alex english national-four)
             ; (finished-course alex art-design higher)
@@ -192,11 +197,11 @@
             ; (finished-course will design-manufacture national-four)
 
             (finished-course ava english higher)
-            (finished-course ava dance higher)
-            (finished-course ava maths national-five)
-            (finished-course ava textiles national-four)
-            (finished-course ava mandarin national-five)
-            (finished-course ava graph-comm national-four)
+            ; (finished-course ava dance higher)
+            ; (finished-course ava maths national-five)
+            ; (finished-course ava textiles national-four)
+            ; (finished-course ava mandarin national-five)
+            ; (finished-course ava graph-comm national-four)
 
             ; (finished-course sam esol national-four)
             ; (finished-course sam drama higher)
@@ -208,7 +213,7 @@
         )
     )
 
-    (:metric minimize
-        (duration)
+    (:metric maximize
+        (reward)
     )
 )

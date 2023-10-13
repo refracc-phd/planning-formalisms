@@ -58,10 +58,11 @@
         (can-pomodoro ?s - student ?c - course ?l - course-level)
 
         (on-team ?t - team ?s - student)
+        (team-not-empty ?t - team)
     )
 
     (:functions
-        (duration)
+        (reward)
     )
 
     (:action do-extra-curricular-one
@@ -78,7 +79,7 @@
         )
         :effect (and 
             (done-extra-curricular-one ?s ?c ?l)
-            (increase (duration) 60)
+            (increase (reward) 60)
         )
     )
 
@@ -86,9 +87,7 @@
         :parameters (?s - student ?c - course ?l - course-level)
         :precondition (and 
             (takes-course ?s ?c ?l)
-            (or
-                (grade-a ?s ?c ?l)
-            )
+            (grade-a ?s ?c ?l)
             (not
                 (done-extra-curricular-two ?s ?c ?l)
             )
@@ -96,7 +95,7 @@
         )
         :effect (and 
             (done-extra-curricular-two ?s ?c ?l)
-            (increase (duration) 60)
+            (increase (reward) 60)
         )
     )
 
@@ -116,7 +115,7 @@
         )
         :effect (and 
             (done-extra-curricular-three ?s ?c ?l)
-            (increase (duration) 60)
+            (increase (reward) 60)
         )
     )
 
@@ -124,9 +123,7 @@
         :parameters (?s - student ?c - course ?l - course-level)
         :precondition (and 
             (takes-course ?s ?c ?l)
-            (or
-                (grade-a ?s ?c ?l)
-            )
+            (grade-a ?s ?c ?l)
             (not
                 (done-extra-curricular-four ?s ?c ?l)
             )
@@ -135,7 +132,7 @@
         )
         :effect (and 
             (done-extra-curricular-four ?s ?c ?l)
-            (increase (duration) 60)
+            (increase (reward) 60)
         )
     )
 
@@ -155,7 +152,7 @@
         )
         :effect (and 
             (done-extra-curricular-five ?s ?c ?l)
-            (increase (duration) 60)
+            (increase (reward) 60)
         )
     )
 
@@ -163,9 +160,7 @@
         :parameters (?s - student ?c - course ?l - course-level)
         :precondition (and 
             (takes-course ?s ?c ?l)
-            (or
-                (grade-a ?s ?c ?l)
-            )
+            (grade-a ?s ?c ?l)
             (not
                 (done-extra-curricular-six ?s ?c ?l)
             )
@@ -174,7 +169,7 @@
         )
         :effect (and 
             (done-extra-curricular-six ?s ?c ?l)
-            (increase (duration) 60)
+            (increase (reward) 60)
         )
     )
 
@@ -194,7 +189,7 @@
         )
         :effect (and 
             (done-extra-curricular-seven ?s ?c ?l)
-            (increase (duration) 60)
+            (increase (reward) 60)
         )
     )
 
@@ -202,9 +197,7 @@
         :parameters (?s - student ?c - course ?l - course-level)
         :precondition (and 
             (takes-course ?s ?c ?l)
-            (or
-                (grade-a ?s ?c ?l)
-            )
+            (grade-a ?s ?c ?l)
             (not
                 (done-extra-curricular-eight ?s ?c ?l)
             )
@@ -213,7 +206,7 @@
         )
         :effect (and 
             (done-extra-curricular-eight ?s ?c ?l)
-            (increase (duration) 60)
+            (increase (reward) 60)
         )
     )
     
@@ -226,7 +219,7 @@
             (done-week-eight ?s ?c ?l)
         )
         :effect (and
-            (increase (duration) 60)
+            (increase (reward) 60)
             (done-unit-one ?s ?c ?l)
             (not(done-week-eight ?s ?c ?l))
             (not(done-week-seven ?s ?c ?l))
@@ -248,7 +241,7 @@
             (done-week-eight ?s ?c ?l)
         )
         :effect (and
-            (increase (duration) 60)
+            (increase (reward) 60)
             (done-unit-two ?s ?c ?l)
             (not(done-week-eight ?s ?c ?l))
             (not(done-week-seven ?s ?c ?l))
@@ -270,7 +263,7 @@
             (done-week-eight ?s ?c ?l)
         )
         :effect (and
-            (increase (duration) 60)
+            (increase (reward) 60)
             (done-unit-three ?s ?c ?l)
             (not(done-week-eight ?s ?c ?l))
             (not(done-week-seven ?s ?c ?l))
@@ -292,7 +285,7 @@
             (done-week-eight ?s ?c ?l)
         )
         :effect (and
-            (increase (duration) 60)
+            (increase (reward) 60)
             (done-unit-four ?s ?c ?l)
             (not(done-week-eight ?s ?c ?l))
             (not(done-week-seven ?s ?c ?l))
@@ -313,7 +306,7 @@
         )
         :effect (and 
             (done-week-one ?s ?c ?l)
-            (increase (duration) 360)
+            (increase (reward) 360)
         )
     )
 
@@ -325,7 +318,7 @@
         )
         :effect (and 
             (done-week-two ?s ?c ?l)
-            (increase (duration) 360)
+            (increase (reward) 360)
         )
     )
 
@@ -337,7 +330,7 @@
         )
         :effect (and 
             (done-week-three ?s ?c ?l)
-            (increase (duration) 360)
+            (increase (reward) 360)
         )
     )
 
@@ -349,7 +342,7 @@
         )
         :effect (and 
             (done-week-four ?s ?c ?l)
-            (increase (duration) 360)
+            (increase (reward) 360)
         )
     )
 
@@ -361,7 +354,7 @@
         )
         :effect (and 
             (done-week-five ?s ?c ?l)
-            (increase (duration) 360)
+            (increase (reward) 360)
         )
     )
 
@@ -373,7 +366,7 @@
         )
         :effect (and 
             (done-week-six ?s ?c ?l)
-            (increase (duration) 360)
+            (increase (reward) 360)
         )
     )
 
@@ -385,7 +378,7 @@
         )
         :effect (and 
             (done-week-seven ?s ?c ?l)
-            (increase (duration) 360)
+            (increase (reward) 360)
         )
     )
 
@@ -397,7 +390,7 @@
         )
         :effect (and 
             (done-week-eight ?s ?c ?l)
-            (increase (duration) 360)
+            (increase (reward) 360)
         )
     )
 
@@ -410,20 +403,14 @@
                 (grade-b ?s ?c ?l)
             )
             (on-team one ?s)
-            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
-            (and (not (= ?s1 ?s2))
-                (on-team one ?s1)
-                (on-team one ?s2)
-                (takes-course ?s1 ?c ?l)
-                (takes-course ?s2 ?c ?l)
-                ))
             (not
                 (done-extra-curricular-one ?s ?c ?l)
             )
+            (team-not-empty one)
         )
         :effect (and 
             (done-extra-curricular-one ?s ?c ?l)
-            (increase (duration) 45)
+            (increase (reward) 500)
         )
     )
 
@@ -436,19 +423,14 @@
                 (grade-b ?s ?c ?l)
             )
             (on-team two ?s)
-            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
-            (and (not (= ?s1 ?s2))
-                (on-team two ?s1)
-                (on-team two ?s2)
-                (takes-course ?s1 ?c ?l)
-                (takes-course ?s2 ?c ?l)))
+            (team-not-empty two)
             (not
                 (done-extra-curricular-one ?s ?c ?l)
             )
         )
         :effect (and 
             (done-extra-curricular-one ?s ?c ?l)
-            (increase (duration) 45)
+            (increase (reward) 500)
         )
     )
 
@@ -461,19 +443,14 @@
                 (grade-b ?s ?c ?l)
             )
             (on-team three ?s)
-            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
-            (and (not (= ?s1 ?s2))
-                (on-team three ?s1)
-                (on-team three ?s2)
-                (takes-course ?s1 ?c ?l)
-                (takes-course ?s2 ?c ?l)))
+            (team-not-empty three)
             (not
                 (done-extra-curricular-one ?s ?c ?l)
             )
         )
         :effect (and 
             (done-extra-curricular-one ?s ?c ?l)
-            (increase (duration) 45)
+            (increase (reward) 500)
         )
     )
 
@@ -486,19 +463,14 @@
                 (grade-b ?s ?c ?l)
             )
             (on-team four ?s)
-            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
-            (and (not (= ?s1 ?s2))
-                (on-team four ?s1)
-                (on-team four ?s2)
-                (takes-course ?s1 ?c ?l)
-                (takes-course ?s2 ?c ?l)))
+            (team-not-empty four)
             (not
                 (done-extra-curricular-one ?s ?c ?l)
             )
         )
         :effect (and 
             (done-extra-curricular-one ?s ?c ?l)
-            (increase (duration) 45)
+            (increase (reward) 500)
         )
     )
 
@@ -506,16 +478,9 @@
         :parameters (?s - student ?c - course ?l - course-level)
         :precondition (and 
             (takes-course ?s ?c ?l)
-            (or
-                (grade-a ?s ?c ?l)
-            )
+            (grade-a ?s ?c ?l)
             (on-team one ?s)
-            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
-            (and (not (= ?s1 ?s2))
-                (on-team one ?s1)
-                (on-team one ?s2)
-                (takes-course ?s1 ?c ?l)
-                (takes-course ?s2 ?c ?l)))
+            (team-not-empty one)
             (not
                 (done-extra-curricular-two ?s ?c ?l)
             )
@@ -523,7 +488,7 @@
         )
         :effect (and 
             (done-extra-curricular-two ?s ?c ?l)
-            (increase (duration) 45)
+            (increase (reward) 500)
         )
     )
 
@@ -531,16 +496,9 @@
         :parameters (?s - student ?c - course ?l - course-level)
         :precondition (and 
             (takes-course ?s ?c ?l)
-            (or
-                (grade-a ?s ?c ?l)
-            )
+            (grade-a ?s ?c ?l)
             (on-team two ?s)
-            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
-            (and (not (= ?s1 ?s2))
-                (on-team two ?s1)
-                (on-team two ?s2)
-                (takes-course ?s1 ?c ?l)
-                (takes-course ?s2 ?c ?l)))
+            (team-not-empty two)
             (not
                 (done-extra-curricular-two ?s ?c ?l)
             )
@@ -548,7 +506,7 @@
         )
         :effect (and 
             (done-extra-curricular-two ?s ?c ?l)
-            (increase (duration) 45)
+            (increase (reward) 500)
         )
     )
 
@@ -556,16 +514,9 @@
         :parameters (?s - student ?c - course ?l - course-level)
         :precondition (and 
             (takes-course ?s ?c ?l)
-            (or
-                (grade-a ?s ?c ?l)
-            )
+            (grade-a ?s ?c ?l)
             (on-team three ?s)
-            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
-            (and (not (= ?s1 ?s2))
-                (on-team three ?s1)
-                (on-team three ?s2)
-                (takes-course ?s1 ?c ?l)
-                (takes-course ?s2 ?c ?l)))
+            (team-not-empty three)
             (not
                 (done-extra-curricular-two ?s ?c ?l)
             )
@@ -573,7 +524,7 @@
         )
         :effect (and 
             (done-extra-curricular-two ?s ?c ?l)
-            (increase (duration) 45)
+            (increase (reward) 500)
         )
     )
 
@@ -581,16 +532,9 @@
         :parameters (?s - student ?c - course ?l - course-level)
         :precondition (and 
             (takes-course ?s ?c ?l)
-            (or
-                (grade-a ?s ?c ?l)
-            )
+            (grade-a ?s ?c ?l)
             (on-team four ?s)
-            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
-            (and (not (= ?s1 ?s2))
-                (on-team four ?s1)
-                (on-team four ?s2)
-                (takes-course ?s1 ?c ?l)
-                (takes-course ?s2 ?c ?l)))
+            (team-not-empty four)
             (not
                 (done-extra-curricular-two ?s ?c ?l)
             )
@@ -598,7 +542,7 @@
         )
         :effect (and 
             (done-extra-curricular-two ?s ?c ?l)
-            (increase (duration) 45)
+            (increase (reward) 500)
         )
     )
 
@@ -611,12 +555,7 @@
                 (grade-b ?s ?c ?l)
             )
             (on-team one ?s)
-            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
-            (and (not (= ?s1 ?s2))
-                (on-team one ?s1)
-                (on-team one ?s2)
-                (takes-course ?s1 ?c ?l)
-                (takes-course ?s2 ?c ?l)))
+            (team-not-empty one)
             (not
                 (done-extra-curricular-three ?s ?c ?l)
             )
@@ -624,7 +563,7 @@
         )
         :effect (and 
             (done-extra-curricular-three ?s ?c ?l)
-            (increase (duration) 45)
+            (increase (reward) 500)
         )
     )
 
@@ -637,12 +576,7 @@
                 (grade-b ?s ?c ?l)
             )
             (on-team two ?s)
-            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
-            (and (not (= ?s1 ?s2))
-                (on-team two ?s1)
-                (on-team two ?s2)
-                (takes-course ?s1 ?c ?l)
-                (takes-course ?s2 ?c ?l)))
+            (team-not-empty two)
             (not
                 (done-extra-curricular-three ?s ?c ?l)
             )
@@ -650,7 +584,7 @@
         )
         :effect (and 
             (done-extra-curricular-three ?s ?c ?l)
-            (increase (duration) 45)
+            (increase (reward) 500)
         )
     )
 
@@ -663,12 +597,7 @@
                 (grade-b ?s ?c ?l)
             )
             (on-team three ?s)
-            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
-            (and (not (= ?s1 ?s2))
-                (on-team three ?s1)
-                (on-team three ?s2)
-                (takes-course ?s1 ?c ?l)
-                (takes-course ?s2 ?c ?l)))
+            (team-not-empty three)
             (not
                 (done-extra-curricular-three ?s ?c ?l)
             )
@@ -676,7 +605,7 @@
         )
         :effect (and 
             (done-extra-curricular-three ?s ?c ?l)
-            (increase (duration) 45)
+            (increase (reward) 500)
         )
     )
 
@@ -689,12 +618,7 @@
                 (grade-b ?s ?c ?l)
             )
             (on-team four ?s)
-            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
-            (and (not (= ?s1 ?s2))
-                (on-team four ?s1)
-                (on-team four ?s2)
-                (takes-course ?s1 ?c ?l)
-                (takes-course ?s2 ?c ?l)))
+            (team-not-empty four)
             (not
                 (done-extra-curricular-three ?s ?c ?l)
             )
@@ -702,7 +626,7 @@
         )
         :effect (and 
             (done-extra-curricular-three ?s ?c ?l)
-            (increase (duration) 45)
+            (increase (reward) 500)
         )
     )
 
@@ -710,16 +634,9 @@
         :parameters (?s - student ?c - course ?l - course-level)
         :precondition (and 
             (takes-course ?s ?c ?l)
-            (or
-                (grade-a ?s ?c ?l)
-            )
+            (grade-a ?s ?c ?l)
             (on-team one ?s)
-            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
-            (and (not (= ?s1 ?s2))
-                (on-team one ?s1)
-                (on-team one ?s2)
-                (takes-course ?s1 ?c ?l)
-                (takes-course ?s2 ?c ?l)))
+            (team-not-empty one)
             (not
                 (done-extra-curricular-four ?s ?c ?l)
             )
@@ -727,7 +644,7 @@
         )
         :effect (and 
             (done-extra-curricular-four ?s ?c ?l)
-            (increase (duration) 45)
+            (increase (reward) 500)
         )
     )
 
@@ -735,16 +652,9 @@
         :parameters (?s - student ?c - course ?l - course-level)
         :precondition (and 
             (takes-course ?s ?c ?l)
-            (or
-                (grade-a ?s ?c ?l)
-            )
+            (grade-a ?s ?c ?l)
             (on-team two ?s)
-            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
-            (and (not (= ?s1 ?s2))
-                (on-team two ?s1)
-                (on-team two ?s2)
-                (takes-course ?s1 ?c ?l)
-                (takes-course ?s2 ?c ?l)))
+            (team-not-empty two)
             (not
                 (done-extra-curricular-four ?s ?c ?l)
             )
@@ -752,7 +662,7 @@
         )
         :effect (and 
             (done-extra-curricular-four ?s ?c ?l)
-            (increase (duration) 45)
+            (increase (reward) 500)
         )
     )
 
@@ -760,16 +670,9 @@
         :parameters (?s - student ?c - course ?l - course-level)
         :precondition (and 
             (takes-course ?s ?c ?l)
-            (or
-                (grade-a ?s ?c ?l)
-            )
+            (grade-a ?s ?c ?l)
             (on-team three ?s)
-            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
-            (and (not (= ?s1 ?s2))
-                (on-team three ?s1)
-                (on-team three ?s2)
-                (takes-course ?s1 ?c ?l)
-                (takes-course ?s2 ?c ?l)))
+            (team-not-empty three)
             (not
                 (done-extra-curricular-four ?s ?c ?l)
             )
@@ -777,7 +680,7 @@
         )
         :effect (and 
             (done-extra-curricular-four ?s ?c ?l)
-            (increase (duration) 45)
+            (increase (reward) 500)
         )
     )
 
@@ -785,16 +688,9 @@
         :parameters (?s - student ?c - course ?l - course-level)
         :precondition (and 
             (takes-course ?s ?c ?l)
-            (or
-                (grade-a ?s ?c ?l)
-            )
+            (grade-a ?s ?c ?l)
             (on-team four ?s)
-            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
-            (and (not (= ?s1 ?s2))
-                (on-team four ?s1)
-                (on-team four ?s2)
-                (takes-course ?s1 ?c ?l)
-                (takes-course ?s2 ?c ?l)))
+            (team-not-empty four)
             (not
                 (done-extra-curricular-four ?s ?c ?l)
             )
@@ -802,7 +698,7 @@
         )
         :effect (and 
             (done-extra-curricular-four ?s ?c ?l)
-            (increase (duration) 45)
+            (increase (reward) 500)
         )
     )
 
@@ -815,12 +711,7 @@
                 (grade-b ?s ?c ?l)
             )
             (on-team one ?s)
-            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
-            (and (not (= ?s1 ?s2))
-                (on-team one ?s1)
-                (on-team one ?s2)
-                (takes-course ?s1 ?c ?l)
-                (takes-course ?s2 ?c ?l)))
+            (team-not-empty one)
             (not
                 (done-extra-curricular-five ?s ?c ?l)
             )
@@ -828,7 +719,7 @@
         )
         :effect (and 
             (done-extra-curricular-five ?s ?c ?l)
-            (increase (duration) 45)
+            (increase (reward) 500)
         )
     )
 
@@ -841,12 +732,7 @@
                 (grade-b ?s ?c ?l)
             )
             (on-team two ?s)
-            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
-            (and (not (= ?s1 ?s2))
-                (on-team two ?s1)
-                (on-team two ?s2)
-                (takes-course ?s1 ?c ?l)
-                (takes-course ?s2 ?c ?l)))
+            (team-not-empty two)
             (not
                 (done-extra-curricular-five ?s ?c ?l)
             )
@@ -854,7 +740,7 @@
         )
         :effect (and 
             (done-extra-curricular-five ?s ?c ?l)
-            (increase (duration) 45)
+            (increase (reward) 500)
         )
     )
 
@@ -867,12 +753,7 @@
                 (grade-b ?s ?c ?l)
             )
             (on-team three ?s)
-            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
-            (and (not (= ?s1 ?s2))
-                (on-team three ?s1)
-                (on-team three ?s2)
-                (takes-course ?s1 ?c ?l)
-                (takes-course ?s2 ?c ?l)))
+            (team-not-empty three)
             (not
                 (done-extra-curricular-five ?s ?c ?l)
             )
@@ -880,7 +761,7 @@
         )
         :effect (and 
             (done-extra-curricular-five ?s ?c ?l)
-            (increase (duration) 45)
+            (increase (reward) 500)
         )
     )
 
@@ -893,12 +774,7 @@
                 (grade-b ?s ?c ?l)
             )
             (on-team four ?s)
-            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
-            (and (not (= ?s1 ?s2))
-                (on-team four ?s1)
-                (on-team four ?s2)
-                (takes-course ?s1 ?c ?l)
-                (takes-course ?s2 ?c ?l)))
+            (team-not-empty four)
             (not
                 (done-extra-curricular-five ?s ?c ?l)
             )
@@ -906,7 +782,7 @@
         )
         :effect (and 
             (done-extra-curricular-five ?s ?c ?l)
-            (increase (duration) 45)
+            (increase (reward) 500)
         )
     )
 
@@ -914,16 +790,9 @@
         :parameters (?s - student ?c - course ?l - course-level)
         :precondition (and 
             (takes-course ?s ?c ?l)
-            (or
-                (grade-a ?s ?c ?l)
-            )
+            (grade-a ?s ?c ?l)
             (on-team one ?s)
-            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
-            (and (not (= ?s1 ?s2))
-                (on-team one ?s1)
-                (on-team one ?s2)
-                (takes-course ?s1 ?c ?l)
-                (takes-course ?s2 ?c ?l)))
+            (team-not-empty one)
             (not
                 (done-extra-curricular-six ?s ?c ?l)
             )
@@ -931,7 +800,7 @@
         )
         :effect (and 
             (done-extra-curricular-six ?s ?c ?l)
-            (increase (duration) 45)
+            (increase (reward) 500)
         )
     )
 
@@ -939,16 +808,9 @@
         :parameters (?s - student ?c - course ?l - course-level)
         :precondition (and 
             (takes-course ?s ?c ?l)
-            (or
-                (grade-a ?s ?c ?l)
-            )
+            (grade-a ?s ?c ?l)
             (on-team two ?s)
-            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
-            (and (not (= ?s1 ?s2))
-                (on-team two ?s1)
-                (on-team two ?s2)
-                (takes-course ?s1 ?c ?l)
-                (takes-course ?s2 ?c ?l)))
+            (team-not-empty two)
             (not
                 (done-extra-curricular-six ?s ?c ?l)
             )
@@ -956,7 +818,7 @@
         )
         :effect (and 
             (done-extra-curricular-six ?s ?c ?l)
-            (increase (duration) 45)
+            (increase (reward) 500)
         )
     )
 
@@ -964,16 +826,9 @@
         :parameters (?s - student ?c - course ?l - course-level)
         :precondition (and 
             (takes-course ?s ?c ?l)
-            (or
-                (grade-a ?s ?c ?l)
-            )
+            (grade-a ?s ?c ?l)
             (on-team three ?s)
-            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
-            (and (not (= ?s1 ?s2))
-                (on-team three ?s1)
-                (on-team three ?s2)
-                (takes-course ?s1 ?c ?l)
-                (takes-course ?s2 ?c ?l)))
+            (team-not-empty three)
             (not
                 (done-extra-curricular-six ?s ?c ?l)
             )
@@ -981,7 +836,7 @@
         )
         :effect (and 
             (done-extra-curricular-six ?s ?c ?l)
-            (increase (duration) 45)
+            (increase (reward) 500)
         )
     )
 
@@ -989,16 +844,9 @@
         :parameters (?s - student ?c - course ?l - course-level)
         :precondition (and 
             (takes-course ?s ?c ?l)
-            (or
-                (grade-a ?s ?c ?l)
-            )
+            (grade-a ?s ?c ?l)
             (on-team four ?s)
-            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
-            (and (not (= ?s1 ?s2))
-                (on-team four ?s1)
-                (on-team four ?s2)
-                (takes-course ?s1 ?c ?l)
-                (takes-course ?s2 ?c ?l)))
+            (team-not-empty four)
             (not
                 (done-extra-curricular-six ?s ?c ?l)
             )
@@ -1006,7 +854,7 @@
         )
         :effect (and 
             (done-extra-curricular-six ?s ?c ?l)
-            (increase (duration) 45)
+            (increase (reward) 500)
         )
     )
 
@@ -1019,12 +867,7 @@
                 (grade-b ?s ?c ?l)
             )
             (on-team one ?s)
-            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
-            (and (not (= ?s1 ?s2))
-                (on-team one ?s1)
-                (on-team one ?s2)
-                (takes-course ?s1 ?c ?l)
-                (takes-course ?s2 ?c ?l)))
+            (team-not-empty one)
             (not
                 (done-extra-curricular-seven ?s ?c ?l)
             )
@@ -1032,7 +875,7 @@
         )
         :effect (and 
             (done-extra-curricular-seven ?s ?c ?l)
-            (increase (duration) 45)
+            (increase (reward) 500)
         )
     )
 
@@ -1045,12 +888,7 @@
                 (grade-b ?s ?c ?l)
             )
             (on-team two ?s)
-            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
-            (and (not (= ?s1 ?s2))
-                (on-team two ?s1)
-                (on-team two ?s2)
-                (takes-course ?s1 ?c ?l)
-                (takes-course ?s2 ?c ?l)))
+            (team-not-empty two)
             (not
                 (done-extra-curricular-seven ?s ?c ?l)
             )
@@ -1058,7 +896,7 @@
         )
         :effect (and 
             (done-extra-curricular-seven ?s ?c ?l)
-            (increase (duration) 45)
+            (increase (reward) 500)
         )
     )
 
@@ -1071,12 +909,7 @@
                 (grade-b ?s ?c ?l)
             )
             (on-team three ?s)
-            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
-            (and (not (= ?s1 ?s2))
-                (on-team three ?s1)
-                (on-team three ?s2)
-                (takes-course ?s1 ?c ?l)
-                (takes-course ?s2 ?c ?l)))
+            (team-not-empty three)
             (not
                 (done-extra-curricular-seven ?s ?c ?l)
             )
@@ -1084,7 +917,7 @@
         )
         :effect (and 
             (done-extra-curricular-seven ?s ?c ?l)
-            (increase (duration) 45)
+            (increase (reward) 500)
         )
     )
 
@@ -1097,12 +930,7 @@
                 (grade-b ?s ?c ?l)
             )
             (on-team four ?s)
-            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
-            (and (not (= ?s1 ?s2))
-                (on-team four ?s1)
-                (on-team four ?s2)
-                (takes-course ?s1 ?c ?l)
-                (takes-course ?s2 ?c ?l)))
+            (team-not-empty four)
             (not
                 (done-extra-curricular-seven ?s ?c ?l)
             )
@@ -1110,7 +938,7 @@
         )
         :effect (and 
             (done-extra-curricular-seven ?s ?c ?l)
-            (increase (duration) 45)
+            (increase (reward) 500)
         )
     )
 
@@ -1118,16 +946,9 @@
         :parameters (?s - student ?c - course ?l - course-level)
         :precondition (and 
             (takes-course ?s ?c ?l)
-            (or
-                (grade-a ?s ?c ?l)
-            )
+            (grade-a ?s ?c ?l)
             (on-team one ?s)
-            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
-            (and (not (= ?s1 ?s2))
-                (on-team one ?s1)
-                (on-team one ?s2)
-                (takes-course ?s1 ?c ?l)
-                (takes-course ?s2 ?c ?l)))
+            (team-not-empty one)
             (not
                 (done-extra-curricular-eight ?s ?c ?l)
             )
@@ -1135,7 +956,7 @@
         )
         :effect (and 
             (done-extra-curricular-eight ?s ?c ?l)
-            (increase (duration) 45)
+            (increase (reward) 500)
         )
     )
 
@@ -1143,16 +964,9 @@
         :parameters (?s - student ?c - course ?l - course-level)
         :precondition (and 
             (takes-course ?s ?c ?l)
-            (or
-                (grade-a ?s ?c ?l)
-            )
+            (grade-a ?s ?c ?l)
             (on-team two ?s)
-            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
-            (and (not (= ?s1 ?s2))
-                (on-team two ?s1)
-                (on-team two ?s2)
-                (takes-course ?s1 ?c ?l)
-                (takes-course ?s2 ?c ?l)))
+            (team-not-empty one)
             (not
                 (done-extra-curricular-eight ?s ?c ?l)
             )
@@ -1160,7 +974,7 @@
         )
         :effect (and 
             (done-extra-curricular-eight ?s ?c ?l)
-            (increase (duration) 45)
+            (increase (reward) 500)
         )
     )
 
@@ -1168,16 +982,9 @@
         :parameters (?s - student ?c - course ?l - course-level)
         :precondition (and 
             (takes-course ?s ?c ?l)
-            (or
-                (grade-a ?s ?c ?l)
-            )
+            (grade-a ?s ?c ?l)
             (on-team three ?s)
-            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
-            (and (not (= ?s1 ?s2))
-                (on-team three ?s1)
-                (on-team three ?s2)
-                (takes-course ?s1 ?c ?l)
-                (takes-course ?s2 ?c ?l)))
+            (team-not-empty three)
             (not
                 (done-extra-curricular-eight ?s ?c ?l)
             )
@@ -1185,7 +992,7 @@
         )
         :effect (and 
             (done-extra-curricular-eight ?s ?c ?l)
-            (increase (duration) 45)
+            (increase (reward) 500)
         )
     )
 
@@ -1193,16 +1000,9 @@
         :parameters (?s - student ?c - course ?l - course-level)
         :precondition (and 
             (takes-course ?s ?c ?l)
-            (or
-                (grade-a ?s ?c ?l)
-            )
+            (grade-a ?s ?c ?l)
             (on-team four ?s)
-            (exists (?s1 ?s2 - student)  ; Check for at least two students on the team
-            (and (not (= ?s1 ?s2))
-                (on-team four ?s1)
-                (on-team four ?s2)
-                (takes-course ?s1 ?c ?l)
-                (takes-course ?s2 ?c ?l)))
+            (team-not-empty four)
             (not
                 (done-extra-curricular-eight ?s ?c ?l)
             )
@@ -1210,7 +1010,7 @@
         )
         :effect (and 
             (done-extra-curricular-eight ?s ?c ?l)
-            (increase (duration) 45)
+            (increase (reward) 500)
         )
     )
     
@@ -1233,7 +1033,7 @@
             (can-pomodoro ?s ?c ?l)
         )
         :effect (and 
-            (increase (duration) 576) ; 18 additional mins per lesson * 8 weeks * 4 units
+            (increase (reward) 576) ; 18 additional mins per lesson * 8 weeks * 4 units
             (finished-course ?s ?c ?l)
         )
     )

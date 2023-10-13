@@ -18,7 +18,7 @@
     )
 
     (:init
-        (= (duration) 0)
+        (= (reward) 0)
 
         (takes-course stewart english national-five)
         (grade-b stewart english national-five)
@@ -35,6 +35,6 @@
     )
 
     (:metric maximize
-        (duration)
+        (reward)
     )
 )
