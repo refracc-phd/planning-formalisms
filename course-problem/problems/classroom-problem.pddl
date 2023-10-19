@@ -105,20 +105,7 @@
         ; (takes-course sam spanish national-five) (grade-a sam spanish national-five)
         ; (takes-course sam practical-woodwork national-four) (grade-p sam practical-woodwork national-four)
 
-        ; (on-team four emily)
-        ; (on-team three james)
-        (on-team one sophia)
-        ; (on-team two ben)
-        ; (on-team three olivia)
-        ; (on-team four daniel)
-        (on-team one mia)
-        ; (on-team two alex)
-        ; (on-team four charlotte)
-        ; (on-team three will)
-        (on-team one ava)
-        ; (on-team two sam )
-
-        (study-group one english higher)
+        (study-group english higher)
     )
 
     (:goal

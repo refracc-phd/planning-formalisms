@@ -19,7 +19,6 @@
         pomodoro - strategy
         week-one week-two week-three week-four week-five week-six week-seven week-eight - week
         unit-one unit-two unit-three unit-four - unit
-        one two three four - team
     )
     
     (:predicates
@@ -58,536 +57,11 @@
 
         (can-pomodoro ?s - student ?c - course ?l - course-level)
 
-        (on-team ?t - team ?s - student)
-        (study-group ?t - team ?c - course ?l - level)
+        (study-group ?c - course ?l - level)
     )
 
     (:functions
         (reward)
-    )
-
-    (:action do-team-one-extra-curricular-one
-        :parameters (?s - student ?c - course ?l - course-level)
-        :precondition (and 
-            (takes-course ?s ?c ?l)
-            (or
-                (grade-a ?s ?c ?l)
-                (grade-b ?s ?c ?l)
-            )
-            (on-team one ?s)
-            (study-group one ?c ?l)
-        )
-        :effect (and 
-            (done-extra-curricular-one ?s ?c ?l)
-            (increase (reward) 500)
-        )
-    )
-
-    (:action do-team-two-extra-curricular-one
-        :parameters (?s - student ?c - course ?l - course-level)
-        :precondition (and 
-            (takes-course ?s ?c ?l)
-            (or
-                (grade-a ?s ?c ?l)
-                (grade-b ?s ?c ?l)
-            )
-            (on-team two ?s)
-            (study-group two ?c ?l)
-        )
-        :effect (and 
-            (done-extra-curricular-one ?s ?c ?l)
-            (increase (reward) 500)
-        )
-    )
-
-    (:action do-team-three-extra-curricular-one
-        :parameters (?s - student ?c - course ?l - course-level)
-        :precondition (and 
-            (takes-course ?s ?c ?l)
-            (or
-                (grade-a ?s ?c ?l)
-                (grade-b ?s ?c ?l)
-            )
-            (on-team three ?s)
-            (study-group three ?c ?l)
-        )
-        :effect (and 
-            (done-extra-curricular-one ?s ?c ?l)
-            (increase (reward) 500)
-        )
-    )
-
-    (:action do-team-four-extra-curricular-one
-        :parameters (?s - student ?c - course ?l - course-level)
-        :precondition (and 
-            (takes-course ?s ?c ?l)
-            (or
-                (grade-a ?s ?c ?l)
-                (grade-b ?s ?c ?l)
-            )
-            (on-team four ?s)
-            (study-group four ?c ?l)
-        )
-        :effect (and 
-            (done-extra-curricular-one ?s ?c ?l)
-            (increase (reward) 500)
-        )
-    )
-
-    (:action do-team-one-extra-curricular-two
-        :parameters (?s - student ?c - course ?l - course-level)
-        :precondition (and 
-            (takes-course ?s ?c ?l)
-            (grade-a ?s ?c ?l)
-            (on-team one ?s)
-            (done-extra-curricular-one ?s ?c ?l)
-            (study-group one ?c ?l)
-        )
-        :effect (and 
-            (done-extra-curricular-two ?s ?c ?l)
-            (increase (reward) 500)
-        )
-    )
-
-    (:action do-team-two-extra-curricular-two
-        :parameters (?s - student ?c - course ?l - course-level)
-        :precondition (and 
-            (takes-course ?s ?c ?l)
-            (grade-a ?s ?c ?l)
-            (on-team two ?s)
-            (study-group two ?c ?l)
-            (done-extra-curricular-one ?s ?c ?l)
-        )
-        :effect (and 
-            (done-extra-curricular-two ?s ?c ?l)
-            (increase (reward) 500)
-        )
-    )
-
-    (:action do-team-three-extra-curricular-two
-        :parameters (?s - student ?c - course ?l - course-level)
-        :precondition (and 
-            (takes-course ?s ?c ?l)
-            (grade-a ?s ?c ?l)
-            (on-team three ?s)
-            (study-group three ?c ?l)
-            (done-extra-curricular-one ?s ?c ?l)
-        )
-        :effect (and 
-            (done-extra-curricular-two ?s ?c ?l)
-            (increase (reward) 500)
-        )
-    )
-
-    (:action do-team-four-extra-curricular-two
-        :parameters (?s - student ?c - course ?l - course-level)
-        :precondition (and 
-            (takes-course ?s ?c ?l)
-            (grade-a ?s ?c ?l)
-            (on-team four ?s)
-            (done-extra-curricular-one ?s ?c ?l)
-            (study-group four ?c ?l)
-        )
-        :effect (and 
-            (done-extra-curricular-two ?s ?c ?l)
-            (increase (reward) 500)
-        )
-    )
-
-    (:action do-team-one-extra-curricular-three
-        :parameters (?s - student ?c - course ?l - course-level)
-        :precondition (and 
-            (takes-course ?s ?c ?l)
-            (or
-                (grade-a ?s ?c ?l)
-                (grade-b ?s ?c ?l)
-            )
-            (on-team one ?s)
-            (study-group one ?c ?l)
-            (done-extra-curricular-two ?s ?c ?l)
-        )
-        :effect (and 
-            (done-extra-curricular-three ?s ?c ?l)
-            (increase (reward) 500)
-        )
-    )
-
-    (:action do-team-two-extra-curricular-three
-        :parameters (?s - student ?c - course ?l - course-level)
-        :precondition (and 
-            (takes-course ?s ?c ?l)
-            (or
-                (grade-a ?s ?c ?l)
-                (grade-b ?s ?c ?l)
-            )
-            (study-group two ?c ?l)
-            (on-team two ?s)
-            (done-extra-curricular-two ?s ?c ?l)
-        )
-        :effect (and 
-            (done-extra-curricular-three ?s ?c ?l)
-            (increase (reward) 500)
-        )
-    )
-
-    (:action do-team-three-extra-curricular-three
-        :parameters (?s - student ?c - course ?l - course-level)
-        :precondition (and 
-            (takes-course ?s ?c ?l)
-            (or
-                (grade-a ?s ?c ?l)
-                (grade-b ?s ?c ?l)
-            )
-            (on-team three ?s)
-            (study-group three ?c ?l)
-            (done-extra-curricular-two ?s ?c ?l)
-        )
-        :effect (and 
-            (done-extra-curricular-three ?s ?c ?l)
-            (increase (reward) 500)
-        )
-    )
-
-    (:action do-team-four-extra-curricular-three
-        :parameters (?s - student ?c - course ?l - course-level)
-        :precondition (and 
-            (takes-course ?s ?c ?l)
-            (or
-                (grade-a ?s ?c ?l)
-                (grade-b ?s ?c ?l)
-            )
-            (on-team four ?s)
-            (study-group four ?c ?l)
-            (done-extra-curricular-two ?s ?c ?l)
-        )
-        :effect (and 
-            (done-extra-curricular-three ?s ?c ?l)
-            (increase (reward) 500)
-        )
-    )
-
-    (:action do-team-one-extra-curricular-four
-        :parameters (?s - student ?c - course ?l - course-level)
-        :precondition (and 
-            (takes-course ?s ?c ?l)
-            (grade-a ?s ?c ?l)
-            (on-team one ?s)
-            (study-group one ?c ?l)
-            (done-extra-curricular-three ?s ?c ?l)
-        )
-        :effect (and 
-            (done-extra-curricular-four ?s ?c ?l)
-            (increase (reward) 500)
-        )
-    )
-
-    (:action do-team-two-extra-curricular-four
-        :parameters (?s - student ?c - course ?l - course-level)
-        :precondition (and 
-            (takes-course ?s ?c ?l)
-            (grade-a ?s ?c ?l)
-            (on-team two ?s)
-            (study-group two ?c ?l)
-            (done-extra-curricular-three ?s ?c ?l)
-        )
-        :effect (and 
-            (done-extra-curricular-four ?s ?c ?l)
-            (increase (reward) 500)
-        )
-    )
-
-    (:action do-team-three-extra-curricular-four
-        :parameters (?s - student ?c - course ?l - course-level)
-        :precondition (and 
-            (takes-course ?s ?c ?l)
-            (grade-a ?s ?c ?l)
-            (on-team three ?s)
-            (study-group three ?c ?l)
-            (done-extra-curricular-three ?s ?c ?l)
-        )
-        :effect (and 
-            (done-extra-curricular-four ?s ?c ?l)
-            (increase (reward) 500)
-        )
-    )
-
-    (:action do-team-four-extra-curricular-four
-        :parameters (?s - student ?c - course ?l - course-level)
-        :precondition (and 
-            (takes-course ?s ?c ?l)
-            (grade-a ?s ?c ?l)
-            (study-group four ?c ?l)
-            (on-team four ?s)
-            (done-extra-curricular-three ?s ?c ?l)
-        )
-        :effect (and 
-            (done-extra-curricular-four ?s ?c ?l)
-            (increase (reward) 500)
-        )
-    )
-
-    (:action do-team-one-extra-curricular-five
-        :parameters (?s - student ?c - course ?l - course-level)
-        :precondition (and 
-            (takes-course ?s ?c ?l)
-            (or
-                (grade-a ?s ?c ?l)
-                (grade-b ?s ?c ?l)
-            )
-            (on-team one ?s)
-            (study-group one ?c ?l)
-            (done-extra-curricular-four ?s ?c ?l)
-        )
-        :effect (and 
-            (done-extra-curricular-five ?s ?c ?l)
-            (increase (reward) 500)
-        )
-    )
-
-    (:action do-team-two-extra-curricular-five
-        :parameters (?s - student ?c - course ?l - course-level)
-        :precondition (and 
-            (takes-course ?s ?c ?l)
-            (or
-                (grade-a ?s ?c ?l)
-                (grade-b ?s ?c ?l)
-            )
-            (on-team two ?s)
-            (study-group two ?c ?l)
-            (done-extra-curricular-four ?s ?c ?l)
-        )
-        :effect (and 
-            (done-extra-curricular-five ?s ?c ?l)
-            (increase (reward) 500)
-        )
-    )
-
-    (:action do-team-three-extra-curricular-five
-        :parameters (?s - student ?c - course ?l - course-level)
-        :precondition (and 
-            (takes-course ?s ?c ?l)
-            (or
-                (grade-a ?s ?c ?l)
-                (grade-b ?s ?c ?l)
-            )
-            (on-team three ?s)
-            (study-group three ?c ?l)
-            (done-extra-curricular-four ?s ?c ?l)
-        )
-        :effect (and 
-            (done-extra-curricular-five ?s ?c ?l)
-            (increase (reward) 500)
-        )
-    )
-
-    (:action do-team-four-extra-curricular-five
-        :parameters (?s - student ?c - course ?l - course-level)
-        :precondition (and 
-            (takes-course ?s ?c ?l)
-            (or
-                (grade-a ?s ?c ?l)
-                (grade-b ?s ?c ?l)
-            )
-            (on-team four ?s)
-            (study-group four ?c ?l)
-            (done-extra-curricular-four ?s ?c ?l)
-        )
-        :effect (and 
-            (done-extra-curricular-five ?s ?c ?l)
-            (increase (reward) 500)
-        )
-    )
-
-    (:action do-team-one-extra-curricular-six
-        :parameters (?s - student ?c - course ?l - course-level)
-        :precondition (and 
-            (takes-course ?s ?c ?l)
-            (grade-a ?s ?c ?l)
-            (study-group one ?c ?l)
-            (on-team one ?s)
-            (done-extra-curricular-five ?s ?c ?l)
-        )
-        :effect (and 
-            (done-extra-curricular-six ?s ?c ?l)
-            (increase (reward) 500)
-        )
-    )
-
-    (:action do-team-two-extra-curricular-six
-        :parameters (?s - student ?c - course ?l - course-level)
-        :precondition (and 
-            (takes-course ?s ?c ?l)
-            (grade-a ?s ?c ?l)
-            (on-team two ?s)
-            (study-group two ?c ?l)
-            (done-extra-curricular-five ?s ?c ?l)
-        )
-        :effect (and 
-            (done-extra-curricular-six ?s ?c ?l)
-            (increase (reward) 500)
-        )
-    )
-
-    (:action do-team-three-extra-curricular-six
-        :parameters (?s - student ?c - course ?l - course-level)
-        :precondition (and 
-            (takes-course ?s ?c ?l)
-            (grade-a ?s ?c ?l)
-            (on-team three ?s)
-            (study-group three ?c ?l)
-            (done-extra-curricular-five ?s ?c ?l)
-        )
-        :effect (and 
-            (done-extra-curricular-six ?s ?c ?l)
-            (increase (reward) 500)
-        )
-    )
-
-    (:action do-team-four-extra-curricular-six
-        :parameters (?s - student ?c - course ?l - course-level)
-        :precondition (and 
-            (takes-course ?s ?c ?l)
-            (grade-a ?s ?c ?l)
-            (on-team four ?s)
-            (study-group four ?c ?l)
-            (done-extra-curricular-five ?s ?c ?l)
-        )
-        :effect (and 
-            (done-extra-curricular-six ?s ?c ?l)
-            (increase (reward) 500)
-        )
-    )
-
-    (:action do-team-one-extra-curricular-seven
-        :parameters (?s - student ?c - course ?l - course-level)
-        :precondition (and 
-            (takes-course ?s ?c ?l)
-            (or
-                (grade-a ?s ?c ?l)
-                (grade-b ?s ?c ?l)
-            )
-            (on-team one ?s)
-            (study-group one ?c ?l)
-            (done-extra-curricular-six ?s ?c ?l)
-        )
-        :effect (and 
-            (done-extra-curricular-seven ?s ?c ?l)
-            (increase (reward) 500)
-        )
-    )
-
-    (:action do-team-two-extra-curricular-seven
-        :parameters (?s - student ?c - course ?l - course-level)
-        :precondition (and 
-            (takes-course ?s ?c ?l)
-            (or
-                (grade-a ?s ?c ?l)
-                (grade-b ?s ?c ?l)
-            )
-            (on-team two ?s)
-            (study-group two ?c ?l)
-            (done-extra-curricular-six ?s ?c ?l)
-        )
-        :effect (and 
-            (done-extra-curricular-seven ?s ?c ?l)
-            (increase (reward) 500)
-        )
-    )
-
-    (:action do-team-three-extra-curricular-seven
-        :parameters (?s - student ?c - course ?l - course-level)
-        :precondition (and 
-            (takes-course ?s ?c ?l)
-            (or
-                (grade-a ?s ?c ?l)
-                (grade-b ?s ?c ?l)
-            )
-            (on-team three ?s)
-            (study-group three ?c ?l)
-            (done-extra-curricular-six ?s ?c ?l)
-        )
-        :effect (and 
-            (done-extra-curricular-seven ?s ?c ?l)
-            (increase (reward) 500)
-        )
-    )
-
-    (:action do-team-four-extra-curricular-seven
-        :parameters (?s - student ?c - course ?l - course-level)
-        :precondition (and 
-            (takes-course ?s ?c ?l)
-            (or
-                (grade-a ?s ?c ?l)
-                (grade-b ?s ?c ?l)
-            )
-            (on-team four ?s)
-            (study-group four ?c ?l)
-            (done-extra-curricular-six ?s ?c ?l)
-        )
-        :effect (and 
-            (done-extra-curricular-seven ?s ?c ?l)
-            (increase (reward) 500)
-        )
-    )
-
-    (:action do-team-one-extra-curricular-eight
-        :parameters (?s - student ?c - course ?l - course-level)
-        :precondition (and 
-            (takes-course ?s ?c ?l)
-            (grade-a ?s ?c ?l)
-            (on-team one ?s)
-            (study-group one ?c ?l)
-            (done-extra-curricular-seven ?s ?c ?l)
-        )
-        :effect (and 
-            (done-extra-curricular-eight ?s ?c ?l)
-            (increase (reward) 500)
-        )
-    )
-
-    (:action do-team-two-extra-curricular-eight
-        :parameters (?s - student ?c - course ?l - course-level)
-        :precondition (and 
-            (takes-course ?s ?c ?l)
-            (grade-a ?s ?c ?l)
-            (on-team two ?s)
-            (done-extra-curricular-seven ?s ?c ?l)
-            (study-group two ?c ?l)
-        )
-        :effect (and 
-            (done-extra-curricular-eight ?s ?c ?l)
-            (increase (reward) 500)
-        )
-    )
-
-    (:action do-team-three-extra-curricular-eight
-        :parameters (?s - student ?c - course ?l - course-level)
-        :precondition (and 
-            (takes-course ?s ?c ?l)
-            (grade-a ?s ?c ?l)
-            (on-team three ?s)
-            (study-group three ?c ?l)
-            (done-extra-curricular-seven ?s ?c ?l)
-        )
-        :effect (and 
-            (done-extra-curricular-eight ?s ?c ?l)
-            (increase (reward) 500)
-        )
-    )
-
-    (:action do-team-four-extra-curricular-eight
-        :parameters (?s - student ?c - course ?l - course-level)
-        :precondition (and 
-            (takes-course ?s ?c ?l)
-            (grade-a ?s ?c ?l)
-            (on-team four ?s)
-            (study-group four ?c ?l)
-            (done-extra-curricular-seven ?s ?c ?l)
-        )
-        :effect (and 
-            (done-extra-curricular-eight ?s ?c ?l)
-            (increase (reward) 500)
-        )
     )
     
     (:action finish-course
@@ -756,6 +230,159 @@
         :effect (and 
             (done-extra-curricular-eight ?s ?c ?l)
             (increase (reward) 100)
+        )
+    )
+
+    (:action do-team-extra-curricular-one
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (or
+                (grade-a ?s ?c ?l)
+                (grade-b ?s ?c ?l)
+            )
+            (study-group ?c ?l)
+            (not
+                (done-extra-curricular-one ?s ?c ?l)
+            )
+        )
+        :effect (and 
+            (done-extra-curricular-one ?s ?c ?l)
+            (increase (reward) 200)
+        )
+    )
+
+    (:action do-team-extra-curricular-two
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (grade-a ?s ?c ?l)
+            (not
+                (done-extra-curricular-two ?s ?c ?l)
+            )
+            (study-group ?c ?l)
+            (done-extra-curricular-one ?s ?c ?l)
+        )
+        :effect (and 
+            (done-extra-curricular-two ?s ?c ?l)
+            (increase (reward) 200)
+        )
+    )
+
+    (:action do-team-extra-curricular-three
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (or
+                (grade-a ?s ?c ?l)
+                (grade-b ?s ?c ?l)
+            )
+            (not
+                (done-extra-curricular-three ?s ?c ?l)
+            )
+            (study-group ?c ?l)
+            (done-extra-curricular-two ?s ?c ?l)
+            (done-unit-one ?s ?c ?l)
+        )
+        :effect (and 
+            (done-extra-curricular-three ?s ?c ?l)
+            (increase (reward) 200)
+        )
+    )
+
+    (:action do-team-extra-curricular-four
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (grade-a ?s ?c ?l)
+            (not
+                (done-extra-curricular-four ?s ?c ?l)
+            )
+            (study-group ?c ?l)
+            (done-extra-curricular-three ?s ?c ?l)
+            (done-unit-one ?s ?c ?l)
+        )
+        :effect (and 
+            (done-extra-curricular-four ?s ?c ?l)
+            (increase (reward) 200)
+        )
+    )
+
+    (:action do-team-extra-curricular-five
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (or
+                (grade-a ?s ?c ?l)
+                (grade-b ?s ?c ?l)
+            )
+            (not
+                (done-extra-curricular-five ?s ?c ?l)
+            )
+            (study-group ?c ?l)
+            (done-extra-curricular-four ?s ?c ?l)
+            (done-unit-two ?s ?c ?l)
+        )
+        :effect (and 
+            (done-extra-curricular-five ?s ?c ?l)
+            (increase (reward) 200)
+        )
+    )
+
+    (:action do-team-extra-curricular-six
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (grade-a ?s ?c ?l)
+            (not
+                (done-extra-curricular-six ?s ?c ?l)
+            )
+            (study-group ?c ?l)
+            (done-extra-curricular-five ?s ?c ?l)
+            (done-unit-two ?s ?c ?l)
+        )
+        :effect (and 
+            (done-extra-curricular-six ?s ?c ?l)
+            (increase (reward) 200)
+        )
+    )
+
+    (:action do-team-extra-curricular-seven
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (or
+                (grade-a ?s ?c ?l)
+                (grade-b ?s ?c ?l)
+            )
+            (study-group ?c ?l)
+            (not
+                (done-extra-curricular-seven ?s ?c ?l)
+            )
+            (done-extra-curricular-six ?s ?c ?l)
+            (done-unit-three ?s ?c ?l)
+        )
+        :effect (and 
+            (done-extra-curricular-seven ?s ?c ?l)
+            (increase (reward) 200)
+        )
+    )
+
+    (:action do-team-extra-curricular-eight
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (grade-a ?s ?c ?l)
+            (not
+                (done-extra-curricular-eight ?s ?c ?l)
+            )
+            (study-group ?c ?l)
+            (done-extra-curricular-seven ?s ?c ?l)
+            (done-unit-three ?s ?c ?l)
+        )
+        :effect (and 
+            (done-extra-curricular-eight ?s ?c ?l)
+            (increase (reward) 200)
         )
     )
     
