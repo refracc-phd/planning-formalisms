@@ -91,7 +91,7 @@
         ; (takes-course will german national-five) (grade-a will german national-five)
         ; (takes-course will design-manufacture national-four) (grade-p will design-manufacture national-four)
 
-        (takes-course ava english national-five) (grade-b ava english national-five)
+        (takes-course ava english higher) (grade-b ava english higher)
         (takes-course ava dance higher) (grade-a ava dance higher)
         (takes-course ava maths national-five) (grade-a ava maths national-five)
         (takes-course ava textiles national-four) (grade-p ava textiles national-four)
@@ -193,7 +193,7 @@
             ; (finished-course will german national-five)
             ; (finished-course will design-manufacture national-four)
 
-            (finished-course ava english national-five)
+            (finished-course ava english higher)
             (finished-course ava dance higher)
             (finished-course ava maths national-five)
             (finished-course ava textiles national-four)

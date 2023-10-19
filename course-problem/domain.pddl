@@ -628,7 +628,7 @@
         )
         :effect (and 
             (done-extra-curricular-one ?s ?c ?l)
-            (increase (reward) 50)
+            (increase (reward) 100)
         )
     )
 
@@ -644,7 +644,7 @@
         )
         :effect (and 
             (done-extra-curricular-two ?s ?c ?l)
-            (increase (reward) 50)
+            (increase (reward) 100)
         )
     )
 
@@ -664,7 +664,7 @@
         )
         :effect (and 
             (done-extra-curricular-three ?s ?c ?l)
-            (increase (reward) 50)
+            (increase (reward) 100)
         )
     )
 
@@ -681,7 +681,7 @@
         )
         :effect (and 
             (done-extra-curricular-four ?s ?c ?l)
-            (increase (reward) 50)
+            (increase (reward) 100)
         )
     )
 
@@ -701,7 +701,7 @@
         )
         :effect (and 
             (done-extra-curricular-five ?s ?c ?l)
-            (increase (reward) 50)
+            (increase (reward) 100)
         )
     )
 
@@ -718,7 +718,7 @@
         )
         :effect (and 
             (done-extra-curricular-six ?s ?c ?l)
-            (increase (reward) 50)
+            (increase (reward) 100)
         )
     )
 
@@ -738,7 +738,7 @@
         )
         :effect (and 
             (done-extra-curricular-seven ?s ?c ?l)
-            (increase (reward) 50)
+            (increase (reward) 100)
         )
     )
 
@@ -755,7 +755,7 @@
         )
         :effect (and 
             (done-extra-curricular-eight ?s ?c ?l)
-            (increase (reward) 50)
+            (increase (reward) 100)
         )
     )
     
