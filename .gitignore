@@ -6,6 +6,14 @@
 # $ git config --global mergetool.keepBackup false
 *.orig
 
+## Custom ##
+**/downward/
+**/*.plan
+**/*.sas
+**/pddl-instances/
+**/pddl4j/
+**/enhsp/
+
 # Created by git when using merge tools for conflicts
 *.BACKUP.*
 *.BASE.*
