@@ -15,7 +15,6 @@
         adhd asc-asd dyslexia dyscalculia diff-attention-listening dysfluency reluct-selec-talk diff-understand-comm cerebral-palsy fibromyalgia hypermobility multiple-sclerosis spina-bifida tourettes attachment fight-flight freeze-fold low-level social-other deaf-hearing blind-visual - support-requirement
         none reduced-contact - support-received
         visual audio read-write kinaesthetic multimodal - vark-type
-        one two three four - team
     )
 
     (:init

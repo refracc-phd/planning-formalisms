@@ -12,7 +12,6 @@
         support-requirement
         support-received
         student
-        team
     )
 
     (:constants
@@ -22,17 +21,14 @@
     )
     
     (:predicates
-        (uses-strategy ?s - student ?t - strategy)
-        (student-vark-type ?s - student ?v - vark-type)
-        (has-received-support ?s - student ?r - support-received)
-        (takes-course ?s - student ?c - course ?l - course-level)
         (finished-course ?s - student ?c - course ?l - course-level)
+
         (grade-a ?s - student ?c - course ?l - course-level)
         (grade-b ?s - student ?c - course ?l - course-level)
         (grade-c ?s - student ?c - course ?l - course-level)
         (grade-d ?s - student ?c - course ?l - course-level)
-        (grade-f ?s - student ?c - course ?l - course-level)
         (grade-p ?s - student ?c - course ?l - course-level)
+
         (done-week-one ?s - student ?c - course ?l - course-level)
         (done-week-two ?s - student ?c - course ?l - course-level)
         (done-week-three ?s - student ?c - course ?l - course-level)
@@ -41,6 +37,7 @@
         (done-week-six ?s - student ?c - course ?l - course-level)
         (done-week-seven ?s - student ?c - course ?l - course-level)
         (done-week-eight ?s - student ?c - course ?l - course-level)
+
         (done-unit-one ?s - student ?c - course ?l - course-level)
         (done-unit-two ?s - student ?c - course ?l - course-level)
         (done-unit-three ?s - student ?c - course ?l - course-level)
@@ -55,9 +52,12 @@
         (done-extra-curricular-seven ?s - student ?c - course ?l - course-level)
         (done-extra-curricular-eight ?s - student ?c - course ?l - course-level)
 
-        (can-pomodoro ?s - student ?c - course ?l - course-level)
-
         (study-group ?c - course ?l - level)
+
+        (uses-strategy ?s - student ?t - strategy)
+        (student-vark-type ?s - student ?v - vark-type)
+        (has-received-support ?s - student ?r - support-received)
+        (takes-course ?s - student ?c - course ?l - course-level)
     )
 
     (:functions
@@ -70,8 +70,9 @@
             (done-unit-four ?s ?c ?l)
             (takes-course ?s ?c ?l)
         )
-        :effect (and 
+        :effect (and
             (finished-course ?s ?c ?l)
+            (increase (reward) 250)
         )
     )
 
@@ -80,10 +81,10 @@
         :precondition (and 
             (done-unit-four ?s ?c ?l)
             (takes-course ?s ?c ?l)
-            (can-pomodoro ?s ?c ?l)
+            (uses-strategy ?s pomodoro)
         )
         :effect (and 
-            (increase (reward) 576) ; 18 additional mins per lesson * 8 weeks * 4 units
+            (increase (reward) 250)
             (finished-course ?s ?c ?l)
         )
     )
@@ -482,7 +483,7 @@
         )
         :effect (and 
             (done-week-one ?s ?c ?l)
-            (increase (reward) 360)
+            (increase (reward) 50)
         )
     )
 
@@ -494,7 +495,7 @@
         )
         :effect (and 
             (done-week-two ?s ?c ?l)
-            (increase (reward) 360)
+            (increase (reward) 50)
         )
     )
 
@@ -506,7 +507,7 @@
         )
         :effect (and 
             (done-week-three ?s ?c ?l)
-            (increase (reward) 360)
+            (increase (reward) 50)
         )
     )
 
@@ -518,7 +519,7 @@
         )
         :effect (and 
             (done-week-four ?s ?c ?l)
-            (increase (reward) 360)
+            (increase (reward) 50)
         )
     )
 
@@ -530,7 +531,7 @@
         )
         :effect (and 
             (done-week-five ?s ?c ?l)
-            (increase (reward) 360)
+            (increase (reward) 50)
         )
     )
 
@@ -542,7 +543,7 @@
         )
         :effect (and 
             (done-week-six ?s ?c ?l)
-            (increase (reward) 360)
+            (increase (reward) 50)
         )
     )
 
@@ -554,7 +555,7 @@
         )
         :effect (and 
             (done-week-seven ?s ?c ?l)
-            (increase (reward) 360)
+            (increase (reward) 50)
         )
     )
 
@@ -566,7 +567,7 @@
         )
         :effect (and 
             (done-week-eight ?s ?c ?l)
-            (increase (reward) 360)
+            (increase (reward) 50)
         )
     )
 )
