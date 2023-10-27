@@ -84,7 +84,7 @@
             (uses-strategy ?s pomodoro)
         )
         :effect (and 
-            (increase (reward) 250)
+            (increase (reward) 250) ; make higher :)
             (finished-course ?s ?c ?l)
         )
     )
