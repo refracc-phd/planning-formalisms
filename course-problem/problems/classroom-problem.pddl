@@ -20,12 +20,12 @@
     (:init
         (= (reward) 0)
 
-        ; (takes-course emily english national-five) (grade-b emily english national-five)
-        ; (takes-course emily drama higher) (grade-a emily drama higher)
-        ; (takes-course emily music-tech national-five) (grade-c emily music-tech national-five)
-        ; (takes-course emily maths national-four) (grade-p emily maths national-four)
-        ; (takes-course emily french national-five) (grade-b emily french national-five)
-        ; (takes-course emily geography national-four) (grade-p emily geography national-four)
+        (takes-course emily english national-five) (grade-b emily english national-five)
+        (takes-course emily drama higher) (grade-a emily drama higher)
+        (takes-course emily music-tech national-five) (grade-c emily music-tech national-five)
+        (takes-course emily maths national-four) (grade-p emily maths national-four)
+        (takes-course emily french national-five) (grade-b emily french national-five)
+        (takes-course emily geography national-four) (grade-p emily geography national-four)
 
         ; (takes-course james esol national-four) (grade-p james esol national-four)
         ; (takes-course james art-design higher) (grade-b james art-design higher)
@@ -109,12 +109,12 @@
 
     (:goal
         (and
-            ; (finished-course emily english national-five)
-            ; (finished-course emily drama higher)
-            ; (finished-course emily music-tech national-five)
-            ; (finished-course emily maths national-four)
-            ; (finished-course emily french national-five)
-            ; (finished-course emily geography national-four)
+            (finished-course emily english national-five)
+            (finished-course emily drama higher)
+            (finished-course emily music-tech national-five)
+            (finished-course emily maths national-four)
+            (finished-course emily french national-five)
+            (finished-course emily geography national-four)
 
             ; (finished-course james esol national-four)
             ; (finished-course james art-design higher)
