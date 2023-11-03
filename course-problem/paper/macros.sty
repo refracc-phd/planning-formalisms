@@ -1,0 +1,257 @@
+\ProvidesPackage{macros}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% General
+
+%% Shortcuts
+\providecommand{\define}[3]{\vspace{0.5cm}\noindent\textbf{Definition #1 }\textit{(#2)}: #3}
+\providecommand{\exec}[1]{\ensuremath{\llbracket{#1}\rrbracket}}
+\providecommand{\integer}[1]{\ensuremath{\mathbb{I}(#1)}}
+\providecommand{\powerset}[1]{\mathbb{P}(#1)}
+\providecommand{\set}[1]{\ensuremath{\left\{#1\right\}}}
+\providecommand{\tuple}[1]{\ensuremath{\left\langle#1\right\rangle}}
+
+%% Math sets
+\providecommand{\N}{\ensuremath{\mathbb{N}}}
+\providecommand{\Real}{\ensuremath{\mathbb{R}}}
+\providecommand{\Z}{\ensuremath{\mathbb{Z}}}
+
+\newcommand{\landmarks}{\mathcal{L}}
+
+\newcommand{\centroid}{\mathcal{C}}
+\newcommand{\maxcentroid}{\mathcal{C}_{\mathbf{max}}}
+\newcommand{\maxminimumc}{\mathcal{M}_{\mathbf{max}}}
+\newcommand{\minimumc}{\mathcal{M}}
+
+\providecommand\probability[1]{\ensuremath{\mathbb{P}({#1})}}
+
+%% Planning
+
+\newcommand{\genplanner}{\mathcal{G}\textsc{Planner}}
+
+\newcommand{\genproblem}{\mathcal{GP}}
+\newcommand{\planningdomain}{\ensuremath{\Xi}}
+\newcommand{\planninginstance}{\ensuremath{\Pi}}
+% \newcommand{\problem}{\mathcal{P}}
+
+\newcommand{\genobservations}{\Omega_\Pi} 
+
+\newcommand{\deceptionproblem}{\problem_{\sc D}}
+
+\newcommand{\action}{\ensuremath{a}}
+\newcommand{\actionprojection}{\ensuremath{ap}}
+\newcommand{\actions}{\mathcal{A}}
+\newcommand{\agents}{\phi}
+\newcommand{\correctteamgoalmap}{\teamgoalmap^{*}}
+\newcommand{\fact}{\ensuremath{f}}
+\newcommand{\fluents}{\mathcal{F}}
+\newcommand{\goal}{s_g}
+\newcommand{\goals}{\mathcal{G}}
+\newcommand{\goalplan}{\plan_{\goals}}
+\newcommand{\goalsolution}{\textbf{G}}
+\newcommand{\hiddengoal}{G^{*}}
+\newcommand{\initial}{\ensuremath{\mathcal{I}}}
+\newcommand{\initialstate}{s_0}
+\newcommand{\hmm}{\mathfrak{M}}
+\newcommand{\messages}{\ensuremath{M}}
+\newcommand{\mdp}{\mathbb{M}}
+\newcommand{\multiagentgoalrec}{\text{T}_{\text{MAGR}}}
+\newcommand{\observationgenfunc}{\ensuremath{os}}
+\newcommand{\observation}{\ensuremath{o}}
+\newcommand{\observationsequence}{\ensuremath{O}}
+\newcommand{\obsprobmatrix}{\mathfrak{B}}
+\newcommand{\optimalplan}{\ensuremath{\pi^{*}}}
+\newcommand{\precondition}{\ensuremath{pre}}
+\newcommand{\preconditions}{\mathcal{P}}
+\newcommand{\predicate}{p}
+\newcommand{\predicates}{\ensuremath{P}}
+\newcommand{\plan}{\pi}
+\newcommand{\realgoal}{s_g^{*}}
+\newcommand{\recognitionproblem}{\text{T}_{\text{GR}}}
+\newcommand{\reward}{\mathfrak{R}}
+\newcommand{\size}[1]{\ensuremath{\left\lvert #1 \right\rvert}}
+\newcommand{\state}{\ensuremath{s}}
+\newcommand{\statedistribution}{\mathfrak{P}}
+\newcommand{\statetransmatrix}{\mathfrak{A}}
+\newcommand{\teamgoalmap}{\mathcal{M}}
+\newcommand{\teams}{T}
+\newcommand{\teamtrace}{\mathcal{T}^{\mathrm{trace}}}
+\newcommand{\term}{\ensuremath{\tau}}
+\newcommand{\transprob}{\mathcal{TP}}
+
+
+
+%% Planning Constants
+\newcommand{\edges}{\mathcal{T}}
+\newcommand{\facts}{\Sigma}
+\newcommand{\goalstates}{\ensuremath{\states_{*}}}
+\newcommand{\hiddenstate}{\mathcal{S}}
+\newcommand{\ncoperators}{\ensuremath{NC}}%{\mathcal{N}}
+\newcommand{\operators}{\ensuremath{\mathcal{O}}}
+\newcommand{\planningtask}{\ensuremath{\Pi}}
+\newcommand{\states}{\ensuremath{S}}
+\newcommand{\variables}{\ensuremath{\mathcal{V}}}
+\newcommand{\vertices}{\mathcal{S}}
+\newcommand{\weight}{\mathcal{W}}
+
+%% Planning Functions
+\providecommand{\add}{\ensuremath{\mathit{add}}}
+\providecommand{\cost}{\ensuremath{\mathit{cost}}}
+\providecommand{\del}{\ensuremath{\mathit{del}}}
+\providecommand{\dom}[1]{\ensuremath{\emph{dom}({#1})}}
+\providecommand{\eff}{\ensuremath{\mathit{eff}}}
+\providecommand{\lm}[1]{\ensuremath{L({#1})}}
+\providecommand{\name}{\ensuremath{\mathit{name}}}
+\providecommand{\occur}{\mathit{occur}}
+\providecommand{\plancost}{\ensuremath{\mathit{cost}}}
+\providecommand{\post}{\ensuremath{\mathit{post}}}
+\providecommand{\pre}{\ensuremath{\mathit{pre}}}
+\providecommand{\discountfactor}{\ensuremath{\gamma}}
+\providecommand{\vars}{\ensuremath{\mathit{vars}}}
+
+
+\newcommand{\deceptiveactions}{A_{\mathbf{d}}}
+\newcommand{\deceptiveplan}{\pi_{\mathbf{d}}}
+\newcommand{\goalsclosestrealgoal}{\mathcal{G}_{ClosestG+\realgoal}}
+\newcommand{\goalsnorealgoal}{\mathcal{G}_{No\realgoal}}
+
+%% Constraints
+\newcommand{\drone}{\text{DEL\textsuperscript{imp}}}
+\newcommand{\drthree}{\text{DEL\rlap{\textsuperscript{imp}}\textsubscript{3}}}
+\newcommand{\drtime}{\text{DEL\rlap{\textsuperscript{imp}}\textsubscript{3}}}
+\newcommand{\drtwo}{\text{DEL\rlap{\textsuperscript{imp}}\textsubscript{2}}}
+\newcommand{\dr}{\text{DEL}}
+\newcommand{\flow}{\text{FLOW}}
+\newcommand{\intertwo}{\text{O\textsuperscript{2}}}
+\newcommand{\intratwo}{\text{I\textsuperscript{2}}}
+\newcommand{\lmch}{\text{LMC\rlap{\textsuperscript{imp}}\textsubscript{hard}}}
+\newcommand{\lmco}{\text{LMC\textsuperscript{imp}}}
+\newcommand{\lmcs}{\text{LMC\rlap{\textsuperscript{imp}}\textsubscript{soft}}}
+\newcommand{\lmcu}{\text{LMC\rlap{\textsuperscript{imp}}\textsubscript{unified}}}
+\newcommand{\lmc}{\text{LMC}}
+\newcommand{\mtwo}{\text{M\textsuperscript{2}}}
+\newcommand{\pho}{\text{PhO}}
+\newcommand{\seq}{\text{SEQ}}
+\newcommand{\sysone}{\text{SYS\textsuperscript{1}}}
+\newcommand{\systwo}{\text{SYS\textsuperscript{2}}}
+
+%% Heuristics
+\newcommand{\hdr}{\ensuremath{h^{\dr}}}
+\newcommand{\hflow}{\ensuremath{h^{\flow}}}
+\newcommand{\hintratwo}{\ensuremath{h^{\intratwo}}}
+\newcommand{\hip}{\h^{\textup{IP}}}
+\newcommand{\hlmco}{\ensuremath{h^{\lmco}}}
+\newcommand{\hlmcs}{\ensuremath{h^{\lmcs}}}
+\newcommand{\hlmcu}{\ensuremath{h^{\lmcu}}}
+\newcommand{\hlmc}{\ensuremath{h^{\lmc}}}
+\newcommand{\hoptimal}{\ensuremath{\h^{*}}}
+\newcommand{\hpho}{\ensuremath{h^{\pho}}}
+\newcommand{\hplus}{\ensuremath{h^{+}}}
+\newcommand{\hseq}{\ensuremath{h^{\seq}}}
+\newcommand{\hsysone}{\ensuremath{h^{\sysone}}}
+\newcommand{\h}{\ensuremath{h}}
+
+%% Complying Heuristics
+\newcommand{\hodrone}{\ensuremath{h^{\drone}_{\observations}}}
+\newcommand{\hodrthree}{\ensuremath{h^{\drthree}_{\observations}}}
+\newcommand{\hodrtime}{\ensuremath{h^{\drtime}_{\observations}}}
+\newcommand{\hodrtwo}{\ensuremath{h^{\drtwo}_{\observations}}}
+\newcommand{\hodr}{\ensuremath{h^{\dr}_{\observations}}}
+\newcommand{\hoflow}{\ensuremath{h^{\flow}_{\observations}}}
+\newcommand{\hointertwo}{\ensuremath{h^{\intertwo}_{\observations}}}
+\newcommand{\hointratwo}{\ensuremath{h^{\intratwo}_{\observations}}}
+\newcommand{\holmco}{\ensuremath{h^{\lmco}_{\observations}}}
+\newcommand{\holmcsg}{\ensuremath{h^{\lmc_\observations}_{\observations,\goalstate}}}
+\newcommand{\holmcs}{\ensuremath{h^{\lmc_\observations}_{\observations}}}
+\newcommand{\holmcu}{\ensuremath{h^{\lmcu}_{\observations}}}
+\newcommand{\holmc}{\ensuremath{h^{\lmc}_{\observations}}}
+\newcommand{\homtwo}{\ensuremath{h^{\mtwo}_{\observations}}}
+\newcommand{\hopho}{\ensuremath{h^{\pho}_{\observations}}}
+\newcommand{\hoseq}{\ensuremath{h^{\seq}_{\observations}}}
+\newcommand{\hosysone}{\ensuremath{h^{\sysone}_{\observations}}}
+\newcommand{\hosystwo}{\ensuremath{h^{\systwo}_{\observations}}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% Metrics
+
+\newcommand{\deceptioncost}{\mathbf{d}_{Cost}}
+\newcommand{\deceptionquality}{\mathbf{d}_{Quantity}}
+\newcommand{\deceptionscore}{\mathbf{d}_{Score}}
+
+\newcommand{\fpr}{FPR}
+\newcommand{\notrankedfirst}{\neg\mathcal{R}1st}
+\newcommand{\timemetric}{Time}
+\newcommand{\topone}{Top-1}
+\newcommand{\tpr}{TPR}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% Approaches
+% Baseline
+\newcommand{\baseline}{{\sc baseline}}
+
+% Masters and Sardina
+\newcommand{\simulation}{{\sc simulation}}
+
+% Landmarks
+\newcommand{\combinedlandmarks}{\mathbf{D}\landmarks_{Combined}}
+\newcommand{\landmarksnearestgoal}{\mathbf{D}\landmarks_{Similar}}
+\newcommand{\mostcomonlandmarks}{\mathbf{D}\landmarks_{MostCommon}}
+\newcommand{\sharedlandmarkscaption}{\mathbf{D}\landmarks_{Shared}}
+\newcommand{\sharedlandmarks}{\mathbf{D}\landmarks_{Shared}}
+
+% Goal Recognition
+\newcommand{\mirroring}{{\sc M}}
+\newcommand{\mirroringL}{{\sc M+$\landmarks$}}
+
+% Centroids
+
+\newcommand{\closestcentroid}{\mathbf{D}\centroid_{Closest}}
+\newcommand{\dcentroid}{\mathbf{D}\centroid}
+\newcommand{\farthestcentroid}{\mathbf{D}\centroid_{F}}
+\newcommand{\norealgoalcentroid}{\mathbf{D}\centroid_{No\realgoal \in \goals}}
+
+\newcommand{\maxclosestcentroid}{\mathbf{D}\mathcal{C}_{\mathbf{max_C}}}
+\newcommand{\maxdcentroid}{\mathbf{D}\maxcentroid}
+\newcommand{\maxfarthestcentroid}{\mathbf{D}\mathcal{C}_{\mathbf{max_F}}}
+\newcommand{\maxnorealgoalcentroid}{\mathbf{D}\mathcal{C}_{\mathbf{max_{\realgoal}}}}
+
+\newcommand{\centroidnorealgoal}{\mathcal{C}_{NoG_r\in\mathcal{G}}}
+
+\newcommand{\centroidgoalcloseset}{\mathcal{C}_{Closest}}
+
+% Minimum Covering States
+
+\newcommand{\closestminimumc}{\mathbf{D}\minimumc_{Closest}}
+\newcommand{\dminimumc}{\mathbf{D}\minimumc}
+\newcommand{\farthestminimumc}{\mathbf{D}\minimumc_{F}}
+\newcommand{\norealgoalminimumc}{\mathbf{D}\minimumc_{No\realgoal \in \goals}}
+
+\newcommand{\maxclosestminimumc}{\mathbf{d}\mathcal{M}_{\mathbf{max_C}}}
+\newcommand{\maxdminimumc}{\mathbf{D}\maxminimumc}
+\newcommand{\maxfarthestminimumc}{\mathbf{d}\mathcal{M}_{\mathbf{max_F}}}
+\newcommand{\maxnorealgoalminimumc}{\mathbf{d}\mathcal{M}_{\mathbf{max_{\realgoal}}}}
+
+\newcommand{\minimumcnorealgoal}{\mathcal{M}_{NoG_r\in\mathcal{G}}}
+
+\newcommand{\minimumcrealgoalcloseset}{\mathcal{M}_{Closest}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% Domains
+
+\newcommand{\blocks}{{\sc blocks world}}
+\newcommand{\ferry}{{\sc ferry}}
+\newcommand{\gridnavigation}{{\sc grid navigation}}
+\newcommand{\logistics}{{\sc logistics}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% BDI
+
+\newcommand{\actuator}[1][]{\ensuremath{\Call{act}{#1}}}
+\newcommand{\beliefs}{\ensuremath{\mathcal{B}}}
+\newcommand{\desirespreference}{\ensuremath{\sigma}}
+\newcommand{\desires}{\ensuremath{\mathcal{D}}}
+\newcommand{\intentions}{\ensuremath{\mathcal{I}}}
+\newcommand{\sensor}[1][]{\ensuremath{\Call{sense}{#1}}}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "aamas-bdi-planning-2023"
+%%% save-place: t
+%%% End:
