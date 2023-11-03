@@ -1,75 +1,3 @@
-@article{Castillo2009,
-  author    = {Luis Castillo and Lluvia Morales and Arturo Gonz{\'{a}}lez-Ferrer and Juan Fdez-Olivares and Daniel Borrajo and Eva Onaind{\'{\i}}a},
-  doi       = {10.1007/s10951-009-0140-x},
-  journal   = {Journal of Scheduling},
-  month     = nov,
-  number    = 4,
-  pages     = {347--362},
-  publisher = {Springer Science and Business Media {LLC}},
-  title     = {Automatic generation of temporal planning domains for~e-learning problems},
-  volume    = 13,
-  year      = {2009}
-}
-
-@inproceedings{Garrido2009,
-  author    = {Garrido, Antonio and Onaindia, Eva and Sapena, Oscar},
-  booktitle = {2009 Ninth IEEE International Conference on Advanced Learning Technologies},
-  title     = {Automated Planning for Personalised Course Composition},
-  year      = {2009},
-  volume    = {},
-  number    = {},
-  pages     = {178-182},
-  doi       = {10.1109/ICALT.2009.39}
-}
-
-@article{Rojas2022,
-  doi       = {10.1007/s40593-022-00321-2},
-  url       = {https://doi.org/10.1007/s40593-022-00321-2},
-  year      = {2022},
-  month     = dec,
-  publisher = {Springer Science and Business Media {LLC}},
-  author    = {Matias Rojas and Cristian S{\'{a}}ez and Jorge Baier and Miguel Nussbaum and Orlando Guerrero and Mar{\'{\i}}a Fernanda Rodr{\'{\i}}guez},
-  title     = {Using Automated Planning to Provide Feedback during Collaborative Problem-Solving},
-  journal   = {International Journal of Artificial Intelligence in Education}
-}
-
-@inproceedings{Scala2016,
-  author    = {Scala, Enrico and Haslum, Patrik and Thi\'{e}baux, Sylvie},
-  title     = {Heuristics for Numeric Planning via Subgoaling},
-  year      = {2016},
-  isbn      = {9781577357704},
-  publisher = {AAAI Press},
-  abstract  = {The paper presents a new relaxation for hybrid planning with continuous numeric and propositional state variables based on subgoaling, generalising the subgoaling principle underlying the h max and h add heuristics to such problems. Our relaxation improves on existing interval-based relaxations by taking into account some negative interactions between effects when achieving a subgoal, resulting in better estimates. We show conditions on the planning model ensuring that this new relaxation leads to tractable, and, for the h max version, admissible, heuristics. The new relaxation can be combined with the interval-based relaxation, to derive heuristics applicable to general numeric planning, while still providing more informed estimates for the subgoals that meet these conditions. Experiments show the effectiveness of its inadmissible and admissible version on satisficing and optimal numeric planning, respectively. As far as we know, this is the first admissible heuristic enabling cost-optimal numeric planning.},
-  booktitle = {Proceedings of the Twenty-Fifth International Joint Conference on Artificial Intelligence},
-  pages     = {3228–3234},
-  numpages  = {7},
-  location  = {New York, New York, USA},
-  series    = {IJCAI'16}
-}
-
-  @inproceedings{ScalaHaslum2016,
-  author    = {Scala, Enrico and Haslum, Patrik and Thiebaux, Sylvie and Ramirez, Miquel},
-  title     = {Interval-Based Relaxation for General Numeric Planning},
-  year      = {2016},
-  isbn      = {9781614996712},
-  publisher = {IOS Press},
-  address   = {NLD},
-  doi       = {10.3233/978-1-61499-672-9-655},
-  abstract  = {We generalise the interval-based relaxation to sequential numeric planning problems with non-linear conditions and effects, and cyclic dependencies. This effectively removes all the limitations on the problem placed in previous work on numeric planning heuristics, and even allows us to extend the planning language with a wider set of mathematical functions. Heuristics obtained from the generalised relaxation are pruning-safe. We derive one such heuristic and use it to solve discrete-time control-like planning problems with autonomous processes. Few planners can solve such problems, and search with our new heuristic compares favourably with them.},
-  booktitle = {Proceedings of the Twenty-Second European Conference on Artificial Intelligence},
-  pages     = {655–663},
-  numpages  = {9},
-  location  = {The Hague, The Netherlands},
-  series    = {ECAI'16}
-}
-
-@inproceedings{meneguzzi2021survey,
-  title     = {A survey on goal recognition as planning},
-  author    = {Meneguzzi, Felipe Rech and Pereira, Ramon Fraga},
-  booktitle = {Proceedings of the 30th International Joint Conference on Artificial Intelligence (IJCAI), 2021, Canad{\'a}.},
-  year      = {2021}
-}
-
 @inproceedings{10.1145/1160633.1160717,
   author    = {Bezek, Andraz and Gams, Matjaz and Bratko, Ivan},
   title     = {Multi-Agent Strategic Modeling in a Robotic Soccer Domain},
@@ -131,7 +59,7 @@
   series    = {AAAI'93}
 }
 
-@inproceedings{10.5555/2999134.2999176,
+  @inproceedings{10.5555/2999134.2999176,
   abstract  = {Multi-Agent Plan Recognition (MAPR) aims to recognize dynamic team structures and team behaviours from the observed team traces (activity sequences) of a set of intelligent agents. Previous MAPR approaches required a library of team activity sequences (team plans) be given as input. However, collecting a library of team plans to ensure adequate coverage is often difficult and costly. In this paper, we relax this constraint, so that team plans are not required to be provided beforehand. We assume instead that a set of action models are available. Such models are often already created to describe domain physics; i.e., the preconditions and effects of effects actions. We propose a novel approach for recognizing multi-agent team plans based on such action models rather than libraries of team plans. We encode the resulting MAPR problem as a satisfiability problem and solve the problem using a state-of-the-art weighted MAX-SAT solver. Our approach also allows for incompleteness in the observed plan traces. Our empirical studies demonstrate that our algorithm is both effective and efficient in comparison to state-of-the-art MAPR methods based on plan libraries.},
   address   = {Red Hook, NY, USA},
   author    = {Zhuo, Hankz Hankui and Yang, Qiang and Kambhampati, Subbarao},
@@ -144,8 +72,6 @@
   title     = {Action-Model Based Multi-Agent Plan Recognition},
   year      = {2012}
 }
-
-
 
 @inproceedings{10.5555/3060832.3060983,
   abstract  = {Recent years have seen a growing interest in player modeling for digital games. Goal recognition, which aims to accurately recognize players' goals from observations of low-level player actions, is a key problem in player modeling. However, player goal recognition poses significant challenges because of the inherent complexity and uncertainty pervading gameplay. In this paper, we formulate player goal recognition as a sequence labeling task and introduce a goal recognition framework based on long short-term memory (LSTM) networks. Results show that LSTM-based goal recognition is significantly more accurate than previous state-of-the-art methods, including n -gram encoded feedforward neural networks pre-trained with stacked denoising autoencoders, as well as Markov logic network-based models. Because of increased goal recognition accuracy and the elimination of labor-intensive feature engineering, LSTM-based goal recognition provides an effective solution to a central problem in player modeling for open-world digital games.},
@@ -217,6 +143,8 @@
   volume  = {3},
   year    = {2018}
 }
+
+
 
 @article{8412228,
   author  = {Fugiglando, Umberto and Massaro, Emanuele and Santi, Paolo and Milardo, Sebastiano and Abida, Kacem and Stahlmann, Rainer and Netter, Florian and Ratti, Carlo},
@@ -495,6 +423,19 @@
   journal   = {{KI} - K\"{u}nstliche Intelligenz}
 }
 
+@article{Castillo2009,
+  author    = {Luis Castillo and Lluvia Morales and Arturo Gonz{\'{a}}lez-Ferrer and Juan Fdez-Olivares and Daniel Borrajo and Eva Onaind{\'{\i}}a},
+  doi       = {10.1007/s10951-009-0140-x},
+  journal   = {Journal of Scheduling},
+  month     = nov,
+  number    = 4,
+  pages     = {347--362},
+  publisher = {Springer Science and Business Media {LLC}},
+  title     = {Automatic generation of temporal planning domains for~e-learning problems},
+  volume    = 13,
+  year      = {2009}
+}
+
 @article{cbf00562-4ec1-30aa-96c9-a7b516c45b2b,
   issn      = {00959057, 19435274},
   author    = {Richard Bellman},
@@ -579,6 +520,18 @@
   journal   = {Journal of Artificial Intelligence Research}
 }
 
+@article{Fox2006,
+  doi       = {10.1613/jair.2044},
+  year      = {2006},
+  month     = oct,
+  publisher = {{AI} Access Foundation},
+  volume    = {27},
+  pages     = {235--297},
+  author    = {M. Fox and D. Long},
+  title     = {Modelling Mixed Discrete-Continuous Domains for Planning},
+  journal   = {Journal of Artificial Intelligence Research}
+}
+
 @inproceedings{gabillon2011automated,
   title     = {Automated planning for user interface composition},
   author    = {Gabillon, Yoann and Petit, Matthieu and Calvary, Ga{\"e}lle and Fiorino, Humbert},
@@ -597,6 +550,17 @@
   title     = {Multi-Agent Systems: Technical {\&} Ethical Challenges of Functioning in a Mixed Group},
   volume    = {151},
   year      = {2022}
+}
+
+@inproceedings{Garrido2009,
+  author    = {Garrido, Antonio and Onaindia, Eva and Sapena, Oscar},
+  booktitle = {2009 Ninth IEEE International Conference on Advanced Learning Technologies},
+  title     = {Automated Planning for Personalised Course Composition},
+  year      = {2009},
+  volume    = {},
+  number    = {},
+  pages     = {178-182},
+  doi       = {10.1109/ICALT.2009.39}
 }
 
 @book{Geffner2013,
@@ -683,6 +647,18 @@
   booktitle = {Autonomous Agents and Multiagent Systems}
 }
 
+@article{Gutirrez2016,
+  doi       = {10.1016/j.cor.2016.05.012},
+  year      = {2016},
+  month     = nov,
+  publisher = {Elsevier {BV}},
+  volume    = {75},
+  pages     = {150--162},
+  author    = {Jimmy H. Guti{\'{e}}rrez and C{\'{e}}sar A. Astudillo and Pablo Ballesteros-P{\'{e}}rez and Daniel Mora-Meli{\`{a}} and Alfredo Candia-V{\'{e}}jar},
+  title     = {The multiple team formation problem using sociometry},
+  journal   = {Computers {\&}amp; Operations Research}
+}
+
 @article{Ha2011,
   doi       = {10.1609/aiide.v7i1.12434},
   year      = {2011},
@@ -694,6 +670,19 @@
   author    = {Eun Ha and Jonathan Rowe and Bradford Mott and James Lester},
   title     = {Goal Recognition with Markov Logic Networks for Player-Adaptive Games},
   journal   = {Proceedings of the {AAAI} Conference on Artificial Intelligence and Interactive Digital Entertainment}
+}
+
+@article{Hamilton2009,
+  doi       = {10.1080/01411920802042739},
+  year      = {2009},
+  month     = apr,
+  publisher = {Wiley},
+  volume    = {35},
+  number    = {2},
+  pages     = {221--242},
+  author    = {Mary Hamilton},
+  title     = {Putting words in their mouths: The alignment of identities with system goals through the use of Individual Learning Plans},
+  journal   = {British Educational Research Journal}
 }
 
 @article{Han2022,
@@ -715,6 +704,14 @@
   keywords   = {AI regulation, cooperation, agent-based modelling, collective behaviours, emergent behaviours, Evolutionary Game Theory}
 }
 
+@book{Haslum2019,
+  doi       = {10.1007/978-3-031-01584-7},
+  year      = {2019},
+  publisher = {Springer International Publishing},
+  author    = {Patrik Haslum and Nir Lipovetzky and Daniele Magazzeni and Christian Muise},
+  title     = {An Introduction to the Planning Domain Definition Language}
+}
+
 @article{Holme2012,
   doi       = {10.1016/j.physrep.2012.03.001},
   year      = {2012},
@@ -726,6 +723,16 @@
   author    = {Petter Holme and Jari Saram\"{a}ki},
   title     = {Temporal networks},
   journal   = {Physics Reports}
+}
+
+@misc{JianZhao2022,
+  doi       = {10.48550/ARXIV.2203.08412},
+  author    = {Zhao,  Jian and Hu,  Xunhan and Yang,  Mingyu and Zhou,  Wengang and Zhu,  Jiangcheng and Li,  Houqiang},
+  keywords  = {Multiagent Systems (cs.MA),  Machine Learning (cs.LG),  FOS: Computer and information sciences,  FOS: Computer and information sciences},
+  title     = {CTDS: Centralized Teacher with Decentralized Student for Multi-Agent Reinforcement Learning},
+  publisher = {arXiv},
+  year      = {2022},
+  copyright = {arXiv.org perpetual,  non-exclusive license}
 }
 
 @book{Jones2017-er,
@@ -805,7 +812,7 @@
   year      = {2000}
 }
 
-@article{Koymans1990,
+  @article{Koymans1990,
   doi       = {10.1007/bf01995674},
   year      = {1990},
   month     = nov,
@@ -818,7 +825,7 @@
   journal   = {Real-Time Systems}
 }
 
-  @article{Lee2021,
+@article{Lee2021,
   doi       = {10.1016/j.ejor.2020.09.018},
   year      = {2021},
   month     = may,
@@ -855,7 +862,14 @@
   url       = {http://dblp.org/rec/conf/ijcai/E-MartinRS15}
 }
 
-@article{Min2021,
+@inproceedings{meneguzzi2021survey,
+  title     = {A survey on goal recognition as planning},
+  author    = {Meneguzzi, Felipe Rech and Pereira, Ramon Fraga},
+  booktitle = {Proceedings of the 30th International Joint Conference on Artificial Intelligence (IJCAI), 2021, Canad{\'a}.},
+  year      = {2021}
+}
+
+  @article{Min2021,
   author    = {Wookhee Min and Bradford Mott and Jonathan Rowe and Robert Taylor and Eric Wiebe and Kristy Boyer and James Lester},
   doi       = {10.1609/aiide.v13i1.12939},
   journal   = {Proceedings of the {AAAI} Conference on Artificial Intelligence and Interactive Digital Entertainment},
@@ -866,6 +880,19 @@
   title     = {Multimodal Goal Recognition in Open-World Digital Games},
   volume    = {13},
   year      = {2021}
+}
+
+@article{Min2021b,
+  doi       = {10.1609/aiide.v10i1.12717},
+  year      = {2021},
+  month     = jun,
+  publisher = {Association for the Advancement of Artificial Intelligence ({AAAI})},
+  volume    = {10},
+  number    = {1},
+  pages     = {37--43},
+  author    = {Wookhee Min and Eun Ha and Jonathan Rowe and Bradford Mott and James Lester},
+  title     = {Deep Learning-Based Goal Recognition in Open-Ended Digital Games},
+  journal   = {Proceedings of the {AAAI} Conference on Artificial Intelligence and Interactive Digital Entertainment}
 }
 
 @article{Mirsky2019,
@@ -881,7 +908,7 @@
   journal   = {{ACM} Transactions on Intelligent Systems and Technology}
 }
 
-  @book{Mirsky2021,
+@book{Mirsky2021,
   doi       = {10.1007/978-3-031-01589-2},
   year      = {2021},
   publisher = {Springer International Publishing},
@@ -1002,6 +1029,17 @@
   url       = {https://ojs.aaai.org/index.php/AAAI/article/view/17418}
 }
 
+@article{Rojas2022,
+  doi       = {10.1007/s40593-022-00321-2},
+  url       = {https://doi.org/10.1007/s40593-022-00321-2},
+  year      = {2022},
+  month     = dec,
+  publisher = {Springer Science and Business Media {LLC}},
+  author    = {Matias Rojas and Cristian S{\'{a}}ez and Jorge Baier and Miguel Nussbaum and Orlando Guerrero and Mar{\'{\i}}a Fernanda Rodr{\'{\i}}guez},
+  title     = {Using Automated Planning to Provide Feedback during Collaborative Problem-Solving},
+  journal   = {International Journal of Artificial Intelligence in Education}
+}
+
 @inproceedings{Roscia2013,
   author    = {Mariacristina Roscia and Michela Longo and George Cristian Lazaroiu},
   booktitle = {2013 International Conference on Renewable Energy Research and Applications ({ICRERA})},
@@ -1023,6 +1061,36 @@
   timestamp = {2020-02-01T18:23:11.000+0100},
   title     = {Artificial Intelligence: A Modern Approach},
   year      = 2010
+}
+
+  @inproceedings{Scala2016,
+  author    = {Scala, Enrico and Haslum, Patrik and Thi\'{e}baux, Sylvie},
+  title     = {Heuristics for Numeric Planning via Subgoaling},
+  year      = {2016},
+  isbn      = {9781577357704},
+  publisher = {AAAI Press},
+  abstract  = {The paper presents a new relaxation for hybrid planning with continuous numeric and propositional state variables based on subgoaling, generalising the subgoaling principle underlying the h max and h add heuristics to such problems. Our relaxation improves on existing interval-based relaxations by taking into account some negative interactions between effects when achieving a subgoal, resulting in better estimates. We show conditions on the planning model ensuring that this new relaxation leads to tractable, and, for the h max version, admissible, heuristics. The new relaxation can be combined with the interval-based relaxation, to derive heuristics applicable to general numeric planning, while still providing more informed estimates for the subgoals that meet these conditions. Experiments show the effectiveness of its inadmissible and admissible version on satisficing and optimal numeric planning, respectively. As far as we know, this is the first admissible heuristic enabling cost-optimal numeric planning.},
+  booktitle = {Proceedings of the Twenty-Fifth International Joint Conference on Artificial Intelligence},
+  pages     = {3228–3234},
+  numpages  = {7},
+  location  = {New York, New York, USA},
+  series    = {IJCAI'16}
+}
+
+@inproceedings{ScalaHaslum2016,
+  author    = {Scala, Enrico and Haslum, Patrik and Thiebaux, Sylvie and Ramirez, Miquel},
+  title     = {Interval-Based Relaxation for General Numeric Planning},
+  year      = {2016},
+  isbn      = {9781614996712},
+  publisher = {IOS Press},
+  address   = {NLD},
+  doi       = {10.3233/978-1-61499-672-9-655},
+  abstract  = {We generalise the interval-based relaxation to sequential numeric planning problems with non-linear conditions and effects, and cyclic dependencies. This effectively removes all the limitations on the problem placed in previous work on numeric planning heuristics, and even allows us to extend the planning language with a wider set of mathematical functions. Heuristics obtained from the generalised relaxation are pruning-safe. We derive one such heuristic and use it to solve discrete-time control-like planning problems with autonomous processes. Few planners can solve such problems, and search with our new heuristic compares favourably with them.},
+  booktitle = {Proceedings of the Twenty-Second European Conference on Artificial Intelligence},
+  pages     = {655–663},
+  numpages  = {9},
+  location  = {The Hague, The Netherlands},
+  series    = {ECAI'16}
 }
 
 @incollection{Shvo2018,
@@ -1058,7 +1126,7 @@
   booktitle = {2019 18th Brazilian Symposium on Computer Games and Digital Entertainment ({SBGames})}
 }
 
-@inproceedings{SohrabiRiabovUdrea2016,
+  @inproceedings{SohrabiRiabovUdrea2016,
   author    = {Sohrabi, S and Riabov, A V and Udrea, O},
   booktitle = {International Joint Conference on Artificial Intelligence},
   title     = {Plan Recognition as Planning Revisited.},
@@ -1069,7 +1137,7 @@
   url       = {http://www.cs.toronto.edu/~shirin/Sohrabi-IJCAI-16.pdf}
 }
 
-  @article{strm1965,
+@article{strm1965,
   doi       = {10.1016/0022-247x(65)90154-x},
   year      = {1965},
   month     = feb,
@@ -1104,6 +1172,19 @@
   year      = {2019}
 }
 
+@article{Tran2014,
+  doi       = {10.1177/1365480213515296},
+  year      = {2014},
+  month     = mar,
+  publisher = {{SAGE} Publications},
+  volume    = {17},
+  number    = {1},
+  pages     = {18--29},
+  author    = {Yune Tran},
+  title     = {Addressing reciprocity between families and schools: Why these bridges are instrumental for students' academic success},
+  journal   = {Improving Schools}
+}
+
 @inproceedings{VeredPereiraMagnaguagnoEtAl2018,
   author    = {Vered, Mor and Pereira, Ramon Fraga and Magnaguagno, Mauricio Cecilio and Kaminka, Gal A and Meneguzzi, Felipe},
   booktitle = {International Conference on Autonomous Agents and Multiagent Systems (AAMAS)},
@@ -1127,7 +1208,7 @@
   year      = {2022}
 }
 
-  @article{Wohlrab2023,
+@article{Wohlrab2023,
   doi       = {10.1016/j.jss.2022.111538},
   year      = {2023},
   month     = apr,
@@ -1185,90 +1266,9 @@
   booktitle = {2022 {IEEE}/{RSJ} International Conference on Intelligent Robots and Systems ({IROS})}
 }
 
-@misc{JianZhao2022,
-  doi = {10.48550/ARXIV.2203.08412},
-  author = {Zhao,  Jian and Hu,  Xunhan and Yang,  Mingyu and Zhou,  Wengang and Zhu,  Jiangcheng and Li,  Houqiang},
-  keywords = {Multiagent Systems (cs.MA),  Machine Learning (cs.LG),  FOS: Computer and information sciences,  FOS: Computer and information sciences},
-  title = {CTDS: Centralized Teacher with Decentralized Student for Multi-Agent Reinforcement Learning},
-  publisher = {arXiv},
-  year = {2022},
-  copyright = {arXiv.org perpetual,  non-exclusive license}
-}
-
 @book{zmuda2004transforming,
-  title={Transforming schools: Creating a culture of continuous improvement},
-  author={Zmuda, Allison and Kuklis, Robert and Kline, Everett},
-  year={2004},
-  publisher={ASCD}
-}
-
-@article{Tran2014,
-  doi = {10.1177/1365480213515296},
-  year = {2014},
-  month = mar,
-  publisher = {{SAGE} Publications},
-  volume = {17},
-  number = {1},
-  pages = {18--29},
-  author = {Yune Tran},
-  title = {Addressing reciprocity between families and schools: Why these bridges are instrumental for students' academic success},
-  journal = {Improving Schools}
-}
-
-@article{Hamilton2009,
-  doi = {10.1080/01411920802042739},
-  year = {2009},
-  month = apr,
-  publisher = {Wiley},
-  volume = {35},
-  number = {2},
-  pages = {221--242},
-  author = {Mary Hamilton},
-  title = {Putting words in their mouths: The alignment of identities with system goals through the use of Individual Learning Plans},
-  journal = {British Educational Research Journal}
-}
-
-@article{Gutirrez2016,
-  doi = {10.1016/j.cor.2016.05.012},
-  year = {2016},
-  month = nov,
-  publisher = {Elsevier {BV}},
-  volume = {75},
-  pages = {150--162},
-  author = {Jimmy H. Guti{\'{e}}rrez and C{\'{e}}sar A. Astudillo and Pablo Ballesteros-P{\'{e}}rez and Daniel Mora-Meli{\`{a}} and Alfredo Candia-V{\'{e}}jar},
-  title = {The multiple team formation problem using sociometry},
-  journal = {Computers {\&}amp; Operations Research}
-}
-
-@article{Min2021b,
-  doi = {10.1609/aiide.v10i1.12717},
-  year = {2021},
-  month = jun,
-  publisher = {Association for the Advancement of Artificial Intelligence ({AAAI})},
-  volume = {10},
-  number = {1},
-  pages = {37--43},
-  author = {Wookhee Min and Eun Ha and Jonathan Rowe and Bradford Mott and James Lester},
-  title = {Deep Learning-Based Goal Recognition in Open-Ended Digital Games},
-  journal = {Proceedings of the {AAAI} Conference on Artificial Intelligence and Interactive Digital Entertainment}
-}
-
-@article{Fox2006,
-  doi = {10.1613/jair.2044},
-  year = {2006},
-  month = oct,
-  publisher = {{AI} Access Foundation},
-  volume = {27},
-  pages = {235--297},
-  author = {M. Fox and D. Long},
-  title = {Modelling Mixed Discrete-Continuous Domains for Planning},
-  journal = {Journal of Artificial Intelligence Research}
-}
-
-@book{Haslum2019,
-  doi = {10.1007/978-3-031-01584-7},
-  year = {2019},
-  publisher = {Springer International Publishing},
-  author = {Patrik Haslum and Nir Lipovetzky and Daniele Magazzeni and Christian Muise},
-  title = {An Introduction to the Planning Domain Definition Language}
+  title     = {Transforming schools: Creating a culture of continuous improvement},
+  author    = {Zmuda, Allison and Kuklis, Robert and Kline, Everett},
+  year      = {2004},
+  publisher = {ASCD}
 }
