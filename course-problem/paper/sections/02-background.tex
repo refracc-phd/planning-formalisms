@@ -1,9 +1,46 @@
 \section{Background}
 \begin{enumerate}
-    \item \textbf{Existing educational support systems and their limitations}, like how~\citet{Garrido2009} cannot monitor the learning routes, similar to intelligent tutoring systems;~\citet{Rojas2022} covers collaborative problem-solving and providing feedback in real-time, but does not necessarily provide an application to a classroom.
     \item \textbf{Overview of related work in the field of using AI and planning for educational assistance}~\cite{Castillo2009} summary.
-    \item \textbf{The specific challenges faced by secondary education that necessitate innovative solutions}, diversity of learning styles and technological integration of learning solutions \textbf{TODO: Find Material}.
+    \item \textbf{The specific challenges faced by secondary education that necessitate innovative solutions}, diversity of learning styles and technological integration of learning solutions \textbf{TODO\@: Find Material}.
 \end{enumerate}
+
+\subsubsection{Adaptive Learning and Intelligent Tutoring Systems} Adaptive learning systems provide personalised learning experiences. They adapt educational content and activities to the specific needs and abilities of each individual learner using AI algorithms. Key features of adaptive learning include:
+
+\begin{itemize}
+    \item Personalisation: Adaptive learning systems create a unique learning path for each student by adjusting content and pacing based on real-time performance data, as discussed in~\citet{ElSabagh2021}.
+    
+    \item Immediate Feedback: These systems offer instant feedback, helping students identify and address mistakes as they occur, leading to a deeper understanding of the material. [Citation Required]
+    
+    \item Data-Driven Insights: Adaptive learning systems collect and analyse data on student interactions, providing educators with valuable insights into student progress and areas requiring attention. [Citation Required]
+\end{itemize}
+
+\textbf{Limitations:}
+\begin{itemize}
+    \item Content Quality: The effectiveness of adaptive learning heavily depends on the quality of the learning materials. Inaccurate or outdated content may hinder personalisation efforts. [Citation Required]
+    
+    \item Overemphasis on Data: Overreliance on data and algorithms can result in a mechanistic approach to education, potentially overlooking the importance of the human element.~\citet{Rojas2022} covers collaborative problem-solving and providing feedback in real-time, but does not necessarily provide an application to a classroom.
+    
+    \item Resource Requirements: Implementing adaptive learning systems requires significant investments in technology and content development, which can be a barrier for institutions with limited resources. [Citation Required]
+\end{itemize}
+
+Intelligent Tutoring Systems simulate one-on-one tutoring experiences for students, using AI planning techniques to provide real-time guidance and adapt instructional approaches. Key features of ITS include:
+
+\begin{itemize}
+    \item Real-time Guidance: ITS offers students immediate feedback, clarifications, and guidance as they work through problems or assignments. [Citation Required]
+    
+    \item Step-by-Step Assistance: In subjects requiring sequential problem-solving, ITS provides step-by-step assistance, helping students grasp complex concepts. [Citation Required]
+    
+    \item Performance Assessment: ITS continuously assesses a student's knowledge and skills, offering targeted practice exercises and content based on their performance. [Citation Required]
+\end{itemize}
+
+\textbf{Limitations of Intelligent Tutoring Systems}
+\begin{itemize}
+    \item Lack of Contextual Understanding: ITS may lack a deep understanding of the broader context of learning, potentially leading to recommendations that are technically correct but not pedagogically appropriate.~\citet{Garrido2009} cannot monitor learning routes.
+    
+    \item Complex Development: Developing effective ITS can be complex and costly, requiring significant resources and expertise in algorithm development and content creation~\cite{Corbett1997}.
+    
+    \item Technology Access: Like adaptive learning, the effectiveness of ITS relies on technology access, which may not be equally available to all students. [Citation Required]
+\end{itemize}
 
 \subsubsection{Goal Recognition}
 Classical planning, as discussed in \citet{Fox2003}, treats time as relative and considers only causal dependencies among actions. However, real-world problems often entail complexities, including temporal aspects, numerical values, stochastic effects, and dynamic environments. Numeric planning extends classical planning by incorporating numeric state variables and utilising languages such as PDDL 2.1~\cite{Fox2003} and PDDL+~\cite{Fox2006}. These formalisms enable the representation of time-dependent changes, either as discrete time-dependent effects of durative actions or continuous process-dependent alterations. PDDL+ serves as an extension of PDDL designed specifically to model hybrid systems by integrating continuous processes and events, as outlined by~\citet{Haslum2019}. Its primary purpose is to facilitate the representation of planning domains that combine discrete and continuous elements.
