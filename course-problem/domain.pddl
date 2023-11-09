@@ -104,6 +104,7 @@
     (:action recommend-pomodoro-study
         :parameters (?s - student ?c - course ?l - course-level)
         :precondition (and 
+            (not(done-week week-one ?s ?c ?l))
             (or
                 (has-support-need ?s asc-asd)
                 (has-support-need ?s social-other)
@@ -115,6 +116,18 @@
             (increase (reward) 20)
         )
     )
+
+    (:action recommend-maths-workshop
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (not(done-week week-one ?s ?c ?l))
+            (has-support-need ?s dyscalculia)
+        )
+        :effect (and 
+            (increase (reward) 20)
+        )
+    )
+    
     
     ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
     
