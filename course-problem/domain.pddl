@@ -20,9 +20,9 @@
         unit-one unit-two unit-three unit-four - unit
         ec-one ec-two ec-three ec-four ec-five ec-six ec-seven ec-eight - extra-curricular
         a b c d p - grades
-        visualisation teamwork student-led-class inquiry-based-teaching technological-tools flex-seating summ-assessment form-assessment gamification project-based blended-learning interdisc-teaching - strategy
-        asc-asd dyslexia dyscalculia diff-attention-listening dysfluency reluct-selec-talk diff-understand-comm low-level social-other deaf-hearing blind-visual - support-requirement
-        none reduced-contact - support-received
+        visualisation teamwork student-led-class inquiry-based-teaching technological-tools flex-seating  gamification project-based blended-learning interdisc-teaching - strategy
+        asc-asd dyslexia dyscalculia diff-attention-listening dysfluency reluct-selec-talk diff-understand-comm social-other tourettes deaf-hearing blind-visual - support-requirement
+        improving-comms reading-group reduced-contact - support-received
         visual audio read-write kinaesthetic multimodal - vark-type
     )
     
@@ -41,11 +41,38 @@
         (uses-strategy ?s - student ?t - strategy)
         (student-vark-type ?s - student ?v - vark-type)
         (has-received-support ?s - student ?r - support-received)
+        (has-support-need ?s - student ?r - support-requirement)
     )
 
     (:functions
         (reward)
     )
+
+    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+    ;;;;;; PRIORITY ACTIONS ;;;;;;
+    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+    (:action attend-improve-communications-workshop
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and
+            (not(done-week week-one ?s ?c ?l))
+            (or
+                (has-support-need ?s asc-asd)
+                (has-support-need ?s social-other)
+                (has-support-need ?s dysfluency)
+                (has-support-need ?s dyslexia)
+                (uses-strategy ?s teamwork)
+                (uses-strategy ?s project-based)
+                (uses-strategy ?s blended-learning)
+            )
+        )
+        :effect (and 
+            (has-received-support ?s improving-comms)
+        )
+    )
+    
+    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+    
     
     (:action finish-course
         :parameters (?s - student ?c - course ?l - course-level)
