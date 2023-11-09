@@ -100,6 +100,21 @@
             (increase (reward) 20)
         )
     )
+
+    (:action recommend-pomodoro-study
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (or
+                (has-support-need ?s asc-asd)
+                (has-support-need ?s social-other)
+                (has-support-need ?s diff-attention-listening)
+                (has-support-need ?s tourettes)
+            )
+        )
+        :effect (and 
+            (increase (reward) 20)
+        )
+    )
     
     ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
     
