@@ -10,7 +10,6 @@
         vark-type
         strategy 
         support-requirement
-        support-received
         student
     )
 
@@ -21,8 +20,7 @@
         ec-one ec-two ec-three ec-four ec-five ec-six ec-seven ec-eight - extra-curricular
         a b c d p - grades
         visualisation teamwork student-led-class inquiry-based-teaching technological-tools flex-seating  gamification project-based blended-learning interdisc-teaching - strategy
-        asc-asd dyslexia dyscalculia diff-attention-listening dysfluency reluct-selec-talk diff-understand-comm social-other tourettes deaf-hearing blind-visual - support-requirement
-        improving-comms reading-group reduced-contact - support-received
+        asc-asd dyslexia dyscalculia diff-attention-listening dysfluency reluct-selec-talk diff-understand-comm social-other tourettes deaf-hearing blind-visual non-english - support-requirement
         visual audio read-write kinaesthetic multimodal - vark-type
     )
     
@@ -40,7 +38,6 @@
 
         (uses-strategy ?s - student ?t - strategy)
         (student-vark-type ?s - student ?v - vark-type)
-        (has-received-support ?s - student ?r - support-received)
         (has-support-need ?s - student ?r - support-requirement)
     )
 
@@ -61,13 +58,14 @@
                 (has-support-need ?s social-other)
                 (has-support-need ?s dysfluency)
                 (has-support-need ?s dyslexia)
+                (has-support-need ?s non-english)
                 (uses-strategy ?s teamwork)
                 (uses-strategy ?s project-based)
                 (uses-strategy ?s blended-learning)
             )
         )
         :effect (and 
-            (has-received-support ?s improving-comms)
+            (increase (reward) 20)
         )
     )
 
@@ -78,10 +76,28 @@
             (or
                 (has-support-need ?s dysfluency)
                 (has-support-need ?s dyslexia)
+                (has-support-need ?s non-english)
             )
         )
         :effect (and 
-            (has-received-support ?s reading-group)
+            (increase (reward) 20)
+        )
+    )
+
+    (:action recommend-technological-assistance
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (not(done-week week-one ?s ?c ?l))
+            (or
+                (has-support-need ?s dyslexia)
+                (has-support-need ?s asc-asd)
+                (has-support-need ?s reluct-selec-talk)
+                (has-support-need ?s deaf-hearing)
+                (has-support-need ?s non-english)
+            )
+        )
+        :effect (and 
+            (increase (reward) 20)
         )
     )
     
