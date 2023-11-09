@@ -20,12 +20,16 @@
         unit-one unit-two unit-three unit-four - unit
         ec-one ec-two ec-three ec-four ec-five ec-six ec-seven ec-eight - extra-curricular
         a b c d p - grades
+        visualisation teamwork student-led-class inquiry-based-teaching technological-tools flex-seating summ-assessment form-assessment gamification project-based blended-learning interdisc-teaching - strategy
+        asc-asd dyslexia dyscalculia diff-attention-listening dysfluency reluct-selec-talk diff-understand-comm low-level social-other deaf-hearing blind-visual - support-requirement
+        none reduced-contact - support-received
+        visual audio read-write kinaesthetic multimodal - vark-type
     )
     
     (:predicates
         (finished-course ?s - student ?c - course ?l - course-level)
         (takes-course ?s - student ?c - course ?l - course-level)
-        
+
         (grade ?g - grades ?s - student ?c - course ?l - course-level)
 
         (done-week ?w - week ?s - student ?c - course ?l - course-level)
