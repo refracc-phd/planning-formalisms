@@ -70,6 +70,20 @@
             (has-received-support ?s improving-comms)
         )
     )
+
+    (:action attend-reading-group
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (not(done-week week-one ?s ?c ?l))
+            (or
+                (has-support-need ?s dysfluency)
+                (has-support-need ?s dyslexia)
+            )
+        )
+        :effect (and 
+            (has-received-support ?s reading-group)
+        )
+    )
     
     ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
     
