@@ -24,7 +24,8 @@
     
     (:predicates
         (finished-course ?s - student ?c - course ?l - course-level)
-
+        (takes-course ?s - student ?c - course ?l - course-level)
+        
         (grade ?g - grades ?s - student ?c - course ?l - course-level)
 
         (done-week ?w - week ?s - student ?c - course ?l - course-level)
@@ -36,7 +37,6 @@
         (uses-strategy ?s - student ?t - strategy)
         (student-vark-type ?s - student ?v - vark-type)
         (has-received-support ?s - student ?r - support-received)
-        (takes-course ?s - student ?c - course ?l - course-level)
     )
 
     (:functions
