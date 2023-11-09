@@ -101,6 +101,16 @@
         ; (takes-course sam practical-woodwork national-four) (grade p sam practical-woodwork national-four)
 
         (study-group english higher)
+
+        (has-support-need emily dyslexia)
+        (uses-strategy emily pomodoro)
+
+        (has-support-need sophia asc-asd)
+        (uses-strategy sophia technological-tools)
+
+        (has-support-need mia deaf-hearing)
+
+        (has-support-need ava tourettes)
     )
 
     (:goal
