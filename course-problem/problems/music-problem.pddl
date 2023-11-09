@@ -21,7 +21,7 @@
         (= (reward) 0)
 
         (takes-course stewart music adv-higher)
-        (grade-a stewart music adv-higher)
+        (grade a stewart music adv-higher)
         (uses-strategy stewart pomodoro)
         (has-received-support stewart none)
         (student-vark-type stewart multimodal)

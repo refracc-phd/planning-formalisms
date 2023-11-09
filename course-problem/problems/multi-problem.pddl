@@ -23,7 +23,7 @@
         (takes-course stewart comp-sci higher)
         (grade-a stewart comp-sci higher)
         (takes-course stewart maths national-four)
-        (grade-p stewart maths national-four)
+        (grade p stewart maths national-four)
         (takes-course stewart music adv-higher)
         (grade-a stewart music adv-higher)
         (takes-course stewart english national-five)

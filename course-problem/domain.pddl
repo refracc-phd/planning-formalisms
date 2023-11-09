@@ -19,16 +19,13 @@
         week-one week-two week-three week-four week-five week-six week-seven week-eight - week
         unit-one unit-two unit-three unit-four - unit
         ec-one ec-two ec-three ec-four ec-five ec-six ec-seven ec-eight - extra-curricular
+        a b c d p - grades
     )
     
     (:predicates
         (finished-course ?s - student ?c - course ?l - course-level)
 
-        (grade-a ?s - student ?c - course ?l - course-level)
-        (grade-b ?s - student ?c - course ?l - course-level)
-        (grade-c ?s - student ?c - course ?l - course-level)
-        (grade-d ?s - student ?c - course ?l - course-level)
-        (grade-p ?s - student ?c - course ?l - course-level)
+        (grade ?g - grades ?s - student ?c - course ?l - course-level)
 
         (done-week ?w - week ?s - student ?c - course ?l - course-level)
         (done-unit ?u - unit ?s - student ?c - course ?l - course-level)
@@ -63,8 +60,8 @@
         :precondition (and 
             (takes-course ?s ?c ?l)
             (or
-                (grade-a ?s ?c ?l)
-                (grade-b ?s ?c ?l)
+                (grade a ?s ?c ?l)
+                (grade b ?s ?c ?l)
             )
             (not
                 (done-extra-curricular ec-one ?s ?c ?l)
@@ -80,7 +77,7 @@
         :parameters (?s - student ?c - course ?l - course-level)
         :precondition (and 
             (takes-course ?s ?c ?l)
-            (grade-a ?s ?c ?l)
+            (grade a ?s ?c ?l)
             (not
                 (done-extra-curricular ec-two ?s ?c ?l)
             )
@@ -97,8 +94,8 @@
         :precondition (and 
             (takes-course ?s ?c ?l)
             (or
-                (grade-a ?s ?c ?l)
-                (grade-b ?s ?c ?l)
+                (grade a ?s ?c ?l)
+                (grade b ?s ?c ?l)
             )
             (not
                 (done-extra-curricular ec-three ?s ?c ?l)
@@ -116,7 +113,7 @@
         :parameters (?s - student ?c - course ?l - course-level)
         :precondition (and 
             (takes-course ?s ?c ?l)
-            (grade-a ?s ?c ?l)
+            (grade a ?s ?c ?l)
             (not
                 (done-extra-curricular ec-four ?s ?c ?l)
             )
@@ -134,8 +131,8 @@
         :precondition (and 
             (takes-course ?s ?c ?l)
             (or
-                (grade-a ?s ?c ?l)
-                (grade-b ?s ?c ?l)
+                (grade a ?s ?c ?l)
+                (grade b ?s ?c ?l)
             )
             (not
                 (done-extra-curricular ec-five ?s ?c ?l)
@@ -153,7 +150,7 @@
         :parameters (?s - student ?c - course ?l - course-level)
         :precondition (and 
             (takes-course ?s ?c ?l)
-            (grade-a ?s ?c ?l)
+            (grade a ?s ?c ?l)
             (not
                 (done-extra-curricular ec-six ?s ?c ?l)
             )
@@ -171,8 +168,8 @@
         :precondition (and 
             (takes-course ?s ?c ?l)
             (or
-                (grade-a ?s ?c ?l)
-                (grade-b ?s ?c ?l)
+                (grade a ?s ?c ?l)
+                (grade b ?s ?c ?l)
             )
             (not
                 (done-extra-curricular ec-seven ?s ?c ?l)
@@ -190,7 +187,7 @@
         :parameters (?s - student ?c - course ?l - course-level)
         :precondition (and 
             (takes-course ?s ?c ?l)
-            (grade-a ?s ?c ?l)
+            (grade a ?s ?c ?l)
             (not
                 (done-extra-curricular ec-eight ?s ?c ?l)
             )
@@ -208,8 +205,8 @@
         :precondition (and 
             (takes-course ?s ?c ?l)
             (or
-                (grade-a ?s ?c ?l)
-                (grade-b ?s ?c ?l)
+                (grade a ?s ?c ?l)
+                (grade b ?s ?c ?l)
             )
             (study-group ?c ?l)
             (not
@@ -226,7 +223,7 @@
         :parameters (?s - student ?c - course ?l - course-level)
         :precondition (and 
             (takes-course ?s ?c ?l)
-            (grade-a ?s ?c ?l)
+            (grade a ?s ?c ?l)
             (not
                 (done-extra-curricular ec-two ?s ?c ?l)
             )
@@ -244,8 +241,8 @@
         :precondition (and 
             (takes-course ?s ?c ?l)
             (or
-                (grade-a ?s ?c ?l)
-                (grade-b ?s ?c ?l)
+                (grade a ?s ?c ?l)
+                (grade b ?s ?c ?l)
             )
             (not
                 (done-extra-curricular ec-three ?s ?c ?l)
@@ -264,7 +261,7 @@
         :parameters (?s - student ?c - course ?l - course-level)
         :precondition (and 
             (takes-course ?s ?c ?l)
-            (grade-a ?s ?c ?l)
+            (grade a ?s ?c ?l)
             (not
                 (done-extra-curricular ec-four ?s ?c ?l)
             )
@@ -283,8 +280,8 @@
         :precondition (and 
             (takes-course ?s ?c ?l)
             (or
-                (grade-a ?s ?c ?l)
-                (grade-b ?s ?c ?l)
+                (grade a ?s ?c ?l)
+                (grade b ?s ?c ?l)
             )
             (not
                 (done-extra-curricular ec-five ?s ?c ?l)
@@ -303,7 +300,7 @@
         :parameters (?s - student ?c - course ?l - course-level)
         :precondition (and 
             (takes-course ?s ?c ?l)
-            (grade-a ?s ?c ?l)
+            (grade a ?s ?c ?l)
             (not
                 (done-extra-curricular ec-six ?s ?c ?l)
             )
@@ -322,8 +319,8 @@
         :precondition (and 
             (takes-course ?s ?c ?l)
             (or
-                (grade-a ?s ?c ?l)
-                (grade-b ?s ?c ?l)
+                (grade a ?s ?c ?l)
+                (grade b ?s ?c ?l)
             )
             (study-group ?c ?l)
             (not
@@ -342,7 +339,7 @@
         :parameters (?s - student ?c - course ?l - course-level)
         :precondition (and 
             (takes-course ?s ?c ?l)
-            (grade-a ?s ?c ?l)
+            (grade a ?s ?c ?l)
             (not
                 (done-extra-curricular ec-eight ?s ?c ?l)
             )

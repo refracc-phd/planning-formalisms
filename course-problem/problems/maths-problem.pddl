@@ -21,7 +21,7 @@
         (= (reward) 0)
 
         (takes-course stewart maths national-four)
-        (grade-p stewart maths national-four)
+        (grade p stewart maths national-four)
         (uses-strategy stewart pomodoro)
         (has-received-support stewart none)
         (student-vark-type stewart multimodal)

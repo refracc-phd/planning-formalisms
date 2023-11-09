@@ -21,7 +21,7 @@
         (= (reward) 0)
         
         (takes-course stewart comp-sci higher)
-        (grade-a stewart comp-sci higher)
+        (grade a stewart comp-sci higher)
         (uses-strategy stewart pomodoro)
         (has-received-support stewart none)
         (student-vark-type stewart multimodal)
