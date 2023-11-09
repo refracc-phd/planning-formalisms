@@ -21,6 +21,7 @@
         a b c d p - grades
         visualisation teamwork student-led-class inquiry-based-teaching technological-tools flex-seating  gamification project-based blended-learning interdisc-teaching - strategy
         asc-asd dyslexia dyscalculia diff-attention-listening dysfluency reluct-selec-talk diff-understand-comm social-other tourettes deaf-hearing blind-visual non-english - support-requirement
+        improving-comms-workshop reading-group tech-assist pomo maths-workshop isolated - support-given
         visual audio read-write kinaesthetic multimodal - vark-type
     )
     
@@ -39,6 +40,7 @@
         (uses-strategy ?s - student ?t - strategy)
         (student-vark-type ?s - student ?v - vark-type)
         (has-support-need ?s - student ?r - support-requirement)
+        (given-support ?s - student ?g - support-given)
     )
 
     (:functions
@@ -50,9 +52,8 @@
     ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
     (:action recommend-improving-communications-workshop
-        :parameters (?s - student ?c - course ?l - course-level)
+        :parameters (?s - student)
         :precondition (and
-            (not(done-week week-one ?s ?c ?l))
             (or
                 (has-support-need ?s asc-asd)
                 (has-support-need ?s social-other)
@@ -65,14 +66,14 @@
             )
         )
         :effect (and 
-            (increase (reward) 20)
+            (increase (reward) 50)
+            (given-support ?s improving-comms-workshop)
         )
     )
 
     (:action recommend-reading-group
-        :parameters (?s - student ?c - course ?l - course-level)
+        :parameters (?s - student)
         :precondition (and 
-            (not(done-week week-one ?s ?c ?l))
             (or
                 (has-support-need ?s dysfluency)
                 (has-support-need ?s dyslexia)
@@ -80,14 +81,14 @@
             )
         )
         :effect (and 
-            (increase (reward) 20)
+            (increase (reward) 50)
+            (given-support ?s reading-group)
         )
     )
 
     (:action recommend-technological-assistance
-        :parameters (?s - student ?c - course ?l - course-level)
+        :parameters (?s - student)
         :precondition (and 
-            (not(done-week week-one ?s ?c ?l))
             (or
                 (has-support-need ?s dyslexia)
                 (has-support-need ?s asc-asd)
@@ -98,14 +99,14 @@
             )
         )
         :effect (and 
-            (increase (reward) 20)
+            (increase (reward) 50)
+            (given-support ?s tech-assist)
         )
     )
 
     (:action recommend-pomodoro-study
-        :parameters (?s - student ?c - course ?l - course-level)
+        :parameters (?s - student)
         :precondition (and 
-            (not(done-week week-one ?s ?c ?l))
             (or
                 (has-support-need ?s asc-asd)
                 (has-support-need ?s social-other)
@@ -115,20 +116,33 @@
             )
         )
         :effect (and 
-            (increase (reward) 20)
+            (increase (reward) 50)
+            (given-support ?s pomo)
         )
     )
 
     (:action recommend-maths-workshop
-        :parameters (?s - student ?c - course ?l - course-level)
+        :parameters (?s - student)
         :precondition (and 
-            (not(done-week week-one ?s ?c ?l))
             (has-support-need ?s dyscalculia)
         )
         :effect (and 
-            (increase (reward) 20)
+            (increase (reward) 50)
+            (given-support ?s maths-workshop)
         )
     )
+
+    (:action recommend-isolated-study-where-appropriate
+        :parameters (?s - student)
+        :precondition (and 
+                (has-support-need ?s tourettes)
+            )
+        :effect (and 
+            (increase (reward) 50)
+            (given-support ?s isolated)
+        )
+    )
+    
     ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
     
     

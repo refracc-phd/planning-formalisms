@@ -199,6 +199,11 @@
             ; (finished-course sam spanish national-five)
             ; (finished-course sam practical-woodwork national-four)
 
+            (given-support emily improving-comms-workshop)
+            (given-support emily pomo)
+            (given-support sophia improving-comms-workshop)
+            (given-support mia tech-assist)
+            (given-support ava pomo)
         )
     )
 
