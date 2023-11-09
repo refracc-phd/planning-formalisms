@@ -21,7 +21,6 @@
         (uses-strategy stewart pomodoro)
         (has-received-support stewart none)
         (student-vark-type stewart multimodal)
-        (can-pomodoro stewart maths national-four)
     )
 
     (:goal

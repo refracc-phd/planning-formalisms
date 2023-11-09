@@ -23,7 +23,6 @@
         (takes-course emily french national-five) (grade b emily french national-five)
         (takes-course emily geography national-four) (grade p emily geography national-four)
 
-
         ; (takes-course james esol national-four) (grade p james esol national-four)
         ; (takes-course james art-design higher) (grade b james art-design higher)
         ; (takes-course james music national-five) (grade b james music national-five)

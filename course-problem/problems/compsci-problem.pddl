@@ -11,7 +11,6 @@
         biology chemistry physics landscape-gardening - sciences
         geography history modern-studies rmps philosophy politics - social-subjects
         admin-it business-management comp-sci design-manufacture graph-comm practical-woodwork pc-passport - technologies
-        visualisation teamwork student-led-class inquiry-based-teaching technological-tools flex-seating summ-assessment form-assessment gamification project-based blended-learning interdisc-teaching - strategy
     )
 
     (:init
@@ -22,7 +21,6 @@
         (uses-strategy stewart pomodoro)
         (has-received-support stewart none)
         (student-vark-type stewart multimodal)
-        (can-pomodoro stewart comp-sci higher)
     )
 
     (:goal

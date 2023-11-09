@@ -4,7 +4,7 @@
     (:requirements :strips :typing :fluents :adl)
 
     (:types
-        course course-level week unit - object
+        course course-level week unit extra-curricular grades - object
         english-literacy expressive-arts health-wellbeing maths-numeracy languages sciences social-subjects technologies - course
         nq bge - course-level
         vark-type
@@ -36,7 +36,7 @@
         (done-unit ?u - unit ?s - student ?c - course ?l - course-level)
         (done-extra-curricular ?e - extra-curricular ?s - student ?c - course ?l - course-level)
 
-        (study-group ?c - course ?l - level)
+        (study-group ?c - course ?l - course-level)
 
         (uses-strategy ?s - student ?t - strategy)
         (student-vark-type ?s - student ?v - vark-type)
