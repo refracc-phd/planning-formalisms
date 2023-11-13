@@ -96,6 +96,7 @@
                 (has-support-need ?s deaf-hearing)
                 (has-support-need ?s non-english)
                 (uses-strategy ?s technological-tools)
+                (uses-strategy ?s blended-learning)
             )
         )
         :effect (and 
@@ -109,7 +110,6 @@
         :precondition (and 
             (or
                 (has-support-need ?s asc-asd)
-                (has-support-need ?s social-other)
                 (has-support-need ?s diff-attention-listening)
                 (has-support-need ?s tourettes)
                 (uses-strategy ?s pomodoro)

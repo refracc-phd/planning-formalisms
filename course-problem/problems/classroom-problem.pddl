@@ -106,7 +106,6 @@
         (uses-strategy emily pomodoro)
 
         (has-support-need sophia asc-asd)
-        (uses-strategy sophia technological-tools)
 
         (has-support-need mia deaf-hearing)
 
