@@ -138,12 +138,25 @@ perform_downward() {
   # Iterate over each problem file in the directory
   for problem_file in "$problem_dir"/*; do
       if [ -f "$problem_file" ]; then
-          "$executable_location" --sas-file "$problem_file-fFyY.sas" --plan-file "$problem_file-fFyY.plan" "$domain_file" "$problem_file" --evaluator "hff=ff(verbosity=silent)" --evaluator "hcea=cea(verbosity=silent)" --search "lazy_greedy([hff, hcea], preferred=[hff, hcea])" &
-          "$executable_location" --sas-file "$problem_file-fF.sas" --plan-file "$problem_file-fF.plan" "$domain_file" "$problem_file" --evaluator "hff=ff(verbosity=silent)" --search "lazy_greedy([hff], preferred=[hff])" &
-          "$executable_location" --sas-file "$problem_file-yY.sas" --plan-file "$problem_file-yY.plan" "$domain_file" "$problem_file" --evaluator "hcea=cea(verbosity=silent)" --search "lazy_greedy([hcea], preferred=[hcea])" &
-          "$executable_location" --sas-file "$problem_file-lmcut.sas" --plan-file "$problem_file-lmcut.plan" "$domain_file" "$problem_file" --search "astar(lmcut(verbosity=silent))" &
-          "$executable_location" --sas-file "$problem_file-ipbd.sas" --plan-file "$problem_file-ipbd.plan" "$domain_file" "$problem_file" --search "astar(ipdb(verbosity=silent))" &
-          # "$executable_location" --sas-file "$problem_file-blind.sas" --plan-file "$problem_file-blind.plan" "$domain_file" "$problem_file" --search "astar(blind(verbosity=silent))" &
+          "$executable_location" --plan-file "$problem_file-fFyY.plan" "$domain_file" "$problem_file" --evaluator "hff=ff(verbosity=debug)" --evaluator "hcea=cea(verbosity=debug)" --search "lazy_greedy([hff, hcea], preferred=[hff, hcea])" &
+          "$executable_location" --plan-file "$problem_file-fF.plan" "$domain_file" "$problem_file" --evaluator "hff=ff(verbosity=debug)" --search "lazy_greedy([hff], preferred=[hff])" &
+          "$executable_location" --plan-file "$problem_file-yY.plan" "$domain_file" "$problem_file" --evaluator "hcea=cea(verbosity=debug)" --search "lazy_greedy([hcea], preferred=[hcea])" &
+          "$executable_location" --plan-file "$problem_file-lmcut.plan" "$domain_file" "$problem_file" --search "astar(lmcut(verbosity=debug))" &
+          "$executable_location" --plan-file "$problem_file-ipbd.plan" "$domain_file" "$problem_file" --search "astar(ipdb(verbosity=debug))" &
+          "$executable_location" --plan-file "$problem_file-add.plan" "$domain_file" "$problem_file" --search "astar(add(verbosity=debug))" &
+          "$executable_location" --plan-file "$problem_file-cea.plan" "$domain_file" "$problem_file" --search "astar(cea(verbosity=debug))" &
+          "$executable_location" --plan-file "$problem_file-cegar.plan" "$domain_file" "$problem_file" --search "astar(cegar(verbosity=debug))" &
+          "$executable_location" --plan-file "$problem_file-cg.plan" "$domain_file" "$problem_file" --search "astar(cg(verbosity=debug))" &
+          "$executable_location" --plan-file "$problem_file-ff.plan" "$domain_file" "$problem_file" --search "astar(ff(verbosity=debug))" &
+          "$executable_location" --plan-file "$problem_file-goalcount.plan" "$domain_file" "$problem_file" --search "astar(goalcount(verbosity=debug))" &
+          "$executable_location" --plan-file "$problem_file-hm.plan" "$domain_file" "$problem_file" --search "astar(hm(verbosity=debug))" &
+          "$executable_location" --plan-file "$problem_file-hmax.plan" "$domain_file" "$problem_file" --search "astar(hmax(verbosity=debug))" &
+          "$executable_location" --plan-file "$problem_file-landmark_cost_partitioning.plan" "$domain_file" "$problem_file" --search "astar(landmark_cost_partitioning(verbosity=debug))" &
+          "$executable_location" --plan-file "$problem_file-landmark_sum.plan" "$domain_file" "$problem_file" --search "astar(landmark_sum(verbosity=debug))" &
+          "$executable_location" --plan-file "$problem_file-merge_and_shrink.plan" "$domain_file" "$problem_file" --search "astar(merge_and_shrink(verbosity=debug))" &
+          "$executable_location" --plan-file "$problem_file-operatorcounting.plan" "$domain_file" "$problem_file" --search "astar(operatorcounting(verbosity=debug))" &
+
+          # "$executable_location" --sas-file "$problem_file-blind.sas" --plan-file "$problem_file-blind.plan" "$domain_file" "$problem_file" --search "astar(blind(verbosity=debug))" &
       fi
   done
 }
