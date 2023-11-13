@@ -14,7 +14,7 @@
     )
 
     (:init
-        (= (reward) 0)
+        ; (= (reward) 0)
 
         (takes-course emily english national-five) (grade b emily english national-five)
         (takes-course emily drama higher) (grade a emily drama higher)
@@ -104,11 +104,8 @@
 
         (has-support-need emily language)
         (uses-strategy emily pomodoro)
-
         (has-support-need sophia asc-asd)
-
         (has-support-need mia deaf-hearing)
-
         (has-support-need ava tourettes)
     )
 
@@ -206,7 +203,7 @@
         )
     )
 
-    (:metric maximize
-        (reward)
-    )
+    ; (:metric maximize
+    ;     (reward)
+    ; )
 )
