@@ -102,7 +102,7 @@
 
         (study-group english higher)
 
-        (has-support-need emily dyslexia)
+        (has-support-need emily language)
         (uses-strategy emily pomodoro)
 
         (has-support-need sophia asc-asd)

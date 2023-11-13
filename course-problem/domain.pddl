@@ -20,7 +20,7 @@
         ec-one ec-two ec-three ec-four ec-five ec-six ec-seven ec-eight - extra-curricular
         a b c d p - grades
         visualisation teamwork student-led-class inquiry-based-teaching technological-tools flex-seating  gamification project-based blended-learning interdisc-teaching - strategy
-        asc-asd dyslexia dyscalculia diff-attention-listening dysfluency reluct-selec-talk diff-understand-comm social-other tourettes deaf-hearing blind-visual non-english - support-requirement
+        asc-asd social-other tourettes deaf-hearing blind-visual non-english lanugage - support-requirement
         improving-comms-workshop reading-group tech-assist pomo maths-workshop isolated - support-given
         visual audio read-write kinaesthetic multimodal - vark-type
     )
@@ -56,10 +56,7 @@
         :precondition (and
             (or
                 (has-support-need ?s asc-asd)
-                (has-support-need ?s social-other)
-                (has-support-need ?s dysfluency)
-                (has-support-need ?s dyslexia)
-                (has-support-need ?s non-english)
+                (has-support-need ?s language)
                 (uses-strategy ?s teamwork)
                 (uses-strategy ?s project-based)
                 (uses-strategy ?s blended-learning)
@@ -74,11 +71,7 @@
     (:action recommend-reading-group
         :parameters (?s - student)
         :precondition (and 
-            (or
-                (has-support-need ?s dysfluency)
-                (has-support-need ?s dyslexia)
-                (has-support-need ?s non-english)
-            )
+            (has-support-need ?s language)
         )
         :effect (and 
             (increase (reward) 50)
@@ -90,11 +83,9 @@
         :parameters (?s - student)
         :precondition (and 
             (or
-                (has-support-need ?s dyslexia)
                 (has-support-need ?s asc-asd)
-                (has-support-need ?s reluct-selec-talk)
+                (has-support-need ?s language)
                 (has-support-need ?s deaf-hearing)
-                (has-support-need ?s non-english)
                 (uses-strategy ?s technological-tools)
                 (uses-strategy ?s blended-learning)
             )
@@ -110,7 +101,6 @@
         :precondition (and 
             (or
                 (has-support-need ?s asc-asd)
-                (has-support-need ?s diff-attention-listening)
                 (has-support-need ?s tourettes)
                 (uses-strategy ?s pomodoro)
             )
@@ -118,17 +108,6 @@
         :effect (and 
             (increase (reward) 50)
             (given-support ?s pomo)
-        )
-    )
-
-    (:action recommend-maths-workshop
-        :parameters (?s - student)
-        :precondition (and 
-            (has-support-need ?s dyscalculia)
-        )
-        :effect (and 
-            (increase (reward) 50)
-            (given-support ?s maths-workshop)
         )
     )
 
