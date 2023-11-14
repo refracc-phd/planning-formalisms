@@ -14,7 +14,6 @@
     )
 
     (:init
-        ; (= (reward) 0)
 
         (takes-course stewart music adv-higher)
         (grade a stewart music adv-higher)
@@ -28,8 +27,4 @@
             (finished-course stewart music adv-higher)
         )
     )
-
-    ; (:metric maximize
-    ;     (reward)
-    ; )
 )

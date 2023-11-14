@@ -14,7 +14,6 @@
     )
 
     (:init
-        ; (= (reward) 0)
 
         (takes-course stewart english national-five)
         (grade b stewart english national-five)
@@ -28,8 +27,4 @@
             (finished-course stewart english national-five)
         )
     )
-
-    ; (:metric maximize
-    ;     (reward)
-    ; )
 )

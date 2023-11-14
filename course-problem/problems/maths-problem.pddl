@@ -14,7 +14,6 @@
     )
 
     (:init
-        ; (= (reward) 0)
 
         (takes-course stewart maths national-four)
         (grade p stewart maths national-four)
@@ -28,8 +27,4 @@
             (finished-course stewart maths national-four)
         )
     )
-
-    ; (:metric maximize
-    ;     (reward)
-    ; )
 )

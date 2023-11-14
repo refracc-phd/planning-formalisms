@@ -1,6 +1,5 @@
 (define (domain courses)
 
-    ;remove requirements that are not needed
     (:requirements :strips :typing :adl)
 
     (:types
@@ -44,14 +43,6 @@
         (given-support ?s - student ?g - support-given)
     )
 
-    (:functions
-        ; (reward)
-    )
-
-    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-    ;;;;;; PRIORITY ACTIONS ;;;;;;
-    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
     (:action recommend-improving-communications-workshop
         :parameters (?s - student)
         :precondition (and
@@ -64,7 +55,6 @@
             )
         )
         :effect (and 
-            ; (increase (reward) 50)
             (given-support ?s improving-comms-workshop)
         )
     )
@@ -75,7 +65,6 @@
             (has-support-need ?s language)
         )
         :effect (and 
-            ; (increase (reward) 50)
             (given-support ?s reading-group)
         )
     )
@@ -92,7 +81,6 @@
             )
         )
         :effect (and 
-            ; (increase (reward) 50)
             (given-support ?s tech-assist)
         )
     )
@@ -107,7 +95,6 @@
             )
         )
         :effect (and 
-            ; (increase (reward) 50)
             (given-support ?s pomo)
         )
     )
@@ -118,12 +105,10 @@
                 (has-support-need ?s tourettes)
             )
         :effect (and 
-            ; (increase (reward) 50)
             (given-support ?s isolated)
         )
     )
     
-    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
     
     
     (:action finish-course
@@ -134,7 +119,6 @@
         )
         :effect (and
             (finished-course ?s ?c ?l)
-            ; (increase (reward) 250)
         )
     )
 
@@ -152,7 +136,6 @@
         )
         :effect (and 
             (done-extra-curricular ec-one ?s ?c ?l)
-            ; (increase (reward) 100)
         )
     )
 
@@ -168,7 +151,6 @@
         )
         :effect (and 
             (done-extra-curricular ec-two ?s ?c ?l)
-            ; (increase (reward) 100)
         )
     )
 
@@ -188,7 +170,6 @@
         )
         :effect (and 
             (done-extra-curricular ec-three ?s ?c ?l)
-            ; (increase (reward) 100)
         )
     )
 
@@ -205,7 +186,6 @@
         )
         :effect (and 
             (done-extra-curricular ec-four ?s ?c ?l)
-            ; (increase (reward) 100)
         )
     )
 
@@ -225,7 +205,6 @@
         )
         :effect (and 
             (done-extra-curricular ec-five ?s ?c ?l)
-            ; (increase (reward) 100)
         )
     )
 
@@ -242,7 +221,6 @@
         )
         :effect (and 
             (done-extra-curricular ec-six ?s ?c ?l)
-            ; (increase (reward) 100)
         )
     )
 
@@ -262,7 +240,6 @@
         )
         :effect (and 
             (done-extra-curricular ec-seven ?s ?c ?l)
-            ; (increase (reward) 100)
         )
     )
 
@@ -279,7 +256,6 @@
         )
         :effect (and 
             (done-extra-curricular ec-eight ?s ?c ?l)
-            ; (increase (reward) 100)
         )
     )
 
@@ -301,7 +277,6 @@
         )
         :effect (and 
             (done-extra-curricular ec-one ?s ?c ?l)
-            ; (increase (reward) 200)
         )
     )
 
@@ -321,7 +296,6 @@
         )
         :effect (and 
             (done-extra-curricular ec-two ?s ?c ?l)
-            ; (increase (reward) 200)
         )
     )
 
@@ -343,7 +317,6 @@
         )
         :effect (and 
             (done-extra-curricular ec-three ?s ?c ?l)
-            ; (increase (reward) 200)
         )
     )
 
@@ -362,7 +335,6 @@
         )
         :effect (and 
             (done-extra-curricular ec-four ?s ?c ?l)
-            ; (increase (reward) 200)
         )
     )
 
@@ -384,7 +356,6 @@
         )
         :effect (and 
             (done-extra-curricular ec-five ?s ?c ?l)
-            ; (increase (reward) 200)
         )
     )
 
@@ -403,7 +374,6 @@
         )
         :effect (and 
             (done-extra-curricular ec-six ?s ?c ?l)
-            ; (increase (reward) 200)
         )
     )
 
@@ -425,7 +395,6 @@
         )
         :effect (and 
             (done-extra-curricular ec-seven ?s ?c ?l)
-            ; (increase (reward) 200)
         )
     )
 
@@ -444,7 +413,6 @@
         )
         :effect (and 
             (done-extra-curricular ec-eight ?s ?c ?l)
-            ; (increase (reward) 200)
         )
     )
     
@@ -457,7 +425,6 @@
             (done-week week-eight ?s ?c ?l)
         )
         :effect (and
-            ; (increase (reward) 60)
             (done-unit unit-one ?s ?c ?l)
             (not(done-week week-eight ?s ?c ?l))
             (not(done-week week-seven ?s ?c ?l))
@@ -479,7 +446,6 @@
             (done-week week-eight ?s ?c ?l)
         )
         :effect (and
-            ; (increase (reward) 60)
             (done-unit unit-two ?s ?c ?l)
             (not(done-week week-eight ?s ?c ?l))
             (not(done-week week-seven ?s ?c ?l))
@@ -501,7 +467,6 @@
             (done-week week-eight ?s ?c ?l)
         )
         :effect (and
-            ; (increase (reward) 60)
             (done-unit unit-three ?s ?c ?l)
             (not(done-week week-eight ?s ?c ?l))
             (not(done-week week-seven ?s ?c ?l))
@@ -523,7 +488,6 @@
             (done-week week-eight ?s ?c ?l)
         )
         :effect (and
-            ; (increase (reward) 60)
             (done-unit unit-four ?s ?c ?l)
             (not(done-week week-eight ?s ?c ?l))
             (not(done-week week-seven ?s ?c ?l))
@@ -544,7 +508,6 @@
         )
         :effect (and 
             (done-week week-one ?s ?c ?l)
-            ; (increase (reward) 50)
         )
     )
 
@@ -556,7 +519,6 @@
         )
         :effect (and 
             (done-week week-two ?s ?c ?l)
-            ; (increase (reward) 50)
         )
     )
 
@@ -568,7 +530,6 @@
         )
         :effect (and 
             (done-week week-three ?s ?c ?l)
-            ; (increase (reward) 50)
         )
     )
 
@@ -580,7 +541,6 @@
         )
         :effect (and 
             (done-week week-four ?s ?c ?l)
-            ; (increase (reward) 50)
         )
     )
 
@@ -592,7 +552,6 @@
         )
         :effect (and 
             (done-week week-five ?s ?c ?l)
-            ; (increase (reward) 50)
         )
     )
 
@@ -604,7 +563,6 @@
         )
         :effect (and 
             (done-week week-six ?s ?c ?l)
-            ; (increase (reward) 50)
         )
     )
 
@@ -616,7 +574,6 @@
         )
         :effect (and 
             (done-week week-seven ?s ?c ?l)
-            ; (increase (reward) 50)
         )
     )
 
@@ -628,7 +585,6 @@
         )
         :effect (and 
             (done-week week-eight ?s ?c ?l)
-            ; (increase (reward) 50)
         )
     )
 )

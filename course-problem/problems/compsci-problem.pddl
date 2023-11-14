@@ -14,7 +14,6 @@
     )
 
     (:init
-        ; (= (reward) 0)
         
         (takes-course stewart comp-sci higher)
         (grade a stewart comp-sci higher)
@@ -28,8 +27,4 @@
             (finished-course stewart comp-sci higher)
         )
     )
-
-    ; (:metric maximize
-    ;     (reward)
-    ; )
 )
