@@ -23,7 +23,7 @@
         asc-asd social-other tourettes deaf-hearing blind-visual language - support-requirement
         improving-comms-workshop reading-group tech-assist pomo maths-workshop isolated - support-given
         visual audio read-write kinaesthetic multimodal - vark-type
-    )
+    ) 
     
     (:predicates
         (finished-course ?s - student ?c - course ?l - course-level)
