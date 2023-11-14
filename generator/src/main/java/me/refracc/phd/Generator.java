@@ -1,25 +1,73 @@
 package me.refracc.phd;
 
+import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.*;
-import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.Executor;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 
 public class Generator {
 
-  private static final Executor executor = Executors.newFixedThreadPool(3); // Adjust the pool size based on your needs
-  private static final List<String> students = new ArrayList<>();
+  private static final List<String> students = Collections.synchronizedList(new ArrayList<>());
 
-  private static @NotNull CompletableFuture<List<String>> readAsync(String name) {
-    return CompletableFuture.supplyAsync(() -> read(name), executor);
+  public static void main(String[] args) {
+    List<String> constants = Collections.synchronizedList(new ArrayList<>());
+    List<String> names = Collections.synchronizedList(new ArrayList<>());
+    List<String> objects = Collections.synchronizedList(new ArrayList<>());
+
+    Thread constantsThread = new Thread(() -> constants.addAll(read("constants.txt")));
+    Thread namesThread = new Thread(() -> names.addAll(read("names.txt")));
+    Thread objectsThread = new Thread(() -> objects.addAll(read("objects.txt")));
+
+    constantsThread.start();
+    namesThread.start();
+    objectsThread.start();
+
+    try {
+      constantsThread.join();
+      namesThread.join();
+      objectsThread.join();
+    } catch (InterruptedException e) {
+      e.printStackTrace();
+    }
+
+    final List<Thread> writingThreads = threads(objects, names);
+
+    for (Thread thread : writingThreads) {
+      try {
+        thread.join();
+      } catch (InterruptedException e) {
+        e.printStackTrace();
+      }
+    }
   }
 
+  @NotNull
+  private static List<Thread> threads(List<String> objects, List<String> names) {
+    Random random = new Random(27356876234L);
+
+    List<Thread> writingThreads = new ArrayList<>();
+
+    for (int i = 0; i < 50; i++) {
+      final int index = i;
+      Thread writingThread = new Thread(() -> {
+        String outputFile = "p" + index + ".pddl";
+        try (PrintWriter writer = new PrintWriter(new FileWriter(outputFile))) {
+          String problemDescription = generateProblem(index, objects, names, random);
+          writer.println(problemDescription);
+          System.out.println("Problem description written to " + outputFile);
+        } catch (IOException e) {
+          e.printStackTrace();
+        }
+      });
+
+      writingThreads.add(writingThread);
+      writingThread.start();
+    }
+    return writingThreads;
+  }
+
+  @Contract(pure = true)
   private static @NotNull List<String> read(String name) {
     List<String> list = new ArrayList<>();
     try (BufferedReader br = new BufferedReader(new InputStreamReader(Generator.class.getClassLoader().getResourceAsStream(name)))) {
@@ -33,25 +81,12 @@ public class Generator {
     return list;
   }
 
-  public static void main(String[] args) {
-    List<String> constants = readAsync("constants.txt").join();
-    List<String> names = readAsync("names.txt").join();
-    List<String> objects = readAsync("objects.txt").join();
-
-    Random random = new Random(1L);
-
-    for (int i = 0; i < 5; i++) {
-      System.out.println(generateProblem(i, objects, names, random));
-    }
-
-  }
-
-  private static @NotNull String courseGeneration(String student) {
+  private static @NotNull String courseGeneration(String student, StringBuilder goal) {
     Map<String, Map<Course, Level>> allocation = new HashMap<>();
     List<Course> courses = List.of(Course.values());
     List<Level> levels = List.of(Level.values());
+    StringBuilder pddlProblem = new StringBuilder();
 
-    // Ensure the student has no more than 6 courses
     for (int i = 0; i < 6; i++) {
       // Randomly select a course and level for the student
       Course randomCourse = getRandomElement(courses);
@@ -60,13 +95,21 @@ public class Generator {
       // Check if the student already has the selected course
       allocation.computeIfAbsent(student, k -> new HashMap<>())
           .putIfAbsent(randomCourse, randomLevel);
-    }
 
-    // Build the StringBuilder with the student-course-level allocations
-    StringBuilder pddlProblem = new StringBuilder();
-    allocation.forEach((stu, courseLevels) ->
-        courseLevels.forEach((course, level) ->
-            addPredicate(pddlProblem, "takes-course", stu, course.getCourseName(), level.getLevelDescription())));
+      // Add predicates for the course and level
+      addPredicate(pddlProblem, "takes-course", student, randomCourse.getCourseName(), randomLevel.getLevelDescription());
+
+      // Determine the grade predicate value based on the level
+      Grades randomGrade = (randomLevel == Level.ADV_HIGHER || randomLevel == Level.HIGHER || randomLevel == Level.NATIONAL_FIVE) ?
+          getRandomElement(Arrays.asList(Grades.A, Grades.B, Grades.C, Grades.D)) :
+          Grades.P;
+
+      // Add predicate for the grade
+      addPredicate(pddlProblem, "grade", randomGrade.getGradeValue(), student, randomCourse.getCourseName(), randomLevel.getLevelDescription());
+
+      // Add goal condition for finished-course predicate
+      addPredicate(goal, "finished-course", student, randomCourse.getCourseName(), randomLevel.getLevelDescription());
+    }
 
     return pddlProblem.toString();
   }
@@ -94,11 +137,16 @@ public class Generator {
     problemDescription.append("- student");
     problemDescription.append("\n\t)\n\n\t(:init");
 
-    for (String s : students)
-      problemDescription.append(courseGeneration(s));
+    StringBuilder goal = new StringBuilder();
+    goal.append("\n\t)\n\n\t(:goal");
 
-    return problemDescription.toString();
+    students.forEach(s -> problemDescription.append(courseGeneration(s, goal)));
+
+    goal.append("\n\t)\n)");
+
+    return problemDescription.append(goal).toString();
   }
+
 
   // Helper method to get a random element from a list
   private static <T> T getRandomElement(@NotNull List<T> list) {
