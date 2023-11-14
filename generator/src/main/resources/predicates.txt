@@ -1,0 +1,15 @@
+(finished-course ?s ?c ?l)
+(takes-course ?s ?c ?l)
+
+(grade ?g - grades ?s ?c ?l)
+
+(done-week ?w ?s ?c ?l)
+(done-unit ?u ?s ?c ?l)
+(done-extra-curricular ?e - extra-curricular ?s ?c ?l)
+
+(study-group ?c ?l)
+
+(uses-strategy ?s ?t)
+(student-vark-type ?s ?v)
+(has-support-need ?s ?r)
+(given-support ?s ?g)
