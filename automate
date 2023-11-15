@@ -161,6 +161,27 @@ perform_downward() {
 }
 
 perform_enhsp() {
+  # Set the maximum number of concurrent tasks
+  MAX_CONCURRENT_TASKS=10
+
+  # Create a semaphore file
+  SEMAPHORE_FILE=$(mktemp)
+
+  # Function to acquire the semaphore
+  acquire_semaphore() {
+    exec 200>"$SEMAPHORE_FILE"
+    flock -x 200
+  }
+
+  # Function to release the semaphore
+  release_semaphore() {
+    flock -u 200
+    rm "$SEMAPHORE_FILE"
+  }
+
+  # Trap to ensure semaphore release on script exit
+  trap 'release_semaphore' EXIT
+
   # Prompt for user inputs and validate existence
   read -p "ENHSP Executable Location: " executable_location
   read -p "Domain File: " domain_file
@@ -181,12 +202,30 @@ perform_enhsp() {
   # Iterate over problem files and run heuristics
   for problem_file in "$problem_dir"/*; do
     [ ! -f "$problem_file" ] || [ "$problem_file" = "domain.pddl" ] && continue
-    
+
+    # Acquire the semaphore before running tasks
+    acquire_semaphore
+
+    IO:announce "There are a maximum of $MAX_CONCURRENT_TASKS slots available to execute tasks."
+    sleep 3
+
     # Run all heuristics in parallel for the current problem file
     for heuristic in "${heuristics[@]}"; do
-      java -Xmx10G -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "$heuristic" -sp "$problem_file-$heuristic.plan" &
+      (
+        java -Xmx10G -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "$heuristic" -sp "$problem_file-$heuristic.plan"
+        # Release the semaphore after task completion
+        release_semaphore
+        IO:success "Task completed: $problem_file - $heuristic"
+      ) &
+      
+      # Limit the number of concurrent tasks
+      while [ $(jobs -p | wc -l) -ge "$MAX_CONCURRENT_TASKS" ]; do
+        sleep 1
+        IO:announce "Waiting for slots to execute tasks..."
+      done
     done
   done
+
   wait
   IO:success "All planning tasks completed."
 }
