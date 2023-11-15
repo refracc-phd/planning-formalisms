@@ -106,7 +106,7 @@ public class Generator {
       addPredicate(pddlProblem, "grade", randomGrade.getGradeValue(), student, randomCourse.getCourseName(), randomLevel.getLevelDescription());
 
       // Add goal condition for finished-course predicate
-      addPredicate(goal, "finished-course", student, randomCourse.getCourseName(), randomLevel.getLevelDescription());
+      addGoalPredicate(goal, "finished-course", student, randomCourse.getCourseName(), randomLevel.getLevelDescription());
     }
 
     Random r1 = new Random();
@@ -118,24 +118,24 @@ public class Generator {
 
       switch (support) {
         case "asc-asd" ->  {
-          addPredicate(goal, "given-support", student, "improving-comms-workshop");
-          addPredicate(goal, "given-support", student, "tech-assist");
-          addPredicate(goal, "given-support", student, "pomo");
-          addPredicate(goal, "given-support", student, "gamify-learning");
+          addGoalPredicate(goal, "given-support", student, "improving-comms-workshop");
+          addGoalPredicate(goal, "given-support", student, "tech-assist");
+          addGoalPredicate(goal, "given-support", student, "pomo");
+          addGoalPredicate(goal, "given-support", student, "gamify-learning");
         }
-        case "social-other" -> addPredicate(goal, "given-support", student, "improving-comms-workshop");
+        case "social-other" -> addGoalPredicate(goal, "given-support", student, "improving-comms-workshop");
         case "tourettes" -> {
-          addPredicate(goal, "given-support", student, "isolated");
-          addPredicate(goal, "given-support", student, "gamify-learning");
+          addGoalPredicate(goal, "given-support", student, "isolated");
+          addGoalPredicate(goal, "given-support", student, "gamify-learning");
         }
-        case "deaf-hearing" -> addPredicate(goal, "given-support", student, "tech-assist");
+        case "deaf-hearing" -> addGoalPredicate(goal, "given-support", student, "tech-assist");
         case "blind-visual" -> {
-          addPredicate(goal, "given-support", student, "tech-assist");
-          addPredicate(goal, "given-support", student, "reading-group");
+          addGoalPredicate(goal, "given-support", student, "tech-assist");
+          addGoalPredicate(goal, "given-support", student, "reading-group");
         }
         case "language" -> {
-          addPredicate(goal, "given-support", student, "reading-group");
-          addPredicate(goal, "given-support", student, "tech-assist");
+          addGoalPredicate(goal, "given-support", student, "reading-group");
+          addGoalPredicate(goal, "given-support", student, "tech-assist");
         }
         default -> throw new IllegalStateException("Unexpected value: " + support);
       }
@@ -146,18 +146,17 @@ public class Generator {
 
       switch(strategy) {
         case "teamwork" -> {
-          addPredicate(goal, "given-support", student, "improving-comms-workshop");
-          addPredicate(goal, "given-support", student, "pomo");
+          addGoalPredicate(goal, "given-support", student, "improving-comms-workshop");
+          addGoalPredicate(goal, "given-support", student, "pomo");
         }
-        case "student-led-class", "flex-seating", "project-based" -> addPredicate(goal, "given-support", student, "improving-comms-workshop");
-        case "technological-tools" -> addPredicate(goal, "given-support", student, "tech-assist");
-        case "gamification" -> addPredicate(goal, "given-support", student, "gamify-learning");
+        case "student-led-class", "flex-seating", "project-based" -> addGoalPredicate(goal, "given-support", student, "improving-comms-workshop");
+        case "technological-tools" -> addGoalPredicate(goal, "given-support", student, "tech-assist");
+        case "gamification" -> addGoalPredicate(goal, "given-support", student, "gamify-learning");
         case "blended-learning" -> {
-          addPredicate(goal, "given-support", student, "improving-comms-workshop");
-          addPredicate(goal, "given-support", student, "tech-assist");
-          addPredicate(goal, "given-support", student, "gamify-learning");
+          addGoalPredicate(goal, "given-support", student, "improving-comms-workshop");
+          addGoalPredicate(goal, "given-support", student, "tech-assist");
+          addGoalPredicate(goal, "given-support", student, "gamify-learning");
         }
-        case "interdisc-teaching" -> System.out.println("Adopting interdisciplinary teaching approaches.");
         default -> throw new IllegalStateException("Unexpected value: " + strategy);
       }
     }
@@ -189,11 +188,11 @@ public class Generator {
     problemDescription.append("\n\t)\n\n\t(:init");
 
     StringBuilder goal = new StringBuilder();
-    goal.append("\n\t)\n\n\t(:goal");
+    goal.append("\n\t)\n\n\t(:goal\n\t\t(and");
 
     students.forEach(s -> problemDescription.append(courseGeneration(s, goal)));
 
-    goal.append("\n\t)\n)");
+    goal.append("\n\t\t)\n\t)\n)");
 
     return problemDescription.append(goal).toString();
   }
@@ -208,6 +207,14 @@ public class Generator {
   // Helper method to add a PDDL predicate to the StringBuilder
   private static void addPredicate(@NotNull StringBuilder sb, String predicate, String @NotNull ... arguments) {
     sb.append("\n\t\t(").append(predicate);
+    for (String arg : arguments) {
+      sb.append(" ").append(arg);
+    }
+    sb.append(")");
+  }
+
+  private static void addGoalPredicate(@NotNull StringBuilder sb, String predicate, String @NotNull ... arguments) {
+    sb.append("\n\t\t\t(").append(predicate);
     for (String arg : arguments) {
       sb.append(" ").append(arg);
     }

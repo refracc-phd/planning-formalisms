@@ -1,0 +1,91 @@
+(define (problem p42) (:domain courses)
+	(:objects
+		adv-higher higher national-five national-four - nq
+		year-one year-two year-three - bge
+		english esol - english-literacy
+		drama art-design music music-tech dance - expressive-arts
+		phys-ed home-economics textiles - health-wellbeing
+		maths numeracy lifeskills - maths-numeracy
+		french german spanish italian latin mandarin cantonese gaelic urdu - languages
+		biology chemistry physics landscape-gardening - sciences
+		geography history modern-studies rmps philosophy politics - social-subjects
+		admin-it business-management comp-sci design-manufacture graph-comm practical-woodwork pc-passport - technologies
+		olivia isabella sophia - student
+	)
+
+	(:init
+		(takes-course olivia music adv-higher)
+		(grade d olivia music adv-higher)
+		(takes-course olivia numeracy year-two)
+		(grade p olivia numeracy year-two)
+		(takes-course olivia gaelic year-two)
+		(grade p olivia gaelic year-two)
+		(takes-course olivia comp-sci higher)
+		(grade c olivia comp-sci higher)
+		(takes-course olivia german adv-higher)
+		(grade b olivia german adv-higher)
+		(takes-course olivia landscape-gardening year-two)
+		(grade p olivia landscape-gardening year-two)
+		(has-support-need olivia language)
+		(uses-strategy olivia student-led-class)
+		(takes-course isabella business-management year-two)
+		(grade p isabella business-management year-two)
+		(takes-course isabella graph-comm national-four)
+		(grade p isabella graph-comm national-four)
+		(takes-course isabella admin-it national-four)
+		(grade p isabella admin-it national-four)
+		(takes-course isabella maths higher)
+		(grade d isabella maths higher)
+		(takes-course isabella philosophy higher)
+		(grade a isabella philosophy higher)
+		(takes-course isabella practical-woodwork national-four)
+		(grade p isabella practical-woodwork national-four)
+		(has-support-need isabella asc-asd)
+		(takes-course sophia art-design adv-higher)
+		(grade b sophia art-design adv-higher)
+		(takes-course sophia drama year-two)
+		(grade p sophia drama year-two)
+		(takes-course sophia chemistry higher)
+		(grade d sophia chemistry higher)
+		(takes-course sophia maths national-five)
+		(grade b sophia maths national-five)
+		(takes-course sophia urdu adv-higher)
+		(grade a sophia urdu adv-higher)
+		(takes-course sophia gaelic year-two)
+		(grade p sophia gaelic year-two)
+		(uses-strategy sophia blended-learning)
+	)
+
+	(:goal
+		(and
+		(finished-course olivia music adv-higher)
+		(finished-course olivia numeracy year-two)
+		(finished-course olivia gaelic year-two)
+		(finished-course olivia comp-sci higher)
+		(finished-course olivia german adv-higher)
+		(finished-course olivia landscape-gardening year-two)
+		(given-support olivia reading-group)
+		(given-support olivia tech-assist)
+		(given-support olivia improving-comms-workshop)
+		(finished-course isabella business-management year-two)
+		(finished-course isabella graph-comm national-four)
+		(finished-course isabella admin-it national-four)
+		(finished-course isabella maths higher)
+		(finished-course isabella philosophy higher)
+		(finished-course isabella practical-woodwork national-four)
+		(given-support isabella improving-comms-workshop)
+		(given-support isabella tech-assist)
+		(given-support isabella pomo)
+		(given-support isabella gamify-learning)
+		(finished-course sophia art-design adv-higher)
+		(finished-course sophia drama year-two)
+		(finished-course sophia chemistry higher)
+		(finished-course sophia maths national-five)
+		(finished-course sophia urdu adv-higher)
+		(finished-course sophia gaelic year-two)
+		(given-support sophia improving-comms-workshop)
+		(given-support sophia tech-assist)
+		(given-support sophia gamify-learning)
+		)
+	)
+)

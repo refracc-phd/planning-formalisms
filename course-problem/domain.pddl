@@ -19,7 +19,7 @@
         unit-one unit-two unit-three unit-four - unit
         ec-one ec-two ec-three ec-four ec-five ec-six ec-seven ec-eight - extra-curricular
         a b c d p - grades
-        teamwork student-led-class technological-tools flex-seating  gamification project-based blended-learning interdisc-teaching - strategy
+        teamwork student-led-class technological-tools flex-seating gamification project-based blended-learning - strategy
         asc-asd social-other tourettes deaf-hearing blind-visual language - support-requirement
         improving-comms-workshop reading-group tech-assist pomo maths-workshop isolated gamify-learning - support-given
         visual audio read-write kinaesthetic multimodal - vark-type
