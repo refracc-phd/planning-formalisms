@@ -19,9 +19,9 @@
         unit-one unit-two unit-three unit-four - unit
         ec-one ec-two ec-three ec-four ec-five ec-six ec-seven ec-eight - extra-curricular
         a b c d p - grades
-        visualisation teamwork student-led-class inquiry-based-teaching technological-tools flex-seating  gamification project-based blended-learning interdisc-teaching - strategy
+        teamwork student-led-class technological-tools flex-seating  gamification project-based blended-learning interdisc-teaching - strategy
         asc-asd social-other tourettes deaf-hearing blind-visual language - support-requirement
-        improving-comms-workshop reading-group tech-assist pomo maths-workshop isolated - support-given
+        improving-comms-workshop reading-group tech-assist pomo maths-workshop isolated gamify-learning - support-given
         visual audio read-write kinaesthetic multimodal - vark-type
     ) 
     
@@ -94,6 +94,7 @@
                 (has-support-need ?s asc-asd)
                 (has-support-need ?s tourettes)
                 (uses-strategy ?s pomodoro)
+                (uses-strategy ?s teamwork)
             )
         )
         :effect (and 
@@ -104,13 +105,27 @@
     (:action recommend-isolated-study-where-appropriate
         :parameters (?s - student)
         :precondition (and 
-                (has-support-need ?s tourettes)
-            )
+            (has-support-need ?s tourettes)
+        )
         :effect (and 
             (given-support ?s isolated)
         )
     )
     
+    (:action recommend-gamify-learning
+        :parameters (?s - student)
+        :precondition (and
+            (or
+                (has-support-need ?s asc-asd)
+                (has-support-need ?s tourettes)
+                (uses-strategy ?s gamification)
+                (uses-strategy ?s blended-learning)
+            )
+        )
+        :effect (and 
+            (given-support ?s gamify-learning)
+        )
+    )
     
     
     (:action finish-course
