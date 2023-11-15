@@ -125,16 +125,25 @@ public class Generator {
         case "social-other" -> addPredicate(goal, "given-support", student, "improving-comms-workshop");
         case "tourettes" -> addPredicate(goal, "given-support", student, "isolated");
         case "deaf-hearing" -> addPredicate(goal, "given-support", student, "tech-assist");
-        case "blind-visual" -> addPredicate(goal, "given-support", student, "tech-assist");
+        case "blind-visual" -> {
+          addPredicate(goal, "given-support", student, "tech-assist");
+          addPredicate(goal, "given-support", student, "reading-group");
+        }
         case "language" -> {
           addPredicate(goal, "given-support", student, "reading-group");
           addPredicate(goal, "given-support", student, "tech-assist");
         }
-
+        default -> throw new IllegalStateException("Unexpected value: " + support);
       }
     }
     if (r2.nextInt(101) > 50) {
-      addPredicate(pddlProblem, "uses-strategy", student, getRandomElement(List.of(Strategy.values())).getValue());
+      String strategy = getRandomElement(List.of(Strategy.values())).getValue();
+      addPredicate(pddlProblem, "uses-strategy", student, strategy);
+
+      switch(strategy) {
+        switch
+        default -> throw new IllegalStateException("Unexpected value: " + strategy);
+      }
     }
 
     return pddlProblem.toString();
