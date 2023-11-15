@@ -63,6 +63,7 @@
         :parameters (?s - student)
         :precondition (and 
             (has-support-need ?s language)
+            (has-support-need ?s blind-visual)
         )
         :effect (and 
             (given-support ?s reading-group)
@@ -76,6 +77,7 @@
                 (has-support-need ?s asc-asd)
                 (has-support-need ?s language)
                 (has-support-need ?s deaf-hearing)
+                (has-support-need ?s blind-visual)
                 (uses-strategy ?s technological-tools)
                 (uses-strategy ?s blended-learning)
             )

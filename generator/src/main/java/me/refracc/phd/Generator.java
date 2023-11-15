@@ -8,8 +8,6 @@ import java.util.*;
 
 public class Generator {
 
-  private static final List<String> students = Collections.synchronizedList(new ArrayList<>());
-
   public static void main(String[] args) {
     List<String> constants = Collections.synchronizedList(new ArrayList<>());
     List<String> names = Collections.synchronizedList(new ArrayList<>());
@@ -111,11 +109,39 @@ public class Generator {
       addPredicate(goal, "finished-course", student, randomCourse.getCourseName(), randomLevel.getLevelDescription());
     }
 
+    Random r1 = new Random();
+    Random r2 = new Random();
+
+    if (r1.nextInt(101) > 75) {
+      String support = getRandomElement(List.of(SupportRequirement.values())).getValue();
+      addPredicate(pddlProblem, "has-support-need", student, support);
+
+      switch (support) {
+        case "asc-asd" ->  {
+          addPredicate(goal, "given-support", student, "improving-comms-workshop");
+          addPredicate(goal, "given-support", student, "tech-assist");
+          addPredicate(goal, "given-support", student, "pomo");
+        }
+        case "social-other" -> addPredicate(goal, "given-support", student, "improving-comms-workshop");
+        case "tourettes" -> addPredicate(goal, "given-support", student, "isolated");
+        case "deaf-hearing" -> addPredicate(goal, "given-support", student, "tech-assist");
+        case "blind-visual" -> addPredicate(goal, "given-support", student, "tech-assist");
+        case "language" -> {
+          addPredicate(goal, "given-support", student, "reading-group");
+          addPredicate(goal, "given-support", student, "tech-assist");
+        }
+
+      }
+    }
+    if (r2.nextInt(101) > 50) {
+      addPredicate(pddlProblem, "uses-strategy", student, getRandomElement(List.of(Strategy.values())).getValue());
+    }
+
     return pddlProblem.toString();
   }
 
   private static @NotNull String generateProblem(int problemIndex, @NotNull List<String> objects, @NotNull List<String> names, @NotNull Random random) {
-    students.clear();
+    List<String> students = Collections.synchronizedList(new ArrayList<>());
     StringBuilder problemDescription = new StringBuilder();
 
     problemDescription.append("(define (problem p").append(problemIndex).append(") (:domain courses)\n\t")
