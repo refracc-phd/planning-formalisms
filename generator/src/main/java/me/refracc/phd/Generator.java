@@ -121,9 +121,13 @@ public class Generator {
           addPredicate(goal, "given-support", student, "improving-comms-workshop");
           addPredicate(goal, "given-support", student, "tech-assist");
           addPredicate(goal, "given-support", student, "pomo");
+          addPredicate(goal, "given-support", student, "gamify-learning");
         }
         case "social-other" -> addPredicate(goal, "given-support", student, "improving-comms-workshop");
-        case "tourettes" -> addPredicate(goal, "given-support", student, "isolated");
+        case "tourettes" -> {
+          addPredicate(goal, "given-support", student, "isolated");
+          addPredicate(goal, "given-support", student, "gamify-learning");
+        }
         case "deaf-hearing" -> addPredicate(goal, "given-support", student, "tech-assist");
         case "blind-visual" -> {
           addPredicate(goal, "given-support", student, "tech-assist");
@@ -141,7 +145,19 @@ public class Generator {
       addPredicate(pddlProblem, "uses-strategy", student, strategy);
 
       switch(strategy) {
-        switch
+        case "teamwork" -> {
+          addPredicate(goal, "given-support", student, "improving-comms-workshop");
+          addPredicate(goal, "given-support", student, "pomo");
+        }
+        case "student-led-class", "flex-seating", "project-based" -> addPredicate(goal, "given-support", student, "improving-comms-workshop");
+        case "technological-tools" -> addPredicate(goal, "given-support", student, "tech-assist");
+        case "gamification" -> addPredicate(goal, "given-support", student, "gamify-learning");
+        case "blended-learning" -> {
+          addPredicate(goal, "given-support", student, "improving-comms-workshop");
+          addPredicate(goal, "given-support", student, "tech-assist");
+          addPredicate(goal, "given-support", student, "gamify-learning");
+        }
+        case "interdisc-teaching" -> System.out.println("Adopting interdisciplinary teaching approaches.");
         default -> throw new IllegalStateException("Unexpected value: " + strategy);
       }
     }
