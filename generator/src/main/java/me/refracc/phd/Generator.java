@@ -9,6 +9,14 @@ import java.util.*;
 public class Generator {
 
   public static void main(String[] args) {
+    File directory = new File(Parameters.OUTPUT_DIR);
+
+    for (File file: Objects.requireNonNull(directory.listFiles())) {
+      if (!file.isDirectory()) {
+        file.delete();
+      }
+    }
+
     List<String> constants = Collections.synchronizedList(new ArrayList<>());
     List<String> names = Collections.synchronizedList(new ArrayList<>());
     List<String> objects = Collections.synchronizedList(new ArrayList<>());
@@ -26,7 +34,7 @@ public class Generator {
       namesThread.join();
       objectsThread.join();
     } catch (InterruptedException e) {
-      e.printStackTrace();
+      System.out.println("Async error occurred: " + e.getMessage());
     }
 
     final List<Thread> writingThreads = threads(objects, names);
@@ -35,27 +43,27 @@ public class Generator {
       try {
         thread.join();
       } catch (InterruptedException e) {
-        e.printStackTrace();
+        System.out.println("Async error occurred: " + e.getMessage());
       }
     }
   }
 
   @NotNull
   private static List<Thread> threads(List<String> objects, List<String> names) {
-    Random random = new Random(27356876234L);
+    Random random = new Random(Parameters.SEED);
 
     List<Thread> writingThreads = new ArrayList<>();
 
-    for (int i = 0; i < 50; i++) {
+    for (int i = 0; i < Parameters.NUM_FILES; i++) {
       final int index = i;
       Thread writingThread = new Thread(() -> {
-        String outputFile = "p" + index + ".pddl";
+        String outputFile = Parameters.OUTPUT_DIR + "p" + index + ".pddl";
         try (PrintWriter writer = new PrintWriter(new FileWriter(outputFile))) {
           String problemDescription = generateProblem(index, objects, names, random);
           writer.println(problemDescription);
           System.out.println("Problem description written to " + outputFile);
         } catch (IOException e) {
-          e.printStackTrace();
+          System.out.println("Error writing to " + outputFile + "\n" + e.getMessage());
         }
       });
 
@@ -68,13 +76,13 @@ public class Generator {
   @Contract(pure = true)
   private static @NotNull List<String> read(String name) {
     List<String> list = new ArrayList<>();
-    try (BufferedReader br = new BufferedReader(new InputStreamReader(Generator.class.getClassLoader().getResourceAsStream(name)))) {
+    try (BufferedReader br = new BufferedReader(new InputStreamReader(Objects.requireNonNull(Generator.class.getClassLoader().getResourceAsStream(name))))) {
       String line;
       while ((line = br.readLine()) != null) {
         list.add(line);
       }
     } catch (IOException e) {
-      e.printStackTrace();
+      System.out.println("Error reading " + name + "\n" + e.getMessage());
     }
     return list;
   }
@@ -84,8 +92,9 @@ public class Generator {
     List<Course> courses = List.of(Course.values());
     List<Level> levels = List.of(Level.values());
     StringBuilder pddlProblem = new StringBuilder();
+    Map<String, Integer> groupStudy = new HashMap<>();
 
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < Parameters.NUM_COURSES; i++) {
       // Randomly select a course and level for the student
       Course randomCourse = getRandomElement(courses);
       Level randomLevel = getRandomElement(levels);
@@ -96,6 +105,9 @@ public class Generator {
 
       // Add predicates for the course and level
       addPredicate(pddlProblem, "takes-course", student, randomCourse.getCourseName(), randomLevel.getLevelDescription());
+
+      int val = groupStudy.getOrDefault(randomCourse.getCourseName() + "@" + randomLevel.getLevelDescription(), 0);
+      groupStudy.put(randomCourse.getCourseName() + "@" + randomLevel.getLevelDescription(), val + 1);
 
       // Determine the grade predicate value based on the level
       Grades randomGrade = (randomLevel == Level.ADV_HIGHER || randomLevel == Level.HIGHER || randomLevel == Level.NATIONAL_FIVE) ?
@@ -109,15 +121,22 @@ public class Generator {
       addGoalPredicate(goal, "finished-course", student, randomCourse.getCourseName(), randomLevel.getLevelDescription());
     }
 
-    Random r1 = new Random();
-    Random r2 = new Random();
+    for (Map.Entry<String, Integer> entry : groupStudy.entrySet()) {
+      if (entry.getValue() > 1) {
+        String[] split = entry.getKey().split("@");
+        addPredicate(pddlProblem, "study-group", split[0], split[1]);
+      }
+    }
 
-    if (r1.nextInt(101) > 75) {
+    Random r1 = new Random(Parameters.SEED);
+    Random r2 = new Random(Parameters.SEED);
+
+    if (r1.nextInt(101) > Parameters.SUPPORT_REQ_THRESHOLD) {
       String support = getRandomElement(List.of(SupportRequirement.values())).getValue();
       addPredicate(pddlProblem, "has-support-need", student, support);
 
       switch (support) {
-        case "asc-asd" ->  {
+        case "asc-asd" -> {
           addGoalPredicate(goal, "given-support", student, "improving-comms-workshop");
           addGoalPredicate(goal, "given-support", student, "tech-assist");
           addGoalPredicate(goal, "given-support", student, "pomo");
@@ -140,16 +159,17 @@ public class Generator {
         default -> throw new IllegalStateException("Unexpected value: " + support);
       }
     }
-    if (r2.nextInt(101) > 50) {
+    if (r2.nextInt(101) > Parameters.STRATEGY_THRESHOLD) {
       String strategy = getRandomElement(List.of(Strategy.values())).getValue();
       addPredicate(pddlProblem, "uses-strategy", student, strategy);
 
-      switch(strategy) {
+      switch (strategy) {
         case "teamwork" -> {
           addGoalPredicate(goal, "given-support", student, "improving-comms-workshop");
           addGoalPredicate(goal, "given-support", student, "pomo");
         }
-        case "student-led-class", "flex-seating", "project-based" -> addGoalPredicate(goal, "given-support", student, "improving-comms-workshop");
+        case "student-led-class", "flex-seating", "project-based" ->
+            addGoalPredicate(goal, "given-support", student, "improving-comms-workshop");
         case "technological-tools" -> addGoalPredicate(goal, "given-support", student, "tech-assist");
         case "gamification" -> addGoalPredicate(goal, "given-support", student, "gamify-learning");
         case "blended-learning" -> {
@@ -174,9 +194,9 @@ public class Generator {
     objects.forEach(object -> problemDescription.append("\n\t\t").append(object));
     problemDescription.append("\n\t\t");
 
-    int numberOfNames = random.nextInt(1, names.size() / 25 + 1); // Ensure at least one name
+    int numberOfNames = random.nextInt(1, (names.size() / Parameters.NAMES_SPLIT) + 1); // Ensure at least one name
     for (int j = 0; j < numberOfNames; j++) {
-      int randomIndex = random.nextInt(0, names.size()) / 25;
+      int randomIndex = random.nextInt(0, names.size() / Parameters.NAMES_SPLIT);
       String name = names.get(randomIndex).toLowerCase();
 
       if (!students.contains(name)) {
