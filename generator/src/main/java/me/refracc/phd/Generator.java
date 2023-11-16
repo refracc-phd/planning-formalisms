@@ -85,7 +85,7 @@ public class Generator {
     List<Level> levels = List.of(Level.values());
     StringBuilder pddlProblem = new StringBuilder();
 
-    for (int i = 0; i < 6; i++) {
+    for (int i = 0; i < 5; i++) {
       // Randomly select a course and level for the student
       Course randomCourse = getRandomElement(courses);
       Level randomLevel = getRandomElement(levels);
@@ -174,9 +174,9 @@ public class Generator {
     objects.forEach(object -> problemDescription.append("\n\t\t").append(object));
     problemDescription.append("\n\t\t");
 
-    int numberOfNames = random.nextInt(1, names.size() / 10 + 1); // Ensure at least one name
+    int numberOfNames = random.nextInt(1, names.size() / 25 + 1); // Ensure at least one name
     for (int j = 0; j < numberOfNames; j++) {
-      int randomIndex = random.nextInt(0, names.size()) / 10;
+      int randomIndex = random.nextInt(0, names.size()) / 25;
       String name = names.get(randomIndex).toLowerCase();
 
       if (!students.contains(name)) {

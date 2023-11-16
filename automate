@@ -162,7 +162,7 @@ perform_downward() {
 
 perform_enhsp() {
   # Set the maximum number of concurrent tasks
-  MAX_CONCURRENT_TASKS=10
+  MAX_CONCURRENT_TASKS=5
 
   # Create a semaphore file
   SEMAPHORE_FILE=$(mktemp)
@@ -220,7 +220,7 @@ perform_enhsp() {
       
       # Limit the number of concurrent tasks
       while [ $(jobs -p | wc -l) -ge "$MAX_CONCURRENT_TASKS" ]; do
-        sleep 1
+        sleep 5
         IO:announce "Waiting for slots to execute tasks..."
       done
     done

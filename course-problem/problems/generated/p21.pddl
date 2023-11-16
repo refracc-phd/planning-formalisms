@@ -10,32 +10,31 @@
 		biology chemistry physics landscape-gardening - sciences
 		geography history modern-studies rmps philosophy politics - social-subjects
 		admin-it business-management comp-sci design-manufacture graph-comm practical-woodwork pc-passport - technologies
-		grace - student
+		oliver - student
 	)
 
 	(:init
-		(takes-course grace esol year-one)
-		(grade p grace esol year-one)
-		(takes-course grace german year-one)
-		(grade p grace german year-one)
-		(takes-course grace biology national-four)
-		(grade p grace biology national-four)
-		(takes-course grace music-tech national-five)
-		(grade c grace music-tech national-five)
-		(takes-course grace spanish national-five)
-		(grade a grace spanish national-five)
-		(takes-course grace comp-sci national-five)
-		(grade a grace comp-sci national-five)
+		(takes-course oliver mandarin national-five)
+		(grade d oliver mandarin national-five)
+		(takes-course oliver esol adv-higher)
+		(grade b oliver esol adv-higher)
+		(takes-course oliver modern-studies higher)
+		(grade d oliver modern-studies higher)
+		(takes-course oliver latin year-one)
+		(grade p oliver latin year-one)
+		(takes-course oliver design-manufacture higher)
+		(grade b oliver design-manufacture higher)
+		(uses-strategy oliver student-led-class)
 	)
 
 	(:goal
 		(and
-			(finished-course grace esol year-one)
-			(finished-course grace german year-one)
-			(finished-course grace biology national-four)
-			(finished-course grace music-tech national-five)
-			(finished-course grace spanish national-five)
-			(finished-course grace comp-sci national-five)
+			(finished-course oliver mandarin national-five)
+			(finished-course oliver esol adv-higher)
+			(finished-course oliver modern-studies higher)
+			(finished-course oliver latin year-one)
+			(finished-course oliver design-manufacture higher)
+			(given-support oliver improving-comms-workshop)
 		)
 	)
 )
