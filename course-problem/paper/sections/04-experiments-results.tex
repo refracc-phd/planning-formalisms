@@ -5,6 +5,41 @@
     \item \textbf{Analysis of the performance of LEARNS in real-world educational scenarios.}
 \end{enumerate}
 
+\subsection{Table of Results}
+
+\begin{table*}[ht]
+    \centering
+    \caption{Experimental Results}
+    \label{tab:experimental_results}
+    \begin{tabular}{p{3cm} *{10}{p{1cm}}}
+        \toprule
+        \multicolumn{1}{c}{\textbf{Heuristic}} & \multicolumn{10}{c}{\textbf{Problems}} \\
+        \cmidrule(lr){2-11}
+        & \textbf{File 1} & \textbf{File 2} & \textbf{File 3} & \textbf{File 4} & \textbf{File 5} & \textbf{File 6} & \textbf{File 7} & \textbf{File 8} & \textbf{File 9} & \textbf{File 10} \\
+        \midrule
+        lmcut & 123 & 123 & 123 & 123 & 123 & 123 & 123 & 123 & 123 & 123 \\
+        ipdb & 123 & 123 & 123 & 123 & 123 & 123 & 123 & 123 & 123 & 123 \\
+        add & 123 & 123 & 123 & 123 & 123 & 123 & 123 & 123 & 123 & 123 \\
+        cea & 123 & 123 & 123 & 123 & 123 & 123 & 123 & 123 & 123 & 123 \\
+        cegar & 123 & 123 & 123 & 123 & 123 & 123 & 123 & 123 & 123 & 123 \\
+        cg & 123 & 123 & 123 & 123 & 123 & 123 & 123 & 123 & 123 & 123 \\
+        fastforward & 123 & 123 & 123 & 123 & 123 & 123 & 123 & 123 & 123 & 123 \\
+        goalcount & 123 & 123 & 123 & 123 & 123 & 123 & 123 & 123 & 123 & 123 \\
+        hm & 123 & 123 & 123 & 123 & 123 & 123 & 123 & 123 & 123 & 123 \\
+        hmax & 123 & 123 & 123 & 123 & 123 & 123 & 123 & 123 & 123 & 123 \\
+        landmark-cp & 123 & 123 & 123 & 123 & 123 & 123 & 123 & 123 & 123 & 123 \\
+        landmark-sum & 123 & 123 & 123 & 123 & 123 & 123 & 123 & 123 & 123 & 123 \\
+        merge-shrink & 123 & 123 & 123 & 123 & 123 & 123 & 123 & 123 & 123 & 123 \\
+        operator-counting & 123 & 123 & 123 & 123 & 123 & 123 & 123 & 123 & 123 & 123 \\
+        fF & 123 & 123 & 123 & 123 & 123 & 123 & 123 & 123 & 123 & 123 \\
+        yY & 123 & 123 & 123 & 123 & 123 & 123 & 123 & 123 & 123 & 123 \\
+        fFyY & 123 & 123 & 123 & 123 & 123 & 123 & 123 & 123 & 123 & 123 \\
+        \bottomrule
+    \end{tabular}
+\end{table*}
+
+
+
 \subsubsection{Goal Recognition}
 Classical planning, as discussed in \citet{Fox2003}, treats time as relative and considers only causal dependencies among actions. However, real-world problems often entail complexities, including temporal aspects, numerical values, stochastic effects, and dynamic environments. Numeric planning extends classical planning by incorporating numeric state variables and utilising languages such as PDDL 2.1~\cite{Fox2003} and PDDL+~\cite{Fox2006}. These formalisms enable the representation of time-dependent changes, either as discrete time-dependent effects of durative actions or continuous process-dependent alterations. PDDL+ serves as an extension of PDDL designed specifically to model hybrid systems by integrating continuous processes and events, as outlined by~\citet{Haslum2019}. Its primary purpose is to facilitate the representation of planning domains that combine discrete and continuous elements.
 
