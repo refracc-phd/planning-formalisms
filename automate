@@ -141,20 +141,16 @@ perform_downward() {
           "$executable_location" --plan-file "$problem_file-fFyY.plan" "$domain_file" "$problem_file" --evaluator "hff=ff(verbosity=silent)" --evaluator "hcea=cea(verbosity=silent)" --search "lazy_greedy([hff, hcea], preferred=[hff, hcea])" &
           "$executable_location" --plan-file "$problem_file-fF.plan" "$domain_file" "$problem_file" --evaluator "hff=ff(verbosity=silent)" --search "lazy_greedy([hff], preferred=[hff])" &
           "$executable_location" --plan-file "$problem_file-yY.plan" "$domain_file" "$problem_file" --evaluator "hcea=cea(verbosity=silent)" --search "lazy_greedy([hcea], preferred=[hcea])" &
-          "$executable_location" --plan-file "$problem_file-lmcut.plan" "$domain_file" "$problem_file" --search "astar(lmcut(verbosity=silent))" &
-          "$executable_location" --plan-file "$problem_file-ipbd.plan" "$domain_file" "$problem_file" --search "astar(ipdb(verbosity=silent))" &
-          "$executable_location" --plan-file "$problem_file-add.plan" "$domain_file" "$problem_file" --search "astar(add(verbosity=silent))" &
-          "$executable_location" --plan-file "$problem_file-cea.plan" "$domain_file" "$problem_file" --search "astar(cea(verbosity=silent))" &
-          "$executable_location" --plan-file "$problem_file-cegar.plan" "$domain_file" "$problem_file" --search "astar(cegar(verbosity=silent))" &
-          "$executable_location" --plan-file "$problem_file-cg.plan" "$domain_file" "$problem_file" --search "astar(cg(verbosity=silent))" &
-          "$executable_location" --plan-file "$problem_file-ff.plan" "$domain_file" "$problem_file" --search "astar(ff(verbosity=silent))" &
-          "$executable_location" --plan-file "$problem_file-goalcount.plan" "$domain_file" "$problem_file" --search "astar(goalcount(verbosity=silent))" &
-          "$executable_location" --plan-file "$problem_file-hm.plan" "$domain_file" "$problem_file" --search "astar(hm(verbosity=silent))" &
-          "$executable_location" --plan-file "$problem_file-hmax.plan" "$domain_file" "$problem_file" --search "astar(hmax(verbosity=silent))" &
-          "$executable_location" --plan-file "$problem_file-landmark_cost_partitioning.plan" "$domain_file" "$problem_file" --search "astar(landmark_cost_partitioning(verbosity=silent))" &
-          "$executable_location" --plan-file "$problem_file-landmark_sum.plan" "$domain_file" "$problem_file" --search "astar(landmark_sum(verbosity=silent))" &
-          "$executable_location" --plan-file "$problem_file-merge_and_shrink.plan" "$domain_file" "$problem_file" --search "astar(merge_and_shrink(verbosity=silent))" &
-          "$executable_location" --plan-file "$problem_file-operatorcounting.plan" "$domain_file" "$problem_file" --search "astar(operatorcounting(verbosity=silent))" &
+          
+          search_strategies=("lmcut" "ipdb" "add" "cea" "cegar" "cg" "ff" "goalcount" "hm" "hmax"
+                              "landmark_cost_partitioning" "landmark_sum" "merge_and_shrink" "operatorcounting"
+                            )
+
+          for strategy in "${search_strategies[@]}"; do
+              plan_file="${problem_file}-${strategy}.plan"
+              command="$executable_location --plan-file $plan_file $domain_file $problem_file --search 'astar(${strategy}(verbosity=silent))' &"
+              eval "$command"
+          done
           # "$executable_location" --sas-file "$problem_file-blind.sas" --plan-file "$problem_file-blind.plan" "$domain_file" "$problem_file" --search "astar(blind(verbosity=silent))" &
       fi
   done
@@ -162,7 +158,7 @@ perform_downward() {
 
 perform_enhsp() {
   # Set the maximum number of concurrent tasks
-  MAX_CONCURRENT_TASKS=5
+  MAX_CONCURRENT_TASKS=100
 
   # Create a semaphore file
   SEMAPHORE_FILE=$(mktemp)
