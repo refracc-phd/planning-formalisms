@@ -1,0 +1,23 @@
+\begin{figure}[t]
+\begin{lstlisting}
+(:action do-team-extra-curricular-one
+  :parameters (?s - student ?c - course ?l - course-level)
+  :precondition (and 
+    (takes-course ?s ?c ?l)
+    (or
+      (grade a ?s ?c ?l)
+      (grade b ?s ?c ?l)
+    )
+    (study-group ?c ?l)
+    (uses-strategy ?s teamwork)
+    (not
+      (done-extra-curricular ec-one ?s ?c ?l)
+    )
+  )
+  :effect (and 
+    (done-extra-curricular ec-one ?s ?c ?l)
+  )
+)
+\end{lstlisting}
+\caption{PDDL action allowing students to tackle extracurricular activities as teams.}\label{fig:pddl-action-team-extra-curricular-one}
+\end{figure}

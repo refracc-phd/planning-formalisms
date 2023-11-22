@@ -1,0 +1,21 @@
+\begin{figure}[t]
+    \begin{lstlisting}
+    (:action do-extra-curricular-one
+      :parameters (?s - student ?c - course ?l - course-level)
+      :precondition (and 
+        (takes-course ?s ?c ?l)
+        (or
+          (grade a ?s ?c ?l)
+          (grade b ?s ?c ?l)
+        )
+        (not
+          (done-extra-curricular ec-one ?s ?c ?l)
+        )
+      )
+      :effect (and 
+        (done-extra-curricular ec-one ?s ?c ?l)
+      )
+    )
+    \end{lstlisting}
+    \caption{PDDL action to allow a student to take the first extracurricular activity}\label{fig:pddl-action-extra-curricular-one}
+\end{figure}

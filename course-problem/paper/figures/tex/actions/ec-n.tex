@@ -1,0 +1,19 @@
+\begin{figure}[t]
+    \begin{lstlisting}
+    (:action do-extra-curricular-n
+      :parameters (?s - student ?c - course ?l - course-level)
+      :precondition (and 
+        (takes-course ?s ?c ?l)
+        (grade a ?s ?c ?l)
+        (not
+          (done-extra-curricular ec-n ?s ?c ?l)
+        )
+        (done-extra-curricular ec-(n-1) ?s ?c ?l)
+      )
+      :effect (and 
+        (done-extra-curricular ec-n ?s ?c ?l)
+      )
+    )
+    \end{lstlisting}
+    \caption{PDDL action that has a student to the $n$th extracurricular activity}\label{fig:pddl-action-extra-curricular-n}
+\end{figure}
