@@ -284,10 +284,8 @@
                 (grade a ?s ?c ?l)
                 (grade b ?s ?c ?l)
             )
-            (or
-                (study-group ?c ?l)
-                (uses-strategy ?s teamwork)
-            )
+            (study-group ?c ?l)
+            (uses-strategy ?s teamwork)
             (not
                 (done-extra-curricular ec-one ?s ?c ?l)
             )
@@ -305,10 +303,8 @@
             (not
                 (done-extra-curricular ec-two ?s ?c ?l)
             )
-            (or
-                (study-group ?c ?l)
-                (uses-strategy ?s teamwork)
-            )
+            (study-group ?c ?l)
+            (uses-strategy ?s teamwork)
             (done-extra-curricular ec-one ?s ?c ?l)
         )
         :effect (and 
@@ -324,10 +320,8 @@
                 (grade a ?s ?c ?l)
                 (grade b ?s ?c ?l)
             )
-            (or
-                (study-group ?c ?l)
-                (uses-strategy ?s teamwork)
-            )
+            (study-group ?c ?l)
+            (uses-strategy ?s teamwork)
             (not(done-extra-curricular ec-three ?s ?c ?l))
             (done-extra-curricular ec-two ?s ?c ?l)
             (done-unit unit-one ?s ?c ?l)
@@ -342,10 +336,8 @@
         :precondition (and 
             (takes-course ?s ?c ?l)
             (grade a ?s ?c ?l)
-            (or
-                (study-group ?c ?l)
-                (uses-strategy ?s teamwork)
-            )
+            (study-group ?c ?l)
+            (uses-strategy ?s teamwork)
             (not(done-extra-curricular ec-four ?s ?c ?l))
             (done-extra-curricular ec-three ?s ?c ?l)
             (done-unit unit-one ?s ?c ?l)
@@ -363,10 +355,8 @@
                 (grade a ?s ?c ?l)
                 (grade b ?s ?c ?l)
             )
-            (or
-                (study-group ?c ?l)
-                (uses-strategy ?s teamwork)
-            )
+            (study-group ?c ?l)
+            (uses-strategy ?s teamwork)
             (not(done-extra-curricular ec-five ?s ?c ?l))
             (done-extra-curricular ec-four ?s ?c ?l)
             (done-unit unit-two ?s ?c ?l)
@@ -381,10 +371,8 @@
         :precondition (and 
             (takes-course ?s ?c ?l)
             (grade a ?s ?c ?l)
-            (or
-                (study-group ?c ?l)
-                (uses-strategy ?s teamwork)
-            )
+            (study-group ?c ?l)
+            (uses-strategy ?s teamwork)
             (not(done-extra-curricular ec-six ?s ?c ?l))
             (done-extra-curricular ec-five ?s ?c ?l)
             (done-unit unit-two ?s ?c ?l)
@@ -402,10 +390,8 @@
                 (grade a ?s ?c ?l)
                 (grade b ?s ?c ?l)
             )
-            (or
-                (study-group ?c ?l)
-                (uses-strategy ?s teamwork)
-            )
+            (study-group ?c ?l)
+            (uses-strategy ?s teamwork)
             (not(done-extra-curricular ec-seven ?s ?c ?l))
             (done-extra-curricular ec-six ?s ?c ?l)
             (done-unit unit-three ?s ?c ?l)
