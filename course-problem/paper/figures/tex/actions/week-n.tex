@@ -1,0 +1,16 @@
+\begin{figure}[t]
+    \begin{lstlisting}
+    (:action do-week-n
+      :parameters (?s - student ?c - course ?l - course-level)
+      :precondition (and 
+        (not(done-week week-n ?s ?c ?l))
+        (done-week week-(n-1) ?s ?c ?l)
+      )
+      :effect (and 
+        (done-week week-n ?s ?c ?l)
+      )
+    )
+    \end{lstlisting}
+    \caption{PDDL action that continues study for the student by permitting them to take the $n$th week of study.}\label{fig:pddl-action-do-week-n}
+\end{figure}
+    

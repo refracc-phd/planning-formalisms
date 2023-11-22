@@ -1,0 +1,15 @@
+\begin{figure}[t]
+    \begin{lstlisting}
+    (:action do-week-one
+      :parameters (?s - student ?c - course ?l - course-level)
+      :precondition (and 
+        (takes-course ?s ?c ?l)
+        (not(done-week week-one ?s ?c ?l))
+      )
+      :effect (and 
+        (done-week week-one ?s ?c ?l)
+      )
+    )
+    \end{lstlisting}
+    \caption{PDDL action that commences study for the student}\label{fig:pddl-action-do-week-one}
+\end{figure}
