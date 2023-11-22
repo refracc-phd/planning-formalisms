@@ -1,0 +1,24 @@
+\begin{figure}[t]
+    \begin{lstlisting}
+    (:action take-unit-one
+      :parameters (?s - student ?c - course ?l - course-level)
+      :precondition (and 
+        (takes-course ?s ?c ?l)
+        (not(done-unit unit-one ?s ?c ?l))
+        (done-week week-eight ?s ?c ?l)
+      )
+      :effect (and
+        (done-unit unit-one ?s ?c ?l)
+        (not(done-week week-eight ?s ?c ?l))
+        (not(done-week week-seven ?s ?c ?l))
+        (not(done-week week-six ?s ?c ?l))
+        (not(done-week week-five ?s ?c ?l))
+        (not(done-week week-four ?s ?c ?l))
+        (not(done-week week-three ?s ?c ?l))
+        (not(done-week week-two ?s ?c ?l))
+        (not(done-week week-one ?s ?c ?l))
+      )
+    )
+    \end{lstlisting}
+    \caption{PDDL action that allows a student to take unit one}\label{fig:pddl-action-take-unit-one}
+\end{figure}
