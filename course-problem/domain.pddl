@@ -105,7 +105,11 @@
     (:action recommend-isolated-study-where-appropriate
         :parameters (?s - student)
         :precondition (and 
-            (has-support-need ?s tourettes)
+            (or
+                (has-support-need ?s tourettes)
+                (has-support-need ?s asc-asd)
+                (has-support-need ?s social-other)
+            )
         )
         :effect (and 
             (given-support ?s isolated)
