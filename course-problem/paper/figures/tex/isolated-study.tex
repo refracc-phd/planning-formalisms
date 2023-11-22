@@ -1,0 +1,18 @@
+\begin{figure}[t]
+    \begin{lstlisting}
+    (:action recommend-isolated-study-where-appropriate
+      :parameters (?s - student)
+      :precondition (and 
+        (or
+          (has-support-need ?s tourettes)
+          (has-support-need ?s asc-asd)
+          (has-support-need ?s social-other)
+        )
+      )
+      :effect (and 
+        (given-support ?s isolated)
+      )
+    )
+    \end{lstlisting}
+    \caption{PDDL action to recommend students who may benefit with an option for isolated study}\label{fig:pddl-action-isolated-study}
+\end{figure}
