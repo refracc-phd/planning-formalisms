@@ -1,0 +1,19 @@
+\begin{figure}[t]
+    \begin{lstlisting}
+    (:action recommend-pomodoro-study
+      :parameters (?s - student)
+      :precondition (and 
+        (or
+          (has-support-need ?s asc-asd)
+          (has-support-need ?s tourettes)
+          (uses-strategy ?s pomodoro)
+          (uses-strategy ?s teamwork)
+        )
+      )
+      :effect (and 
+        (given-support ?s pomo)
+      )
+    )
+    \end{lstlisting}
+    \caption{PDDL Action: recommend-pomodoro-study}\label{fig:pddl-action-pomo-study}
+    \end{figure}

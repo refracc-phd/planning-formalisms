@@ -1,0 +1,15 @@
+\begin{figure}[t]
+    \begin{lstlisting}
+    (:action recommend-reading-group
+      :parameters (?s - student)
+      :precondition (and 
+        (has-support-need ?s language)
+        (has-support-need ?s blind-visual)
+      )
+      :effect (and 
+        (given-support ?s reading-group)
+      )
+    )
+    \end{lstlisting}
+    \caption{PDDL action to recommend a student attends a reading group.}\label{fig:pddl-action-reading-group}
+\end{figure}

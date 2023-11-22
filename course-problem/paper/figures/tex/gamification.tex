@@ -1,0 +1,19 @@
+\begin{figure}[t]
+    \begin{lstlisting}
+    (:action recommend-gamify-learning
+      :parameters (?s - student)
+      :precondition (and
+        (or
+          (has-support-need ?s asc-asd)
+          (has-support-need ?s tourettes)
+          (uses-strategy ?s gamification)
+          (uses-strategy ?s blended-learning)
+        )
+      )
+      :effect (and 
+        (given-support ?s gamify-learning)
+      )
+    )
+    \end{lstlisting}
+    \caption{PDDL action to recommend a student's learning is gamified.}\label{fig:pddl-action-gamify-learning}
+\end{figure}

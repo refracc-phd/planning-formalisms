@@ -1,0 +1,20 @@
+\begin{figure}[t]
+    \begin{lstlisting}
+    (:action recommend-improving-communications-workshop
+      :parameters (?s - student)
+      :precondition (and
+        (or
+          (has-support-need ?s asc-asd)
+          (has-support-need ?s language)
+          (uses-strategy ?s teamwork)
+          (uses-strategy ?s project-based)
+          (uses-strategy ?s blended-learning)
+        )
+      )
+      :effect (and 
+        (given-support ?s improving-comms-workshop)
+      )
+    )
+    \end{lstlisting}
+    \caption{PDDL action to recommend a student attends a workshop on improving their communication skills.}\label{fig:pddl-action}
+\end{figure}

@@ -1,0 +1,21 @@
+\begin{figure}[t]
+    \begin{lstlisting}
+    (:action recommend-technological-assistance
+      :parameters (?s - student)
+      :precondition (and 
+        (or
+          (has-support-need ?s asc-asd)
+          (has-support-need ?s language)
+          (has-support-need ?s deaf-hearing)
+          (has-support-need ?s blind-visual)
+          (uses-strategy ?s technological-tools)
+          (uses-strategy ?s blended-learning)
+        )
+      )
+      :effect (and 
+        (given-support ?s tech-assist)
+      )
+    )
+    \end{lstlisting}
+    \caption{PDDL action to recommend a student receives a digitised format to assist with their learning.}\label{fig:pddl-action-tech-assist}
+\end{figure}
