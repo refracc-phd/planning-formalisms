@@ -1,0 +1,15 @@
+\begin{figure}[t]
+    \begin{lstlisting}
+    (:action finish-course
+      :parameters (?s - student ?c - course ?l - course-level)
+      :precondition (and 
+        (done-unit unit-four ?s ?c ?l)
+        (takes-course ?s ?c ?l)
+      )
+      :effect (and
+        (finished-course ?s ?c ?l)
+      )
+    )
+    \end{lstlisting}
+    \caption{PDDL action that flags a course as finished for a student.}\label{fig:finish-course}
+\end{figure}
