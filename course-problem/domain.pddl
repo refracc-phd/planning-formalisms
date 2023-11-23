@@ -22,7 +22,6 @@
         teamwork student-led-class technological-tools flex-seating gamification project-based blended-learning - strategy
         asc-asd social-other tourettes deaf-hearing blind-visual language - support-requirement
         improving-comms-workshop reading-group tech-assist pomo maths-workshop isolated gamify-learning - support-given
-        visual audio read-write kinaesthetic multimodal - vark-type
     ) 
     
     (:predicates
@@ -38,7 +37,6 @@
         (study-group ?c - course ?l - course-level)
 
         (uses-strategy ?s - student ?t - strategy)
-        (student-vark-type ?s - student ?v - vark-type)
         (has-support-need ?s - student ?r - support-requirement)
         (given-support ?s - student ?g - support-given)
     )

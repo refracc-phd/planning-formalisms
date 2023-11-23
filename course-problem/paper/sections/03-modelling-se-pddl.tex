@@ -1,4 +1,5 @@
 \section{Modelling Secondary Education in PDDL}
+This project utilises a structured ontology comprising types, constants, and predicates to frame the model of secondary education in PDDL\@. The defined types encompass courses, course levels, weeks, units, extracurricular activities, grades, preferred learning styles, and various support requirements that students may have. Our constants include strategies such as the pomodoro study technique, the weeks in the school calendar, units, extracurricular activities, predicted grades, and the student's perceived support preferences, and the student's support requirements. Lastly, the predicates capture relationships such as finished courses, course enrollment, predicted grades, completion of weeks, units, and extracurricular activities, participation in study groups, adoption of specific learning strategies, identification of support needs, and provision of support.
 \begin{enumerate}
     \item \textbf{Technical description of the LEARNS architecture.}
     \item \textbf{Application of PDDL for modelling various scenarios.}
@@ -6,12 +7,22 @@
 \end{enumerate}
 
 \subsection{LEARNS Architecture}
+
 \input{figures/tex/actions/improving-comms-workshop.tex}
 \input{figures/tex/actions/reading-group-workshop.tex}
 \input{figures/tex/actions/tech-assistance.tex}
 \input{figures/tex/actions/pomodoro-study.tex}
 \input{figures/tex/actions/gamification.tex}
 \input{figures/tex/actions/isolated-study.tex}
+
+\begin{itemize}
+    \item Begin by defining a series of weeks in a predicate called \texttt{done-week ?s ?c ?l}.
+    \item After completing eight weeks, a student can take a unit.
+    \item Upon finishing a unit, the student is expected to do another 8 weeks, rinse and repeat.
+    \item After finishing all four units, the student has finished the course.
+    \item For every unit being taken, there are two extracurricular activities for the students to take, if the student is a grade-a student then they take both, otherwise if they are a grade b student they will take only one. See Figures~\ref{fig:pddl-action-extra-curricular-one} and~\ref{fig:pddl-action-extra-curricular-n}.
+    \item 
+\end{itemize}
 
 \input{figures/tex/actions/ec-one.tex}
 \input{figures/tex/actions/ec-n.tex}
