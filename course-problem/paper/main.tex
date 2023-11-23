@@ -15,14 +15,7 @@
 \usepackage{mathtools}
 \usepackage{booktabs}
 \usepackage{listings}
-
-\lstset{
-    basicstyle=\ttfamily\small,
-    tabsize=2,
-    showtabs=false,
-    showspaces=false,
-    showstringspaces=false,
-}
+\usepackage{parskip}
 
 \urlstyle{rm}
 \def\UrlFont{\rm}
@@ -32,16 +25,22 @@
 
 \DeclareCaptionStyle{ruled}{labelfont=normalfont,labelsep=colon,strut=off}
 
-\lstset{
-    basicstyle={\footnotesize\ttfamily},
-    numbers=left,
-    numberstyle=\footnotesize,
-    xleftmargin=2em,
-    aboveskip=0pt,
-    belowskip=0pt,
-    showstringspaces=false,
-    tabsize=2,
-    breaklines=true
+\usepackage{color}
+
+\lstset{ %
+  backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}
+  basicstyle=\footnotesize\ttfamily,        % the size of the fonts that are used for the code
+  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 % sets automatic line breaking
+  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8                 % adds a frame around the code
+  keepspaces=false,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\color{blue},       % keyword style
+  language=lisp,                 % the language of the code
+  otherkeywords={:precondition,:effect,:parameters,:action},            % if you want to add more keywords to the set
+  numbers=none,                    % where to put the line-numbers; possible values are (none, left, right)
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  tabsize=2,                       % sets default tabsize to 2 spaces
 }
 
 \floatstyle{ruled}
