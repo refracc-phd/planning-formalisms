@@ -180,7 +180,6 @@ public class Generator {
         default -> throw new IllegalStateException("Unexpected value: " + strategy);
       }
     }
-
     return pddlProblem.toString();
   }
 
