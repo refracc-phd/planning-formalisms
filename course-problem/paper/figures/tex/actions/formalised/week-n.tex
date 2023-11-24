@@ -1,0 +1,10 @@
+\begin{figure}[t]
+    \begin{align*}
+    &\precondition(\text{do-week-n}) = \\
+    &\quad ( \text{takes-course}(\text{?s}, \text{?c}, \text{?l}) \\
+    &\quad \land \lnot \text{done-week}(\text{week-(n)}, \text{?s}, \text{?c}, \text{?l})) \\
+    &\quad \land \text{done-week}(\text{week-(n-1)}, \text{?s}, \text{?c}, \text{?l}) ) \\
+    &\eff(\text{do-week-n}) = \text{done-week}(\text{week-n}, \text{?s}, \text{?c}, \text{?l})
+    \end{align*}
+    \caption{Logical formalization of the PDDL action for continuing with week $n$.}\label{fig:formalised-do-week-n}
+\end{figure}
