@@ -16,19 +16,33 @@ After eight weeks have passed, students are provided with a unit test to complet
 
 A student has completed a course when all four units are complete, and is denoted by the \texttt{finished-course} predicate. Figure~\ref{fig:finish-course} provides the action to check that the student has completed the course. This is a prerequisite for the student to be able to take the final exam \textemdash~of which is not monitored by this system, as it is an application of automated planning to generate learning paths for students with additional support requirements, not for handling the logistics of the school.
 
+\input{figures/tex/actions/finished-course.tex}
+
 Alongside their academics, extracurricular activities play a vital role in student development. For each unit, students can participate in two extracurricular activities. Grade-a students are expected to commit to both, while grade-b students typically commit to one. Figures~\ref{fig:extra-curricular-one} and~\ref{fig:extra-curricular-n} illustrate this academic involvement, highlighting the sequential nature of these activities.
 
 \input{figures/tex/actions/ec-one.tex}
 \input{figures/tex/actions/ec-n.tex}
 
-Extracurricular activities alternate, starting with \texttt{do-extra-curricular-one} and progressing to (roughly) \texttt{do-extra-curricular-n}. This pattern repeats for each unit, and completion is indicated by the \texttt{done-extra-curricular} predicate. The approximation stems from the earlier statement that grade-a or grade-b students may engage in either one or two extracurricular activities. However, this simplification overlooks the possibility of non-grade-a or non-grade-b students participating and grade-a or grade-b students deviating from the specified number of extracurricular engagements.
+Extracurricular activities alternate, starting with \texttt{do-extra-curricular-one} and progressing to \texttt{do-extra-curricular-n}. This pattern repeats for each unit, and completion is indicated by the \texttt{done-extra-curricular} predicate. The approximation stems from the earlier statement that grade-a or grade-b students may engage in either one or two extracurricular activities. However, this simplification overlooks the possibility of non-grade-a or non-grade-b students participating and grade-a or grade-b students deviating from the specified number of extracurricular engagements. This system is designed to provide recommendations to aid in the planning of learning paths, not to handle the logistics of the school.
 
 Students willing to engage in collaborative group dynamics can participate in group-oriented extracurricular activities. This collaboration is depicted in Figures~\ref{fig:team-extra-curricular-one} and~\ref{fig:team-extra-curricular-n}, illustrating the synergistic environment fostered through teamwork in extracurricular pursuits.
 
+\input{figures/tex/actions/team-ec-one.tex}
+\input{figures/tex/actions/team-ec-n.tex}
+
 \subsection{Support Structures}
-\begin{itemize}
-    \item We recognise through our independent research that if a student is struggling with their communication skills, it may be possible to provide a workshop to help them improve. This could be for students who have social issues, are on the autism spectrum or may have linguistic issues. Additionally, a student could also prefer to use specific learning styles that require aid of a communications improvement workshop \textemdash~such as teamwork, project-based learning or blended learning for those that are unable to be physically in school. See Figure~\ref{fig:improve-comms-workshop}.
-    \item Should a student face particular difficulty with their reading ability, or may benefit from using tools such as audiobooks, we can provide a reading group workshop to help them with that. This is detailed in Figure~\ref{fig:reading-group}.
-    \item If a student prefers to learn with the assistance of technology, we can provide them with a tool to help them with their learning, which could be for a variety of reasons. These reasons could include the student being on the autism spectrum, may have difficulties with language, could be profoundly deaf or hard of hearing, could be fully blind or visually impaired, or they may prefer to just use technology to assist their learning or be learning from a distance. This is detailed in Figure~\ref{fig:tech-assist}.
-    \item Additionally, students may prefer and/or benefit from breaking up their study time into smaller chunks, which is known as the Pomodoro technique. This is detailed in Figure~\ref{fig:pomo-study}.
-\end{itemize}
+Through our independent research, we have identified that students grappling with communication challenges can benefit significantly from specialised workshops aimed at enhancing their skills. This provision is particularly pertinent for students facing social issues, those on the autism spectrum, or individuals with linguistic difficulties. Moreover, students who prefer specific learning styles, such as teamwork, project-based learning, or blended learning for those unable to attend physical school, can find valuable support in communication improvement workshops. Figure~\ref{fig:improve-comms-workshop} illustrates the relevance and potential impact of these workshops.
+
+\input{figures/tex/actions/improving-comms-workshop.tex}
+
+For students encountering difficulties in reading or those who could benefit from tools like audiobooks, we offer a dedicated reading group workshop. The details of this initiative are outlined in Figure~\ref{fig:reading-group}, providing a comprehensive understanding of the resources and strategies employed to assist students in enhancing their reading abilities.
+
+\input{figures/tex/actions/reading-group-workshop.tex}
+
+Recognising the diverse needs of our student population, we acknowledge the significance of technology-assisted learning. We are equipped to provide students with tailored tools to support their learning journeys. This could be especially beneficial for students on the autism spectrum, facing language difficulties, experiencing profound deafness or hearing impairments, those with visual impairments, or individuals who simply prefer leveraging technology for their educational pursuits. Figure~\ref{fig:tech-assist} offers an insight into the specifics of our approach in this domain.
+
+\input{figures/tex/actions/tech-assistance.tex}
+
+Furthermore, we understand that some students may derive greater benefits from breaking their study time into smaller, focused intervals. Embracing the Pomodoro technique, students can optimise their learning experiences by strategically dividing their study sessions. Figure~\ref{fig:pomo-study} provides a detailed illustration of how this technique can be applied to enhance learning outcomes.
+
+\input{figures/tex/actions/pomodoro-study.tex}
