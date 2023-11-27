@@ -1,25 +1,21 @@
 \begin{figure}[t]
-    \begin{lstlisting}
-    (:action take-unit-n
-      :parameters (?s - student ?c - course ?l - course-level)
-      :precondition (and 
-        (takes-course ?s ?c ?l)
-        (not(done-unit unit-n ?s ?c ?l))
-        (done-unit unit-(n-1) ?s ?c ?l)
-        (done-week week-eight ?s ?c ?l)
-      )
-      :effect (and
-        (done-unit unit-n ?s ?c ?l)
-        (not(done-week week-eight ?s ?c ?l))
-        (not(done-week week-seven ?s ?c ?l))
-        (not(done-week week-six ?s ?c ?l))
-        (not(done-week week-five ?s ?c ?l))
-        (not(done-week week-four ?s ?c ?l))
-        (not(done-week week-three ?s ?c ?l))
-        (not(done-week week-two ?s ?c ?l))
-        (not(done-week week-one ?s ?c ?l))
-      )
-    )
-    \end{lstlisting}
-    \caption{PDDL action that allows a student to take the $n$th unit.}\label{fig:take-unit-n}
+  \small  % Adjust font size
+  \begin{align*}
+  &\pre(\text{take-unit-n}) = \\
+  &\quad \text{takes-course}(\text{?s}, \text{?c}, \text{?l}) \land \\
+  &\quad \lnot \text{done-unit}(\text{unit-n}, \text{?s}, \text{?c}, \text{?l}) \land \\
+  &\quad \text{done-unit}(\text{unit-(n-1)}, \text{?s}, \text{?c}, \text{?l}) \land \\
+  &\quad \text{done-week}(\text{week-eight}, \text{?s}, \text{?c}, \text{?l}) \\
+  &\eff(\text{take-unit-n}) = \\
+  &\quad \text{done-unit}(\text{unit-n}, \text{?s}, \text{?c}, \text{?l}) \land \\
+  &\quad \lnot \text{done-week}(\text{week-eight}, \text{?s}, \text{?c}, \text{?l}) \land \\
+  &\quad \lnot \text{done-week}(\text{week-seven}, \text{?s}, \text{?c}, \text{?l}) \land \\
+  &\quad \lnot \text{done-week}(\text{week-six}, \text{?s}, \text{?c}, \text{?l}) \land \\
+  &\quad \lnot \text{done-week}(\text{week-five}, \text{?s}, \text{?c}, \text{?l}) \land \\
+  &\quad \lnot \text{done-week}(\text{week-four}, \text{?s}, \text{?c}, \text{?l}) \land \\
+  &\quad \lnot \text{done-week}(\text{week-three}, \text{?s}, \text{?c}, \text{?l}) \land \\
+  &\quad \lnot \text{done-week}(\text{week-two}, \text{?s}, \text{?c}, \text{?l}) \land \\
+  &\quad \lnot \text{done-week}(\text{week-one}, \text{?s}, \text{?c}, \text{?l})
+  \end{align*}
+  \caption{Logical formalisation of the PDDL action for a student taking the $n$th unit}\label{fig:take-unit-n}
 \end{figure}

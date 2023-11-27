@@ -1,21 +1,15 @@
 \begin{figure}[t]
-    \begin{lstlisting}
-    (:action do-team-extra-curricular-n
-      :parameters (?s - student ?c - course ?l - course-level)
-      :precondition (and 
-        (takes-course ?s ?c ?l)
-        (grade a ?s ?c ?l)
-        (not
-          (done-extra-curricular ec-n ?s ?c ?l)
-        )
-        (study-group ?c ?l)
-        (uses-strategy ?s teamwork)
-        (done-extra-curricular ec-(n-1) ?s ?c ?l)
-      )
-      :effect (and 
-        (done-extra-curricular ec-n ?s ?c ?l)
-      )
-    )
-    \end{lstlisting}
-    \caption{PDDL action to allow a student to do the $n$th extracurricular activity as part of a team.}\label{fig:team-extra-curricular-n}
-    \end{figure}
+  \small  % Adjust font size
+  \begin{align*}
+  &\pre(\text{do-team-extra-curricular-n}) = \\
+  &\quad \text{takes-course}(\text{?s}, \text{?c}, \text{?l}) \land \\
+  &\quad \text{grade a}(\text{?s}, \text{?c}, \text{?l}) \land \\
+  &\quad \lnot \text{done-extra-curricular}(\text{ec-n}, \text{?s}, \text{?c}, \text{?l}) \land \\
+  &\quad \text{study-group}(\text{?c}, \text{?l}) \land \\
+  &\quad \text{uses-strategy}(\text{?s}, \text{teamwork}) \land \\
+  &\quad \text{done-extra-curricular}(\text{ec-(n-1)}, \text{?s}, \text{?c}, \text{?l}) \\
+  &\eff(\text{do-team-extra-curricular-n}) = \\
+  &\quad \text{done-extra-curricular}(\text{ec-n}, \text{?s}, \text{?c}, \text{?l})
+  \end{align*}
+  \caption{Logical formalisation of the PDDL action for a student doing the $n$th extracurricular activity as part of a team}\label{fig:team-extra-curricular-n}
+\end{figure}

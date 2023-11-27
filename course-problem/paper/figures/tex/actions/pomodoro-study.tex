@@ -1,19 +1,13 @@
 \begin{figure}[t]
-    \begin{lstlisting}
-    (:action recommend-pomodoro-study
-      :parameters (?s - student)
-      :precondition (and 
-        (or
-          (has-support-need ?s asc-asd)
-          (has-support-need ?s tourettes)
-          (uses-strategy ?s pomodoro)
-          (uses-strategy ?s teamwork)
-        )
-      )
-      :effect (and 
-        (given-support ?s pomo)
-      )
-    )
-    \end{lstlisting}
-    \caption{PDDL Action: recommend-pomodoro-study}\label{fig:pomo-study}
-    \end{figure}
+  \small  % Adjust font size
+  \begin{align*}
+  &\pre(\text{recommend-pomodoro-study}) = \\
+  &\quad (\text{has-support-need}(\text{?s}, \text{asc-asd}) \lor \\
+  &\quad \text{has-support-need}(\text{?s}, \text{tourettes}) \lor \\
+  &\quad \text{uses-strategy}(\text{?s}, \text{pomodoro}) \lor \\
+  &\quad \text{uses-strategy}(\text{?s}, \text{teamwork})) \\
+  &\eff(\text{recommend-pomodoro-study}) = \\
+  &\quad \text{given-support}(\text{?s}, \text{pomo})
+  \end{align*}
+  \caption{Logical formalisation of the PDDL action for recommending Pomodoro study}\label{fig:pomo-study}
+\end{figure}

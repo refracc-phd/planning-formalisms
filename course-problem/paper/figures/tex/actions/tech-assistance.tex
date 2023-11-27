@@ -1,21 +1,15 @@
 \begin{figure}[t]
-    \begin{lstlisting}
-    (:action recommend-technological-assistance
-      :parameters (?s - student)
-      :precondition (and 
-        (or
-          (has-support-need ?s asc-asd)
-          (has-support-need ?s language)
-          (has-support-need ?s deaf-hearing)
-          (has-support-need ?s blind-visual)
-          (uses-strategy ?s technological-tools)
-          (uses-strategy ?s blended-learning)
-        )
-      )
-      :effect (and 
-        (given-support ?s tech-assist)
-      )
-    )
-    \end{lstlisting}
-    \caption{PDDL action to recommend a student receives a digitised format to assist with their learning.}\label{fig:tech-assist}
+  \small  % Adjust font size
+  \begin{align*}
+  &\pre(\text{recommend-technological-assistance}) = \\
+  &\quad (\text{has-support-need}(\text{?s}, \text{asc-asd}) \lor \\
+  &\quad \text{has-support-need}(\text{?s}, \text{language}) \lor \\
+  &\quad \text{has-support-need}(\text{?s}, \text{deaf-hearing}) \lor \\
+  &\quad \text{has-support-need}(\text{?s}, \text{blind-visual}) \lor \\
+  &\quad \text{uses-strategy}(\text{?s}, \text{technological-tools}) \lor \\
+  &\quad \text{uses-strategy}(\text{?s}, \text{blended-learning})) \\
+  &\eff(\text{recommend-technological-assistance}) = \\
+  &\quad \text{given-support}(\text{?s}, \text{tech-assist})
+  \end{align*}
+  \caption{Logical formalisation of the PDDL action for recommending technological assistance}\label{fig:tech-assist}
 \end{figure}

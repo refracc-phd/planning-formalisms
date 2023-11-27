@@ -1,16 +1,10 @@
 \begin{figure}[t]
-    \begin{lstlisting}
-    (:action do-week-n
-      :parameters (?s - student ?c - course ?l - course-level)
-      :precondition (and 
-        (not(done-week week-n ?s ?c ?l))
-        (done-week week-(n-1) ?s ?c ?l)
-      )
-      :effect (and 
-        (done-week week-n ?s ?c ?l)
-      )
-    )
-    \end{lstlisting}
-    \caption{PDDL action that continues study for the student by permitting them to take the $n$th week of study.}\label{fig:do-week-n}
+  \begin{align*}
+  &\pre(\text{do-week-n}) = \\
+  &\quad ( \text{takes-course}(\text{?s}, \text{?c}, \text{?l}) \\
+  &\quad \land \lnot \text{done-week}(\text{week-(n)}, \text{?s}, \text{?c}, \text{?l})) \\
+  &\quad \land \text{done-week}(\text{week-(n-1)}, \text{?s}, \text{?c}, \text{?l}) \\
+  &\eff(\text{do-week-n}) = \text{done-week}(\text{week-n}, \text{?s}, \text{?c}, \text{?l})
+  \end{align*}
+  \caption{Logical formalization of the PDDL action for continuing with week $n$.}\label{fig:do-week-n}
 \end{figure}
-    

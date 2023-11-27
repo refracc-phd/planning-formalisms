@@ -1,18 +1,12 @@
 \begin{figure}[t]
-    \begin{lstlisting}
-    (:action recommend-isolated-study-where-appropriate
-      :parameters (?s - student)
-      :precondition (and 
-        (or
-          (has-support-need ?s tourettes)
-          (has-support-need ?s asc-asd)
-          (has-support-need ?s social-other)
-        )
-      )
-      :effect (and 
-        (given-support ?s isolated)
-      )
-    )
-    \end{lstlisting}
-    \caption{PDDL action to recommend students who may benefit with an option for isolated study}\label{fig:isolated-study}
+  \small  % Adjust font size
+  \begin{align*}
+  &\pre(\text{recommend-isolated-study-where-appropriate}) = \\
+  &\quad (\text{has-support-need}(\text{?s}, \text{tourettes}) \lor \\
+  &\quad \text{has-support-need}(\text{?s}, \text{asc-asd}) \lor \\
+  &\quad \text{has-support-need}(\text{?s}, \text{social-other})) \\
+  &\eff(\text{recommend-isolated-study-where-appropriate}) = \\
+  &\quad \text{given-support}(\text{?s}, \text{isolated})
+  \end{align*}
+  \caption{Logical formalisation of the PDDL action for recommending isolated study}\label{fig:isolated-study}
 \end{figure}

@@ -1,15 +1,9 @@
 \begin{figure}[t]
-    \begin{lstlisting}
-    (:action do-week-one
-      :parameters (?s - student ?c - course ?l - course-level)
-      :precondition (and 
-        (takes-course ?s ?c ?l)
-        (not(done-week week-one ?s ?c ?l))
-      )
-      :effect (and 
-        (done-week week-one ?s ?c ?l)
-      )
-    )
-    \end{lstlisting}
-    \caption{PDDL action that commences study for the student}\label{fig:do-week-one}
+  \begin{align*}
+  &\pre(\text{do-week-one}) = \\
+  &\quad ( \text{takes-course}(\text{?s}, \text{?c}, \text{?l}) \\
+  &\quad \land \lnot \text{done-week}(\text{week-one}, \text{?s}, \text{?c}, \text{?l}) ) \\
+  &\eff(\text{do-week-one}) = \text{done-week}(\text{week-one}, \text{?s}, \text{?c}, \text{?l})
+  \end{align*}
+  \caption{Logical formalization of the PDDL action for commencing study}\label{fig:do-week-one}
 \end{figure}

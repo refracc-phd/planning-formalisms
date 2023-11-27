@@ -1,20 +1,14 @@
 \begin{figure}[t]
-    \begin{lstlisting}
-    (:action recommend-improving-comms-workshop
-      :parameters (?s - student)
-      :precondition (and
-        (or
-          (has-support-need ?s asc-asd)
-          (has-support-need ?s language)
-          (uses-strategy ?s teamwork)
-          (uses-strategy ?s project-based)
-          (uses-strategy ?s blended-learning)
-        )
-      )
-      :effect (and 
-        (given-support ?s improving-comms-workshop)
-      )
-    )
-    \end{lstlisting}
-    \caption{PDDL action to recommend a student attends a workshop on improving their communication skills.}\label{fig:improve-comms-workshop}
+  \small  % Adjust font size
+  \begin{align*}
+  &\pre(\text{recommend-improving-comms-workshop}) = \\
+  &\quad (\text{has-support-need}(\text{?s}, \text{asc-asd}) \lor \\
+  &\quad \text{has-support-need}(\text{?s}, \text{language}) \lor \\
+  &\quad \text{uses-strategy}(\text{?s}, \text{teamwork}) \lor \\
+  &\quad \text{uses-strategy}(\text{?s}, \text{project-based}) \lor \\
+  &\quad \text{uses-strategy}(\text{?s}, \text{blended-learning})) \\
+  &\eff(\text{recommend-improving-comms-workshop}) = \\
+  &\quad \text{given-support}(\text{?s}, \text{improving-comms-workshop})
+  \end{align*}
+  \caption{Logical formalisation of the PDDL action for recommending a communication skills workshop}\label{fig:improve-comms-workshop}
 \end{figure}

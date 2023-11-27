@@ -1,21 +1,12 @@
 \begin{figure}[t]
-    \begin{lstlisting}
-    (:action do-extra-curricular-one
-      :parameters (?s - student ?c - course ?l - course-level)
-      :precondition (and 
-        (takes-course ?s ?c ?l)
-        (or
-          (grade a ?s ?c ?l)
-          (grade b ?s ?c ?l)
-        )
-        (not
-          (done-extra-curricular ec-one ?s ?c ?l)
-        )
-      )
-      :effect (and 
-        (done-extra-curricular ec-one ?s ?c ?l)
-      )
-    )
-    \end{lstlisting}
-    \caption{PDDL action to allow a student to take the first extracurricular activity}\label{fig:extra-curricular-one}
+  \small  % Adjust font size
+  \begin{align*}
+  &\pre(\text{do-extra-curricular-one}) = \\
+  &\quad \text{takes-course}(\text{?s}, \text{?c}, \text{?l}) \land \\
+  &\quad (\text{grade a}(\text{?s}, \text{?c}, \text{?l}) \lor \text{grade b}(\text{?s}, \text{?c}, \text{?l})) \land \\
+  &\quad \lnot \text{done-extra-curricular}(\text{ec-one}, \text{?s}, \text{?c}, \text{?l}) \\
+  &\eff(\text{do-extra-curricular-one}) = \\
+  &\quad \text{done-extra-curricular}(\text{ec-one}, \text{?s}, \text{?c}, \text{?l})
+  \end{align*}
+  \caption{Logical formalisation of the PDDL action for the first extracurricular activity}\label{fig:extra-curricular-one}
 \end{figure}

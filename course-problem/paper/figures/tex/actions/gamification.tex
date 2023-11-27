@@ -1,19 +1,13 @@
 \begin{figure}[t]
-    \begin{lstlisting}
-    (:action recommend-gamify-learning
-      :parameters (?s - student)
-      :precondition (and
-        (or
-          (has-support-need ?s asc-asd)
-          (has-support-need ?s tourettes)
-          (uses-strategy ?s gamification)
-          (uses-strategy ?s blended-learning)
-        )
-      )
-      :effect (and 
-        (given-support ?s gamify-learning)
-      )
-    )
-    \end{lstlisting}
-    \caption{PDDL action to recommend a student's learning is gamified.}\label{fig:gamify-learning}
+  \small  % Adjust font size
+  \begin{align*}
+  &\pre(\text{recommend-gamify-learning}) = \\
+  &\quad (\text{has-support-need}(\text{?s}, \text{asc-asd}) \lor \\
+  &\quad \text{has-support-need}(\text{?s}, \text{tourettes}) \lor \\
+  &\quad \text{uses-strategy}(\text{?s}, \text{gamification}) \lor \\
+  &\quad \text{uses-strategy}(\text{?s}, \text{blended-learning})) \\
+  &\eff(\text{recommend-gamify-learning}) = \\
+  &\quad \text{given-support}(\text{?s}, \text{gamify-learning})
+  \end{align*}
+  \caption{Logical formalisation of the PDDL action for recommending gamified learning}\label{fig:gamify-learning}
 \end{figure}

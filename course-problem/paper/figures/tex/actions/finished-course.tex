@@ -1,15 +1,11 @@
 \begin{figure}[t]
-    \begin{lstlisting}
-    (:action finish-course
-      :parameters (?s - student ?c - course ?l - course-level)
-      :precondition (and 
-        (done-unit unit-four ?s ?c ?l)
-        (takes-course ?s ?c ?l)
-      )
-      :effect (and
-        (finished-course ?s ?c ?l)
-      )
-    )
-    \end{lstlisting}
-    \caption{PDDL action that flags a course as finished for a student.}\label{fig:finish-course}
+  \small  % Adjust font size
+  \begin{align*}
+  &\pre(\text{finish-course}) = \\
+  &\quad \text{done-unit}(\text{unit-four}, \text{?s}, \text{?c}, \text{?l}) \land \\
+  &\quad \text{takes-course}(\text{?s}, \text{?c}, \text{?l}) \\
+  &\eff(\text{finish-course}) = \\
+  &\quad \text{finished-course}(\text{?s}, \text{?c}, \text{?l})
+  \end{align*}
+  \caption{Logical formalisation of the PDDL action for finishing a course}\label{fig:finish-course}
 \end{figure}

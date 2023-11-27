@@ -1,15 +1,11 @@
 \begin{figure}[t]
-    \begin{lstlisting}
-    (:action recommend-reading-group
-      :parameters (?s - student)
-      :precondition (and 
-        (has-support-need ?s language)
-        (has-support-need ?s blind-visual)
-      )
-      :effect (and 
-        (given-support ?s reading-group)
-      )
-    )
-    \end{lstlisting}
-    \caption{PDDL action to recommend a student attends a reading group.}\label{fig:reading-group}
+  \small  % Adjust font size
+  \begin{align*}
+  &\pre(\text{recommend-reading-group}) = \\
+  &\quad \text{has-support-need}(\text{?s}, \text{language}) \land \\
+  &\quad \text{has-support-need}(\text{?s}, \text{blind-visual}) \\
+  &\eff(\text{recommend-reading-group}) = \\
+  &\quad \text{given-support}(\text{?s}, \text{reading-group})
+  \end{align*}
+  \caption{Logical formalisation of the PDDL action for recommending a reading group}\label{fig:reading-group}
 \end{figure}

@@ -4,16 +4,22 @@ This project employs a structured ontology in PDDL, encompassing types, constant
 \subsection{LEARNS Architecture}
 Planning learning paths for students requires the initial step of creating a framework, which is one that contains 36 weeks. There are $32$ weeks for learning, and $4$ weeks for students to be assessed by means of unit tests. There are also a number of variables to consider, such as a student (\texttt{?s}), the course they are sitting (\texttt{?c}), the level of the course (\texttt{?l}), what grade they are expected to achieve in a given course (\texttt{?g}), what week they are currently on (\texttt{?w}), what unit they are achieving on (\texttt{?u}), what extracurricular activity they are doing (\texttt{?e}), what learning strategy they prefer (\texttt{?t}), and what support requirements they may have (\texttt{?r}). These variables are used to aid in the guidance of students through this learning recognition system.
 
-The successful completion of each week is systematically recorded through the \texttt{done-week} predicate, as denoted in Figures~\ref{fig:do-week-one} and~\ref{fig:do-week-n}. Figure~\ref{fig:do-week-n} is an action that is chained from Figure~\ref{fig:do-week-one}, and is executed for each week that is to be completed (week-n), $n$ is in the range of $2 \leq n \leq 8$ and represents the weeks $2$ through $8$ respectively. This is formalised in Figures~\ref{fig:formalised-do-week-one} and \ref{fig:formalised-do-week-n}.
+The successful completion of each week is systematically recorded through the \texttt{done-week} predicate, as denoted in Figures~\ref{fig:do-week-one} and~\ref{fig:do-week-n}. Figure~\ref{fig:do-week-n} is an action that is chained from Figure~\ref{fig:do-week-one}, and is executed for each week that is to be completed (week-n), $n$ is in the range of $2 \leq n \leq 8$ and represents the weeks $2$ through $8$ respectively. This is formalised in Figures~\ref{fig:do-week-one} and~\ref{fig:do-week-n}.
 
-\input{figures/tex/actions/formalised/week-one.tex}
-\input{figures/tex/actions/formalised/week-n.tex}
+\input{figures/tex/actions/week-one.tex}
+\input{figures/tex/actions/week-n.tex}
 
 After eight weeks have passed, students are provided with a unit test to complete. The \texttt{done-unit} predicate in Figures~\ref{fig:take-unit-one} and~\ref{fig:take-unit-n} denote their passing of the unit \textemdash~assuming that all students who take a unit will pass it. This is a simplification of the problem, as it is possible for students to fail a unit test. However, this is not a concern for this project, as the focus is on the planning of learning paths, rather than the planning of resits. Following the accomplishment of a unit, students are then tasked with a subsequent 8-week cycle, this cycle persists until the student has completed all four units from the course.
+
+\input{figures/tex/actions/unit-one.tex}
+\input{figures/tex/actions/unit-n.tex}
 
 A student has completed a course when all four units are complete, and is denoted by the \texttt{finished-course} predicate. Figure~\ref{fig:finish-course} provides the action to check that the student has completed the course. This is a prerequisite for the student to be able to take the final exam \textemdash~of which is not monitored by this system, as it is an application of automated planning to generate learning paths for students with additional support requirements, not for handling the logistics of the school.
 
 Alongside their academics, extracurricular activities play a vital role in student development. For each unit, students can participate in two extracurricular activities. Grade-a students are expected to commit to both, while grade-b students typically commit to one. Figures~\ref{fig:extra-curricular-one} and~\ref{fig:extra-curricular-n} illustrate this academic involvement, highlighting the sequential nature of these activities.
+
+\input{figures/tex/actions/ec-one.tex}
+\input{figures/tex/actions/ec-n.tex}
 
 Extracurricular activities alternate, starting with \texttt{do-extra-curricular-one} and progressing to (roughly) \texttt{do-extra-curricular-n}. This pattern repeats for each unit, and completion is indicated by the \texttt{done-extra-curricular} predicate. The approximation stems from the earlier statement that grade-a or grade-b students may engage in either one or two extracurricular activities. However, this simplification overlooks the possibility of non-grade-a or non-grade-b students participating and grade-a or grade-b students deviating from the specified number of extracurricular engagements.
 
