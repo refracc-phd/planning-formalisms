@@ -50,6 +50,7 @@
                 (uses-strategy ?s teamwork)
                 (uses-strategy ?s project-based)
                 (uses-strategy ?s blended-learning)
+                (uses-strategy ?s flex-seating)
             )
         )
         :effect (and 

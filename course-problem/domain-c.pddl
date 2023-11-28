@@ -54,6 +54,7 @@
                 (uses-strategy ?s teamwork)
                 (uses-strategy ?s project-based)
                 (uses-strategy ?s blended-learning)
+                (uses-strategy ?s flex-seating)
             )
         )
         :effect (and 
@@ -137,7 +138,8 @@
     (:action finish-course
         :parameters (?s - student ?c - course ?l - course-level)
         :precondition (and 
-            (= (unit ?s ?c ?l) (max-units ?c ?l))
+            (= (unit ?s ?c ?l) (max-units))
+            (= (week ?s ?c ?l) (max-weeks))
             (takes-course ?s ?c ?l)
         )
         :effect (and
@@ -166,7 +168,7 @@
         )
         :effect (and 
             (increase (unit ?s ?c ?l) 1)
-            (= (week ?s ?c ?l) 0)
+            (assign (week ?s ?c ?l) 0)
         )
     )
 

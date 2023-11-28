@@ -32,6 +32,9 @@
 		(= (extra-curricular lily comp-sci national-four) 0)
 		(= (extra-curricular lily pc-passport higher) 0)
 
+		(= (max-units) 4)
+		(= (max-weeks) 8)
+
 		(takes-course lily lifeskills year-three)
 		(grade p lily lifeskills year-three)
 		(takes-course lily cantonese national-four)
