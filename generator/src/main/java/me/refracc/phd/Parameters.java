@@ -6,7 +6,7 @@ public final class Parameters {
 
   public static long SEED = 27356876234L;
 
-  public static int NUM_FILES = 100;
+  public static int NUM_FILES = 10;
   public static int NUM_COURSES = 4;
   public static int SUPPORT_REQ_THRESHOLD = 75;
   public static int STRATEGY_THRESHOLD = 50;
