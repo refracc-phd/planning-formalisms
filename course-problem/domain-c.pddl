@@ -139,7 +139,6 @@
         :parameters (?s - student ?c - course ?l - course-level)
         :precondition (and 
             (= (unit ?s ?c ?l) (max-units))
-            (= (week ?s ?c ?l) (max-weeks))
             (takes-course ?s ?c ?l)
         )
         :effect (and
@@ -164,11 +163,12 @@
         :precondition (and 
             (takes-course ?s ?c ?l)
             (not (finished-course ?s ?c ?l))
+            (= (week ?s ?c ?l) (max-weeks))
             (< (unit ?s ?c ?l) (max-units))
         )
         :effect (and 
-            (increase (unit ?s ?c ?l) 1)
             (assign (week ?s ?c ?l) 0)
+            (increase (unit ?s ?c ?l) 1)
         )
     )
 

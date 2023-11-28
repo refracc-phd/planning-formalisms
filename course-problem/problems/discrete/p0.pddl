@@ -16,14 +16,19 @@
 	(:init
 		(takes-course lily lifeskills year-three)
 		(grade p lily lifeskills year-three)
+
 		(takes-course lily cantonese national-four)
 		(grade p lily cantonese national-four)
-		(takes-course lily cantonese national-five)
-		(grade b lily cantonese national-five)
+
+		(takes-course lily urdu national-five)
+		(grade b lily urdu national-five)
+
 		(takes-course lily comp-sci national-four)
 		(grade p lily comp-sci national-four)
+
 		(takes-course lily pc-passport higher)
 		(grade c lily pc-passport higher)
+		
 		(uses-strategy lily flex-seating)
 	)
 
@@ -31,18 +36,10 @@
 		(and
 			(finished-course lily lifeskills year-three)
 			(finished-course lily cantonese national-four)
-			(finished-course lily cantonese national-five)
+			(finished-course lily urdu national-five)
 			(finished-course lily comp-sci national-four)
 			(finished-course lily pc-passport higher)
 			(given-support lily improving-comms-workshop)
-			(finished-course theodore english higher)
-			(finished-course theodore mandarin national-four)
-			(finished-course theodore music-tech year-three)
-			(finished-course theodore landscape-gardening adv-higher)
-			(finished-course theodore numeracy higher)
-			(given-support theodore improving-comms-workshop)
-			(given-support theodore tech-assist)
-			(given-support theodore gamify-learning)
 		)
 	)
 )
