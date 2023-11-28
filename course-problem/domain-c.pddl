@@ -195,4 +195,32 @@
             (increase (extra-curricular ?s ?c ?l) 1)
         )
     )
+
+    (:action do-team-extra-curricular-a
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (grade a ?s ?c ?l)
+            (takes-course ?s ?c ?l)
+            (study-group ?c ?l)
+            (not (finished-course ?s ?c ?l))
+            (< (extra-curricular ?s ?c ?l) (max-extra-curricular-a ?c ?l))
+        )
+        :effect (and 
+            (increase (extra-curricular ?s ?c ?l) 1)
+        )
+    )
+
+    (:action do-team-extra-curricular-b
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (grade a ?s ?c ?l)
+            (takes-course ?s ?c ?l)
+            (study-group ?c ?l)
+            (not (finished-course ?s ?c ?l))
+            (< (extra-curricular ?s ?c ?l) (max-extra-curricular-b ?c ?l))
+        )
+        :effect (and 
+            (increase (extra-curricular ?s ?c ?l) 1)
+        )
+    )
 )
