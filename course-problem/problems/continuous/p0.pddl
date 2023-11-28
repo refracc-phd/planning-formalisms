@@ -14,6 +14,16 @@
 	)
 
 	(:init
+
+				(week ?s - student ?c - course ?l - course-level)
+        (unit ?s - student ?c - course ?l - course-level)
+        (extra-curricular ?s - student ?c - course ?l - course-level)
+
+        (max-weeks ?c - course ?l - course-level)
+        (max-units ?c - course ?l - course-level)
+        (max-extra-curricular-a ?c - course ?l - course-level)
+        (max-extra-curricular-b ?c - course ?l - course-level)
+
 		(takes-course oliver cantonese national-four)
 		(grade p oliver cantonese national-four)
 		(takes-course oliver politics national-five)

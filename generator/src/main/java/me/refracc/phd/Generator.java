@@ -11,7 +11,7 @@ public class Generator {
   public static void main(String[] args) {
     File directory = new File(Parameters.OUTPUT_DIR);
 
-    for (File file: Objects.requireNonNull(directory.listFiles())) {
+    for (File file : Objects.requireNonNull(directory.listFiles())) {
       if (!file.isDirectory()) {
         file.delete();
       }
@@ -193,9 +193,9 @@ public class Generator {
     objects.forEach(object -> problemDescription.append("\n\t\t").append(object));
     problemDescription.append("\n\t\t");
 
-    int numberOfNames = random.nextInt(1, (names.size() / Parameters.NAMES_SPLIT) + 1); // Ensure at least one name
+    int numberOfNames = random.nextInt(1, (names.size()) + 1); // Ensure at least one name
     for (int j = 0; j < numberOfNames; j++) {
-      int randomIndex = random.nextInt(0, names.size() / Parameters.NAMES_SPLIT);
+      int randomIndex = random.nextInt(0, names.size());
       String name = names.get(randomIndex).toLowerCase();
 
       if (!students.contains(name)) {
@@ -215,7 +215,6 @@ public class Generator {
 
     return problemDescription.append(goal).toString();
   }
-
 
   // Helper method to get a random element from a list
   private static <T> T getRandomElement(@NotNull List<T> list) {

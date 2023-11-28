@@ -41,7 +41,8 @@
 
         (max-weeks ?c - course ?l - course-level)
         (max-units ?c - course ?l - course-level)
-        (max-extra-curricular ?c - course ?l - course-level)
+        (max-extra-curricular-a ?c - course ?l - course-level)
+        (max-extra-curricular-b ?c - course ?l - course-level)
     )
 
     (:action recommend-improving-communications-workshop
@@ -136,7 +137,7 @@
     (:action finish-course
         :parameters (?s - student ?c - course ?l - course-level)
         :precondition (and 
-            (done-unit unit-four ?s ?c ?l)
+            (= (unit ?s ?c ?l) (max-units ?c ?l))
             (takes-course ?s ?c ?l)
         )
         :effect (and
@@ -144,5 +145,54 @@
         )
     )
 
+    (:action do-week
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (not (finished-course ?s ?c ?l))
+            (< (week ?s ?c ?l) (max-weeks ?c ?l))
+        )
+        :effect (and 
+            (increase (week ?s ?c ?l) 1)
+        )
+    )
 
+    (:action do-unit
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (not (finished-course ?s ?c ?l))
+            (< (unit ?s ?c ?l) (max-units ?c ?l))
+        )
+        :effect (and 
+            (increase (unit ?s ?c ?l) 1)
+            (= (week ?s ?c ?l) 0)
+        )
+    )
+
+    (:action do-extra-curricular-a
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (grade a ?s ?c ?l)
+            (takes-course ?s ?c ?l)
+            (not (finished-course ?s ?c ?l))
+            (< (extra-curricular ?s ?c ?l) (max-extra-curricular-a ?c ?l))
+        )
+        :effect (and 
+            (increase (extra-curricular ?s ?c ?l) 1)
+        )
+    )
+
+    (:action do-extra-curricular-b
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (grade a ?s ?c ?l)
+            (takes-course ?s ?c ?l)
+            (not (finished-course ?s ?c ?l))
+            (< (extra-curricular ?s ?c ?l) (max-extra-curricular-b ?c ?l))
+        )
+        :effect (and 
+            (increase (extra-curricular ?s ?c ?l) 1)
+        )
+    )
 )
