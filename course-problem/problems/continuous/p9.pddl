@@ -17,6 +17,207 @@
 		(= (cost) 0)
 		(= (max-units) 4)
 		(= (max-weeks) 8)
+
+		(= (week oscar phys-ed national-four) 0)
+		(= (unit oscar phys-ed national-four) 0)
+		(= (extra-curricular oscar phys-ed national-four) 0)
+
+		(= (week oscar pc-passport adv-higher) 0)
+		(= (unit oscar pc-passport adv-higher) 0)
+		(= (extra-curricular oscar pc-passport adv-higher) 0)
+
+		(= (week oscar english higher) 0)
+		(= (unit oscar english higher) 0)
+		(= (extra-curricular oscar english higher) 0)
+
+		(= (week oscar numeracy year-one) 0)
+		(= (unit oscar numeracy year-one) 0)
+		(= (extra-curricular oscar numeracy year-one) 0)
+
+		(= (week oscar history adv-higher) 0)
+		(= (unit oscar history adv-higher) 0)
+		(= (extra-curricular oscar history adv-higher) 0)
+
+		(= (week travis phys-ed national-four) 0)
+		(= (unit travis phys-ed national-four) 0)
+		(= (extra-curricular travis phys-ed national-four) 0)
+
+		(= (week travis mandarin higher) 0)
+		(= (unit travis mandarin higher) 0)
+		(= (extra-curricular travis mandarin higher) 0)
+
+		(= (week travis textiles year-three) 0)
+		(= (unit travis textiles year-three) 0)
+		(= (extra-curricular travis textiles year-three) 0)
+
+		(= (week travis urdu national-five) 0)
+		(= (unit travis urdu national-five) 0)
+		(= (extra-curricular travis urdu national-five) 0)
+
+		(= (week travis drama year-two) 0)
+		(= (unit travis drama year-two) 0)
+		(= (extra-curricular travis drama year-two) 0)
+
+		(= (week leo mandarin national-four) 0)
+		(= (unit leo mandarin national-four) 0)
+		(= (extra-curricular leo mandarin national-four) 0)
+
+		(= (week leo philosophy national-five) 0)
+		(= (unit leo philosophy national-five) 0)
+		(= (extra-curricular leo philosophy national-five) 0)
+
+		(= (week leo graph-comm year-two) 0)
+		(= (unit leo graph-comm year-two) 0)
+		(= (extra-curricular leo graph-comm year-two) 0)
+
+		(= (week leo gaelic adv-higher) 0)
+		(= (unit leo gaelic adv-higher) 0)
+		(= (extra-curricular leo gaelic adv-higher) 0)
+
+		(= (week leo music-tech year-one) 0)
+		(= (unit leo music-tech year-one) 0)
+		(= (extra-curricular leo music-tech year-one) 0)
+
+		(= (week grace textiles national-four) 0)
+		(= (unit grace textiles national-four) 0)
+		(= (extra-curricular grace textiles national-four) 0)
+
+		(= (week grace numeracy year-one) 0)
+		(= (unit grace numeracy year-one) 0)
+		(= (extra-curricular grace numeracy year-one) 0)
+
+		(= (week grace italian higher) 0)
+		(= (unit grace italian higher) 0)
+		(= (extra-curricular grace italian higher) 0)
+
+		(= (week grace physics adv-higher) 0)
+		(= (unit grace physics adv-higher) 0)
+		(= (extra-curricular grace physics adv-higher) 0)
+
+		(= (week grace latin higher) 0)
+		(= (unit grace latin higher) 0)
+		(= (extra-curricular grace latin higher) 0)
+
+		(= (week ava music-tech year-one) 0)
+		(= (unit ava music-tech year-one) 0)
+		(= (extra-curricular ava music-tech year-one) 0)
+
+		(= (week ava politics adv-higher) 0)
+		(= (unit ava politics adv-higher) 0)
+		(= (extra-curricular ava politics adv-higher) 0)
+
+		(= (week ava latin year-three) 0)
+		(= (unit ava latin year-three) 0)
+		(= (extra-curricular ava latin year-three) 0)
+
+		(= (week ava graph-comm national-five) 0)
+		(= (unit ava graph-comm national-five) 0)
+		(= (extra-curricular ava graph-comm national-five) 0)
+
+		(= (week ava comp-sci year-one) 0)
+		(= (unit ava comp-sci year-one) 0)
+		(= (extra-curricular ava comp-sci year-one) 0)
+
+		(= (week ivy lifeskills higher) 0)
+		(= (unit ivy lifeskills higher) 0)
+		(= (extra-curricular ivy lifeskills higher) 0)
+
+		(= (week ivy urdu year-three) 0)
+		(= (unit ivy urdu year-three) 0)
+		(= (extra-curricular ivy urdu year-three) 0)
+
+		(= (week ivy design-manufacture year-one) 0)
+		(= (unit ivy design-manufacture year-one) 0)
+		(= (extra-curricular ivy design-manufacture year-one) 0)
+
+		(= (week ivy chemistry year-two) 0)
+		(= (unit ivy chemistry year-two) 0)
+		(= (extra-curricular ivy chemistry year-two) 0)
+
+		(= (week ivy numeracy year-one) 0)
+		(= (unit ivy numeracy year-one) 0)
+		(= (extra-curricular ivy numeracy year-one) 0)
+
+		(= (week freddie modern-studies year-one) 0)
+		(= (unit freddie modern-studies year-one) 0)
+		(= (extra-curricular freddie modern-studies year-one) 0)
+
+		(= (week freddie modern-studies year-three) 0)
+		(= (unit freddie modern-studies year-three) 0)
+		(= (extra-curricular freddie modern-studies year-three) 0)
+
+		(= (week freddie numeracy year-two) 0)
+		(= (unit freddie numeracy year-two) 0)
+		(= (extra-curricular freddie numeracy year-two) 0)
+
+		(= (week freddie philosophy year-one) 0)
+		(= (unit freddie philosophy year-one) 0)
+		(= (extra-curricular freddie philosophy year-one) 0)
+
+		(= (week freddie design-manufacture year-one) 0)
+		(= (unit freddie design-manufacture year-one) 0)
+		(= (extra-curricular freddie design-manufacture year-one) 0)
+
+		(= (week caleb pc-passport year-one) 0)
+		(= (unit caleb pc-passport year-one) 0)
+		(= (extra-curricular caleb pc-passport year-one) 0)
+
+		(= (week caleb urdu higher) 0)
+		(= (unit caleb urdu higher) 0)
+		(= (extra-curricular caleb urdu higher) 0)
+
+		(= (week caleb english year-two) 0)
+		(= (unit caleb english year-two) 0)
+		(= (extra-curricular caleb english year-two) 0)
+
+		(= (week caleb design-manufacture higher) 0)
+		(= (unit caleb design-manufacture higher) 0)
+		(= (extra-curricular caleb design-manufacture higher) 0)
+
+		(= (week caleb german higher) 0)
+		(= (unit caleb german higher) 0)
+		(= (extra-curricular caleb german higher) 0)
+
+		(= (week finn biology year-one) 0)
+		(= (unit finn biology year-one) 0)
+		(= (extra-curricular finn biology year-one) 0)
+
+		(= (week finn drama year-three) 0)
+		(= (unit finn drama year-three) 0)
+		(= (extra-curricular finn drama year-three) 0)
+
+		(= (week finn german adv-higher) 0)
+		(= (unit finn german adv-higher) 0)
+		(= (extra-curricular finn german adv-higher) 0)
+
+		(= (week finn admin-it higher) 0)
+		(= (unit finn admin-it higher) 0)
+		(= (extra-curricular finn admin-it higher) 0)
+
+		(= (week finn numeracy national-four) 0)
+		(= (unit finn numeracy national-four) 0)
+		(= (extra-curricular finn numeracy national-four) 0)
+
+		(= (week sienna mandarin year-two) 0)
+		(= (unit sienna mandarin year-two) 0)
+		(= (extra-curricular sienna mandarin year-two) 0)
+
+		(= (week sienna admin-it year-one) 0)
+		(= (unit sienna admin-it year-one) 0)
+		(= (extra-curricular sienna admin-it year-one) 0)
+
+		(= (week sienna pc-passport year-one) 0)
+		(= (unit sienna pc-passport year-one) 0)
+		(= (extra-curricular sienna pc-passport year-one) 0)
+
+		(= (week sienna admin-it adv-higher) 0)
+		(= (unit sienna admin-it adv-higher) 0)
+		(= (extra-curricular sienna admin-it adv-higher) 0)
+
+		(= (week sienna practical-woodwork national-five) 0)
+		(= (unit sienna practical-woodwork national-five) 0)
+		(= (extra-curricular sienna practical-woodwork national-five) 0)
+
 		(takes-course oscar phys-ed national-four)
 		(grade p oscar phys-ed national-four)
 		(takes-course oscar pc-passport adv-higher)

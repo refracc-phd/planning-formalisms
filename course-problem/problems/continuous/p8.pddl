@@ -17,6 +17,192 @@
 		(= (cost) 0)
 		(= (max-units) 4)
 		(= (max-weeks) 8)
+
+		(= (week grace numeracy higher) 0)
+		(= (unit grace numeracy higher) 0)
+		(= (extra-curricular grace numeracy higher) 0)
+
+		(= (week grace design-manufacture adv-higher) 0)
+		(= (unit grace design-manufacture adv-higher) 0)
+		(= (extra-curricular grace design-manufacture adv-higher) 0)
+
+		(= (week grace landscape-gardening year-two) 0)
+		(= (unit grace landscape-gardening year-two) 0)
+		(= (extra-curricular grace landscape-gardening year-two) 0)
+
+		(= (week grace spanish year-two) 0)
+		(= (unit grace spanish year-two) 0)
+		(= (extra-curricular grace spanish year-two) 0)
+
+		(= (week grace esol year-one) 0)
+		(= (unit grace esol year-one) 0)
+		(= (extra-curricular grace esol year-one) 0)
+
+		(= (week esme esol national-five) 0)
+		(= (unit esme esol national-five) 0)
+		(= (extra-curricular esme esol national-five) 0)
+
+		(= (week esme politics adv-higher) 0)
+		(= (unit esme politics adv-higher) 0)
+		(= (extra-curricular esme politics adv-higher) 0)
+
+		(= (week esme home-economics year-three) 0)
+		(= (unit esme home-economics year-three) 0)
+		(= (extra-curricular esme home-economics year-three) 0)
+
+		(= (week esme maths higher) 0)
+		(= (unit esme maths higher) 0)
+		(= (extra-curricular esme maths higher) 0)
+
+		(= (week esme drama national-four) 0)
+		(= (unit esme drama national-four) 0)
+		(= (extra-curricular esme drama national-four) 0)
+
+		(= (week jackson italian year-two) 0)
+		(= (unit jackson italian year-two) 0)
+		(= (extra-curricular jackson italian year-two) 0)
+
+		(= (week jackson rmps year-three) 0)
+		(= (unit jackson rmps year-three) 0)
+		(= (extra-curricular jackson rmps year-three) 0)
+
+		(= (week jackson philosophy national-five) 0)
+		(= (unit jackson philosophy national-five) 0)
+		(= (extra-curricular jackson philosophy national-five) 0)
+
+		(= (week jackson chemistry higher) 0)
+		(= (unit jackson chemistry higher) 0)
+		(= (extra-curricular jackson chemistry higher) 0)
+
+		(= (week jackson graph-comm year-three) 0)
+		(= (unit jackson graph-comm year-three) 0)
+		(= (extra-curricular jackson graph-comm year-three) 0)
+
+		(= (week oscar cantonese year-two) 0)
+		(= (unit oscar cantonese year-two) 0)
+		(= (extra-curricular oscar cantonese year-two) 0)
+
+		(= (week oscar geography higher) 0)
+		(= (unit oscar geography higher) 0)
+		(= (extra-curricular oscar geography higher) 0)
+
+		(= (week oscar geography year-two) 0)
+		(= (unit oscar geography year-two) 0)
+		(= (extra-curricular oscar geography year-two) 0)
+
+		(= (week oscar physics national-four) 0)
+		(= (unit oscar physics national-four) 0)
+		(= (extra-curricular oscar physics national-four) 0)
+
+		(= (week oscar music-tech national-five) 0)
+		(= (unit oscar music-tech national-five) 0)
+		(= (extra-curricular oscar music-tech national-five) 0)
+
+		(= (week jasper textiles year-one) 0)
+		(= (unit jasper textiles year-one) 0)
+		(= (extra-curricular jasper textiles year-one) 0)
+
+		(= (week jasper dance higher) 0)
+		(= (unit jasper dance higher) 0)
+		(= (extra-curricular jasper dance higher) 0)
+
+		(= (week jasper latin higher) 0)
+		(= (unit jasper latin higher) 0)
+		(= (extra-curricular jasper latin higher) 0)
+
+		(= (week jasper rmps year-two) 0)
+		(= (unit jasper rmps year-two) 0)
+		(= (extra-curricular jasper rmps year-two) 0)
+
+		(= (week jasper practical-woodwork year-one) 0)
+		(= (unit jasper practical-woodwork year-one) 0)
+		(= (extra-curricular jasper practical-woodwork year-one) 0)
+
+		(= (week layla home-economics national-four) 0)
+		(= (unit layla home-economics national-four) 0)
+		(= (extra-curricular layla home-economics national-four) 0)
+
+		(= (week layla landscape-gardening adv-higher) 0)
+		(= (unit layla landscape-gardening adv-higher) 0)
+		(= (extra-curricular layla landscape-gardening adv-higher) 0)
+
+		(= (week layla physics year-two) 0)
+		(= (unit layla physics year-two) 0)
+		(= (extra-curricular layla physics year-two) 0)
+
+		(= (week layla lifeskills adv-higher) 0)
+		(= (unit layla lifeskills adv-higher) 0)
+		(= (extra-curricular layla lifeskills adv-higher) 0)
+
+		(= (week layla chemistry adv-higher) 0)
+		(= (unit layla chemistry adv-higher) 0)
+		(= (extra-curricular layla chemistry adv-higher) 0)
+
+		(= (week emily rmps year-three) 0)
+		(= (unit emily rmps year-three) 0)
+		(= (extra-curricular emily rmps year-three) 0)
+
+		(= (week emily comp-sci higher) 0)
+		(= (unit emily comp-sci higher) 0)
+		(= (extra-curricular emily comp-sci higher) 0)
+
+		(= (week emily german higher) 0)
+		(= (unit emily german higher) 0)
+		(= (extra-curricular emily german higher) 0)
+
+		(= (week emily landscape-gardening national-four) 0)
+		(= (unit emily landscape-gardening national-four) 0)
+		(= (extra-curricular emily landscape-gardening national-four) 0)
+
+		(= (week emily rmps higher) 0)
+		(= (unit emily rmps higher) 0)
+		(= (extra-curricular emily rmps higher) 0)
+
+		(= (week ada physics national-five) 0)
+		(= (unit ada physics national-five) 0)
+		(= (extra-curricular ada physics national-five) 0)
+
+		(= (week ada comp-sci higher) 0)
+		(= (unit ada comp-sci higher) 0)
+		(= (extra-curricular ada comp-sci higher) 0)
+
+		(= (week ada drama year-two) 0)
+		(= (unit ada drama year-two) 0)
+		(= (extra-curricular ada drama year-two) 0)
+
+		(= (week ada graph-comm year-three) 0)
+		(= (unit ada graph-comm year-three) 0)
+		(= (extra-curricular ada graph-comm year-three) 0)
+
+		(= (week ada physics higher) 0)
+		(= (unit ada physics higher) 0)
+		(= (extra-curricular ada physics higher) 0)
+
+		(= (week david cantonese year-one) 0)
+		(= (unit david cantonese year-one) 0)
+		(= (extra-curricular david cantonese year-one) 0)
+
+		(= (week david esol higher) 0)
+		(= (unit david esol higher) 0)
+		(= (extra-curricular david esol higher) 0)
+
+		(= (week david design-manufacture year-three) 0)
+		(= (unit david design-manufacture year-three) 0)
+		(= (extra-curricular david design-manufacture year-three) 0)
+
+		(= (week david numeracy national-five) 0)
+		(= (unit david numeracy national-five) 0)
+		(= (extra-curricular david numeracy national-five) 0)
+
+		(= (week david italian national-five) 0)
+		(= (unit david italian national-five) 0)
+		(= (extra-curricular david italian national-five) 0)
+
+		(= (week david blended-learning) 0)
+		(= (unit david blended-learning) 0)
+		(= (extra-curricular david blended-learning) 0)
+
+
 		(takes-course grace numeracy higher)
 		(grade d grace numeracy higher)
 		(takes-course grace design-manufacture adv-higher)
