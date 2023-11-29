@@ -208,7 +208,7 @@ perform_enhsp() {
     # Run all heuristics in parallel for the current problem file
     for heuristic in "${heuristics[@]}"; do
       (
-        java -Xmx10G -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "$heuristic" -sp "$problem_file-$heuristic.plan"
+        java -Xmx10G -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "$heuristic" > "$problem_file-$heuristic.plan"
         # Release the semaphore after task completion
         release_semaphore
         IO:success "Task completed: $problem_file - $heuristic"
