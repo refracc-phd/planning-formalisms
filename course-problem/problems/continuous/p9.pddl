@@ -15,6 +15,8 @@
 
 	(:init
 		(= (cost) 0)
+		(= (max-units) 4)
+		(= (max-weeks) 8)
 		(takes-course oscar phys-ed national-four)
 		(grade p oscar phys-ed national-four)
 		(takes-course oscar pc-passport adv-higher)

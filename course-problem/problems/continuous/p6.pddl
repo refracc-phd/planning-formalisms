@@ -15,6 +15,8 @@
 
 	(:init
 		(= (cost) 0)
+		(= (max-units) 4)
+		(= (max-weeks) 8)
 		(takes-course travis urdu year-three)
 		(grade p travis urdu year-three)
 		(takes-course travis music-tech year-two)

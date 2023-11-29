@@ -15,6 +15,8 @@
 
 	(:init
 		(= (cost) 0)
+		(= (max-units) 4)
+		(= (max-weeks) 8)
 		(takes-course esme music higher)
 		(grade d esme music higher)
 		(takes-course esme french national-four)

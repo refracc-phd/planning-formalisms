@@ -158,7 +158,7 @@ perform_downward() {
 
 perform_enhsp() {
   # Set the maximum number of concurrent tasks
-  MAX_CONCURRENT_TASKS=100
+  MAX_CONCURRENT_TASKS=15
 
   # Create a semaphore file
   SEMAPHORE_FILE=$(mktemp)
@@ -197,7 +197,7 @@ perform_enhsp() {
 
   # Iterate over problem files and run heuristics
   for problem_file in "$problem_dir"/*; do
-    [ ! -f "$problem_file" ] || [ "$problem_file" = "domain.pddl" ] && continue
+    [ ! -f "$problem_file" ] || [ "$problem_file" = "domain*.pddl" ] && continue
 
     # Acquire the semaphore before running tasks
     acquire_semaphore

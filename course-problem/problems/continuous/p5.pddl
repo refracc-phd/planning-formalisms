@@ -15,6 +15,8 @@
 
 	(:init
 		(= (cost) 0)
+		(= (max-units) 4)
+		(= (max-weeks) 8)
 		(takes-course aiden comp-sci year-three)
 		(grade p aiden comp-sci year-three)
 		(takes-course aiden french adv-higher)

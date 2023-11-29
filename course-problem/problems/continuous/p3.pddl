@@ -15,6 +15,8 @@
 
 	(:init
 		(= (cost) 0)
+		(= (max-units) 4)
+		(= (max-weeks) 8)
 		(takes-course alexander german national-four)
 		(grade p alexander german national-four)
 		(takes-course alexander design-manufacture higher)

@@ -15,6 +15,8 @@
 
 	(:init
 		(= (cost) 0)
+		(= (max-units) 4)
+		(= (max-weeks) 8)
 		(takes-course grace numeracy higher)
 		(grade d grace numeracy higher)
 		(takes-course grace design-manufacture adv-higher)

@@ -15,6 +15,28 @@
 
 	(:init
 		(= (cost) 0)
+		(= (max-units) 4)
+		(= (max-weeks) 8)
+
+		(= (week jude spanish national-five) 0)
+		(= (week jude art-design year-one) 0)
+		(= (week jude modern-studies year-one) 0)
+		(= (week jude italian national-five) 0)
+		(= (week jude graph-comm national-four) 0)
+
+		(= (unit jude spanish national-five) 0)
+		(= (unit jude art-design year-one) 0)
+		(= (unit jude modern-studies year-one) 0)
+		(= (unit jude italian national-five) 0)
+		(= (unit jude graph-comm national-four) 0)
+
+		(= (extra-curricular jude spanish national-five) 0)
+		(= (extra-curricular jude art-design year-one) 0)
+		(= (extra-curricular jude modern-studies year-one) 0)
+		(= (extra-curricular jude italian national-five) 0)
+		(= (extra-curricular jude graph-comm national-four) 0)
+		(= (uses-strategy jude student-led-class) 0)
+
 		(takes-course jude spanish national-five)
 		(grade b jude spanish national-five)
 		(takes-course jude art-design year-one)
@@ -24,6 +46,26 @@
 		(takes-course jude italian national-five)
 		(grade b jude italian national-five)
 		(takes-course jude graph-comm national-four)
+
+		(= (week grace practical-woodwork national-five) 0)
+		(= (week grace biology year-two) 0)
+		(= (week grace textiles national-four) 0)
+		(= (week grace physics higher) 0)
+		(= (week grace gaelic higher) 0)
+
+		(= (unit grace practical-woodwork national-five) 0)
+		(= (unit grace biology year-two) 0)
+		(= (unit grace textiles national-four) 0)
+		(= (unit grace physics higher) 0)
+		(= (unit grace gaelic higher) 0)
+
+		(= (extra-curricular grace practical-woodwork national-five) 0)
+		(= (extra-curricular grace biology year-two) 0)
+		(= (extra-curricular grace textiles national-four) 0)
+		(= (extra-curricular grace physics higher) 0)
+		(= (extra-curricular grace gaelic higher) 0)
+		(= (uses-strategy grace teamwork) 0)
+
 		(grade p jude graph-comm national-four)
 		(uses-strategy jude student-led-class)
 		(takes-course grace practical-woodwork national-five)
@@ -37,6 +79,26 @@
 		(takes-course grace gaelic higher)
 		(grade d grace gaelic higher)
 		(uses-strategy grace teamwork)
+
+		(= (week sofia dance higher) 0)
+		(= (week sofia music year-two) 0)
+		(= (week sofia cantonese national-four) 0)
+		(= (week sofia art-design national-four) 0)
+		(= (week sofia urdu adv-higher) 0)
+
+		(= (unit sofia dance higher) 0)
+		(= (unit sofia music year-two) 0)
+		(= (unit sofia cantonese national-four) 0)
+		(= (unit sofia art-design national-four) 0)
+		(= (unit sofia urdu adv-higher) 0)
+
+		(= (extra-curricular sofia dance higher) 0)
+		(= (extra-curricular sofia music year-two) 0)
+		(= (extra-curricular sofia cantonese national-four) 0)
+		(= (extra-curricular sofia art-design national-four) 0)
+		(= (extra-curricular sofia urdu adv-higher) 0)
+		(= (uses-strategy sofia teamwork) 0)
+
 		(takes-course sofia dance higher)
 		(grade d sofia dance higher)
 		(takes-course sofia music year-two)
