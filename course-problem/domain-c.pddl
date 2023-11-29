@@ -43,6 +43,7 @@
         (max-units)
         (max-extra-curricular-a)
         (max-extra-curricular-b)
+        (cost)
     )
 
     (:action recommend-improving-communications-workshop
@@ -55,10 +56,12 @@
                 (uses-strategy ?s project-based)
                 (uses-strategy ?s blended-learning)
                 (uses-strategy ?s flex-seating)
+                (uses-strategy ?s student-led-class)
             )
         )
         :effect (and 
             (given-support ?s improving-comms-workshop)
+            (increase (cost) 1)
         )
     )
 
@@ -70,6 +73,7 @@
         )
         :effect (and 
             (given-support ?s reading-group)
+            (increase (cost) 1)
         )
     )
 
@@ -87,6 +91,7 @@
         )
         :effect (and 
             (given-support ?s tech-assist)
+            (increase (cost) 1)
         )
     )
 
@@ -102,6 +107,7 @@
         )
         :effect (and 
             (given-support ?s pomo)
+            (increase (cost) 1)
         )
     )
 
@@ -116,6 +122,7 @@
         )
         :effect (and 
             (given-support ?s isolated)
+            (increase (cost) 1)
         )
     )
     
@@ -131,6 +138,7 @@
         )
         :effect (and 
             (given-support ?s gamify-learning)
+            (increase (cost) 1)
         )
     )
     
@@ -143,6 +151,7 @@
         )
         :effect (and
             (finished-course ?s ?c ?l)
+            (increase (cost) 1)
         )
     )
 
@@ -155,6 +164,7 @@
         )
         :effect (and 
             (increase (week ?s ?c ?l) 1)
+            (increase (cost) 1)
         )
     )
 
@@ -169,6 +179,7 @@
         :effect (and 
             (assign (week ?s ?c ?l) 0)
             (increase (unit ?s ?c ?l) 1)
+            (increase (cost) 1)
         )
     )
 
@@ -182,6 +193,7 @@
         )
         :effect (and 
             (increase (extra-curricular ?s ?c ?l) 1)
+            (increase (cost) 1)
         )
     )
 
@@ -195,6 +207,7 @@
         )
         :effect (and 
             (increase (extra-curricular ?s ?c ?l) 1)
+            (increase (cost) 1)
         )
     )
 
@@ -209,6 +222,7 @@
         )
         :effect (and 
             (increase (extra-curricular ?s ?c ?l) 1)
+            (increase (cost) 1)
         )
     )
 
@@ -223,6 +237,7 @@
         )
         :effect (and 
             (increase (extra-curricular ?s ?c ?l) 1)
+            (increase (cost) 1)
         )
     )
 )

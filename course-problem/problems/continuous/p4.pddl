@@ -14,6 +14,7 @@
 	)
 
 	(:init
+		(= (cost) 0)
 		(takes-course jack textiles higher)
 		(grade d jack textiles higher)
 		(takes-course jack french national-five)
@@ -106,4 +107,6 @@
 			(given-support pippa improving-comms-workshop)
 		)
 	)
+
+	(:metric maximize (cost))
 )

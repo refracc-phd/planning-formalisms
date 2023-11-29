@@ -14,6 +14,7 @@
 	)
 
 	(:init
+		(= (cost) 0)
 		(takes-course grace numeracy higher)
 		(grade d grace numeracy higher)
 		(takes-course grace design-manufacture adv-higher)
@@ -179,4 +180,6 @@
 			(given-support david gamify-learning)
 		)
 	)
+
+	(:metric maximize (cost))
 )

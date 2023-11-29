@@ -14,6 +14,28 @@
 	)
 
 	(:init
+		(= (cost) 0)
+		(= (max-units) 4)
+		(= (max-weeks) 8)
+
+		(= (week harry politics year-two) 0)
+		(= (week harry physics year-one) 0)
+		(= (week harry admin-it national-five) 0)
+		(= (week harry business-management adv-higher) 0)
+		(= (week harry italian year-three) 0)
+
+		(= (unit harry politics year-two) 0)
+		(= (unit harry physics year-one) 0)
+		(= (unit harry admin-it national-five) 0)
+		(= (unit harry business-management adv-higher) 0)
+		(= (unit harry italian year-three) 0)
+
+		(= (extra-curricular harry politics year-two) 0)
+		(= (extra-curricular harry physics year-one) 0)
+		(= (extra-curricular harry admin-it national-five) 0)
+		(= (extra-curricular harry business-management adv-higher) 0)
+		(= (extra-curricular harry italian year-three) 0)
+
 		(takes-course harry politics year-two)
 		(grade p harry politics year-two)
 		(takes-course harry physics year-one)
@@ -25,6 +47,25 @@
 		(takes-course harry italian year-three)
 		(grade p harry italian year-three)
 		(uses-strategy harry student-led-class)
+
+    (= (week james phys-ed year-two) 0)
+		(= (week james drama national-five) 0)
+		(= (week james graph-comm year-three) 0)
+		(= (week james numeracy year-one) 0)
+		(= (week james rmps national-five) 0)
+
+		(= (unit james phys-ed year-two) 0)
+		(= (unit james drama national-five) 0)
+		(= (unit james graph-comm year-three) 0)
+		(= (unit james numeracy year-one) 0)
+		(= (unit james rmps national-five) 0)
+
+		(= (extra-curricular james phys-ed year-two) 0)
+		(= (extra-curricular james drama national-five) 0)
+		(= (extra-curricular james graph-comm year-three) 0)
+		(= (extra-curricular james numeracy year-one) 0)
+		(= (extra-curricular james rmps national-five) 0)
+
 		(takes-course james phys-ed year-two)
 		(grade p james phys-ed year-two)
 		(takes-course james drama national-five)
@@ -55,4 +96,5 @@
 			(given-support james pomo)
 		)
 	)
+	(:metric maximize (cost))
 )

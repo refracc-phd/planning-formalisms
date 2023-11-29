@@ -1,6 +1,6 @@
 (define (domain courses)
 
-    (:requirements :strips :typing :adl)
+    (:requirements :strips :typing :adl :fluents)
 
     (:types
         course course-level week unit extra-curricular grades - object
@@ -41,6 +41,10 @@
         (given-support ?s - student ?g - support-given)
     )
 
+    (:functions
+        (cost)
+    )
+
     (:action recommend-improving-communications-workshop
         :parameters (?s - student)
         :precondition (and
@@ -51,10 +55,12 @@
                 (uses-strategy ?s project-based)
                 (uses-strategy ?s blended-learning)
                 (uses-strategy ?s flex-seating)
+                (uses-strategy ?s student-led-class)
             )
         )
         :effect (and 
             (given-support ?s improving-comms-workshop)
+            (increase (cost) 1)
         )
     )
 
@@ -66,6 +72,7 @@
         )
         :effect (and 
             (given-support ?s reading-group)
+            (increase (cost) 1)
         )
     )
 
@@ -83,6 +90,7 @@
         )
         :effect (and 
             (given-support ?s tech-assist)
+            (increase (cost) 1)
         )
     )
 
@@ -97,6 +105,7 @@
             )
         )
         :effect (and 
+            (increase (cost) 1)
             (given-support ?s pomo)
         )
     )
@@ -112,6 +121,7 @@
         )
         :effect (and 
             (given-support ?s isolated)
+            (increase (cost) 1)
         )
     )
     
@@ -127,6 +137,7 @@
         )
         :effect (and 
             (given-support ?s gamify-learning)
+            (increase (cost) 1)
         )
     )
     
@@ -139,6 +150,7 @@
         )
         :effect (and
             (finished-course ?s ?c ?l)
+            (increase (cost) 1)
         )
     )
 
@@ -156,6 +168,7 @@
         )
         :effect (and 
             (done-extra-curricular ec-one ?s ?c ?l)
+            (increase (cost) 1)
         )
     )
 
@@ -171,6 +184,7 @@
         )
         :effect (and 
             (done-extra-curricular ec-two ?s ?c ?l)
+            (increase (cost) 1)
         )
     )
 
@@ -190,6 +204,7 @@
         )
         :effect (and 
             (done-extra-curricular ec-three ?s ?c ?l)
+            (increase (cost) 1)
         )
     )
 
@@ -206,6 +221,7 @@
         )
         :effect (and 
             (done-extra-curricular ec-four ?s ?c ?l)
+            (increase (cost) 1)
         )
     )
 
@@ -225,6 +241,7 @@
         )
         :effect (and 
             (done-extra-curricular ec-five ?s ?c ?l)
+            (increase (cost) 1)
         )
     )
 
@@ -241,6 +258,7 @@
         )
         :effect (and 
             (done-extra-curricular ec-six ?s ?c ?l)
+            (increase (cost) 1)
         )
     )
 
@@ -260,6 +278,7 @@
         )
         :effect (and 
             (done-extra-curricular ec-seven ?s ?c ?l)
+            (increase (cost) 1)
         )
     )
 
@@ -276,6 +295,7 @@
         )
         :effect (and 
             (done-extra-curricular ec-eight ?s ?c ?l)
+            (increase (cost) 1)
         )
     )
 
@@ -295,6 +315,7 @@
         )
         :effect (and 
             (done-extra-curricular ec-one ?s ?c ?l)
+            (increase (cost) 1)
         )
     )
 
@@ -312,6 +333,7 @@
         )
         :effect (and 
             (done-extra-curricular ec-two ?s ?c ?l)
+            (increase (cost) 1)
         )
     )
 
@@ -331,6 +353,7 @@
         )
         :effect (and 
             (done-extra-curricular ec-three ?s ?c ?l)
+            (increase (cost) 1)
         )
     )
 
@@ -347,6 +370,7 @@
         )
         :effect (and 
             (done-extra-curricular ec-four ?s ?c ?l)
+            (increase (cost) 1)
         )
     )
 
@@ -366,6 +390,7 @@
         )
         :effect (and 
             (done-extra-curricular ec-five ?s ?c ?l)
+            (increase (cost) 1)
         )
     )
 
@@ -382,6 +407,7 @@
         )
         :effect (and 
             (done-extra-curricular ec-six ?s ?c ?l)
+            (increase (cost) 1)
         )
     )
 
@@ -401,6 +427,7 @@
         )
         :effect (and 
             (done-extra-curricular ec-seven ?s ?c ?l)
+            (increase (cost) 1)
         )
     )
 
@@ -419,6 +446,7 @@
         )
         :effect (and 
             (done-extra-curricular ec-eight ?s ?c ?l)
+            (increase (cost) 1)
         )
     )
     
@@ -440,6 +468,7 @@
             (not(done-week week-three ?s ?c ?l))
             (not(done-week week-two ?s ?c ?l))
             (not(done-week week-one ?s ?c ?l))
+            (increase (cost) 1)
         )
     )
 
@@ -461,6 +490,7 @@
             (not(done-week week-three ?s ?c ?l))
             (not(done-week week-two ?s ?c ?l))
             (not(done-week week-one ?s ?c ?l))
+            (increase (cost) 1)
         )
     )
 
@@ -482,6 +512,7 @@
             (not(done-week week-three ?s ?c ?l))
             (not(done-week week-two ?s ?c ?l))
             (not(done-week week-one ?s ?c ?l))
+            (increase (cost) 1)
         )
     )
 
@@ -503,6 +534,7 @@
             (not(done-week week-three ?s ?c ?l))
             (not(done-week week-two ?s ?c ?l))
             (not(done-week week-one ?s ?c ?l))
+            (increase (cost) 1)
         )
     )
 
@@ -514,6 +546,7 @@
         )
         :effect (and 
             (done-week week-one ?s ?c ?l)
+            (increase (cost) 1)
         )
     )
 
@@ -525,6 +558,7 @@
         )
         :effect (and 
             (done-week week-two ?s ?c ?l)
+            (increase (cost) 1)
         )
     )
 
@@ -536,6 +570,7 @@
         )
         :effect (and 
             (done-week week-three ?s ?c ?l)
+            (increase (cost) 1)
         )
     )
 
@@ -547,6 +582,7 @@
         )
         :effect (and 
             (done-week week-four ?s ?c ?l)
+            (increase (cost) 1)
         )
     )
 
@@ -558,6 +594,7 @@
         )
         :effect (and 
             (done-week week-five ?s ?c ?l)
+            (increase (cost) 1)
         )
     )
 
@@ -569,6 +606,7 @@
         )
         :effect (and 
             (done-week week-six ?s ?c ?l)
+            (increase (cost) 1)
         )
     )
 
@@ -580,6 +618,7 @@
         )
         :effect (and 
             (done-week week-seven ?s ?c ?l)
+            (increase (cost) 1)
         )
     )
 
@@ -591,6 +630,7 @@
         )
         :effect (and 
             (done-week week-eight ?s ?c ?l)
+            (increase (cost) 1)
         )
     )
 )

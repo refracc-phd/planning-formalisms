@@ -14,6 +14,7 @@
 	)
 
 	(:init
+		(= (cost) 0)
 		(= (week lily lifeskills year-three) 0)
 		(= (week lily cantonese national-four) 0)
 		(= (week lily urdu national-five) 0)
@@ -58,4 +59,6 @@
 			(given-support lily improving-comms-workshop)
 		)
 	)
+
+	(:metric maximize (cost))
 )

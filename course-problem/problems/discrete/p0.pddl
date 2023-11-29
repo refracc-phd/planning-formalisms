@@ -14,6 +14,7 @@
 	)
 
 	(:init
+		(= (cost) 0)
 		(takes-course lily lifeskills year-three)
 		(grade p lily lifeskills year-three)
 
@@ -42,4 +43,6 @@
 			(given-support lily improving-comms-workshop)
 		)
 	)
+
+	(:metric maximize (cost))
 )
