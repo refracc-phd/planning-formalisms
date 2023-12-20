@@ -25,8 +25,6 @@ To make use of the content in this repository, you need only run the scripts in 
 ```bash
 ./fd.sh path/to/fastdownward path/to/domain path/to/problem-folder
 ```
-You can also edit (and make use of) the `plan.sh` script, just remember to change the planner location if/when required.
-
 The outputs of your plans will be in the respective directories of the problems you are solving.
 
 ## Contributing
