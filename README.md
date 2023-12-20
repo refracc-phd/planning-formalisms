@@ -6,7 +6,7 @@ This project is an implementation of an intelligent tutoring system in PDDL, whi
 
 Both the continuous and discrete domain are encoded to handle the same 10 problems ($p_0$ - $p_9$) containing one student in $p_0$ and increases by one student at a time, giving us 10 students in $p_9$. Each student takes 5 distinct courses and there is a $25\%$ chance that the student has an additional support need, and a mutually exclusive $70\%$ chance of the student having a specific learning preference.  Planning learning paths for students requires the initial step of creating a framework, which is one that contains 36 weeks. There are 32 weeks for learning, and 4 weeks for students to be assessed by means of unit tests. There are also a number of variables to consider, such as a student (`?s`), the course they are sitting (`?c`), the level of the course (`?l`), what grade they are expected to achieve in a given course (`?g`), what week they are currently on (`?w`), what unit they are completing (`?u`), what extracurricular activity they are doing (`?e`), what learning strategy they prefer (`?t`), and what support requirements they may have (`?r`). These variables are used to aid in the guidance of students through this learning recognition system.
 
-This system also takes into account that the extracurricular classes can be done in a group manner, which is determined to be beneficial to the stndets
+This system also takes into account that the extracurricular classes can be done in a group manner, which is determined to be beneficial to the students and can be determined by the `(study-group ?c ?l)` predicate - which is made explicit in the problem directories.
 
 ## Table of Contents
 
