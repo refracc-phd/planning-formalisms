@@ -1,14 +1,14 @@
 #!/bin/bash
 
-./enhsp.sh ./enhsp/enhsp.jar ./data/domain-c.pddl ./data/continuous
-./enhsp.sh ./enhsp/enhsp.jar ./data/domain-d.pddl ./data/discrete
-./enhsp.sh ./enhsp/enhsp.jar ./data/blocksworld/domain.pddl ./data/blocksworld/instances
-./enhsp.sh ./enhsp/enhsp.jar ./data/elevator/domain.pddl ./data/elevator/instances
-./enhsp.sh ./enhsp/enhsp.jar ./data/logistics/domain.pddl ./data/logistics/instances
-./enhsp.sh ./enhsp/enhsp.jar ./data/schedule/domain.pddl ./data/schedule/instances
+./enhsp.sh ./enhsp/enhsp.jar ./domain-c.pddl ./continuous
+./enhsp.sh ./enhsp/enhsp.jar ./domain-d.pddl ./discrete
+./enhsp.sh ./enhsp/enhsp.jar ./blocksworld/domain.pddl ./blocksworld/instances
+./enhsp.sh ./enhsp/enhsp.jar ./elevator/domain.pddl ./elevator/instances
+./enhsp.sh ./enhsp/enhsp.jar ./logistics/domain.pddl ./logistics/instances
+./enhsp.sh ./enhsp/enhsp.jar ./schedule/domain.pddl ./schedule/instances
 
-# ./fd.sh ./fast-downward/fast-downward.py ./data/domain-d.pddl ./data/discrete
-./fd.sh ./downward/fast-downward.py ./data/blocksworld/domain.pddl ./data/blocksworld/instances
-./fd.sh ./downward/fast-downward.py ./data/elevator/domain.pddl ./data/elevator/instances
-./fd.sh ./downward/fast-downward.py ./data/logistics/domain.pddl ./data/logistics/instances
-./fd.sh ./downward/fast-downward.py ./data/schedule/domain.pddl ./data/schedule/instances
+# ./fd.sh ./fast-downward/fast-downward.py ./domain-d.pddl ./discrete
+./fd.sh ./downward/fast-downward.py ./blocksworld/domain.pddl ./blocksworld/instances
+./fd.sh ./downward/fast-downward.py ./elevator/domain.pddl ./elevator/instances
+./fd.sh ./downward/fast-downward.py ./logistics/domain.pddl ./logistics/instances
+./fd.sh ./downward/fast-downward.py ./schedule/domain.pddl ./schedule/instances

@@ -3,8 +3,6 @@ import csv
 import re
 
 # Set the directories
-continuous_directory_path = "/Users/refracc/Documents/PhD/planning-formalisms/data/continuous"
-discrete_directory_path = "/Users/refracc/Documents/PhD/planning-formalisms/data/discrete"
 
 # Set the output CSV file name
 output_csv = "output.csv"
@@ -58,14 +56,12 @@ with open(output_csv, 'w', newline='') as csvfile:
                     states_evaluated = int(states_evaluated_match.group(1))
                     duplicates_detected = int(duplicates_detected_match.group(1))
 
-                    # Extract 'search.method' from both patterns
-                    search_method_match_instance = re.search(r'instance-\d+\.pddl-(\w+)', filename)
-                    search_method_instance = search_method_match_instance.group(1) + search_method_match_instance.group(2) if search_method_match_instance else ""
+                    search_method = re.search(r"\.pddl-(.*?)\.plan", filename)
 
-                    search_method_match_p = re.search(r'p\d+\.pddl-(\w+)', filename)
-                    search_method_p = search_method_match_p.group(1) if search_method_match_p else ""
-
-                    search_method = search_method_instance or search_method_p
+                    if search_method:
+                        search_method = search_method.group(1)
+                    else:
+                        search_method = ""
 
                     # Extract 'problem' from both patterns
                     problem_match_instance = re.search(r'instance-(\d+)\.pddl-', filename)
@@ -93,9 +89,9 @@ with open(output_csv, 'w', newline='') as csvfile:
                     })
 
     # Process data from the continuous directory
-    process_directory(continuous_directory_path, "continuous")
+    process_directory("continuous", "continuous")
 
     # Process data from the discrete directory
-    process_directory(discrete_directory_path, "discrete")
+    process_directory("discrete", "discrete")
 
 print("CSV generation complete.")
