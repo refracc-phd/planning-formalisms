@@ -23,6 +23,7 @@
  - anorient
 )
 (:init
+   (= (cost) 0)
     (shape a0 cylindrical)
     (surface-condition a0 polished)
     (painted a0 black)
@@ -67,4 +68,7 @@
     (surface-condition d0 smooth)
     (shape b0 cylindrical)
     (shape c0 cylindrical)
-)))
+))
+
+(:metric minimize (cost))
+)

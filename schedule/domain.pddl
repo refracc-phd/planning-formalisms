@@ -30,6 +30,10 @@
 	       (can-orient ?machine - machine ?orientation - anorient)
 	       (has-paint ?machine - machine ?colour - colour))
 
+	(:functions
+		(cost)
+	)
+
   (:action do-polish
 	   :parameters (?x - part)
 	   :precondition (and (not (busy polisher))
@@ -69,7 +73,8 @@
 			      (not (shape ?x ?oldshape))))
 		    (forall (?oldtemp - temperature)
 			    (when (temperature ?x ?oldtemp)
-			      (not (temperature ?x ?oldtemp))))))
+			      (not (temperature ?x ?oldtemp))))
+				(increase (cost) 1)))
 
   (:action do-lathe
 	   :parameters (?x - part) 
@@ -90,7 +95,8 @@
 			      (not (surface-condition ?x ?oldsurface))))
 		    (forall (?oldpaint - colour)
 			    (when (painted ?x ?oldpaint)
-			    (not (painted ?x ?oldpaint))))))
+			    (not (painted ?x ?oldpaint))))
+				(increase (cost) 1)))
 
   (:action do-grind
 	   :parameters (?x - part) 
@@ -107,7 +113,8 @@
 			      (not (surface-condition ?x ?oldsurface))))
 		    (forall (?oldpaint - colour)
 			    (when (painted ?x ?oldpaint)
-			      (not (painted ?x ?oldpaint))))))
+			      (not (painted ?x ?oldpaint))))
+				(increase (cost) 1)))
 
   (:action do-punch
 	   :parameters (?x - part ?width - width  ?orient - anorient)  
@@ -127,7 +134,8 @@
 		      (objscheduled))
 		    (forall (?oldsurface - surface) 
 			    (when (surface-condition ?x ?oldsurface)
-			      (not (surface-condition ?x ?oldsurface))))))
+			      (not (surface-condition ?x ?oldsurface))))
+				(increase (cost) 1)))
 
   (:action do-drill-press
 	   :parameters (?x - part ?width - width ?orient - anorient)
@@ -143,7 +151,8 @@
 		    (scheduled ?x)
 		    (has-hole ?x ?width ?orient)
 		    (when (not (objscheduled))
-		      (objscheduled))))
+		      (objscheduled))
+				(increase (cost) 1)))
 
   (:action do-spray-paint
 	   :parameters (?x - part ?newpaint - colour) 
@@ -163,7 +172,8 @@
 			      (not (surface-condition ?x ?oldsurface))))
 		    (forall (?oldpaint - colour)
 			    (when (painted ?x ?oldpaint)
-			      (not (painted ?x ?oldpaint))))))
+			      (not (painted ?x ?oldpaint))))
+				(increase (cost) 1)))
   
   (:action do-immersion-paint     
            :parameters (?x - part ?newpaint - colour) 
@@ -179,7 +189,8 @@
                       (objscheduled))
                     (forall (?oldpaint - colour)
                             (when (painted ?x ?oldpaint)
-                              (not (painted ?x ?oldpaint))))))
+                              (not (painted ?x ?oldpaint))))
+										(increase (cost) 1)))
   
   (:action do-time-step
            :parameters ()
@@ -190,7 +201,8 @@
                               (not (scheduled ?x))))
                     (forall (?m - machine)
                             (when (busy ?m)
-                              (not (busy ?m)))))))
+                              (not (busy ?m))))
+										(increase (cost) 1))))
 
 
 

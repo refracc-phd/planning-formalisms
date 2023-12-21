@@ -2,18 +2,14 @@ import os
 import csv
 import re
 
-# Set the directories
-blocksworld_directory_path = "/Users/refracc/Documents/PhD/planning-formalisms/data/blocksworld/instances/"
-logistics_directory_path = "/Users/refracc/Documents/PhD/planning-formalisms/data/logistics/instances/"
-
 # Set the output CSV file name
 output_csv = "benchmark.csv"
 
 # Initialize the CSV file with headers
 with open(output_csv, 'w', newline='') as csvfile:
-    fieldnames = ['File Name', 'Plan Length', 'Metric (Search)', 'Planning Time (msec)',
-                  'Heuristic Time (msec)', 'Search Time (msec)', 'Expanded Nodes',
-                  'States Evaluated', 'Duplicates Detected', 'Type']
+    fieldnames = ['problem', 'search.method', 'plan.length', 'metric.search', 'planning.time.msec',
+                  'heuristic.time.msec', 'search.time.msec', 'grounding.time', 'expanded.nodes', 'states.evaluated',
+                  'duplicates.detected', 'type']
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
     
     # Write headers to the CSV file
@@ -22,7 +18,7 @@ with open(output_csv, 'w', newline='') as csvfile:
     # Function to process directory data
     def process_directory(directory_path, problem_type):
         for filename in os.listdir(directory_path):
-        # Check if the file has a ".plan" extension
+            # Check if the file has a ".plan" extension
             if filename.endswith(".plan"):
                 file_path = os.path.join(directory_path, filename)
 
@@ -36,6 +32,7 @@ with open(output_csv, 'w', newline='') as csvfile:
                 planning_time_match = re.search(r'Planning Time \(msec\): (\d+)', plan_content)
                 heuristic_time_match = re.search(r'Heuristic Time \(msec\): (\d+)', plan_content)
                 search_time_match = re.search(r'Search Time \(msec\): (\d+)', plan_content)
+                grounding_time_match = re.search(r'Grounding Time: (\d+)', plan_content)
                 expanded_nodes_match = re.search(r'Expanded Nodes:(\d+)', plan_content)
                 states_evaluated_match = re.search(r'States Evaluated:(\d+)', plan_content)
                 duplicates_detected_match = re.search(r'Number of Duplicates detected:(\d+)', plan_content)
@@ -43,36 +40,59 @@ with open(output_csv, 'w', newline='') as csvfile:
                 # Check if the matches are found
                 if all(match is not None for match in [plan_length_match, metric_search_match,
                                                        planning_time_match, heuristic_time_match,
-                                                       search_time_match, expanded_nodes_match,
-                                                       states_evaluated_match, duplicates_detected_match]):
+                                                       search_time_match, grounding_time_match,
+                                                       expanded_nodes_match, states_evaluated_match,
+                                                       duplicates_detected_match]):
                     # Extract information from the matches
                     plan_length = int(plan_length_match.group(1))
                     metric_search = float(metric_search_match.group(1))
                     planning_time = int(planning_time_match.group(1))
                     heuristic_time = int(heuristic_time_match.group(1))
                     search_time = int(search_time_match.group(1))
+                    grounding_time = int(grounding_time_match.group(1))
                     expanded_nodes = int(expanded_nodes_match.group(1))
                     states_evaluated = int(states_evaluated_match.group(1))
                     duplicates_detected = int(duplicates_detected_match.group(1))
 
+                    search_method = re.search(r"\.pddl-(.*?)\.plan", filename)
+
+                    if search_method:
+                        search_method = search_method.group(1)
+                    else:
+                        search_method = ""
+
+                    # Extract 'problem' from both patterns
+                    problem_match_instance = re.search(r'instance-(\d+)\.pddl-', filename)
+                    problem_instance = f"instance-{problem_match_instance.group(1)}" if problem_match_instance else ""
+
+                    problem_match_p = re.search(r'p(\d+)', filename)
+                    problem_p = f"p{problem_match_p.group(1)}" if problem_match_p else ""
+
+                    problem = problem_instance or problem_p
+
                     # Write the information to the CSV file
                     writer.writerow({
-                        'File Name': os.path.splitext(filename)[0],
-                        'Plan Length': plan_length,
-                        'Metric (Search)': metric_search,
-                        'Planning Time (msec)': planning_time,
-                        'Heuristic Time (msec)': heuristic_time,
-                        'Search Time (msec)': search_time,
-                        'Expanded Nodes': expanded_nodes,
-                        'States Evaluated': states_evaluated,
-                        'Duplicates Detected': duplicates_detected,
-                        'Type': problem_type
+                        'problem': problem,
+                        'search.method': search_method,
+                        'plan.length': plan_length,
+                        'metric.search': metric_search,
+                        'planning.time.msec': planning_time,
+                        'heuristic.time.msec': heuristic_time,
+                        'search.time.msec': search_time,
+                        'grounding.time': grounding_time,
+                        'expanded.nodes': expanded_nodes,
+                        'states.evaluated': states_evaluated,
+                        'duplicates.detected': duplicates_detected,
+                        'type': problem_type
                     })
 
-    # Process data from the continuous directory
-    process_directory(blocksworld_directory_path, "blocksworld")
+    # Process data from the bw directory
+    process_directory("blocksworld/instances", "blocksworld")
 
-    # Process data from the discrete directory
-    process_directory(logistics_directory_path, "logistics")
+    # Process data from the logistics directory
+    process_directory("logistics/instances", "logistics")
+
+    # Process data from the schedule directory
+    process_directory("schedule/instances", "schedule")
 
 print("CSV generation complete.")
