@@ -2,9 +2,9 @@
 library(ggplot2)
 library(tidyr)
 
-setwd("/Users/refracc/Documents/PhD/planning-formalisms/course-problem/problems")
+setwd("/Users/refracc/Documents/PhD/planning-formalisms")
 
-df <- read.csv("output.csv")
+df <- read.csv("benchmark.csv")
 
 gg_search_time <- ggplot(df, aes(x = type, y = search.time.msec, fill = search.method)) +
   geom_bar(stat = 'identity', position = 'dodge') +
@@ -34,6 +34,7 @@ gg_avg_search_time
 # Plan Length by Type and Problem
 gg_plan_length <- ggplot(df, aes(x = type, y = plan.length, color = problem)) +
   geom_point(position = position_jitterdodge(), show.legend = TRUE) +
+  scale_y_continuous(trans='log10') +
   labs(x = 'Problem Type', y = 'Plan Length', title = 'Plan Length Distribution by Type and Problem')
 
 gg_plan_length
