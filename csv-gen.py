@@ -74,7 +74,7 @@ with open(output_csv, 'w', newline='') as csvfile:
 
                     # Write the information to the CSV file
                     writer.writerow({
-                        'problem': problem,
+                        'problem': re.sub(r"instance-(\d+)", r"p\1", problem),
                         'search.method': search_method,
                         'plan.length': plan_length,
                         'metric.search': metric_search,
