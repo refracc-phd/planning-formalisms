@@ -11,7 +11,7 @@ output_csv = "output.csv"
 with open(output_csv, 'w', newline='') as csvfile:
     fieldnames = ['problem', 'search.method', 'plan.length', 'metric.search', 'planning.time.msec',
                   'heuristic.time.msec', 'search.time.msec', 'grounding.time', 'expanded.nodes', 'states.evaluated',
-                  'duplicates.detected', 'type']
+                  'duplicates.detected', 'domain']
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
     
     # Write headers to the CSV file
@@ -85,7 +85,7 @@ with open(output_csv, 'w', newline='') as csvfile:
                         'expanded.nodes': expanded_nodes,
                         'states.evaluated': states_evaluated,
                         'duplicates.detected': duplicates_detected,
-                        'type': problem_type
+                        'domain': problem_type
                     })
 
     # Process data from the continuous directory
@@ -93,5 +93,14 @@ with open(output_csv, 'w', newline='') as csvfile:
 
     # Process data from the discrete directory
     process_directory("discrete", "discrete")
+
+    # Process data from the bw directory
+    process_directory("blocksworld/instances", "blocksworld")
+
+    # Process data from the logistics directory
+    process_directory("logistics/instances", "logistics")
+
+    # Process data from the schedule directory
+    process_directory("schedule/instances", "schedule")
 
 print("CSV generation complete.")
