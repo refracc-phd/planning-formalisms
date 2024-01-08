@@ -8,19 +8,21 @@ df <- read.csv("output.csv")
 
 gg_search_time <- ggplot(df, aes(x = domain, y = search.time.msec, fill = search.method)) +
   geom_bar(stat = 'identity', position = 'dodge') +
+  scale_y_continuous(trans='log10') +
   labs(x = 'Problem Type', y = 'Search Time (msec)', title = 'Search Time Comparison')
 
 gg_search_time
 
 gg_expanded_nodes <- ggplot(df, aes(x = domain, y = expanded.nodes, fill = search.method)) +
   geom_bar(stat = 'identity', position = 'dodge') +
+  scale_y_continuous(trans='log10') +
   labs(x = 'Problem Type', y = 'Expanded Nodes', title = 'Expanded Nodes Comparison')
 
 gg_expanded_nodes
 
 gg_search_vs_nodes <- ggplot(df, aes(x = search.time.msec, y = expanded.nodes, color = search.method)) +
   geom_line() +
-  facet_wrap(~type, scale='free_x') +
+  facet_wrap(~domain, scale='free_x') +
   labs(x = 'Search Time (msec)', y = 'Expanded Nodes', title = 'Search Time vs Expanded Nodes')
 
 gg_search_vs_nodes
@@ -33,7 +35,7 @@ gg_avg_search_time
 
 # Plan Length by Type and Problem
 gg_plan_length <- ggplot(df, aes(x = domain, y = plan.length, color = problem)) +
-  geom_point(position = position_jitterdodge(), show.legend = TRUE) +
+  geom_boxplot() +
   scale_y_continuous(trans='log10') +
   labs(x = 'Problem Type', y = 'Plan Length', title = 'Plan Length Distribution by Type and Problem')
 
@@ -49,14 +51,14 @@ gg_search_time_type
 
 # Expanded Nodes by Problem and Type
 gg_expanded_nodes_type <- ggplot(df, aes(x = problem, y = expanded.nodes, color = domain)) +
-  geom_point(position = position_jitterdodge(), show.legend = TRUE) +
+  geom_boxplot() +
   labs(x = 'Problem', y = 'Expanded Nodes', title = 'Expanded Nodes Distribution by Problem and Type')
 
 gg_expanded_nodes_type
 
 # States Evaluated by Type and Problem
 gg_states_evaluated <- ggplot(df, aes(x = domain, y = states.evaluated, color = problem)) +
-  geom_point(position = position_jitterdodge(), show.legend = TRUE) +
+  geom_boxplot() +
   scale_y_continuous(trans='log10') +
   labs(x = 'Problem Type', y = 'States Evaluated', title = 'States Evaluated Distribution by Type and Problem')
 
@@ -101,6 +103,7 @@ gg_avg_plan_length
 # Planning Time (msec) by Type and Problem, split by Search Method
 gg_planning_time_search_method <- ggplot(df, aes(x = domain, y = planning.time.msec, fill = search.method)) +
   geom_boxplot() +
+  scale_y_continuous(trans="log10") +
   labs(x = 'Problem Type', y = 'Planning Time (msec)', title = 'Planning Time Distribution by Type and Problem, split by Search Method')
 
 gg_planning_time_search_method
@@ -108,6 +111,7 @@ gg_planning_time_search_method
 # Heuristic Time (msec) by Problem, split by Search Method
 gg_heuristic_time_search_method <- ggplot(df, aes(x = search.method, y = heuristic.time.msec, fill = problem)) +
   geom_boxplot() +
+  scale_y_continuous(trans="log10") +
   labs(x = 'Problem', y = 'Heuristic Time (msec)', title = 'Heuristic Time Distribution by Problem, split by Search Method')
 
 gg_heuristic_time_search_method
@@ -129,7 +133,7 @@ gg_duplicates_detected_search_method
 # Plan Length vs. Search Time (msec) by Type, split by Search Method
 gg_plan_length_vs_search_time <- ggplot(df, aes(x = plan.length, y = search.time.msec, color = search.method)) +
   geom_point() +
-  facet_wrap(~type, scales = 'free_y') +
+  facet_wrap(~domain, scales = 'free_x') +
   scale_y_continuous(trans='log10') +
   labs(x = 'Plan Length', y = 'Search Time (msec)', title = 'Plan Length vs. Search Time, split by Type and Search Method')
 
@@ -145,7 +149,7 @@ gg_duplicates_by_type_problem
 # Line plot for States Evaluated over Search Time, color by Search Method
 gg_states_vs_search_time <- ggplot(df, aes(x = search.time.msec, y = states.evaluated, color = search.method)) +
   geom_line() +
-  facet_wrap(~type, scales = 'free_x') +
+  facet_wrap(~domain, scales = 'free_x') +
   labs(x = 'Search Time (msec)', y = 'States Evaluated', title = 'States Evaluated over Search Time')
 
 gg_states_vs_search_time

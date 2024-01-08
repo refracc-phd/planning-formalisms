@@ -74,7 +74,7 @@ with open(output_csv, 'w', newline='') as csvfile:
 
                     # Write the information to the CSV file
                     writer.writerow({
-                        'problem': re.sub(r"instance-(\d+)", r"p\1", problem),
+                        'problem': problem, #re.sub(r"instance-(\d+)", r"p\1", problem)
                         'search.method': search_method,
                         'plan.length': plan_length,
                         'metric.search': metric_search,
@@ -104,3 +104,5 @@ with open(output_csv, 'w', newline='') as csvfile:
     process_directory("schedule/instances", "schedule")
 
 print("CSV generation complete.")
+
+ 
