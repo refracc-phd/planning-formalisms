@@ -67,6 +67,7 @@ gg_states_evaluated
 # Heuristic Time (msec) by Search Method and Type
 gg_heuristic_time <- ggplot(df, aes(x = search.method, y = heuristic.time.msec, fill = domain)) +
   geom_boxplot() +
+  scale_y_continuous(trans='log10') +
   labs(x = 'Search Method', y = 'Heuristic Time (msec)', title = 'Heuristic Time Distribution by Search Method and Type')
 
 gg_heuristic_time
@@ -117,7 +118,7 @@ gg_heuristic_time_search_method <- ggplot(df, aes(x = search.method, y = heurist
 gg_heuristic_time_search_method
 
 # Expanded Nodes by Problem, split by Search Method
-gg_expanded_nodes_search_method <- ggplot(df, aes(x = problem, y = expanded.nodes, fill = search.method)) +
+gg_expanded_nodes_search_method <- ggplot(df, aes(x = problem, y = expanded.nodes, color = search.method)) +
   geom_boxplot() +
   labs(x = 'Problem', y = 'Expanded Nodes', title = 'Expanded Nodes Distribution by Problem, split by Search Method')
 
@@ -140,7 +141,9 @@ gg_plan_length_vs_search_time <- ggplot(df, aes(x = plan.length, y = search.time
 gg_plan_length_vs_search_time
 
 # Bar plot for Duplicates Detected by Type and Problem
-gg_duplicates_by_type_problem <- ggplot(df, aes(x = domain, y = duplicates.detected, fill = problem)) +
+gg_duplicates_by_type_problem <- ggplot(df, aes(x = domain, y = duplicates.detected, fill=domain)) +
+  facet_wrap(~problem, scales = 'free') +
+  scale_x_discrete(labels=c('b', 'c', 'd', 'l', 's')) +
   geom_bar(stat = 'identity', position = 'dodge') +
   labs(x = 'Type', y = 'Duplicates Detected', title = 'Duplicates Detected by Type and Problem')
 
@@ -149,7 +152,7 @@ gg_duplicates_by_type_problem
 # Line plot for States Evaluated over Search Time, color by Search Method
 gg_states_vs_search_time <- ggplot(df, aes(x = search.time.msec, y = states.evaluated, color = search.method)) +
   geom_line() +
-  facet_wrap(~domain, scales = 'free_x') +
+  facet_wrap(~domain, scales = 'free') +
   labs(x = 'Search Time (msec)', y = 'States Evaluated', title = 'States Evaluated over Search Time')
 
 gg_states_vs_search_time
