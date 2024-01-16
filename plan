@@ -1,17 +1,10 @@
 #!/bin/bash
 
-# Check if the required arguments are provided
-if [ "$#" -ne 3 ]; then
-  echo "Usage: $0 <ENHSP Executable Location> <Domain File> <Problem Files Directory>"
-  exit 1
-fi
+# Prompt for user inputs and validate existence
+read -p "ENHSP Executable Location: " executable_location
+read -p "Domain File: " domain_file
+read -p "Problem Files Directory: " problem_dir
 
-# Assign command-line arguments to variables
-executable_location="$1"
-domain_file="$2"
-problem_dir="$3"
-
-# Validate existence of the provided files and directory
 for file in "$executable_location" "$domain_file" "$problem_dir"; do
   [ ! -e "$file" ] && { echo "$file not found." >&2; exit 1; }
 done
@@ -25,14 +18,14 @@ heuristics=("sas" "opt" "aibr" "lm_opt" "sat-hmrp" "sat-hmrph" "sat-hmrphj"
              "opt-hrmax")
 
 # Iterate over problem files and run heuristics sequentially
-for problem_file in "$problem_dir"/*.pddl; do
-  [ ! -f "$problem_file" ] && continue
+for problem_file in "$problem_dir"/*; do
+  [ ! -f "$problem_file" ] || [ "$problem_file" = "domain*.pddl" ] && continue
 
   echo "Running tasks sequentially for: $problem_file"
 
   # Run each heuristic for the current problem file
   for heuristic in "${heuristics[@]}"; do
-    java -Xmx150G -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "$heuristic" > "$problem_file-$heuristic.plan"
+    java -Xmx32G -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "$heuristic" > "$problem_file-$heuristic.plan"
     echo "Task completed: $problem_file - $heuristic"
   done
 done
