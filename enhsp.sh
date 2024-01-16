@@ -32,7 +32,7 @@ for problem_file in "$problem_dir"/*.pddl; do
 
   # Run each heuristic for the current problem file
   for heuristic in "${heuristics[@]}"; do
-    java -Xmx150G -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "$heuristic" > "$problem_file-$heuristic.plan"
+    java -Xmx150G -jar "$executable_location" -v2 -o "$domain_file" -f "$problem_file" -planner "$heuristic" > "$problem_file-$heuristic.plan"
     echo "Task completed: $problem_file - $heuristic"
   done
 done

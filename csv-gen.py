@@ -11,7 +11,8 @@ output_csv = "output.csv"
 with open(output_csv, 'w', newline='') as csvfile:
     fieldnames = ['problem', 'search.method', 'plan.length', 'metric.search', 'planning.time.msec',
                   'heuristic.time.msec', 'search.time.msec', 'grounding.time', 'expanded.nodes', 'states.evaluated',
-                  'duplicates.detected', 'domain']
+                  'duplicates.detected', 'domain', 'grounded.fluents', 'grounded.external.actions', 'grounded.actions', 
+                  'grounded.predicates', 'grounded.events']
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
     
     # Write headers to the CSV file
@@ -38,13 +39,20 @@ with open(output_csv, 'w', newline='') as csvfile:
                 expanded_nodes_match = re.search(r'Expanded Nodes:(\d+)', plan_content)
                 states_evaluated_match = re.search(r'States Evaluated:(\d+)', plan_content)
                 duplicates_detected_match = re.search(r'Number of Duplicates detected:(\d+)', plan_content)
+                grounded_fluents_match = re.search(r'\|F\|:(\d+)', plan_content)
+                grounded_external_actions_match = re.search(r'\|X\|:(\d+)', plan_content)
+                grounded_actions_match = re.search(r'\|A\|:(\d+)', plan_content)
+                grounded_predicates_match = re.search(r'\|P\|:(\d+)', plan_content)
+                grounded_events_match = re.search(r'\|E\|:(\d+)', plan_content)
 
                 # Check if the matches are found
                 if all(match is not None for match in [plan_length_match, metric_search_match,
                                                        planning_time_match, heuristic_time_match,
                                                        search_time_match, grounding_time_match,
                                                        expanded_nodes_match, states_evaluated_match,
-                                                       duplicates_detected_match]):
+                                                       duplicates_detected_match, grounded_fluents_match, 
+                                                       grounded_external_actions_match, grounded_actions_match, 
+                                                       grounded_predicates_match, grounded_events_match]):
                     # Extract information from the matches
                     plan_length = int(plan_length_match.group(1))
                     metric_search = float(metric_search_match.group(1))
@@ -55,6 +63,11 @@ with open(output_csv, 'w', newline='') as csvfile:
                     expanded_nodes = int(expanded_nodes_match.group(1))
                     states_evaluated = int(states_evaluated_match.group(1))
                     duplicates_detected = int(duplicates_detected_match.group(1))
+                    grounded_fluents = int(grounded_fluents_match.group(1))
+                    grounded_external_actions = int(grounded_external_actions_match.group(1))
+                    grounded_actions = int(grounded_actions_match.group(1))
+                    grounded_predicates = int(grounded_predicates_match.group(1))
+                    grounded_events = int(grounded_events_match.group(1))
 
                     search_method = re.search(r"\.pddl-(.*?)\.plan", filename)
 
@@ -74,7 +87,7 @@ with open(output_csv, 'w', newline='') as csvfile:
 
                     # Write the information to the CSV file
                     writer.writerow({
-                        'problem': problem, #re.sub(r"instance-(\d+)", r"p\1", problem)
+                        'problem': problem, 
                         'search.method': search_method,
                         'plan.length': plan_length,
                         'metric.search': metric_search,
@@ -85,8 +98,13 @@ with open(output_csv, 'w', newline='') as csvfile:
                         'expanded.nodes': expanded_nodes,
                         'states.evaluated': states_evaluated,
                         'duplicates.detected': duplicates_detected,
-                        'domain': problem_type
-                    })
+                        'domain': problem_type,
+                        'grounded.fluents': grounded_fluents,
+                        'grounded.external.actions': grounded_external_actions,
+                        'grounded.actions': grounded_actions,
+                        'grounded.predicates': grounded_predicates,
+                        'grounded.events': grounded_events
+                        })
 
     # Process data from the continuous directory
     process_directory("continuous", "continuous")
