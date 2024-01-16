@@ -24,17 +24,33 @@ heuristics=("sas" "opt" "aibr" "lm_opt" "sat-hmrp" "sat-hmrph" "sat-hmrphj"
              "sat-hadd" "sat-hradd" "sat-haddabs" "opt-hmax"
              "opt-hrmax")
 
-# Iterate over problem files and run heuristics sequentially
+# Function to run a heuristic for a given problem file
+run_heuristic() {
+  problem_file="$1"
+  heuristic="$2"
+  java -Xmx150G -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "$heuristic" > "$problem_file-$heuristic.plan"
+  echo "Task completed: $problem_file - $heuristic"
+}
+
+# Iterate over problem files and run heuristics in parallel
 for problem_file in "$problem_dir"/*.pddl; do
   [ ! -f "$problem_file" ] && continue
 
-  echo "Running tasks sequentially for: $problem_file"
+  echo "Running tasks in parallel for: $problem_file"
 
-  # Run each heuristic for the current problem file
+  # Run each heuristic for the current problem file in the background
   for heuristic in "${heuristics[@]}"; do
-    java -Xmx150G -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "$heuristic" > "$problem_file-$heuristic.plan"
-    echo "Task completed: $problem_file - $heuristic"
+    run_heuristic "$problem_file" "$heuristic" &
+    # Limit the number of background tasks to 10
+    if (( $(jobs | wc -l) >= 10 )); then
+      wait -n
+    fi
   done
+
+  # Wait for remaining background tasks to finish
+  wait
+
+  echo "Tasks completed for: $problem_file"
 done
 
 echo "All planning tasks completed."

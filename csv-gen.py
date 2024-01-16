@@ -1,5 +1,5 @@
-import os
 import csv
+import os
 import re
 
 # Set the directories
@@ -11,12 +11,13 @@ output_csv = "output.csv"
 with open(output_csv, 'w', newline='') as csvfile:
     fieldnames = ['problem', 'search.method', 'plan.length', 'metric.search', 'planning.time.msec',
                   'heuristic.time.msec', 'search.time.msec', 'grounding.time', 'expanded.nodes', 'states.evaluated',
-                  'duplicates.detected', 'domain', 'grounded.fluents', 'grounded.external.actions', 'grounded.actions', 
+                  'duplicates.detected', 'domain', 'grounded.fluents', 'grounded.external.actions', 'grounded.actions',
                   'grounded.predicates', 'grounded.events']
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-    
+
     # Write headers to the CSV file
     writer.writeheader()
+
 
     # Function to process directory data
     def process_directory(directory_path, problem_type):
@@ -50,8 +51,8 @@ with open(output_csv, 'w', newline='') as csvfile:
                                                        planning_time_match, heuristic_time_match,
                                                        search_time_match, grounding_time_match,
                                                        expanded_nodes_match, states_evaluated_match,
-                                                       duplicates_detected_match, grounded_fluents_match, 
-                                                       grounded_external_actions_match, grounded_actions_match, 
+                                                       duplicates_detected_match, grounded_fluents_match,
+                                                       grounded_external_actions_match, grounded_actions_match,
                                                        grounded_predicates_match, grounded_events_match]):
                     # Extract information from the matches
                     plan_length = int(plan_length_match.group(1))
@@ -87,7 +88,7 @@ with open(output_csv, 'w', newline='') as csvfile:
 
                     # Write the information to the CSV file
                     writer.writerow({
-                        'problem': problem, 
+                        'problem': problem,
                         'search.method': search_method,
                         'plan.length': plan_length,
                         'metric.search': metric_search,
@@ -104,7 +105,8 @@ with open(output_csv, 'w', newline='') as csvfile:
                         'grounded.actions': grounded_actions,
                         'grounded.predicates': grounded_predicates,
                         'grounded.events': grounded_events
-                        })
+                    })
+
 
     # Process data from the continuous directory
     process_directory("continuous", "continuous")
@@ -122,5 +124,3 @@ with open(output_csv, 'w', newline='') as csvfile:
     process_directory("schedule/instances", "schedule")
 
 print("CSV generation complete.")
-
- 
