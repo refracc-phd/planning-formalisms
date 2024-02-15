@@ -1,9 +1,6 @@
-(define (problem schedule-5-0)
+(define (problem schedule-2-2)
 (:domain schedule)
 (:objects
-    e0
-    d0
-    c0
     b0
     a0
  - part
@@ -24,32 +21,16 @@
  - anorient
 )
 (:init
-   (= (cost) 0)
-    (shape a0 cylindrical)
-    (surface-condition a0 polished)
+    (shape a0 oblong)
+    (surface-condition a0 smooth)
     (painted a0 yellow)
-    (has-hole a0 two back)
+    (has-hole a0 three back)
     (temperature a0 cold)
-    (shape b0 oblong)
+    (shape b0 circular)
     (surface-condition b0 smooth)
     (painted b0 blue)
-    (has-hole b0 one back)
+    (has-hole b0 two back)
     (temperature b0 cold)
-    (shape c0 cylindrical)
-    (surface-condition c0 rough)
-    (painted c0 red)
-    (has-hole c0 three back)
-    (temperature c0 cold)
-    (shape d0 circular)
-    (surface-condition d0 polished)
-    (painted d0 black)
-    (has-hole d0 one front)
-    (temperature d0 cold)
-    (shape e0 cylindrical)
-    (surface-condition e0 polished)
-    (painted e0 red)
-    (has-hole e0 two front)
-    (temperature e0 cold)
     (can-orient drill-press back)
     (can-orient punch back)
     (can-orient drill-press front)
@@ -70,11 +51,6 @@
     (has-bit punch one)
 )
 (:goal (and
-    (surface-condition d0 rough)
-    (shape d0 cylindrical)
-    (painted d0 yellow)
-    (painted a0 blue)
-    (surface-condition b0 polished)
-))
-(:metric minimize (cost))
-)
+    (surface-condition a0 rough)
+    (painted b0 yellow)
+)))

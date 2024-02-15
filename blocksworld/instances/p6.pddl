@@ -3,7 +3,5 @@
 (:objects e a b c f d - block)
 (:init (clear d) (clear f) (ontable c) (ontable b) (on d a) (on a c) (on f e)
  (on e b) (handempty)
-   (= (cost) 0))
 (:goal (and (on c b) (on b a) (on a e) (on e f) (on f d)))
-(:metric minimize (cost))
 )

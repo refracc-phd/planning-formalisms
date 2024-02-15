@@ -14,7 +14,6 @@
 	)
 
 	(:init
-		(= (cost) 0)
 		(takes-course oscar phys-ed national-four)
 		(grade p oscar phys-ed national-four)
 		(takes-course oscar pc-passport adv-higher)
@@ -193,6 +192,4 @@
 			(given-support sienna gamify-learning)
 		)
 	)
-
-	(:metric maximize (cost))
 )

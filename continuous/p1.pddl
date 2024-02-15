@@ -96,5 +96,5 @@
 			(given-support james pomo)
 		)
 	)
-	(:metric maximize (cost))
+	(:metric minimize (cost))
 )

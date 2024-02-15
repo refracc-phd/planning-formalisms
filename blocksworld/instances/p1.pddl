@@ -2,7 +2,5 @@
 (:domain blocks)
 (:objects a c d b - block)
 (:init (clear b) (ontable d) (on b c) (on c a) (on a d) (handempty)
-   (= (cost) 0))
 (:goal (and (on d c) (on c a) (on a b)))
-(:metric minimize (cost))
 )

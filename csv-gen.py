@@ -9,7 +9,7 @@ output_csv = "output.csv"
 
 # Initialize the CSV file with headers
 with open(output_csv, 'w', newline='') as csvfile:
-    fieldnames = ['problem', 'search.method', 'plan.length', 'metric.search', 'planning.time.msec',
+    fieldnames = ['problem', 'search.method', 'plan.length', 'metric.search', 'initial.heuristic.val', 'planning.time.msec',
                   'heuristic.time.msec', 'search.time.msec', 'grounding.time', 'expanded.nodes', 'states.evaluated',
                   'duplicates.detected', 'domain', 'grounded.fluents', 'grounded.external.actions', 'grounded.actions',
                   'grounded.predicates', 'grounded.events']
@@ -35,6 +35,7 @@ with open(output_csv, 'w', newline='') as csvfile:
                 metric_search_match = re.search(r'Metric \(Search\):([\d.]+)', plan_content)
                 planning_time_match = re.search(r'Planning Time \(msec\): (\d+)', plan_content)
                 heuristic_time_match = re.search(r'Heuristic Time \(msec\): (\d+)', plan_content)
+                initial_heuristic_val_match = re.search(r'h\(n = s_0\)=(\d+)', plan_content)
                 search_time_match = re.search(r'Search Time \(msec\): (\d+)', plan_content)
                 grounding_time_match = re.search(r'Grounding Time: (\d+)', plan_content)
                 expanded_nodes_match = re.search(r'Expanded Nodes:(\d+)', plan_content)
@@ -49,6 +50,7 @@ with open(output_csv, 'w', newline='') as csvfile:
                 # Check if the matches are found
                 if all(match is not None for match in [plan_length_match, metric_search_match,
                                                        planning_time_match, heuristic_time_match,
+                                                       initial_heuristic_val_match,
                                                        search_time_match, grounding_time_match,
                                                        expanded_nodes_match, states_evaluated_match,
                                                        duplicates_detected_match, grounded_fluents_match,
@@ -59,6 +61,7 @@ with open(output_csv, 'w', newline='') as csvfile:
                     metric_search = float(metric_search_match.group(1))
                     planning_time = int(planning_time_match.group(1))
                     heuristic_time = int(heuristic_time_match.group(1))
+                    initial_heuristic_val = int(initial_heuristic_val_match.group(1))
                     search_time = int(search_time_match.group(1))
                     grounding_time = int(grounding_time_match.group(1))
                     expanded_nodes = int(expanded_nodes_match.group(1))
@@ -94,6 +97,7 @@ with open(output_csv, 'w', newline='') as csvfile:
                         'metric.search': metric_search,
                         'planning.time.msec': planning_time,
                         'heuristic.time.msec': heuristic_time,
+                        'initial.heuristic.val': initial_heuristic_val,
                         'search.time.msec': search_time,
                         'grounding.time': grounding_time,
                         'expanded.nodes': expanded_nodes,

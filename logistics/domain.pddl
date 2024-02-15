@@ -16,10 +16,6 @@
   (:predicates 	(in-city ?loc - place ?city - city)
 		(at ?obj - physobj ?loc - place)
 		(in ?pkg - package ?veh - vehicle))
-
-  (:functions
-    (cost)
-  )
   
 (:action load-truck
    :parameters    (?pkg - package ?truck - truck ?loc - place)

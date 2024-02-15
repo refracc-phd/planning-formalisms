@@ -14,7 +14,6 @@
 	)
 
 	(:init
-		(= (cost) 0)
 		(takes-course harry politics year-two)
 		(grade p harry politics year-two)
 		(takes-course harry physics year-one)
@@ -56,5 +55,4 @@
 			(given-support james pomo)
 		)
 	)
-	(:metric maximize (cost))
 )

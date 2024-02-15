@@ -14,7 +14,6 @@
 	)
 
 	(:init
-		(= (cost) 0)
 		(takes-course aiden comp-sci year-three)
 		(grade p aiden comp-sci year-three)
 		(takes-course aiden french adv-higher)
@@ -123,5 +122,4 @@
 			(given-support bonnie tech-assist)
 		)
 	)
-	(:metric maximize (cost))
 )

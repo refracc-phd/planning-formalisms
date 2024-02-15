@@ -11,9 +11,6 @@
 	       (handempty)
 	       (holding ?x - block)
 	       )
-	(:functions
-		(cost)
-	)
 
   (:action pick-up
 	     :parameters (?x - block)
@@ -22,8 +19,7 @@
 	     (and (not (ontable ?x))
 		   (not (clear ?x))
 		   (not (handempty))
-		   (holding ?x)
-			 (increase (cost) 1)))
+		   (holding ?x)))
 
   (:action put-down
 	     :parameters (?x - block)
@@ -32,8 +28,7 @@
 	     (and (not (holding ?x))
 		   (clear ?x)
 		   (handempty)
-		   (ontable ?x)
-			 (increase (cost) 1)))
+		   (ontable ?x)))
   (:action stack
 	     :parameters (?x - block ?y - block)
 	     :precondition (and (holding ?x) (clear ?y))
@@ -42,8 +37,7 @@
 		   (not (clear ?y))
 		   (clear ?x)
 		   (handempty)
-		   (on ?x ?y)
-			 (increase (cost) 1)))
+		   (on ?x ?y)))
   (:action unstack
 	     :parameters (?x - block ?y - block)
 	     :precondition (and (on ?x ?y) (clear ?x) (handempty))
@@ -52,5 +46,4 @@
 		   (clear ?y)
 		   (not (clear ?x))
 		   (not (handempty))
-		   (not (on ?x ?y))
-			 (increase (cost) 1))))
+		   (not (on ?x ?y)))))

@@ -14,7 +14,6 @@
 	)
 
 	(:init
-		(= (cost) 0)
 		(takes-course alexander german national-four)
 		(grade p alexander german national-four)
 		(takes-course alexander design-manufacture higher)
@@ -91,5 +90,4 @@
 			(given-support robyn gamify-learning)
 		)
 	)
-	(:metric maximize (cost))
 )
