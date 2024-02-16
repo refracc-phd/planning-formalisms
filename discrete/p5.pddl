@@ -122,4 +122,6 @@
 			(given-support bonnie tech-assist)
 		)
 	)
+
+	(:metric minimize (cost))
 )

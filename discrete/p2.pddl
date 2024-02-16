@@ -73,4 +73,6 @@
 			(given-support sofia pomo)
 		)
 	)
+
+	(:metric minimize (cost))
 )

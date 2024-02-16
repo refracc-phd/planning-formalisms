@@ -179,4 +179,6 @@
 			(given-support david gamify-learning)
 		)
 	)
+
+	(:metric minimize (cost))
 )

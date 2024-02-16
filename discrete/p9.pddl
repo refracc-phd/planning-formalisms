@@ -192,4 +192,6 @@
 			(given-support sienna gamify-learning)
 		)
 	)
+
+	(:metric minimize (cost))
 )

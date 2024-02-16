@@ -106,4 +106,6 @@
 			(given-support pippa improving-comms-workshop)
 		)
 	)
+
+	(:metric minimize (cost))
 )

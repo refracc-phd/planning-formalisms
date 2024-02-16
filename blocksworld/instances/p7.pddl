@@ -2,6 +2,6 @@
 (:domain blocks)
 (:objects f d c e b a - block)
 (:init (clear a) (clear b) (clear e) (clear c) (clear d) (ontable f)
- (ontable b) (ontable e) (ontable c) (ontable d) (on a f) (handempty)
+ (ontable b) (ontable e) (ontable c) (ontable d) (on a f) (handempty))
 (:goal (and (on e f) (on f c) (on c b) (on b a) (on a d)))
 )

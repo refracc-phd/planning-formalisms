@@ -42,4 +42,6 @@
 			(given-support lily improving-comms-workshop)
 		)
 	)
+
+	(:metric minimize (cost))
 )

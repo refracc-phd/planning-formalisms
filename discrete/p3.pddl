@@ -90,4 +90,6 @@
 			(given-support robyn gamify-learning)
 		)
 	)
+
+	(:metric minimize (cost))
 )

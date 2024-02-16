@@ -162,4 +162,6 @@
 			(given-support caleb gamify-learning)
 		)
 	)
+
+	(:metric minimize (cost))
 )

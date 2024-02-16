@@ -142,4 +142,6 @@
 			(given-support isla improving-comms-workshop)
 		)
 	)
+
+	(:metric minimize (cost))
 )
