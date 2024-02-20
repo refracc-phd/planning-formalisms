@@ -1,0 +1,43 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 39
+Aibr Preprocessing
+|F|:48
+|X|:0
+|A|:84
+|P|:0
+|E|:0
+H1 Setup Time (msec): 13
+Setting horizon to:NaN
+Running WA-STAR
+h(n = s_0)=2.0
+f(n) = 2.0 (Expanded Nodes: 0, Evaluated States: 0, Time: 0.004) Frontier Size: 0
+f(n) = 3.0 (Expanded Nodes: 1, Evaluated States: 10, Time: 0.025) Frontier Size: 8
+f(n) = 4.0 (Expanded Nodes: 8, Evaluated States: 53, Time: 0.032) Frontier Size: 37
+f(n) = 5.0 (Expanded Nodes: 33, Evaluated States: 168, Time: 0.043) Frontier Size: 100
+f(n) = 6.0 (Expanded Nodes: 96, Evaluated States: 407, Time: 0.059) Frontier Size: 200
+f(n) = 7.0 (Expanded Nodes: 232, Evaluated States: 897, Time: 0.085) Frontier Size: 373
+f(n) = 8.0 (Expanded Nodes: 508, Evaluated States: 1861, Time: 0.121) Frontier Size: 678
+Problem Solved
+
+Found Plan:
+0.0: (load-truck obj23 tru2 pos2)
+1.0: (load-truck obj21 tru2 pos2)
+2.0: (drive-truck tru2 pos2 apt2 cit2)
+3.0: (load-truck obj12 tru1 pos1)
+4.0: (drive-truck tru1 pos1 apt1 cit1)
+5.0: (unload-truck obj12 tru1 apt1)
+6.0: (unload-truck obj21 tru2 apt2)
+7.0: (unload-truck obj23 tru2 apt2)
+
+Plan-Length:8
+Metric (Search):8.0
+Planning Time (msec): 492
+Heuristic Time (msec): 73
+Search Time (msec): 122
+Expanded Nodes:516
+States Evaluated:1897
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:684
+Number of Duplicates detected:3504
