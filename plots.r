@@ -43,39 +43,21 @@ ground_events <- ggplot(df, aes(x = domain, y = grounded.predicates, fill = doma
 
 ground_events
 
-df <- df %>%
-  select(problem, domain, initial.heuristic.val, metric.search)
-
 xs <- range(df$initial.heuristic.val, na.rm = TRUE)
 ys <- range(df$metric.search, na.rm = TRUE)
 maxs <- max(xs, ys)
 
-heuristic_informativeness <- ggplot(df, aes(y = initial.heuristic.val, x = metric.search, color = problem, shape = domain)) + 
+heuristic_informativeness_a <- ggplot(df, aes(x = initial.heuristic.val, y = metric.search, color = search.method)) + 
   geom_point() +
-  labs(y = "Initial Heuristic Value", x = "Metric Search Value", title = "Comparison of the Initial Heuristic Search Value versus the Actual Heuristic Value")
+  labs(x = "Initial Heuristic Value", y = "Actual Heuristic Value", title = "Comparison: Heuristic Informativeness", color = "Search Method") +
+  scale_y_log10() + # Add this line for log10 scaling
+  scale_x_log10()  # Add this line for log10 scaling
   
-heuristic_informativeness
-
-
-heuristic_informativeness <- ggplot(df, aes(y = initial.heuristic.val, x = metric.search, color = problem, shape = domain)) + 
-  geom_point() +
-  labs(y = "Initial Heuristic Value", x = "Metric Search Value", title = "Comparison of the Initial Heuristic Search Value versus the Actual Heuristic Value") +
-  xlim(0, 500) +
-  ylim(0, 500)
-
-heuristic_informativeness
-
-heuristic_informativeness <- ggplot(df, aes(y = initial.heuristic.val, x = metric.search, color = problem, shape = domain)) + 
-  geom_point() +
-  labs(y = "Initial Heuristic Value", x = "Metric Search Value", title = "Comparison of the Initial Heuristic Search Value versus the Actual Heuristic Value") +
-  xlim(0, 50) +
-  ylim(0, 50)
-
-heuristic_informativeness
+heuristic_informativeness_a + scale_colour_viridis_d(option = "turbo")
 
 # List of plots
 plots <- list(
-  ground_actions, ground_fluents, ground_external_actions, ground_predicates, ground_events, heuristic_informativeness
+  ground_actions, ground_fluents, ground_external_actions, ground_predicates, ground_events, heuristic_informativeness_a 
 )
 
 # Save each plot as a PDF
