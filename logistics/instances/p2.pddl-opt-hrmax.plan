@@ -1,0 +1,53 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 38
+Aibr Preprocessing
+|F|:48
+|X|:0
+|A|:84
+|P|:0
+|E|:0
+H1 Setup Time (msec): 13
+Setting horizon to:NaN
+Running WA-STAR
+h(n = s_0)=6.0
+f(n) = 6.0 (Expanded Nodes: 0, Evaluated States: 0, Time: 0.006) Frontier Size: 0
+f(n) = 7.0 (Expanded Nodes: 1, Evaluated States: 9, Time: 0.026) Frontier Size: 8
+f(n) = 8.0 (Expanded Nodes: 11, Evaluated States: 62, Time: 0.036) Frontier Size: 48
+f(n) = 9.0 (Expanded Nodes: 55, Evaluated States: 236, Time: 0.057) Frontier Size: 153
+f(n) = 10.0 (Expanded Nodes: 176, Evaluated States: 643, Time: 0.091) Frontier Size: 340
+f(n) = 11.0 (Expanded Nodes: 436, Evaluated States: 1489, Time: 0.129) Frontier Size: 656
+f(n) = 12.0 (Expanded Nodes: 941, Evaluated States: 3118, Time: 0.178) Frontier Size: 1176
+f(n) = 13.0 (Expanded Nodes: 1860, Evaluated States: 6027, Time: 0.259) Frontier Size: 1962
+f(n) = 14.0 (Expanded Nodes: 3405, Evaluated States: 10866, Time: 0.391) Frontier Size: 3069
+f(n) = 15.0 (Expanded Nodes: 5842, Evaluated States: 18542, Time: 0.579) Frontier Size: 4653
+Problem Solved
+
+Found Plan:
+0.0: (load-truck obj11 tru1 pos1)
+1.0: (drive-truck tru1 pos1 apt1 cit1)
+2.0: (unload-truck obj11 tru1 apt1)
+3.0: (load-truck obj21 tru2 pos2)
+4.0: (load-airplane obj11 apn1 apt1)
+5.0: (fly-airplane apn1 apt1 apt2)
+6.0: (drive-truck tru2 pos2 apt2 cit2)
+7.0: (unload-airplane obj11 apn1 apt2)
+8.0: (unload-truck obj21 tru2 apt2)
+9.0: (load-airplane obj21 apn1 apt2)
+10.0: (fly-airplane apn1 apt2 apt1)
+11.0: (load-truck obj11 tru2 apt2)
+12.0: (drive-truck tru2 apt2 pos2 cit2)
+13.0: (unload-truck obj11 tru2 pos2)
+14.0: (unload-airplane obj21 apn1 apt1)
+
+Plan-Length:15
+Metric (Search):15.0
+Planning Time (msec): 943
+Heuristic Time (msec): 465
+Search Time (msec): 579
+Expanded Nodes:5844
+States Evaluated:18548
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:8047
+Number of Duplicates detected:43015

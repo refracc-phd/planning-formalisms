@@ -1,0 +1,47 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 55
+Aibr Preprocessing
+|F|:85
+|X|:0
+|A|:97
+|P|:0
+|E|:0
+H1 Setup Time (msec): 24
+Setting horizon to:NaN
+Running WA-STAR
+h(n = s_0)=1.0
+f(n) = 1.0 (Expanded Nodes: 0, Evaluated States: 0, Time: 0.015) Frontier Size: 0
+f(n) = 2.0 (Expanded Nodes: 1, Evaluated States: 88, Time: 0.131) Frontier Size: 87
+f(n) = 3.0 (Expanded Nodes: 25, Evaluated States: 1367, Time: 0.485) Frontier Size: 1342
+f(n) = 4.0 (Expanded Nodes: 227, Evaluated States: 10423, Time: 2.785) Frontier Size: 10196
+-------------Time: 10s ; Expanded Nodes: 830 (Avg-Speed 83.0 n/s); Evaluated States: 39092
+-------------Time: 20s ; Expanded Nodes: 1730 (Avg-Speed 86.0 n/s); Evaluated States: 79403
+-------------Time: 30s ; Expanded Nodes: 2625 (Avg-Speed 87.0 n/s); Evaluated States: 120407
+-------------Time: 40s ; Expanded Nodes: 3696 (Avg-Speed 92.0 n/s); Evaluated States: 161467
+-------------Time: 50s ; Expanded Nodes: 4929 (Avg-Speed 98.0 n/s); Evaluated States: 201690
+f(n) = 5.0 (Expanded Nodes: 6066, Evaluated States: 233351, Time: 57.912) Frontier Size: 227285
+-------------Time: 60s ; Expanded Nodes: 6261 (Avg-Speed 104.0 n/s); Evaluated States: 241834
+-------------Time: 70s ; Expanded Nodes: 7253 (Avg-Speed 103.0 n/s); Evaluated States: 281682
+-------------Time: 80s ; Expanded Nodes: 8197 (Avg-Speed 102.0 n/s); Evaluated States: 321384
+-------------Time: 90s ; Expanded Nodes: 9157 (Avg-Speed 101.0 n/s); Evaluated States: 361581
+Problem Solved
+
+Found Plan:
+0.0: (do-grind d0)
+1.0: (do-roll b0)
+2.0: (do-time-step)
+3.0: (do-roll c0)
+4.0: (do-immersion-paint b0 red)
+
+Plan-Length:5
+Metric (Search):5.0
+Planning Time (msec): 96569
+Heuristic Time (msec): 95120
+Search Time (msec): 96164
+Expanded Nodes:9809
+States Evaluated:385873
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:0
+Number of Duplicates detected:138801

@@ -1,0 +1,51 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 54
+Aibr Preprocessing
+|F|:85
+|X|:0
+|A|:97
+|P|:0
+|E|:0
+H1 Setup Time (msec): 24
+Setting horizon to:NaN
+Running WA-STAR
+h(n = s_0)=1.0
+f(n) = 1.0 (Expanded Nodes: 0, Evaluated States: 0, Time: 0.015) Frontier Size: 0
+f(n) = 2.0 (Expanded Nodes: 1, Evaluated States: 88, Time: 0.13) Frontier Size: 87
+f(n) = 3.0 (Expanded Nodes: 31, Evaluated States: 1579, Time: 0.533) Frontier Size: 1548
+f(n) = 4.0 (Expanded Nodes: 315, Evaluated States: 12625, Time: 3.339) Frontier Size: 12310
+-------------Time: 10s ; Expanded Nodes: 890 (Avg-Speed 89.0 n/s); Evaluated States: 37701
+-------------Time: 20s ; Expanded Nodes: 1857 (Avg-Speed 92.0 n/s); Evaluated States: 78471
+-------------Time: 30s ; Expanded Nodes: 2851 (Avg-Speed 95.0 n/s); Evaluated States: 119758
+-------------Time: 40s ; Expanded Nodes: 3840 (Avg-Speed 96.0 n/s); Evaluated States: 162318
+-------------Time: 50s ; Expanded Nodes: 4912 (Avg-Speed 98.0 n/s); Evaluated States: 203518
+-------------Time: 60s ; Expanded Nodes: 6218 (Avg-Speed 103.0 n/s); Evaluated States: 244821
+f(n) = 5.0 (Expanded Nodes: 6893, Evaluated States: 263518, Time: 64.46) Frontier Size: 256625
+-------------Time: 70s ; Expanded Nodes: 7486 (Avg-Speed 106.0 n/s); Evaluated States: 286720
+-------------Time: 80s ; Expanded Nodes: 8587 (Avg-Speed 107.0 n/s); Evaluated States: 327499
+-------------Time: 90s ; Expanded Nodes: 9667 (Avg-Speed 107.0 n/s); Evaluated States: 368505
+-------------Time: 100s ; Expanded Nodes: 10771 (Avg-Speed 107.0 n/s); Evaluated States: 408899
+-------------Time: 110s ; Expanded Nodes: 11979 (Avg-Speed 108.0 n/s); Evaluated States: 450372
+-------------Time: 120s ; Expanded Nodes: 13084 (Avg-Speed 109.0 n/s); Evaluated States: 491058
+-------------Time: 130s ; Expanded Nodes: 14188 (Avg-Speed 109.0 n/s); Evaluated States: 531782
+Problem Solved
+
+Found Plan:
+0.0: (do-roll c0)
+1.0: (do-time-step)
+2.0: (do-spray-paint b0 black)
+3.0: (do-immersion-paint c0 black)
+4.0: (do-punch a0 one front)
+
+Plan-Length:5
+Metric (Search):5.0
+Planning Time (msec): 134347
+Heuristic Time (msec): 132108
+Search Time (msec): 133949
+Expanded Nodes:14634
+States Evaluated:547626
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:0
+Number of Duplicates detected:203251

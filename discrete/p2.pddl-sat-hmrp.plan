@@ -1,0 +1,907 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 147
+Aibr Preprocessing
+|F|:203
+|X|:0
+|A|:203
+|P|:0
+|E|:0
+H1 Setup Time (msec): 45
+Wrong setting for break-ties. Arbitrary tie breaking
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=200.0
+ g(n)= 1.0 h(n)=199.0
+ g(n)= 2.0 h(n)=198.0
+ g(n)= 3.0 h(n)=197.0
+ g(n)= 4.0 h(n)=196.0
+ g(n)= 5.0 h(n)=195.0
+ g(n)= 6.0 h(n)=194.0
+ g(n)= 7.0 h(n)=193.0
+ g(n)= 8.0 h(n)=192.0
+ g(n)= 9.0 h(n)=191.0
+ g(n)= 10.0 h(n)=190.0
+ g(n)= 11.0 h(n)=189.0
+ g(n)= 12.0 h(n)=188.0
+ g(n)= 13.0 h(n)=187.0
+ g(n)= 14.0 h(n)=186.0
+ g(n)= 15.0 h(n)=185.0
+ g(n)= 16.0 h(n)=184.0
+ g(n)= 17.0 h(n)=183.0
+ g(n)= 18.0 h(n)=182.0
+ g(n)= 19.0 h(n)=181.0
+ g(n)= 20.0 h(n)=180.0
+ g(n)= 21.0 h(n)=179.0
+ g(n)= 22.0 h(n)=178.0
+ g(n)= 23.0 h(n)=177.0
+ g(n)= 24.0 h(n)=176.0
+ g(n)= 25.0 h(n)=175.0
+ g(n)= 26.0 h(n)=174.0
+ g(n)= 27.0 h(n)=173.0
+ g(n)= 28.0 h(n)=172.0
+ g(n)= 29.0 h(n)=171.0
+ g(n)= 30.0 h(n)=170.0
+ g(n)= 31.0 h(n)=169.0
+ g(n)= 32.0 h(n)=168.0
+ g(n)= 33.0 h(n)=167.0
+ g(n)= 34.0 h(n)=166.0
+ g(n)= 35.0 h(n)=165.0
+ g(n)= 36.0 h(n)=164.0
+ g(n)= 37.0 h(n)=163.0
+ g(n)= 38.0 h(n)=162.0
+ g(n)= 39.0 h(n)=161.0
+ g(n)= 40.0 h(n)=160.0
+ g(n)= 41.0 h(n)=159.0
+ g(n)= 42.0 h(n)=158.0
+ g(n)= 43.0 h(n)=157.0
+ g(n)= 44.0 h(n)=156.0
+ g(n)= 45.0 h(n)=155.0
+ g(n)= 46.0 h(n)=154.0
+ g(n)= 47.0 h(n)=153.0
+ g(n)= 48.0 h(n)=152.0
+ g(n)= 49.0 h(n)=151.0
+ g(n)= 50.0 h(n)=150.0
+ g(n)= 51.0 h(n)=149.0
+ g(n)= 52.0 h(n)=148.0
+ g(n)= 53.0 h(n)=147.0
+ g(n)= 54.0 h(n)=146.0
+ g(n)= 55.0 h(n)=145.0
+ g(n)= 56.0 h(n)=144.0
+ g(n)= 57.0 h(n)=143.0
+ g(n)= 58.0 h(n)=142.0
+ g(n)= 59.0 h(n)=141.0
+ g(n)= 60.0 h(n)=140.0
+ g(n)= 61.0 h(n)=139.0
+ g(n)= 62.0 h(n)=138.0
+ g(n)= 63.0 h(n)=137.0
+ g(n)= 64.0 h(n)=136.0
+ g(n)= 65.0 h(n)=135.0
+ g(n)= 66.0 h(n)=134.0
+ g(n)= 67.0 h(n)=133.0
+ g(n)= 68.0 h(n)=132.0
+ g(n)= 69.0 h(n)=131.0
+ g(n)= 70.0 h(n)=130.0
+ g(n)= 71.0 h(n)=129.0
+ g(n)= 72.0 h(n)=128.0
+ g(n)= 73.0 h(n)=127.0
+ g(n)= 74.0 h(n)=126.0
+ g(n)= 75.0 h(n)=125.0
+ g(n)= 76.0 h(n)=124.0
+ g(n)= 77.0 h(n)=123.0
+ g(n)= 78.0 h(n)=122.0
+ g(n)= 79.0 h(n)=121.0
+ g(n)= 80.0 h(n)=120.0
+ g(n)= 81.0 h(n)=119.0
+ g(n)= 82.0 h(n)=118.0
+ g(n)= 83.0 h(n)=117.0
+ g(n)= 84.0 h(n)=116.0
+ g(n)= 85.0 h(n)=115.0
+ g(n)= 86.0 h(n)=114.0
+ g(n)= 87.0 h(n)=113.0
+ g(n)= 88.0 h(n)=112.0
+ g(n)= 89.0 h(n)=111.0
+ g(n)= 90.0 h(n)=110.0
+ g(n)= 91.0 h(n)=109.0
+ g(n)= 92.0 h(n)=108.0
+ g(n)= 93.0 h(n)=107.0
+ g(n)= 94.0 h(n)=106.0
+ g(n)= 95.0 h(n)=105.0
+ g(n)= 96.0 h(n)=104.0
+ g(n)= 97.0 h(n)=103.0
+ g(n)= 98.0 h(n)=102.0
+ g(n)= 99.0 h(n)=101.0
+ g(n)= 100.0 h(n)=100.0
+ g(n)= 101.0 h(n)=99.0
+ g(n)= 102.0 h(n)=98.0
+ g(n)= 103.0 h(n)=97.0
+ g(n)= 104.0 h(n)=96.0
+ g(n)= 105.0 h(n)=95.0
+ g(n)= 106.0 h(n)=94.0
+ g(n)= 107.0 h(n)=93.0
+ g(n)= 108.0 h(n)=92.0
+ g(n)= 109.0 h(n)=91.0
+ g(n)= 110.0 h(n)=90.0
+ g(n)= 111.0 h(n)=89.0
+ g(n)= 112.0 h(n)=88.0
+ g(n)= 113.0 h(n)=87.0
+ g(n)= 114.0 h(n)=86.0
+ g(n)= 115.0 h(n)=85.0
+ g(n)= 116.0 h(n)=84.0
+ g(n)= 117.0 h(n)=83.0
+ g(n)= 118.0 h(n)=82.0
+ g(n)= 119.0 h(n)=81.0
+ g(n)= 120.0 h(n)=80.0
+ g(n)= 121.0 h(n)=79.0
+ g(n)= 122.0 h(n)=78.0
+ g(n)= 123.0 h(n)=77.0
+ g(n)= 124.0 h(n)=76.0
+ g(n)= 125.0 h(n)=75.0
+ g(n)= 134.0 h(n)=74.0
+ g(n)= 143.0 h(n)=73.0
+ g(n)= 152.0 h(n)=72.0
+ g(n)= 161.0 h(n)=71.0
+ g(n)= 170.0 h(n)=70.0
+ g(n)= 181.0 h(n)=69.0
+ g(n)= 190.0 h(n)=68.0
+ g(n)= 199.0 h(n)=67.0
+ g(n)= 208.0 h(n)=66.0
+ g(n)= 218.0 h(n)=65.0
+ g(n)= 219.0 h(n)=64.0
+ g(n)= 220.0 h(n)=63.0
+ g(n)= 237.0 h(n)=62.0
+ g(n)= 246.0 h(n)=61.0
+ g(n)= 255.0 h(n)=60.0
+ g(n)= 264.0 h(n)=59.0
+ g(n)= 273.0 h(n)=58.0
+ g(n)= 282.0 h(n)=57.0
+ g(n)= 291.0 h(n)=56.0
+ g(n)= 300.0 h(n)=55.0
+ g(n)= 309.0 h(n)=54.0
+ g(n)= 318.0 h(n)=53.0
+ g(n)= 327.0 h(n)=52.0
+ g(n)= 336.0 h(n)=51.0
+ g(n)= 345.0 h(n)=50.0
+ g(n)= 354.0 h(n)=49.0
+ g(n)= 363.0 h(n)=48.0
+ g(n)= 372.0 h(n)=47.0
+ g(n)= 381.0 h(n)=46.0
+ g(n)= 390.0 h(n)=45.0
+ g(n)= 399.0 h(n)=44.0
+ g(n)= 408.0 h(n)=43.0
+ g(n)= 417.0 h(n)=42.0
+ g(n)= 426.0 h(n)=41.0
+ g(n)= 427.0 h(n)=40.0
+ g(n)= 428.0 h(n)=39.0
+ g(n)= 437.0 h(n)=38.0
+ g(n)= 438.0 h(n)=37.0
+ g(n)= 439.0 h(n)=36.0
+ g(n)= 448.0 h(n)=35.0
+ g(n)= 449.0 h(n)=34.0
+ g(n)= 450.0 h(n)=33.0
+ g(n)= 471.0 h(n)=32.0
+ g(n)= 472.0 h(n)=31.0
+ g(n)= 473.0 h(n)=30.0
+ g(n)= 501.0 h(n)=29.0
+ g(n)= 502.0 h(n)=28.0
+ g(n)= 503.0 h(n)=27.0
+ g(n)= 512.0 h(n)=26.0
+ g(n)= 513.0 h(n)=25.0
+ g(n)= 514.0 h(n)=24.0
+ g(n)= 523.0 h(n)=23.0
+ g(n)= 524.0 h(n)=22.0
+ g(n)= 525.0 h(n)=21.0
+-------------Time: 10s ; Expanded Nodes: 6636 (Avg-Speed 663.0 n/s); Evaluated States: 77700
+ g(n)= 534.0 h(n)=20.0
+ g(n)= 535.0 h(n)=19.0
+ g(n)= 536.0 h(n)=18.0
+-------------Time: 20s ; Expanded Nodes: 23779 (Avg-Speed 1188.0 n/s); Evaluated States: 201079
+-------------Time: 30s ; Expanded Nodes: 42039 (Avg-Speed 1401.0 n/s); Evaluated States: 328526
+ g(n)= 567.0 h(n)=17.0
+ g(n)= 568.0 h(n)=16.0
+ g(n)= 569.0 h(n)=15.0
+ g(n)= 578.0 h(n)=14.0
+ g(n)= 579.0 h(n)=13.0
+ g(n)= 580.0 h(n)=12.0
+ g(n)= 616.0 h(n)=11.0
+ g(n)= 617.0 h(n)=10.0
+ g(n)= 618.0 h(n)=9.0
+ g(n)= 634.0 h(n)=8.0
+ g(n)= 635.0 h(n)=7.0
+ g(n)= 636.0 h(n)=6.0
+ g(n)= 653.0 h(n)=5.0
+ g(n)= 654.0 h(n)=4.0
+ g(n)= 655.0 h(n)=3.0
+ g(n)= 673.0 h(n)=2.0
+ g(n)= 674.0 h(n)=1.0
+ g(n)= 675.0 h(n)=0.0
+Problem Solved
+
+Found Plan:
+0.0: (do-week-one jude art-design year-one)
+1.0: (do-week-one jude spanish national-five)
+2.0: (do-week-one jude italian national-five)
+3.0: (do-week-one jude modern-studies year-one)
+4.0: (do-week-one jude graph-comm national-four)
+5.0: (do-week-one grace textiles national-four)
+6.0: (do-week-one grace physics higher)
+7.0: (do-week-one grace biology year-two)
+8.0: (do-week-one grace gaelic higher)
+9.0: (pomo-study grace)
+10.0: (pomo-study sofia)
+11.0: (do-week-one sofia dance higher)
+12.0: (do-week-one grace practical-woodwork national-five)
+13.0: (do-week-one sofia music year-two)
+14.0: (do-week-one sofia art-design national-four)
+15.0: (do-week-one sofia urdu adv-higher)
+16.0: (do-week-one sofia cantonese national-four)
+17.0: (comms-workshop jude)
+18.0: (comms-workshop sofia)
+19.0: (comms-workshop grace)
+20.0: (do-week-two grace biology year-two)
+21.0: (do-week-two grace gaelic higher)
+22.0: (do-week-two grace physics higher)
+23.0: (do-week-two grace practical-woodwork national-five)
+24.0: (do-week-two sofia dance higher)
+25.0: (do-week-two sofia music year-two)
+26.0: (do-week-two sofia art-design national-four)
+27.0: (do-week-two sofia urdu adv-higher)
+28.0: (do-week-two sofia cantonese national-four)
+29.0: (do-week-two jude art-design year-one)
+30.0: (do-week-two jude italian national-five)
+31.0: (do-week-two jude spanish national-five)
+32.0: (do-week-two jude modern-studies year-one)
+33.0: (do-week-two jude graph-comm national-four)
+34.0: (do-week-two grace textiles national-four)
+35.0: (do-week-three jude art-design year-one)
+36.0: (do-week-three jude italian national-five)
+37.0: (do-week-three jude spanish national-five)
+38.0: (do-week-three grace textiles national-four)
+39.0: (do-week-three jude graph-comm national-four)
+40.0: (do-week-three jude modern-studies year-one)
+41.0: (do-week-three grace biology year-two)
+42.0: (do-week-three grace physics higher)
+43.0: (do-week-three grace gaelic higher)
+44.0: (do-week-three sofia music year-two)
+45.0: (do-week-three sofia art-design national-four)
+46.0: (do-week-three sofia dance higher)
+47.0: (do-week-three grace practical-woodwork national-five)
+48.0: (do-week-three sofia urdu adv-higher)
+49.0: (do-week-three sofia cantonese national-four)
+50.0: (do-week-four jude modern-studies year-one)
+51.0: (do-week-four grace textiles national-four)
+52.0: (do-week-four jude graph-comm national-four)
+53.0: (do-week-four jude italian national-five)
+54.0: (do-week-four jude spanish national-five)
+55.0: (do-week-four jude art-design year-one)
+56.0: (do-week-four sofia urdu adv-higher)
+57.0: (do-week-four sofia cantonese national-four)
+58.0: (do-week-four sofia music year-two)
+59.0: (do-week-four sofia art-design national-four)
+60.0: (do-week-four grace practical-woodwork national-five)
+61.0: (do-week-four sofia dance higher)
+62.0: (do-week-four grace gaelic higher)
+63.0: (do-week-four grace biology year-two)
+64.0: (do-week-four grace physics higher)
+65.0: (do-week-five sofia urdu adv-higher)
+66.0: (do-week-five sofia cantonese national-four)
+67.0: (do-week-five sofia dance higher)
+68.0: (do-week-five grace practical-woodwork national-five)
+69.0: (do-week-five sofia art-design national-four)
+70.0: (do-week-five sofia music year-two)
+71.0: (do-week-five grace physics higher)
+72.0: (do-week-five grace biology year-two)
+73.0: (do-week-five grace gaelic higher)
+74.0: (do-week-five jude graph-comm national-four)
+75.0: (do-week-five grace textiles national-four)
+76.0: (do-week-five jude spanish national-five)
+77.0: (do-week-five jude italian national-five)
+78.0: (do-week-five jude modern-studies year-one)
+79.0: (do-week-five jude art-design year-one)
+80.0: (do-week-six jude art-design year-one)
+81.0: (do-week-six jude spanish national-five)
+82.0: (do-week-six jude italian national-five)
+83.0: (do-week-six jude modern-studies year-one)
+84.0: (do-week-six jude graph-comm national-four)
+85.0: (do-week-six grace textiles national-four)
+86.0: (do-week-six grace biology year-two)
+87.0: (do-week-six grace gaelic higher)
+88.0: (do-week-six grace physics higher)
+89.0: (do-week-six sofia dance higher)
+90.0: (do-week-six grace practical-woodwork national-five)
+91.0: (do-week-six sofia art-design national-four)
+92.0: (do-week-six sofia music year-two)
+93.0: (do-week-six sofia urdu adv-higher)
+94.0: (do-week-six sofia cantonese national-four)
+95.0: (do-week-seven jude art-design year-one)
+96.0: (do-week-seven jude spanish national-five)
+97.0: (do-week-seven jude italian national-five)
+98.0: (do-week-seven jude modern-studies year-one)
+99.0: (do-week-seven grace textiles national-four)
+100.0: (do-week-seven jude graph-comm national-four)
+101.0: (do-week-seven grace physics higher)
+102.0: (do-week-seven grace gaelic higher)
+103.0: (do-week-seven grace biology year-two)
+104.0: (do-week-seven sofia art-design national-four)
+105.0: (do-week-seven sofia music year-two)
+106.0: (do-week-seven sofia dance higher)
+107.0: (do-week-seven grace practical-woodwork national-five)
+108.0: (do-week-seven sofia cantonese national-four)
+109.0: (do-week-seven sofia urdu adv-higher)
+110.0: (do-week-eight jude art-design year-one)
+111.0: (do-week-eight jude modern-studies year-one)
+112.0: (do-week-eight jude italian national-five)
+113.0: (do-week-eight jude spanish national-five)
+114.0: (do-week-eight grace textiles national-four)
+115.0: (do-week-eight jude graph-comm national-four)
+116.0: (do-week-eight grace physics higher)
+117.0: (do-week-eight grace biology year-two)
+118.0: (do-week-eight grace gaelic higher)
+119.0: (do-week-eight grace practical-woodwork national-five)
+120.0: (do-week-eight sofia dance higher)
+121.0: (do-week-eight sofia music year-two)
+122.0: (do-week-eight sofia art-design national-four)
+123.0: (do-week-eight sofia urdu adv-higher)
+124.0: (do-week-eight sofia cantonese national-four)
+125.0: (take-unit-one grace biology year-two)
+126.0: (do-week-one grace biology year-two)
+127.0: (do-week-two grace biology year-two)
+128.0: (do-week-three grace biology year-two)
+129.0: (do-week-four grace biology year-two)
+130.0: (do-week-five grace biology year-two)
+131.0: (do-week-six grace biology year-two)
+132.0: (do-week-seven grace biology year-two)
+133.0: (do-week-eight grace biology year-two)
+134.0: (take-unit-one grace textiles national-four)
+135.0: (do-week-one grace textiles national-four)
+136.0: (do-week-two grace textiles national-four)
+137.0: (do-week-three grace textiles national-four)
+138.0: (do-week-four grace textiles national-four)
+139.0: (do-week-five grace textiles national-four)
+140.0: (do-week-six grace textiles national-four)
+141.0: (do-week-seven grace textiles national-four)
+142.0: (do-week-eight grace textiles national-four)
+143.0: (take-unit-one grace physics higher)
+144.0: (do-week-one grace physics higher)
+145.0: (do-week-two grace physics higher)
+146.0: (do-week-three grace physics higher)
+147.0: (do-week-four grace physics higher)
+148.0: (do-week-five grace physics higher)
+149.0: (do-week-six grace physics higher)
+150.0: (do-week-seven grace physics higher)
+151.0: (do-week-eight grace physics higher)
+152.0: (take-unit-one grace gaelic higher)
+153.0: (do-week-one grace gaelic higher)
+154.0: (do-week-two grace gaelic higher)
+155.0: (do-week-three grace gaelic higher)
+156.0: (do-week-four grace gaelic higher)
+157.0: (do-week-five grace gaelic higher)
+158.0: (do-week-six grace gaelic higher)
+159.0: (do-week-seven grace gaelic higher)
+160.0: (do-week-eight grace gaelic higher)
+161.0: (take-unit-one sofia art-design national-four)
+162.0: (do-week-one sofia art-design national-four)
+163.0: (do-week-two sofia art-design national-four)
+164.0: (do-week-three sofia art-design national-four)
+165.0: (do-week-four sofia art-design national-four)
+166.0: (do-week-five sofia art-design national-four)
+167.0: (do-week-six sofia art-design national-four)
+168.0: (do-week-seven sofia art-design national-four)
+169.0: (do-week-eight sofia art-design national-four)
+170.0: (do-ec-one jude italian national-five)
+171.0: (do-ec-one grace practical-woodwork national-five)
+172.0: (take-unit-two grace gaelic higher)
+173.0: (do-week-one grace gaelic higher)
+174.0: (do-week-two grace gaelic higher)
+175.0: (do-week-three grace gaelic higher)
+176.0: (do-week-four grace gaelic higher)
+177.0: (do-week-five grace gaelic higher)
+178.0: (do-week-six grace gaelic higher)
+179.0: (do-week-seven grace gaelic higher)
+180.0: (do-week-eight grace gaelic higher)
+181.0: (take-unit-one jude modern-studies year-one)
+182.0: (do-week-one jude modern-studies year-one)
+183.0: (do-week-two jude modern-studies year-one)
+184.0: (do-week-three jude modern-studies year-one)
+185.0: (do-week-four jude modern-studies year-one)
+186.0: (do-week-five jude modern-studies year-one)
+187.0: (do-week-six jude modern-studies year-one)
+188.0: (do-week-seven jude modern-studies year-one)
+189.0: (do-week-eight jude modern-studies year-one)
+190.0: (take-unit-one jude graph-comm national-four)
+191.0: (do-week-one jude graph-comm national-four)
+192.0: (do-week-two jude graph-comm national-four)
+193.0: (do-week-three jude graph-comm national-four)
+194.0: (do-week-four jude graph-comm national-four)
+195.0: (do-week-five jude graph-comm national-four)
+196.0: (do-week-six jude graph-comm national-four)
+197.0: (do-week-seven jude graph-comm national-four)
+198.0: (do-week-eight jude graph-comm national-four)
+199.0: (take-unit-one jude italian national-five)
+200.0: (do-week-one jude italian national-five)
+201.0: (do-week-two jude italian national-five)
+202.0: (do-week-three jude italian national-five)
+203.0: (do-week-four jude italian national-five)
+204.0: (do-week-five jude italian national-five)
+205.0: (do-week-six jude italian national-five)
+206.0: (do-week-seven jude italian national-five)
+207.0: (do-week-eight jude italian national-five)
+208.0: (do-ec-one jude spanish national-five)
+209.0: (take-unit-three grace gaelic higher)
+210.0: (do-week-one grace gaelic higher)
+211.0: (do-week-two grace gaelic higher)
+212.0: (do-week-three grace gaelic higher)
+213.0: (do-week-four grace gaelic higher)
+214.0: (do-week-five grace gaelic higher)
+215.0: (do-week-six grace gaelic higher)
+216.0: (do-week-seven grace gaelic higher)
+217.0: (do-week-eight grace gaelic higher)
+218.0: (take-unit-four grace gaelic higher)
+219.0: (finish-course grace gaelic higher)
+220.0: (do-week-one grace gaelic higher)
+221.0: (do-week-two grace gaelic higher)
+222.0: (do-week-three grace gaelic higher)
+223.0: (do-week-four grace gaelic higher)
+224.0: (do-week-five grace gaelic higher)
+225.0: (do-week-six grace gaelic higher)
+226.0: (do-week-seven grace gaelic higher)
+227.0: (do-week-eight grace gaelic higher)
+228.0: (take-unit-two grace biology year-two)
+229.0: (do-week-one grace biology year-two)
+230.0: (do-week-two grace biology year-two)
+231.0: (do-week-three grace biology year-two)
+232.0: (do-week-four grace biology year-two)
+233.0: (do-week-five grace biology year-two)
+234.0: (do-week-six grace biology year-two)
+235.0: (do-week-seven grace biology year-two)
+236.0: (do-week-eight grace biology year-two)
+237.0: (take-unit-one jude spanish national-five)
+238.0: (do-week-one jude spanish national-five)
+239.0: (do-week-two jude spanish national-five)
+240.0: (do-week-three jude spanish national-five)
+241.0: (do-week-four jude spanish national-five)
+242.0: (do-week-five jude spanish national-five)
+243.0: (do-week-six jude spanish national-five)
+244.0: (do-week-seven jude spanish national-five)
+245.0: (do-week-eight jude spanish national-five)
+246.0: (take-unit-one jude art-design year-one)
+247.0: (do-week-one jude art-design year-one)
+248.0: (do-week-two jude art-design year-one)
+249.0: (do-week-three jude art-design year-one)
+250.0: (do-week-four jude art-design year-one)
+251.0: (do-week-five jude art-design year-one)
+252.0: (do-week-six jude art-design year-one)
+253.0: (do-week-seven jude art-design year-one)
+254.0: (do-week-eight jude art-design year-one)
+255.0: (take-unit-one sofia urdu adv-higher)
+256.0: (do-week-one sofia urdu adv-higher)
+257.0: (do-week-two sofia urdu adv-higher)
+258.0: (do-week-three sofia urdu adv-higher)
+259.0: (do-week-four sofia urdu adv-higher)
+260.0: (do-week-five sofia urdu adv-higher)
+261.0: (do-week-six sofia urdu adv-higher)
+262.0: (do-week-seven sofia urdu adv-higher)
+263.0: (do-week-eight sofia urdu adv-higher)
+264.0: (take-unit-one sofia cantonese national-four)
+265.0: (do-week-one sofia cantonese national-four)
+266.0: (do-week-two sofia cantonese national-four)
+267.0: (do-week-three sofia cantonese national-four)
+268.0: (do-week-four sofia cantonese national-four)
+269.0: (do-week-five sofia cantonese national-four)
+270.0: (do-week-six sofia cantonese national-four)
+271.0: (do-week-seven sofia cantonese national-four)
+272.0: (do-week-eight sofia cantonese national-four)
+273.0: (take-unit-one sofia dance higher)
+274.0: (do-week-one sofia dance higher)
+275.0: (do-week-two sofia dance higher)
+276.0: (do-week-three sofia dance higher)
+277.0: (do-week-four sofia dance higher)
+278.0: (do-week-five sofia dance higher)
+279.0: (do-week-six sofia dance higher)
+280.0: (do-week-seven sofia dance higher)
+281.0: (do-week-eight sofia dance higher)
+282.0: (take-unit-one sofia music year-two)
+283.0: (do-week-one sofia music year-two)
+284.0: (do-week-two sofia music year-two)
+285.0: (do-week-three sofia music year-two)
+286.0: (do-week-four sofia music year-two)
+287.0: (do-week-five sofia music year-two)
+288.0: (do-week-six sofia music year-two)
+289.0: (do-week-seven sofia music year-two)
+290.0: (do-week-eight sofia music year-two)
+291.0: (take-unit-one grace practical-woodwork national-five)
+292.0: (do-week-one grace practical-woodwork national-five)
+293.0: (do-week-two grace practical-woodwork national-five)
+294.0: (do-week-three grace practical-woodwork national-five)
+295.0: (do-week-four grace practical-woodwork national-five)
+296.0: (do-week-five grace practical-woodwork national-five)
+297.0: (do-week-six grace practical-woodwork national-five)
+298.0: (do-week-seven grace practical-woodwork national-five)
+299.0: (do-week-eight grace practical-woodwork national-five)
+300.0: (take-unit-two jude modern-studies year-one)
+301.0: (do-week-one jude modern-studies year-one)
+302.0: (do-week-two jude modern-studies year-one)
+303.0: (do-week-three jude modern-studies year-one)
+304.0: (do-week-four jude modern-studies year-one)
+305.0: (do-week-five jude modern-studies year-one)
+306.0: (do-week-six jude modern-studies year-one)
+307.0: (do-week-seven jude modern-studies year-one)
+308.0: (do-week-eight jude modern-studies year-one)
+309.0: (take-unit-two jude graph-comm national-four)
+310.0: (do-week-one jude graph-comm national-four)
+311.0: (do-week-two jude graph-comm national-four)
+312.0: (do-week-three jude graph-comm national-four)
+313.0: (do-week-four jude graph-comm national-four)
+314.0: (do-week-five jude graph-comm national-four)
+315.0: (do-week-six jude graph-comm national-four)
+316.0: (do-week-seven jude graph-comm national-four)
+317.0: (do-week-eight jude graph-comm national-four)
+318.0: (take-unit-two grace textiles national-four)
+319.0: (do-week-one grace textiles national-four)
+320.0: (do-week-two grace textiles national-four)
+321.0: (do-week-three grace textiles national-four)
+322.0: (do-week-four grace textiles national-four)
+323.0: (do-week-five grace textiles national-four)
+324.0: (do-week-six grace textiles national-four)
+325.0: (do-week-seven grace textiles national-four)
+326.0: (do-week-eight grace textiles national-four)
+327.0: (take-unit-two jude italian national-five)
+328.0: (do-week-one jude italian national-five)
+329.0: (do-week-two jude italian national-five)
+330.0: (do-week-three jude italian national-five)
+331.0: (do-week-four jude italian national-five)
+332.0: (do-week-five jude italian national-five)
+333.0: (do-week-six jude italian national-five)
+334.0: (do-week-seven jude italian national-five)
+335.0: (do-week-eight jude italian national-five)
+336.0: (take-unit-two jude spanish national-five)
+337.0: (do-week-one jude spanish national-five)
+338.0: (do-week-two jude spanish national-five)
+339.0: (do-week-three jude spanish national-five)
+340.0: (do-week-four jude spanish national-five)
+341.0: (do-week-five jude spanish national-five)
+342.0: (do-week-six jude spanish national-five)
+343.0: (do-week-seven jude spanish national-five)
+344.0: (do-week-eight jude spanish national-five)
+345.0: (take-unit-two jude art-design year-one)
+346.0: (do-week-one jude art-design year-one)
+347.0: (do-week-two jude art-design year-one)
+348.0: (do-week-three jude art-design year-one)
+349.0: (do-week-four jude art-design year-one)
+350.0: (do-week-five jude art-design year-one)
+351.0: (do-week-six jude art-design year-one)
+352.0: (do-week-seven jude art-design year-one)
+353.0: (do-week-eight jude art-design year-one)
+354.0: (take-unit-two sofia urdu adv-higher)
+355.0: (do-week-one sofia urdu adv-higher)
+356.0: (do-week-two sofia urdu adv-higher)
+357.0: (do-week-three sofia urdu adv-higher)
+358.0: (do-week-four sofia urdu adv-higher)
+359.0: (do-week-five sofia urdu adv-higher)
+360.0: (do-week-six sofia urdu adv-higher)
+361.0: (do-week-seven sofia urdu adv-higher)
+362.0: (do-week-eight sofia urdu adv-higher)
+363.0: (take-unit-two sofia cantonese national-four)
+364.0: (do-week-one sofia cantonese national-four)
+365.0: (do-week-two sofia cantonese national-four)
+366.0: (do-week-three sofia cantonese national-four)
+367.0: (do-week-four sofia cantonese national-four)
+368.0: (do-week-five sofia cantonese national-four)
+369.0: (do-week-six sofia cantonese national-four)
+370.0: (do-week-seven sofia cantonese national-four)
+371.0: (do-week-eight sofia cantonese national-four)
+372.0: (take-unit-two sofia music year-two)
+373.0: (do-week-one sofia music year-two)
+374.0: (do-week-two sofia music year-two)
+375.0: (do-week-three sofia music year-two)
+376.0: (do-week-four sofia music year-two)
+377.0: (do-week-five sofia music year-two)
+378.0: (do-week-six sofia music year-two)
+379.0: (do-week-seven sofia music year-two)
+380.0: (do-week-eight sofia music year-two)
+381.0: (take-unit-two sofia art-design national-four)
+382.0: (do-week-one sofia art-design national-four)
+383.0: (do-week-two sofia art-design national-four)
+384.0: (do-week-three sofia art-design national-four)
+385.0: (do-week-four sofia art-design national-four)
+386.0: (do-week-five sofia art-design national-four)
+387.0: (do-week-six sofia art-design national-four)
+388.0: (do-week-seven sofia art-design national-four)
+389.0: (do-week-eight sofia art-design national-four)
+390.0: (take-unit-two grace practical-woodwork national-five)
+391.0: (do-week-one grace practical-woodwork national-five)
+392.0: (do-week-two grace practical-woodwork national-five)
+393.0: (do-week-three grace practical-woodwork national-five)
+394.0: (do-week-four grace practical-woodwork national-five)
+395.0: (do-week-five grace practical-woodwork national-five)
+396.0: (do-week-six grace practical-woodwork national-five)
+397.0: (do-week-seven grace practical-woodwork national-five)
+398.0: (do-week-eight grace practical-woodwork national-five)
+399.0: (take-unit-two sofia dance higher)
+400.0: (do-week-one sofia dance higher)
+401.0: (do-week-two sofia dance higher)
+402.0: (do-week-three sofia dance higher)
+403.0: (do-week-four sofia dance higher)
+404.0: (do-week-five sofia dance higher)
+405.0: (do-week-six sofia dance higher)
+406.0: (do-week-seven sofia dance higher)
+407.0: (do-week-eight sofia dance higher)
+408.0: (take-unit-two grace physics higher)
+409.0: (do-week-one grace physics higher)
+410.0: (do-week-two grace physics higher)
+411.0: (do-week-three grace physics higher)
+412.0: (do-week-four grace physics higher)
+413.0: (do-week-five grace physics higher)
+414.0: (do-week-six grace physics higher)
+415.0: (do-week-seven grace physics higher)
+416.0: (do-week-eight grace physics higher)
+417.0: (take-unit-three jude italian national-five)
+418.0: (do-week-one jude italian national-five)
+419.0: (do-week-two jude italian national-five)
+420.0: (do-week-three jude italian national-five)
+421.0: (do-week-four jude italian national-five)
+422.0: (do-week-five jude italian national-five)
+423.0: (do-week-six jude italian national-five)
+424.0: (do-week-seven jude italian national-five)
+425.0: (do-week-eight jude italian national-five)
+426.0: (take-unit-four jude italian national-five)
+427.0: (finish-course jude italian national-five)
+428.0: (take-unit-three grace textiles national-four)
+429.0: (do-week-one grace textiles national-four)
+430.0: (do-week-two grace textiles national-four)
+431.0: (do-week-three grace textiles national-four)
+432.0: (do-week-four grace textiles national-four)
+433.0: (do-week-five grace textiles national-four)
+434.0: (do-week-six grace textiles national-four)
+435.0: (do-week-seven grace textiles national-four)
+436.0: (do-week-eight grace textiles national-four)
+437.0: (take-unit-four grace textiles national-four)
+438.0: (finish-course grace textiles national-four)
+439.0: (take-unit-three grace biology year-two)
+440.0: (do-week-one grace biology year-two)
+441.0: (do-week-two grace biology year-two)
+442.0: (do-week-three grace biology year-two)
+443.0: (do-week-four grace biology year-two)
+444.0: (do-week-five grace biology year-two)
+445.0: (do-week-six grace biology year-two)
+446.0: (do-week-seven grace biology year-two)
+447.0: (do-week-eight grace biology year-two)
+448.0: (take-unit-four grace biology year-two)
+449.0: (finish-course grace biology year-two)
+450.0: (do-week-one grace textiles national-four)
+451.0: (do-week-one grace biology year-two)
+452.0: (do-week-two grace biology year-two)
+453.0: (do-week-two grace textiles national-four)
+454.0: (do-week-three grace biology year-two)
+455.0: (do-week-four grace biology year-two)
+456.0: (do-week-five grace biology year-two)
+457.0: (do-week-six grace biology year-two)
+458.0: (do-week-seven grace biology year-two)
+459.0: (do-week-eight grace biology year-two)
+460.0: (do-week-one jude italian national-five)
+461.0: (do-week-two jude italian national-five)
+462.0: (take-unit-three sofia urdu adv-higher)
+463.0: (do-week-one sofia urdu adv-higher)
+464.0: (do-week-two sofia urdu adv-higher)
+465.0: (do-week-three sofia urdu adv-higher)
+466.0: (do-week-four sofia urdu adv-higher)
+467.0: (do-week-five sofia urdu adv-higher)
+468.0: (do-week-six sofia urdu adv-higher)
+469.0: (do-week-seven sofia urdu adv-higher)
+470.0: (do-week-eight sofia urdu adv-higher)
+471.0: (take-unit-four sofia urdu adv-higher)
+472.0: (finish-course sofia urdu adv-higher)
+473.0: (do-week-one sofia urdu adv-higher)
+474.0: (do-week-two sofia urdu adv-higher)
+475.0: (do-week-three jude italian national-five)
+476.0: (do-week-three grace textiles national-four)
+477.0: (do-week-three sofia urdu adv-higher)
+478.0: (do-week-four grace textiles national-four)
+479.0: (do-week-four jude italian national-five)
+480.0: (do-week-four sofia urdu adv-higher)
+481.0: (do-week-five sofia urdu adv-higher)
+482.0: (do-week-five grace textiles national-four)
+483.0: (do-week-five jude italian national-five)
+484.0: (do-week-six jude italian national-five)
+485.0: (do-week-six grace textiles national-four)
+486.0: (do-week-six sofia urdu adv-higher)
+487.0: (do-week-seven jude italian national-five)
+488.0: (do-week-seven grace textiles national-four)
+489.0: (do-week-seven sofia urdu adv-higher)
+490.0: (do-week-eight jude italian national-five)
+491.0: (do-week-eight sofia urdu adv-higher)
+492.0: (take-unit-three jude graph-comm national-four)
+493.0: (do-week-one jude graph-comm national-four)
+494.0: (do-week-two jude graph-comm national-four)
+495.0: (do-week-three jude graph-comm national-four)
+496.0: (do-week-four jude graph-comm national-four)
+497.0: (do-week-five jude graph-comm national-four)
+498.0: (do-week-six jude graph-comm national-four)
+499.0: (do-week-seven jude graph-comm national-four)
+500.0: (do-week-eight jude graph-comm national-four)
+501.0: (take-unit-four jude graph-comm national-four)
+502.0: (finish-course jude graph-comm national-four)
+503.0: (take-unit-three grace practical-woodwork national-five)
+504.0: (do-week-one grace practical-woodwork national-five)
+505.0: (do-week-two grace practical-woodwork national-five)
+506.0: (do-week-three grace practical-woodwork national-five)
+507.0: (do-week-four grace practical-woodwork national-five)
+508.0: (do-week-five grace practical-woodwork national-five)
+509.0: (do-week-six grace practical-woodwork national-five)
+510.0: (do-week-seven grace practical-woodwork national-five)
+511.0: (do-week-eight grace practical-woodwork national-five)
+512.0: (take-unit-four grace practical-woodwork national-five)
+513.0: (finish-course grace practical-woodwork national-five)
+514.0: (take-unit-three jude modern-studies year-one)
+515.0: (do-week-one jude modern-studies year-one)
+516.0: (do-week-two jude modern-studies year-one)
+517.0: (do-week-three jude modern-studies year-one)
+518.0: (do-week-four jude modern-studies year-one)
+519.0: (do-week-five jude modern-studies year-one)
+520.0: (do-week-six jude modern-studies year-one)
+521.0: (do-week-seven jude modern-studies year-one)
+522.0: (do-week-eight jude modern-studies year-one)
+523.0: (take-unit-four jude modern-studies year-one)
+524.0: (finish-course jude modern-studies year-one)
+525.0: (take-unit-three jude art-design year-one)
+526.0: (do-week-one jude art-design year-one)
+527.0: (do-week-two jude art-design year-one)
+528.0: (do-week-three jude art-design year-one)
+529.0: (do-week-four jude art-design year-one)
+530.0: (do-week-five jude art-design year-one)
+531.0: (do-week-six jude art-design year-one)
+532.0: (do-week-seven jude art-design year-one)
+533.0: (do-week-eight jude art-design year-one)
+534.0: (take-unit-four jude art-design year-one)
+535.0: (finish-course jude art-design year-one)
+536.0: (do-week-one jude art-design year-one)
+537.0: (do-week-one jude modern-studies year-one)
+538.0: (do-week-one grace practical-woodwork national-five)
+539.0: (do-week-two grace practical-woodwork national-five)
+540.0: (do-week-two jude art-design year-one)
+541.0: (do-week-two jude modern-studies year-one)
+542.0: (do-week-three jude art-design year-one)
+543.0: (do-week-three jude modern-studies year-one)
+544.0: (do-week-three grace practical-woodwork national-five)
+545.0: (do-week-four jude modern-studies year-one)
+546.0: (do-week-four jude art-design year-one)
+547.0: (do-week-four grace practical-woodwork national-five)
+548.0: (do-week-five jude modern-studies year-one)
+549.0: (do-week-five jude art-design year-one)
+550.0: (do-week-six jude modern-studies year-one)
+551.0: (do-week-seven jude modern-studies year-one)
+552.0: (do-week-eight jude modern-studies year-one)
+553.0: (do-week-one jude graph-comm national-four)
+554.0: (do-week-five grace practical-woodwork national-five)
+555.0: (do-week-six jude art-design year-one)
+556.0: (do-week-six grace practical-woodwork national-five)
+557.0: (do-week-seven jude art-design year-one)
+558.0: (take-unit-three jude spanish national-five)
+559.0: (do-week-one jude spanish national-five)
+560.0: (do-week-two jude spanish national-five)
+561.0: (do-week-three jude spanish national-five)
+562.0: (do-week-four jude spanish national-five)
+563.0: (do-week-five jude spanish national-five)
+564.0: (do-week-six jude spanish national-five)
+565.0: (do-week-seven jude spanish national-five)
+566.0: (do-week-eight jude spanish national-five)
+567.0: (take-unit-four jude spanish national-five)
+568.0: (finish-course jude spanish national-five)
+569.0: (take-unit-three sofia art-design national-four)
+570.0: (do-week-one sofia art-design national-four)
+571.0: (do-week-two sofia art-design national-four)
+572.0: (do-week-three sofia art-design national-four)
+573.0: (do-week-four sofia art-design national-four)
+574.0: (do-week-five sofia art-design national-four)
+575.0: (do-week-six sofia art-design national-four)
+576.0: (do-week-seven sofia art-design national-four)
+577.0: (do-week-eight sofia art-design national-four)
+578.0: (take-unit-four sofia art-design national-four)
+579.0: (finish-course sofia art-design national-four)
+580.0: (do-week-one jude spanish national-five)
+581.0: (do-week-one sofia art-design national-four)
+582.0: (do-week-two sofia art-design national-four)
+583.0: (do-week-two jude spanish national-five)
+584.0: (do-week-two jude graph-comm national-four)
+585.0: (do-week-three jude spanish national-five)
+586.0: (do-week-three jude graph-comm national-four)
+587.0: (do-week-three sofia art-design national-four)
+588.0: (do-week-four jude graph-comm national-four)
+589.0: (do-week-four jude spanish national-five)
+590.0: (do-week-four sofia art-design national-four)
+591.0: (do-week-five sofia art-design national-four)
+592.0: (do-week-five jude graph-comm national-four)
+593.0: (do-week-five jude spanish national-five)
+594.0: (do-week-six jude spanish national-five)
+595.0: (do-week-six jude graph-comm national-four)
+596.0: (do-week-six sofia art-design national-four)
+597.0: (do-week-seven jude spanish national-five)
+598.0: (do-week-seven jude graph-comm national-four)
+599.0: (do-week-seven sofia art-design national-four)
+600.0: (do-week-seven grace practical-woodwork national-five)
+601.0: (do-week-eight jude art-design year-one)
+602.0: (do-week-eight jude spanish national-five)
+603.0: (do-week-eight grace textiles national-four)
+604.0: (do-week-eight jude graph-comm national-four)
+605.0: (do-week-eight grace practical-woodwork national-five)
+606.0: (do-week-eight sofia art-design national-four)
+607.0: (take-unit-three grace physics higher)
+608.0: (do-week-one grace physics higher)
+609.0: (do-week-two grace physics higher)
+610.0: (do-week-three grace physics higher)
+611.0: (do-week-four grace physics higher)
+612.0: (do-week-five grace physics higher)
+613.0: (do-week-six grace physics higher)
+614.0: (do-week-seven grace physics higher)
+615.0: (do-week-eight grace physics higher)
+616.0: (take-unit-four grace physics higher)
+617.0: (finish-course grace physics higher)
+618.0: (do-week-one grace physics higher)
+619.0: (do-week-two grace physics higher)
+620.0: (do-week-three grace physics higher)
+621.0: (do-week-four grace physics higher)
+622.0: (do-week-five grace physics higher)
+623.0: (do-week-six grace physics higher)
+624.0: (do-week-seven grace physics higher)
+625.0: (take-unit-three sofia cantonese national-four)
+626.0: (do-week-one sofia cantonese national-four)
+627.0: (do-week-two sofia cantonese national-four)
+628.0: (do-week-three sofia cantonese national-four)
+629.0: (do-week-four sofia cantonese national-four)
+630.0: (do-week-five sofia cantonese national-four)
+631.0: (do-week-six sofia cantonese national-four)
+632.0: (do-week-seven sofia cantonese national-four)
+633.0: (do-week-eight sofia cantonese national-four)
+634.0: (take-unit-four sofia cantonese national-four)
+635.0: (finish-course sofia cantonese national-four)
+636.0: (do-week-one sofia cantonese national-four)
+637.0: (do-week-two sofia cantonese national-four)
+638.0: (do-week-three sofia cantonese national-four)
+639.0: (do-week-four sofia cantonese national-four)
+640.0: (do-week-five sofia cantonese national-four)
+641.0: (do-week-six sofia cantonese national-four)
+642.0: (do-week-seven sofia cantonese national-four)
+643.0: (do-week-eight grace physics higher)
+644.0: (take-unit-three sofia dance higher)
+645.0: (do-week-one sofia dance higher)
+646.0: (do-week-two sofia dance higher)
+647.0: (do-week-three sofia dance higher)
+648.0: (do-week-four sofia dance higher)
+649.0: (do-week-five sofia dance higher)
+650.0: (do-week-six sofia dance higher)
+651.0: (do-week-seven sofia dance higher)
+652.0: (do-week-eight sofia dance higher)
+653.0: (take-unit-four sofia dance higher)
+654.0: (finish-course sofia dance higher)
+655.0: (do-week-one sofia dance higher)
+656.0: (do-week-two sofia dance higher)
+657.0: (do-week-three sofia dance higher)
+658.0: (do-week-four sofia dance higher)
+659.0: (do-week-five sofia dance higher)
+660.0: (do-week-six sofia dance higher)
+661.0: (do-week-seven sofia dance higher)
+662.0: (do-week-eight sofia dance higher)
+663.0: (do-week-eight sofia cantonese national-four)
+664.0: (take-unit-three sofia music year-two)
+665.0: (do-week-one sofia music year-two)
+666.0: (do-week-two sofia music year-two)
+667.0: (do-week-three sofia music year-two)
+668.0: (do-week-four sofia music year-two)
+669.0: (do-week-five sofia music year-two)
+670.0: (do-week-six sofia music year-two)
+671.0: (do-week-seven sofia music year-two)
+672.0: (do-week-eight sofia music year-two)
+673.0: (take-unit-four sofia music year-two)
+674.0: (finish-course sofia music year-two)
+
+Plan-Length:675
+Metric (Search):675.0
+Planning Time (msec): 40600
+Heuristic Time (msec): 35168
+Search Time (msec): 38718
+Expanded Nodes:65446
+States Evaluated:449735
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:0
+Number of Duplicates detected:1100946
