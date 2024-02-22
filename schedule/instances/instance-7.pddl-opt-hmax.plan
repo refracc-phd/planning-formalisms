@@ -1,0 +1,50 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 23
+Aibr Preprocessing
+|F|:85
+|X|:0
+|A|:97
+|P|:0
+|E|:0
+H1 Setup Time (msec): 10
+Setting horizon to:NaN
+Running WA-STAR
+h(n = s_0)=1.0
+f(n) = 1.0 (Expanded Nodes: 0, Evaluated States: 0, Time: 0.007) Frontier Size: 0
+f(n) = 2.0 (Expanded Nodes: 2, Evaluated States: 152, Time: 0.07) Frontier Size: 150
+f(n) = 3.0 (Expanded Nodes: 48, Evaluated States: 2293, Time: 0.408) Frontier Size: 2245
+f(n) = 4.0 (Expanded Nodes: 1014, Evaluated States: 40245, Time: 6.054) Frontier Size: 39230
+-------------Time: 10s ; Expanded Nodes: 1622 (Avg-Speed 162.0 n/s); Evaluated States: 66693
+-------------Time: 20s ; Expanded Nodes: 3272 (Avg-Speed 163.0 n/s); Evaluated States: 133699
+-------------Time: 30s ; Expanded Nodes: 5079 (Avg-Speed 169.0 n/s); Evaluated States: 200357
+-------------Time: 40s ; Expanded Nodes: 7190 (Avg-Speed 179.0 n/s); Evaluated States: 267067
+-------------Time: 50s ; Expanded Nodes: 9174 (Avg-Speed 183.0 n/s); Evaluated States: 333017
+-------------Time: 60s ; Expanded Nodes: 10876 (Avg-Speed 181.0 n/s); Evaluated States: 400716
+-------------Time: 70s ; Expanded Nodes: 12661 (Avg-Speed 180.0 n/s); Evaluated States: 469107
+-------------Time: 80s ; Expanded Nodes: 14634 (Avg-Speed 182.0 n/s); Evaluated States: 536915
+-------------Time: 90s ; Expanded Nodes: 16824 (Avg-Speed 186.0 n/s); Evaluated States: 605483
+-------------Time: 100s ; Expanded Nodes: 19328 (Avg-Speed 193.0 n/s); Evaluated States: 673477
+-------------Time: 110s ; Expanded Nodes: 22110 (Avg-Speed 201.0 n/s); Evaluated States: 739926
+f(n) = 5.0 (Expanded Nodes: 23814, Evaluated States: 775072, Time: 115.242) Frontier Size: 751178
+Problem Solved
+
+Found Plan:
+0.0: (do-polish a0)
+1.0: (do-lathe c0)
+2.0: (do-time-step)
+3.0: (do-immersion-paint b0 black)
+4.0: (do-punch a0 one front)
+5.0: (do-spray-paint c0 black)
+
+Plan-Length:6
+Metric (Search):5.0
+Planning Time (msec): 117216
+Heuristic Time (msec): 115322
+Search Time (msec): 117047
+Expanded Nodes:24182
+States Evaluated:787781
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:0
+Number of Duplicates detected:429350

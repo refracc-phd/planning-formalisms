@@ -1,0 +1,32 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 21
+Aibr Preprocessing
+|F|:66
+|X|:0
+|A|:73
+|P|:0
+|E|:0
+H1 Setup Time (msec): 9
+Setting horizon to:NaN
+Running WA-STAR
+h(n = s_0)=1.0
+f(n) = 1.0 (Expanded Nodes: 0, Evaluated States: 0, Time: 0.006) Frontier Size: 0
+f(n) = 2.0 (Expanded Nodes: 2, Evaluated States: 109, Time: 0.05) Frontier Size: 107
+Problem Solved
+
+Found Plan:
+0.0: (do-immersion-paint a0 yellow)
+1.0: (do-lathe c0)
+
+Plan-Length:2
+Metric (Search):2.0
+Planning Time (msec): 254
+Heuristic Time (msec): 73
+Search Time (msec): 94
+Expanded Nodes:12
+States Evaluated:437
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:0
+Number of Duplicates detected:9

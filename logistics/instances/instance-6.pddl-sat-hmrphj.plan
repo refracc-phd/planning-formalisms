@@ -1,0 +1,40 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 16
+Aibr Preprocessing
+|F|:48
+|X|:0
+|A|:84
+|P|:0
+|E|:0
+H1 Setup Time (msec): 4
+Wrong setting for break-ties. Arbitrary tie breaking
+Setting horizon to:NaN
+Helpful Action Pruning Activated
+Running Greedy Best First Search
+h(n = s_0)=0.0
+Problem Solved
+
+Found Plan:
+0.0: (load-truck obj21 tru2 pos2)
+1.0: (load-truck obj23 tru2 pos2)
+2.0: (drive-truck tru1 pos1 apt1 cit1)
+3.0: (drive-truck tru2 pos2 apt2 cit2)
+4.0: (unload-truck obj23 tru2 apt2)
+5.0: (drive-truck tru1 apt1 pos1 cit1)
+6.0: (load-truck obj12 tru1 pos1)
+7.0: (drive-truck tru1 pos1 apt1 cit1)
+8.0: (unload-truck obj12 tru1 apt1)
+9.0: (unload-truck obj21 tru2 apt2)
+
+Plan-Length:10
+Metric (Search):0.0
+Planning Time (msec): 139
+Heuristic Time (msec): 7
+Search Time (msec): 11
+Expanded Nodes:20
+States Evaluated:41
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:0
+Number of Duplicates detected:13
