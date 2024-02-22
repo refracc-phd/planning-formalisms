@@ -7,7 +7,7 @@
 #SBATCH -e slurm.%j.err # STDERR
 #SBATCH --ntasks-per-node=5
 
-./enhsp.sh ../enhsp/enhsp.jar ./benchmarks/logistics/domain.pddl ./benchmarks/logistics/problems 
+./benchmark.sh ./enhsp/enhsp.jar ./benchmarks/logistics/domain.pddl ./benchmarks/logistics/problems 
 
 # ./enhsp.sh ./enhsp/enhsp.jar ./domain-c.pddl ./continuous
 # ./enhsp.sh ./enhsp/enhsp.jar ./blocksworld/domain.pddl ./blocksworld/instances

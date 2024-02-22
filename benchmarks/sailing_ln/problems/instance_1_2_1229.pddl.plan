@@ -1,0 +1,99 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 11
+Aibr Preprocessing
+|F|:2
+|X|:3
+|A|:11
+|P|:0
+|E|:0
+Folding back to 1-0 heuristic. Input heuristic is not supported
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=1.0
+-------------Time: 10s ; Expanded Nodes: 2163660 (Avg-Speed 216366.0 n/s); Evaluated States: 2291109
+-------------Time: 20s ; Expanded Nodes: 4104306 (Avg-Speed 205215.0 n/s); Evaluated States: 4278922
+ g(n)= 68.0 h(n)=0.0
+Problem Solved
+
+Found Plan:
+0.0: (accelerate b0)
+1.0: (accelerate b0)
+2.0: (go_south_west b0)
+3.0: (go_south_east b0)
+4.0: (go_south b0)
+5.0: (go_south_east b0)
+6.0: (go_south_east b0)
+7.0: (go_south_west b0)
+8.0: (go_south_west b0)
+9.0: (go_south b0)
+10.0: (decelerate b0)
+11.0: (decelerate b0)
+12.0: (save_person b0 p1)
+13.0: (accelerate b0)
+14.0: (go_south b0)
+15.0: (accelerate b0)
+16.0: (go_south_west b0)
+17.0: (go_south_west b0)
+18.0: (go_south_west b0)
+19.0: (go_south_west b0)
+20.0: (go_south_east b0)
+21.0: (go_south_west b0)
+22.0: (go_south_west b0)
+23.0: (go_south_west b0)
+24.0: (go_south_west b0)
+25.0: (go_south_west b0)
+26.0: (go_south b0)
+27.0: (go_south_west b0)
+28.0: (go_south_east b0)
+29.0: (go_south_west b0)
+30.0: (go_south_west b0)
+31.0: (go_south_west b0)
+32.0: (go_south b0)
+33.0: (go_south_west b0)
+34.0: (go_south_west b0)
+35.0: (go_south_east b0)
+36.0: (go_south_east b0)
+37.0: (go_south_east b0)
+38.0: (go_south_west b0)
+39.0: (go_south_east b0)
+40.0: (go_south_west b0)
+41.0: (go_south b0)
+42.0: (go_south_east b0)
+43.0: (go_south_west b0)
+44.0: (go_south_east b0)
+45.0: (go_south b0)
+46.0: (go_south b0)
+47.0: (go_south b0)
+48.0: (go_south_west b0)
+49.0: (go_south b0)
+50.0: (go_south_east b0)
+51.0: (go_south_east b0)
+52.0: (go_south_east b0)
+53.0: (go_south b0)
+54.0: (go_south_east b0)
+55.0: (go_south_east b0)
+56.0: (go_south_east b0)
+57.0: (go_south_east b0)
+58.0: (go_south_east b0)
+59.0: (go_south_east b0)
+60.0: (go_south_east b0)
+61.0: (go_south b0)
+62.0: (go_south b0)
+63.0: (go_south_east b0)
+64.0: (go_south_east b0)
+65.0: (decelerate b0)
+66.0: (decelerate b0)
+67.0: (save_person b0 p0)
+
+Plan-Length:68
+Metric (Search):68.0
+Planning Time (msec): 28733
+Heuristic Time (msec): 104
+Search Time (msec): 28572
+Expanded Nodes:5847201
+States Evaluated:6063953
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:0
+Number of Duplicates detected:42665285
