@@ -1,0 +1,52 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 23
+Aibr Preprocessing
+|F|:55
+|X|:0
+|A|:84
+|P|:0
+|E|:0
+H1 Setup Time (msec): 15
+Wrong setting for break-ties. Arbitrary tie breaking
+Setting horizon to:NaN
+Helpful Action Pruning Activated
+Running Greedy Best First Search
+h(n = s_0)=10.0
+ g(n)= 1.0 h(n)=9.0
+ g(n)= 4.0 h(n)=8.0
+ g(n)= 3.0 h(n)=7.0
+ g(n)= 4.0 h(n)=6.0
+ g(n)= 6.0 h(n)=5.0
+ g(n)= 8.0 h(n)=4.0
+ g(n)= 9.0 h(n)=3.0
+ g(n)= 10.0 h(n)=2.0
+ g(n)= 11.0 h(n)=1.0
+ g(n)= 12.0 h(n)=0.0
+Problem Solved
+
+Found Plan:
+0.0: (unstack a f)
+1.0: (stack a d)
+2.0: (pick-up b)
+3.0: (stack b a)
+4.0: (pick-up f)
+5.0: (stack f e)
+6.0: (pick-up c)
+7.0: (stack c b)
+8.0: (unstack f e)
+9.0: (stack f c)
+10.0: (pick-up e)
+11.0: (stack e f)
+
+Plan-Length:12
+Metric (Search):12.0
+Planning Time (msec): 429
+Heuristic Time (msec): 22
+Search Time (msec): 46
+Expanded Nodes:50
+States Evaluated:90
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:0
+Number of Duplicates detected:46

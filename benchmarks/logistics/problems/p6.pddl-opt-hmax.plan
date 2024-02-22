@@ -1,0 +1,74 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 44
+Aibr Preprocessing
+|F|:48
+|X|:0
+|A|:84
+|P|:0
+|E|:0
+H1 Setup Time (msec): 14
+Setting horizon to:NaN
+Running WA-STAR
+h(n = s_0)=6.0
+f(n) = 6.0 (Expanded Nodes: 0, Evaluated States: 0, Time: 0.006) Frontier Size: 0
+f(n) = 7.0 (Expanded Nodes: 1, Evaluated States: 10, Time: 0.028) Frontier Size: 8
+f(n) = 8.0 (Expanded Nodes: 10, Evaluated States: 62, Time: 0.039) Frontier Size: 41
+f(n) = 9.0 (Expanded Nodes: 48, Evaluated States: 230, Time: 0.058) Frontier Size: 124
+f(n) = 10.0 (Expanded Nodes: 152, Evaluated States: 621, Time: 0.092) Frontier Size: 271
+f(n) = 11.0 (Expanded Nodes: 376, Evaluated States: 1425, Time: 0.133) Frontier Size: 535
+f(n) = 12.0 (Expanded Nodes: 809, Evaluated States: 2912, Time: 0.188) Frontier Size: 967
+f(n) = 13.0 (Expanded Nodes: 1590, Evaluated States: 5467, Time: 0.264) Frontier Size: 1609
+f(n) = 14.0 (Expanded Nodes: 2888, Evaluated States: 9521, Time: 0.376) Frontier Size: 2471
+f(n) = 15.0 (Expanded Nodes: 4906, Evaluated States: 15706, Time: 0.535) Frontier Size: 3683
+f(n) = 16.0 (Expanded Nodes: 7940, Evaluated States: 24898, Time: 0.767) Frontier Size: 5384
+f(n) = 17.0 (Expanded Nodes: 12419, Evaluated States: 38410, Time: 1.098) Frontier Size: 7805
+f(n) = 18.0 (Expanded Nodes: 18981, Evaluated States: 58254, Time: 1.601) Frontier Size: 11375
+f(n) = 19.0 (Expanded Nodes: 28587, Evaluated States: 87020, Time: 2.297) Frontier Size: 16405
+f(n) = 20.0 (Expanded Nodes: 42480, Evaluated States: 127848, Time: 3.354) Frontier Size: 23265
+f(n) = 21.0 (Expanded Nodes: 62020, Evaluated States: 183460, Time: 4.722) Frontier Size: 31826
+f(n) = 22.0 (Expanded Nodes: 88474, Evaluated States: 256250, Time: 6.512) Frontier Size: 41898
+f(n) = 23.0 (Expanded Nodes: 122747, Evaluated States: 347418, Time: 8.894) Frontier Size: 52824
+-------------Time: 10s ; Expanded Nodes: 138067 (Avg-Speed 13806.0 n/s); Evaluated States: 389285
+f(n) = 24.0 (Expanded Nodes: 165206, Evaluated States: 457036, Time: 11.701) Frontier Size: 63886
+f(n) = 25.0 (Expanded Nodes: 215667, Evaluated States: 584051, Time: 14.976) Frontier Size: 74329
+Problem Solved
+
+Found Plan:
+0.0: (load-truck obj11 tru1 pos1)
+1.0: (load-truck obj12 tru1 pos1)
+2.0: (load-truck obj13 tru1 pos1)
+3.0: (drive-truck tru1 pos1 apt1 cit1)
+4.0: (unload-truck obj13 tru1 apt1)
+5.0: (load-truck obj23 tru2 pos2)
+6.0: (load-truck obj21 tru2 pos2)
+7.0: (drive-truck tru2 pos2 apt2 cit2)
+8.0: (unload-truck obj11 tru1 apt1)
+9.0: (load-airplane obj11 apn1 apt1)
+10.0: (unload-truck obj12 tru1 apt1)
+11.0: (load-airplane obj13 apn1 apt1)
+12.0: (load-airplane obj12 apn1 apt1)
+13.0: (fly-airplane apn1 apt1 apt2)
+14.0: (unload-truck obj23 tru2 apt2)
+15.0: (unload-airplane obj13 apn1 apt2)
+16.0: (unload-truck obj21 tru2 apt2)
+17.0: (load-airplane obj23 apn1 apt2)
+18.0: (load-truck obj13 tru2 apt2)
+19.0: (unload-airplane obj12 apn1 apt2)
+20.0: (unload-airplane obj11 apn1 apt2)
+21.0: (fly-airplane apn1 apt2 apt1)
+22.0: (drive-truck tru2 apt2 pos2 cit2)
+23.0: (unload-truck obj13 tru2 pos2)
+24.0: (unload-airplane obj23 apn1 apt1)
+
+Plan-Length:25
+Metric (Search):25.0
+Planning Time (msec): 15370
+Heuristic Time (msec): 12954
+Search Time (msec): 14976
+Expanded Nodes:215669
+States Evaluated:584057
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:294049
+Number of Duplicates detected:1820209
