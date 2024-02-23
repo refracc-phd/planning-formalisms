@@ -1,6 +1,6 @@
 (define (domain courses)
 
-    (:requirements :strips :typing :adl)
+    (:requirements :strips :typing :adl :fluents)
 
     (:types
         course course-level grades - object
