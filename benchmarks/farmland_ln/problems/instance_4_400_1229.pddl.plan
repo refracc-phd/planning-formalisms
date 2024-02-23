@@ -1,0 +1,66 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 31
+Aibr Preprocessing
+|F|:0
+|X|:6
+|A|:17
+|P|:0
+|E|:0
+Folding back to 1-0 heuristic. Input heuristic is not supported
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=1.0
+-------------Time: 10s ; Expanded Nodes: 795817 (Avg-Speed 79581.0 n/s); Evaluated States: 2063691
+-------------Time: 20s ; Expanded Nodes: 1541533 (Avg-Speed 77076.0 n/s); Evaluated States: 3819267
+-------------Time: 30s ; Expanded Nodes: 2443213 (Avg-Speed 81440.0 n/s); Evaluated States: 5168391
+-------------Time: 40s ; Expanded Nodes: 2974148 (Avg-Speed 74353.0 n/s); Evaluated States: 7071214
+-------------Time: 50s ; Expanded Nodes: 3824423 (Avg-Speed 76488.0 n/s); Evaluated States: 8996051
+-------------Time: 60s ; Expanded Nodes: 4703814 (Avg-Speed 78396.0 n/s); Evaluated States: 9898733
+-------------Time: 70s ; Expanded Nodes: 5527549 (Avg-Speed 78964.0 n/s); Evaluated States: 11725551
+-------------Time: 80s ; Expanded Nodes: 5712377 (Avg-Speed 71404.0 n/s); Evaluated States: 12582918
+-------------Time: 90s ; Expanded Nodes: 6547006 (Avg-Speed 72744.0 n/s); Evaluated States: 15332181
+-------------Time: 100s ; Expanded Nodes: 7386543 (Avg-Speed 73865.0 n/s); Evaluated States: 16808366
+-------------Time: 110s ; Expanded Nodes: 8263768 (Avg-Speed 75125.0 n/s); Evaluated States: 17829975
+-------------Time: 398s ; Expanded Nodes: 9043903 (Avg-Speed 22723.0 n/s); Evaluated States: 18676663
+-------------Time: 408s ; Expanded Nodes: 9878420 (Avg-Speed 24211.0 n/s); Evaluated States: 19428325
+-------------Time: 418s ; Expanded Nodes: 10679210 (Avg-Speed 25548.0 n/s); Evaluated States: 21338944
+-------------Time: 428s ; Expanded Nodes: 11323637 (Avg-Speed 26457.0 n/s); Evaluated States: 24349135
+-------------Time: 769s ; Expanded Nodes: 11517027 (Avg-Speed 14976.0 n/s); Evaluated States: 25165824
+-------------Time: 779s ; Expanded Nodes: 12297062 (Avg-Speed 15785.0 n/s); Evaluated States: 28126403
+-------------Time: 822s ; Expanded Nodes: 12303125 (Avg-Speed 14967.0 n/s); Evaluated States: 28146547
+-------------Time: 832s ; Expanded Nodes: 13168634 (Avg-Speed 15827.0 n/s); Evaluated States: 29226779
+ g(n)= 18.0 h(n)=0.0
+Problem Solved
+
+Found Plan:
+0.0: (hire-car)
+1.0: (hire-car)
+2.0: (hire-car)
+3.0: (hire-car)
+4.0: (hire-car)
+5.0: (hire-car)
+6.0: (hire-car)
+7.0: (hire-car)
+8.0: (move-by-car farm0 farm1)
+9.0: (move-by-car farm0 farm1)
+10.0: (move-by-car farm0 farm1)
+11.0: (move-slow farm1 farm3)
+12.0: (move-by-car farm0 farm2)
+13.0: (move-by-car farm0 farm1)
+14.0: (move-by-car farm0 farm1)
+15.0: (move-by-car farm0 farm1)
+16.0: (move-by-car farm0 farm1)
+17.0: (move-by-car farm0 farm1)
+
+Plan-Length:18
+Metric (Search):18.0
+Planning Time (msec): 833547
+Heuristic Time (msec): 8809
+Search Time (msec): 833106
+Expanded Nodes:13233930
+States Evaluated:29365929
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:0
+Number of Duplicates detected:145794150

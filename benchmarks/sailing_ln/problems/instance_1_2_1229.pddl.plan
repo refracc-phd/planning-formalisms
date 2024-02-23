@@ -1,7 +1,7 @@
 Domain parsed
 Problem parsed
 Grounding..
-Grounding Time: 11
+Grounding Time: 38
 Aibr Preprocessing
 |F|:2
 |X|:3
@@ -12,8 +12,10 @@ Folding back to 1-0 heuristic. Input heuristic is not supported
 Setting horizon to:NaN
 Running Greedy Best First Search
 h(n = s_0)=1.0
--------------Time: 10s ; Expanded Nodes: 2163660 (Avg-Speed 216366.0 n/s); Evaluated States: 2291109
--------------Time: 20s ; Expanded Nodes: 4104306 (Avg-Speed 205215.0 n/s); Evaluated States: 4278922
+-------------Time: 10s ; Expanded Nodes: 1464168 (Avg-Speed 146416.0 n/s); Evaluated States: 1568911
+-------------Time: 20s ; Expanded Nodes: 2819176 (Avg-Speed 140958.0 n/s); Evaluated States: 2969123
+-------------Time: 30s ; Expanded Nodes: 3962929 (Avg-Speed 132097.0 n/s); Evaluated States: 4137284
+-------------Time: 40s ; Expanded Nodes: 5372092 (Avg-Speed 134302.0 n/s); Evaluated States: 5571686
  g(n)= 68.0 h(n)=0.0
 Problem Solved
 
@@ -89,9 +91,9 @@ Found Plan:
 
 Plan-Length:68
 Metric (Search):68.0
-Planning Time (msec): 28733
-Heuristic Time (msec): 104
-Search Time (msec): 28572
+Planning Time (msec): 44333
+Heuristic Time (msec): 327
+Search Time (msec): 43855
 Expanded Nodes:5847201
 States Evaluated:6063953
 Fixed constraint violations during search (zero-crossing):0

@@ -1,0 +1,34 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 69
+Aibr Preprocessing
+|F|:104
+|X|:0
+|A|:121
+|P|:0
+|E|:0
+Folding back to 1-0 heuristic. Input heuristic is not supported
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=1.0
+ g(n)= 5.0 h(n)=0.0
+Problem Solved
+
+Found Plan:
+0.0: (do-lathe d0)
+1.0: (do-time-step)
+2.0: (do-polish b0)
+3.0: (do-spray-paint a0 blue)
+4.0: (do-immersion-paint d0 yellow)
+
+Plan-Length:5
+Metric (Search):5.0
+Planning Time (msec): 4010
+Heuristic Time (msec): 59
+Search Time (msec): 3572
+Expanded Nodes:80863
+States Evaluated:1207455
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:0
+Number of Duplicates detected:1667485

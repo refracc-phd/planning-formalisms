@@ -1,7 +1,7 @@
 Domain parsed
 Problem parsed
 Grounding..
-Grounding Time: 11
+Grounding Time: 40
 Aibr Preprocessing
 |F|:3
 |X|:3
@@ -12,20 +12,25 @@ Folding back to 1-0 heuristic. Input heuristic is not supported
 Setting horizon to:NaN
 Running Greedy Best First Search
 h(n = s_0)=1.0
--------------Time: 10s ; Expanded Nodes: 2139463 (Avg-Speed 213946.0 n/s); Evaluated States: 2293714
--------------Time: 20s ; Expanded Nodes: 4037445 (Avg-Speed 201872.0 n/s); Evaluated States: 4285362
--------------Time: 30s ; Expanded Nodes: 5957922 (Avg-Speed 198597.0 n/s); Evaluated States: 6249046
--------------Time: 40s ; Expanded Nodes: 7708116 (Avg-Speed 192702.0 n/s); Evaluated States: 8038895
--------------Time: 50s ; Expanded Nodes: 9658619 (Avg-Speed 193172.0 n/s); Evaluated States: 10037196
--------------Time: 60s ; Expanded Nodes: 11537803 (Avg-Speed 192296.0 n/s); Evaluated States: 11980678
--------------Time: 70s ; Expanded Nodes: 12846052 (Avg-Speed 183515.0 n/s); Evaluated States: 13323947
--------------Time: 80s ; Expanded Nodes: 14892823 (Avg-Speed 186160.0 n/s); Evaluated States: 15431583
--------------Time: 90s ; Expanded Nodes: 16697379 (Avg-Speed 185526.0 n/s); Evaluated States: 17249181
--------------Time: 100s ; Expanded Nodes: 18331295 (Avg-Speed 183312.0 n/s); Evaluated States: 18913158
--------------Time: 110s ; Expanded Nodes: 19778996 (Avg-Speed 179809.0 n/s); Evaluated States: 20394792
--------------Time: 120s ; Expanded Nodes: 21172006 (Avg-Speed 176433.0 n/s); Evaluated States: 21812212
--------------Time: 130s ; Expanded Nodes: 22405682 (Avg-Speed 172351.0 n/s); Evaluated States: 23068226
--------------Time: 140s ; Expanded Nodes: 23360027 (Avg-Speed 166857.0 n/s); Evaluated States: 24041153
+-------------Time: 10s ; Expanded Nodes: 1424314 (Avg-Speed 142431.0 n/s); Evaluated States: 1543878
+-------------Time: 20s ; Expanded Nodes: 2725063 (Avg-Speed 136253.0 n/s); Evaluated States: 2903574
+-------------Time: 30s ; Expanded Nodes: 3908360 (Avg-Speed 130278.0 n/s); Evaluated States: 4138238
+-------------Time: 40s ; Expanded Nodes: 5190108 (Avg-Speed 129752.0 n/s); Evaluated States: 5463940
+-------------Time: 50s ; Expanded Nodes: 6001031 (Avg-Speed 120020.0 n/s); Evaluated States: 6291458
+-------------Time: 60s ; Expanded Nodes: 7434352 (Avg-Speed 123905.0 n/s); Evaluated States: 7759617
+-------------Time: 70s ; Expanded Nodes: 8799055 (Avg-Speed 125700.0 n/s); Evaluated States: 9161459
+-------------Time: 80s ; Expanded Nodes: 10075435 (Avg-Speed 125942.0 n/s); Evaluated States: 10463722
+-------------Time: 90s ; Expanded Nodes: 11240849 (Avg-Speed 124898.0 n/s); Evaluated States: 11669274
+-------------Time: 105s ; Expanded Nodes: 12141410 (Avg-Speed 115632.0 n/s); Evaluated States: 12582912
+-------------Time: 115s ; Expanded Nodes: 13567116 (Avg-Speed 117974.0 n/s); Evaluated States: 14041891
+-------------Time: 125s ; Expanded Nodes: 14964330 (Avg-Speed 119714.0 n/s); Evaluated States: 15492817
+-------------Time: 135s ; Expanded Nodes: 16236026 (Avg-Speed 120266.0 n/s); Evaluated States: 16787337
+-------------Time: 145s ; Expanded Nodes: 17504950 (Avg-Speed 120723.0 n/s); Evaluated States: 18089260
+-------------Time: 155s ; Expanded Nodes: 18744105 (Avg-Speed 120929.0 n/s); Evaluated States: 19347827
+-------------Time: 165s ; Expanded Nodes: 19981412 (Avg-Speed 121099.0 n/s); Evaluated States: 20593667
+-------------Time: 175s ; Expanded Nodes: 21091917 (Avg-Speed 120525.0 n/s); Evaluated States: 21732566
+-------------Time: 185s ; Expanded Nodes: 22164797 (Avg-Speed 119809.0 n/s); Evaluated States: 22814699
+-------------Time: 195s ; Expanded Nodes: 23225150 (Avg-Speed 119103.0 n/s); Evaluated States: 23898925
  g(n)= 99.0 h(n)=0.0
 Problem Solved
 
@@ -132,9 +137,9 @@ Found Plan:
 
 Plan-Length:99
 Metric (Search):99.0
-Planning Time (msec): 141166
-Heuristic Time (msec): 509
-Search Time (msec): 141014
+Planning Time (msec): 198220
+Heuristic Time (msec): 1404
+Search Time (msec): 197744
 Expanded Nodes:23399262
 States Evaluated:24074470
 Fixed constraint violations during search (zero-crossing):0
