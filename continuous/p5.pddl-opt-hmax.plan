@@ -1,0 +1,45 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 14
+Aibr Preprocessing
+|F|:36
+|X|:60
+|A|:96
+|P|:0
+|E|:0
+H1 Setup Time (msec): 4
+Setting horizon to:NaN
+Running WA-STAR
+h(n = s_0)=13.0
+f(n) = 13.0 (Expanded Nodes: 0, Evaluated States: 0, Time: 0.007) Frontier Size: 0
+f(n) = 14.0 (Expanded Nodes: 1, Evaluated States: 36, Time: 0.021) Frontier Size: 35
+f(n) = 15.0 (Expanded Nodes: 37, Evaluated States: 696, Time: 0.055) Frontier Size: 659
+f(n) = 16.0 (Expanded Nodes: 697, Evaluated States: 8916, Time: 0.23) Frontier Size: 8219
+f(n) = 17.0 (Expanded Nodes: 8917, Evaluated States: 87186, Time: 1.808) Frontier Size: 78269
+-------------Time: 10s ; Expanded Nodes: 37402 (Avg-Speed 3740.0 n/s); Evaluated States: 514677
+f(n) = 18.0 (Expanded Nodes: 87187, Evaluated States: 695118, Time: 14.477) Frontier Size: 607931
+-------------Time: 20s ; Expanded Nodes: 100161 (Avg-Speed 5008.0 n/s); Evaluated States: 980290
+-------------Time: 30s ; Expanded Nodes: 129198 (Avg-Speed 4306.0 n/s); Evaluated States: 1519669
+-------------Time: 40s ; Expanded Nodes: 159968 (Avg-Speed 3999.0 n/s); Evaluated States: 2017114
+-------------Time: 50s ; Expanded Nodes: 196642 (Avg-Speed 3932.0 n/s); Evaluated States: 2529158
+-------------Time: 60s ; Expanded Nodes: 235656 (Avg-Speed 3927.0 n/s); Evaluated States: 3017374
+-------------Time: 70s ; Expanded Nodes: 278188 (Avg-Speed 3974.0 n/s); Evaluated States: 3440323
+-------------Time: 80s ; Expanded Nodes: 343682 (Avg-Speed 4296.0 n/s); Evaluated States: 3900467
+-------------Time: 90s ; Expanded Nodes: 437403 (Avg-Speed 4860.0 n/s); Evaluated States: 4296986
+-------------Time: 100s ; Expanded Nodes: 565277 (Avg-Speed 5652.0 n/s); Evaluated States: 4625837
+f(n) = 19.0 (Expanded Nodes: 695119, Evaluated States: 4707970, Time: 105.945) Frontier Size: 4012851
+-------------Time: 110s ; Expanded Nodes: 704712 (Avg-Speed 6406.0 n/s); Evaluated States: 4925135
+-------------Time: 120s ; Expanded Nodes: 731767 (Avg-Speed 6098.0 n/s); Evaluated States: 5459714
+-------------Time: 130s ; Expanded Nodes: 756672 (Avg-Speed 5820.0 n/s); Evaluated States: 5932063
+-------------Time: 140s ; Expanded Nodes: 777686 (Avg-Speed 5554.0 n/s); Evaluated States: 6291465
+-------------Time: 150s ; Expanded Nodes: 809502 (Avg-Speed 5396.0 n/s); Evaluated States: 6834255
+-------------Time: 160s ; Expanded Nodes: 841493 (Avg-Speed 5259.0 n/s); Evaluated States: 7364578
+-------------Time: 170s ; Expanded Nodes: 871887 (Avg-Speed 5128.0 n/s); Evaluated States: 7871146
+-------------Time: 180s ; Expanded Nodes: 905130 (Avg-Speed 5028.0 n/s); Evaluated States: 8398328
+-------------Time: 190s ; Expanded Nodes: 938022 (Avg-Speed 4936.0 n/s); Evaluated States: 8921863
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 805306368 bytes for committing reserved memory.
+# An error report file with more information is saved as:
+# /home/rpgsbs/r01sa23/Documents/planning-formalisms/hs_err_pid31678.log

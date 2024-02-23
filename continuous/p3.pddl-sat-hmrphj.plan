@@ -1,0 +1,902 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 13
+Aibr Preprocessing
+|F|:26
+|X|:40
+|A|:66
+|P|:0
+|E|:0
+H1 Setup Time (msec): 4
+Wrong setting for break-ties. Arbitrary tie breaking
+Setting horizon to:NaN
+Helpful Action Pruning Activated
+Running Greedy Best First Search
+h(n = s_0)=266.0
+ g(n)= 7.0 h(n)=258.0
+ g(n)= 14.0 h(n)=250.0
+ g(n)= 21.0 h(n)=242.0
+ g(n)= 28.0 h(n)=234.0
+ g(n)= 35.0 h(n)=226.0
+ g(n)= 42.0 h(n)=218.0
+ g(n)= 49.0 h(n)=210.0
+ g(n)= 56.0 h(n)=202.0
+ g(n)= 63.0 h(n)=194.0
+ g(n)= 70.0 h(n)=186.0
+ g(n)= 77.0 h(n)=178.0
+ g(n)= 84.0 h(n)=170.0
+ g(n)= 91.0 h(n)=162.0
+ g(n)= 98.0 h(n)=154.0
+ g(n)= 105.0 h(n)=146.0
+ g(n)= 112.0 h(n)=138.0
+ g(n)= 119.0 h(n)=130.0
+ g(n)= 126.0 h(n)=122.0
+ g(n)= 133.0 h(n)=114.0
+ g(n)= 140.0 h(n)=106.0
+ g(n)= 141.0 h(n)=105.0
+ g(n)= 142.0 h(n)=104.0
+ g(n)= 143.0 h(n)=103.0
+ g(n)= 144.0 h(n)=102.0
+ g(n)= 145.0 h(n)=101.0
+ g(n)= 146.0 h(n)=100.0
+ g(n)= 154.0 h(n)=99.0
+ g(n)= 162.0 h(n)=98.0
+ g(n)= 170.0 h(n)=97.0
+ g(n)= 178.0 h(n)=96.0
+ g(n)= 179.0 h(n)=95.0
+ g(n)= 180.0 h(n)=94.0
+ g(n)= 188.0 h(n)=93.0
+ g(n)= 196.0 h(n)=92.0
+ g(n)= 204.0 h(n)=91.0
+ g(n)= 205.0 h(n)=90.0
+ g(n)= 206.0 h(n)=89.0
+ g(n)= 214.0 h(n)=88.0
+ g(n)= 222.0 h(n)=87.0
+ g(n)= 230.0 h(n)=86.0
+ g(n)= 238.0 h(n)=85.0
+ g(n)= 239.0 h(n)=84.0
+ g(n)= 240.0 h(n)=83.0
+ g(n)= 248.0 h(n)=82.0
+ g(n)= 256.0 h(n)=81.0
+ g(n)= 264.0 h(n)=80.0
+ g(n)= 265.0 h(n)=79.0
+ g(n)= 266.0 h(n)=78.0
+ g(n)= 274.0 h(n)=77.0
+ g(n)= 282.0 h(n)=76.0
+ g(n)= 283.0 h(n)=75.0
+ g(n)= 284.0 h(n)=74.0
+ g(n)= 292.0 h(n)=73.0
+ g(n)= 300.0 h(n)=72.0
+ g(n)= 308.0 h(n)=71.0
+ g(n)= 309.0 h(n)=70.0
+ g(n)= 310.0 h(n)=69.0
+ g(n)= 318.0 h(n)=68.0
+ g(n)= 326.0 h(n)=67.0
+ g(n)= 327.0 h(n)=66.0
+ g(n)= 328.0 h(n)=65.0
+ g(n)= 336.0 h(n)=64.0
+ g(n)= 344.0 h(n)=63.0
+ g(n)= 352.0 h(n)=62.0
+ g(n)= 360.0 h(n)=61.0
+ g(n)= 368.0 h(n)=60.0
+ g(n)= 369.0 h(n)=59.0
+ g(n)= 370.0 h(n)=58.0
+ g(n)= 378.0 h(n)=57.0
+ g(n)= 379.0 h(n)=56.0
+ g(n)= 380.0 h(n)=55.0
+ g(n)= 388.0 h(n)=54.0
+ g(n)= 396.0 h(n)=53.0
+ g(n)= 404.0 h(n)=52.0
+ g(n)= 405.0 h(n)=51.0
+ g(n)= 406.0 h(n)=50.0
+ g(n)= 414.0 h(n)=49.0
+ g(n)= 422.0 h(n)=48.0
+ g(n)= 430.0 h(n)=47.0
+ g(n)= 431.0 h(n)=46.0
+ g(n)= 432.0 h(n)=45.0
+ g(n)= 440.0 h(n)=44.0
+ g(n)= 448.0 h(n)=43.0
+ g(n)= 456.0 h(n)=42.0
+ g(n)= 457.0 h(n)=41.0
+ g(n)= 458.0 h(n)=40.0
+ g(n)= 466.0 h(n)=39.0
+ g(n)= 474.0 h(n)=38.0
+ g(n)= 482.0 h(n)=37.0
+ g(n)= 483.0 h(n)=36.0
+ g(n)= 484.0 h(n)=35.0
+ g(n)= 492.0 h(n)=34.0
+ g(n)= 500.0 h(n)=33.0
+ g(n)= 508.0 h(n)=32.0
+ g(n)= 509.0 h(n)=31.0
+ g(n)= 510.0 h(n)=30.0
+ g(n)= 518.0 h(n)=29.0
+ g(n)= 526.0 h(n)=28.0
+ g(n)= 534.0 h(n)=27.0
+ g(n)= 535.0 h(n)=26.0
+ g(n)= 536.0 h(n)=25.0
+ g(n)= 544.0 h(n)=24.0
+ g(n)= 552.0 h(n)=23.0
+ g(n)= 560.0 h(n)=22.0
+ g(n)= 561.0 h(n)=21.0
+ g(n)= 562.0 h(n)=20.0
+ g(n)= 570.0 h(n)=19.0
+ g(n)= 578.0 h(n)=18.0
+ g(n)= 586.0 h(n)=17.0
+ g(n)= 594.0 h(n)=16.0
+ g(n)= 595.0 h(n)=15.0
+ g(n)= 596.0 h(n)=14.0
+ g(n)= 604.0 h(n)=13.0
+ g(n)= 612.0 h(n)=12.0
+ g(n)= 620.0 h(n)=11.0
+ g(n)= 621.0 h(n)=10.0
+ g(n)= 622.0 h(n)=9.0
+ g(n)= 630.0 h(n)=8.0
+ g(n)= 638.0 h(n)=7.0
+ g(n)= 646.0 h(n)=6.0
+ g(n)= 647.0 h(n)=5.0
+ g(n)= 648.0 h(n)=4.0
+ g(n)= 656.0 h(n)=3.0
+ g(n)= 664.0 h(n)=2.0
+ g(n)= 665.0 h(n)=1.0
+ g(n)= 666.0 h(n)=0.0
+JUMP for (do-week robyn art-design national-five):7
+JUMP for (do-week robyn art-design national-five):7
+JUMP for (do-week robyn music-tech year-two):7
+JUMP for (do-week robyn music-tech year-two):7
+JUMP for (do-week robyn music-tech year-two):7
+JUMP for (do-week robyn geography national-five):7
+JUMP for (do-week robyn geography national-five):7
+JUMP for (do-week robyn geography national-five):7
+JUMP for (do-week zachary urdu higher):7
+JUMP for (do-week zachary urdu higher):7
+JUMP for (do-week robyn art-design national-five):7
+JUMP for (do-week zachary urdu higher):7
+JUMP for (do-week zachary chemistry year-one):7
+JUMP for (do-week zachary chemistry year-one):7
+JUMP for (do-week zachary chemistry year-one):7
+JUMP for (do-week zachary mandarin higher):7
+JUMP for (do-week zachary mandarin higher):7
+JUMP for (do-week zachary mandarin higher):7
+JUMP for (do-week zachary english national-four):7
+JUMP for (do-week zachary english national-four):7
+JUMP for (do-week zachary english national-four):7
+JUMP for (do-week zachary mandarin national-five):7
+JUMP for (do-week zachary mandarin national-five):7
+JUMP for (do-week zachary mandarin national-five):7
+JUMP for (do-week aurora mandarin national-four):7
+JUMP for (do-week aurora mandarin national-four):7
+JUMP for (do-week aurora mandarin national-four):7
+JUMP for (do-week aurora dance national-five):7
+JUMP for (do-week aurora dance national-five):7
+JUMP for (do-week aurora dance national-five):7
+JUMP for (do-week aurora history higher):7
+JUMP for (do-week aurora history higher):7
+JUMP for (do-week aurora history higher):7
+JUMP for (do-week aurora italian national-five):7
+JUMP for (do-week robyn pc-passport national-five):7
+JUMP for (do-week robyn pc-passport national-five):7
+JUMP for (do-week aurora italian national-five):7
+JUMP for (do-week robyn pc-passport national-five):7
+JUMP for (do-week aurora italian national-five):7
+JUMP for (do-week aurora maths adv-higher):7
+JUMP for (do-week aurora maths adv-higher):7
+JUMP for (do-week alexander art-design year-three):7
+JUMP for (do-week alexander art-design year-three):7
+JUMP for (do-week alexander art-design year-three):7
+JUMP for (do-week alexander graph-comm adv-higher):7
+JUMP for (do-week alexander graph-comm adv-higher):7
+JUMP for (do-week robyn numeracy year-one):7
+JUMP for (do-week robyn numeracy year-one):7
+JUMP for (do-week alexander graph-comm adv-higher):7
+JUMP for (do-week alexander music-tech year-one):7
+JUMP for (do-week robyn numeracy year-one):7
+JUMP for (do-week aurora maths adv-higher):7
+JUMP for (do-week alexander music-tech year-one):7
+JUMP for (do-week alexander design-manufacture higher):7
+JUMP for (do-week alexander design-manufacture higher):7
+JUMP for (do-week alexander design-manufacture higher):7
+JUMP for (do-week alexander german national-four):7
+JUMP for (do-week alexander german national-four):7
+JUMP for (do-week alexander german national-four):7
+JUMP for (do-week alexander music-tech year-one):7
+JUMP for (do-week robyn numeracy year-one):7
+JUMP for (do-week robyn pc-passport national-five):7
+JUMP for (do-week robyn art-design national-five):7
+JUMP for (do-week robyn music-tech year-two):7
+JUMP for (do-week robyn geography national-five):7
+JUMP for (do-week zachary urdu higher):7
+JUMP for (do-week zachary chemistry year-one):7
+JUMP for (do-week zachary mandarin higher):7
+JUMP for (do-week zachary english national-four):7
+JUMP for (do-week zachary mandarin national-five):7
+JUMP for (do-week aurora mandarin national-four):7
+JUMP for (do-week aurora dance national-five):7
+JUMP for (do-week aurora history higher):7
+JUMP for (do-week aurora italian national-five):7
+JUMP for (do-week aurora maths adv-higher):7
+JUMP for (do-week alexander art-design year-three):7
+JUMP for (do-week alexander graph-comm adv-higher):7
+JUMP for (do-week alexander music-tech year-one):7
+JUMP for (do-week alexander design-manufacture higher):7
+JUMP for (do-week alexander german national-four):7
+Problem Solved
+
+Found Plan:
+0.0: (do-week alexander german national-four)
+1.0: (do-week alexander german national-four)
+2.0: (do-week alexander german national-four)
+3.0: (do-week alexander german national-four)
+4.0: (do-week alexander german national-four)
+5.0: (do-week alexander german national-four)
+6.0: (do-week alexander german national-four)
+7.0: (do-week alexander design-manufacture higher)
+8.0: (do-week alexander design-manufacture higher)
+9.0: (do-week alexander design-manufacture higher)
+10.0: (do-week alexander design-manufacture higher)
+11.0: (do-week alexander design-manufacture higher)
+12.0: (do-week alexander design-manufacture higher)
+13.0: (do-week alexander design-manufacture higher)
+14.0: (do-week alexander music-tech year-one)
+15.0: (do-week alexander music-tech year-one)
+16.0: (do-week alexander music-tech year-one)
+17.0: (do-week alexander music-tech year-one)
+18.0: (do-week alexander music-tech year-one)
+19.0: (do-week alexander music-tech year-one)
+20.0: (do-week alexander music-tech year-one)
+21.0: (do-week alexander graph-comm adv-higher)
+22.0: (do-week alexander graph-comm adv-higher)
+23.0: (do-week alexander graph-comm adv-higher)
+24.0: (do-week alexander graph-comm adv-higher)
+25.0: (do-week alexander graph-comm adv-higher)
+26.0: (do-week alexander graph-comm adv-higher)
+27.0: (do-week alexander graph-comm adv-higher)
+28.0: (do-week alexander art-design year-three)
+29.0: (do-week alexander art-design year-three)
+30.0: (do-week alexander art-design year-three)
+31.0: (do-week alexander art-design year-three)
+32.0: (do-week alexander art-design year-three)
+33.0: (do-week alexander art-design year-three)
+34.0: (do-week alexander art-design year-three)
+35.0: (do-week aurora maths adv-higher)
+36.0: (do-week aurora maths adv-higher)
+37.0: (do-week aurora maths adv-higher)
+38.0: (do-week aurora maths adv-higher)
+39.0: (do-week aurora maths adv-higher)
+40.0: (do-week aurora maths adv-higher)
+41.0: (do-week aurora maths adv-higher)
+42.0: (do-week aurora italian national-five)
+43.0: (do-week aurora italian national-five)
+44.0: (do-week aurora italian national-five)
+45.0: (do-week aurora italian national-five)
+46.0: (do-week aurora italian national-five)
+47.0: (do-week aurora italian national-five)
+48.0: (do-week aurora italian national-five)
+49.0: (do-week aurora history higher)
+50.0: (do-week aurora history higher)
+51.0: (do-week aurora history higher)
+52.0: (do-week aurora history higher)
+53.0: (do-week aurora history higher)
+54.0: (do-week aurora history higher)
+55.0: (do-week aurora history higher)
+56.0: (do-week aurora dance national-five)
+57.0: (do-week aurora dance national-five)
+58.0: (do-week aurora dance national-five)
+59.0: (do-week aurora dance national-five)
+60.0: (do-week aurora dance national-five)
+61.0: (do-week aurora dance national-five)
+62.0: (do-week aurora dance national-five)
+63.0: (do-week aurora mandarin national-four)
+64.0: (do-week aurora mandarin national-four)
+65.0: (do-week aurora mandarin national-four)
+66.0: (do-week aurora mandarin national-four)
+67.0: (do-week aurora mandarin national-four)
+68.0: (do-week aurora mandarin national-four)
+69.0: (do-week aurora mandarin national-four)
+70.0: (do-week zachary mandarin national-five)
+71.0: (do-week zachary mandarin national-five)
+72.0: (do-week zachary mandarin national-five)
+73.0: (do-week zachary mandarin national-five)
+74.0: (do-week zachary mandarin national-five)
+75.0: (do-week zachary mandarin national-five)
+76.0: (do-week zachary mandarin national-five)
+77.0: (do-week zachary english national-four)
+78.0: (do-week zachary english national-four)
+79.0: (do-week zachary english national-four)
+80.0: (do-week zachary english national-four)
+81.0: (do-week zachary english national-four)
+82.0: (do-week zachary english national-four)
+83.0: (do-week zachary english national-four)
+84.0: (do-week zachary mandarin higher)
+85.0: (do-week zachary mandarin higher)
+86.0: (do-week zachary mandarin higher)
+87.0: (do-week zachary mandarin higher)
+88.0: (do-week zachary mandarin higher)
+89.0: (do-week zachary mandarin higher)
+90.0: (do-week zachary mandarin higher)
+91.0: (do-week zachary chemistry year-one)
+92.0: (do-week zachary chemistry year-one)
+93.0: (do-week zachary chemistry year-one)
+94.0: (do-week zachary chemistry year-one)
+95.0: (do-week zachary chemistry year-one)
+96.0: (do-week zachary chemistry year-one)
+97.0: (do-week zachary chemistry year-one)
+98.0: (do-week zachary urdu higher)
+99.0: (do-week zachary urdu higher)
+100.0: (do-week zachary urdu higher)
+101.0: (do-week zachary urdu higher)
+102.0: (do-week zachary urdu higher)
+103.0: (do-week zachary urdu higher)
+104.0: (do-week zachary urdu higher)
+105.0: (do-week robyn geography national-five)
+106.0: (do-week robyn geography national-five)
+107.0: (do-week robyn geography national-five)
+108.0: (do-week robyn geography national-five)
+109.0: (do-week robyn geography national-five)
+110.0: (do-week robyn geography national-five)
+111.0: (do-week robyn geography national-five)
+112.0: (do-week robyn music-tech year-two)
+113.0: (do-week robyn music-tech year-two)
+114.0: (do-week robyn music-tech year-two)
+115.0: (do-week robyn music-tech year-two)
+116.0: (do-week robyn music-tech year-two)
+117.0: (do-week robyn music-tech year-two)
+118.0: (do-week robyn music-tech year-two)
+119.0: (do-week robyn art-design national-five)
+120.0: (do-week robyn art-design national-five)
+121.0: (do-week robyn art-design national-five)
+122.0: (do-week robyn art-design national-five)
+123.0: (do-week robyn art-design national-five)
+124.0: (do-week robyn art-design national-five)
+125.0: (do-week robyn art-design national-five)
+126.0: (do-week robyn pc-passport national-five)
+127.0: (do-week robyn pc-passport national-five)
+128.0: (do-week robyn pc-passport national-five)
+129.0: (do-week robyn pc-passport national-five)
+130.0: (do-week robyn pc-passport national-five)
+131.0: (do-week robyn pc-passport national-five)
+132.0: (do-week robyn pc-passport national-five)
+133.0: (do-week robyn numeracy year-one)
+134.0: (do-week robyn numeracy year-one)
+135.0: (do-week robyn numeracy year-one)
+136.0: (do-week robyn numeracy year-one)
+137.0: (do-week robyn numeracy year-one)
+138.0: (do-week robyn numeracy year-one)
+139.0: (do-week robyn numeracy year-one)
+140.0: (technological-assistance alexander)
+141.0: (comms-workshop aurora)
+142.0: (gamify zachary)
+143.0: (comms-workshop robyn)
+144.0: (technological-assistance robyn)
+145.0: (gamify robyn)
+146.0: (do-unit alexander music-tech year-one)
+147.0: (do-week alexander music-tech year-one)
+148.0: (do-week alexander music-tech year-one)
+149.0: (do-week alexander music-tech year-one)
+150.0: (do-week alexander music-tech year-one)
+151.0: (do-week alexander music-tech year-one)
+152.0: (do-week alexander music-tech year-one)
+153.0: (do-week alexander music-tech year-one)
+154.0: (do-unit alexander german national-four)
+155.0: (do-week alexander german national-four)
+156.0: (do-week alexander german national-four)
+157.0: (do-week alexander german national-four)
+158.0: (do-week alexander german national-four)
+159.0: (do-week alexander german national-four)
+160.0: (do-week alexander german national-four)
+161.0: (do-week alexander german national-four)
+162.0: (do-unit alexander german national-four)
+163.0: (do-week alexander german national-four)
+164.0: (do-week alexander german national-four)
+165.0: (do-week alexander german national-four)
+166.0: (do-week alexander german national-four)
+167.0: (do-week alexander german national-four)
+168.0: (do-week alexander german national-four)
+169.0: (do-week alexander german national-four)
+170.0: (do-unit alexander german national-four)
+171.0: (do-week alexander german national-four)
+172.0: (do-week alexander german national-four)
+173.0: (do-week alexander german national-four)
+174.0: (do-week alexander german national-four)
+175.0: (do-week alexander german national-four)
+176.0: (do-week alexander german national-four)
+177.0: (do-week alexander german national-four)
+178.0: (do-unit alexander german national-four)
+179.0: (finish-course alexander german national-four)
+180.0: (do-unit alexander design-manufacture higher)
+181.0: (do-week alexander design-manufacture higher)
+182.0: (do-week alexander design-manufacture higher)
+183.0: (do-week alexander design-manufacture higher)
+184.0: (do-week alexander design-manufacture higher)
+185.0: (do-week alexander design-manufacture higher)
+186.0: (do-week alexander design-manufacture higher)
+187.0: (do-week alexander design-manufacture higher)
+188.0: (do-unit alexander design-manufacture higher)
+189.0: (do-week alexander design-manufacture higher)
+190.0: (do-week alexander design-manufacture higher)
+191.0: (do-week alexander design-manufacture higher)
+192.0: (do-week alexander design-manufacture higher)
+193.0: (do-week alexander design-manufacture higher)
+194.0: (do-week alexander design-manufacture higher)
+195.0: (do-week alexander design-manufacture higher)
+196.0: (do-unit alexander design-manufacture higher)
+197.0: (do-week alexander design-manufacture higher)
+198.0: (do-week alexander design-manufacture higher)
+199.0: (do-week alexander design-manufacture higher)
+200.0: (do-week alexander design-manufacture higher)
+201.0: (do-week alexander design-manufacture higher)
+202.0: (do-week alexander design-manufacture higher)
+203.0: (do-week alexander design-manufacture higher)
+204.0: (do-unit alexander design-manufacture higher)
+205.0: (finish-course alexander design-manufacture higher)
+206.0: (do-unit alexander music-tech year-one)
+207.0: (do-week alexander music-tech year-one)
+208.0: (do-week alexander music-tech year-one)
+209.0: (do-week alexander music-tech year-one)
+210.0: (do-week alexander music-tech year-one)
+211.0: (do-week alexander music-tech year-one)
+212.0: (do-week alexander music-tech year-one)
+213.0: (do-week alexander music-tech year-one)
+214.0: (do-unit aurora maths adv-higher)
+215.0: (do-week aurora maths adv-higher)
+216.0: (do-week aurora maths adv-higher)
+217.0: (do-week aurora maths adv-higher)
+218.0: (do-week aurora maths adv-higher)
+219.0: (do-week aurora maths adv-higher)
+220.0: (do-week aurora maths adv-higher)
+221.0: (do-week aurora maths adv-higher)
+222.0: (do-unit robyn numeracy year-one)
+223.0: (do-week robyn numeracy year-one)
+224.0: (do-week robyn numeracy year-one)
+225.0: (do-week robyn numeracy year-one)
+226.0: (do-week robyn numeracy year-one)
+227.0: (do-week robyn numeracy year-one)
+228.0: (do-week robyn numeracy year-one)
+229.0: (do-week robyn numeracy year-one)
+230.0: (do-unit alexander music-tech year-one)
+231.0: (do-week alexander music-tech year-one)
+232.0: (do-week alexander music-tech year-one)
+233.0: (do-week alexander music-tech year-one)
+234.0: (do-week alexander music-tech year-one)
+235.0: (do-week alexander music-tech year-one)
+236.0: (do-week alexander music-tech year-one)
+237.0: (do-week alexander music-tech year-one)
+238.0: (do-unit alexander music-tech year-one)
+239.0: (finish-course alexander music-tech year-one)
+240.0: (do-unit alexander graph-comm adv-higher)
+241.0: (do-week alexander graph-comm adv-higher)
+242.0: (do-week alexander graph-comm adv-higher)
+243.0: (do-week alexander graph-comm adv-higher)
+244.0: (do-week alexander graph-comm adv-higher)
+245.0: (do-week alexander graph-comm adv-higher)
+246.0: (do-week alexander graph-comm adv-higher)
+247.0: (do-week alexander graph-comm adv-higher)
+248.0: (do-unit robyn numeracy year-one)
+249.0: (do-week robyn numeracy year-one)
+250.0: (do-week robyn numeracy year-one)
+251.0: (do-week robyn numeracy year-one)
+252.0: (do-week robyn numeracy year-one)
+253.0: (do-week robyn numeracy year-one)
+254.0: (do-week robyn numeracy year-one)
+255.0: (do-week robyn numeracy year-one)
+256.0: (do-unit robyn numeracy year-one)
+257.0: (do-week robyn numeracy year-one)
+258.0: (do-week robyn numeracy year-one)
+259.0: (do-week robyn numeracy year-one)
+260.0: (do-week robyn numeracy year-one)
+261.0: (do-week robyn numeracy year-one)
+262.0: (do-week robyn numeracy year-one)
+263.0: (do-week robyn numeracy year-one)
+264.0: (do-unit robyn numeracy year-one)
+265.0: (finish-course robyn numeracy year-one)
+266.0: (do-unit alexander graph-comm adv-higher)
+267.0: (do-week alexander graph-comm adv-higher)
+268.0: (do-week alexander graph-comm adv-higher)
+269.0: (do-week alexander graph-comm adv-higher)
+270.0: (do-week alexander graph-comm adv-higher)
+271.0: (do-week alexander graph-comm adv-higher)
+272.0: (do-week alexander graph-comm adv-higher)
+273.0: (do-week alexander graph-comm adv-higher)
+274.0: (do-unit alexander graph-comm adv-higher)
+275.0: (do-week alexander graph-comm adv-higher)
+276.0: (do-week alexander graph-comm adv-higher)
+277.0: (do-week alexander graph-comm adv-higher)
+278.0: (do-week alexander graph-comm adv-higher)
+279.0: (do-week alexander graph-comm adv-higher)
+280.0: (do-week alexander graph-comm adv-higher)
+281.0: (do-week alexander graph-comm adv-higher)
+282.0: (do-unit alexander graph-comm adv-higher)
+283.0: (finish-course alexander graph-comm adv-higher)
+284.0: (do-unit alexander art-design year-three)
+285.0: (do-week alexander art-design year-three)
+286.0: (do-week alexander art-design year-three)
+287.0: (do-week alexander art-design year-three)
+288.0: (do-week alexander art-design year-three)
+289.0: (do-week alexander art-design year-three)
+290.0: (do-week alexander art-design year-three)
+291.0: (do-week alexander art-design year-three)
+292.0: (do-unit alexander art-design year-three)
+293.0: (do-week alexander art-design year-three)
+294.0: (do-week alexander art-design year-three)
+295.0: (do-week alexander art-design year-three)
+296.0: (do-week alexander art-design year-three)
+297.0: (do-week alexander art-design year-three)
+298.0: (do-week alexander art-design year-three)
+299.0: (do-week alexander art-design year-three)
+300.0: (do-unit alexander art-design year-three)
+301.0: (do-week alexander art-design year-three)
+302.0: (do-week alexander art-design year-three)
+303.0: (do-week alexander art-design year-three)
+304.0: (do-week alexander art-design year-three)
+305.0: (do-week alexander art-design year-three)
+306.0: (do-week alexander art-design year-three)
+307.0: (do-week alexander art-design year-three)
+308.0: (do-unit alexander art-design year-three)
+309.0: (finish-course alexander art-design year-three)
+310.0: (do-unit aurora maths adv-higher)
+311.0: (do-week aurora maths adv-higher)
+312.0: (do-week aurora maths adv-higher)
+313.0: (do-week aurora maths adv-higher)
+314.0: (do-week aurora maths adv-higher)
+315.0: (do-week aurora maths adv-higher)
+316.0: (do-week aurora maths adv-higher)
+317.0: (do-week aurora maths adv-higher)
+318.0: (do-unit aurora maths adv-higher)
+319.0: (do-week aurora maths adv-higher)
+320.0: (do-week aurora maths adv-higher)
+321.0: (do-week aurora maths adv-higher)
+322.0: (do-week aurora maths adv-higher)
+323.0: (do-week aurora maths adv-higher)
+324.0: (do-week aurora maths adv-higher)
+325.0: (do-week aurora maths adv-higher)
+326.0: (do-unit aurora maths adv-higher)
+327.0: (finish-course aurora maths adv-higher)
+328.0: (do-unit aurora italian national-five)
+329.0: (do-week aurora italian national-five)
+330.0: (do-week aurora italian national-five)
+331.0: (do-week aurora italian national-five)
+332.0: (do-week aurora italian national-five)
+333.0: (do-week aurora italian national-five)
+334.0: (do-week aurora italian national-five)
+335.0: (do-week aurora italian national-five)
+336.0: (do-unit robyn pc-passport national-five)
+337.0: (do-week robyn pc-passport national-five)
+338.0: (do-week robyn pc-passport national-five)
+339.0: (do-week robyn pc-passport national-five)
+340.0: (do-week robyn pc-passport national-five)
+341.0: (do-week robyn pc-passport national-five)
+342.0: (do-week robyn pc-passport national-five)
+343.0: (do-week robyn pc-passport national-five)
+344.0: (do-unit aurora italian national-five)
+345.0: (do-week aurora italian national-five)
+346.0: (do-week aurora italian national-five)
+347.0: (do-week aurora italian national-five)
+348.0: (do-week aurora italian national-five)
+349.0: (do-week aurora italian national-five)
+350.0: (do-week aurora italian national-five)
+351.0: (do-week aurora italian national-five)
+352.0: (do-unit robyn pc-passport national-five)
+353.0: (do-week robyn pc-passport national-five)
+354.0: (do-week robyn pc-passport national-five)
+355.0: (do-week robyn pc-passport national-five)
+356.0: (do-week robyn pc-passport national-five)
+357.0: (do-week robyn pc-passport national-five)
+358.0: (do-week robyn pc-passport national-five)
+359.0: (do-week robyn pc-passport national-five)
+360.0: (do-unit robyn pc-passport national-five)
+361.0: (do-week robyn pc-passport national-five)
+362.0: (do-week robyn pc-passport national-five)
+363.0: (do-week robyn pc-passport national-five)
+364.0: (do-week robyn pc-passport national-five)
+365.0: (do-week robyn pc-passport national-five)
+366.0: (do-week robyn pc-passport national-five)
+367.0: (do-week robyn pc-passport national-five)
+368.0: (do-unit robyn pc-passport national-five)
+369.0: (finish-course robyn pc-passport national-five)
+370.0: (do-unit aurora italian national-five)
+371.0: (do-week aurora italian national-five)
+372.0: (do-week aurora italian national-five)
+373.0: (do-week aurora italian national-five)
+374.0: (do-week aurora italian national-five)
+375.0: (do-week aurora italian national-five)
+376.0: (do-week aurora italian national-five)
+377.0: (do-week aurora italian national-five)
+378.0: (do-unit aurora italian national-five)
+379.0: (finish-course aurora italian national-five)
+380.0: (do-unit aurora history higher)
+381.0: (do-week aurora history higher)
+382.0: (do-week aurora history higher)
+383.0: (do-week aurora history higher)
+384.0: (do-week aurora history higher)
+385.0: (do-week aurora history higher)
+386.0: (do-week aurora history higher)
+387.0: (do-week aurora history higher)
+388.0: (do-unit aurora history higher)
+389.0: (do-week aurora history higher)
+390.0: (do-week aurora history higher)
+391.0: (do-week aurora history higher)
+392.0: (do-week aurora history higher)
+393.0: (do-week aurora history higher)
+394.0: (do-week aurora history higher)
+395.0: (do-week aurora history higher)
+396.0: (do-unit aurora history higher)
+397.0: (do-week aurora history higher)
+398.0: (do-week aurora history higher)
+399.0: (do-week aurora history higher)
+400.0: (do-week aurora history higher)
+401.0: (do-week aurora history higher)
+402.0: (do-week aurora history higher)
+403.0: (do-week aurora history higher)
+404.0: (do-unit aurora history higher)
+405.0: (finish-course aurora history higher)
+406.0: (do-unit aurora dance national-five)
+407.0: (do-week aurora dance national-five)
+408.0: (do-week aurora dance national-five)
+409.0: (do-week aurora dance national-five)
+410.0: (do-week aurora dance national-five)
+411.0: (do-week aurora dance national-five)
+412.0: (do-week aurora dance national-five)
+413.0: (do-week aurora dance national-five)
+414.0: (do-unit aurora dance national-five)
+415.0: (do-week aurora dance national-five)
+416.0: (do-week aurora dance national-five)
+417.0: (do-week aurora dance national-five)
+418.0: (do-week aurora dance national-five)
+419.0: (do-week aurora dance national-five)
+420.0: (do-week aurora dance national-five)
+421.0: (do-week aurora dance national-five)
+422.0: (do-unit aurora dance national-five)
+423.0: (do-week aurora dance national-five)
+424.0: (do-week aurora dance national-five)
+425.0: (do-week aurora dance national-five)
+426.0: (do-week aurora dance national-five)
+427.0: (do-week aurora dance national-five)
+428.0: (do-week aurora dance national-five)
+429.0: (do-week aurora dance national-five)
+430.0: (do-unit aurora dance national-five)
+431.0: (finish-course aurora dance national-five)
+432.0: (do-unit aurora mandarin national-four)
+433.0: (do-week aurora mandarin national-four)
+434.0: (do-week aurora mandarin national-four)
+435.0: (do-week aurora mandarin national-four)
+436.0: (do-week aurora mandarin national-four)
+437.0: (do-week aurora mandarin national-four)
+438.0: (do-week aurora mandarin national-four)
+439.0: (do-week aurora mandarin national-four)
+440.0: (do-unit aurora mandarin national-four)
+441.0: (do-week aurora mandarin national-four)
+442.0: (do-week aurora mandarin national-four)
+443.0: (do-week aurora mandarin national-four)
+444.0: (do-week aurora mandarin national-four)
+445.0: (do-week aurora mandarin national-four)
+446.0: (do-week aurora mandarin national-four)
+447.0: (do-week aurora mandarin national-four)
+448.0: (do-unit aurora mandarin national-four)
+449.0: (do-week aurora mandarin national-four)
+450.0: (do-week aurora mandarin national-four)
+451.0: (do-week aurora mandarin national-four)
+452.0: (do-week aurora mandarin national-four)
+453.0: (do-week aurora mandarin national-four)
+454.0: (do-week aurora mandarin national-four)
+455.0: (do-week aurora mandarin national-four)
+456.0: (do-unit aurora mandarin national-four)
+457.0: (finish-course aurora mandarin national-four)
+458.0: (do-unit zachary mandarin national-five)
+459.0: (do-week zachary mandarin national-five)
+460.0: (do-week zachary mandarin national-five)
+461.0: (do-week zachary mandarin national-five)
+462.0: (do-week zachary mandarin national-five)
+463.0: (do-week zachary mandarin national-five)
+464.0: (do-week zachary mandarin national-five)
+465.0: (do-week zachary mandarin national-five)
+466.0: (do-unit zachary mandarin national-five)
+467.0: (do-week zachary mandarin national-five)
+468.0: (do-week zachary mandarin national-five)
+469.0: (do-week zachary mandarin national-five)
+470.0: (do-week zachary mandarin national-five)
+471.0: (do-week zachary mandarin national-five)
+472.0: (do-week zachary mandarin national-five)
+473.0: (do-week zachary mandarin national-five)
+474.0: (do-unit zachary mandarin national-five)
+475.0: (do-week zachary mandarin national-five)
+476.0: (do-week zachary mandarin national-five)
+477.0: (do-week zachary mandarin national-five)
+478.0: (do-week zachary mandarin national-five)
+479.0: (do-week zachary mandarin national-five)
+480.0: (do-week zachary mandarin national-five)
+481.0: (do-week zachary mandarin national-five)
+482.0: (do-unit zachary mandarin national-five)
+483.0: (finish-course zachary mandarin national-five)
+484.0: (do-unit zachary english national-four)
+485.0: (do-week zachary english national-four)
+486.0: (do-week zachary english national-four)
+487.0: (do-week zachary english national-four)
+488.0: (do-week zachary english national-four)
+489.0: (do-week zachary english national-four)
+490.0: (do-week zachary english national-four)
+491.0: (do-week zachary english national-four)
+492.0: (do-unit zachary english national-four)
+493.0: (do-week zachary english national-four)
+494.0: (do-week zachary english national-four)
+495.0: (do-week zachary english national-four)
+496.0: (do-week zachary english national-four)
+497.0: (do-week zachary english national-four)
+498.0: (do-week zachary english national-four)
+499.0: (do-week zachary english national-four)
+500.0: (do-unit zachary english national-four)
+501.0: (do-week zachary english national-four)
+502.0: (do-week zachary english national-four)
+503.0: (do-week zachary english national-four)
+504.0: (do-week zachary english national-four)
+505.0: (do-week zachary english national-four)
+506.0: (do-week zachary english national-four)
+507.0: (do-week zachary english national-four)
+508.0: (do-unit zachary english national-four)
+509.0: (finish-course zachary english national-four)
+510.0: (do-unit zachary mandarin higher)
+511.0: (do-week zachary mandarin higher)
+512.0: (do-week zachary mandarin higher)
+513.0: (do-week zachary mandarin higher)
+514.0: (do-week zachary mandarin higher)
+515.0: (do-week zachary mandarin higher)
+516.0: (do-week zachary mandarin higher)
+517.0: (do-week zachary mandarin higher)
+518.0: (do-unit zachary mandarin higher)
+519.0: (do-week zachary mandarin higher)
+520.0: (do-week zachary mandarin higher)
+521.0: (do-week zachary mandarin higher)
+522.0: (do-week zachary mandarin higher)
+523.0: (do-week zachary mandarin higher)
+524.0: (do-week zachary mandarin higher)
+525.0: (do-week zachary mandarin higher)
+526.0: (do-unit zachary mandarin higher)
+527.0: (do-week zachary mandarin higher)
+528.0: (do-week zachary mandarin higher)
+529.0: (do-week zachary mandarin higher)
+530.0: (do-week zachary mandarin higher)
+531.0: (do-week zachary mandarin higher)
+532.0: (do-week zachary mandarin higher)
+533.0: (do-week zachary mandarin higher)
+534.0: (do-unit zachary mandarin higher)
+535.0: (finish-course zachary mandarin higher)
+536.0: (do-unit zachary chemistry year-one)
+537.0: (do-week zachary chemistry year-one)
+538.0: (do-week zachary chemistry year-one)
+539.0: (do-week zachary chemistry year-one)
+540.0: (do-week zachary chemistry year-one)
+541.0: (do-week zachary chemistry year-one)
+542.0: (do-week zachary chemistry year-one)
+543.0: (do-week zachary chemistry year-one)
+544.0: (do-unit zachary chemistry year-one)
+545.0: (do-week zachary chemistry year-one)
+546.0: (do-week zachary chemistry year-one)
+547.0: (do-week zachary chemistry year-one)
+548.0: (do-week zachary chemistry year-one)
+549.0: (do-week zachary chemistry year-one)
+550.0: (do-week zachary chemistry year-one)
+551.0: (do-week zachary chemistry year-one)
+552.0: (do-unit zachary chemistry year-one)
+553.0: (do-week zachary chemistry year-one)
+554.0: (do-week zachary chemistry year-one)
+555.0: (do-week zachary chemistry year-one)
+556.0: (do-week zachary chemistry year-one)
+557.0: (do-week zachary chemistry year-one)
+558.0: (do-week zachary chemistry year-one)
+559.0: (do-week zachary chemistry year-one)
+560.0: (do-unit zachary chemistry year-one)
+561.0: (finish-course zachary chemistry year-one)
+562.0: (do-unit zachary urdu higher)
+563.0: (do-week zachary urdu higher)
+564.0: (do-week zachary urdu higher)
+565.0: (do-week zachary urdu higher)
+566.0: (do-week zachary urdu higher)
+567.0: (do-week zachary urdu higher)
+568.0: (do-week zachary urdu higher)
+569.0: (do-week zachary urdu higher)
+570.0: (do-unit robyn art-design national-five)
+571.0: (do-week robyn art-design national-five)
+572.0: (do-week robyn art-design national-five)
+573.0: (do-week robyn art-design national-five)
+574.0: (do-week robyn art-design national-five)
+575.0: (do-week robyn art-design national-five)
+576.0: (do-week robyn art-design national-five)
+577.0: (do-week robyn art-design national-five)
+578.0: (do-unit zachary urdu higher)
+579.0: (do-week zachary urdu higher)
+580.0: (do-week zachary urdu higher)
+581.0: (do-week zachary urdu higher)
+582.0: (do-week zachary urdu higher)
+583.0: (do-week zachary urdu higher)
+584.0: (do-week zachary urdu higher)
+585.0: (do-week zachary urdu higher)
+586.0: (do-unit zachary urdu higher)
+587.0: (do-week zachary urdu higher)
+588.0: (do-week zachary urdu higher)
+589.0: (do-week zachary urdu higher)
+590.0: (do-week zachary urdu higher)
+591.0: (do-week zachary urdu higher)
+592.0: (do-week zachary urdu higher)
+593.0: (do-week zachary urdu higher)
+594.0: (do-unit zachary urdu higher)
+595.0: (finish-course zachary urdu higher)
+596.0: (do-unit robyn geography national-five)
+597.0: (do-week robyn geography national-five)
+598.0: (do-week robyn geography national-five)
+599.0: (do-week robyn geography national-five)
+600.0: (do-week robyn geography national-five)
+601.0: (do-week robyn geography national-five)
+602.0: (do-week robyn geography national-five)
+603.0: (do-week robyn geography national-five)
+604.0: (do-unit robyn geography national-five)
+605.0: (do-week robyn geography national-five)
+606.0: (do-week robyn geography national-five)
+607.0: (do-week robyn geography national-five)
+608.0: (do-week robyn geography national-five)
+609.0: (do-week robyn geography national-five)
+610.0: (do-week robyn geography national-five)
+611.0: (do-week robyn geography national-five)
+612.0: (do-unit robyn geography national-five)
+613.0: (do-week robyn geography national-five)
+614.0: (do-week robyn geography national-five)
+615.0: (do-week robyn geography national-five)
+616.0: (do-week robyn geography national-five)
+617.0: (do-week robyn geography national-five)
+618.0: (do-week robyn geography national-five)
+619.0: (do-week robyn geography national-five)
+620.0: (do-unit robyn geography national-five)
+621.0: (finish-course robyn geography national-five)
+622.0: (do-unit robyn music-tech year-two)
+623.0: (do-week robyn music-tech year-two)
+624.0: (do-week robyn music-tech year-two)
+625.0: (do-week robyn music-tech year-two)
+626.0: (do-week robyn music-tech year-two)
+627.0: (do-week robyn music-tech year-two)
+628.0: (do-week robyn music-tech year-two)
+629.0: (do-week robyn music-tech year-two)
+630.0: (do-unit robyn music-tech year-two)
+631.0: (do-week robyn music-tech year-two)
+632.0: (do-week robyn music-tech year-two)
+633.0: (do-week robyn music-tech year-two)
+634.0: (do-week robyn music-tech year-two)
+635.0: (do-week robyn music-tech year-two)
+636.0: (do-week robyn music-tech year-two)
+637.0: (do-week robyn music-tech year-two)
+638.0: (do-unit robyn music-tech year-two)
+639.0: (do-week robyn music-tech year-two)
+640.0: (do-week robyn music-tech year-two)
+641.0: (do-week robyn music-tech year-two)
+642.0: (do-week robyn music-tech year-two)
+643.0: (do-week robyn music-tech year-two)
+644.0: (do-week robyn music-tech year-two)
+645.0: (do-week robyn music-tech year-two)
+646.0: (do-unit robyn music-tech year-two)
+647.0: (finish-course robyn music-tech year-two)
+648.0: (do-unit robyn art-design national-five)
+649.0: (do-week robyn art-design national-five)
+650.0: (do-week robyn art-design national-five)
+651.0: (do-week robyn art-design national-five)
+652.0: (do-week robyn art-design national-five)
+653.0: (do-week robyn art-design national-five)
+654.0: (do-week robyn art-design national-five)
+655.0: (do-week robyn art-design national-five)
+656.0: (do-unit robyn art-design national-five)
+657.0: (do-week robyn art-design national-five)
+658.0: (do-week robyn art-design national-five)
+659.0: (do-week robyn art-design national-five)
+660.0: (do-week robyn art-design national-five)
+661.0: (do-week robyn art-design national-five)
+662.0: (do-week robyn art-design national-five)
+663.0: (do-week robyn art-design national-five)
+664.0: (do-unit robyn art-design national-five)
+665.0: (finish-course robyn art-design national-five)
+
+Plan-Length:666
+Metric (Search):666.0
+Planning Time (msec): 378
+Heuristic Time (msec): 191
+Search Time (msec): 240
+Expanded Nodes:524
+States Evaluated:6810
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:0
+Number of Duplicates detected:369
