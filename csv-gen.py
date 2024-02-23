@@ -112,19 +112,14 @@ with open(output_csv, 'w', newline='') as csvfile:
                     })
 
 
-    # Process data from the continuous directory
-    process_directory("continuous", "continuous")
-
-    # Process data from the discrete directory
-    process_directory("discrete", "discrete")
-
-    # Process data from the bw directory
-    process_directory("blocksworld/instances", "blocksworld")
-
-    # Process data from the logistics directory
-    process_directory("logistics/instances", "logistics")
-
-    # Process data from the schedule directory
-    process_directory("schedule/instances", "schedule")
+    process_directory("./benchmarks/blocksworld/problems", "blocksworld")
+    process_directory("./benchmarks/farmland_ln/problems", "farmland")
+    process_directory("./benchmarks/fo_counters/problems", "fo_counters")
+    process_directory("./benchmarks/fo_counters_inv/problems", "fo_counters_inv")
+    process_directory("./benchmarks/fo_counters_rnd/problems", "fo_counters_rnd")
+    process_directory("./benchmarks/logistics/problems", "logistics")
+    process_directory("./benchmarks/sailing_ln/problems", "sailing_ln")
+    process_directory("./benchmarks/schedule/problems", "schedule")
+    process_directory("./benchmarks/tpp/problems", "tpp")
 
 print("CSV generation complete.")

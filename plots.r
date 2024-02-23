@@ -47,9 +47,9 @@ xs <- range(df$initial.heuristic.val, na.rm = TRUE)
 ys <- range(df$metric.search, na.rm = TRUE)
 maxs <- max(xs, ys)
 
-heuristic_informativeness_a <- ggplot(df, aes(x = initial.heuristic.val, y = metric.search, color = search.method)) + 
+heuristic_informativeness_a <- ggplot(df, aes(x = initial.heuristic.val, y = metric.search, color = domain)) + 
   geom_point() +
-  labs(x = "Initial Heuristic Value", y = "Actual Heuristic Value", title = "Comparison: Heuristic Informativeness", color = "Search Method") +
+  labs(x = "Initial Heuristic Value", y = "Actual Heuristic Value", title = "Comparison: Heuristic Informativeness", color = "Domain") +
   scale_y_log10() + # Add this line for log10 scaling
   scale_x_log10()  # Add this line for log10 scaling
   
@@ -64,3 +64,4 @@ plots <- list(
 for (i in seq_along(plots)) {
   ggsave(paste0("plot-", i, ".pdf"), plots[[i]])
 }
+`
