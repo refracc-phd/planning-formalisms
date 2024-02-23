@@ -81,7 +81,7 @@ with open(output_csv, 'w', newline='') as csvfile:
                         search_method = ""
 
                     # Extract 'problem' from both patterns
-                    problem_match_instance = re.search(r'instance-(\d+)\.pddl-', filename)
+                    problem_match_instance = re.search(r'instance([-_]\d+){1,4}\.pddl-', filename)
                     problem_instance = f"instance-{problem_match_instance.group(1)}" if problem_match_instance else ""
 
                     problem_match_p = re.search(r'p(\d+)', filename)
