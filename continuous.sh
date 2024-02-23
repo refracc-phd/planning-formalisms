@@ -5,4 +5,4 @@
 #SBATCH -e slurm.%j.err # STDERR
 #SBATCH --ntasks-per-node=5
 
-./benchmark.sh ../enhsp/enhsp.jar ./domain-c.pddl ./continuous
+./enhsp.sh ../enhsp/enhsp.jar ./domain-c.pddl ./continuous

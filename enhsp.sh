@@ -41,7 +41,7 @@ for problem_file in "$problem_dir"/*.pddl; do
   for heuristic in "${heuristics[@]}"; do
     run_heuristic "$problem_file" "$heuristic" &
     # Limit the number of background tasks to 10
-    if (( $(jobs | wc -l) >= 1 )); then
+    if (( $(jobs | wc -l) >= 5 )); then
       wait -n
     fi
   done

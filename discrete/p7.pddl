@@ -14,6 +14,7 @@
 	)
 
 	(:init
+		(= (cost) 0)
 		(takes-course esme music higher)
 		(grade d esme music higher)
 		(takes-course esme french national-four)

@@ -14,6 +14,7 @@
 	)
 
 	(:init
+		(= (cost) 0)
 		(takes-course jude spanish national-five)
 		(grade b jude spanish national-five)
 		(takes-course jude art-design year-one)
