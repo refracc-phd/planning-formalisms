@@ -1,3 +1,5 @@
+#!/bin/bash
+
 #SBATCH -N 1 # number of nodes
 #SBATCH -n 5 # number of cores
 #SBATCH --mem 200G # memory pool for all cores
