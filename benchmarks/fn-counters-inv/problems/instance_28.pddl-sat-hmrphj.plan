@@ -1,0 +1,824 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 45
+Aibr Preprocessing
+|F|:0
+|X|:28
+|A|:56
+|P|:0
+|E|:0
+H1 Setup Time (msec): 25
+Wrong setting for break-ties. Arbitrary tie breaking
+Setting horizon to:NaN
+Helpful Action Pruning Activated
+Running Greedy Best First Search
+h(n = s_0)=81.0
+ g(n)= 3.0 h(n)=78.0
+ g(n)= 6.0 h(n)=75.0
+ g(n)= 8.0 h(n)=74.0
+ g(n)= 10.0 h(n)=73.0
+ g(n)= 12.0 h(n)=72.0
+ g(n)= 20.0 h(n)=69.0
+ g(n)= 31.0 h(n)=66.0
+ g(n)= 45.0 h(n)=63.0
+ g(n)= 81.0 h(n)=57.0
+ g(n)= 91.0 h(n)=56.0
+ g(n)= 93.0 h(n)=55.0
+ g(n)= 95.0 h(n)=54.0
+ g(n)= 145.0 h(n)=48.0
+ g(n)= 148.0 h(n)=47.0
+-------------Time: 10s ; Expanded Nodes: 2755 (Avg-Speed 275.0 n/s); Evaluated States: 83187
+ g(n)= 151.0 h(n)=46.0
+ g(n)= 154.0 h(n)=45.0
+ g(n)= 157.0 h(n)=44.0
+ g(n)= 160.0 h(n)=43.0
+ g(n)= 257.0 h(n)=35.0
+ g(n)= 260.0 h(n)=34.0
+-------------Time: 20s ; Expanded Nodes: 10103 (Avg-Speed 505.0 n/s); Evaluated States: 215139
+-------------Time: 31s ; Expanded Nodes: 24356 (Avg-Speed 785.0 n/s); Evaluated States: 362264
+ g(n)= 297.0 h(n)=32.0
+-------------Time: 41s ; Expanded Nodes: 38386 (Avg-Speed 936.0 n/s); Evaluated States: 492191
+-------------Time: 51s ; Expanded Nodes: 55885 (Avg-Speed 1095.0 n/s); Evaluated States: 665592
+-------------Time: 61s ; Expanded Nodes: 71398 (Avg-Speed 1170.0 n/s); Evaluated States: 810148
+ g(n)= 411.0 h(n)=24.0
+-------------Time: 71s ; Expanded Nodes: 87923 (Avg-Speed 1238.0 n/s); Evaluated States: 958605
+ g(n)= 479.0 h(n)=19.0
+ g(n)= 485.0 h(n)=18.0
+-------------Time: 81s ; Expanded Nodes: 117020 (Avg-Speed 1444.0 n/s); Evaluated States: 1139270
+ g(n)= 507.0 h(n)=17.0
+ g(n)= 512.0 h(n)=16.0
+ g(n)= 517.0 h(n)=15.0
+ g(n)= 523.0 h(n)=14.0
+ g(n)= 527.0 h(n)=13.0
+-------------Time: 92s ; Expanded Nodes: 139584 (Avg-Speed 1517.0 n/s); Evaluated States: 1261623
+ g(n)= 539.0 h(n)=12.0
+ g(n)= 543.0 h(n)=11.0
+ g(n)= 625.0 h(n)=2.0
+ g(n)= 638.0 h(n)=1.0
+ g(n)= 650.0 h(n)=0.0
+JUMP for (decrement c0):9
+JUMP for (decrement c1):9
+JUMP for (decrement c2):9
+JUMP for (decrement c3):9
+JUMP for (decrement c4):9
+JUMP for (decrement c5):9
+JUMP for (decrement c6):9
+JUMP for (decrement c7):8
+JUMP for (decrement c8):4
+JUMP for (decrement c9):4
+JUMP for (decrement c4):2
+JUMP for (decrement c5):2
+JUMP for (decrement c6):2
+JUMP for (decrement c4):2
+JUMP for (increment c14):2
+JUMP for (decrement c5):5
+JUMP for (increment c13):2
+JUMP for (decrement c8):5
+JUMP for (increment c27):5
+JUMP for (increment c26):5
+JUMP for (increment c25):5
+JUMP for (increment c24):5
+JUMP for (increment c23):5
+JUMP for (increment c22):5
+JUMP for (increment c21):5
+JUMP for (increment c20):5
+JUMP for (increment c19):5
+JUMP for (increment c18):5
+JUMP for (increment c17):5
+JUMP for (increment c16):5
+JUMP for (increment c15):5
+JUMP for (increment c27):8
+JUMP for (increment c26):8
+JUMP for (increment c25):8
+JUMP for (increment c24):8
+JUMP for (increment c23):8
+JUMP for (increment c22):8
+JUMP for (increment c21):8
+JUMP for (increment c20):8
+JUMP for (increment c19):8
+JUMP for (increment c18):8
+JUMP for (increment c17):7
+JUMP for (increment c16):6
+JUMP for (increment c14):6
+JUMP for (decrement c7):3
+JUMP for (increment c15):6
+JUMP for (increment c27):2
+JUMP for (increment c26):2
+JUMP for (increment c25):2
+JUMP for (increment c24):2
+JUMP for (increment c23):2
+JUMP for (increment c22):2
+JUMP for (increment c21):2
+JUMP for (increment c20):2
+JUMP for (increment c19):2
+JUMP for (increment c13):7
+JUMP for (increment c18):3
+JUMP for (increment c14):2
+JUMP for (decrement c10):2
+JUMP for (increment c27):8
+JUMP for (increment c26):8
+JUMP for (increment c25):8
+JUMP for (increment c24):8
+JUMP for (increment c23):8
+JUMP for (increment c22):8
+JUMP for (increment c21):8
+JUMP for (decrement c9):2
+JUMP for (increment c20):8
+JUMP for (increment c19):8
+JUMP for (increment c17):3
+JUMP for (decrement c6):4
+JUMP for (increment c16):2
+JUMP for (increment c18):5
+JUMP for (increment c12):6
+JUMP for (increment c27):6
+JUMP for (increment c26):6
+JUMP for (increment c25):6
+JUMP for (increment c24):6
+JUMP for (increment c23):6
+JUMP for (increment c22):6
+JUMP for (increment c21):6
+JUMP for (decrement c3):5
+JUMP for (increment c20):3
+JUMP for (decrement c2):3
+JUMP for (increment c27):6
+JUMP for (increment c26):6
+JUMP for (increment c25):6
+JUMP for (increment c24):6
+JUMP for (increment c23):6
+JUMP for (increment c22):3
+JUMP for (increment c27):3
+JUMP for (increment c26):3
+JUMP for (increment c25):3
+JUMP for (increment c24):3
+JUMP for (increment c27):3
+JUMP for (increment c26):3
+JUMP for (increment c25):3
+JUMP for (increment c27):3
+JUMP for (increment c26):3
+JUMP for (increment c27):3
+JUMP for (decrement c0):3
+Problem Solved
+
+Found Plan:
+0.0: (decrement c0)
+1.0: (decrement c0)
+2.0: (decrement c0)
+3.0: (increment c27)
+4.0: (increment c27)
+5.0: (increment c27)
+6.0: (decrement c1)
+7.0: (decrement c0)
+8.0: (decrement c1)
+9.0: (decrement c0)
+10.0: (decrement c1)
+11.0: (decrement c0)
+12.0: (increment c5)
+13.0: (decrement c13)
+14.0: (increment c26)
+15.0: (increment c26)
+16.0: (increment c26)
+17.0: (increment c27)
+18.0: (increment c27)
+19.0: (increment c27)
+20.0: (decrement c5)
+21.0: (decrement c13)
+22.0: (increment c25)
+23.0: (increment c25)
+24.0: (increment c25)
+25.0: (increment c26)
+26.0: (increment c26)
+27.0: (increment c26)
+28.0: (increment c27)
+29.0: (increment c27)
+30.0: (increment c27)
+31.0: (decrement c7)
+32.0: (increment c17)
+33.0: (increment c24)
+34.0: (increment c24)
+35.0: (increment c24)
+36.0: (increment c25)
+37.0: (increment c25)
+38.0: (increment c25)
+39.0: (increment c26)
+40.0: (increment c26)
+41.0: (increment c26)
+42.0: (increment c27)
+43.0: (increment c27)
+44.0: (increment c27)
+45.0: (decrement c4)
+46.0: (increment c17)
+47.0: (decrement c12)
+48.0: (increment c22)
+49.0: (increment c22)
+50.0: (increment c22)
+51.0: (increment c23)
+52.0: (increment c23)
+53.0: (increment c23)
+54.0: (increment c23)
+55.0: (increment c23)
+56.0: (increment c23)
+57.0: (increment c24)
+58.0: (increment c24)
+59.0: (increment c24)
+60.0: (increment c24)
+61.0: (increment c24)
+62.0: (increment c24)
+63.0: (increment c25)
+64.0: (increment c25)
+65.0: (increment c25)
+66.0: (increment c25)
+67.0: (increment c25)
+68.0: (increment c25)
+69.0: (increment c26)
+70.0: (increment c26)
+71.0: (increment c26)
+72.0: (increment c26)
+73.0: (increment c26)
+74.0: (increment c26)
+75.0: (increment c27)
+76.0: (increment c27)
+77.0: (increment c27)
+78.0: (increment c27)
+79.0: (increment c27)
+80.0: (increment c27)
+81.0: (decrement c4)
+82.0: (decrement c9)
+83.0: (decrement c2)
+84.0: (decrement c2)
+85.0: (decrement c2)
+86.0: (increment c20)
+87.0: (increment c20)
+88.0: (increment c20)
+89.0: (decrement c1)
+90.0: (decrement c0)
+91.0: (decrement c1)
+92.0: (decrement c0)
+93.0: (decrement c1)
+94.0: (decrement c0)
+95.0: (decrement c12)
+96.0: (decrement c12)
+97.0: (decrement c3)
+98.0: (decrement c3)
+99.0: (decrement c3)
+100.0: (decrement c3)
+101.0: (decrement c3)
+102.0: (increment c21)
+103.0: (increment c21)
+104.0: (increment c21)
+105.0: (increment c21)
+106.0: (increment c21)
+107.0: (increment c21)
+108.0: (decrement c15)
+109.0: (increment c22)
+110.0: (increment c22)
+111.0: (increment c22)
+112.0: (increment c22)
+113.0: (increment c22)
+114.0: (increment c22)
+115.0: (increment c23)
+116.0: (increment c23)
+117.0: (increment c23)
+118.0: (increment c23)
+119.0: (increment c23)
+120.0: (increment c23)
+121.0: (increment c24)
+122.0: (increment c24)
+123.0: (increment c24)
+124.0: (increment c24)
+125.0: (increment c24)
+126.0: (increment c24)
+127.0: (increment c25)
+128.0: (increment c25)
+129.0: (increment c25)
+130.0: (increment c25)
+131.0: (increment c25)
+132.0: (increment c25)
+133.0: (increment c26)
+134.0: (increment c26)
+135.0: (increment c26)
+136.0: (increment c26)
+137.0: (increment c26)
+138.0: (increment c26)
+139.0: (increment c27)
+140.0: (increment c27)
+141.0: (increment c27)
+142.0: (increment c27)
+143.0: (increment c27)
+144.0: (increment c27)
+145.0: (decrement c2)
+146.0: (decrement c1)
+147.0: (decrement c0)
+148.0: (decrement c2)
+149.0: (decrement c1)
+150.0: (decrement c0)
+151.0: (decrement c2)
+152.0: (decrement c1)
+153.0: (decrement c0)
+154.0: (decrement c2)
+155.0: (decrement c1)
+156.0: (decrement c0)
+157.0: (decrement c2)
+158.0: (decrement c1)
+159.0: (decrement c0)
+160.0: (decrement c4)
+161.0: (increment c12)
+162.0: (increment c12)
+163.0: (increment c12)
+164.0: (increment c12)
+165.0: (increment c12)
+166.0: (increment c12)
+167.0: (increment c18)
+168.0: (increment c18)
+169.0: (increment c18)
+170.0: (increment c18)
+171.0: (increment c18)
+172.0: (increment c11)
+173.0: (increment c16)
+174.0: (increment c16)
+175.0: (decrement c6)
+176.0: (decrement c6)
+177.0: (decrement c6)
+178.0: (decrement c6)
+179.0: (decrement c3)
+180.0: (increment c17)
+181.0: (increment c17)
+182.0: (increment c17)
+183.0: (increment c19)
+184.0: (increment c19)
+185.0: (increment c19)
+186.0: (increment c19)
+187.0: (increment c19)
+188.0: (increment c19)
+189.0: (increment c19)
+190.0: (increment c19)
+191.0: (increment c20)
+192.0: (increment c20)
+193.0: (increment c20)
+194.0: (increment c20)
+195.0: (increment c20)
+196.0: (increment c20)
+197.0: (increment c20)
+198.0: (increment c20)
+199.0: (decrement c9)
+200.0: (decrement c9)
+201.0: (increment c21)
+202.0: (increment c21)
+203.0: (increment c21)
+204.0: (increment c21)
+205.0: (increment c21)
+206.0: (increment c21)
+207.0: (increment c21)
+208.0: (increment c21)
+209.0: (increment c22)
+210.0: (increment c22)
+211.0: (increment c22)
+212.0: (increment c22)
+213.0: (increment c22)
+214.0: (increment c22)
+215.0: (increment c22)
+216.0: (increment c22)
+217.0: (increment c23)
+218.0: (increment c23)
+219.0: (increment c23)
+220.0: (increment c23)
+221.0: (increment c23)
+222.0: (increment c23)
+223.0: (increment c23)
+224.0: (increment c23)
+225.0: (increment c24)
+226.0: (increment c24)
+227.0: (increment c24)
+228.0: (increment c24)
+229.0: (increment c24)
+230.0: (increment c24)
+231.0: (increment c24)
+232.0: (increment c24)
+233.0: (increment c25)
+234.0: (increment c25)
+235.0: (increment c25)
+236.0: (increment c25)
+237.0: (increment c25)
+238.0: (increment c25)
+239.0: (increment c25)
+240.0: (increment c25)
+241.0: (increment c26)
+242.0: (increment c26)
+243.0: (increment c26)
+244.0: (increment c26)
+245.0: (increment c26)
+246.0: (increment c26)
+247.0: (increment c26)
+248.0: (increment c26)
+249.0: (increment c27)
+250.0: (increment c27)
+251.0: (increment c27)
+252.0: (increment c27)
+253.0: (increment c27)
+254.0: (increment c27)
+255.0: (increment c27)
+256.0: (increment c27)
+257.0: (decrement c2)
+258.0: (decrement c1)
+259.0: (decrement c0)
+260.0: (increment c13)
+261.0: (decrement c10)
+262.0: (decrement c10)
+263.0: (increment c14)
+264.0: (increment c14)
+265.0: (increment c18)
+266.0: (increment c18)
+267.0: (increment c18)
+268.0: (increment c13)
+269.0: (increment c13)
+270.0: (increment c13)
+271.0: (increment c13)
+272.0: (increment c13)
+273.0: (increment c13)
+274.0: (increment c13)
+275.0: (decrement c18)
+276.0: (increment c19)
+277.0: (increment c19)
+278.0: (increment c6)
+279.0: (increment c20)
+280.0: (increment c20)
+281.0: (increment c7)
+282.0: (increment c21)
+283.0: (increment c21)
+284.0: (increment c9)
+285.0: (increment c22)
+286.0: (increment c22)
+287.0: (increment c23)
+288.0: (increment c23)
+289.0: (increment c24)
+290.0: (increment c24)
+291.0: (increment c25)
+292.0: (increment c25)
+293.0: (increment c26)
+294.0: (increment c26)
+295.0: (increment c27)
+296.0: (increment c27)
+297.0: (increment c15)
+298.0: (increment c15)
+299.0: (increment c15)
+300.0: (increment c15)
+301.0: (increment c15)
+302.0: (increment c15)
+303.0: (increment c12)
+304.0: (decrement c13)
+305.0: (increment c16)
+306.0: (decrement c7)
+307.0: (decrement c7)
+308.0: (decrement c7)
+309.0: (increment c14)
+310.0: (increment c14)
+311.0: (increment c14)
+312.0: (increment c14)
+313.0: (increment c14)
+314.0: (increment c14)
+315.0: (increment c15)
+316.0: (increment c16)
+317.0: (increment c16)
+318.0: (increment c16)
+319.0: (increment c16)
+320.0: (increment c16)
+321.0: (increment c16)
+322.0: (increment c9)
+323.0: (increment c9)
+324.0: (increment c17)
+325.0: (increment c17)
+326.0: (increment c17)
+327.0: (increment c17)
+328.0: (increment c17)
+329.0: (increment c17)
+330.0: (increment c17)
+331.0: (increment c18)
+332.0: (increment c18)
+333.0: (increment c18)
+334.0: (increment c18)
+335.0: (increment c18)
+336.0: (increment c18)
+337.0: (increment c18)
+338.0: (increment c18)
+339.0: (increment c19)
+340.0: (increment c19)
+341.0: (increment c19)
+342.0: (increment c19)
+343.0: (increment c19)
+344.0: (increment c19)
+345.0: (increment c19)
+346.0: (increment c19)
+347.0: (increment c20)
+348.0: (increment c20)
+349.0: (increment c20)
+350.0: (increment c20)
+351.0: (increment c20)
+352.0: (increment c20)
+353.0: (increment c20)
+354.0: (increment c20)
+355.0: (increment c21)
+356.0: (increment c21)
+357.0: (increment c21)
+358.0: (increment c21)
+359.0: (increment c21)
+360.0: (increment c21)
+361.0: (increment c21)
+362.0: (increment c21)
+363.0: (increment c22)
+364.0: (increment c22)
+365.0: (increment c22)
+366.0: (increment c22)
+367.0: (increment c22)
+368.0: (increment c22)
+369.0: (increment c22)
+370.0: (increment c22)
+371.0: (increment c23)
+372.0: (increment c23)
+373.0: (increment c23)
+374.0: (increment c23)
+375.0: (increment c23)
+376.0: (increment c23)
+377.0: (increment c23)
+378.0: (increment c23)
+379.0: (increment c24)
+380.0: (increment c24)
+381.0: (increment c24)
+382.0: (increment c24)
+383.0: (increment c24)
+384.0: (increment c24)
+385.0: (increment c24)
+386.0: (increment c24)
+387.0: (increment c25)
+388.0: (increment c25)
+389.0: (increment c25)
+390.0: (increment c25)
+391.0: (increment c25)
+392.0: (increment c25)
+393.0: (increment c25)
+394.0: (increment c25)
+395.0: (increment c26)
+396.0: (increment c26)
+397.0: (increment c26)
+398.0: (increment c26)
+399.0: (increment c26)
+400.0: (increment c26)
+401.0: (increment c26)
+402.0: (increment c26)
+403.0: (increment c27)
+404.0: (increment c27)
+405.0: (increment c27)
+406.0: (increment c27)
+407.0: (increment c27)
+408.0: (increment c27)
+409.0: (increment c27)
+410.0: (increment c27)
+411.0: (increment c6)
+412.0: (increment c15)
+413.0: (increment c15)
+414.0: (increment c15)
+415.0: (increment c15)
+416.0: (increment c15)
+417.0: (increment c7)
+418.0: (increment c8)
+419.0: (increment c16)
+420.0: (increment c16)
+421.0: (increment c16)
+422.0: (increment c16)
+423.0: (increment c16)
+424.0: (increment c17)
+425.0: (increment c17)
+426.0: (increment c17)
+427.0: (increment c17)
+428.0: (increment c17)
+429.0: (increment c18)
+430.0: (increment c18)
+431.0: (increment c18)
+432.0: (increment c18)
+433.0: (increment c18)
+434.0: (increment c19)
+435.0: (increment c19)
+436.0: (increment c19)
+437.0: (increment c19)
+438.0: (increment c19)
+439.0: (increment c20)
+440.0: (increment c20)
+441.0: (increment c20)
+442.0: (increment c20)
+443.0: (increment c20)
+444.0: (increment c21)
+445.0: (increment c21)
+446.0: (increment c21)
+447.0: (increment c21)
+448.0: (increment c21)
+449.0: (increment c22)
+450.0: (increment c22)
+451.0: (increment c22)
+452.0: (increment c22)
+453.0: (increment c22)
+454.0: (increment c23)
+455.0: (increment c23)
+456.0: (increment c23)
+457.0: (increment c23)
+458.0: (increment c23)
+459.0: (increment c24)
+460.0: (increment c24)
+461.0: (increment c24)
+462.0: (increment c24)
+463.0: (increment c24)
+464.0: (increment c25)
+465.0: (increment c25)
+466.0: (increment c25)
+467.0: (increment c25)
+468.0: (increment c25)
+469.0: (increment c26)
+470.0: (increment c26)
+471.0: (increment c26)
+472.0: (increment c26)
+473.0: (increment c26)
+474.0: (increment c27)
+475.0: (increment c27)
+476.0: (increment c27)
+477.0: (increment c27)
+478.0: (increment c27)
+479.0: (decrement c5)
+480.0: (decrement c4)
+481.0: (decrement c3)
+482.0: (decrement c2)
+483.0: (decrement c1)
+484.0: (decrement c0)
+485.0: (decrement c9)
+486.0: (decrement c8)
+487.0: (decrement c8)
+488.0: (decrement c8)
+489.0: (decrement c8)
+490.0: (decrement c8)
+491.0: (increment c13)
+492.0: (increment c13)
+493.0: (decrement c6)
+494.0: (decrement c5)
+495.0: (decrement c5)
+496.0: (decrement c5)
+497.0: (decrement c5)
+498.0: (decrement c5)
+499.0: (decrement c4)
+500.0: (increment c14)
+501.0: (increment c14)
+502.0: (increment c7)
+503.0: (decrement c3)
+504.0: (decrement c2)
+505.0: (decrement c1)
+506.0: (decrement c0)
+507.0: (decrement c4)
+508.0: (decrement c3)
+509.0: (decrement c2)
+510.0: (decrement c1)
+511.0: (decrement c0)
+512.0: (decrement c4)
+513.0: (decrement c3)
+514.0: (decrement c2)
+515.0: (decrement c1)
+516.0: (decrement c0)
+517.0: (decrement c4)
+518.0: (decrement c4)
+519.0: (decrement c3)
+520.0: (decrement c2)
+521.0: (decrement c1)
+522.0: (decrement c0)
+523.0: (decrement c3)
+524.0: (decrement c2)
+525.0: (decrement c1)
+526.0: (decrement c0)
+527.0: (decrement c7)
+528.0: (increment c15)
+529.0: (decrement c6)
+530.0: (decrement c6)
+531.0: (decrement c5)
+532.0: (decrement c5)
+533.0: (decrement c4)
+534.0: (decrement c4)
+535.0: (decrement c3)
+536.0: (decrement c2)
+537.0: (decrement c1)
+538.0: (decrement c0)
+539.0: (decrement c3)
+540.0: (decrement c2)
+541.0: (decrement c1)
+542.0: (decrement c0)
+543.0: (decrement c7)
+544.0: (decrement c9)
+545.0: (decrement c9)
+546.0: (decrement c9)
+547.0: (decrement c9)
+548.0: (decrement c8)
+549.0: (decrement c8)
+550.0: (decrement c8)
+551.0: (decrement c8)
+552.0: (decrement c7)
+553.0: (decrement c7)
+554.0: (decrement c7)
+555.0: (decrement c7)
+556.0: (decrement c7)
+557.0: (decrement c7)
+558.0: (decrement c7)
+559.0: (decrement c7)
+560.0: (decrement c6)
+561.0: (decrement c6)
+562.0: (decrement c6)
+563.0: (decrement c6)
+564.0: (decrement c6)
+565.0: (decrement c6)
+566.0: (decrement c6)
+567.0: (decrement c6)
+568.0: (decrement c6)
+569.0: (decrement c5)
+570.0: (decrement c5)
+571.0: (decrement c5)
+572.0: (decrement c5)
+573.0: (decrement c5)
+574.0: (decrement c5)
+575.0: (decrement c5)
+576.0: (decrement c5)
+577.0: (decrement c5)
+578.0: (decrement c14)
+579.0: (decrement c4)
+580.0: (decrement c4)
+581.0: (decrement c4)
+582.0: (decrement c4)
+583.0: (decrement c4)
+584.0: (decrement c4)
+585.0: (decrement c4)
+586.0: (decrement c4)
+587.0: (decrement c4)
+588.0: (decrement c3)
+589.0: (decrement c3)
+590.0: (decrement c3)
+591.0: (decrement c3)
+592.0: (decrement c3)
+593.0: (decrement c3)
+594.0: (decrement c3)
+595.0: (decrement c3)
+596.0: (decrement c3)
+597.0: (decrement c13)
+598.0: (decrement c2)
+599.0: (decrement c2)
+600.0: (decrement c2)
+601.0: (decrement c2)
+602.0: (decrement c2)
+603.0: (decrement c2)
+604.0: (decrement c2)
+605.0: (decrement c2)
+606.0: (decrement c2)
+607.0: (decrement c1)
+608.0: (decrement c1)
+609.0: (decrement c1)
+610.0: (decrement c1)
+611.0: (decrement c1)
+612.0: (decrement c1)
+613.0: (decrement c1)
+614.0: (decrement c1)
+615.0: (decrement c1)
+616.0: (decrement c0)
+617.0: (decrement c0)
+618.0: (decrement c0)
+619.0: (decrement c0)
+620.0: (decrement c0)
+621.0: (decrement c0)
+622.0: (decrement c0)
+623.0: (decrement c0)
+624.0: (decrement c0)
+625.0: (decrement c12)
+626.0: (increment c16)
+627.0: (increment c17)
+628.0: (increment c18)
+629.0: (increment c19)
+630.0: (increment c20)
+631.0: (increment c21)
+632.0: (increment c22)
+633.0: (increment c23)
+634.0: (increment c24)
+635.0: (increment c25)
+636.0: (increment c26)
+637.0: (increment c27)
+638.0: (decrement c11)
+639.0: (decrement c10)
+640.0: (decrement c9)
+641.0: (decrement c8)
+642.0: (decrement c7)
+643.0: (decrement c6)
+644.0: (decrement c5)
+645.0: (decrement c4)
+646.0: (decrement c3)
+647.0: (decrement c2)
+648.0: (decrement c1)
+649.0: (decrement c0)
+
+Plan-Length:650
+Metric (Search):650.0
+Planning Time (msec): 97875
+Heuristic Time (msec): 79950
+Search Time (msec): 96356
+Expanded Nodes:155354
+States Evaluated:1329660
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:0
+Number of Duplicates detected:1924627

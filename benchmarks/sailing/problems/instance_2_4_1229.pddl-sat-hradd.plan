@@ -1,0 +1,1528 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 47
+Aibr Preprocessing
+|F|:4
+|X|:4
+|A|:22
+|P|:0
+|E|:0
+H1 Setup Time (msec): 98
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=1110.0
+ g(n)= 1.0 h(n)=1106.0
+ g(n)= 2.0 h(n)=1102.0
+ g(n)= 3.0 h(n)=1098.0
+ g(n)= 4.0 h(n)=1094.0
+ g(n)= 5.0 h(n)=1090.0
+ g(n)= 6.0 h(n)=1086.0
+ g(n)= 7.0 h(n)=1082.0
+ g(n)= 8.0 h(n)=1078.0
+ g(n)= 9.0 h(n)=1074.0
+ g(n)= 10.0 h(n)=1070.0
+ g(n)= 11.0 h(n)=1066.0
+ g(n)= 12.0 h(n)=1062.0
+ g(n)= 13.0 h(n)=1058.0
+ g(n)= 14.0 h(n)=1054.0
+ g(n)= 15.0 h(n)=1050.0
+ g(n)= 16.0 h(n)=1046.0
+ g(n)= 17.0 h(n)=1042.0
+ g(n)= 18.0 h(n)=1038.0
+ g(n)= 19.0 h(n)=1034.0
+ g(n)= 20.0 h(n)=1030.0
+ g(n)= 21.0 h(n)=1026.0
+ g(n)= 22.0 h(n)=1022.0
+ g(n)= 23.0 h(n)=1018.0
+ g(n)= 24.0 h(n)=1014.0
+ g(n)= 25.0 h(n)=1010.0
+ g(n)= 26.0 h(n)=1006.0
+ g(n)= 27.0 h(n)=1002.0
+ g(n)= 28.0 h(n)=998.0
+ g(n)= 29.0 h(n)=994.0
+ g(n)= 30.0 h(n)=990.0
+ g(n)= 31.0 h(n)=986.0
+ g(n)= 32.0 h(n)=982.0
+ g(n)= 33.0 h(n)=978.0
+ g(n)= 34.0 h(n)=974.0
+ g(n)= 35.0 h(n)=970.0
+ g(n)= 36.0 h(n)=966.0
+ g(n)= 37.0 h(n)=962.0
+ g(n)= 38.0 h(n)=958.0
+ g(n)= 39.0 h(n)=954.0
+ g(n)= 40.0 h(n)=950.0
+ g(n)= 41.0 h(n)=946.0
+ g(n)= 42.0 h(n)=942.0
+ g(n)= 43.0 h(n)=938.0
+ g(n)= 44.0 h(n)=934.0
+ g(n)= 45.0 h(n)=930.0
+ g(n)= 46.0 h(n)=926.0
+ g(n)= 47.0 h(n)=922.0
+ g(n)= 48.0 h(n)=918.0
+ g(n)= 49.0 h(n)=914.0
+ g(n)= 50.0 h(n)=910.0
+ g(n)= 51.0 h(n)=906.0
+ g(n)= 52.0 h(n)=902.0
+ g(n)= 53.0 h(n)=898.0
+ g(n)= 54.0 h(n)=894.0
+ g(n)= 55.0 h(n)=890.0
+ g(n)= 56.0 h(n)=886.0
+ g(n)= 57.0 h(n)=882.0
+ g(n)= 58.0 h(n)=878.3333
+ g(n)= 59.0 h(n)=875.3333
+ g(n)= 60.0 h(n)=873.0
+ g(n)= 61.0 h(n)=871.0
+ g(n)= 62.0 h(n)=869.0
+ g(n)= 63.0 h(n)=867.0
+ g(n)= 64.0 h(n)=865.0
+ g(n)= 65.0 h(n)=863.0
+ g(n)= 66.0 h(n)=861.0
+ g(n)= 67.0 h(n)=859.0
+ g(n)= 68.0 h(n)=857.0
+ g(n)= 69.0 h(n)=855.0
+ g(n)= 70.0 h(n)=853.0
+ g(n)= 71.0 h(n)=851.0
+ g(n)= 72.0 h(n)=849.0
+ g(n)= 73.0 h(n)=847.0
+ g(n)= 74.0 h(n)=845.0
+ g(n)= 75.0 h(n)=843.0
+ g(n)= 76.0 h(n)=841.0
+ g(n)= 77.0 h(n)=839.0
+ g(n)= 78.0 h(n)=837.0
+ g(n)= 79.0 h(n)=835.0
+ g(n)= 80.0 h(n)=833.0
+ g(n)= 81.0 h(n)=831.0
+ g(n)= 82.0 h(n)=829.0
+ g(n)= 83.0 h(n)=827.0
+ g(n)= 84.0 h(n)=825.0
+ g(n)= 85.0 h(n)=823.0
+ g(n)= 86.0 h(n)=821.0
+ g(n)= 87.0 h(n)=819.3333
+ g(n)= 88.0 h(n)=817.8333
+ g(n)= 89.0 h(n)=817.3333
+ g(n)= 90.0 h(n)=816.8333
+ g(n)= 91.0 h(n)=816.3333
+ g(n)= 92.0 h(n)=815.8333
+ g(n)= 93.0 h(n)=815.3333
+ g(n)= 94.0 h(n)=814.8333
+ g(n)= 95.0 h(n)=814.3333
+ g(n)= 96.0 h(n)=813.8333
+ g(n)= 97.0 h(n)=813.3333
+ g(n)= 98.0 h(n)=812.8333
+ g(n)= 99.0 h(n)=812.3333
+ g(n)= 100.0 h(n)=811.8333
+ g(n)= 101.0 h(n)=811.3333
+ g(n)= 102.0 h(n)=810.8333
+ g(n)= 103.0 h(n)=810.3333
+ g(n)= 104.0 h(n)=809.8333
+ g(n)= 105.0 h(n)=809.3333
+ g(n)= 106.0 h(n)=808.8333
+ g(n)= 107.0 h(n)=808.3333
+ g(n)= 108.0 h(n)=807.8333
+ g(n)= 109.0 h(n)=807.3333
+ g(n)= 110.0 h(n)=806.8333
+ g(n)= 111.0 h(n)=806.3333
+ g(n)= 112.0 h(n)=805.8333
+ g(n)= 113.0 h(n)=805.3333
+ g(n)= 114.0 h(n)=804.8333
+ g(n)= 115.0 h(n)=804.3333
+ g(n)= 116.0 h(n)=803.8333
+ g(n)= 117.0 h(n)=803.3333
+ g(n)= 118.0 h(n)=802.8333
+ g(n)= 119.0 h(n)=802.3333
+ g(n)= 120.0 h(n)=801.8333
+ g(n)= 121.0 h(n)=801.3333
+ g(n)= 122.0 h(n)=800.8333
+ g(n)= 123.0 h(n)=800.3333
+ g(n)= 124.0 h(n)=799.8333
+ g(n)= 125.0 h(n)=799.3333
+ g(n)= 126.0 h(n)=798.8333
+ g(n)= 127.0 h(n)=798.3333
+ g(n)= 128.0 h(n)=797.8333
+ g(n)= 129.0 h(n)=797.3333
+ g(n)= 130.0 h(n)=796.8333
+ g(n)= 131.0 h(n)=796.3333
+ g(n)= 132.0 h(n)=795.8333
+ g(n)= 133.0 h(n)=795.3333
+ g(n)= 134.0 h(n)=794.8333
+ g(n)= 135.0 h(n)=794.3333
+ g(n)= 136.0 h(n)=793.8333
+ g(n)= 137.0 h(n)=793.3333
+ g(n)= 138.0 h(n)=792.8333
+ g(n)= 139.0 h(n)=792.3333
+ g(n)= 140.0 h(n)=791.8333
+ g(n)= 141.0 h(n)=791.3333
+ g(n)= 142.0 h(n)=790.8333
+ g(n)= 143.0 h(n)=790.3333
+ g(n)= 144.0 h(n)=789.8333
+ g(n)= 145.0 h(n)=789.3333
+ g(n)= 146.0 h(n)=788.8333
+ g(n)= 147.0 h(n)=788.3333
+ g(n)= 148.0 h(n)=787.8333
+ g(n)= 149.0 h(n)=787.3333
+ g(n)= 150.0 h(n)=786.8333
+ g(n)= 151.0 h(n)=786.3333
+ g(n)= 152.0 h(n)=785.8333
+ g(n)= 153.0 h(n)=785.3333
+ g(n)= 154.0 h(n)=784.8333
+ g(n)= 155.0 h(n)=784.3333
+ g(n)= 156.0 h(n)=783.8333
+ g(n)= 157.0 h(n)=783.3333
+ g(n)= 158.0 h(n)=782.8333
+ g(n)= 159.0 h(n)=782.3333
+ g(n)= 160.0 h(n)=781.8333
+ g(n)= 161.0 h(n)=781.3333
+ g(n)= 162.0 h(n)=780.8333
+ g(n)= 163.0 h(n)=780.3333
+ g(n)= 164.0 h(n)=779.8333
+ g(n)= 165.0 h(n)=779.3333
+ g(n)= 166.0 h(n)=778.8333
+ g(n)= 167.0 h(n)=778.3333
+ g(n)= 168.0 h(n)=777.8333
+ g(n)= 169.0 h(n)=777.3333
+ g(n)= 170.0 h(n)=776.8333
+ g(n)= 171.0 h(n)=776.3333
+ g(n)= 172.0 h(n)=775.8333
+ g(n)= 173.0 h(n)=775.3333
+ g(n)= 174.0 h(n)=774.8333
+ g(n)= 175.0 h(n)=774.3333
+ g(n)= 176.0 h(n)=773.8333
+ g(n)= 177.0 h(n)=773.3333
+ g(n)= 178.0 h(n)=772.8333
+ g(n)= 179.0 h(n)=772.3333
+ g(n)= 180.0 h(n)=771.8333
+ g(n)= 181.0 h(n)=771.3333
+ g(n)= 182.0 h(n)=770.8333
+ g(n)= 183.0 h(n)=770.3333
+ g(n)= 184.0 h(n)=769.8333
+ g(n)= 185.0 h(n)=769.3333
+ g(n)= 186.0 h(n)=768.8333
+ g(n)= 187.0 h(n)=768.3333
+ g(n)= 188.0 h(n)=767.8333
+ g(n)= 189.0 h(n)=767.3333
+ g(n)= 190.0 h(n)=766.8333
+ g(n)= 191.0 h(n)=766.3333
+ g(n)= 192.0 h(n)=765.8333
+ g(n)= 193.0 h(n)=765.3333
+ g(n)= 194.0 h(n)=764.8333
+ g(n)= 195.0 h(n)=764.3333
+ g(n)= 196.0 h(n)=762.6666
+ g(n)= 197.0 h(n)=760.6666
+ g(n)= 198.0 h(n)=758.6666
+ g(n)= 199.0 h(n)=756.6666
+ g(n)= 200.0 h(n)=754.6666
+ g(n)= 201.0 h(n)=752.6666
+ g(n)= 202.0 h(n)=750.6666
+ g(n)= 203.0 h(n)=748.6666
+ g(n)= 204.0 h(n)=746.6666
+ g(n)= 205.0 h(n)=744.6666
+ g(n)= 206.0 h(n)=742.6666
+ g(n)= 207.0 h(n)=740.6666
+ g(n)= 208.0 h(n)=738.6666
+ g(n)= 209.0 h(n)=736.6666
+ g(n)= 210.0 h(n)=734.6666
+ g(n)= 211.0 h(n)=732.6666
+ g(n)= 212.0 h(n)=730.6666
+ g(n)= 213.0 h(n)=728.6666
+ g(n)= 214.0 h(n)=726.6666
+ g(n)= 215.0 h(n)=724.6666
+ g(n)= 216.0 h(n)=722.6666
+ g(n)= 217.0 h(n)=720.6666
+ g(n)= 218.0 h(n)=718.6666
+ g(n)= 219.0 h(n)=716.6666
+ g(n)= 220.0 h(n)=714.6666
+ g(n)= 221.0 h(n)=712.6666
+ g(n)= 222.0 h(n)=710.6666
+ g(n)= 223.0 h(n)=708.6666
+ g(n)= 224.0 h(n)=706.6666
+ g(n)= 225.0 h(n)=704.6666
+ g(n)= 226.0 h(n)=702.6666
+ g(n)= 227.0 h(n)=700.6666
+ g(n)= 228.0 h(n)=698.6666
+ g(n)= 229.0 h(n)=696.6666
+ g(n)= 230.0 h(n)=694.6666
+ g(n)= 231.0 h(n)=692.6666
+ g(n)= 232.0 h(n)=690.6666
+ g(n)= 233.0 h(n)=688.6666
+ g(n)= 234.0 h(n)=686.6666
+ g(n)= 235.0 h(n)=684.6666
+ g(n)= 236.0 h(n)=682.6666
+ g(n)= 237.0 h(n)=680.6666
+ g(n)= 238.0 h(n)=678.6666
+ g(n)= 239.0 h(n)=676.6666
+ g(n)= 240.0 h(n)=674.6666
+ g(n)= 241.0 h(n)=672.6667
+ g(n)= 242.0 h(n)=670.6667
+ g(n)= 243.0 h(n)=668.6667
+ g(n)= 244.0 h(n)=666.6667
+ g(n)= 245.0 h(n)=664.6667
+ g(n)= 246.0 h(n)=662.6667
+ g(n)= 247.0 h(n)=660.6667
+ g(n)= 248.0 h(n)=658.6667
+ g(n)= 249.0 h(n)=656.6667
+ g(n)= 250.0 h(n)=654.6667
+ g(n)= 251.0 h(n)=652.6667
+ g(n)= 252.0 h(n)=650.6667
+ g(n)= 253.0 h(n)=648.6667
+ g(n)= 254.0 h(n)=646.6667
+ g(n)= 255.0 h(n)=644.6667
+ g(n)= 256.0 h(n)=642.6667
+ g(n)= 257.0 h(n)=640.6667
+ g(n)= 258.0 h(n)=638.6667
+ g(n)= 259.0 h(n)=636.6667
+ g(n)= 260.0 h(n)=634.6667
+ g(n)= 261.0 h(n)=632.6667
+ g(n)= 262.0 h(n)=630.6667
+ g(n)= 263.0 h(n)=628.6667
+ g(n)= 264.0 h(n)=626.6667
+ g(n)= 265.0 h(n)=624.6667
+ g(n)= 266.0 h(n)=622.6667
+ g(n)= 267.0 h(n)=620.6667
+ g(n)= 268.0 h(n)=618.6667
+ g(n)= 269.0 h(n)=616.6667
+ g(n)= 270.0 h(n)=614.6667
+ g(n)= 271.0 h(n)=612.6667
+ g(n)= 272.0 h(n)=610.6667
+ g(n)= 273.0 h(n)=608.6667
+ g(n)= 274.0 h(n)=606.6667
+ g(n)= 275.0 h(n)=604.6667
+ g(n)= 276.0 h(n)=602.6667
+ g(n)= 277.0 h(n)=600.6667
+ g(n)= 278.0 h(n)=598.6667
+ g(n)= 279.0 h(n)=596.6667
+ g(n)= 280.0 h(n)=594.6667
+ g(n)= 281.0 h(n)=592.6667
+ g(n)= 282.0 h(n)=590.6667
+ g(n)= 283.0 h(n)=588.6667
+ g(n)= 284.0 h(n)=586.6667
+ g(n)= 285.0 h(n)=584.6667
+ g(n)= 286.0 h(n)=582.6667
+ g(n)= 287.0 h(n)=580.6667
+ g(n)= 288.0 h(n)=578.6667
+ g(n)= 289.0 h(n)=576.6667
+ g(n)= 290.0 h(n)=574.6667
+ g(n)= 291.0 h(n)=572.6667
+ g(n)= 292.0 h(n)=570.6667
+ g(n)= 293.0 h(n)=568.6667
+ g(n)= 294.0 h(n)=566.6667
+ g(n)= 295.0 h(n)=564.6667
+ g(n)= 296.0 h(n)=562.6667
+ g(n)= 297.0 h(n)=560.6667
+ g(n)= 298.0 h(n)=558.6667
+ g(n)= 299.0 h(n)=556.6667
+ g(n)= 300.0 h(n)=554.6667
+ g(n)= 301.0 h(n)=552.6667
+ g(n)= 302.0 h(n)=550.6667
+ g(n)= 303.0 h(n)=548.6667
+ g(n)= 304.0 h(n)=546.6667
+ g(n)= 305.0 h(n)=544.6667
+ g(n)= 306.0 h(n)=542.6667
+ g(n)= 307.0 h(n)=540.6667
+ g(n)= 308.0 h(n)=538.6667
+ g(n)= 309.0 h(n)=536.6667
+ g(n)= 310.0 h(n)=534.6667
+ g(n)= 311.0 h(n)=532.6667
+ g(n)= 312.0 h(n)=530.6667
+ g(n)= 313.0 h(n)=528.6667
+ g(n)= 314.0 h(n)=526.6667
+ g(n)= 315.0 h(n)=524.6667
+ g(n)= 316.0 h(n)=522.6667
+ g(n)= 317.0 h(n)=520.6667
+ g(n)= 318.0 h(n)=518.6667
+ g(n)= 319.0 h(n)=516.6667
+ g(n)= 320.0 h(n)=514.6667
+ g(n)= 321.0 h(n)=512.6667
+ g(n)= 322.0 h(n)=510.6667
+ g(n)= 323.0 h(n)=508.6667
+ g(n)= 324.0 h(n)=506.6667
+ g(n)= 325.0 h(n)=504.6667
+ g(n)= 326.0 h(n)=502.6667
+ g(n)= 327.0 h(n)=500.6667
+ g(n)= 328.0 h(n)=498.6667
+ g(n)= 329.0 h(n)=496.6667
+ g(n)= 330.0 h(n)=494.6667
+ g(n)= 331.0 h(n)=492.6667
+ g(n)= 332.0 h(n)=490.6667
+ g(n)= 333.0 h(n)=488.6667
+ g(n)= 334.0 h(n)=486.6667
+ g(n)= 335.0 h(n)=484.6667
+ g(n)= 336.0 h(n)=482.6667
+ g(n)= 337.0 h(n)=480.6667
+ g(n)= 338.0 h(n)=478.6667
+ g(n)= 339.0 h(n)=476.6667
+ g(n)= 340.0 h(n)=474.6667
+ g(n)= 341.0 h(n)=472.6667
+ g(n)= 342.0 h(n)=470.6667
+ g(n)= 343.0 h(n)=468.6667
+ g(n)= 344.0 h(n)=466.6667
+ g(n)= 345.0 h(n)=464.6667
+ g(n)= 346.0 h(n)=462.6667
+ g(n)= 347.0 h(n)=460.6667
+ g(n)= 348.0 h(n)=458.6667
+ g(n)= 349.0 h(n)=456.6667
+ g(n)= 350.0 h(n)=454.6667
+ g(n)= 351.0 h(n)=453.00003
+ g(n)= 352.0 h(n)=452.1667
+ g(n)= 353.0 h(n)=451.1667
+ g(n)= 354.0 h(n)=450.6667
+ g(n)= 355.0 h(n)=450.1667
+ g(n)= 356.0 h(n)=449.6667
+ g(n)= 357.0 h(n)=449.1667
+ g(n)= 358.0 h(n)=448.6667
+ g(n)= 359.0 h(n)=448.1667
+ g(n)= 360.0 h(n)=447.6667
+ g(n)= 361.0 h(n)=447.1667
+ g(n)= 362.0 h(n)=446.6667
+ g(n)= 363.0 h(n)=446.1667
+ g(n)= 364.0 h(n)=445.6667
+ g(n)= 365.0 h(n)=445.1667
+ g(n)= 366.0 h(n)=444.6667
+ g(n)= 367.0 h(n)=444.1667
+ g(n)= 368.0 h(n)=443.6667
+ g(n)= 369.0 h(n)=443.1667
+ g(n)= 370.0 h(n)=442.6667
+ g(n)= 371.0 h(n)=442.1667
+ g(n)= 372.0 h(n)=441.6667
+ g(n)= 373.0 h(n)=441.1667
+ g(n)= 374.0 h(n)=440.6667
+ g(n)= 375.0 h(n)=440.1667
+ g(n)= 376.0 h(n)=439.6667
+ g(n)= 377.0 h(n)=439.1667
+ g(n)= 378.0 h(n)=438.6667
+ g(n)= 379.0 h(n)=438.1667
+ g(n)= 380.0 h(n)=437.6667
+ g(n)= 381.0 h(n)=437.1667
+ g(n)= 382.0 h(n)=436.6667
+ g(n)= 383.0 h(n)=436.1667
+ g(n)= 384.0 h(n)=435.6667
+ g(n)= 385.0 h(n)=435.1667
+ g(n)= 386.0 h(n)=434.6667
+ g(n)= 387.0 h(n)=434.1667
+ g(n)= 388.0 h(n)=433.6667
+ g(n)= 389.0 h(n)=433.1667
+ g(n)= 390.0 h(n)=432.6667
+ g(n)= 391.0 h(n)=432.1667
+ g(n)= 392.0 h(n)=431.6667
+ g(n)= 393.0 h(n)=431.1667
+ g(n)= 394.0 h(n)=430.6667
+ g(n)= 395.0 h(n)=430.1667
+ g(n)= 396.0 h(n)=429.6667
+ g(n)= 397.0 h(n)=429.1667
+ g(n)= 398.0 h(n)=428.6667
+ g(n)= 399.0 h(n)=428.1667
+ g(n)= 400.0 h(n)=427.6667
+ g(n)= 401.0 h(n)=427.1667
+ g(n)= 402.0 h(n)=426.6667
+ g(n)= 403.0 h(n)=426.1667
+ g(n)= 404.0 h(n)=425.6667
+ g(n)= 405.0 h(n)=425.1667
+ g(n)= 406.0 h(n)=424.6667
+ g(n)= 407.0 h(n)=424.1667
+ g(n)= 408.0 h(n)=423.6667
+ g(n)= 409.0 h(n)=423.1667
+ g(n)= 410.0 h(n)=422.6667
+ g(n)= 411.0 h(n)=422.1667
+ g(n)= 412.0 h(n)=421.6667
+ g(n)= 413.0 h(n)=421.1667
+ g(n)= 414.0 h(n)=420.6667
+ g(n)= 415.0 h(n)=420.1667
+ g(n)= 416.0 h(n)=419.6667
+ g(n)= 417.0 h(n)=419.1667
+ g(n)= 418.0 h(n)=418.6667
+ g(n)= 419.0 h(n)=418.1667
+ g(n)= 420.0 h(n)=417.6667
+ g(n)= 421.0 h(n)=417.1667
+ g(n)= 422.0 h(n)=416.6667
+ g(n)= 423.0 h(n)=416.1667
+ g(n)= 424.0 h(n)=415.6667
+ g(n)= 425.0 h(n)=415.1667
+ g(n)= 426.0 h(n)=414.6667
+ g(n)= 427.0 h(n)=414.1667
+ g(n)= 428.0 h(n)=413.6667
+ g(n)= 429.0 h(n)=413.1667
+ g(n)= 430.0 h(n)=412.6667
+ g(n)= 431.0 h(n)=412.1667
+ g(n)= 432.0 h(n)=411.6667
+ g(n)= 433.0 h(n)=411.33334
+ g(n)= 434.0 h(n)=410.33334
+-------------Time: 10s ; Expanded Nodes: 57710 (Avg-Speed 5771.0 n/s); Evaluated States: 466771
+-------------Time: 20s ; Expanded Nodes: 121874 (Avg-Speed 6093.0 n/s); Evaluated States: 981325
+-------------Time: 30s ; Expanded Nodes: 189093 (Avg-Speed 6303.0 n/s); Evaluated States: 1520082
+-------------Time: 40s ; Expanded Nodes: 250725 (Avg-Speed 6268.0 n/s); Evaluated States: 2013899
+-------------Time: 50s ; Expanded Nodes: 318098 (Avg-Speed 6361.0 n/s); Evaluated States: 2553624
+-------------Time: 60s ; Expanded Nodes: 383680 (Avg-Speed 6394.0 n/s); Evaluated States: 3078925
+-------------Time: 70s ; Expanded Nodes: 440388 (Avg-Speed 6291.0 n/s); Evaluated States: 3533083
+-------------Time: 80s ; Expanded Nodes: 506958 (Avg-Speed 6336.0 n/s); Evaluated States: 4066218
+-------------Time: 90s ; Expanded Nodes: 574506 (Avg-Speed 6383.0 n/s); Evaluated States: 4607120
+-------------Time: 100s ; Expanded Nodes: 642775 (Avg-Speed 6427.0 n/s); Evaluated States: 5153802
+-------------Time: 110s ; Expanded Nodes: 710771 (Avg-Speed 6461.0 n/s); Evaluated States: 5698245
+-------------Time: 120s ; Expanded Nodes: 775218 (Avg-Speed 6460.0 n/s); Evaluated States: 6214235
+-------------Time: 130s ; Expanded Nodes: 818254 (Avg-Speed 6294.0 n/s); Evaluated States: 6558810
+-------------Time: 140s ; Expanded Nodes: 889184 (Avg-Speed 6351.0 n/s); Evaluated States: 7126706
+-------------Time: 150s ; Expanded Nodes: 956611 (Avg-Speed 6377.0 n/s); Evaluated States: 7666506
+-------------Time: 160s ; Expanded Nodes: 1024980 (Avg-Speed 6406.0 n/s); Evaluated States: 8213878
+-------------Time: 170s ; Expanded Nodes: 1092977 (Avg-Speed 6429.0 n/s); Evaluated States: 8758232
+-------------Time: 180s ; Expanded Nodes: 1161672 (Avg-Speed 6453.0 n/s); Evaluated States: 9308155
+-------------Time: 190s ; Expanded Nodes: 1230426 (Avg-Speed 6475.0 n/s); Evaluated States: 9858575
+ g(n)= 632.0 h(n)=410.25
+ g(n)= 633.0 h(n)=408.25
+ g(n)= 634.0 h(n)=406.25
+ g(n)= 635.0 h(n)=404.25
+ g(n)= 636.0 h(n)=402.25
+ g(n)= 637.0 h(n)=400.25
+ g(n)= 638.0 h(n)=398.25
+ g(n)= 639.0 h(n)=396.25
+ g(n)= 640.0 h(n)=394.25
+ g(n)= 641.0 h(n)=392.25
+ g(n)= 642.0 h(n)=390.25
+ g(n)= 643.0 h(n)=388.25
+ g(n)= 644.0 h(n)=386.25
+ g(n)= 645.0 h(n)=384.25
+ g(n)= 646.0 h(n)=382.25
+ g(n)= 647.0 h(n)=380.25
+ g(n)= 648.0 h(n)=378.25
+ g(n)= 649.0 h(n)=376.25
+ g(n)= 650.0 h(n)=374.25
+ g(n)= 651.0 h(n)=372.25
+ g(n)= 652.0 h(n)=370.25
+ g(n)= 653.0 h(n)=368.25
+ g(n)= 654.0 h(n)=366.25
+ g(n)= 655.0 h(n)=364.25
+ g(n)= 656.0 h(n)=362.25
+ g(n)= 657.0 h(n)=360.25
+ g(n)= 658.0 h(n)=358.25
+ g(n)= 659.0 h(n)=356.25
+ g(n)= 660.0 h(n)=354.25
+ g(n)= 661.0 h(n)=352.25
+ g(n)= 662.0 h(n)=350.25
+ g(n)= 663.0 h(n)=348.25
+ g(n)= 664.0 h(n)=346.25
+ g(n)= 665.0 h(n)=344.25
+ g(n)= 666.0 h(n)=342.25
+ g(n)= 667.0 h(n)=340.25
+ g(n)= 668.0 h(n)=338.25
+ g(n)= 669.0 h(n)=336.25
+ g(n)= 670.0 h(n)=334.25
+ g(n)= 671.0 h(n)=332.25
+ g(n)= 672.0 h(n)=330.25
+ g(n)= 673.0 h(n)=328.25
+ g(n)= 674.0 h(n)=326.25
+ g(n)= 675.0 h(n)=324.25
+ g(n)= 676.0 h(n)=322.25
+ g(n)= 677.0 h(n)=320.25
+ g(n)= 678.0 h(n)=318.25
+ g(n)= 679.0 h(n)=316.25
+ g(n)= 680.0 h(n)=314.25
+ g(n)= 681.0 h(n)=312.25
+ g(n)= 682.0 h(n)=310.25
+ g(n)= 683.0 h(n)=308.25
+ g(n)= 684.0 h(n)=306.25
+ g(n)= 685.0 h(n)=304.25
+ g(n)= 686.0 h(n)=302.25
+ g(n)= 687.0 h(n)=300.25
+ g(n)= 688.0 h(n)=298.25
+ g(n)= 689.0 h(n)=296.25
+ g(n)= 690.0 h(n)=294.25
+ g(n)= 691.0 h(n)=292.25
+ g(n)= 692.0 h(n)=290.25
+ g(n)= 693.0 h(n)=288.25
+ g(n)= 694.0 h(n)=286.25
+ g(n)= 695.0 h(n)=284.25
+ g(n)= 696.0 h(n)=282.25
+ g(n)= 697.0 h(n)=280.25
+ g(n)= 698.0 h(n)=278.25
+ g(n)= 699.0 h(n)=276.25
+ g(n)= 700.0 h(n)=274.25
+ g(n)= 701.0 h(n)=272.25
+ g(n)= 702.0 h(n)=270.25
+ g(n)= 703.0 h(n)=268.25
+ g(n)= 704.0 h(n)=266.25
+ g(n)= 705.0 h(n)=264.25
+ g(n)= 706.0 h(n)=262.25
+ g(n)= 707.0 h(n)=260.25
+ g(n)= 708.0 h(n)=258.25
+ g(n)= 709.0 h(n)=256.25
+ g(n)= 710.0 h(n)=254.25
+ g(n)= 711.0 h(n)=252.25
+ g(n)= 712.0 h(n)=250.25
+ g(n)= 713.0 h(n)=248.25
+ g(n)= 714.0 h(n)=246.25
+ g(n)= 715.0 h(n)=244.25
+ g(n)= 716.0 h(n)=242.25
+ g(n)= 717.0 h(n)=240.25
+ g(n)= 718.0 h(n)=238.25
+ g(n)= 719.0 h(n)=236.25
+ g(n)= 720.0 h(n)=234.25
+ g(n)= 721.0 h(n)=232.25
+ g(n)= 722.0 h(n)=230.25
+ g(n)= 723.0 h(n)=228.25
+ g(n)= 724.0 h(n)=226.25
+ g(n)= 725.0 h(n)=224.25
+ g(n)= 726.0 h(n)=222.25
+ g(n)= 727.0 h(n)=220.25
+ g(n)= 728.0 h(n)=218.25
+ g(n)= 729.0 h(n)=216.25
+ g(n)= 730.0 h(n)=214.25
+ g(n)= 731.0 h(n)=212.25
+ g(n)= 732.0 h(n)=210.25
+ g(n)= 733.0 h(n)=208.25
+ g(n)= 734.0 h(n)=206.25
+ g(n)= 735.0 h(n)=204.25
+ g(n)= 736.0 h(n)=202.25
+ g(n)= 737.0 h(n)=200.25
+ g(n)= 738.0 h(n)=198.25
+ g(n)= 739.0 h(n)=196.25
+ g(n)= 740.0 h(n)=194.25
+ g(n)= 741.0 h(n)=192.25
+ g(n)= 742.0 h(n)=190.25
+ g(n)= 743.0 h(n)=188.25
+ g(n)= 744.0 h(n)=186.25
+ g(n)= 745.0 h(n)=184.25
+ g(n)= 746.0 h(n)=182.25
+ g(n)= 747.0 h(n)=180.25
+ g(n)= 748.0 h(n)=178.25
+ g(n)= 749.0 h(n)=176.25
+ g(n)= 750.0 h(n)=174.25
+ g(n)= 751.0 h(n)=172.25
+ g(n)= 752.0 h(n)=170.25
+ g(n)= 753.0 h(n)=168.25
+ g(n)= 754.0 h(n)=166.25
+ g(n)= 755.0 h(n)=164.25
+ g(n)= 756.0 h(n)=162.25
+ g(n)= 757.0 h(n)=160.25
+ g(n)= 758.0 h(n)=158.25
+ g(n)= 759.0 h(n)=156.25
+ g(n)= 760.0 h(n)=154.25
+ g(n)= 761.0 h(n)=152.25
+ g(n)= 762.0 h(n)=150.25
+ g(n)= 763.0 h(n)=148.25
+ g(n)= 764.0 h(n)=146.25
+ g(n)= 765.0 h(n)=144.25
+ g(n)= 766.0 h(n)=142.25
+ g(n)= 767.0 h(n)=140.25
+ g(n)= 768.0 h(n)=138.25
+ g(n)= 769.0 h(n)=136.25
+ g(n)= 770.0 h(n)=134.25
+ g(n)= 771.0 h(n)=132.25
+ g(n)= 772.0 h(n)=130.25
+ g(n)= 773.0 h(n)=128.25
+ g(n)= 774.0 h(n)=126.25
+ g(n)= 775.0 h(n)=124.25
+ g(n)= 776.0 h(n)=122.25
+ g(n)= 777.0 h(n)=120.25
+ g(n)= 778.0 h(n)=118.25
+ g(n)= 779.0 h(n)=116.25
+ g(n)= 780.0 h(n)=114.25
+ g(n)= 781.0 h(n)=112.25
+ g(n)= 782.0 h(n)=110.25
+ g(n)= 783.0 h(n)=108.25
+ g(n)= 784.0 h(n)=106.25
+ g(n)= 785.0 h(n)=104.25
+ g(n)= 786.0 h(n)=102.25
+ g(n)= 787.0 h(n)=100.25
+ g(n)= 788.0 h(n)=98.25
+ g(n)= 789.0 h(n)=96.25
+ g(n)= 790.0 h(n)=94.25
+ g(n)= 791.0 h(n)=92.25
+ g(n)= 792.0 h(n)=90.25
+ g(n)= 793.0 h(n)=88.25
+ g(n)= 794.0 h(n)=86.25
+ g(n)= 795.0 h(n)=84.25
+ g(n)= 796.0 h(n)=82.25
+ g(n)= 797.0 h(n)=80.25
+ g(n)= 798.0 h(n)=78.25
+ g(n)= 799.0 h(n)=76.25
+ g(n)= 800.0 h(n)=74.25
+ g(n)= 801.0 h(n)=72.25
+ g(n)= 802.0 h(n)=70.25
+ g(n)= 803.0 h(n)=68.25
+ g(n)= 804.0 h(n)=66.25
+ g(n)= 805.0 h(n)=64.25
+ g(n)= 806.0 h(n)=62.25
+ g(n)= 807.0 h(n)=60.25
+ g(n)= 808.0 h(n)=58.25
+ g(n)= 809.0 h(n)=56.25
+ g(n)= 810.0 h(n)=54.25
+ g(n)= 811.0 h(n)=52.25
+ g(n)= 812.0 h(n)=50.25
+ g(n)= 813.0 h(n)=48.25
+ g(n)= 814.0 h(n)=46.25
+ g(n)= 815.0 h(n)=44.25
+ g(n)= 816.0 h(n)=42.25
+ g(n)= 817.0 h(n)=40.25
+ g(n)= 818.0 h(n)=38.25
+ g(n)= 819.0 h(n)=36.25
+ g(n)= 820.0 h(n)=34.25
+ g(n)= 821.0 h(n)=32.25
+ g(n)= 822.0 h(n)=30.25
+ g(n)= 823.0 h(n)=28.25
+ g(n)= 824.0 h(n)=26.25
+ g(n)= 825.0 h(n)=24.25
+ g(n)= 826.0 h(n)=22.25
+ g(n)= 827.0 h(n)=20.25
+ g(n)= 828.0 h(n)=18.25
+ g(n)= 829.0 h(n)=16.25
+ g(n)= 830.0 h(n)=14.25
+ g(n)= 831.0 h(n)=12.25
+ g(n)= 832.0 h(n)=10.25
+ g(n)= 833.0 h(n)=8.25
+ g(n)= 834.0 h(n)=6.25
+ g(n)= 835.0 h(n)=4.25
+ g(n)= 836.0 h(n)=3.0
+ g(n)= 837.0 h(n)=2.0
+ g(n)= 838.0 h(n)=1.0
+ g(n)= 839.0 h(n)=0.0
+Problem Solved
+
+Found Plan:
+0.0: (go_north_east b1)
+1.0: (go_north_east b1)
+2.0: (go_north_east b1)
+3.0: (go_north_east b1)
+4.0: (go_north_east b1)
+5.0: (go_north_east b1)
+6.0: (go_north_east b1)
+7.0: (go_north_east b1)
+8.0: (go_north_east b1)
+9.0: (go_south_east b0)
+10.0: (go_south_east b0)
+11.0: (go_south_west b0)
+12.0: (go_south_east b0)
+13.0: (go_south_west b0)
+14.0: (go_south_east b0)
+15.0: (go_south_west b0)
+16.0: (go_south_east b0)
+17.0: (go_south_west b0)
+18.0: (go_south_east b0)
+19.0: (go_south_west b0)
+20.0: (go_south_west b0)
+21.0: (go_south_west b0)
+22.0: (go_south_west b0)
+23.0: (go_south_west b0)
+24.0: (go_south_west b0)
+25.0: (go_north_west b1)
+26.0: (go_north_east b1)
+27.0: (go_north_west b1)
+28.0: (go_north_east b1)
+29.0: (go_north_west b1)
+30.0: (go_north_east b1)
+31.0: (go_north_west b1)
+32.0: (go_north_east b1)
+33.0: (go_north_west b1)
+34.0: (go_north_east b1)
+35.0: (go_north_west b1)
+36.0: (go_north_east b1)
+37.0: (go_north_west b1)
+38.0: (go_north_east b1)
+39.0: (go_north_west b1)
+40.0: (go_north_east b1)
+41.0: (go_north_west b1)
+42.0: (go_north_east b1)
+43.0: (go_north_west b1)
+44.0: (go_north_east b1)
+45.0: (go_north_west b1)
+46.0: (go_north_east b1)
+47.0: (go_north_west b1)
+48.0: (go_north_east b1)
+49.0: (go_north_west b1)
+50.0: (go_north_west b1)
+51.0: (go_north_west b1)
+52.0: (go_north_west b1)
+53.0: (go_north_west b1)
+54.0: (go_north_west b1)
+55.0: (go_north_west b1)
+56.0: (go_north_west b1)
+57.0: (go_north_east b1)
+58.0: (go_south_east b0)
+59.0: (go_north_west b1)
+60.0: (go_north_east b1)
+61.0: (go_north_east b1)
+62.0: (go_north_east b1)
+63.0: (go_north_east b1)
+64.0: (go_north_east b1)
+65.0: (go_north_east b1)
+66.0: (go_north_east b1)
+67.0: (go_north_east b1)
+68.0: (go_south_east b0)
+69.0: (go_south_east b0)
+70.0: (go_south_east b0)
+71.0: (go_south_east b0)
+72.0: (go_south_east b0)
+73.0: (go_south_west b0)
+74.0: (go_south_west b0)
+75.0: (go_south_west b0)
+76.0: (go_south_west b0)
+77.0: (go_south_west b0)
+78.0: (go_south_west b0)
+79.0: (go_north_west b1)
+80.0: (go_north_west b1)
+81.0: (go_north_west b1)
+82.0: (go_north_west b1)
+83.0: (go_north_west b1)
+84.0: (go_north_west b1)
+85.0: (go_north_west b1)
+86.0: (go_south_east b0)
+87.0: (go_north_west b1)
+88.0: (go_north_east b1)
+89.0: (go_north_east b1)
+90.0: (go_north_east b1)
+91.0: (go_north_east b1)
+92.0: (go_north_east b1)
+93.0: (go_north_east b1)
+94.0: (go_north_east b1)
+95.0: (go_north_east b1)
+96.0: (go_north_west b1)
+97.0: (go_north_east b1)
+98.0: (go_north_west b1)
+99.0: (go_north_east b1)
+100.0: (go_north_west b1)
+101.0: (go_north_east b1)
+102.0: (go_north_west b1)
+103.0: (go_north_east b1)
+104.0: (go_north_west b1)
+105.0: (go_north_east b1)
+106.0: (go_north_west b1)
+107.0: (go_north_east b1)
+108.0: (go_north_west b1)
+109.0: (go_north_east b1)
+110.0: (go_north_west b1)
+111.0: (go_north_east b1)
+112.0: (go_north_west b1)
+113.0: (go_north_east b1)
+114.0: (go_north_west b1)
+115.0: (go_north_east b1)
+116.0: (go_north_west b1)
+117.0: (go_north_east b1)
+118.0: (go_north_west b1)
+119.0: (go_north_east b1)
+120.0: (go_north_west b1)
+121.0: (go_north_east b1)
+122.0: (go_north_west b1)
+123.0: (go_north_east b1)
+124.0: (go_north_west b1)
+125.0: (go_north_east b1)
+126.0: (go_north_west b1)
+127.0: (go_north_east b1)
+128.0: (go_north_west b1)
+129.0: (go_north_east b1)
+130.0: (go_north_west b1)
+131.0: (go_north_east b1)
+132.0: (go_north_west b1)
+133.0: (go_north_east b1)
+134.0: (go_north_west b1)
+135.0: (go_north_east b1)
+136.0: (go_north_west b1)
+137.0: (go_north_east b1)
+138.0: (go_north_west b1)
+139.0: (go_north_east b1)
+140.0: (go_north_west b1)
+141.0: (go_north_east b1)
+142.0: (go_north_west b1)
+143.0: (go_north_east b1)
+144.0: (go_north_west b1)
+145.0: (go_north_east b1)
+146.0: (go_north_west b1)
+147.0: (go_north_east b1)
+148.0: (go_north_west b1)
+149.0: (go_north_east b1)
+150.0: (go_north_west b1)
+151.0: (go_north_east b1)
+152.0: (go_north_west b1)
+153.0: (go_north_east b1)
+154.0: (go_north_west b1)
+155.0: (go_north_east b1)
+156.0: (go_north_west b1)
+157.0: (go_north_east b1)
+158.0: (go_north_west b1)
+159.0: (go_north_east b1)
+160.0: (go_north_west b1)
+161.0: (go_north_east b1)
+162.0: (go_north_west b1)
+163.0: (go_north_east b1)
+164.0: (go_north_west b1)
+165.0: (go_north_east b1)
+166.0: (go_north_west b1)
+167.0: (go_north_east b1)
+168.0: (go_north_west b1)
+169.0: (go_north_east b1)
+170.0: (go_north_west b1)
+171.0: (go_north_east b1)
+172.0: (go_north_west b1)
+173.0: (go_north_east b1)
+174.0: (go_north_west b1)
+175.0: (go_north_east b1)
+176.0: (go_north_west b1)
+177.0: (go_north_east b1)
+178.0: (go_north_west b1)
+179.0: (go_north_east b1)
+180.0: (go_north_west b1)
+181.0: (go_north_east b1)
+182.0: (go_north_west b1)
+183.0: (go_north_east b1)
+184.0: (go_north_west b1)
+185.0: (go_north_east b1)
+186.0: (go_north_west b1)
+187.0: (go_north_east b1)
+188.0: (go_north_west b1)
+189.0: (go_north_east b1)
+190.0: (go_north_west b1)
+191.0: (go_north_east b1)
+192.0: (go_north_west b1)
+193.0: (go_north_east b1)
+194.0: (go_north_west b1)
+195.0: (go_north_east b1)
+196.0: (go_north_west b1)
+197.0: (go_north_east b1)
+198.0: (go_north_west b1)
+199.0: (go_north_east b1)
+200.0: (go_north_west b1)
+201.0: (go_north_east b1)
+202.0: (go_north_west b1)
+203.0: (go_north_east b1)
+204.0: (go_north_west b1)
+205.0: (go_north_east b1)
+206.0: (go_north_west b1)
+207.0: (go_north_east b1)
+208.0: (go_north_west b1)
+209.0: (go_north_east b1)
+210.0: (go_north_west b1)
+211.0: (go_north_east b1)
+212.0: (go_north_west b1)
+213.0: (go_north_east b1)
+214.0: (go_north_west b1)
+215.0: (go_north_east b1)
+216.0: (go_north_west b1)
+217.0: (go_north_east b1)
+218.0: (go_north_west b1)
+219.0: (go_north_east b1)
+220.0: (go_north_west b1)
+221.0: (go_north_east b1)
+222.0: (go_north_west b1)
+223.0: (go_north_east b1)
+224.0: (go_north_west b1)
+225.0: (go_north_east b1)
+226.0: (go_north_west b1)
+227.0: (go_north_east b1)
+228.0: (go_north_west b1)
+229.0: (go_north_east b1)
+230.0: (go_north_west b1)
+231.0: (go_north_east b1)
+232.0: (go_north_west b1)
+233.0: (go_north_east b1)
+234.0: (go_north_west b1)
+235.0: (go_north_east b1)
+236.0: (go_north_west b1)
+237.0: (go_north_east b1)
+238.0: (go_north_west b1)
+239.0: (go_north_east b1)
+240.0: (go_north_west b1)
+241.0: (go_north_east b1)
+242.0: (go_north_west b1)
+243.0: (go_north_east b1)
+244.0: (go_north_west b1)
+245.0: (go_north_east b1)
+246.0: (go_north_west b1)
+247.0: (go_north_east b1)
+248.0: (go_north_west b1)
+249.0: (go_north_east b1)
+250.0: (go_north_west b1)
+251.0: (go_north_east b1)
+252.0: (go_north_west b1)
+253.0: (go_north_east b1)
+254.0: (go_north_west b1)
+255.0: (go_north_east b1)
+256.0: (go_north_west b1)
+257.0: (go_north_east b1)
+258.0: (go_north_west b1)
+259.0: (go_north_east b1)
+260.0: (go_north_west b1)
+261.0: (go_north_east b1)
+262.0: (go_north_west b1)
+263.0: (go_north_east b1)
+264.0: (go_north_west b1)
+265.0: (go_north_east b1)
+266.0: (go_north_west b1)
+267.0: (go_north_east b1)
+268.0: (go_north_west b1)
+269.0: (go_north_east b1)
+270.0: (go_north_west b1)
+271.0: (go_north_east b1)
+272.0: (go_north_west b1)
+273.0: (go_north_east b1)
+274.0: (go_north_west b1)
+275.0: (go_north_east b1)
+276.0: (go_north_west b1)
+277.0: (go_north_east b1)
+278.0: (go_north_west b1)
+279.0: (go_north_east b1)
+280.0: (go_north_west b1)
+281.0: (go_north_east b1)
+282.0: (go_north_west b1)
+283.0: (go_north_east b1)
+284.0: (go_north_west b1)
+285.0: (go_north_east b1)
+286.0: (go_north_west b1)
+287.0: (go_north_east b1)
+288.0: (go_north_west b1)
+289.0: (go_north_east b1)
+290.0: (go_north_west b1)
+291.0: (go_north_east b1)
+292.0: (go_north_west b1)
+293.0: (go_north_east b1)
+294.0: (go_north_west b1)
+295.0: (go_north_east b1)
+296.0: (go_north_west b1)
+297.0: (go_north_east b1)
+298.0: (go_north_west b1)
+299.0: (go_north_east b1)
+300.0: (go_north_west b1)
+301.0: (go_north_east b1)
+302.0: (go_north_west b1)
+303.0: (go_north_east b1)
+304.0: (go_north_west b1)
+305.0: (go_north_east b1)
+306.0: (go_north_west b1)
+307.0: (go_north_east b1)
+308.0: (go_north_west b1)
+309.0: (go_north_east b1)
+310.0: (go_north_west b1)
+311.0: (go_north_east b1)
+312.0: (go_north_west b1)
+313.0: (go_north_east b1)
+314.0: (go_north_west b1)
+315.0: (go_north_east b1)
+316.0: (go_north_west b1)
+317.0: (go_north_east b1)
+318.0: (go_north_west b1)
+319.0: (go_north_east b1)
+320.0: (go_north_west b1)
+321.0: (go_north_east b1)
+322.0: (go_north_west b1)
+323.0: (go_north_east b1)
+324.0: (go_north_west b1)
+325.0: (go_north_east b1)
+326.0: (go_north_west b1)
+327.0: (go_north_east b1)
+328.0: (go_north_west b1)
+329.0: (go_north_east b1)
+330.0: (go_north_west b1)
+331.0: (go_north_east b1)
+332.0: (go_north_west b1)
+333.0: (go_north_east b1)
+334.0: (go_north_west b1)
+335.0: (go_north_east b1)
+336.0: (go_north_west b1)
+337.0: (go_north_east b1)
+338.0: (go_north_west b1)
+339.0: (go_north_east b1)
+340.0: (go_north_west b1)
+341.0: (go_north_east b1)
+342.0: (go_north_west b1)
+343.0: (go_north_west b1)
+344.0: (go_north_west b1)
+345.0: (go_north_west b1)
+346.0: (go_north_west b1)
+347.0: (go_north_west b1)
+348.0: (go_north_west b1)
+349.0: (go_north_west b1)
+350.0: (go_north_east b1)
+351.0: (go_north_east b0)
+352.0: (save_person b0 p1)
+353.0: (go_north_east b0)
+354.0: (go_north_east b0)
+355.0: (go_north_east b0)
+356.0: (go_north_east b0)
+357.0: (go_north_east b0)
+358.0: (go_north_east b0)
+359.0: (go_north_east b0)
+360.0: (go_north_east b0)
+361.0: (go_north_west b0)
+362.0: (go_north_east b0)
+363.0: (go_north_west b0)
+364.0: (go_north_east b0)
+365.0: (go_north_west b0)
+366.0: (go_north_east b0)
+367.0: (go_north_west b0)
+368.0: (go_north_east b0)
+369.0: (go_north_west b0)
+370.0: (go_north_east b0)
+371.0: (go_north_west b0)
+372.0: (go_north_east b0)
+373.0: (go_north_west b0)
+374.0: (go_north_east b0)
+375.0: (go_north_west b0)
+376.0: (go_north_east b0)
+377.0: (go_north_west b0)
+378.0: (go_north_east b0)
+379.0: (go_north_west b0)
+380.0: (go_north_east b0)
+381.0: (go_north_west b0)
+382.0: (go_north_east b0)
+383.0: (go_north_west b0)
+384.0: (go_north_east b0)
+385.0: (go_north_west b0)
+386.0: (go_north_east b0)
+387.0: (go_north_west b0)
+388.0: (go_north_east b0)
+389.0: (go_north_west b0)
+390.0: (go_north_east b0)
+391.0: (go_north_west b0)
+392.0: (go_north_east b0)
+393.0: (go_north_west b0)
+394.0: (go_north_east b0)
+395.0: (go_north_west b0)
+396.0: (go_north_east b0)
+397.0: (go_north_west b0)
+398.0: (go_north_east b0)
+399.0: (go_north_west b0)
+400.0: (go_north_east b0)
+401.0: (go_north_west b0)
+402.0: (go_north_east b0)
+403.0: (go_north_west b0)
+404.0: (go_north_east b0)
+405.0: (go_north_west b0)
+406.0: (go_north_east b0)
+407.0: (go_north_west b0)
+408.0: (go_north_east b0)
+409.0: (go_north_west b0)
+410.0: (go_north_east b0)
+411.0: (go_north_west b0)
+412.0: (go_north_east b0)
+413.0: (go_north_west b0)
+414.0: (go_north_east b0)
+415.0: (go_north_west b0)
+416.0: (go_north_east b0)
+417.0: (go_north_west b0)
+418.0: (go_north_east b0)
+419.0: (go_north_west b0)
+420.0: (go_north_east b0)
+421.0: (go_north_west b0)
+422.0: (go_north_east b0)
+423.0: (go_north_west b0)
+424.0: (go_north_west b0)
+425.0: (go_north_west b0)
+426.0: (go_north_west b0)
+427.0: (go_north_west b0)
+428.0: (go_north_west b0)
+429.0: (go_north_west b0)
+430.0: (go_north_west b0)
+431.0: (go_north_west b0)
+432.0: (go_north_west b1)
+433.0: (save_person b1 p3)
+434.0: (go_south b1)
+435.0: (go_south b1)
+436.0: (go_south b1)
+437.0: (go_south b1)
+438.0: (go_south b1)
+439.0: (go_south b1)
+440.0: (go_south b1)
+441.0: (go_south b1)
+442.0: (go_south b1)
+443.0: (go_south b1)
+444.0: (go_south b1)
+445.0: (go_south b1)
+446.0: (go_south b1)
+447.0: (go_south b1)
+448.0: (go_south b1)
+449.0: (go_south b1)
+450.0: (go_south b1)
+451.0: (go_south b1)
+452.0: (go_south b1)
+453.0: (go_south b1)
+454.0: (go_south b1)
+455.0: (go_south b1)
+456.0: (go_south b1)
+457.0: (go_south b1)
+458.0: (go_south b1)
+459.0: (go_south b1)
+460.0: (go_south b1)
+461.0: (go_south b1)
+462.0: (go_south b1)
+463.0: (go_south b1)
+464.0: (go_south b1)
+465.0: (go_south b1)
+466.0: (go_south b1)
+467.0: (go_south b1)
+468.0: (go_south b1)
+469.0: (go_south b1)
+470.0: (go_south b1)
+471.0: (go_south b1)
+472.0: (go_south b1)
+473.0: (go_south b1)
+474.0: (go_south b1)
+475.0: (go_south b1)
+476.0: (go_south b1)
+477.0: (go_south b1)
+478.0: (go_south b1)
+479.0: (go_south b1)
+480.0: (go_south b1)
+481.0: (go_south b1)
+482.0: (go_south b1)
+483.0: (go_south b1)
+484.0: (go_south b1)
+485.0: (go_south b1)
+486.0: (go_south b1)
+487.0: (go_south b1)
+488.0: (go_south b1)
+489.0: (go_south b1)
+490.0: (go_south b1)
+491.0: (go_south b1)
+492.0: (go_south b1)
+493.0: (go_south b1)
+494.0: (go_south b1)
+495.0: (go_south b1)
+496.0: (go_south b1)
+497.0: (go_south b1)
+498.0: (go_south b1)
+499.0: (go_south b1)
+500.0: (go_south b1)
+501.0: (go_south b1)
+502.0: (go_south b1)
+503.0: (go_south b1)
+504.0: (go_south b1)
+505.0: (go_south b1)
+506.0: (go_south b1)
+507.0: (go_south b1)
+508.0: (go_south b1)
+509.0: (go_south b1)
+510.0: (go_south b1)
+511.0: (go_south b1)
+512.0: (go_south b1)
+513.0: (go_south b1)
+514.0: (go_south b1)
+515.0: (go_south b1)
+516.0: (go_south b1)
+517.0: (go_south b1)
+518.0: (go_south b1)
+519.0: (go_south b1)
+520.0: (go_south b1)
+521.0: (go_south_west b1)
+522.0: (go_south_west b1)
+523.0: (go_south_west b1)
+524.0: (go_south_west b1)
+525.0: (go_south_west b1)
+526.0: (go_south_west b1)
+527.0: (go_south_west b1)
+528.0: (go_south_west b1)
+529.0: (go_south_west b1)
+530.0: (go_south_west b1)
+531.0: (go_south_west b1)
+532.0: (go_south b1)
+533.0: (go_south b1)
+534.0: (go_south b1)
+535.0: (go_south b1)
+536.0: (go_south b1)
+537.0: (go_south b1)
+538.0: (go_south b1)
+539.0: (go_south b1)
+540.0: (go_south b1)
+541.0: (go_south b1)
+542.0: (go_south b1)
+543.0: (go_south b1)
+544.0: (go_south b1)
+545.0: (go_south b1)
+546.0: (go_south b1)
+547.0: (go_south b1)
+548.0: (go_south b1)
+549.0: (go_south b1)
+550.0: (go_south b1)
+551.0: (go_south b1)
+552.0: (go_south b1)
+553.0: (go_south b1)
+554.0: (go_south b1)
+555.0: (go_south b1)
+556.0: (go_south b1)
+557.0: (go_south b1)
+558.0: (go_south b1)
+559.0: (go_south b1)
+560.0: (go_south b1)
+561.0: (go_south b1)
+562.0: (go_south b1)
+563.0: (go_south b1)
+564.0: (go_south b1)
+565.0: (go_south b1)
+566.0: (go_south b1)
+567.0: (go_south b1)
+568.0: (go_south b1)
+569.0: (go_south b1)
+570.0: (go_south b1)
+571.0: (go_south b1)
+572.0: (go_south b1)
+573.0: (go_south b1)
+574.0: (go_south b1)
+575.0: (go_south b1)
+576.0: (go_south b1)
+577.0: (go_south b1)
+578.0: (go_south b1)
+579.0: (go_south b1)
+580.0: (go_south b1)
+581.0: (go_south b1)
+582.0: (go_south b1)
+583.0: (go_south b1)
+584.0: (go_south b1)
+585.0: (go_south b1)
+586.0: (go_south b1)
+587.0: (go_south b1)
+588.0: (go_south b1)
+589.0: (go_south b1)
+590.0: (go_south b1)
+591.0: (go_south b1)
+592.0: (go_south b1)
+593.0: (go_south b1)
+594.0: (go_south b1)
+595.0: (go_south b1)
+596.0: (go_south b1)
+597.0: (go_south b1)
+598.0: (go_south b1)
+599.0: (go_south b1)
+600.0: (go_south b1)
+601.0: (go_south b1)
+602.0: (go_south b1)
+603.0: (go_south b1)
+604.0: (go_south b1)
+605.0: (go_south b1)
+606.0: (go_south b1)
+607.0: (go_south b1)
+608.0: (go_south b1)
+609.0: (go_south b1)
+610.0: (go_south b1)
+611.0: (go_south b1)
+612.0: (go_south b1)
+613.0: (go_south b1)
+614.0: (go_south b1)
+615.0: (go_south b1)
+616.0: (go_south b1)
+617.0: (go_south b1)
+618.0: (go_south b1)
+619.0: (go_south b1)
+620.0: (go_south b1)
+621.0: (go_south b1)
+622.0: (go_south b1)
+623.0: (go_south_east b1)
+624.0: (go_south_east b1)
+625.0: (go_south_east b1)
+626.0: (go_south_east b1)
+627.0: (go_south_east b1)
+628.0: (go_south_east b1)
+629.0: (go_south_east b1)
+630.0: (go_south_east b1)
+631.0: (go_south_east b0)
+632.0: (go_south_east b0)
+633.0: (go_south_east b0)
+634.0: (go_south_east b0)
+635.0: (go_south_east b0)
+636.0: (go_south_east b1)
+637.0: (go_south_west b0)
+638.0: (go_south_east b0)
+639.0: (go_south_west b0)
+640.0: (go_south_east b0)
+641.0: (go_south_west b0)
+642.0: (go_south_east b0)
+643.0: (go_south_west b0)
+644.0: (go_south_east b0)
+645.0: (go_south_west b0)
+646.0: (go_south_east b0)
+647.0: (go_south_west b0)
+648.0: (go_south_east b0)
+649.0: (go_south_west b0)
+650.0: (go_south_east b0)
+651.0: (go_south_west b0)
+652.0: (go_south_east b0)
+653.0: (go_south_west b0)
+654.0: (go_south_east b0)
+655.0: (go_south_west b0)
+656.0: (go_south_east b0)
+657.0: (go_south_west b0)
+658.0: (go_south_east b0)
+659.0: (go_south_west b0)
+660.0: (go_south_east b0)
+661.0: (go_south_west b0)
+662.0: (go_south_east b0)
+663.0: (go_south_west b0)
+664.0: (go_south_east b0)
+665.0: (go_south_west b0)
+666.0: (go_south_east b0)
+667.0: (go_south_west b0)
+668.0: (go_south_east b0)
+669.0: (go_south_west b0)
+670.0: (go_south_east b0)
+671.0: (go_south_west b0)
+672.0: (go_south_east b0)
+673.0: (go_south_west b0)
+674.0: (go_south_east b0)
+675.0: (go_south_west b0)
+676.0: (go_south_east b0)
+677.0: (go_south_west b0)
+678.0: (go_south_east b0)
+679.0: (go_south_west b0)
+680.0: (go_south_east b0)
+681.0: (go_south_west b0)
+682.0: (go_south_east b0)
+683.0: (go_south_west b0)
+684.0: (go_south_east b0)
+685.0: (go_south_west b0)
+686.0: (go_south_east b0)
+687.0: (go_south_west b0)
+688.0: (go_south_east b0)
+689.0: (go_south_west b0)
+690.0: (go_south_east b0)
+691.0: (go_south_west b0)
+692.0: (go_south_east b0)
+693.0: (go_south_west b0)
+694.0: (go_south_east b0)
+695.0: (go_south_west b0)
+696.0: (go_south_east b0)
+697.0: (go_south_west b0)
+698.0: (go_south_east b0)
+699.0: (go_south_west b0)
+700.0: (go_south_east b0)
+701.0: (go_south_west b0)
+702.0: (go_south_east b0)
+703.0: (go_south_west b0)
+704.0: (go_south_east b0)
+705.0: (go_south_west b0)
+706.0: (go_south_east b0)
+707.0: (go_south_west b0)
+708.0: (go_south_east b0)
+709.0: (go_south_west b0)
+710.0: (go_south_east b0)
+711.0: (go_south_west b0)
+712.0: (go_south_east b0)
+713.0: (go_south_west b0)
+714.0: (go_south_east b0)
+715.0: (go_south_west b0)
+716.0: (go_south_east b0)
+717.0: (go_south_west b0)
+718.0: (go_south_east b0)
+719.0: (go_south_west b0)
+720.0: (go_south_east b0)
+721.0: (go_south_west b0)
+722.0: (go_south_east b0)
+723.0: (go_south_west b0)
+724.0: (go_south_east b0)
+725.0: (go_south_west b0)
+726.0: (go_south_east b0)
+727.0: (go_south_west b0)
+728.0: (go_south_east b0)
+729.0: (go_south_west b0)
+730.0: (go_south_east b0)
+731.0: (go_south_west b0)
+732.0: (go_south_east b0)
+733.0: (go_south_west b0)
+734.0: (go_south_east b0)
+735.0: (go_south_west b0)
+736.0: (go_south_east b0)
+737.0: (go_south_west b0)
+738.0: (go_south_east b0)
+739.0: (go_south_west b0)
+740.0: (go_south_east b0)
+741.0: (go_south_west b0)
+742.0: (go_south_east b0)
+743.0: (go_south_west b0)
+744.0: (go_south_east b0)
+745.0: (go_south_west b0)
+746.0: (go_south_east b0)
+747.0: (go_south_west b0)
+748.0: (go_south_east b0)
+749.0: (go_south_west b0)
+750.0: (go_south_east b0)
+751.0: (go_south_west b0)
+752.0: (go_south_east b0)
+753.0: (go_south_west b0)
+754.0: (go_south_east b0)
+755.0: (go_south_west b0)
+756.0: (go_south_east b0)
+757.0: (go_south_west b0)
+758.0: (go_south_east b0)
+759.0: (go_south_west b0)
+760.0: (go_south_east b0)
+761.0: (go_south_west b0)
+762.0: (go_south_east b0)
+763.0: (go_south_west b0)
+764.0: (go_south_east b0)
+765.0: (go_south_west b0)
+766.0: (go_south_east b0)
+767.0: (go_south_west b0)
+768.0: (go_south_east b0)
+769.0: (go_south_west b0)
+770.0: (go_south_east b0)
+771.0: (go_south_west b0)
+772.0: (go_south_east b0)
+773.0: (go_south_west b0)
+774.0: (go_south_east b0)
+775.0: (go_south_west b0)
+776.0: (go_south_east b0)
+777.0: (go_south_west b0)
+778.0: (go_south_east b0)
+779.0: (go_south_west b0)
+780.0: (go_south_east b0)
+781.0: (go_south_west b0)
+782.0: (go_south_east b0)
+783.0: (go_south_west b0)
+784.0: (go_south_east b0)
+785.0: (go_south_west b0)
+786.0: (go_south_east b0)
+787.0: (go_south_west b0)
+788.0: (go_south_east b0)
+789.0: (go_south_west b0)
+790.0: (go_south_east b0)
+791.0: (go_south_west b0)
+792.0: (go_south_east b0)
+793.0: (go_south_west b0)
+794.0: (go_south_east b0)
+795.0: (go_south_west b0)
+796.0: (go_south_east b0)
+797.0: (go_south_west b0)
+798.0: (go_south_east b0)
+799.0: (go_south_west b0)
+800.0: (go_south_east b0)
+801.0: (go_south_west b0)
+802.0: (go_south_east b0)
+803.0: (go_south_west b0)
+804.0: (go_south_east b0)
+805.0: (go_south_west b0)
+806.0: (go_south_east b0)
+807.0: (go_south_west b0)
+808.0: (go_south_east b0)
+809.0: (go_south_west b0)
+810.0: (go_south_east b0)
+811.0: (go_south_west b0)
+812.0: (go_south_east b0)
+813.0: (go_south_west b0)
+814.0: (go_south_east b0)
+815.0: (go_south_west b0)
+816.0: (go_south_east b0)
+817.0: (go_south_west b0)
+818.0: (go_south_east b0)
+819.0: (go_south_west b0)
+820.0: (go_south_east b0)
+821.0: (go_south_west b0)
+822.0: (go_south_east b0)
+823.0: (go_south_west b0)
+824.0: (go_south_east b0)
+825.0: (go_south_west b0)
+826.0: (go_south_east b0)
+827.0: (go_south_west b0)
+828.0: (go_south_east b0)
+829.0: (go_south_west b0)
+830.0: (go_south_west b0)
+831.0: (go_south_west b0)
+832.0: (go_south_west b0)
+833.0: (go_south_west b0)
+834.0: (go_south_west b0)
+835.0: (go_south_east b1)
+836.0: (go_south_east b0)
+837.0: (save_person b0 p0)
+838.0: (save_person b1 p2)
+
+Plan-Length:839
+Metric (Search):839.0
+Planning Time (msec): 197524
+Heuristic Time (msec): 169565
+Search Time (msec): 196376
+Expanded Nodes:1274767
+States Evaluated:10214748
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:0
+Number of Duplicates detected:7632726

@@ -1,0 +1,281 @@
+! ====== ! Warning: Unknown planner configuration. Going with default: gbfs with hadd ! ====== !
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 353
+Aibr Preprocessing
+|F|:67
+|X|:0
+|A|:67
+|P|:0
+|E|:0
+H1 Setup Time (msec): 51
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=186.0
+ g(n)= 1.0 h(n)=182.0
+ g(n)= 2.0 h(n)=178.0
+ g(n)= 3.0 h(n)=174.0
+ g(n)= 4.0 h(n)=170.0
+ g(n)= 5.0 h(n)=166.0
+ g(n)= 6.0 h(n)=162.0
+ g(n)= 7.0 h(n)=158.0
+ g(n)= 8.0 h(n)=154.0
+ g(n)= 9.0 h(n)=150.0
+ g(n)= 10.0 h(n)=146.0
+ g(n)= 11.0 h(n)=142.0
+ g(n)= 12.0 h(n)=138.0
+ g(n)= 13.0 h(n)=134.0
+ g(n)= 14.0 h(n)=130.0
+ g(n)= 15.0 h(n)=126.0
+ g(n)= 16.0 h(n)=122.0
+ g(n)= 17.0 h(n)=118.0
+ g(n)= 18.0 h(n)=114.0
+ g(n)= 19.0 h(n)=110.0
+ g(n)= 20.0 h(n)=106.0
+ g(n)= 21.0 h(n)=102.0
+ g(n)= 22.0 h(n)=98.0
+ g(n)= 23.0 h(n)=94.0
+ g(n)= 24.0 h(n)=90.0
+ g(n)= 25.0 h(n)=86.0
+ g(n)= 26.0 h(n)=82.0
+ g(n)= 27.0 h(n)=78.0
+ g(n)= 28.0 h(n)=74.0
+ g(n)= 29.0 h(n)=70.0
+ g(n)= 30.0 h(n)=66.0
+ g(n)= 31.0 h(n)=62.0
+ g(n)= 32.0 h(n)=58.0
+ g(n)= 33.0 h(n)=54.0
+ g(n)= 34.0 h(n)=50.0
+ g(n)= 35.0 h(n)=46.0
+ g(n)= 36.0 h(n)=42.0
+ g(n)= 37.0 h(n)=38.0
+ g(n)= 38.0 h(n)=34.0
+ g(n)= 39.0 h(n)=30.0
+ g(n)= 40.0 h(n)=26.0
+ g(n)= 41.0 h(n)=25.0
+ g(n)= 50.0 h(n)=24.0
+ g(n)= 59.0 h(n)=23.0
+ g(n)= 68.0 h(n)=22.0
+ g(n)= 69.0 h(n)=21.0
+ g(n)= 70.0 h(n)=20.0
+ g(n)= 79.0 h(n)=19.0
+ g(n)= 88.0 h(n)=18.0
+ g(n)= 97.0 h(n)=17.0
+ g(n)= 98.0 h(n)=16.0
+ g(n)= 99.0 h(n)=15.0
+ g(n)= 108.0 h(n)=14.0
+ g(n)= 117.0 h(n)=13.0
+ g(n)= 126.0 h(n)=12.0
+ g(n)= 127.0 h(n)=11.0
+ g(n)= 128.0 h(n)=10.0
+ g(n)= 137.0 h(n)=9.0
+ g(n)= 146.0 h(n)=8.0
+ g(n)= 155.0 h(n)=7.0
+ g(n)= 156.0 h(n)=6.0
+ g(n)= 157.0 h(n)=5.0
+ g(n)= 166.0 h(n)=4.0
+ g(n)= 175.0 h(n)=3.0
+ g(n)= 184.0 h(n)=2.0
+ g(n)= 185.0 h(n)=1.0
+ g(n)= 186.0 h(n)=0.0
+Problem Solved
+
+Found Plan:
+0.0: (do-week-one lily lifeskills year-three)
+1.0: (do-week-one lily urdu national-five)
+2.0: (do-week-one lily cantonese national-four)
+3.0: (do-week-one lily pc-passport higher)
+4.0: (do-week-one lily comp-sci national-four)
+5.0: (do-week-two lily lifeskills year-three)
+6.0: (do-week-two lily urdu national-five)
+7.0: (do-week-two lily cantonese national-four)
+8.0: (do-week-two lily pc-passport higher)
+9.0: (do-week-two lily comp-sci national-four)
+10.0: (do-week-three lily urdu national-five)
+11.0: (do-week-three lily cantonese national-four)
+12.0: (do-week-three lily lifeskills year-three)
+13.0: (do-week-three lily pc-passport higher)
+14.0: (do-week-three lily comp-sci national-four)
+15.0: (do-week-four lily comp-sci national-four)
+16.0: (do-week-four lily pc-passport higher)
+17.0: (do-week-four lily lifeskills year-three)
+18.0: (do-week-four lily urdu national-five)
+19.0: (do-week-four lily cantonese national-four)
+20.0: (do-week-five lily pc-passport higher)
+21.0: (do-week-five lily comp-sci national-four)
+22.0: (do-week-five lily urdu national-five)
+23.0: (do-week-five lily cantonese national-four)
+24.0: (do-week-five lily lifeskills year-three)
+25.0: (do-week-six lily lifeskills year-three)
+26.0: (do-week-six lily cantonese national-four)
+27.0: (do-week-six lily urdu national-five)
+28.0: (do-week-six lily comp-sci national-four)
+29.0: (do-week-six lily pc-passport higher)
+30.0: (do-week-seven lily lifeskills year-three)
+31.0: (do-week-seven lily cantonese national-four)
+32.0: (do-week-seven lily urdu national-five)
+33.0: (do-week-seven lily pc-passport higher)
+34.0: (do-week-seven lily comp-sci national-four)
+35.0: (do-week-eight lily urdu national-five)
+36.0: (do-week-eight lily cantonese national-four)
+37.0: (do-week-eight lily lifeskills year-three)
+38.0: (do-week-eight lily pc-passport higher)
+39.0: (do-week-eight lily comp-sci national-four)
+40.0: (comms-workshop lily)
+41.0: (take-unit-one lily comp-sci national-four)
+42.0: (do-week-one lily comp-sci national-four)
+43.0: (do-week-two lily comp-sci national-four)
+44.0: (do-week-three lily comp-sci national-four)
+45.0: (do-week-four lily comp-sci national-four)
+46.0: (do-week-five lily comp-sci national-four)
+47.0: (do-week-six lily comp-sci national-four)
+48.0: (do-week-seven lily comp-sci national-four)
+49.0: (do-week-eight lily comp-sci national-four)
+50.0: (take-unit-two lily comp-sci national-four)
+51.0: (do-week-one lily comp-sci national-four)
+52.0: (do-week-two lily comp-sci national-four)
+53.0: (do-week-three lily comp-sci national-four)
+54.0: (do-week-four lily comp-sci national-four)
+55.0: (do-week-five lily comp-sci national-four)
+56.0: (do-week-six lily comp-sci national-four)
+57.0: (do-week-seven lily comp-sci national-four)
+58.0: (do-week-eight lily comp-sci national-four)
+59.0: (take-unit-three lily comp-sci national-four)
+60.0: (do-week-one lily comp-sci national-four)
+61.0: (do-week-two lily comp-sci national-four)
+62.0: (do-week-three lily comp-sci national-four)
+63.0: (do-week-four lily comp-sci national-four)
+64.0: (do-week-five lily comp-sci national-four)
+65.0: (do-week-six lily comp-sci national-four)
+66.0: (do-week-seven lily comp-sci national-four)
+67.0: (do-week-eight lily comp-sci national-four)
+68.0: (take-unit-four lily comp-sci national-four)
+69.0: (finish-course lily comp-sci national-four)
+70.0: (take-unit-one lily pc-passport higher)
+71.0: (do-week-one lily pc-passport higher)
+72.0: (do-week-two lily pc-passport higher)
+73.0: (do-week-three lily pc-passport higher)
+74.0: (do-week-four lily pc-passport higher)
+75.0: (do-week-five lily pc-passport higher)
+76.0: (do-week-six lily pc-passport higher)
+77.0: (do-week-seven lily pc-passport higher)
+78.0: (do-week-eight lily pc-passport higher)
+79.0: (take-unit-two lily pc-passport higher)
+80.0: (do-week-one lily pc-passport higher)
+81.0: (do-week-two lily pc-passport higher)
+82.0: (do-week-three lily pc-passport higher)
+83.0: (do-week-four lily pc-passport higher)
+84.0: (do-week-five lily pc-passport higher)
+85.0: (do-week-six lily pc-passport higher)
+86.0: (do-week-seven lily pc-passport higher)
+87.0: (do-week-eight lily pc-passport higher)
+88.0: (take-unit-three lily pc-passport higher)
+89.0: (do-week-one lily pc-passport higher)
+90.0: (do-week-two lily pc-passport higher)
+91.0: (do-week-three lily pc-passport higher)
+92.0: (do-week-four lily pc-passport higher)
+93.0: (do-week-five lily pc-passport higher)
+94.0: (do-week-six lily pc-passport higher)
+95.0: (do-week-seven lily pc-passport higher)
+96.0: (do-week-eight lily pc-passport higher)
+97.0: (take-unit-four lily pc-passport higher)
+98.0: (finish-course lily pc-passport higher)
+99.0: (take-unit-one lily lifeskills year-three)
+100.0: (do-week-one lily lifeskills year-three)
+101.0: (do-week-two lily lifeskills year-three)
+102.0: (do-week-three lily lifeskills year-three)
+103.0: (do-week-four lily lifeskills year-three)
+104.0: (do-week-five lily lifeskills year-three)
+105.0: (do-week-six lily lifeskills year-three)
+106.0: (do-week-seven lily lifeskills year-three)
+107.0: (do-week-eight lily lifeskills year-three)
+108.0: (take-unit-two lily lifeskills year-three)
+109.0: (do-week-one lily lifeskills year-three)
+110.0: (do-week-two lily lifeskills year-three)
+111.0: (do-week-three lily lifeskills year-three)
+112.0: (do-week-four lily lifeskills year-three)
+113.0: (do-week-five lily lifeskills year-three)
+114.0: (do-week-six lily lifeskills year-three)
+115.0: (do-week-seven lily lifeskills year-three)
+116.0: (do-week-eight lily lifeskills year-three)
+117.0: (take-unit-three lily lifeskills year-three)
+118.0: (do-week-one lily lifeskills year-three)
+119.0: (do-week-two lily lifeskills year-three)
+120.0: (do-week-three lily lifeskills year-three)
+121.0: (do-week-four lily lifeskills year-three)
+122.0: (do-week-five lily lifeskills year-three)
+123.0: (do-week-six lily lifeskills year-three)
+124.0: (do-week-seven lily lifeskills year-three)
+125.0: (do-week-eight lily lifeskills year-three)
+126.0: (take-unit-four lily lifeskills year-three)
+127.0: (finish-course lily lifeskills year-three)
+128.0: (take-unit-one lily urdu national-five)
+129.0: (do-week-one lily urdu national-five)
+130.0: (do-week-two lily urdu national-five)
+131.0: (do-week-three lily urdu national-five)
+132.0: (do-week-four lily urdu national-five)
+133.0: (do-week-five lily urdu national-five)
+134.0: (do-week-six lily urdu national-five)
+135.0: (do-week-seven lily urdu national-five)
+136.0: (do-week-eight lily urdu national-five)
+137.0: (take-unit-two lily urdu national-five)
+138.0: (do-week-one lily urdu national-five)
+139.0: (do-week-two lily urdu national-five)
+140.0: (do-week-three lily urdu national-five)
+141.0: (do-week-four lily urdu national-five)
+142.0: (do-week-five lily urdu national-five)
+143.0: (do-week-six lily urdu national-five)
+144.0: (do-week-seven lily urdu national-five)
+145.0: (do-week-eight lily urdu national-five)
+146.0: (take-unit-three lily urdu national-five)
+147.0: (do-week-one lily urdu national-five)
+148.0: (do-week-two lily urdu national-five)
+149.0: (do-week-three lily urdu national-five)
+150.0: (do-week-four lily urdu national-five)
+151.0: (do-week-five lily urdu national-five)
+152.0: (do-week-six lily urdu national-five)
+153.0: (do-week-seven lily urdu national-five)
+154.0: (do-week-eight lily urdu national-five)
+155.0: (take-unit-four lily urdu national-five)
+156.0: (finish-course lily urdu national-five)
+157.0: (take-unit-one lily cantonese national-four)
+158.0: (do-week-one lily cantonese national-four)
+159.0: (do-week-two lily cantonese national-four)
+160.0: (do-week-three lily cantonese national-four)
+161.0: (do-week-four lily cantonese national-four)
+162.0: (do-week-five lily cantonese national-four)
+163.0: (do-week-six lily cantonese national-four)
+164.0: (do-week-seven lily cantonese national-four)
+165.0: (do-week-eight lily cantonese national-four)
+166.0: (take-unit-two lily cantonese national-four)
+167.0: (do-week-one lily cantonese national-four)
+168.0: (do-week-two lily cantonese national-four)
+169.0: (do-week-three lily cantonese national-four)
+170.0: (do-week-four lily cantonese national-four)
+171.0: (do-week-five lily cantonese national-four)
+172.0: (do-week-six lily cantonese national-four)
+173.0: (do-week-seven lily cantonese national-four)
+174.0: (do-week-eight lily cantonese national-four)
+175.0: (take-unit-three lily cantonese national-four)
+176.0: (do-week-one lily cantonese national-four)
+177.0: (do-week-two lily cantonese national-four)
+178.0: (do-week-three lily cantonese national-four)
+179.0: (do-week-four lily cantonese national-four)
+180.0: (do-week-five lily cantonese national-four)
+181.0: (do-week-six lily cantonese national-four)
+182.0: (do-week-seven lily cantonese national-four)
+183.0: (do-week-eight lily cantonese national-four)
+184.0: (take-unit-four lily cantonese national-four)
+185.0: (finish-course lily cantonese national-four)
+
+Plan-Length:186
+Metric (Search):186.0
+Planning Time (msec): 10710
+Heuristic Time (msec): 5173
+Search Time (msec): 8952
+Expanded Nodes:189066
+States Evaluated:295501
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:0
+Number of Duplicates detected:1560757

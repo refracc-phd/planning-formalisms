@@ -1,0 +1,166 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 91
+Aibr Preprocessing
+|F|:0
+|X|:16
+|A|:32
+|P|:0
+|E|:0
+H1 Setup Time (msec): 23
+Wrong setting for break-ties. Arbitrary tie breaking
+Setting horizon to:NaN
+Helpful Action Pruning Activated
+Running Greedy Best First Search
+h(n = s_0)=15.0
+ g(n)= 1.0 h(n)=14.0
+ g(n)= 91.0 h(n)=2.0
+ g(n)= 106.0 h(n)=1.0
+ g(n)= 120.0 h(n)=0.0
+JUMP for (increment c15):12
+JUMP for (increment c14):12
+JUMP for (increment c13):11
+JUMP for (increment c12):10
+JUMP for (increment c11):9
+JUMP for (increment c10):8
+JUMP for (increment c9):7
+JUMP for (increment c8):6
+JUMP for (increment c7):5
+JUMP for (increment c6):4
+JUMP for (increment c5):3
+JUMP for (increment c4):2
+Problem Solved
+
+Found Plan:
+0.0: (increment c15)
+1.0: (increment c3)
+2.0: (increment c4)
+3.0: (increment c4)
+4.0: (increment c5)
+5.0: (increment c5)
+6.0: (increment c5)
+7.0: (increment c6)
+8.0: (increment c6)
+9.0: (increment c6)
+10.0: (increment c6)
+11.0: (increment c7)
+12.0: (increment c7)
+13.0: (increment c7)
+14.0: (increment c7)
+15.0: (increment c7)
+16.0: (increment c8)
+17.0: (increment c8)
+18.0: (increment c8)
+19.0: (increment c8)
+20.0: (increment c8)
+21.0: (increment c8)
+22.0: (increment c9)
+23.0: (increment c9)
+24.0: (increment c9)
+25.0: (increment c9)
+26.0: (increment c9)
+27.0: (increment c9)
+28.0: (increment c9)
+29.0: (increment c10)
+30.0: (increment c10)
+31.0: (increment c10)
+32.0: (increment c10)
+33.0: (increment c10)
+34.0: (increment c10)
+35.0: (increment c10)
+36.0: (increment c10)
+37.0: (increment c11)
+38.0: (increment c11)
+39.0: (increment c11)
+40.0: (increment c11)
+41.0: (increment c11)
+42.0: (increment c11)
+43.0: (increment c11)
+44.0: (increment c11)
+45.0: (increment c11)
+46.0: (increment c12)
+47.0: (increment c12)
+48.0: (increment c12)
+49.0: (increment c12)
+50.0: (increment c12)
+51.0: (increment c12)
+52.0: (increment c12)
+53.0: (increment c12)
+54.0: (increment c12)
+55.0: (increment c12)
+56.0: (increment c13)
+57.0: (increment c13)
+58.0: (increment c13)
+59.0: (increment c13)
+60.0: (increment c13)
+61.0: (increment c13)
+62.0: (increment c13)
+63.0: (increment c13)
+64.0: (increment c13)
+65.0: (increment c13)
+66.0: (increment c13)
+67.0: (increment c14)
+68.0: (increment c14)
+69.0: (increment c14)
+70.0: (increment c14)
+71.0: (increment c14)
+72.0: (increment c14)
+73.0: (increment c14)
+74.0: (increment c14)
+75.0: (increment c14)
+76.0: (increment c14)
+77.0: (increment c14)
+78.0: (increment c14)
+79.0: (increment c15)
+80.0: (increment c15)
+81.0: (increment c15)
+82.0: (increment c15)
+83.0: (increment c15)
+84.0: (increment c15)
+85.0: (increment c15)
+86.0: (increment c15)
+87.0: (increment c15)
+88.0: (increment c15)
+89.0: (increment c15)
+90.0: (increment c15)
+91.0: (increment c1)
+92.0: (increment c2)
+93.0: (increment c3)
+94.0: (increment c4)
+95.0: (increment c5)
+96.0: (increment c6)
+97.0: (increment c7)
+98.0: (increment c8)
+99.0: (increment c9)
+100.0: (increment c10)
+101.0: (increment c11)
+102.0: (increment c12)
+103.0: (increment c13)
+104.0: (increment c14)
+105.0: (increment c15)
+106.0: (increment c2)
+107.0: (increment c3)
+108.0: (increment c4)
+109.0: (increment c5)
+110.0: (increment c6)
+111.0: (increment c7)
+112.0: (increment c8)
+113.0: (increment c9)
+114.0: (increment c10)
+115.0: (increment c11)
+116.0: (increment c12)
+117.0: (increment c13)
+118.0: (increment c14)
+119.0: (increment c15)
+
+Plan-Length:120
+Metric (Search):120.0
+Planning Time (msec): 1728
+Heuristic Time (msec): 161
+Search Time (msec): 250
+Expanded Nodes:128
+States Evaluated:469
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:0
+Number of Duplicates detected:220

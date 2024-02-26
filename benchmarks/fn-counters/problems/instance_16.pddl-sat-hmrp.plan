@@ -1,0 +1,179 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 26
+Aibr Preprocessing
+|F|:0
+|X|:16
+|A|:32
+|P|:0
+|E|:0
+H1 Setup Time (msec): 32
+Wrong setting for break-ties. Arbitrary tie breaking
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=15.0
+ g(n)= 1.0 h(n)=14.0
+ g(n)= 3.0 h(n)=13.0
+ g(n)= 6.0 h(n)=12.0
+ g(n)= 11.0 h(n)=11.0
+ g(n)= 19.0 h(n)=10.0
+ g(n)= 28.0 h(n)=9.0
+ g(n)= 41.0 h(n)=8.0
+ g(n)= 52.0 h(n)=7.0
+ g(n)= 62.0 h(n)=6.0
+ g(n)= 71.0 h(n)=5.0
+-------------Time: 10s ; Expanded Nodes: 14406 (Avg-Speed 1440.0 n/s); Evaluated States: 281614
+ g(n)= 84.0 h(n)=4.0
+ g(n)= 93.0 h(n)=3.0
+ g(n)= 105.0 h(n)=2.0
+ g(n)= 119.0 h(n)=1.0
+ g(n)= 134.0 h(n)=0.0
+Problem Solved
+
+Found Plan:
+0.0: (increment c15)
+1.0: (increment c15)
+2.0: (increment c14)
+3.0: (increment c15)
+4.0: (increment c13)
+5.0: (increment c14)
+6.0: (increment c11)
+7.0: (increment c12)
+8.0: (increment c13)
+9.0: (increment c14)
+10.0: (increment c15)
+11.0: (increment c15)
+12.0: (increment c4)
+13.0: (increment c5)
+14.0: (increment c6)
+15.0: (increment c1)
+16.0: (increment c12)
+17.0: (increment c13)
+18.0: (increment c14)
+19.0: (increment c15)
+20.0: (increment c8)
+21.0: (increment c10)
+22.0: (increment c11)
+23.0: (increment c7)
+24.0: (increment c7)
+25.0: (increment c12)
+26.0: (increment c13)
+27.0: (increment c14)
+28.0: (increment c8)
+29.0: (increment c5)
+30.0: (increment c6)
+31.0: (increment c7)
+32.0: (increment c15)
+33.0: (increment c14)
+34.0: (increment c2)
+35.0: (increment c2)
+36.0: (increment c13)
+37.0: (increment c12)
+38.0: (increment c11)
+39.0: (increment c9)
+40.0: (increment c10)
+41.0: (increment c15)
+42.0: (increment c15)
+43.0: (increment c6)
+44.0: (increment c7)
+45.0: (decrement c8)
+46.0: (increment c14)
+47.0: (increment c13)
+48.0: (increment c12)
+49.0: (increment c11)
+50.0: (increment c9)
+51.0: (increment c10)
+52.0: (increment c8)
+53.0: (increment c9)
+54.0: (decrement c7)
+55.0: (decrement c7)
+56.0: (decrement c7)
+57.0: (increment c14)
+58.0: (increment c13)
+59.0: (increment c12)
+60.0: (increment c11)
+61.0: (increment c10)
+62.0: (increment c15)
+63.0: (increment c14)
+64.0: (increment c13)
+65.0: (increment c12)
+66.0: (increment c11)
+67.0: (increment c7)
+68.0: (increment c8)
+69.0: (increment c9)
+70.0: (increment c10)
+71.0: (increment c7)
+72.0: (increment c8)
+73.0: (increment c9)
+74.0: (increment c3)
+75.0: (decrement c2)
+76.0: (decrement c1)
+77.0: (decrement c2)
+78.0: (increment c15)
+79.0: (increment c14)
+80.0: (increment c13)
+81.0: (increment c12)
+82.0: (increment c11)
+83.0: (increment c10)
+84.0: (increment c15)
+85.0: (increment c14)
+86.0: (increment c13)
+87.0: (increment c12)
+88.0: (increment c11)
+89.0: (increment c7)
+90.0: (increment c8)
+91.0: (increment c9)
+92.0: (increment c10)
+93.0: (increment c15)
+94.0: (increment c14)
+95.0: (increment c13)
+96.0: (increment c12)
+97.0: (increment c11)
+98.0: (increment c10)
+99.0: (increment c9)
+100.0: (increment c8)
+101.0: (increment c7)
+102.0: (increment c4)
+103.0: (increment c5)
+104.0: (increment c6)
+105.0: (increment c15)
+106.0: (increment c14)
+107.0: (increment c13)
+108.0: (increment c12)
+109.0: (increment c11)
+110.0: (increment c10)
+111.0: (increment c9)
+112.0: (increment c8)
+113.0: (increment c7)
+114.0: (increment c6)
+115.0: (increment c5)
+116.0: (increment c4)
+117.0: (increment c3)
+118.0: (increment c2)
+119.0: (increment c15)
+120.0: (increment c14)
+121.0: (increment c13)
+122.0: (increment c12)
+123.0: (increment c11)
+124.0: (increment c10)
+125.0: (increment c9)
+126.0: (increment c8)
+127.0: (increment c7)
+128.0: (increment c6)
+129.0: (increment c5)
+130.0: (increment c4)
+131.0: (increment c3)
+132.0: (increment c1)
+133.0: (increment c2)
+
+Plan-Length:134
+Metric (Search):134.0
+Planning Time (msec): 19081
+Heuristic Time (msec): 13703
+Search Time (msec): 17469
+Expanded Nodes:25060
+States Evaluated:512067
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:0
+Number of Duplicates detected:234002
