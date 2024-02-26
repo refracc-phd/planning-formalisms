@@ -1,0 +1,2204 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 40
+Aibr Preprocessing
+|F|:62
+|X|:100
+|A|:162
+|P|:0
+|E|:0
+H1 Setup Time (msec): 18
+Wrong setting for break-ties. Arbitrary tie breaking
+Setting horizon to:NaN
+Helpful Action Pruning Activated
+Running Greedy Best First Search
+h(n = s_0)=662.0
+ g(n)= 7.0 h(n)=654.0
+ g(n)= 14.0 h(n)=646.0
+ g(n)= 21.0 h(n)=638.0
+ g(n)= 28.0 h(n)=630.0
+ g(n)= 35.0 h(n)=622.0
+ g(n)= 42.0 h(n)=614.0
+ g(n)= 49.0 h(n)=606.0
+ g(n)= 56.0 h(n)=598.0
+ g(n)= 63.0 h(n)=590.0
+ g(n)= 70.0 h(n)=582.0
+ g(n)= 77.0 h(n)=574.0
+ g(n)= 84.0 h(n)=566.0
+ g(n)= 91.0 h(n)=558.0
+ g(n)= 98.0 h(n)=550.0
+ g(n)= 105.0 h(n)=542.0
+ g(n)= 112.0 h(n)=534.0
+ g(n)= 119.0 h(n)=526.0
+ g(n)= 126.0 h(n)=518.0
+ g(n)= 133.0 h(n)=510.0
+ g(n)= 140.0 h(n)=502.0
+ g(n)= 147.0 h(n)=494.0
+ g(n)= 154.0 h(n)=486.0
+ g(n)= 161.0 h(n)=478.0
+ g(n)= 168.0 h(n)=470.0
+ g(n)= 175.0 h(n)=462.0
+ g(n)= 182.0 h(n)=454.0
+ g(n)= 189.0 h(n)=446.0
+ g(n)= 196.0 h(n)=438.0
+ g(n)= 203.0 h(n)=430.0
+ g(n)= 210.0 h(n)=422.0
+ g(n)= 217.0 h(n)=414.0
+ g(n)= 224.0 h(n)=406.0
+ g(n)= 231.0 h(n)=398.0
+ g(n)= 238.0 h(n)=390.0
+ g(n)= 245.0 h(n)=382.0
+ g(n)= 252.0 h(n)=374.0
+ g(n)= 259.0 h(n)=366.0
+ g(n)= 266.0 h(n)=358.0
+ g(n)= 273.0 h(n)=350.0
+ g(n)= 280.0 h(n)=342.0
+ g(n)= 287.0 h(n)=334.0
+ g(n)= 294.0 h(n)=326.0
+ g(n)= 301.0 h(n)=318.0
+ g(n)= 308.0 h(n)=310.0
+ g(n)= 315.0 h(n)=302.0
+ g(n)= 322.0 h(n)=294.0
+ g(n)= 329.0 h(n)=286.0
+ g(n)= 336.0 h(n)=278.0
+ g(n)= 343.0 h(n)=270.0
+ g(n)= 350.0 h(n)=262.0
+ g(n)= 351.0 h(n)=261.0
+ g(n)= 352.0 h(n)=260.0
+ g(n)= 353.0 h(n)=259.0
+ g(n)= 354.0 h(n)=258.0
+ g(n)= 355.0 h(n)=257.0
+ g(n)= 356.0 h(n)=256.0
+ g(n)= 357.0 h(n)=255.0
+ g(n)= 358.0 h(n)=254.0
+ g(n)= 359.0 h(n)=253.0
+ g(n)= 360.0 h(n)=252.0
+ g(n)= 361.0 h(n)=251.0
+ g(n)= 362.0 h(n)=250.0
+ g(n)= 370.0 h(n)=249.0
+ g(n)= 378.0 h(n)=248.0
+ g(n)= 386.0 h(n)=247.0
+ g(n)= 387.0 h(n)=246.0
+ g(n)= 388.0 h(n)=245.0
+ g(n)= 396.0 h(n)=244.0
+ g(n)= 404.0 h(n)=243.0
+ g(n)= 412.0 h(n)=242.0
+ g(n)= 413.0 h(n)=241.0
+ g(n)= 414.0 h(n)=240.0
+ g(n)= 422.0 h(n)=239.0
+ g(n)= 430.0 h(n)=238.0
+ g(n)= 438.0 h(n)=237.0
+ g(n)= 446.0 h(n)=236.0
+ g(n)= 447.0 h(n)=235.0
+ g(n)= 448.0 h(n)=234.0
+ g(n)= 456.0 h(n)=233.0
+ g(n)= 464.0 h(n)=232.0
+ g(n)= 472.0 h(n)=231.0
+ g(n)= 473.0 h(n)=230.0
+ g(n)= 474.0 h(n)=229.0
+ g(n)= 482.0 h(n)=228.0
+ g(n)= 490.0 h(n)=227.0
+ g(n)= 498.0 h(n)=226.0
+ g(n)= 499.0 h(n)=225.0
+ g(n)= 500.0 h(n)=224.0
+ g(n)= 508.0 h(n)=223.0
+ g(n)= 516.0 h(n)=222.0
+ g(n)= 524.0 h(n)=221.0
+ g(n)= 525.0 h(n)=220.0
+ g(n)= 526.0 h(n)=219.0
+ g(n)= 534.0 h(n)=218.0
+ g(n)= 542.0 h(n)=217.0
+ g(n)= 550.0 h(n)=216.0
+ g(n)= 551.0 h(n)=215.0
+ g(n)= 552.0 h(n)=214.0
+ g(n)= 560.0 h(n)=213.0
+ g(n)= 568.0 h(n)=212.0
+ g(n)= 576.0 h(n)=211.0
+ g(n)= 577.0 h(n)=210.0
+ g(n)= 578.0 h(n)=209.0
+ g(n)= 586.0 h(n)=208.0
+ g(n)= 594.0 h(n)=207.0
+ g(n)= 602.0 h(n)=206.0
+ g(n)= 610.0 h(n)=205.0
+ g(n)= 611.0 h(n)=204.0
+ g(n)= 612.0 h(n)=203.0
+ g(n)= 620.0 h(n)=202.0
+ g(n)= 628.0 h(n)=201.0
+ g(n)= 629.0 h(n)=200.0
+ g(n)= 630.0 h(n)=199.0
+ g(n)= 638.0 h(n)=198.0
+ g(n)= 646.0 h(n)=197.0
+ g(n)= 654.0 h(n)=196.0
+ g(n)= 655.0 h(n)=195.0
+ g(n)= 656.0 h(n)=194.0
+ g(n)= 664.0 h(n)=193.0
+ g(n)= 672.0 h(n)=192.0
+ g(n)= 680.0 h(n)=191.0
+ g(n)= 688.0 h(n)=190.0
+ g(n)= 689.0 h(n)=189.0
+ g(n)= 690.0 h(n)=188.0
+ g(n)= 698.0 h(n)=187.0
+ g(n)= 699.0 h(n)=186.0
+ g(n)= 700.0 h(n)=185.0
+ g(n)= 708.0 h(n)=184.0
+ g(n)= 716.0 h(n)=183.0
+ g(n)= 724.0 h(n)=182.0
+ g(n)= 725.0 h(n)=181.0
+ g(n)= 726.0 h(n)=180.0
+ g(n)= 734.0 h(n)=179.0
+ g(n)= 742.0 h(n)=178.0
+ g(n)= 750.0 h(n)=177.0
+ g(n)= 758.0 h(n)=176.0
+ g(n)= 759.0 h(n)=175.0
+ g(n)= 760.0 h(n)=174.0
+ g(n)= 768.0 h(n)=173.0
+ g(n)= 776.0 h(n)=172.0
+ g(n)= 784.0 h(n)=171.0
+ g(n)= 785.0 h(n)=170.0
+ g(n)= 786.0 h(n)=169.0
+ g(n)= 794.0 h(n)=168.0
+ g(n)= 802.0 h(n)=167.0
+ g(n)= 810.0 h(n)=166.0
+ g(n)= 811.0 h(n)=165.0
+ g(n)= 812.0 h(n)=164.0
+ g(n)= 820.0 h(n)=163.0
+ g(n)= 828.0 h(n)=162.0
+ g(n)= 836.0 h(n)=161.0
+ g(n)= 837.0 h(n)=160.0
+ g(n)= 838.0 h(n)=159.0
+ g(n)= 846.0 h(n)=158.0
+ g(n)= 854.0 h(n)=157.0
+ g(n)= 862.0 h(n)=156.0
+ g(n)= 863.0 h(n)=155.0
+ g(n)= 864.0 h(n)=154.0
+ g(n)= 872.0 h(n)=153.0
+ g(n)= 880.0 h(n)=152.0
+ g(n)= 888.0 h(n)=151.0
+ g(n)= 889.0 h(n)=150.0
+ g(n)= 890.0 h(n)=149.0
+ g(n)= 898.0 h(n)=148.0
+ g(n)= 906.0 h(n)=147.0
+ g(n)= 914.0 h(n)=146.0
+ g(n)= 915.0 h(n)=145.0
+ g(n)= 916.0 h(n)=144.0
+ g(n)= 924.0 h(n)=143.0
+ g(n)= 932.0 h(n)=142.0
+ g(n)= 940.0 h(n)=141.0
+ g(n)= 941.0 h(n)=140.0
+ g(n)= 942.0 h(n)=139.0
+ g(n)= 950.0 h(n)=138.0
+ g(n)= 958.0 h(n)=137.0
+ g(n)= 966.0 h(n)=136.0
+ g(n)= 967.0 h(n)=135.0
+ g(n)= 968.0 h(n)=134.0
+ g(n)= 976.0 h(n)=133.0
+ g(n)= 984.0 h(n)=132.0
+ g(n)= 992.0 h(n)=131.0
+ g(n)= 993.0 h(n)=130.0
+ g(n)= 994.0 h(n)=129.0
+ g(n)= 1002.0 h(n)=128.0
+ g(n)= 1010.0 h(n)=127.0
+ g(n)= 1018.0 h(n)=126.0
+ g(n)= 1019.0 h(n)=125.0
+ g(n)= 1020.0 h(n)=124.0
+ g(n)= 1028.0 h(n)=123.0
+ g(n)= 1036.0 h(n)=122.0
+ g(n)= 1044.0 h(n)=121.0
+ g(n)= 1045.0 h(n)=120.0
+ g(n)= 1046.0 h(n)=119.0
+ g(n)= 1054.0 h(n)=118.0
+ g(n)= 1062.0 h(n)=117.0
+ g(n)= 1070.0 h(n)=116.0
+ g(n)= 1071.0 h(n)=115.0
+ g(n)= 1072.0 h(n)=114.0
+ g(n)= 1080.0 h(n)=113.0
+ g(n)= 1088.0 h(n)=112.0
+ g(n)= 1096.0 h(n)=111.0
+ g(n)= 1097.0 h(n)=110.0
+ g(n)= 1098.0 h(n)=109.0
+ g(n)= 1106.0 h(n)=108.0
+ g(n)= 1114.0 h(n)=107.0
+ g(n)= 1122.0 h(n)=106.0
+ g(n)= 1123.0 h(n)=105.0
+ g(n)= 1124.0 h(n)=104.0
+ g(n)= 1132.0 h(n)=103.0
+ g(n)= 1140.0 h(n)=102.0
+ g(n)= 1148.0 h(n)=101.0
+ g(n)= 1149.0 h(n)=100.0
+ g(n)= 1150.0 h(n)=99.0
+ g(n)= 1158.0 h(n)=98.0
+ g(n)= 1166.0 h(n)=97.0
+ g(n)= 1174.0 h(n)=96.0
+ g(n)= 1175.0 h(n)=95.0
+ g(n)= 1176.0 h(n)=94.0
+ g(n)= 1184.0 h(n)=93.0
+ g(n)= 1192.0 h(n)=92.0
+ g(n)= 1200.0 h(n)=91.0
+ g(n)= 1201.0 h(n)=90.0
+ g(n)= 1202.0 h(n)=89.0
+ g(n)= 1210.0 h(n)=88.0
+ g(n)= 1218.0 h(n)=87.0
+ g(n)= 1226.0 h(n)=86.0
+ g(n)= 1227.0 h(n)=85.0
+ g(n)= 1228.0 h(n)=84.0
+ g(n)= 1236.0 h(n)=83.0
+ g(n)= 1244.0 h(n)=82.0
+ g(n)= 1252.0 h(n)=81.0
+ g(n)= 1253.0 h(n)=80.0
+ g(n)= 1254.0 h(n)=79.0
+ g(n)= 1262.0 h(n)=78.0
+ g(n)= 1270.0 h(n)=77.0
+ g(n)= 1278.0 h(n)=76.0
+ g(n)= 1279.0 h(n)=75.0
+ g(n)= 1280.0 h(n)=74.0
+ g(n)= 1288.0 h(n)=73.0
+ g(n)= 1296.0 h(n)=72.0
+ g(n)= 1304.0 h(n)=71.0
+ g(n)= 1305.0 h(n)=70.0
+ g(n)= 1306.0 h(n)=69.0
+ g(n)= 1314.0 h(n)=68.0
+ g(n)= 1322.0 h(n)=67.0
+ g(n)= 1330.0 h(n)=66.0
+ g(n)= 1331.0 h(n)=65.0
+ g(n)= 1332.0 h(n)=64.0
+ g(n)= 1340.0 h(n)=63.0
+ g(n)= 1348.0 h(n)=62.0
+ g(n)= 1356.0 h(n)=61.0
+ g(n)= 1357.0 h(n)=60.0
+ g(n)= 1358.0 h(n)=59.0
+ g(n)= 1366.0 h(n)=58.0
+ g(n)= 1374.0 h(n)=57.0
+ g(n)= 1382.0 h(n)=56.0
+ g(n)= 1383.0 h(n)=55.0
+ g(n)= 1384.0 h(n)=54.0
+ g(n)= 1392.0 h(n)=53.0
+ g(n)= 1400.0 h(n)=52.0
+ g(n)= 1408.0 h(n)=51.0
+ g(n)= 1409.0 h(n)=50.0
+ g(n)= 1410.0 h(n)=49.0
+ g(n)= 1418.0 h(n)=48.0
+ g(n)= 1426.0 h(n)=47.0
+ g(n)= 1434.0 h(n)=46.0
+ g(n)= 1435.0 h(n)=45.0
+ g(n)= 1436.0 h(n)=44.0
+ g(n)= 1444.0 h(n)=43.0
+ g(n)= 1452.0 h(n)=42.0
+ g(n)= 1460.0 h(n)=41.0
+ g(n)= 1461.0 h(n)=40.0
+ g(n)= 1462.0 h(n)=39.0
+ g(n)= 1470.0 h(n)=38.0
+ g(n)= 1478.0 h(n)=37.0
+ g(n)= 1486.0 h(n)=36.0
+ g(n)= 1487.0 h(n)=35.0
+ g(n)= 1488.0 h(n)=34.0
+ g(n)= 1496.0 h(n)=33.0
+ g(n)= 1504.0 h(n)=32.0
+ g(n)= 1512.0 h(n)=31.0
+ g(n)= 1513.0 h(n)=30.0
+ g(n)= 1514.0 h(n)=29.0
+ g(n)= 1522.0 h(n)=28.0
+ g(n)= 1530.0 h(n)=27.0
+ g(n)= 1538.0 h(n)=26.0
+ g(n)= 1539.0 h(n)=25.0
+ g(n)= 1540.0 h(n)=24.0
+ g(n)= 1548.0 h(n)=23.0
+ g(n)= 1556.0 h(n)=22.0
+ g(n)= 1564.0 h(n)=21.0
+ g(n)= 1565.0 h(n)=20.0
+ g(n)= 1566.0 h(n)=19.0
+ g(n)= 1574.0 h(n)=18.0
+ g(n)= 1582.0 h(n)=17.0
+ g(n)= 1590.0 h(n)=16.0
+ g(n)= 1591.0 h(n)=15.0
+ g(n)= 1592.0 h(n)=14.0
+ g(n)= 1600.0 h(n)=13.0
+ g(n)= 1608.0 h(n)=12.0
+ g(n)= 1616.0 h(n)=11.0
+ g(n)= 1617.0 h(n)=10.0
+ g(n)= 1618.0 h(n)=9.0
+ g(n)= 1626.0 h(n)=8.0
+ g(n)= 1634.0 h(n)=7.0
+ g(n)= 1642.0 h(n)=6.0
+ g(n)= 1643.0 h(n)=5.0
+ g(n)= 1644.0 h(n)=4.0
+ g(n)= 1652.0 h(n)=3.0
+ g(n)= 1660.0 h(n)=2.0
+ g(n)= 1661.0 h(n)=1.0
+ g(n)= 1662.0 h(n)=0.0
+JUMP for (do-week ava music-tech year-one):7
+JUMP for (do-week ava music-tech year-one):7
+JUMP for (do-week grace latin higher):7
+JUMP for (do-week grace latin higher):7
+JUMP for (do-week grace latin higher):7
+JUMP for (do-week grace physics adv-higher):7
+JUMP for (do-week grace physics adv-higher):7
+JUMP for (do-week grace physics adv-higher):7
+JUMP for (do-week grace italian higher):7
+JUMP for (do-week grace italian higher):7
+JUMP for (do-week grace italian higher):7
+JUMP for (do-week grace numeracy year-one):7
+JUMP for (do-week grace numeracy year-one):7
+JUMP for (do-week grace numeracy year-one):7
+JUMP for (do-week grace textiles national-four):7
+JUMP for (do-week grace textiles national-four):7
+JUMP for (do-week grace textiles national-four):7
+JUMP for (do-week leo music-tech year-one):7
+JUMP for (do-week leo music-tech year-one):7
+JUMP for (do-week leo music-tech year-one):7
+JUMP for (do-week leo gaelic adv-higher):7
+JUMP for (do-week leo gaelic adv-higher):7
+JUMP for (do-week leo gaelic adv-higher):7
+JUMP for (do-week leo graph-comm year-two):7
+JUMP for (do-week leo graph-comm year-two):7
+JUMP for (do-week leo graph-comm year-two):7
+JUMP for (do-week leo philosophy national-five):7
+JUMP for (do-week leo philosophy national-five):7
+JUMP for (do-week leo philosophy national-five):7
+JUMP for (do-week leo mandarin national-four):7
+JUMP for (do-week leo mandarin national-four):7
+JUMP for (do-week leo mandarin national-four):7
+JUMP for (do-week travis drama year-two):7
+JUMP for (do-week travis drama year-two):7
+JUMP for (do-week travis drama year-two):7
+JUMP for (do-week travis urdu national-five):7
+JUMP for (do-week travis urdu national-five):7
+JUMP for (do-week travis urdu national-five):7
+JUMP for (do-week travis textiles year-three):7
+JUMP for (do-week travis textiles year-three):7
+JUMP for (do-week travis textiles year-three):7
+JUMP for (do-week travis mandarin higher):7
+JUMP for (do-week travis mandarin higher):7
+JUMP for (do-week travis mandarin higher):7
+JUMP for (do-week travis phys-ed national-four):7
+JUMP for (do-week travis phys-ed national-four):7
+JUMP for (do-week travis phys-ed national-four):7
+JUMP for (do-week oscar history adv-higher):7
+JUMP for (do-week oscar history adv-higher):7
+JUMP for (do-week oscar history adv-higher):7
+JUMP for (do-week oscar numeracy year-one):7
+JUMP for (do-week oscar numeracy year-one):7
+JUMP for (do-week oscar numeracy year-one):7
+JUMP for (do-week oscar english higher):7
+JUMP for (do-week oscar english higher):7
+JUMP for (do-week oscar english higher):7
+JUMP for (do-week oscar pc-passport adv-higher):7
+JUMP for (do-week oscar pc-passport adv-higher):7
+JUMP for (do-week oscar pc-passport adv-higher):7
+JUMP for (do-week oscar phys-ed national-four):7
+JUMP for (do-week oscar phys-ed national-four):7
+JUMP for (do-week oscar phys-ed national-four):7
+JUMP for (do-week sienna practical-woodwork national-five):7
+JUMP for (do-week sienna practical-woodwork national-five):7
+JUMP for (do-week sienna practical-woodwork national-five):7
+JUMP for (do-week sienna admin-it adv-higher):7
+JUMP for (do-week sienna admin-it adv-higher):7
+JUMP for (do-week sienna admin-it adv-higher):7
+JUMP for (do-week sienna pc-passport year-one):7
+JUMP for (do-week sienna pc-passport year-one):7
+JUMP for (do-week sienna pc-passport year-one):7
+JUMP for (do-week sienna admin-it year-one):7
+JUMP for (do-week sienna admin-it year-one):7
+JUMP for (do-week sienna admin-it year-one):7
+JUMP for (do-week sienna mandarin year-two):7
+JUMP for (do-week sienna mandarin year-two):7
+JUMP for (do-week sienna mandarin year-two):7
+JUMP for (do-week finn numeracy national-four):7
+JUMP for (do-week finn numeracy national-four):7
+JUMP for (do-week finn numeracy national-four):7
+JUMP for (do-week finn admin-it higher):7
+JUMP for (do-week finn admin-it higher):7
+JUMP for (do-week finn admin-it higher):7
+JUMP for (do-week finn german adv-higher):7
+JUMP for (do-week finn german adv-higher):7
+JUMP for (do-week finn german adv-higher):7
+JUMP for (do-week finn drama year-three):7
+JUMP for (do-week finn drama year-three):7
+JUMP for (do-week finn drama year-three):7
+JUMP for (do-week finn biology year-one):7
+JUMP for (do-week finn biology year-one):7
+JUMP for (do-week finn biology year-one):7
+JUMP for (do-week caleb german higher):7
+JUMP for (do-week caleb german higher):7
+JUMP for (do-week caleb german higher):7
+JUMP for (do-week caleb design-manufacture higher):7
+JUMP for (do-week caleb design-manufacture higher):7
+JUMP for (do-week caleb design-manufacture higher):7
+JUMP for (do-week caleb english year-two):7
+JUMP for (do-week caleb english year-two):7
+JUMP for (do-week caleb english year-two):7
+JUMP for (do-week caleb urdu higher):7
+JUMP for (do-week caleb urdu higher):7
+JUMP for (do-week caleb urdu higher):7
+JUMP for (do-week caleb pc-passport year-one):7
+JUMP for (do-week caleb pc-passport year-one):7
+JUMP for (do-week ava music-tech year-one):7
+JUMP for (do-week caleb pc-passport year-one):7
+JUMP for (do-week freddie design-manufacture year-one):7
+JUMP for (do-week freddie design-manufacture year-one):7
+JUMP for (do-week freddie design-manufacture year-one):7
+JUMP for (do-week freddie philosophy year-one):7
+JUMP for (do-week ava politics adv-higher):7
+JUMP for (do-week freddie philosophy year-one):7
+JUMP for (do-week ava politics adv-higher):7
+JUMP for (do-week freddie philosophy year-one):7
+JUMP for (do-week freddie numeracy year-two):7
+JUMP for (do-week freddie numeracy year-two):7
+JUMP for (do-week freddie numeracy year-two):7
+JUMP for (do-week freddie modern-studies year-three):7
+JUMP for (do-week freddie modern-studies year-three):7
+JUMP for (do-week freddie modern-studies year-one):7
+JUMP for (do-week freddie modern-studies year-one):7
+JUMP for (do-week freddie modern-studies year-three):7
+JUMP for (do-week freddie modern-studies year-one):7
+JUMP for (do-week ivy numeracy year-one):7
+JUMP for (do-week ivy numeracy year-one):7
+JUMP for (do-week ivy numeracy year-one):7
+JUMP for (do-week ivy chemistry year-two):7
+JUMP for (do-week ivy chemistry year-two):7
+JUMP for (do-week ivy chemistry year-two):7
+JUMP for (do-week ivy design-manufacture year-one):7
+JUMP for (do-week ivy design-manufacture year-one):7
+JUMP for (do-week ivy design-manufacture year-one):7
+JUMP for (do-week ivy urdu year-three):7
+JUMP for (do-week ivy urdu year-three):7
+JUMP for (do-week ivy urdu year-three):7
+JUMP for (do-week ivy lifeskills higher):7
+JUMP for (do-week ivy lifeskills higher):7
+JUMP for (do-week ivy lifeskills higher):7
+JUMP for (do-week ava comp-sci year-one):7
+JUMP for (do-week ava comp-sci year-one):7
+JUMP for (do-week ava politics adv-higher):7
+JUMP for (do-week ava comp-sci year-one):7
+JUMP for (do-week ava graph-comm national-five):7
+JUMP for (do-week ava graph-comm national-five):7
+JUMP for (do-week ava graph-comm national-five):7
+JUMP for (do-week ava latin year-three):7
+JUMP for (do-week ava latin year-three):7
+JUMP for (do-week ava latin year-three):7
+JUMP for (do-week ava politics adv-higher):7
+JUMP for (do-week ava music-tech year-one):7
+JUMP for (do-week grace latin higher):7
+JUMP for (do-week grace physics adv-higher):7
+JUMP for (do-week grace italian higher):7
+JUMP for (do-week grace numeracy year-one):7
+JUMP for (do-week grace textiles national-four):7
+JUMP for (do-week leo music-tech year-one):7
+JUMP for (do-week leo gaelic adv-higher):7
+JUMP for (do-week leo graph-comm year-two):7
+JUMP for (do-week leo philosophy national-five):7
+JUMP for (do-week leo mandarin national-four):7
+JUMP for (do-week travis drama year-two):7
+JUMP for (do-week travis urdu national-five):7
+JUMP for (do-week travis textiles year-three):7
+JUMP for (do-week travis mandarin higher):7
+JUMP for (do-week travis phys-ed national-four):7
+JUMP for (do-week oscar history adv-higher):7
+JUMP for (do-week oscar numeracy year-one):7
+JUMP for (do-week oscar english higher):7
+JUMP for (do-week oscar pc-passport adv-higher):7
+JUMP for (do-week oscar phys-ed national-four):7
+JUMP for (do-week sienna practical-woodwork national-five):7
+JUMP for (do-week sienna admin-it adv-higher):7
+JUMP for (do-week sienna pc-passport year-one):7
+JUMP for (do-week sienna admin-it year-one):7
+JUMP for (do-week sienna mandarin year-two):7
+JUMP for (do-week finn numeracy national-four):7
+JUMP for (do-week finn admin-it higher):7
+JUMP for (do-week finn german adv-higher):7
+JUMP for (do-week finn drama year-three):7
+JUMP for (do-week finn biology year-one):7
+JUMP for (do-week caleb german higher):7
+JUMP for (do-week caleb design-manufacture higher):7
+JUMP for (do-week caleb english year-two):7
+JUMP for (do-week caleb urdu higher):7
+JUMP for (do-week caleb pc-passport year-one):7
+JUMP for (do-week freddie design-manufacture year-one):7
+JUMP for (do-week freddie philosophy year-one):7
+JUMP for (do-week freddie numeracy year-two):7
+JUMP for (do-week freddie modern-studies year-three):7
+JUMP for (do-week freddie modern-studies year-one):7
+JUMP for (do-week ivy numeracy year-one):7
+JUMP for (do-week ivy chemistry year-two):7
+JUMP for (do-week ivy design-manufacture year-one):7
+JUMP for (do-week ivy urdu year-three):7
+JUMP for (do-week ivy lifeskills higher):7
+JUMP for (do-week ava comp-sci year-one):7
+JUMP for (do-week ava graph-comm national-five):7
+JUMP for (do-week ava latin year-three):7
+Problem Solved
+
+Found Plan:
+0.0: (do-week ava latin year-three)
+1.0: (do-week ava latin year-three)
+2.0: (do-week ava latin year-three)
+3.0: (do-week ava latin year-three)
+4.0: (do-week ava latin year-three)
+5.0: (do-week ava latin year-three)
+6.0: (do-week ava latin year-three)
+7.0: (do-week ava graph-comm national-five)
+8.0: (do-week ava graph-comm national-five)
+9.0: (do-week ava graph-comm national-five)
+10.0: (do-week ava graph-comm national-five)
+11.0: (do-week ava graph-comm national-five)
+12.0: (do-week ava graph-comm national-five)
+13.0: (do-week ava graph-comm national-five)
+14.0: (do-week ava comp-sci year-one)
+15.0: (do-week ava comp-sci year-one)
+16.0: (do-week ava comp-sci year-one)
+17.0: (do-week ava comp-sci year-one)
+18.0: (do-week ava comp-sci year-one)
+19.0: (do-week ava comp-sci year-one)
+20.0: (do-week ava comp-sci year-one)
+21.0: (do-week ivy lifeskills higher)
+22.0: (do-week ivy lifeskills higher)
+23.0: (do-week ivy lifeskills higher)
+24.0: (do-week ivy lifeskills higher)
+25.0: (do-week ivy lifeskills higher)
+26.0: (do-week ivy lifeskills higher)
+27.0: (do-week ivy lifeskills higher)
+28.0: (do-week ivy urdu year-three)
+29.0: (do-week ivy urdu year-three)
+30.0: (do-week ivy urdu year-three)
+31.0: (do-week ivy urdu year-three)
+32.0: (do-week ivy urdu year-three)
+33.0: (do-week ivy urdu year-three)
+34.0: (do-week ivy urdu year-three)
+35.0: (do-week ivy design-manufacture year-one)
+36.0: (do-week ivy design-manufacture year-one)
+37.0: (do-week ivy design-manufacture year-one)
+38.0: (do-week ivy design-manufacture year-one)
+39.0: (do-week ivy design-manufacture year-one)
+40.0: (do-week ivy design-manufacture year-one)
+41.0: (do-week ivy design-manufacture year-one)
+42.0: (do-week ivy chemistry year-two)
+43.0: (do-week ivy chemistry year-two)
+44.0: (do-week ivy chemistry year-two)
+45.0: (do-week ivy chemistry year-two)
+46.0: (do-week ivy chemistry year-two)
+47.0: (do-week ivy chemistry year-two)
+48.0: (do-week ivy chemistry year-two)
+49.0: (do-week ivy numeracy year-one)
+50.0: (do-week ivy numeracy year-one)
+51.0: (do-week ivy numeracy year-one)
+52.0: (do-week ivy numeracy year-one)
+53.0: (do-week ivy numeracy year-one)
+54.0: (do-week ivy numeracy year-one)
+55.0: (do-week ivy numeracy year-one)
+56.0: (do-week freddie modern-studies year-one)
+57.0: (do-week freddie modern-studies year-one)
+58.0: (do-week freddie modern-studies year-one)
+59.0: (do-week freddie modern-studies year-one)
+60.0: (do-week freddie modern-studies year-one)
+61.0: (do-week freddie modern-studies year-one)
+62.0: (do-week freddie modern-studies year-one)
+63.0: (do-week freddie modern-studies year-three)
+64.0: (do-week freddie modern-studies year-three)
+65.0: (do-week freddie modern-studies year-three)
+66.0: (do-week freddie modern-studies year-three)
+67.0: (do-week freddie modern-studies year-three)
+68.0: (do-week freddie modern-studies year-three)
+69.0: (do-week freddie modern-studies year-three)
+70.0: (do-week freddie numeracy year-two)
+71.0: (do-week freddie numeracy year-two)
+72.0: (do-week freddie numeracy year-two)
+73.0: (do-week freddie numeracy year-two)
+74.0: (do-week freddie numeracy year-two)
+75.0: (do-week freddie numeracy year-two)
+76.0: (do-week freddie numeracy year-two)
+77.0: (do-week freddie philosophy year-one)
+78.0: (do-week freddie philosophy year-one)
+79.0: (do-week freddie philosophy year-one)
+80.0: (do-week freddie philosophy year-one)
+81.0: (do-week freddie philosophy year-one)
+82.0: (do-week freddie philosophy year-one)
+83.0: (do-week freddie philosophy year-one)
+84.0: (do-week freddie design-manufacture year-one)
+85.0: (do-week freddie design-manufacture year-one)
+86.0: (do-week freddie design-manufacture year-one)
+87.0: (do-week freddie design-manufacture year-one)
+88.0: (do-week freddie design-manufacture year-one)
+89.0: (do-week freddie design-manufacture year-one)
+90.0: (do-week freddie design-manufacture year-one)
+91.0: (do-week caleb pc-passport year-one)
+92.0: (do-week caleb pc-passport year-one)
+93.0: (do-week caleb pc-passport year-one)
+94.0: (do-week caleb pc-passport year-one)
+95.0: (do-week caleb pc-passport year-one)
+96.0: (do-week caleb pc-passport year-one)
+97.0: (do-week caleb pc-passport year-one)
+98.0: (do-week caleb urdu higher)
+99.0: (do-week caleb urdu higher)
+100.0: (do-week caleb urdu higher)
+101.0: (do-week caleb urdu higher)
+102.0: (do-week caleb urdu higher)
+103.0: (do-week caleb urdu higher)
+104.0: (do-week caleb urdu higher)
+105.0: (do-week caleb english year-two)
+106.0: (do-week caleb english year-two)
+107.0: (do-week caleb english year-two)
+108.0: (do-week caleb english year-two)
+109.0: (do-week caleb english year-two)
+110.0: (do-week caleb english year-two)
+111.0: (do-week caleb english year-two)
+112.0: (do-week caleb design-manufacture higher)
+113.0: (do-week caleb design-manufacture higher)
+114.0: (do-week caleb design-manufacture higher)
+115.0: (do-week caleb design-manufacture higher)
+116.0: (do-week caleb design-manufacture higher)
+117.0: (do-week caleb design-manufacture higher)
+118.0: (do-week caleb design-manufacture higher)
+119.0: (do-week caleb german higher)
+120.0: (do-week caleb german higher)
+121.0: (do-week caleb german higher)
+122.0: (do-week caleb german higher)
+123.0: (do-week caleb german higher)
+124.0: (do-week caleb german higher)
+125.0: (do-week caleb german higher)
+126.0: (do-week finn biology year-one)
+127.0: (do-week finn biology year-one)
+128.0: (do-week finn biology year-one)
+129.0: (do-week finn biology year-one)
+130.0: (do-week finn biology year-one)
+131.0: (do-week finn biology year-one)
+132.0: (do-week finn biology year-one)
+133.0: (do-week finn drama year-three)
+134.0: (do-week finn drama year-three)
+135.0: (do-week finn drama year-three)
+136.0: (do-week finn drama year-three)
+137.0: (do-week finn drama year-three)
+138.0: (do-week finn drama year-three)
+139.0: (do-week finn drama year-three)
+140.0: (do-week finn german adv-higher)
+141.0: (do-week finn german adv-higher)
+142.0: (do-week finn german adv-higher)
+143.0: (do-week finn german adv-higher)
+144.0: (do-week finn german adv-higher)
+145.0: (do-week finn german adv-higher)
+146.0: (do-week finn german adv-higher)
+147.0: (do-week finn admin-it higher)
+148.0: (do-week finn admin-it higher)
+149.0: (do-week finn admin-it higher)
+150.0: (do-week finn admin-it higher)
+151.0: (do-week finn admin-it higher)
+152.0: (do-week finn admin-it higher)
+153.0: (do-week finn admin-it higher)
+154.0: (do-week finn numeracy national-four)
+155.0: (do-week finn numeracy national-four)
+156.0: (do-week finn numeracy national-four)
+157.0: (do-week finn numeracy national-four)
+158.0: (do-week finn numeracy national-four)
+159.0: (do-week finn numeracy national-four)
+160.0: (do-week finn numeracy national-four)
+161.0: (do-week sienna mandarin year-two)
+162.0: (do-week sienna mandarin year-two)
+163.0: (do-week sienna mandarin year-two)
+164.0: (do-week sienna mandarin year-two)
+165.0: (do-week sienna mandarin year-two)
+166.0: (do-week sienna mandarin year-two)
+167.0: (do-week sienna mandarin year-two)
+168.0: (do-week sienna admin-it year-one)
+169.0: (do-week sienna admin-it year-one)
+170.0: (do-week sienna admin-it year-one)
+171.0: (do-week sienna admin-it year-one)
+172.0: (do-week sienna admin-it year-one)
+173.0: (do-week sienna admin-it year-one)
+174.0: (do-week sienna admin-it year-one)
+175.0: (do-week sienna pc-passport year-one)
+176.0: (do-week sienna pc-passport year-one)
+177.0: (do-week sienna pc-passport year-one)
+178.0: (do-week sienna pc-passport year-one)
+179.0: (do-week sienna pc-passport year-one)
+180.0: (do-week sienna pc-passport year-one)
+181.0: (do-week sienna pc-passport year-one)
+182.0: (do-week sienna admin-it adv-higher)
+183.0: (do-week sienna admin-it adv-higher)
+184.0: (do-week sienna admin-it adv-higher)
+185.0: (do-week sienna admin-it adv-higher)
+186.0: (do-week sienna admin-it adv-higher)
+187.0: (do-week sienna admin-it adv-higher)
+188.0: (do-week sienna admin-it adv-higher)
+189.0: (do-week sienna practical-woodwork national-five)
+190.0: (do-week sienna practical-woodwork national-five)
+191.0: (do-week sienna practical-woodwork national-five)
+192.0: (do-week sienna practical-woodwork national-five)
+193.0: (do-week sienna practical-woodwork national-five)
+194.0: (do-week sienna practical-woodwork national-five)
+195.0: (do-week sienna practical-woodwork national-five)
+196.0: (do-week oscar phys-ed national-four)
+197.0: (do-week oscar phys-ed national-four)
+198.0: (do-week oscar phys-ed national-four)
+199.0: (do-week oscar phys-ed national-four)
+200.0: (do-week oscar phys-ed national-four)
+201.0: (do-week oscar phys-ed national-four)
+202.0: (do-week oscar phys-ed national-four)
+203.0: (do-week oscar pc-passport adv-higher)
+204.0: (do-week oscar pc-passport adv-higher)
+205.0: (do-week oscar pc-passport adv-higher)
+206.0: (do-week oscar pc-passport adv-higher)
+207.0: (do-week oscar pc-passport adv-higher)
+208.0: (do-week oscar pc-passport adv-higher)
+209.0: (do-week oscar pc-passport adv-higher)
+210.0: (do-week oscar english higher)
+211.0: (do-week oscar english higher)
+212.0: (do-week oscar english higher)
+213.0: (do-week oscar english higher)
+214.0: (do-week oscar english higher)
+215.0: (do-week oscar english higher)
+216.0: (do-week oscar english higher)
+217.0: (do-week oscar numeracy year-one)
+218.0: (do-week oscar numeracy year-one)
+219.0: (do-week oscar numeracy year-one)
+220.0: (do-week oscar numeracy year-one)
+221.0: (do-week oscar numeracy year-one)
+222.0: (do-week oscar numeracy year-one)
+223.0: (do-week oscar numeracy year-one)
+224.0: (do-week oscar history adv-higher)
+225.0: (do-week oscar history adv-higher)
+226.0: (do-week oscar history adv-higher)
+227.0: (do-week oscar history adv-higher)
+228.0: (do-week oscar history adv-higher)
+229.0: (do-week oscar history adv-higher)
+230.0: (do-week oscar history adv-higher)
+231.0: (do-week travis phys-ed national-four)
+232.0: (do-week travis phys-ed national-four)
+233.0: (do-week travis phys-ed national-four)
+234.0: (do-week travis phys-ed national-four)
+235.0: (do-week travis phys-ed national-four)
+236.0: (do-week travis phys-ed national-four)
+237.0: (do-week travis phys-ed national-four)
+238.0: (do-week travis mandarin higher)
+239.0: (do-week travis mandarin higher)
+240.0: (do-week travis mandarin higher)
+241.0: (do-week travis mandarin higher)
+242.0: (do-week travis mandarin higher)
+243.0: (do-week travis mandarin higher)
+244.0: (do-week travis mandarin higher)
+245.0: (do-week travis textiles year-three)
+246.0: (do-week travis textiles year-three)
+247.0: (do-week travis textiles year-three)
+248.0: (do-week travis textiles year-three)
+249.0: (do-week travis textiles year-three)
+250.0: (do-week travis textiles year-three)
+251.0: (do-week travis textiles year-three)
+252.0: (do-week travis urdu national-five)
+253.0: (do-week travis urdu national-five)
+254.0: (do-week travis urdu national-five)
+255.0: (do-week travis urdu national-five)
+256.0: (do-week travis urdu national-five)
+257.0: (do-week travis urdu national-five)
+258.0: (do-week travis urdu national-five)
+259.0: (do-week travis drama year-two)
+260.0: (do-week travis drama year-two)
+261.0: (do-week travis drama year-two)
+262.0: (do-week travis drama year-two)
+263.0: (do-week travis drama year-two)
+264.0: (do-week travis drama year-two)
+265.0: (do-week travis drama year-two)
+266.0: (do-week leo mandarin national-four)
+267.0: (do-week leo mandarin national-four)
+268.0: (do-week leo mandarin national-four)
+269.0: (do-week leo mandarin national-four)
+270.0: (do-week leo mandarin national-four)
+271.0: (do-week leo mandarin national-four)
+272.0: (do-week leo mandarin national-four)
+273.0: (do-week leo philosophy national-five)
+274.0: (do-week leo philosophy national-five)
+275.0: (do-week leo philosophy national-five)
+276.0: (do-week leo philosophy national-five)
+277.0: (do-week leo philosophy national-five)
+278.0: (do-week leo philosophy national-five)
+279.0: (do-week leo philosophy national-five)
+280.0: (do-week leo graph-comm year-two)
+281.0: (do-week leo graph-comm year-two)
+282.0: (do-week leo graph-comm year-two)
+283.0: (do-week leo graph-comm year-two)
+284.0: (do-week leo graph-comm year-two)
+285.0: (do-week leo graph-comm year-two)
+286.0: (do-week leo graph-comm year-two)
+287.0: (do-week leo gaelic adv-higher)
+288.0: (do-week leo gaelic adv-higher)
+289.0: (do-week leo gaelic adv-higher)
+290.0: (do-week leo gaelic adv-higher)
+291.0: (do-week leo gaelic adv-higher)
+292.0: (do-week leo gaelic adv-higher)
+293.0: (do-week leo gaelic adv-higher)
+294.0: (do-week leo music-tech year-one)
+295.0: (do-week leo music-tech year-one)
+296.0: (do-week leo music-tech year-one)
+297.0: (do-week leo music-tech year-one)
+298.0: (do-week leo music-tech year-one)
+299.0: (do-week leo music-tech year-one)
+300.0: (do-week leo music-tech year-one)
+301.0: (do-week grace textiles national-four)
+302.0: (do-week grace textiles national-four)
+303.0: (do-week grace textiles national-four)
+304.0: (do-week grace textiles national-four)
+305.0: (do-week grace textiles national-four)
+306.0: (do-week grace textiles national-four)
+307.0: (do-week grace textiles national-four)
+308.0: (do-week grace numeracy year-one)
+309.0: (do-week grace numeracy year-one)
+310.0: (do-week grace numeracy year-one)
+311.0: (do-week grace numeracy year-one)
+312.0: (do-week grace numeracy year-one)
+313.0: (do-week grace numeracy year-one)
+314.0: (do-week grace numeracy year-one)
+315.0: (do-week grace italian higher)
+316.0: (do-week grace italian higher)
+317.0: (do-week grace italian higher)
+318.0: (do-week grace italian higher)
+319.0: (do-week grace italian higher)
+320.0: (do-week grace italian higher)
+321.0: (do-week grace italian higher)
+322.0: (do-week grace physics adv-higher)
+323.0: (do-week grace physics adv-higher)
+324.0: (do-week grace physics adv-higher)
+325.0: (do-week grace physics adv-higher)
+326.0: (do-week grace physics adv-higher)
+327.0: (do-week grace physics adv-higher)
+328.0: (do-week grace physics adv-higher)
+329.0: (do-week grace latin higher)
+330.0: (do-week grace latin higher)
+331.0: (do-week grace latin higher)
+332.0: (do-week grace latin higher)
+333.0: (do-week grace latin higher)
+334.0: (do-week grace latin higher)
+335.0: (do-week grace latin higher)
+336.0: (do-week ava music-tech year-one)
+337.0: (do-week ava music-tech year-one)
+338.0: (do-week ava music-tech year-one)
+339.0: (do-week ava music-tech year-one)
+340.0: (do-week ava music-tech year-one)
+341.0: (do-week ava music-tech year-one)
+342.0: (do-week ava music-tech year-one)
+343.0: (do-week ava politics adv-higher)
+344.0: (do-week ava politics adv-higher)
+345.0: (do-week ava politics adv-higher)
+346.0: (do-week ava politics adv-higher)
+347.0: (do-week ava politics adv-higher)
+348.0: (do-week ava politics adv-higher)
+349.0: (do-week ava politics adv-higher)
+350.0: (comms-workshop ava)
+351.0: (comms-workshop ivy)
+352.0: (comms-workshop freddie)
+353.0: (pomo-study freddie)
+354.0: (comms-workshop caleb)
+355.0: (comms-workshop finn)
+356.0: (gamify sienna)
+357.0: (technological-assistance oscar)
+358.0: (comms-workshop travis)
+359.0: (comms-workshop leo)
+360.0: (pomo-study leo)
+361.0: (technological-assistance grace)
+362.0: (do-unit ava latin year-three)
+363.0: (do-week ava latin year-three)
+364.0: (do-week ava latin year-three)
+365.0: (do-week ava latin year-three)
+366.0: (do-week ava latin year-three)
+367.0: (do-week ava latin year-three)
+368.0: (do-week ava latin year-three)
+369.0: (do-week ava latin year-three)
+370.0: (do-unit ava latin year-three)
+371.0: (do-week ava latin year-three)
+372.0: (do-week ava latin year-three)
+373.0: (do-week ava latin year-three)
+374.0: (do-week ava latin year-three)
+375.0: (do-week ava latin year-three)
+376.0: (do-week ava latin year-three)
+377.0: (do-week ava latin year-three)
+378.0: (do-unit ava latin year-three)
+379.0: (do-week ava latin year-three)
+380.0: (do-week ava latin year-three)
+381.0: (do-week ava latin year-three)
+382.0: (do-week ava latin year-three)
+383.0: (do-week ava latin year-three)
+384.0: (do-week ava latin year-three)
+385.0: (do-week ava latin year-three)
+386.0: (do-unit ava latin year-three)
+387.0: (finish-course ava latin year-three)
+388.0: (do-unit ava graph-comm national-five)
+389.0: (do-week ava graph-comm national-five)
+390.0: (do-week ava graph-comm national-five)
+391.0: (do-week ava graph-comm national-five)
+392.0: (do-week ava graph-comm national-five)
+393.0: (do-week ava graph-comm national-five)
+394.0: (do-week ava graph-comm national-five)
+395.0: (do-week ava graph-comm national-five)
+396.0: (do-unit ava graph-comm national-five)
+397.0: (do-week ava graph-comm national-five)
+398.0: (do-week ava graph-comm national-five)
+399.0: (do-week ava graph-comm national-five)
+400.0: (do-week ava graph-comm national-five)
+401.0: (do-week ava graph-comm national-five)
+402.0: (do-week ava graph-comm national-five)
+403.0: (do-week ava graph-comm national-five)
+404.0: (do-unit ava graph-comm national-five)
+405.0: (do-week ava graph-comm national-five)
+406.0: (do-week ava graph-comm national-five)
+407.0: (do-week ava graph-comm national-five)
+408.0: (do-week ava graph-comm national-five)
+409.0: (do-week ava graph-comm national-five)
+410.0: (do-week ava graph-comm national-five)
+411.0: (do-week ava graph-comm national-five)
+412.0: (do-unit ava graph-comm national-five)
+413.0: (finish-course ava graph-comm national-five)
+414.0: (do-unit ava comp-sci year-one)
+415.0: (do-week ava comp-sci year-one)
+416.0: (do-week ava comp-sci year-one)
+417.0: (do-week ava comp-sci year-one)
+418.0: (do-week ava comp-sci year-one)
+419.0: (do-week ava comp-sci year-one)
+420.0: (do-week ava comp-sci year-one)
+421.0: (do-week ava comp-sci year-one)
+422.0: (do-unit ava politics adv-higher)
+423.0: (do-week ava politics adv-higher)
+424.0: (do-week ava politics adv-higher)
+425.0: (do-week ava politics adv-higher)
+426.0: (do-week ava politics adv-higher)
+427.0: (do-week ava politics adv-higher)
+428.0: (do-week ava politics adv-higher)
+429.0: (do-week ava politics adv-higher)
+430.0: (do-unit ava comp-sci year-one)
+431.0: (do-week ava comp-sci year-one)
+432.0: (do-week ava comp-sci year-one)
+433.0: (do-week ava comp-sci year-one)
+434.0: (do-week ava comp-sci year-one)
+435.0: (do-week ava comp-sci year-one)
+436.0: (do-week ava comp-sci year-one)
+437.0: (do-week ava comp-sci year-one)
+438.0: (do-unit ava comp-sci year-one)
+439.0: (do-week ava comp-sci year-one)
+440.0: (do-week ava comp-sci year-one)
+441.0: (do-week ava comp-sci year-one)
+442.0: (do-week ava comp-sci year-one)
+443.0: (do-week ava comp-sci year-one)
+444.0: (do-week ava comp-sci year-one)
+445.0: (do-week ava comp-sci year-one)
+446.0: (do-unit ava comp-sci year-one)
+447.0: (finish-course ava comp-sci year-one)
+448.0: (do-unit ivy lifeskills higher)
+449.0: (do-week ivy lifeskills higher)
+450.0: (do-week ivy lifeskills higher)
+451.0: (do-week ivy lifeskills higher)
+452.0: (do-week ivy lifeskills higher)
+453.0: (do-week ivy lifeskills higher)
+454.0: (do-week ivy lifeskills higher)
+455.0: (do-week ivy lifeskills higher)
+456.0: (do-unit ivy lifeskills higher)
+457.0: (do-week ivy lifeskills higher)
+458.0: (do-week ivy lifeskills higher)
+459.0: (do-week ivy lifeskills higher)
+460.0: (do-week ivy lifeskills higher)
+461.0: (do-week ivy lifeskills higher)
+462.0: (do-week ivy lifeskills higher)
+463.0: (do-week ivy lifeskills higher)
+464.0: (do-unit ivy lifeskills higher)
+465.0: (do-week ivy lifeskills higher)
+466.0: (do-week ivy lifeskills higher)
+467.0: (do-week ivy lifeskills higher)
+468.0: (do-week ivy lifeskills higher)
+469.0: (do-week ivy lifeskills higher)
+470.0: (do-week ivy lifeskills higher)
+471.0: (do-week ivy lifeskills higher)
+472.0: (do-unit ivy lifeskills higher)
+473.0: (finish-course ivy lifeskills higher)
+474.0: (do-unit ivy urdu year-three)
+475.0: (do-week ivy urdu year-three)
+476.0: (do-week ivy urdu year-three)
+477.0: (do-week ivy urdu year-three)
+478.0: (do-week ivy urdu year-three)
+479.0: (do-week ivy urdu year-three)
+480.0: (do-week ivy urdu year-three)
+481.0: (do-week ivy urdu year-three)
+482.0: (do-unit ivy urdu year-three)
+483.0: (do-week ivy urdu year-three)
+484.0: (do-week ivy urdu year-three)
+485.0: (do-week ivy urdu year-three)
+486.0: (do-week ivy urdu year-three)
+487.0: (do-week ivy urdu year-three)
+488.0: (do-week ivy urdu year-three)
+489.0: (do-week ivy urdu year-three)
+490.0: (do-unit ivy urdu year-three)
+491.0: (do-week ivy urdu year-three)
+492.0: (do-week ivy urdu year-three)
+493.0: (do-week ivy urdu year-three)
+494.0: (do-week ivy urdu year-three)
+495.0: (do-week ivy urdu year-three)
+496.0: (do-week ivy urdu year-three)
+497.0: (do-week ivy urdu year-three)
+498.0: (do-unit ivy urdu year-three)
+499.0: (finish-course ivy urdu year-three)
+500.0: (do-unit ivy design-manufacture year-one)
+501.0: (do-week ivy design-manufacture year-one)
+502.0: (do-week ivy design-manufacture year-one)
+503.0: (do-week ivy design-manufacture year-one)
+504.0: (do-week ivy design-manufacture year-one)
+505.0: (do-week ivy design-manufacture year-one)
+506.0: (do-week ivy design-manufacture year-one)
+507.0: (do-week ivy design-manufacture year-one)
+508.0: (do-unit ivy design-manufacture year-one)
+509.0: (do-week ivy design-manufacture year-one)
+510.0: (do-week ivy design-manufacture year-one)
+511.0: (do-week ivy design-manufacture year-one)
+512.0: (do-week ivy design-manufacture year-one)
+513.0: (do-week ivy design-manufacture year-one)
+514.0: (do-week ivy design-manufacture year-one)
+515.0: (do-week ivy design-manufacture year-one)
+516.0: (do-unit ivy design-manufacture year-one)
+517.0: (do-week ivy design-manufacture year-one)
+518.0: (do-week ivy design-manufacture year-one)
+519.0: (do-week ivy design-manufacture year-one)
+520.0: (do-week ivy design-manufacture year-one)
+521.0: (do-week ivy design-manufacture year-one)
+522.0: (do-week ivy design-manufacture year-one)
+523.0: (do-week ivy design-manufacture year-one)
+524.0: (do-unit ivy design-manufacture year-one)
+525.0: (finish-course ivy design-manufacture year-one)
+526.0: (do-unit ivy chemistry year-two)
+527.0: (do-week ivy chemistry year-two)
+528.0: (do-week ivy chemistry year-two)
+529.0: (do-week ivy chemistry year-two)
+530.0: (do-week ivy chemistry year-two)
+531.0: (do-week ivy chemistry year-two)
+532.0: (do-week ivy chemistry year-two)
+533.0: (do-week ivy chemistry year-two)
+534.0: (do-unit ivy chemistry year-two)
+535.0: (do-week ivy chemistry year-two)
+536.0: (do-week ivy chemistry year-two)
+537.0: (do-week ivy chemistry year-two)
+538.0: (do-week ivy chemistry year-two)
+539.0: (do-week ivy chemistry year-two)
+540.0: (do-week ivy chemistry year-two)
+541.0: (do-week ivy chemistry year-two)
+542.0: (do-unit ivy chemistry year-two)
+543.0: (do-week ivy chemistry year-two)
+544.0: (do-week ivy chemistry year-two)
+545.0: (do-week ivy chemistry year-two)
+546.0: (do-week ivy chemistry year-two)
+547.0: (do-week ivy chemistry year-two)
+548.0: (do-week ivy chemistry year-two)
+549.0: (do-week ivy chemistry year-two)
+550.0: (do-unit ivy chemistry year-two)
+551.0: (finish-course ivy chemistry year-two)
+552.0: (do-unit ivy numeracy year-one)
+553.0: (do-week ivy numeracy year-one)
+554.0: (do-week ivy numeracy year-one)
+555.0: (do-week ivy numeracy year-one)
+556.0: (do-week ivy numeracy year-one)
+557.0: (do-week ivy numeracy year-one)
+558.0: (do-week ivy numeracy year-one)
+559.0: (do-week ivy numeracy year-one)
+560.0: (do-unit ivy numeracy year-one)
+561.0: (do-week ivy numeracy year-one)
+562.0: (do-week ivy numeracy year-one)
+563.0: (do-week ivy numeracy year-one)
+564.0: (do-week ivy numeracy year-one)
+565.0: (do-week ivy numeracy year-one)
+566.0: (do-week ivy numeracy year-one)
+567.0: (do-week ivy numeracy year-one)
+568.0: (do-unit ivy numeracy year-one)
+569.0: (do-week ivy numeracy year-one)
+570.0: (do-week ivy numeracy year-one)
+571.0: (do-week ivy numeracy year-one)
+572.0: (do-week ivy numeracy year-one)
+573.0: (do-week ivy numeracy year-one)
+574.0: (do-week ivy numeracy year-one)
+575.0: (do-week ivy numeracy year-one)
+576.0: (do-unit ivy numeracy year-one)
+577.0: (finish-course ivy numeracy year-one)
+578.0: (do-unit freddie modern-studies year-one)
+579.0: (do-week freddie modern-studies year-one)
+580.0: (do-week freddie modern-studies year-one)
+581.0: (do-week freddie modern-studies year-one)
+582.0: (do-week freddie modern-studies year-one)
+583.0: (do-week freddie modern-studies year-one)
+584.0: (do-week freddie modern-studies year-one)
+585.0: (do-week freddie modern-studies year-one)
+586.0: (do-unit freddie modern-studies year-three)
+587.0: (do-week freddie modern-studies year-three)
+588.0: (do-week freddie modern-studies year-three)
+589.0: (do-week freddie modern-studies year-three)
+590.0: (do-week freddie modern-studies year-three)
+591.0: (do-week freddie modern-studies year-three)
+592.0: (do-week freddie modern-studies year-three)
+593.0: (do-week freddie modern-studies year-three)
+594.0: (do-unit freddie modern-studies year-one)
+595.0: (do-week freddie modern-studies year-one)
+596.0: (do-week freddie modern-studies year-one)
+597.0: (do-week freddie modern-studies year-one)
+598.0: (do-week freddie modern-studies year-one)
+599.0: (do-week freddie modern-studies year-one)
+600.0: (do-week freddie modern-studies year-one)
+601.0: (do-week freddie modern-studies year-one)
+602.0: (do-unit freddie modern-studies year-one)
+603.0: (do-week freddie modern-studies year-one)
+604.0: (do-week freddie modern-studies year-one)
+605.0: (do-week freddie modern-studies year-one)
+606.0: (do-week freddie modern-studies year-one)
+607.0: (do-week freddie modern-studies year-one)
+608.0: (do-week freddie modern-studies year-one)
+609.0: (do-week freddie modern-studies year-one)
+610.0: (do-unit freddie modern-studies year-one)
+611.0: (finish-course freddie modern-studies year-one)
+612.0: (do-unit freddie modern-studies year-three)
+613.0: (do-week freddie modern-studies year-three)
+614.0: (do-week freddie modern-studies year-three)
+615.0: (do-week freddie modern-studies year-three)
+616.0: (do-week freddie modern-studies year-three)
+617.0: (do-week freddie modern-studies year-three)
+618.0: (do-week freddie modern-studies year-three)
+619.0: (do-week freddie modern-studies year-three)
+620.0: (do-unit freddie modern-studies year-three)
+621.0: (do-week freddie modern-studies year-three)
+622.0: (do-week freddie modern-studies year-three)
+623.0: (do-week freddie modern-studies year-three)
+624.0: (do-week freddie modern-studies year-three)
+625.0: (do-week freddie modern-studies year-three)
+626.0: (do-week freddie modern-studies year-three)
+627.0: (do-week freddie modern-studies year-three)
+628.0: (do-unit freddie modern-studies year-three)
+629.0: (finish-course freddie modern-studies year-three)
+630.0: (do-unit freddie numeracy year-two)
+631.0: (do-week freddie numeracy year-two)
+632.0: (do-week freddie numeracy year-two)
+633.0: (do-week freddie numeracy year-two)
+634.0: (do-week freddie numeracy year-two)
+635.0: (do-week freddie numeracy year-two)
+636.0: (do-week freddie numeracy year-two)
+637.0: (do-week freddie numeracy year-two)
+638.0: (do-unit freddie numeracy year-two)
+639.0: (do-week freddie numeracy year-two)
+640.0: (do-week freddie numeracy year-two)
+641.0: (do-week freddie numeracy year-two)
+642.0: (do-week freddie numeracy year-two)
+643.0: (do-week freddie numeracy year-two)
+644.0: (do-week freddie numeracy year-two)
+645.0: (do-week freddie numeracy year-two)
+646.0: (do-unit freddie numeracy year-two)
+647.0: (do-week freddie numeracy year-two)
+648.0: (do-week freddie numeracy year-two)
+649.0: (do-week freddie numeracy year-two)
+650.0: (do-week freddie numeracy year-two)
+651.0: (do-week freddie numeracy year-two)
+652.0: (do-week freddie numeracy year-two)
+653.0: (do-week freddie numeracy year-two)
+654.0: (do-unit freddie numeracy year-two)
+655.0: (finish-course freddie numeracy year-two)
+656.0: (do-unit freddie philosophy year-one)
+657.0: (do-week freddie philosophy year-one)
+658.0: (do-week freddie philosophy year-one)
+659.0: (do-week freddie philosophy year-one)
+660.0: (do-week freddie philosophy year-one)
+661.0: (do-week freddie philosophy year-one)
+662.0: (do-week freddie philosophy year-one)
+663.0: (do-week freddie philosophy year-one)
+664.0: (do-unit ava politics adv-higher)
+665.0: (do-week ava politics adv-higher)
+666.0: (do-week ava politics adv-higher)
+667.0: (do-week ava politics adv-higher)
+668.0: (do-week ava politics adv-higher)
+669.0: (do-week ava politics adv-higher)
+670.0: (do-week ava politics adv-higher)
+671.0: (do-week ava politics adv-higher)
+672.0: (do-unit freddie philosophy year-one)
+673.0: (do-week freddie philosophy year-one)
+674.0: (do-week freddie philosophy year-one)
+675.0: (do-week freddie philosophy year-one)
+676.0: (do-week freddie philosophy year-one)
+677.0: (do-week freddie philosophy year-one)
+678.0: (do-week freddie philosophy year-one)
+679.0: (do-week freddie philosophy year-one)
+680.0: (do-unit ava politics adv-higher)
+681.0: (do-week ava politics adv-higher)
+682.0: (do-week ava politics adv-higher)
+683.0: (do-week ava politics adv-higher)
+684.0: (do-week ava politics adv-higher)
+685.0: (do-week ava politics adv-higher)
+686.0: (do-week ava politics adv-higher)
+687.0: (do-week ava politics adv-higher)
+688.0: (do-unit ava politics adv-higher)
+689.0: (finish-course ava politics adv-higher)
+690.0: (do-unit freddie philosophy year-one)
+691.0: (do-week freddie philosophy year-one)
+692.0: (do-week freddie philosophy year-one)
+693.0: (do-week freddie philosophy year-one)
+694.0: (do-week freddie philosophy year-one)
+695.0: (do-week freddie philosophy year-one)
+696.0: (do-week freddie philosophy year-one)
+697.0: (do-week freddie philosophy year-one)
+698.0: (do-unit freddie philosophy year-one)
+699.0: (finish-course freddie philosophy year-one)
+700.0: (do-unit freddie design-manufacture year-one)
+701.0: (do-week freddie design-manufacture year-one)
+702.0: (do-week freddie design-manufacture year-one)
+703.0: (do-week freddie design-manufacture year-one)
+704.0: (do-week freddie design-manufacture year-one)
+705.0: (do-week freddie design-manufacture year-one)
+706.0: (do-week freddie design-manufacture year-one)
+707.0: (do-week freddie design-manufacture year-one)
+708.0: (do-unit freddie design-manufacture year-one)
+709.0: (do-week freddie design-manufacture year-one)
+710.0: (do-week freddie design-manufacture year-one)
+711.0: (do-week freddie design-manufacture year-one)
+712.0: (do-week freddie design-manufacture year-one)
+713.0: (do-week freddie design-manufacture year-one)
+714.0: (do-week freddie design-manufacture year-one)
+715.0: (do-week freddie design-manufacture year-one)
+716.0: (do-unit freddie design-manufacture year-one)
+717.0: (do-week freddie design-manufacture year-one)
+718.0: (do-week freddie design-manufacture year-one)
+719.0: (do-week freddie design-manufacture year-one)
+720.0: (do-week freddie design-manufacture year-one)
+721.0: (do-week freddie design-manufacture year-one)
+722.0: (do-week freddie design-manufacture year-one)
+723.0: (do-week freddie design-manufacture year-one)
+724.0: (do-unit freddie design-manufacture year-one)
+725.0: (finish-course freddie design-manufacture year-one)
+726.0: (do-unit caleb pc-passport year-one)
+727.0: (do-week caleb pc-passport year-one)
+728.0: (do-week caleb pc-passport year-one)
+729.0: (do-week caleb pc-passport year-one)
+730.0: (do-week caleb pc-passport year-one)
+731.0: (do-week caleb pc-passport year-one)
+732.0: (do-week caleb pc-passport year-one)
+733.0: (do-week caleb pc-passport year-one)
+734.0: (do-unit ava music-tech year-one)
+735.0: (do-week ava music-tech year-one)
+736.0: (do-week ava music-tech year-one)
+737.0: (do-week ava music-tech year-one)
+738.0: (do-week ava music-tech year-one)
+739.0: (do-week ava music-tech year-one)
+740.0: (do-week ava music-tech year-one)
+741.0: (do-week ava music-tech year-one)
+742.0: (do-unit caleb pc-passport year-one)
+743.0: (do-week caleb pc-passport year-one)
+744.0: (do-week caleb pc-passport year-one)
+745.0: (do-week caleb pc-passport year-one)
+746.0: (do-week caleb pc-passport year-one)
+747.0: (do-week caleb pc-passport year-one)
+748.0: (do-week caleb pc-passport year-one)
+749.0: (do-week caleb pc-passport year-one)
+750.0: (do-unit caleb pc-passport year-one)
+751.0: (do-week caleb pc-passport year-one)
+752.0: (do-week caleb pc-passport year-one)
+753.0: (do-week caleb pc-passport year-one)
+754.0: (do-week caleb pc-passport year-one)
+755.0: (do-week caleb pc-passport year-one)
+756.0: (do-week caleb pc-passport year-one)
+757.0: (do-week caleb pc-passport year-one)
+758.0: (do-unit caleb pc-passport year-one)
+759.0: (finish-course caleb pc-passport year-one)
+760.0: (do-unit caleb urdu higher)
+761.0: (do-week caleb urdu higher)
+762.0: (do-week caleb urdu higher)
+763.0: (do-week caleb urdu higher)
+764.0: (do-week caleb urdu higher)
+765.0: (do-week caleb urdu higher)
+766.0: (do-week caleb urdu higher)
+767.0: (do-week caleb urdu higher)
+768.0: (do-unit caleb urdu higher)
+769.0: (do-week caleb urdu higher)
+770.0: (do-week caleb urdu higher)
+771.0: (do-week caleb urdu higher)
+772.0: (do-week caleb urdu higher)
+773.0: (do-week caleb urdu higher)
+774.0: (do-week caleb urdu higher)
+775.0: (do-week caleb urdu higher)
+776.0: (do-unit caleb urdu higher)
+777.0: (do-week caleb urdu higher)
+778.0: (do-week caleb urdu higher)
+779.0: (do-week caleb urdu higher)
+780.0: (do-week caleb urdu higher)
+781.0: (do-week caleb urdu higher)
+782.0: (do-week caleb urdu higher)
+783.0: (do-week caleb urdu higher)
+784.0: (do-unit caleb urdu higher)
+785.0: (finish-course caleb urdu higher)
+786.0: (do-unit caleb english year-two)
+787.0: (do-week caleb english year-two)
+788.0: (do-week caleb english year-two)
+789.0: (do-week caleb english year-two)
+790.0: (do-week caleb english year-two)
+791.0: (do-week caleb english year-two)
+792.0: (do-week caleb english year-two)
+793.0: (do-week caleb english year-two)
+794.0: (do-unit caleb english year-two)
+795.0: (do-week caleb english year-two)
+796.0: (do-week caleb english year-two)
+797.0: (do-week caleb english year-two)
+798.0: (do-week caleb english year-two)
+799.0: (do-week caleb english year-two)
+800.0: (do-week caleb english year-two)
+801.0: (do-week caleb english year-two)
+802.0: (do-unit caleb english year-two)
+803.0: (do-week caleb english year-two)
+804.0: (do-week caleb english year-two)
+805.0: (do-week caleb english year-two)
+806.0: (do-week caleb english year-two)
+807.0: (do-week caleb english year-two)
+808.0: (do-week caleb english year-two)
+809.0: (do-week caleb english year-two)
+810.0: (do-unit caleb english year-two)
+811.0: (finish-course caleb english year-two)
+812.0: (do-unit caleb design-manufacture higher)
+813.0: (do-week caleb design-manufacture higher)
+814.0: (do-week caleb design-manufacture higher)
+815.0: (do-week caleb design-manufacture higher)
+816.0: (do-week caleb design-manufacture higher)
+817.0: (do-week caleb design-manufacture higher)
+818.0: (do-week caleb design-manufacture higher)
+819.0: (do-week caleb design-manufacture higher)
+820.0: (do-unit caleb design-manufacture higher)
+821.0: (do-week caleb design-manufacture higher)
+822.0: (do-week caleb design-manufacture higher)
+823.0: (do-week caleb design-manufacture higher)
+824.0: (do-week caleb design-manufacture higher)
+825.0: (do-week caleb design-manufacture higher)
+826.0: (do-week caleb design-manufacture higher)
+827.0: (do-week caleb design-manufacture higher)
+828.0: (do-unit caleb design-manufacture higher)
+829.0: (do-week caleb design-manufacture higher)
+830.0: (do-week caleb design-manufacture higher)
+831.0: (do-week caleb design-manufacture higher)
+832.0: (do-week caleb design-manufacture higher)
+833.0: (do-week caleb design-manufacture higher)
+834.0: (do-week caleb design-manufacture higher)
+835.0: (do-week caleb design-manufacture higher)
+836.0: (do-unit caleb design-manufacture higher)
+837.0: (finish-course caleb design-manufacture higher)
+838.0: (do-unit caleb german higher)
+839.0: (do-week caleb german higher)
+840.0: (do-week caleb german higher)
+841.0: (do-week caleb german higher)
+842.0: (do-week caleb german higher)
+843.0: (do-week caleb german higher)
+844.0: (do-week caleb german higher)
+845.0: (do-week caleb german higher)
+846.0: (do-unit caleb german higher)
+847.0: (do-week caleb german higher)
+848.0: (do-week caleb german higher)
+849.0: (do-week caleb german higher)
+850.0: (do-week caleb german higher)
+851.0: (do-week caleb german higher)
+852.0: (do-week caleb german higher)
+853.0: (do-week caleb german higher)
+854.0: (do-unit caleb german higher)
+855.0: (do-week caleb german higher)
+856.0: (do-week caleb german higher)
+857.0: (do-week caleb german higher)
+858.0: (do-week caleb german higher)
+859.0: (do-week caleb german higher)
+860.0: (do-week caleb german higher)
+861.0: (do-week caleb german higher)
+862.0: (do-unit caleb german higher)
+863.0: (finish-course caleb german higher)
+864.0: (do-unit finn biology year-one)
+865.0: (do-week finn biology year-one)
+866.0: (do-week finn biology year-one)
+867.0: (do-week finn biology year-one)
+868.0: (do-week finn biology year-one)
+869.0: (do-week finn biology year-one)
+870.0: (do-week finn biology year-one)
+871.0: (do-week finn biology year-one)
+872.0: (do-unit finn biology year-one)
+873.0: (do-week finn biology year-one)
+874.0: (do-week finn biology year-one)
+875.0: (do-week finn biology year-one)
+876.0: (do-week finn biology year-one)
+877.0: (do-week finn biology year-one)
+878.0: (do-week finn biology year-one)
+879.0: (do-week finn biology year-one)
+880.0: (do-unit finn biology year-one)
+881.0: (do-week finn biology year-one)
+882.0: (do-week finn biology year-one)
+883.0: (do-week finn biology year-one)
+884.0: (do-week finn biology year-one)
+885.0: (do-week finn biology year-one)
+886.0: (do-week finn biology year-one)
+887.0: (do-week finn biology year-one)
+888.0: (do-unit finn biology year-one)
+889.0: (finish-course finn biology year-one)
+890.0: (do-unit finn drama year-three)
+891.0: (do-week finn drama year-three)
+892.0: (do-week finn drama year-three)
+893.0: (do-week finn drama year-three)
+894.0: (do-week finn drama year-three)
+895.0: (do-week finn drama year-three)
+896.0: (do-week finn drama year-three)
+897.0: (do-week finn drama year-three)
+898.0: (do-unit finn drama year-three)
+899.0: (do-week finn drama year-three)
+900.0: (do-week finn drama year-three)
+901.0: (do-week finn drama year-three)
+902.0: (do-week finn drama year-three)
+903.0: (do-week finn drama year-three)
+904.0: (do-week finn drama year-three)
+905.0: (do-week finn drama year-three)
+906.0: (do-unit finn drama year-three)
+907.0: (do-week finn drama year-three)
+908.0: (do-week finn drama year-three)
+909.0: (do-week finn drama year-three)
+910.0: (do-week finn drama year-three)
+911.0: (do-week finn drama year-three)
+912.0: (do-week finn drama year-three)
+913.0: (do-week finn drama year-three)
+914.0: (do-unit finn drama year-three)
+915.0: (finish-course finn drama year-three)
+916.0: (do-unit finn german adv-higher)
+917.0: (do-week finn german adv-higher)
+918.0: (do-week finn german adv-higher)
+919.0: (do-week finn german adv-higher)
+920.0: (do-week finn german adv-higher)
+921.0: (do-week finn german adv-higher)
+922.0: (do-week finn german adv-higher)
+923.0: (do-week finn german adv-higher)
+924.0: (do-unit finn german adv-higher)
+925.0: (do-week finn german adv-higher)
+926.0: (do-week finn german adv-higher)
+927.0: (do-week finn german adv-higher)
+928.0: (do-week finn german adv-higher)
+929.0: (do-week finn german adv-higher)
+930.0: (do-week finn german adv-higher)
+931.0: (do-week finn german adv-higher)
+932.0: (do-unit finn german adv-higher)
+933.0: (do-week finn german adv-higher)
+934.0: (do-week finn german adv-higher)
+935.0: (do-week finn german adv-higher)
+936.0: (do-week finn german adv-higher)
+937.0: (do-week finn german adv-higher)
+938.0: (do-week finn german adv-higher)
+939.0: (do-week finn german adv-higher)
+940.0: (do-unit finn german adv-higher)
+941.0: (finish-course finn german adv-higher)
+942.0: (do-unit finn admin-it higher)
+943.0: (do-week finn admin-it higher)
+944.0: (do-week finn admin-it higher)
+945.0: (do-week finn admin-it higher)
+946.0: (do-week finn admin-it higher)
+947.0: (do-week finn admin-it higher)
+948.0: (do-week finn admin-it higher)
+949.0: (do-week finn admin-it higher)
+950.0: (do-unit finn admin-it higher)
+951.0: (do-week finn admin-it higher)
+952.0: (do-week finn admin-it higher)
+953.0: (do-week finn admin-it higher)
+954.0: (do-week finn admin-it higher)
+955.0: (do-week finn admin-it higher)
+956.0: (do-week finn admin-it higher)
+957.0: (do-week finn admin-it higher)
+958.0: (do-unit finn admin-it higher)
+959.0: (do-week finn admin-it higher)
+960.0: (do-week finn admin-it higher)
+961.0: (do-week finn admin-it higher)
+962.0: (do-week finn admin-it higher)
+963.0: (do-week finn admin-it higher)
+964.0: (do-week finn admin-it higher)
+965.0: (do-week finn admin-it higher)
+966.0: (do-unit finn admin-it higher)
+967.0: (finish-course finn admin-it higher)
+968.0: (do-unit finn numeracy national-four)
+969.0: (do-week finn numeracy national-four)
+970.0: (do-week finn numeracy national-four)
+971.0: (do-week finn numeracy national-four)
+972.0: (do-week finn numeracy national-four)
+973.0: (do-week finn numeracy national-four)
+974.0: (do-week finn numeracy national-four)
+975.0: (do-week finn numeracy national-four)
+976.0: (do-unit finn numeracy national-four)
+977.0: (do-week finn numeracy national-four)
+978.0: (do-week finn numeracy national-four)
+979.0: (do-week finn numeracy national-four)
+980.0: (do-week finn numeracy national-four)
+981.0: (do-week finn numeracy national-four)
+982.0: (do-week finn numeracy national-four)
+983.0: (do-week finn numeracy national-four)
+984.0: (do-unit finn numeracy national-four)
+985.0: (do-week finn numeracy national-four)
+986.0: (do-week finn numeracy national-four)
+987.0: (do-week finn numeracy national-four)
+988.0: (do-week finn numeracy national-four)
+989.0: (do-week finn numeracy national-four)
+990.0: (do-week finn numeracy national-four)
+991.0: (do-week finn numeracy national-four)
+992.0: (do-unit finn numeracy national-four)
+993.0: (finish-course finn numeracy national-four)
+994.0: (do-unit sienna mandarin year-two)
+995.0: (do-week sienna mandarin year-two)
+996.0: (do-week sienna mandarin year-two)
+997.0: (do-week sienna mandarin year-two)
+998.0: (do-week sienna mandarin year-two)
+999.0: (do-week sienna mandarin year-two)
+1000.0: (do-week sienna mandarin year-two)
+1001.0: (do-week sienna mandarin year-two)
+1002.0: (do-unit sienna mandarin year-two)
+1003.0: (do-week sienna mandarin year-two)
+1004.0: (do-week sienna mandarin year-two)
+1005.0: (do-week sienna mandarin year-two)
+1006.0: (do-week sienna mandarin year-two)
+1007.0: (do-week sienna mandarin year-two)
+1008.0: (do-week sienna mandarin year-two)
+1009.0: (do-week sienna mandarin year-two)
+1010.0: (do-unit sienna mandarin year-two)
+1011.0: (do-week sienna mandarin year-two)
+1012.0: (do-week sienna mandarin year-two)
+1013.0: (do-week sienna mandarin year-two)
+1014.0: (do-week sienna mandarin year-two)
+1015.0: (do-week sienna mandarin year-two)
+1016.0: (do-week sienna mandarin year-two)
+1017.0: (do-week sienna mandarin year-two)
+1018.0: (do-unit sienna mandarin year-two)
+1019.0: (finish-course sienna mandarin year-two)
+1020.0: (do-unit sienna admin-it year-one)
+1021.0: (do-week sienna admin-it year-one)
+1022.0: (do-week sienna admin-it year-one)
+1023.0: (do-week sienna admin-it year-one)
+1024.0: (do-week sienna admin-it year-one)
+1025.0: (do-week sienna admin-it year-one)
+1026.0: (do-week sienna admin-it year-one)
+1027.0: (do-week sienna admin-it year-one)
+1028.0: (do-unit sienna admin-it year-one)
+1029.0: (do-week sienna admin-it year-one)
+1030.0: (do-week sienna admin-it year-one)
+1031.0: (do-week sienna admin-it year-one)
+1032.0: (do-week sienna admin-it year-one)
+1033.0: (do-week sienna admin-it year-one)
+1034.0: (do-week sienna admin-it year-one)
+1035.0: (do-week sienna admin-it year-one)
+1036.0: (do-unit sienna admin-it year-one)
+1037.0: (do-week sienna admin-it year-one)
+1038.0: (do-week sienna admin-it year-one)
+1039.0: (do-week sienna admin-it year-one)
+1040.0: (do-week sienna admin-it year-one)
+1041.0: (do-week sienna admin-it year-one)
+1042.0: (do-week sienna admin-it year-one)
+1043.0: (do-week sienna admin-it year-one)
+1044.0: (do-unit sienna admin-it year-one)
+1045.0: (finish-course sienna admin-it year-one)
+1046.0: (do-unit sienna pc-passport year-one)
+1047.0: (do-week sienna pc-passport year-one)
+1048.0: (do-week sienna pc-passport year-one)
+1049.0: (do-week sienna pc-passport year-one)
+1050.0: (do-week sienna pc-passport year-one)
+1051.0: (do-week sienna pc-passport year-one)
+1052.0: (do-week sienna pc-passport year-one)
+1053.0: (do-week sienna pc-passport year-one)
+1054.0: (do-unit sienna pc-passport year-one)
+1055.0: (do-week sienna pc-passport year-one)
+1056.0: (do-week sienna pc-passport year-one)
+1057.0: (do-week sienna pc-passport year-one)
+1058.0: (do-week sienna pc-passport year-one)
+1059.0: (do-week sienna pc-passport year-one)
+1060.0: (do-week sienna pc-passport year-one)
+1061.0: (do-week sienna pc-passport year-one)
+1062.0: (do-unit sienna pc-passport year-one)
+1063.0: (do-week sienna pc-passport year-one)
+1064.0: (do-week sienna pc-passport year-one)
+1065.0: (do-week sienna pc-passport year-one)
+1066.0: (do-week sienna pc-passport year-one)
+1067.0: (do-week sienna pc-passport year-one)
+1068.0: (do-week sienna pc-passport year-one)
+1069.0: (do-week sienna pc-passport year-one)
+1070.0: (do-unit sienna pc-passport year-one)
+1071.0: (finish-course sienna pc-passport year-one)
+1072.0: (do-unit sienna admin-it adv-higher)
+1073.0: (do-week sienna admin-it adv-higher)
+1074.0: (do-week sienna admin-it adv-higher)
+1075.0: (do-week sienna admin-it adv-higher)
+1076.0: (do-week sienna admin-it adv-higher)
+1077.0: (do-week sienna admin-it adv-higher)
+1078.0: (do-week sienna admin-it adv-higher)
+1079.0: (do-week sienna admin-it adv-higher)
+1080.0: (do-unit sienna admin-it adv-higher)
+1081.0: (do-week sienna admin-it adv-higher)
+1082.0: (do-week sienna admin-it adv-higher)
+1083.0: (do-week sienna admin-it adv-higher)
+1084.0: (do-week sienna admin-it adv-higher)
+1085.0: (do-week sienna admin-it adv-higher)
+1086.0: (do-week sienna admin-it adv-higher)
+1087.0: (do-week sienna admin-it adv-higher)
+1088.0: (do-unit sienna admin-it adv-higher)
+1089.0: (do-week sienna admin-it adv-higher)
+1090.0: (do-week sienna admin-it adv-higher)
+1091.0: (do-week sienna admin-it adv-higher)
+1092.0: (do-week sienna admin-it adv-higher)
+1093.0: (do-week sienna admin-it adv-higher)
+1094.0: (do-week sienna admin-it adv-higher)
+1095.0: (do-week sienna admin-it adv-higher)
+1096.0: (do-unit sienna admin-it adv-higher)
+1097.0: (finish-course sienna admin-it adv-higher)
+1098.0: (do-unit sienna practical-woodwork national-five)
+1099.0: (do-week sienna practical-woodwork national-five)
+1100.0: (do-week sienna practical-woodwork national-five)
+1101.0: (do-week sienna practical-woodwork national-five)
+1102.0: (do-week sienna practical-woodwork national-five)
+1103.0: (do-week sienna practical-woodwork national-five)
+1104.0: (do-week sienna practical-woodwork national-five)
+1105.0: (do-week sienna practical-woodwork national-five)
+1106.0: (do-unit sienna practical-woodwork national-five)
+1107.0: (do-week sienna practical-woodwork national-five)
+1108.0: (do-week sienna practical-woodwork national-five)
+1109.0: (do-week sienna practical-woodwork national-five)
+1110.0: (do-week sienna practical-woodwork national-five)
+1111.0: (do-week sienna practical-woodwork national-five)
+1112.0: (do-week sienna practical-woodwork national-five)
+1113.0: (do-week sienna practical-woodwork national-five)
+1114.0: (do-unit sienna practical-woodwork national-five)
+1115.0: (do-week sienna practical-woodwork national-five)
+1116.0: (do-week sienna practical-woodwork national-five)
+1117.0: (do-week sienna practical-woodwork national-five)
+1118.0: (do-week sienna practical-woodwork national-five)
+1119.0: (do-week sienna practical-woodwork national-five)
+1120.0: (do-week sienna practical-woodwork national-five)
+1121.0: (do-week sienna practical-woodwork national-five)
+1122.0: (do-unit sienna practical-woodwork national-five)
+1123.0: (finish-course sienna practical-woodwork national-five)
+1124.0: (do-unit oscar phys-ed national-four)
+1125.0: (do-week oscar phys-ed national-four)
+1126.0: (do-week oscar phys-ed national-four)
+1127.0: (do-week oscar phys-ed national-four)
+1128.0: (do-week oscar phys-ed national-four)
+1129.0: (do-week oscar phys-ed national-four)
+1130.0: (do-week oscar phys-ed national-four)
+1131.0: (do-week oscar phys-ed national-four)
+1132.0: (do-unit oscar phys-ed national-four)
+1133.0: (do-week oscar phys-ed national-four)
+1134.0: (do-week oscar phys-ed national-four)
+1135.0: (do-week oscar phys-ed national-four)
+1136.0: (do-week oscar phys-ed national-four)
+1137.0: (do-week oscar phys-ed national-four)
+1138.0: (do-week oscar phys-ed national-four)
+1139.0: (do-week oscar phys-ed national-four)
+1140.0: (do-unit oscar phys-ed national-four)
+1141.0: (do-week oscar phys-ed national-four)
+1142.0: (do-week oscar phys-ed national-four)
+1143.0: (do-week oscar phys-ed national-four)
+1144.0: (do-week oscar phys-ed national-four)
+1145.0: (do-week oscar phys-ed national-four)
+1146.0: (do-week oscar phys-ed national-four)
+1147.0: (do-week oscar phys-ed national-four)
+1148.0: (do-unit oscar phys-ed national-four)
+1149.0: (finish-course oscar phys-ed national-four)
+1150.0: (do-unit oscar pc-passport adv-higher)
+1151.0: (do-week oscar pc-passport adv-higher)
+1152.0: (do-week oscar pc-passport adv-higher)
+1153.0: (do-week oscar pc-passport adv-higher)
+1154.0: (do-week oscar pc-passport adv-higher)
+1155.0: (do-week oscar pc-passport adv-higher)
+1156.0: (do-week oscar pc-passport adv-higher)
+1157.0: (do-week oscar pc-passport adv-higher)
+1158.0: (do-unit oscar pc-passport adv-higher)
+1159.0: (do-week oscar pc-passport adv-higher)
+1160.0: (do-week oscar pc-passport adv-higher)
+1161.0: (do-week oscar pc-passport adv-higher)
+1162.0: (do-week oscar pc-passport adv-higher)
+1163.0: (do-week oscar pc-passport adv-higher)
+1164.0: (do-week oscar pc-passport adv-higher)
+1165.0: (do-week oscar pc-passport adv-higher)
+1166.0: (do-unit oscar pc-passport adv-higher)
+1167.0: (do-week oscar pc-passport adv-higher)
+1168.0: (do-week oscar pc-passport adv-higher)
+1169.0: (do-week oscar pc-passport adv-higher)
+1170.0: (do-week oscar pc-passport adv-higher)
+1171.0: (do-week oscar pc-passport adv-higher)
+1172.0: (do-week oscar pc-passport adv-higher)
+1173.0: (do-week oscar pc-passport adv-higher)
+1174.0: (do-unit oscar pc-passport adv-higher)
+1175.0: (finish-course oscar pc-passport adv-higher)
+1176.0: (do-unit oscar english higher)
+1177.0: (do-week oscar english higher)
+1178.0: (do-week oscar english higher)
+1179.0: (do-week oscar english higher)
+1180.0: (do-week oscar english higher)
+1181.0: (do-week oscar english higher)
+1182.0: (do-week oscar english higher)
+1183.0: (do-week oscar english higher)
+1184.0: (do-unit oscar english higher)
+1185.0: (do-week oscar english higher)
+1186.0: (do-week oscar english higher)
+1187.0: (do-week oscar english higher)
+1188.0: (do-week oscar english higher)
+1189.0: (do-week oscar english higher)
+1190.0: (do-week oscar english higher)
+1191.0: (do-week oscar english higher)
+1192.0: (do-unit oscar english higher)
+1193.0: (do-week oscar english higher)
+1194.0: (do-week oscar english higher)
+1195.0: (do-week oscar english higher)
+1196.0: (do-week oscar english higher)
+1197.0: (do-week oscar english higher)
+1198.0: (do-week oscar english higher)
+1199.0: (do-week oscar english higher)
+1200.0: (do-unit oscar english higher)
+1201.0: (finish-course oscar english higher)
+1202.0: (do-unit oscar numeracy year-one)
+1203.0: (do-week oscar numeracy year-one)
+1204.0: (do-week oscar numeracy year-one)
+1205.0: (do-week oscar numeracy year-one)
+1206.0: (do-week oscar numeracy year-one)
+1207.0: (do-week oscar numeracy year-one)
+1208.0: (do-week oscar numeracy year-one)
+1209.0: (do-week oscar numeracy year-one)
+1210.0: (do-unit oscar numeracy year-one)
+1211.0: (do-week oscar numeracy year-one)
+1212.0: (do-week oscar numeracy year-one)
+1213.0: (do-week oscar numeracy year-one)
+1214.0: (do-week oscar numeracy year-one)
+1215.0: (do-week oscar numeracy year-one)
+1216.0: (do-week oscar numeracy year-one)
+1217.0: (do-week oscar numeracy year-one)
+1218.0: (do-unit oscar numeracy year-one)
+1219.0: (do-week oscar numeracy year-one)
+1220.0: (do-week oscar numeracy year-one)
+1221.0: (do-week oscar numeracy year-one)
+1222.0: (do-week oscar numeracy year-one)
+1223.0: (do-week oscar numeracy year-one)
+1224.0: (do-week oscar numeracy year-one)
+1225.0: (do-week oscar numeracy year-one)
+1226.0: (do-unit oscar numeracy year-one)
+1227.0: (finish-course oscar numeracy year-one)
+1228.0: (do-unit oscar history adv-higher)
+1229.0: (do-week oscar history adv-higher)
+1230.0: (do-week oscar history adv-higher)
+1231.0: (do-week oscar history adv-higher)
+1232.0: (do-week oscar history adv-higher)
+1233.0: (do-week oscar history adv-higher)
+1234.0: (do-week oscar history adv-higher)
+1235.0: (do-week oscar history adv-higher)
+1236.0: (do-unit oscar history adv-higher)
+1237.0: (do-week oscar history adv-higher)
+1238.0: (do-week oscar history adv-higher)
+1239.0: (do-week oscar history adv-higher)
+1240.0: (do-week oscar history adv-higher)
+1241.0: (do-week oscar history adv-higher)
+1242.0: (do-week oscar history adv-higher)
+1243.0: (do-week oscar history adv-higher)
+1244.0: (do-unit oscar history adv-higher)
+1245.0: (do-week oscar history adv-higher)
+1246.0: (do-week oscar history adv-higher)
+1247.0: (do-week oscar history adv-higher)
+1248.0: (do-week oscar history adv-higher)
+1249.0: (do-week oscar history adv-higher)
+1250.0: (do-week oscar history adv-higher)
+1251.0: (do-week oscar history adv-higher)
+1252.0: (do-unit oscar history adv-higher)
+1253.0: (finish-course oscar history adv-higher)
+1254.0: (do-unit travis phys-ed national-four)
+1255.0: (do-week travis phys-ed national-four)
+1256.0: (do-week travis phys-ed national-four)
+1257.0: (do-week travis phys-ed national-four)
+1258.0: (do-week travis phys-ed national-four)
+1259.0: (do-week travis phys-ed national-four)
+1260.0: (do-week travis phys-ed national-four)
+1261.0: (do-week travis phys-ed national-four)
+1262.0: (do-unit travis phys-ed national-four)
+1263.0: (do-week travis phys-ed national-four)
+1264.0: (do-week travis phys-ed national-four)
+1265.0: (do-week travis phys-ed national-four)
+1266.0: (do-week travis phys-ed national-four)
+1267.0: (do-week travis phys-ed national-four)
+1268.0: (do-week travis phys-ed national-four)
+1269.0: (do-week travis phys-ed national-four)
+1270.0: (do-unit travis phys-ed national-four)
+1271.0: (do-week travis phys-ed national-four)
+1272.0: (do-week travis phys-ed national-four)
+1273.0: (do-week travis phys-ed national-four)
+1274.0: (do-week travis phys-ed national-four)
+1275.0: (do-week travis phys-ed national-four)
+1276.0: (do-week travis phys-ed national-four)
+1277.0: (do-week travis phys-ed national-four)
+1278.0: (do-unit travis phys-ed national-four)
+1279.0: (finish-course travis phys-ed national-four)
+1280.0: (do-unit travis mandarin higher)
+1281.0: (do-week travis mandarin higher)
+1282.0: (do-week travis mandarin higher)
+1283.0: (do-week travis mandarin higher)
+1284.0: (do-week travis mandarin higher)
+1285.0: (do-week travis mandarin higher)
+1286.0: (do-week travis mandarin higher)
+1287.0: (do-week travis mandarin higher)
+1288.0: (do-unit travis mandarin higher)
+1289.0: (do-week travis mandarin higher)
+1290.0: (do-week travis mandarin higher)
+1291.0: (do-week travis mandarin higher)
+1292.0: (do-week travis mandarin higher)
+1293.0: (do-week travis mandarin higher)
+1294.0: (do-week travis mandarin higher)
+1295.0: (do-week travis mandarin higher)
+1296.0: (do-unit travis mandarin higher)
+1297.0: (do-week travis mandarin higher)
+1298.0: (do-week travis mandarin higher)
+1299.0: (do-week travis mandarin higher)
+1300.0: (do-week travis mandarin higher)
+1301.0: (do-week travis mandarin higher)
+1302.0: (do-week travis mandarin higher)
+1303.0: (do-week travis mandarin higher)
+1304.0: (do-unit travis mandarin higher)
+1305.0: (finish-course travis mandarin higher)
+1306.0: (do-unit travis textiles year-three)
+1307.0: (do-week travis textiles year-three)
+1308.0: (do-week travis textiles year-three)
+1309.0: (do-week travis textiles year-three)
+1310.0: (do-week travis textiles year-three)
+1311.0: (do-week travis textiles year-three)
+1312.0: (do-week travis textiles year-three)
+1313.0: (do-week travis textiles year-three)
+1314.0: (do-unit travis textiles year-three)
+1315.0: (do-week travis textiles year-three)
+1316.0: (do-week travis textiles year-three)
+1317.0: (do-week travis textiles year-three)
+1318.0: (do-week travis textiles year-three)
+1319.0: (do-week travis textiles year-three)
+1320.0: (do-week travis textiles year-three)
+1321.0: (do-week travis textiles year-three)
+1322.0: (do-unit travis textiles year-three)
+1323.0: (do-week travis textiles year-three)
+1324.0: (do-week travis textiles year-three)
+1325.0: (do-week travis textiles year-three)
+1326.0: (do-week travis textiles year-three)
+1327.0: (do-week travis textiles year-three)
+1328.0: (do-week travis textiles year-three)
+1329.0: (do-week travis textiles year-three)
+1330.0: (do-unit travis textiles year-three)
+1331.0: (finish-course travis textiles year-three)
+1332.0: (do-unit travis urdu national-five)
+1333.0: (do-week travis urdu national-five)
+1334.0: (do-week travis urdu national-five)
+1335.0: (do-week travis urdu national-five)
+1336.0: (do-week travis urdu national-five)
+1337.0: (do-week travis urdu national-five)
+1338.0: (do-week travis urdu national-five)
+1339.0: (do-week travis urdu national-five)
+1340.0: (do-unit travis urdu national-five)
+1341.0: (do-week travis urdu national-five)
+1342.0: (do-week travis urdu national-five)
+1343.0: (do-week travis urdu national-five)
+1344.0: (do-week travis urdu national-five)
+1345.0: (do-week travis urdu national-five)
+1346.0: (do-week travis urdu national-five)
+1347.0: (do-week travis urdu national-five)
+1348.0: (do-unit travis urdu national-five)
+1349.0: (do-week travis urdu national-five)
+1350.0: (do-week travis urdu national-five)
+1351.0: (do-week travis urdu national-five)
+1352.0: (do-week travis urdu national-five)
+1353.0: (do-week travis urdu national-five)
+1354.0: (do-week travis urdu national-five)
+1355.0: (do-week travis urdu national-five)
+1356.0: (do-unit travis urdu national-five)
+1357.0: (finish-course travis urdu national-five)
+1358.0: (do-unit travis drama year-two)
+1359.0: (do-week travis drama year-two)
+1360.0: (do-week travis drama year-two)
+1361.0: (do-week travis drama year-two)
+1362.0: (do-week travis drama year-two)
+1363.0: (do-week travis drama year-two)
+1364.0: (do-week travis drama year-two)
+1365.0: (do-week travis drama year-two)
+1366.0: (do-unit travis drama year-two)
+1367.0: (do-week travis drama year-two)
+1368.0: (do-week travis drama year-two)
+1369.0: (do-week travis drama year-two)
+1370.0: (do-week travis drama year-two)
+1371.0: (do-week travis drama year-two)
+1372.0: (do-week travis drama year-two)
+1373.0: (do-week travis drama year-two)
+1374.0: (do-unit travis drama year-two)
+1375.0: (do-week travis drama year-two)
+1376.0: (do-week travis drama year-two)
+1377.0: (do-week travis drama year-two)
+1378.0: (do-week travis drama year-two)
+1379.0: (do-week travis drama year-two)
+1380.0: (do-week travis drama year-two)
+1381.0: (do-week travis drama year-two)
+1382.0: (do-unit travis drama year-two)
+1383.0: (finish-course travis drama year-two)
+1384.0: (do-unit leo mandarin national-four)
+1385.0: (do-week leo mandarin national-four)
+1386.0: (do-week leo mandarin national-four)
+1387.0: (do-week leo mandarin national-four)
+1388.0: (do-week leo mandarin national-four)
+1389.0: (do-week leo mandarin national-four)
+1390.0: (do-week leo mandarin national-four)
+1391.0: (do-week leo mandarin national-four)
+1392.0: (do-unit leo mandarin national-four)
+1393.0: (do-week leo mandarin national-four)
+1394.0: (do-week leo mandarin national-four)
+1395.0: (do-week leo mandarin national-four)
+1396.0: (do-week leo mandarin national-four)
+1397.0: (do-week leo mandarin national-four)
+1398.0: (do-week leo mandarin national-four)
+1399.0: (do-week leo mandarin national-four)
+1400.0: (do-unit leo mandarin national-four)
+1401.0: (do-week leo mandarin national-four)
+1402.0: (do-week leo mandarin national-four)
+1403.0: (do-week leo mandarin national-four)
+1404.0: (do-week leo mandarin national-four)
+1405.0: (do-week leo mandarin national-four)
+1406.0: (do-week leo mandarin national-four)
+1407.0: (do-week leo mandarin national-four)
+1408.0: (do-unit leo mandarin national-four)
+1409.0: (finish-course leo mandarin national-four)
+1410.0: (do-unit leo philosophy national-five)
+1411.0: (do-week leo philosophy national-five)
+1412.0: (do-week leo philosophy national-five)
+1413.0: (do-week leo philosophy national-five)
+1414.0: (do-week leo philosophy national-five)
+1415.0: (do-week leo philosophy national-five)
+1416.0: (do-week leo philosophy national-five)
+1417.0: (do-week leo philosophy national-five)
+1418.0: (do-unit leo philosophy national-five)
+1419.0: (do-week leo philosophy national-five)
+1420.0: (do-week leo philosophy national-five)
+1421.0: (do-week leo philosophy national-five)
+1422.0: (do-week leo philosophy national-five)
+1423.0: (do-week leo philosophy national-five)
+1424.0: (do-week leo philosophy national-five)
+1425.0: (do-week leo philosophy national-five)
+1426.0: (do-unit leo philosophy national-five)
+1427.0: (do-week leo philosophy national-five)
+1428.0: (do-week leo philosophy national-five)
+1429.0: (do-week leo philosophy national-five)
+1430.0: (do-week leo philosophy national-five)
+1431.0: (do-week leo philosophy national-five)
+1432.0: (do-week leo philosophy national-five)
+1433.0: (do-week leo philosophy national-five)
+1434.0: (do-unit leo philosophy national-five)
+1435.0: (finish-course leo philosophy national-five)
+1436.0: (do-unit leo graph-comm year-two)
+1437.0: (do-week leo graph-comm year-two)
+1438.0: (do-week leo graph-comm year-two)
+1439.0: (do-week leo graph-comm year-two)
+1440.0: (do-week leo graph-comm year-two)
+1441.0: (do-week leo graph-comm year-two)
+1442.0: (do-week leo graph-comm year-two)
+1443.0: (do-week leo graph-comm year-two)
+1444.0: (do-unit leo graph-comm year-two)
+1445.0: (do-week leo graph-comm year-two)
+1446.0: (do-week leo graph-comm year-two)
+1447.0: (do-week leo graph-comm year-two)
+1448.0: (do-week leo graph-comm year-two)
+1449.0: (do-week leo graph-comm year-two)
+1450.0: (do-week leo graph-comm year-two)
+1451.0: (do-week leo graph-comm year-two)
+1452.0: (do-unit leo graph-comm year-two)
+1453.0: (do-week leo graph-comm year-two)
+1454.0: (do-week leo graph-comm year-two)
+1455.0: (do-week leo graph-comm year-two)
+1456.0: (do-week leo graph-comm year-two)
+1457.0: (do-week leo graph-comm year-two)
+1458.0: (do-week leo graph-comm year-two)
+1459.0: (do-week leo graph-comm year-two)
+1460.0: (do-unit leo graph-comm year-two)
+1461.0: (finish-course leo graph-comm year-two)
+1462.0: (do-unit leo gaelic adv-higher)
+1463.0: (do-week leo gaelic adv-higher)
+1464.0: (do-week leo gaelic adv-higher)
+1465.0: (do-week leo gaelic adv-higher)
+1466.0: (do-week leo gaelic adv-higher)
+1467.0: (do-week leo gaelic adv-higher)
+1468.0: (do-week leo gaelic adv-higher)
+1469.0: (do-week leo gaelic adv-higher)
+1470.0: (do-unit leo gaelic adv-higher)
+1471.0: (do-week leo gaelic adv-higher)
+1472.0: (do-week leo gaelic adv-higher)
+1473.0: (do-week leo gaelic adv-higher)
+1474.0: (do-week leo gaelic adv-higher)
+1475.0: (do-week leo gaelic adv-higher)
+1476.0: (do-week leo gaelic adv-higher)
+1477.0: (do-week leo gaelic adv-higher)
+1478.0: (do-unit leo gaelic adv-higher)
+1479.0: (do-week leo gaelic adv-higher)
+1480.0: (do-week leo gaelic adv-higher)
+1481.0: (do-week leo gaelic adv-higher)
+1482.0: (do-week leo gaelic adv-higher)
+1483.0: (do-week leo gaelic adv-higher)
+1484.0: (do-week leo gaelic adv-higher)
+1485.0: (do-week leo gaelic adv-higher)
+1486.0: (do-unit leo gaelic adv-higher)
+1487.0: (finish-course leo gaelic adv-higher)
+1488.0: (do-unit leo music-tech year-one)
+1489.0: (do-week leo music-tech year-one)
+1490.0: (do-week leo music-tech year-one)
+1491.0: (do-week leo music-tech year-one)
+1492.0: (do-week leo music-tech year-one)
+1493.0: (do-week leo music-tech year-one)
+1494.0: (do-week leo music-tech year-one)
+1495.0: (do-week leo music-tech year-one)
+1496.0: (do-unit leo music-tech year-one)
+1497.0: (do-week leo music-tech year-one)
+1498.0: (do-week leo music-tech year-one)
+1499.0: (do-week leo music-tech year-one)
+1500.0: (do-week leo music-tech year-one)
+1501.0: (do-week leo music-tech year-one)
+1502.0: (do-week leo music-tech year-one)
+1503.0: (do-week leo music-tech year-one)
+1504.0: (do-unit leo music-tech year-one)
+1505.0: (do-week leo music-tech year-one)
+1506.0: (do-week leo music-tech year-one)
+1507.0: (do-week leo music-tech year-one)
+1508.0: (do-week leo music-tech year-one)
+1509.0: (do-week leo music-tech year-one)
+1510.0: (do-week leo music-tech year-one)
+1511.0: (do-week leo music-tech year-one)
+1512.0: (do-unit leo music-tech year-one)
+1513.0: (finish-course leo music-tech year-one)
+1514.0: (do-unit grace textiles national-four)
+1515.0: (do-week grace textiles national-four)
+1516.0: (do-week grace textiles national-four)
+1517.0: (do-week grace textiles national-four)
+1518.0: (do-week grace textiles national-four)
+1519.0: (do-week grace textiles national-four)
+1520.0: (do-week grace textiles national-four)
+1521.0: (do-week grace textiles national-four)
+1522.0: (do-unit grace textiles national-four)
+1523.0: (do-week grace textiles national-four)
+1524.0: (do-week grace textiles national-four)
+1525.0: (do-week grace textiles national-four)
+1526.0: (do-week grace textiles national-four)
+1527.0: (do-week grace textiles national-four)
+1528.0: (do-week grace textiles national-four)
+1529.0: (do-week grace textiles national-four)
+1530.0: (do-unit grace textiles national-four)
+1531.0: (do-week grace textiles national-four)
+1532.0: (do-week grace textiles national-four)
+1533.0: (do-week grace textiles national-four)
+1534.0: (do-week grace textiles national-four)
+1535.0: (do-week grace textiles national-four)
+1536.0: (do-week grace textiles national-four)
+1537.0: (do-week grace textiles national-four)
+1538.0: (do-unit grace textiles national-four)
+1539.0: (finish-course grace textiles national-four)
+1540.0: (do-unit grace numeracy year-one)
+1541.0: (do-week grace numeracy year-one)
+1542.0: (do-week grace numeracy year-one)
+1543.0: (do-week grace numeracy year-one)
+1544.0: (do-week grace numeracy year-one)
+1545.0: (do-week grace numeracy year-one)
+1546.0: (do-week grace numeracy year-one)
+1547.0: (do-week grace numeracy year-one)
+1548.0: (do-unit grace numeracy year-one)
+1549.0: (do-week grace numeracy year-one)
+1550.0: (do-week grace numeracy year-one)
+1551.0: (do-week grace numeracy year-one)
+1552.0: (do-week grace numeracy year-one)
+1553.0: (do-week grace numeracy year-one)
+1554.0: (do-week grace numeracy year-one)
+1555.0: (do-week grace numeracy year-one)
+1556.0: (do-unit grace numeracy year-one)
+1557.0: (do-week grace numeracy year-one)
+1558.0: (do-week grace numeracy year-one)
+1559.0: (do-week grace numeracy year-one)
+1560.0: (do-week grace numeracy year-one)
+1561.0: (do-week grace numeracy year-one)
+1562.0: (do-week grace numeracy year-one)
+1563.0: (do-week grace numeracy year-one)
+1564.0: (do-unit grace numeracy year-one)
+1565.0: (finish-course grace numeracy year-one)
+1566.0: (do-unit grace italian higher)
+1567.0: (do-week grace italian higher)
+1568.0: (do-week grace italian higher)
+1569.0: (do-week grace italian higher)
+1570.0: (do-week grace italian higher)
+1571.0: (do-week grace italian higher)
+1572.0: (do-week grace italian higher)
+1573.0: (do-week grace italian higher)
+1574.0: (do-unit grace italian higher)
+1575.0: (do-week grace italian higher)
+1576.0: (do-week grace italian higher)
+1577.0: (do-week grace italian higher)
+1578.0: (do-week grace italian higher)
+1579.0: (do-week grace italian higher)
+1580.0: (do-week grace italian higher)
+1581.0: (do-week grace italian higher)
+1582.0: (do-unit grace italian higher)
+1583.0: (do-week grace italian higher)
+1584.0: (do-week grace italian higher)
+1585.0: (do-week grace italian higher)
+1586.0: (do-week grace italian higher)
+1587.0: (do-week grace italian higher)
+1588.0: (do-week grace italian higher)
+1589.0: (do-week grace italian higher)
+1590.0: (do-unit grace italian higher)
+1591.0: (finish-course grace italian higher)
+1592.0: (do-unit grace physics adv-higher)
+1593.0: (do-week grace physics adv-higher)
+1594.0: (do-week grace physics adv-higher)
+1595.0: (do-week grace physics adv-higher)
+1596.0: (do-week grace physics adv-higher)
+1597.0: (do-week grace physics adv-higher)
+1598.0: (do-week grace physics adv-higher)
+1599.0: (do-week grace physics adv-higher)
+1600.0: (do-unit grace physics adv-higher)
+1601.0: (do-week grace physics adv-higher)
+1602.0: (do-week grace physics adv-higher)
+1603.0: (do-week grace physics adv-higher)
+1604.0: (do-week grace physics adv-higher)
+1605.0: (do-week grace physics adv-higher)
+1606.0: (do-week grace physics adv-higher)
+1607.0: (do-week grace physics adv-higher)
+1608.0: (do-unit grace physics adv-higher)
+1609.0: (do-week grace physics adv-higher)
+1610.0: (do-week grace physics adv-higher)
+1611.0: (do-week grace physics adv-higher)
+1612.0: (do-week grace physics adv-higher)
+1613.0: (do-week grace physics adv-higher)
+1614.0: (do-week grace physics adv-higher)
+1615.0: (do-week grace physics adv-higher)
+1616.0: (do-unit grace physics adv-higher)
+1617.0: (finish-course grace physics adv-higher)
+1618.0: (do-unit grace latin higher)
+1619.0: (do-week grace latin higher)
+1620.0: (do-week grace latin higher)
+1621.0: (do-week grace latin higher)
+1622.0: (do-week grace latin higher)
+1623.0: (do-week grace latin higher)
+1624.0: (do-week grace latin higher)
+1625.0: (do-week grace latin higher)
+1626.0: (do-unit grace latin higher)
+1627.0: (do-week grace latin higher)
+1628.0: (do-week grace latin higher)
+1629.0: (do-week grace latin higher)
+1630.0: (do-week grace latin higher)
+1631.0: (do-week grace latin higher)
+1632.0: (do-week grace latin higher)
+1633.0: (do-week grace latin higher)
+1634.0: (do-unit grace latin higher)
+1635.0: (do-week grace latin higher)
+1636.0: (do-week grace latin higher)
+1637.0: (do-week grace latin higher)
+1638.0: (do-week grace latin higher)
+1639.0: (do-week grace latin higher)
+1640.0: (do-week grace latin higher)
+1641.0: (do-week grace latin higher)
+1642.0: (do-unit grace latin higher)
+1643.0: (finish-course grace latin higher)
+1644.0: (do-unit ava music-tech year-one)
+1645.0: (do-week ava music-tech year-one)
+1646.0: (do-week ava music-tech year-one)
+1647.0: (do-week ava music-tech year-one)
+1648.0: (do-week ava music-tech year-one)
+1649.0: (do-week ava music-tech year-one)
+1650.0: (do-week ava music-tech year-one)
+1651.0: (do-week ava music-tech year-one)
+1652.0: (do-unit ava music-tech year-one)
+1653.0: (do-week ava music-tech year-one)
+1654.0: (do-week ava music-tech year-one)
+1655.0: (do-week ava music-tech year-one)
+1656.0: (do-week ava music-tech year-one)
+1657.0: (do-week ava music-tech year-one)
+1658.0: (do-week ava music-tech year-one)
+1659.0: (do-week ava music-tech year-one)
+1660.0: (do-unit ava music-tech year-one)
+1661.0: (finish-course ava music-tech year-one)
+
+Plan-Length:1662
+Metric (Search):1662.0
+Planning Time (msec): 4546
+Heuristic Time (msec): 3820
+Search Time (msec): 4136
+Expanded Nodes:1379
+States Evaluated:44569
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:0
+Number of Duplicates detected:1227

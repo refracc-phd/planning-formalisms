@@ -1,0 +1,1291 @@
+! ====== ! Warning: Unknown planner configuration. Going with default: gbfs with hadd ! ====== !
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 41
+Aibr Preprocessing
+|F|:31
+|X|:50
+|A|:81
+|P|:0
+|E|:0
+H1 Setup Time (msec): 15
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=331.0
+ g(n)= 1.0 h(n)=330.0
+ g(n)= 2.0 h(n)=329.0
+ g(n)= 3.0 h(n)=328.0
+ g(n)= 4.0 h(n)=327.0
+ g(n)= 5.0 h(n)=326.0
+ g(n)= 6.0 h(n)=325.0
+ g(n)= 7.0 h(n)=324.0
+ g(n)= 8.0 h(n)=323.0
+ g(n)= 9.0 h(n)=322.0
+ g(n)= 10.0 h(n)=321.0
+ g(n)= 11.0 h(n)=320.0
+ g(n)= 12.0 h(n)=319.0
+ g(n)= 13.0 h(n)=318.0
+ g(n)= 14.0 h(n)=317.0
+ g(n)= 15.0 h(n)=316.0
+ g(n)= 16.0 h(n)=315.0
+ g(n)= 17.0 h(n)=314.0
+ g(n)= 18.0 h(n)=313.0
+ g(n)= 19.0 h(n)=312.0
+ g(n)= 20.0 h(n)=311.0
+ g(n)= 21.0 h(n)=310.0
+ g(n)= 22.0 h(n)=309.0
+ g(n)= 23.0 h(n)=308.0
+ g(n)= 24.0 h(n)=307.0
+ g(n)= 25.0 h(n)=306.0
+ g(n)= 26.0 h(n)=305.0
+ g(n)= 27.0 h(n)=304.0
+ g(n)= 28.0 h(n)=303.0
+ g(n)= 29.0 h(n)=302.0
+ g(n)= 30.0 h(n)=301.0
+ g(n)= 31.0 h(n)=300.0
+ g(n)= 32.0 h(n)=299.0
+ g(n)= 33.0 h(n)=298.0
+ g(n)= 34.0 h(n)=297.0
+ g(n)= 35.0 h(n)=296.0
+ g(n)= 36.0 h(n)=295.0
+ g(n)= 37.0 h(n)=294.0
+ g(n)= 38.0 h(n)=293.0
+ g(n)= 39.0 h(n)=292.0
+ g(n)= 40.0 h(n)=291.0
+ g(n)= 41.0 h(n)=290.0
+ g(n)= 42.0 h(n)=289.0
+ g(n)= 43.0 h(n)=288.0
+ g(n)= 44.0 h(n)=287.0
+ g(n)= 45.0 h(n)=286.0
+ g(n)= 46.0 h(n)=285.0
+ g(n)= 47.0 h(n)=284.0
+ g(n)= 48.0 h(n)=283.0
+ g(n)= 49.0 h(n)=282.0
+ g(n)= 50.0 h(n)=281.0
+ g(n)= 51.0 h(n)=280.0
+ g(n)= 52.0 h(n)=279.0
+ g(n)= 53.0 h(n)=278.0
+ g(n)= 54.0 h(n)=277.0
+ g(n)= 55.0 h(n)=276.0
+ g(n)= 56.0 h(n)=275.0
+ g(n)= 57.0 h(n)=274.0
+ g(n)= 58.0 h(n)=273.0
+ g(n)= 59.0 h(n)=272.0
+ g(n)= 60.0 h(n)=271.0
+ g(n)= 61.0 h(n)=270.0
+ g(n)= 62.0 h(n)=269.0
+ g(n)= 63.0 h(n)=268.0
+ g(n)= 64.0 h(n)=267.0
+ g(n)= 65.0 h(n)=266.0
+ g(n)= 66.0 h(n)=265.0
+ g(n)= 67.0 h(n)=264.0
+ g(n)= 68.0 h(n)=263.0
+ g(n)= 69.0 h(n)=262.0
+ g(n)= 70.0 h(n)=261.0
+ g(n)= 71.0 h(n)=260.0
+ g(n)= 72.0 h(n)=259.0
+ g(n)= 73.0 h(n)=258.0
+ g(n)= 74.0 h(n)=257.0
+ g(n)= 75.0 h(n)=256.0
+ g(n)= 76.0 h(n)=255.0
+ g(n)= 77.0 h(n)=254.0
+ g(n)= 78.0 h(n)=253.0
+ g(n)= 79.0 h(n)=252.0
+ g(n)= 80.0 h(n)=251.0
+ g(n)= 81.0 h(n)=250.0
+ g(n)= 82.0 h(n)=249.0
+ g(n)= 83.0 h(n)=248.0
+ g(n)= 84.0 h(n)=247.0
+ g(n)= 85.0 h(n)=246.0
+ g(n)= 86.0 h(n)=245.0
+ g(n)= 87.0 h(n)=244.0
+ g(n)= 88.0 h(n)=243.0
+ g(n)= 89.0 h(n)=242.0
+ g(n)= 90.0 h(n)=241.0
+ g(n)= 91.0 h(n)=240.0
+ g(n)= 92.0 h(n)=239.0
+ g(n)= 93.0 h(n)=238.0
+ g(n)= 94.0 h(n)=237.0
+ g(n)= 95.0 h(n)=236.0
+ g(n)= 96.0 h(n)=235.0
+ g(n)= 97.0 h(n)=234.0
+ g(n)= 98.0 h(n)=233.0
+ g(n)= 99.0 h(n)=232.0
+ g(n)= 100.0 h(n)=231.0
+ g(n)= 101.0 h(n)=230.0
+ g(n)= 102.0 h(n)=229.0
+ g(n)= 103.0 h(n)=228.0
+ g(n)= 104.0 h(n)=227.0
+ g(n)= 105.0 h(n)=226.0
+ g(n)= 106.0 h(n)=225.0
+ g(n)= 107.0 h(n)=224.0
+ g(n)= 108.0 h(n)=223.0
+ g(n)= 109.0 h(n)=222.0
+ g(n)= 110.0 h(n)=221.0
+ g(n)= 111.0 h(n)=220.0
+ g(n)= 112.0 h(n)=219.0
+ g(n)= 113.0 h(n)=218.0
+ g(n)= 114.0 h(n)=217.0
+ g(n)= 115.0 h(n)=216.0
+ g(n)= 116.0 h(n)=215.0
+ g(n)= 117.0 h(n)=214.0
+ g(n)= 118.0 h(n)=213.0
+ g(n)= 119.0 h(n)=212.0
+ g(n)= 120.0 h(n)=211.0
+ g(n)= 121.0 h(n)=210.0
+ g(n)= 122.0 h(n)=209.0
+ g(n)= 123.0 h(n)=208.0
+ g(n)= 124.0 h(n)=207.0
+ g(n)= 125.0 h(n)=206.0
+ g(n)= 126.0 h(n)=205.0
+ g(n)= 127.0 h(n)=204.0
+ g(n)= 128.0 h(n)=203.0
+ g(n)= 129.0 h(n)=202.0
+ g(n)= 130.0 h(n)=201.0
+ g(n)= 131.0 h(n)=200.0
+ g(n)= 132.0 h(n)=199.0
+ g(n)= 133.0 h(n)=198.0
+ g(n)= 134.0 h(n)=197.0
+ g(n)= 135.0 h(n)=196.0
+ g(n)= 136.0 h(n)=195.0
+ g(n)= 137.0 h(n)=194.0
+ g(n)= 138.0 h(n)=193.0
+ g(n)= 139.0 h(n)=192.0
+ g(n)= 140.0 h(n)=191.0
+ g(n)= 141.0 h(n)=190.0
+ g(n)= 142.0 h(n)=189.0
+ g(n)= 143.0 h(n)=188.0
+ g(n)= 144.0 h(n)=187.0
+ g(n)= 145.0 h(n)=186.0
+ g(n)= 146.0 h(n)=185.0
+ g(n)= 147.0 h(n)=184.0
+ g(n)= 148.0 h(n)=183.0
+ g(n)= 149.0 h(n)=182.0
+ g(n)= 150.0 h(n)=181.0
+ g(n)= 151.0 h(n)=180.0
+ g(n)= 152.0 h(n)=179.0
+ g(n)= 153.0 h(n)=178.0
+ g(n)= 154.0 h(n)=177.0
+ g(n)= 155.0 h(n)=176.0
+ g(n)= 156.0 h(n)=175.0
+ g(n)= 157.0 h(n)=174.0
+ g(n)= 158.0 h(n)=173.0
+ g(n)= 159.0 h(n)=172.0
+ g(n)= 160.0 h(n)=171.0
+ g(n)= 161.0 h(n)=170.0
+ g(n)= 162.0 h(n)=169.0
+ g(n)= 163.0 h(n)=168.0
+ g(n)= 164.0 h(n)=167.0
+ g(n)= 165.0 h(n)=166.0
+ g(n)= 166.0 h(n)=165.0
+ g(n)= 167.0 h(n)=164.0
+ g(n)= 168.0 h(n)=163.0
+ g(n)= 169.0 h(n)=162.0
+ g(n)= 170.0 h(n)=161.0
+ g(n)= 171.0 h(n)=160.0
+ g(n)= 172.0 h(n)=159.0
+ g(n)= 173.0 h(n)=158.0
+ g(n)= 174.0 h(n)=157.0
+ g(n)= 175.0 h(n)=156.0
+ g(n)= 176.0 h(n)=155.0
+ g(n)= 177.0 h(n)=154.0
+ g(n)= 178.0 h(n)=153.0
+ g(n)= 179.0 h(n)=152.0
+ g(n)= 180.0 h(n)=151.0
+ g(n)= 181.0 h(n)=150.0
+ g(n)= 182.0 h(n)=149.0
+ g(n)= 183.0 h(n)=148.0
+ g(n)= 184.0 h(n)=147.0
+ g(n)= 185.0 h(n)=146.0
+ g(n)= 186.0 h(n)=145.0
+ g(n)= 187.0 h(n)=144.0
+ g(n)= 188.0 h(n)=143.0
+ g(n)= 189.0 h(n)=142.0
+ g(n)= 190.0 h(n)=141.0
+ g(n)= 191.0 h(n)=140.0
+ g(n)= 192.0 h(n)=139.0
+ g(n)= 193.0 h(n)=138.0
+ g(n)= 194.0 h(n)=137.0
+ g(n)= 195.0 h(n)=136.0
+ g(n)= 196.0 h(n)=135.0
+ g(n)= 197.0 h(n)=134.0
+ g(n)= 198.0 h(n)=133.0
+ g(n)= 199.0 h(n)=132.0
+ g(n)= 200.0 h(n)=131.0
+ g(n)= 201.0 h(n)=130.0
+ g(n)= 202.0 h(n)=129.0
+ g(n)= 203.0 h(n)=128.0
+ g(n)= 204.0 h(n)=127.0
+ g(n)= 205.0 h(n)=126.0
+ g(n)= 206.0 h(n)=125.0
+ g(n)= 215.0 h(n)=124.0
+ g(n)= 224.0 h(n)=123.0
+ g(n)= 233.0 h(n)=122.0
+ g(n)= 234.0 h(n)=121.0
+ g(n)= 235.0 h(n)=120.0
+ g(n)= 244.0 h(n)=119.0
+ g(n)= 253.0 h(n)=118.0
+ g(n)= 262.0 h(n)=117.0
+ g(n)= 271.0 h(n)=116.0
+ g(n)= 272.0 h(n)=115.0
+ g(n)= 273.0 h(n)=114.0
+ g(n)= 282.0 h(n)=113.0
+ g(n)= 291.0 h(n)=112.0
+ g(n)= 300.0 h(n)=111.0
+ g(n)= 309.0 h(n)=110.0
+ g(n)= 310.0 h(n)=109.0
+ g(n)= 311.0 h(n)=108.0
+ g(n)= 320.0 h(n)=107.0
+ g(n)= 329.0 h(n)=106.0
+ g(n)= 338.0 h(n)=105.0
+ g(n)= 339.0 h(n)=104.0
+ g(n)= 340.0 h(n)=103.0
+ g(n)= 349.0 h(n)=102.0
+ g(n)= 358.0 h(n)=101.0
+ g(n)= 367.0 h(n)=100.0
+ g(n)= 368.0 h(n)=99.0
+ g(n)= 369.0 h(n)=98.0
+ g(n)= 378.0 h(n)=97.0
+ g(n)= 387.0 h(n)=96.0
+ g(n)= 396.0 h(n)=95.0
+ g(n)= 405.0 h(n)=94.0
+ g(n)= 406.0 h(n)=93.0
+ g(n)= 407.0 h(n)=92.0
+ g(n)= 416.0 h(n)=91.0
+ g(n)= 425.0 h(n)=90.0
+ g(n)= 434.0 h(n)=89.0
+ g(n)= 435.0 h(n)=88.0
+ g(n)= 436.0 h(n)=87.0
+ g(n)= 445.0 h(n)=86.0
+ g(n)= 454.0 h(n)=85.0
+ g(n)= 463.0 h(n)=84.0
+ g(n)= 464.0 h(n)=83.0
+ g(n)= 465.0 h(n)=82.0
+ g(n)= 474.0 h(n)=81.0
+ g(n)= 483.0 h(n)=80.0
+ g(n)= 492.0 h(n)=79.0
+ g(n)= 493.0 h(n)=78.0
+ g(n)= 494.0 h(n)=77.0
+ g(n)= 503.0 h(n)=76.0
+ g(n)= 512.0 h(n)=75.0
+ g(n)= 521.0 h(n)=74.0
+ g(n)= 522.0 h(n)=73.0
+ g(n)= 523.0 h(n)=72.0
+ g(n)= 532.0 h(n)=71.0
+ g(n)= 541.0 h(n)=70.0
+ g(n)= 550.0 h(n)=69.0
+ g(n)= 559.0 h(n)=68.0
+ g(n)= 560.0 h(n)=67.0
+ g(n)= 561.0 h(n)=66.0
+ g(n)= 570.0 h(n)=65.0
+ g(n)= 579.0 h(n)=64.0
+ g(n)= 588.0 h(n)=63.0
+ g(n)= 597.0 h(n)=62.0
+ g(n)= 598.0 h(n)=61.0
+ g(n)= 599.0 h(n)=60.0
+ g(n)= 608.0 h(n)=59.0
+ g(n)= 617.0 h(n)=58.0
+ g(n)= 626.0 h(n)=57.0
+ g(n)= 627.0 h(n)=56.0
+ g(n)= 628.0 h(n)=55.0
+ g(n)= 637.0 h(n)=54.0
+ g(n)= 646.0 h(n)=53.0
+ g(n)= 655.0 h(n)=52.0
+ g(n)= 656.0 h(n)=51.0
+ g(n)= 657.0 h(n)=50.0
+ g(n)= 666.0 h(n)=49.0
+ g(n)= 675.0 h(n)=48.0
+ g(n)= 676.0 h(n)=47.0
+ g(n)= 677.0 h(n)=46.0
+ g(n)= 686.0 h(n)=45.0
+ g(n)= 687.0 h(n)=44.0
+ g(n)= 688.0 h(n)=43.0
+ g(n)= 697.0 h(n)=42.0
+ g(n)= 706.0 h(n)=41.0
+ g(n)= 715.0 h(n)=40.0
+ g(n)= 716.0 h(n)=39.0
+ g(n)= 717.0 h(n)=38.0
+ g(n)= 726.0 h(n)=37.0
+ g(n)= 735.0 h(n)=36.0
+ g(n)= 744.0 h(n)=35.0
+ g(n)= 745.0 h(n)=34.0
+ g(n)= 746.0 h(n)=33.0
+ g(n)= 755.0 h(n)=32.0
+ g(n)= 764.0 h(n)=31.0
+ g(n)= 773.0 h(n)=30.0
+ g(n)= 774.0 h(n)=29.0
+ g(n)= 775.0 h(n)=28.0
+ g(n)= 784.0 h(n)=27.0
+ g(n)= 793.0 h(n)=26.0
+ g(n)= 802.0 h(n)=25.0
+ g(n)= 803.0 h(n)=24.0
+ g(n)= 804.0 h(n)=23.0
+ g(n)= 813.0 h(n)=22.0
+ g(n)= 822.0 h(n)=21.0
+ g(n)= 831.0 h(n)=20.0
+ g(n)= 832.0 h(n)=19.0
+ g(n)= 833.0 h(n)=18.0
+ g(n)= 842.0 h(n)=17.0
+ g(n)= 851.0 h(n)=16.0
+ g(n)= 860.0 h(n)=15.0
+ g(n)= 861.0 h(n)=14.0
+ g(n)= 862.0 h(n)=13.0
+ g(n)= 871.0 h(n)=12.0
+ g(n)= 880.0 h(n)=11.0
+ g(n)= 889.0 h(n)=10.0
+ g(n)= 890.0 h(n)=9.0
+ g(n)= 891.0 h(n)=8.0
+ g(n)= 900.0 h(n)=7.0
+ g(n)= 909.0 h(n)=6.0
+ g(n)= 910.0 h(n)=5.0
+ g(n)= 911.0 h(n)=4.0
+ g(n)= 920.0 h(n)=3.0
+ g(n)= 929.0 h(n)=2.0
+ g(n)= 930.0 h(n)=1.0
+ g(n)= 931.0 h(n)=0.0
+Problem Solved
+
+Found Plan:
+0.0: (comms-workshop pippa)
+1.0: (do-week william dance higher)
+2.0: (do-week william dance higher)
+3.0: (do-week william dance higher)
+4.0: (do-week william dance higher)
+5.0: (do-week william dance higher)
+6.0: (do-week william dance higher)
+7.0: (do-week william dance higher)
+8.0: (do-week william dance higher)
+9.0: (comms-workshop aurora)
+10.0: (comms-workshop alexander)
+11.0: (do-week alexander business-management adv-higher)
+12.0: (do-week alexander business-management adv-higher)
+13.0: (do-week alexander business-management adv-higher)
+14.0: (do-week alexander business-management adv-higher)
+15.0: (do-week alexander business-management adv-higher)
+16.0: (do-week alexander business-management adv-higher)
+17.0: (do-week alexander business-management adv-higher)
+18.0: (do-week alexander business-management adv-higher)
+19.0: (comms-workshop jack)
+20.0: (do-week jack french national-five)
+21.0: (do-week jack french national-five)
+22.0: (do-week jack french national-five)
+23.0: (do-week jack french national-five)
+24.0: (do-week jack french national-five)
+25.0: (do-week jack french national-five)
+26.0: (do-week jack french national-five)
+27.0: (do-week jack french national-five)
+28.0: (do-week pippa maths adv-higher)
+29.0: (do-week pippa maths adv-higher)
+30.0: (do-week pippa maths adv-higher)
+31.0: (do-week pippa maths adv-higher)
+32.0: (do-week pippa maths adv-higher)
+33.0: (do-week pippa maths adv-higher)
+34.0: (do-week pippa maths adv-higher)
+35.0: (do-week pippa maths adv-higher)
+36.0: (do-week pippa mandarin adv-higher)
+37.0: (do-week pippa mandarin adv-higher)
+38.0: (do-week pippa mandarin adv-higher)
+39.0: (do-week pippa mandarin adv-higher)
+40.0: (do-week pippa mandarin adv-higher)
+41.0: (do-week pippa mandarin adv-higher)
+42.0: (do-week pippa mandarin adv-higher)
+43.0: (do-week pippa mandarin adv-higher)
+44.0: (do-week alexander biology year-one)
+45.0: (do-week alexander biology year-one)
+46.0: (do-week alexander biology year-one)
+47.0: (do-week alexander biology year-one)
+48.0: (do-week alexander biology year-one)
+49.0: (do-week alexander biology year-one)
+50.0: (do-week alexander biology year-one)
+51.0: (do-week alexander biology year-one)
+52.0: (do-week pippa history national-four)
+53.0: (do-week pippa history national-four)
+54.0: (do-week pippa history national-four)
+55.0: (do-week pippa history national-four)
+56.0: (do-week pippa history national-four)
+57.0: (do-week pippa history national-four)
+58.0: (do-week pippa history national-four)
+59.0: (do-week pippa history national-four)
+60.0: (do-week alexander chemistry adv-higher)
+61.0: (do-week alexander chemistry adv-higher)
+62.0: (do-week alexander chemistry adv-higher)
+63.0: (do-week alexander chemistry adv-higher)
+64.0: (do-week alexander chemistry adv-higher)
+65.0: (do-week alexander chemistry adv-higher)
+66.0: (do-week alexander chemistry adv-higher)
+67.0: (do-week alexander chemistry adv-higher)
+68.0: (pomo-study jack)
+69.0: (do-week pippa drama year-two)
+70.0: (do-week pippa drama year-two)
+71.0: (do-week pippa drama year-two)
+72.0: (do-week pippa drama year-two)
+73.0: (do-week pippa drama year-two)
+74.0: (do-week pippa drama year-two)
+75.0: (do-week pippa drama year-two)
+76.0: (do-week pippa drama year-two)
+77.0: (do-week aurora latin year-one)
+78.0: (do-week aurora latin year-one)
+79.0: (do-week aurora latin year-one)
+80.0: (do-week aurora latin year-one)
+81.0: (do-week aurora latin year-one)
+82.0: (do-week aurora latin year-one)
+83.0: (do-week aurora latin year-one)
+84.0: (do-week aurora latin year-one)
+85.0: (do-week pippa cantonese adv-higher)
+86.0: (do-week pippa cantonese adv-higher)
+87.0: (do-week pippa cantonese adv-higher)
+88.0: (do-week pippa cantonese adv-higher)
+89.0: (do-week pippa cantonese adv-higher)
+90.0: (do-week pippa cantonese adv-higher)
+91.0: (do-week pippa cantonese adv-higher)
+92.0: (do-week pippa cantonese adv-higher)
+93.0: (gamify william)
+94.0: (do-week aurora textiles year-one)
+95.0: (do-week aurora textiles year-one)
+96.0: (do-week aurora textiles year-one)
+97.0: (do-week aurora textiles year-one)
+98.0: (do-week aurora textiles year-one)
+99.0: (do-week aurora textiles year-one)
+100.0: (do-week aurora textiles year-one)
+101.0: (do-week aurora textiles year-one)
+102.0: (do-week alexander practical-woodwork year-one)
+103.0: (do-week alexander practical-woodwork year-one)
+104.0: (do-week alexander practical-woodwork year-one)
+105.0: (do-week alexander practical-woodwork year-one)
+106.0: (do-week alexander practical-woodwork year-one)
+107.0: (do-week alexander practical-woodwork year-one)
+108.0: (do-week alexander practical-woodwork year-one)
+109.0: (do-week alexander practical-woodwork year-one)
+110.0: (do-week jack textiles higher)
+111.0: (do-week jack textiles higher)
+112.0: (do-week jack textiles higher)
+113.0: (do-week jack textiles higher)
+114.0: (do-week jack textiles higher)
+115.0: (do-week jack textiles higher)
+116.0: (do-week jack textiles higher)
+117.0: (do-week jack textiles higher)
+118.0: (do-week aurora chemistry year-two)
+119.0: (do-week aurora chemistry year-two)
+120.0: (do-week aurora chemistry year-two)
+121.0: (do-week aurora chemistry year-two)
+122.0: (do-week aurora chemistry year-two)
+123.0: (do-week aurora chemistry year-two)
+124.0: (do-week aurora chemistry year-two)
+125.0: (do-week aurora chemistry year-two)
+126.0: (do-week william cantonese higher)
+127.0: (do-week william cantonese higher)
+128.0: (do-week william cantonese higher)
+129.0: (do-week william cantonese higher)
+130.0: (do-week william cantonese higher)
+131.0: (do-week william cantonese higher)
+132.0: (do-week william cantonese higher)
+133.0: (do-week william cantonese higher)
+134.0: (do-week jack chemistry higher)
+135.0: (do-week jack chemistry higher)
+136.0: (do-week jack chemistry higher)
+137.0: (do-week jack chemistry higher)
+138.0: (do-week jack chemistry higher)
+139.0: (do-week jack chemistry higher)
+140.0: (do-week jack chemistry higher)
+141.0: (do-week jack chemistry higher)
+142.0: (do-week alexander drama national-four)
+143.0: (do-week alexander drama national-four)
+144.0: (do-week alexander drama national-four)
+145.0: (do-week alexander drama national-four)
+146.0: (do-week alexander drama national-four)
+147.0: (do-week alexander drama national-four)
+148.0: (do-week alexander drama national-four)
+149.0: (do-week alexander drama national-four)
+150.0: (do-week william english higher)
+151.0: (do-week william english higher)
+152.0: (do-week william english higher)
+153.0: (do-week william english higher)
+154.0: (do-week william english higher)
+155.0: (do-week william english higher)
+156.0: (do-week william english higher)
+157.0: (do-week william english higher)
+158.0: (do-week aurora music higher)
+159.0: (do-week aurora music higher)
+160.0: (do-week aurora music higher)
+161.0: (do-week aurora music higher)
+162.0: (do-week aurora music higher)
+163.0: (do-week aurora music higher)
+164.0: (do-week aurora music higher)
+165.0: (do-week aurora music higher)
+166.0: (do-week william latin national-five)
+167.0: (do-week william latin national-five)
+168.0: (do-week william latin national-five)
+169.0: (do-week william latin national-five)
+170.0: (do-week william latin national-five)
+171.0: (do-week william latin national-five)
+172.0: (do-week william latin national-five)
+173.0: (do-week william latin national-five)
+174.0: (do-week aurora urdu higher)
+175.0: (do-week aurora urdu higher)
+176.0: (do-week aurora urdu higher)
+177.0: (do-week aurora urdu higher)
+178.0: (do-week aurora urdu higher)
+179.0: (do-week aurora urdu higher)
+180.0: (do-week aurora urdu higher)
+181.0: (do-week aurora urdu higher)
+182.0: (do-week william geography year-three)
+183.0: (do-week william geography year-three)
+184.0: (do-week william geography year-three)
+185.0: (do-week william geography year-three)
+186.0: (do-week william geography year-three)
+187.0: (do-week william geography year-three)
+188.0: (do-week william geography year-three)
+189.0: (do-week william geography year-three)
+190.0: (do-week jack physics national-four)
+191.0: (do-week jack physics national-four)
+192.0: (do-week jack physics national-four)
+193.0: (do-week jack physics national-four)
+194.0: (do-week jack physics national-four)
+195.0: (do-week jack physics national-four)
+196.0: (do-week jack physics national-four)
+197.0: (do-week jack physics national-four)
+198.0: (do-week jack admin-it year-two)
+199.0: (do-week jack admin-it year-two)
+200.0: (do-week jack admin-it year-two)
+201.0: (do-week jack admin-it year-two)
+202.0: (do-week jack admin-it year-two)
+203.0: (do-week jack admin-it year-two)
+204.0: (do-week jack admin-it year-two)
+205.0: (do-week jack admin-it year-two)
+206.0: (do-unit aurora music higher)
+207.0: (do-week aurora music higher)
+208.0: (do-week aurora music higher)
+209.0: (do-week aurora music higher)
+210.0: (do-week aurora music higher)
+211.0: (do-week aurora music higher)
+212.0: (do-week aurora music higher)
+213.0: (do-week aurora music higher)
+214.0: (do-week aurora music higher)
+215.0: (do-unit aurora music higher)
+216.0: (do-week aurora music higher)
+217.0: (do-week aurora music higher)
+218.0: (do-week aurora music higher)
+219.0: (do-week aurora music higher)
+220.0: (do-week aurora music higher)
+221.0: (do-week aurora music higher)
+222.0: (do-week aurora music higher)
+223.0: (do-week aurora music higher)
+224.0: (do-unit aurora music higher)
+225.0: (do-week aurora music higher)
+226.0: (do-week aurora music higher)
+227.0: (do-week aurora music higher)
+228.0: (do-week aurora music higher)
+229.0: (do-week aurora music higher)
+230.0: (do-week aurora music higher)
+231.0: (do-week aurora music higher)
+232.0: (do-week aurora music higher)
+233.0: (do-unit aurora music higher)
+234.0: (finish-course aurora music higher)
+235.0: (do-unit aurora latin year-one)
+236.0: (do-week aurora latin year-one)
+237.0: (do-week aurora latin year-one)
+238.0: (do-week aurora latin year-one)
+239.0: (do-week aurora latin year-one)
+240.0: (do-week aurora latin year-one)
+241.0: (do-week aurora latin year-one)
+242.0: (do-week aurora latin year-one)
+243.0: (do-week aurora latin year-one)
+244.0: (do-unit alexander drama national-four)
+245.0: (do-week alexander drama national-four)
+246.0: (do-week alexander drama national-four)
+247.0: (do-week alexander drama national-four)
+248.0: (do-week alexander drama national-four)
+249.0: (do-week alexander drama national-four)
+250.0: (do-week alexander drama national-four)
+251.0: (do-week alexander drama national-four)
+252.0: (do-week alexander drama national-four)
+253.0: (do-unit alexander drama national-four)
+254.0: (do-week alexander drama national-four)
+255.0: (do-week alexander drama national-four)
+256.0: (do-week alexander drama national-four)
+257.0: (do-week alexander drama national-four)
+258.0: (do-week alexander drama national-four)
+259.0: (do-week alexander drama national-four)
+260.0: (do-week alexander drama national-four)
+261.0: (do-week alexander drama national-four)
+262.0: (do-unit alexander drama national-four)
+263.0: (do-week alexander drama national-four)
+264.0: (do-week alexander drama national-four)
+265.0: (do-week alexander drama national-four)
+266.0: (do-week alexander drama national-four)
+267.0: (do-week alexander drama national-four)
+268.0: (do-week alexander drama national-four)
+269.0: (do-week alexander drama national-four)
+270.0: (do-week alexander drama national-four)
+271.0: (do-unit alexander drama national-four)
+272.0: (finish-course alexander drama national-four)
+273.0: (do-unit aurora latin year-one)
+274.0: (do-week aurora latin year-one)
+275.0: (do-week aurora latin year-one)
+276.0: (do-week aurora latin year-one)
+277.0: (do-week aurora latin year-one)
+278.0: (do-week aurora latin year-one)
+279.0: (do-week aurora latin year-one)
+280.0: (do-week aurora latin year-one)
+281.0: (do-week aurora latin year-one)
+282.0: (do-unit william english higher)
+283.0: (do-week william english higher)
+284.0: (do-week william english higher)
+285.0: (do-week william english higher)
+286.0: (do-week william english higher)
+287.0: (do-week william english higher)
+288.0: (do-week william english higher)
+289.0: (do-week william english higher)
+290.0: (do-week william english higher)
+291.0: (do-unit william english higher)
+292.0: (do-week william english higher)
+293.0: (do-week william english higher)
+294.0: (do-week william english higher)
+295.0: (do-week william english higher)
+296.0: (do-week william english higher)
+297.0: (do-week william english higher)
+298.0: (do-week william english higher)
+299.0: (do-week william english higher)
+300.0: (do-unit william english higher)
+301.0: (do-week william english higher)
+302.0: (do-week william english higher)
+303.0: (do-week william english higher)
+304.0: (do-week william english higher)
+305.0: (do-week william english higher)
+306.0: (do-week william english higher)
+307.0: (do-week william english higher)
+308.0: (do-week william english higher)
+309.0: (do-unit william english higher)
+310.0: (finish-course william english higher)
+311.0: (do-unit jack chemistry higher)
+312.0: (do-week jack chemistry higher)
+313.0: (do-week jack chemistry higher)
+314.0: (do-week jack chemistry higher)
+315.0: (do-week jack chemistry higher)
+316.0: (do-week jack chemistry higher)
+317.0: (do-week jack chemistry higher)
+318.0: (do-week jack chemistry higher)
+319.0: (do-week jack chemistry higher)
+320.0: (do-unit jack chemistry higher)
+321.0: (do-week jack chemistry higher)
+322.0: (do-week jack chemistry higher)
+323.0: (do-week jack chemistry higher)
+324.0: (do-week jack chemistry higher)
+325.0: (do-week jack chemistry higher)
+326.0: (do-week jack chemistry higher)
+327.0: (do-week jack chemistry higher)
+328.0: (do-week jack chemistry higher)
+329.0: (do-unit jack chemistry higher)
+330.0: (do-week jack chemistry higher)
+331.0: (do-week jack chemistry higher)
+332.0: (do-week jack chemistry higher)
+333.0: (do-week jack chemistry higher)
+334.0: (do-week jack chemistry higher)
+335.0: (do-week jack chemistry higher)
+336.0: (do-week jack chemistry higher)
+337.0: (do-week jack chemistry higher)
+338.0: (do-unit jack chemistry higher)
+339.0: (finish-course jack chemistry higher)
+340.0: (do-unit aurora urdu higher)
+341.0: (do-week aurora urdu higher)
+342.0: (do-week aurora urdu higher)
+343.0: (do-week aurora urdu higher)
+344.0: (do-week aurora urdu higher)
+345.0: (do-week aurora urdu higher)
+346.0: (do-week aurora urdu higher)
+347.0: (do-week aurora urdu higher)
+348.0: (do-week aurora urdu higher)
+349.0: (do-unit aurora urdu higher)
+350.0: (do-week aurora urdu higher)
+351.0: (do-week aurora urdu higher)
+352.0: (do-week aurora urdu higher)
+353.0: (do-week aurora urdu higher)
+354.0: (do-week aurora urdu higher)
+355.0: (do-week aurora urdu higher)
+356.0: (do-week aurora urdu higher)
+357.0: (do-week aurora urdu higher)
+358.0: (do-unit aurora urdu higher)
+359.0: (do-week aurora urdu higher)
+360.0: (do-week aurora urdu higher)
+361.0: (do-week aurora urdu higher)
+362.0: (do-week aurora urdu higher)
+363.0: (do-week aurora urdu higher)
+364.0: (do-week aurora urdu higher)
+365.0: (do-week aurora urdu higher)
+366.0: (do-week aurora urdu higher)
+367.0: (do-unit aurora urdu higher)
+368.0: (finish-course aurora urdu higher)
+369.0: (do-unit pippa cantonese adv-higher)
+370.0: (do-week pippa cantonese adv-higher)
+371.0: (do-week pippa cantonese adv-higher)
+372.0: (do-week pippa cantonese adv-higher)
+373.0: (do-week pippa cantonese adv-higher)
+374.0: (do-week pippa cantonese adv-higher)
+375.0: (do-week pippa cantonese adv-higher)
+376.0: (do-week pippa cantonese adv-higher)
+377.0: (do-week pippa cantonese adv-higher)
+378.0: (do-unit william latin national-five)
+379.0: (do-week william latin national-five)
+380.0: (do-week william latin national-five)
+381.0: (do-week william latin national-five)
+382.0: (do-week william latin national-five)
+383.0: (do-week william latin national-five)
+384.0: (do-week william latin national-five)
+385.0: (do-week william latin national-five)
+386.0: (do-week william latin national-five)
+387.0: (do-unit william latin national-five)
+388.0: (do-week william latin national-five)
+389.0: (do-week william latin national-five)
+390.0: (do-week william latin national-five)
+391.0: (do-week william latin national-five)
+392.0: (do-week william latin national-five)
+393.0: (do-week william latin national-five)
+394.0: (do-week william latin national-five)
+395.0: (do-week william latin national-five)
+396.0: (do-unit william latin national-five)
+397.0: (do-week william latin national-five)
+398.0: (do-week william latin national-five)
+399.0: (do-week william latin national-five)
+400.0: (do-week william latin national-five)
+401.0: (do-week william latin national-five)
+402.0: (do-week william latin national-five)
+403.0: (do-week william latin national-five)
+404.0: (do-week william latin national-five)
+405.0: (do-unit william latin national-five)
+406.0: (finish-course william latin national-five)
+407.0: (do-unit jack admin-it year-two)
+408.0: (do-week jack admin-it year-two)
+409.0: (do-week jack admin-it year-two)
+410.0: (do-week jack admin-it year-two)
+411.0: (do-week jack admin-it year-two)
+412.0: (do-week jack admin-it year-two)
+413.0: (do-week jack admin-it year-two)
+414.0: (do-week jack admin-it year-two)
+415.0: (do-week jack admin-it year-two)
+416.0: (do-unit jack admin-it year-two)
+417.0: (do-week jack admin-it year-two)
+418.0: (do-week jack admin-it year-two)
+419.0: (do-week jack admin-it year-two)
+420.0: (do-week jack admin-it year-two)
+421.0: (do-week jack admin-it year-two)
+422.0: (do-week jack admin-it year-two)
+423.0: (do-week jack admin-it year-two)
+424.0: (do-week jack admin-it year-two)
+425.0: (do-unit jack admin-it year-two)
+426.0: (do-week jack admin-it year-two)
+427.0: (do-week jack admin-it year-two)
+428.0: (do-week jack admin-it year-two)
+429.0: (do-week jack admin-it year-two)
+430.0: (do-week jack admin-it year-two)
+431.0: (do-week jack admin-it year-two)
+432.0: (do-week jack admin-it year-two)
+433.0: (do-week jack admin-it year-two)
+434.0: (do-unit jack admin-it year-two)
+435.0: (finish-course jack admin-it year-two)
+436.0: (do-unit jack physics national-four)
+437.0: (do-week jack physics national-four)
+438.0: (do-week jack physics national-four)
+439.0: (do-week jack physics national-four)
+440.0: (do-week jack physics national-four)
+441.0: (do-week jack physics national-four)
+442.0: (do-week jack physics national-four)
+443.0: (do-week jack physics national-four)
+444.0: (do-week jack physics national-four)
+445.0: (do-unit jack physics national-four)
+446.0: (do-week jack physics national-four)
+447.0: (do-week jack physics national-four)
+448.0: (do-week jack physics national-four)
+449.0: (do-week jack physics national-four)
+450.0: (do-week jack physics national-four)
+451.0: (do-week jack physics national-four)
+452.0: (do-week jack physics national-four)
+453.0: (do-week jack physics national-four)
+454.0: (do-unit jack physics national-four)
+455.0: (do-week jack physics national-four)
+456.0: (do-week jack physics national-four)
+457.0: (do-week jack physics national-four)
+458.0: (do-week jack physics national-four)
+459.0: (do-week jack physics national-four)
+460.0: (do-week jack physics national-four)
+461.0: (do-week jack physics national-four)
+462.0: (do-week jack physics national-four)
+463.0: (do-unit jack physics national-four)
+464.0: (finish-course jack physics national-four)
+465.0: (do-unit william geography year-three)
+466.0: (do-week william geography year-three)
+467.0: (do-week william geography year-three)
+468.0: (do-week william geography year-three)
+469.0: (do-week william geography year-three)
+470.0: (do-week william geography year-three)
+471.0: (do-week william geography year-three)
+472.0: (do-week william geography year-three)
+473.0: (do-week william geography year-three)
+474.0: (do-unit william geography year-three)
+475.0: (do-week william geography year-three)
+476.0: (do-week william geography year-three)
+477.0: (do-week william geography year-three)
+478.0: (do-week william geography year-three)
+479.0: (do-week william geography year-three)
+480.0: (do-week william geography year-three)
+481.0: (do-week william geography year-three)
+482.0: (do-week william geography year-three)
+483.0: (do-unit william geography year-three)
+484.0: (do-week william geography year-three)
+485.0: (do-week william geography year-three)
+486.0: (do-week william geography year-three)
+487.0: (do-week william geography year-three)
+488.0: (do-week william geography year-three)
+489.0: (do-week william geography year-three)
+490.0: (do-week william geography year-three)
+491.0: (do-week william geography year-three)
+492.0: (do-unit william geography year-three)
+493.0: (finish-course william geography year-three)
+494.0: (do-unit alexander business-management adv-higher)
+495.0: (do-week alexander business-management adv-higher)
+496.0: (do-week alexander business-management adv-higher)
+497.0: (do-week alexander business-management adv-higher)
+498.0: (do-week alexander business-management adv-higher)
+499.0: (do-week alexander business-management adv-higher)
+500.0: (do-week alexander business-management adv-higher)
+501.0: (do-week alexander business-management adv-higher)
+502.0: (do-week alexander business-management adv-higher)
+503.0: (do-unit alexander business-management adv-higher)
+504.0: (do-week alexander business-management adv-higher)
+505.0: (do-week alexander business-management adv-higher)
+506.0: (do-week alexander business-management adv-higher)
+507.0: (do-week alexander business-management adv-higher)
+508.0: (do-week alexander business-management adv-higher)
+509.0: (do-week alexander business-management adv-higher)
+510.0: (do-week alexander business-management adv-higher)
+511.0: (do-week alexander business-management adv-higher)
+512.0: (do-unit alexander business-management adv-higher)
+513.0: (do-week alexander business-management adv-higher)
+514.0: (do-week alexander business-management adv-higher)
+515.0: (do-week alexander business-management adv-higher)
+516.0: (do-week alexander business-management adv-higher)
+517.0: (do-week alexander business-management adv-higher)
+518.0: (do-week alexander business-management adv-higher)
+519.0: (do-week alexander business-management adv-higher)
+520.0: (do-week alexander business-management adv-higher)
+521.0: (do-unit alexander business-management adv-higher)
+522.0: (finish-course alexander business-management adv-higher)
+523.0: (do-unit pippa mandarin adv-higher)
+524.0: (do-week pippa mandarin adv-higher)
+525.0: (do-week pippa mandarin adv-higher)
+526.0: (do-week pippa mandarin adv-higher)
+527.0: (do-week pippa mandarin adv-higher)
+528.0: (do-week pippa mandarin adv-higher)
+529.0: (do-week pippa mandarin adv-higher)
+530.0: (do-week pippa mandarin adv-higher)
+531.0: (do-week pippa mandarin adv-higher)
+532.0: (do-unit jack french national-five)
+533.0: (do-week jack french national-five)
+534.0: (do-week jack french national-five)
+535.0: (do-week jack french national-five)
+536.0: (do-week jack french national-five)
+537.0: (do-week jack french national-five)
+538.0: (do-week jack french national-five)
+539.0: (do-week jack french national-five)
+540.0: (do-week jack french national-five)
+541.0: (do-unit jack french national-five)
+542.0: (do-week jack french national-five)
+543.0: (do-week jack french national-five)
+544.0: (do-week jack french national-five)
+545.0: (do-week jack french national-five)
+546.0: (do-week jack french national-five)
+547.0: (do-week jack french national-five)
+548.0: (do-week jack french national-five)
+549.0: (do-week jack french national-five)
+550.0: (do-unit jack french national-five)
+551.0: (do-week jack french national-five)
+552.0: (do-week jack french national-five)
+553.0: (do-week jack french national-five)
+554.0: (do-week jack french national-five)
+555.0: (do-week jack french national-five)
+556.0: (do-week jack french national-five)
+557.0: (do-week jack french national-five)
+558.0: (do-week jack french national-five)
+559.0: (do-unit jack french national-five)
+560.0: (finish-course jack french national-five)
+561.0: (do-unit pippa maths adv-higher)
+562.0: (do-week pippa maths adv-higher)
+563.0: (do-week pippa maths adv-higher)
+564.0: (do-week pippa maths adv-higher)
+565.0: (do-week pippa maths adv-higher)
+566.0: (do-week pippa maths adv-higher)
+567.0: (do-week pippa maths adv-higher)
+568.0: (do-week pippa maths adv-higher)
+569.0: (do-week pippa maths adv-higher)
+570.0: (do-unit pippa drama year-two)
+571.0: (do-week pippa drama year-two)
+572.0: (do-week pippa drama year-two)
+573.0: (do-week pippa drama year-two)
+574.0: (do-week pippa drama year-two)
+575.0: (do-week pippa drama year-two)
+576.0: (do-week pippa drama year-two)
+577.0: (do-week pippa drama year-two)
+578.0: (do-week pippa drama year-two)
+579.0: (do-unit pippa drama year-two)
+580.0: (do-week pippa drama year-two)
+581.0: (do-week pippa drama year-two)
+582.0: (do-week pippa drama year-two)
+583.0: (do-week pippa drama year-two)
+584.0: (do-week pippa drama year-two)
+585.0: (do-week pippa drama year-two)
+586.0: (do-week pippa drama year-two)
+587.0: (do-week pippa drama year-two)
+588.0: (do-unit pippa drama year-two)
+589.0: (do-week pippa drama year-two)
+590.0: (do-week pippa drama year-two)
+591.0: (do-week pippa drama year-two)
+592.0: (do-week pippa drama year-two)
+593.0: (do-week pippa drama year-two)
+594.0: (do-week pippa drama year-two)
+595.0: (do-week pippa drama year-two)
+596.0: (do-week pippa drama year-two)
+597.0: (do-unit pippa drama year-two)
+598.0: (finish-course pippa drama year-two)
+599.0: (do-unit alexander chemistry adv-higher)
+600.0: (do-week alexander chemistry adv-higher)
+601.0: (do-week alexander chemistry adv-higher)
+602.0: (do-week alexander chemistry adv-higher)
+603.0: (do-week alexander chemistry adv-higher)
+604.0: (do-week alexander chemistry adv-higher)
+605.0: (do-week alexander chemistry adv-higher)
+606.0: (do-week alexander chemistry adv-higher)
+607.0: (do-week alexander chemistry adv-higher)
+608.0: (do-unit alexander chemistry adv-higher)
+609.0: (do-week alexander chemistry adv-higher)
+610.0: (do-week alexander chemistry adv-higher)
+611.0: (do-week alexander chemistry adv-higher)
+612.0: (do-week alexander chemistry adv-higher)
+613.0: (do-week alexander chemistry adv-higher)
+614.0: (do-week alexander chemistry adv-higher)
+615.0: (do-week alexander chemistry adv-higher)
+616.0: (do-week alexander chemistry adv-higher)
+617.0: (do-unit alexander chemistry adv-higher)
+618.0: (do-week alexander chemistry adv-higher)
+619.0: (do-week alexander chemistry adv-higher)
+620.0: (do-week alexander chemistry adv-higher)
+621.0: (do-week alexander chemistry adv-higher)
+622.0: (do-week alexander chemistry adv-higher)
+623.0: (do-week alexander chemistry adv-higher)
+624.0: (do-week alexander chemistry adv-higher)
+625.0: (do-week alexander chemistry adv-higher)
+626.0: (do-unit alexander chemistry adv-higher)
+627.0: (finish-course alexander chemistry adv-higher)
+628.0: (do-unit pippa history national-four)
+629.0: (do-week pippa history national-four)
+630.0: (do-week pippa history national-four)
+631.0: (do-week pippa history national-four)
+632.0: (do-week pippa history national-four)
+633.0: (do-week pippa history national-four)
+634.0: (do-week pippa history national-four)
+635.0: (do-week pippa history national-four)
+636.0: (do-week pippa history national-four)
+637.0: (do-unit pippa history national-four)
+638.0: (do-week pippa history national-four)
+639.0: (do-week pippa history national-four)
+640.0: (do-week pippa history national-four)
+641.0: (do-week pippa history national-four)
+642.0: (do-week pippa history national-four)
+643.0: (do-week pippa history national-four)
+644.0: (do-week pippa history national-four)
+645.0: (do-week pippa history national-four)
+646.0: (do-unit pippa history national-four)
+647.0: (do-week pippa history national-four)
+648.0: (do-week pippa history national-four)
+649.0: (do-week pippa history national-four)
+650.0: (do-week pippa history national-four)
+651.0: (do-week pippa history national-four)
+652.0: (do-week pippa history national-four)
+653.0: (do-week pippa history national-four)
+654.0: (do-week pippa history national-four)
+655.0: (do-unit pippa history national-four)
+656.0: (finish-course pippa history national-four)
+657.0: (do-unit pippa cantonese adv-higher)
+658.0: (do-week pippa cantonese adv-higher)
+659.0: (do-week pippa cantonese adv-higher)
+660.0: (do-week pippa cantonese adv-higher)
+661.0: (do-week pippa cantonese adv-higher)
+662.0: (do-week pippa cantonese adv-higher)
+663.0: (do-week pippa cantonese adv-higher)
+664.0: (do-week pippa cantonese adv-higher)
+665.0: (do-week pippa cantonese adv-higher)
+666.0: (do-unit pippa cantonese adv-higher)
+667.0: (do-week pippa cantonese adv-higher)
+668.0: (do-week pippa cantonese adv-higher)
+669.0: (do-week pippa cantonese adv-higher)
+670.0: (do-week pippa cantonese adv-higher)
+671.0: (do-week pippa cantonese adv-higher)
+672.0: (do-week pippa cantonese adv-higher)
+673.0: (do-week pippa cantonese adv-higher)
+674.0: (do-week pippa cantonese adv-higher)
+675.0: (do-unit pippa cantonese adv-higher)
+676.0: (finish-course pippa cantonese adv-higher)
+677.0: (do-unit aurora latin year-one)
+678.0: (do-week aurora latin year-one)
+679.0: (do-week aurora latin year-one)
+680.0: (do-week aurora latin year-one)
+681.0: (do-week aurora latin year-one)
+682.0: (do-week aurora latin year-one)
+683.0: (do-week aurora latin year-one)
+684.0: (do-week aurora latin year-one)
+685.0: (do-week aurora latin year-one)
+686.0: (do-unit aurora latin year-one)
+687.0: (finish-course aurora latin year-one)
+688.0: (do-unit aurora textiles year-one)
+689.0: (do-week aurora textiles year-one)
+690.0: (do-week aurora textiles year-one)
+691.0: (do-week aurora textiles year-one)
+692.0: (do-week aurora textiles year-one)
+693.0: (do-week aurora textiles year-one)
+694.0: (do-week aurora textiles year-one)
+695.0: (do-week aurora textiles year-one)
+696.0: (do-week aurora textiles year-one)
+697.0: (do-unit aurora textiles year-one)
+698.0: (do-week aurora textiles year-one)
+699.0: (do-week aurora textiles year-one)
+700.0: (do-week aurora textiles year-one)
+701.0: (do-week aurora textiles year-one)
+702.0: (do-week aurora textiles year-one)
+703.0: (do-week aurora textiles year-one)
+704.0: (do-week aurora textiles year-one)
+705.0: (do-week aurora textiles year-one)
+706.0: (do-unit aurora textiles year-one)
+707.0: (do-week aurora textiles year-one)
+708.0: (do-week aurora textiles year-one)
+709.0: (do-week aurora textiles year-one)
+710.0: (do-week aurora textiles year-one)
+711.0: (do-week aurora textiles year-one)
+712.0: (do-week aurora textiles year-one)
+713.0: (do-week aurora textiles year-one)
+714.0: (do-week aurora textiles year-one)
+715.0: (do-unit aurora textiles year-one)
+716.0: (finish-course aurora textiles year-one)
+717.0: (do-unit william dance higher)
+718.0: (do-week william dance higher)
+719.0: (do-week william dance higher)
+720.0: (do-week william dance higher)
+721.0: (do-week william dance higher)
+722.0: (do-week william dance higher)
+723.0: (do-week william dance higher)
+724.0: (do-week william dance higher)
+725.0: (do-week william dance higher)
+726.0: (do-unit william dance higher)
+727.0: (do-week william dance higher)
+728.0: (do-week william dance higher)
+729.0: (do-week william dance higher)
+730.0: (do-week william dance higher)
+731.0: (do-week william dance higher)
+732.0: (do-week william dance higher)
+733.0: (do-week william dance higher)
+734.0: (do-week william dance higher)
+735.0: (do-unit william dance higher)
+736.0: (do-week william dance higher)
+737.0: (do-week william dance higher)
+738.0: (do-week william dance higher)
+739.0: (do-week william dance higher)
+740.0: (do-week william dance higher)
+741.0: (do-week william dance higher)
+742.0: (do-week william dance higher)
+743.0: (do-week william dance higher)
+744.0: (do-unit william dance higher)
+745.0: (finish-course william dance higher)
+746.0: (do-unit alexander practical-woodwork year-one)
+747.0: (do-week alexander practical-woodwork year-one)
+748.0: (do-week alexander practical-woodwork year-one)
+749.0: (do-week alexander practical-woodwork year-one)
+750.0: (do-week alexander practical-woodwork year-one)
+751.0: (do-week alexander practical-woodwork year-one)
+752.0: (do-week alexander practical-woodwork year-one)
+753.0: (do-week alexander practical-woodwork year-one)
+754.0: (do-week alexander practical-woodwork year-one)
+755.0: (do-unit alexander practical-woodwork year-one)
+756.0: (do-week alexander practical-woodwork year-one)
+757.0: (do-week alexander practical-woodwork year-one)
+758.0: (do-week alexander practical-woodwork year-one)
+759.0: (do-week alexander practical-woodwork year-one)
+760.0: (do-week alexander practical-woodwork year-one)
+761.0: (do-week alexander practical-woodwork year-one)
+762.0: (do-week alexander practical-woodwork year-one)
+763.0: (do-week alexander practical-woodwork year-one)
+764.0: (do-unit alexander practical-woodwork year-one)
+765.0: (do-week alexander practical-woodwork year-one)
+766.0: (do-week alexander practical-woodwork year-one)
+767.0: (do-week alexander practical-woodwork year-one)
+768.0: (do-week alexander practical-woodwork year-one)
+769.0: (do-week alexander practical-woodwork year-one)
+770.0: (do-week alexander practical-woodwork year-one)
+771.0: (do-week alexander practical-woodwork year-one)
+772.0: (do-week alexander practical-woodwork year-one)
+773.0: (do-unit alexander practical-woodwork year-one)
+774.0: (finish-course alexander practical-woodwork year-one)
+775.0: (do-unit william cantonese higher)
+776.0: (do-week william cantonese higher)
+777.0: (do-week william cantonese higher)
+778.0: (do-week william cantonese higher)
+779.0: (do-week william cantonese higher)
+780.0: (do-week william cantonese higher)
+781.0: (do-week william cantonese higher)
+782.0: (do-week william cantonese higher)
+783.0: (do-week william cantonese higher)
+784.0: (do-unit william cantonese higher)
+785.0: (do-week william cantonese higher)
+786.0: (do-week william cantonese higher)
+787.0: (do-week william cantonese higher)
+788.0: (do-week william cantonese higher)
+789.0: (do-week william cantonese higher)
+790.0: (do-week william cantonese higher)
+791.0: (do-week william cantonese higher)
+792.0: (do-week william cantonese higher)
+793.0: (do-unit william cantonese higher)
+794.0: (do-week william cantonese higher)
+795.0: (do-week william cantonese higher)
+796.0: (do-week william cantonese higher)
+797.0: (do-week william cantonese higher)
+798.0: (do-week william cantonese higher)
+799.0: (do-week william cantonese higher)
+800.0: (do-week william cantonese higher)
+801.0: (do-week william cantonese higher)
+802.0: (do-unit william cantonese higher)
+803.0: (finish-course william cantonese higher)
+804.0: (do-unit aurora chemistry year-two)
+805.0: (do-week aurora chemistry year-two)
+806.0: (do-week aurora chemistry year-two)
+807.0: (do-week aurora chemistry year-two)
+808.0: (do-week aurora chemistry year-two)
+809.0: (do-week aurora chemistry year-two)
+810.0: (do-week aurora chemistry year-two)
+811.0: (do-week aurora chemistry year-two)
+812.0: (do-week aurora chemistry year-two)
+813.0: (do-unit aurora chemistry year-two)
+814.0: (do-week aurora chemistry year-two)
+815.0: (do-week aurora chemistry year-two)
+816.0: (do-week aurora chemistry year-two)
+817.0: (do-week aurora chemistry year-two)
+818.0: (do-week aurora chemistry year-two)
+819.0: (do-week aurora chemistry year-two)
+820.0: (do-week aurora chemistry year-two)
+821.0: (do-week aurora chemistry year-two)
+822.0: (do-unit aurora chemistry year-two)
+823.0: (do-week aurora chemistry year-two)
+824.0: (do-week aurora chemistry year-two)
+825.0: (do-week aurora chemistry year-two)
+826.0: (do-week aurora chemistry year-two)
+827.0: (do-week aurora chemistry year-two)
+828.0: (do-week aurora chemistry year-two)
+829.0: (do-week aurora chemistry year-two)
+830.0: (do-week aurora chemistry year-two)
+831.0: (do-unit aurora chemistry year-two)
+832.0: (finish-course aurora chemistry year-two)
+833.0: (do-unit jack textiles higher)
+834.0: (do-week jack textiles higher)
+835.0: (do-week jack textiles higher)
+836.0: (do-week jack textiles higher)
+837.0: (do-week jack textiles higher)
+838.0: (do-week jack textiles higher)
+839.0: (do-week jack textiles higher)
+840.0: (do-week jack textiles higher)
+841.0: (do-week jack textiles higher)
+842.0: (do-unit jack textiles higher)
+843.0: (do-week jack textiles higher)
+844.0: (do-week jack textiles higher)
+845.0: (do-week jack textiles higher)
+846.0: (do-week jack textiles higher)
+847.0: (do-week jack textiles higher)
+848.0: (do-week jack textiles higher)
+849.0: (do-week jack textiles higher)
+850.0: (do-week jack textiles higher)
+851.0: (do-unit jack textiles higher)
+852.0: (do-week jack textiles higher)
+853.0: (do-week jack textiles higher)
+854.0: (do-week jack textiles higher)
+855.0: (do-week jack textiles higher)
+856.0: (do-week jack textiles higher)
+857.0: (do-week jack textiles higher)
+858.0: (do-week jack textiles higher)
+859.0: (do-week jack textiles higher)
+860.0: (do-unit jack textiles higher)
+861.0: (finish-course jack textiles higher)
+862.0: (do-unit alexander biology year-one)
+863.0: (do-week alexander biology year-one)
+864.0: (do-week alexander biology year-one)
+865.0: (do-week alexander biology year-one)
+866.0: (do-week alexander biology year-one)
+867.0: (do-week alexander biology year-one)
+868.0: (do-week alexander biology year-one)
+869.0: (do-week alexander biology year-one)
+870.0: (do-week alexander biology year-one)
+871.0: (do-unit alexander biology year-one)
+872.0: (do-week alexander biology year-one)
+873.0: (do-week alexander biology year-one)
+874.0: (do-week alexander biology year-one)
+875.0: (do-week alexander biology year-one)
+876.0: (do-week alexander biology year-one)
+877.0: (do-week alexander biology year-one)
+878.0: (do-week alexander biology year-one)
+879.0: (do-week alexander biology year-one)
+880.0: (do-unit alexander biology year-one)
+881.0: (do-week alexander biology year-one)
+882.0: (do-week alexander biology year-one)
+883.0: (do-week alexander biology year-one)
+884.0: (do-week alexander biology year-one)
+885.0: (do-week alexander biology year-one)
+886.0: (do-week alexander biology year-one)
+887.0: (do-week alexander biology year-one)
+888.0: (do-week alexander biology year-one)
+889.0: (do-unit alexander biology year-one)
+890.0: (finish-course alexander biology year-one)
+891.0: (do-unit pippa mandarin adv-higher)
+892.0: (do-week pippa mandarin adv-higher)
+893.0: (do-week pippa mandarin adv-higher)
+894.0: (do-week pippa mandarin adv-higher)
+895.0: (do-week pippa mandarin adv-higher)
+896.0: (do-week pippa mandarin adv-higher)
+897.0: (do-week pippa mandarin adv-higher)
+898.0: (do-week pippa mandarin adv-higher)
+899.0: (do-week pippa mandarin adv-higher)
+900.0: (do-unit pippa mandarin adv-higher)
+901.0: (do-week pippa mandarin adv-higher)
+902.0: (do-week pippa mandarin adv-higher)
+903.0: (do-week pippa mandarin adv-higher)
+904.0: (do-week pippa mandarin adv-higher)
+905.0: (do-week pippa mandarin adv-higher)
+906.0: (do-week pippa mandarin adv-higher)
+907.0: (do-week pippa mandarin adv-higher)
+908.0: (do-week pippa mandarin adv-higher)
+909.0: (do-unit pippa mandarin adv-higher)
+910.0: (finish-course pippa mandarin adv-higher)
+911.0: (do-unit pippa maths adv-higher)
+912.0: (do-week pippa maths adv-higher)
+913.0: (do-week pippa maths adv-higher)
+914.0: (do-week pippa maths adv-higher)
+915.0: (do-week pippa maths adv-higher)
+916.0: (do-week pippa maths adv-higher)
+917.0: (do-week pippa maths adv-higher)
+918.0: (do-week pippa maths adv-higher)
+919.0: (do-week pippa maths adv-higher)
+920.0: (do-unit pippa maths adv-higher)
+921.0: (do-week pippa maths adv-higher)
+922.0: (do-week pippa maths adv-higher)
+923.0: (do-week pippa maths adv-higher)
+924.0: (do-week pippa maths adv-higher)
+925.0: (do-week pippa maths adv-higher)
+926.0: (do-week pippa maths adv-higher)
+927.0: (do-week pippa maths adv-higher)
+928.0: (do-week pippa maths adv-higher)
+929.0: (do-unit pippa maths adv-higher)
+930.0: (finish-course pippa maths adv-higher)
+
+Plan-Length:931
+Metric (Search):931.0
+Planning Time (msec): 1206
+Heuristic Time (msec): 630
+Search Time (msec): 759
+Expanded Nodes:1316
+States Evaluated:20523
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:0
+Number of Duplicates detected:20435
