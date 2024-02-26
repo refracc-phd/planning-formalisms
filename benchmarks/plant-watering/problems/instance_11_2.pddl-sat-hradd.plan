@@ -1,0 +1,567 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 22
+Aibr Preprocessing
+|F|:0
+|X|:17
+|A|:21
+|P|:0
+|E|:0
+H1 Setup Time (msec): 35
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=6663.0
+ g(n)= 1.0 h(n)=6105.0
+ g(n)= 2.0 h(n)=5504.0
+ g(n)= 3.0 h(n)=5019.0
+ g(n)= 4.0 h(n)=4597.0
+ g(n)= 5.0 h(n)=4374.0
+ g(n)= 6.0 h(n)=3851.0
+ g(n)= 7.0 h(n)=3541.0
+ g(n)= 8.0 h(n)=3309.0
+ g(n)= 9.0 h(n)=3133.0
+ g(n)= 10.0 h(n)=3131.0
+ g(n)= 10.0 h(n)=3017.0
+ g(n)= 11.0 h(n)=2955.0
+ g(n)= 11.0 h(n)=2901.0
+ g(n)= 12.0 h(n)=2839.0
+ g(n)= 12.0 h(n)=2785.0
+ g(n)= 13.0 h(n)=2767.0
+ g(n)= 13.0 h(n)=2713.0
+ g(n)= 14.0 h(n)=2671.0
+ g(n)= 16.0 h(n)=2668.0
+ g(n)= 18.0 h(n)=2665.0
+ g(n)= 18.0 h(n)=2663.0
+ g(n)= 22.0 h(n)=2660.0
+ g(n)= 26.0 h(n)=2657.0
+ g(n)= 30.0 h(n)=2654.0
+ g(n)= 34.0 h(n)=2651.0
+ g(n)= 46.0 h(n)=2649.0
+ g(n)= 48.0 h(n)=2646.0
+ g(n)= 48.0 h(n)=2644.0
+ g(n)= 50.0 h(n)=2629.0
+ g(n)= 53.0 h(n)=2617.0
+ g(n)= 60.0 h(n)=2616.0
+ g(n)= 66.0 h(n)=2557.0
+ g(n)= 68.0 h(n)=2548.0
+ g(n)= 67.0 h(n)=2513.0
+ g(n)= 71.0 h(n)=2504.0
+ g(n)= 71.0 h(n)=2500.0
+ g(n)= 93.0 h(n)=2442.0
+ g(n)= 94.0 h(n)=2374.0
+ g(n)= 97.0 h(n)=2328.0
+ g(n)= 101.0 h(n)=2317.0
+ g(n)= 103.0 h(n)=2309.0
+ g(n)= 105.0 h(n)=2306.0
+ g(n)= 107.0 h(n)=2294.0
+ g(n)= 121.0 h(n)=2283.0
+ g(n)= 123.0 h(n)=2272.0
+ g(n)= 137.0 h(n)=2261.0
+ g(n)= 151.0 h(n)=2250.0
+ g(n)= 177.0 h(n)=2218.0
+ g(n)= 178.0 h(n)=2215.0
+ g(n)= 180.0 h(n)=2203.0
+ g(n)= 181.0 h(n)=2089.0
+ g(n)= 182.0 h(n)=1942.0
+ g(n)= 183.0 h(n)=1934.0
+ g(n)= 185.0 h(n)=1931.0
+ g(n)= 187.0 h(n)=1901.0
+ g(n)= 201.0 h(n)=1899.0
+ g(n)= 203.0 h(n)=1896.0
+ g(n)= 205.0 h(n)=1893.0
+ g(n)= 203.0 h(n)=1882.0
+ g(n)= 205.0 h(n)=1876.0
+ g(n)= 207.0 h(n)=1870.0
+ g(n)= 207.0 h(n)=1869.0
+ g(n)= 209.0 h(n)=1862.0
+ g(n)= 209.0 h(n)=1860.0
+ g(n)= 209.0 h(n)=1857.0
+ g(n)= 209.0 h(n)=1853.0
+ g(n)= 209.0 h(n)=1844.0
+ g(n)= 211.0 h(n)=1842.0
+ g(n)= 211.0 h(n)=1841.0
+ g(n)= 211.0 h(n)=1832.0
+ g(n)= 211.0 h(n)=1821.0
+ g(n)= 225.0 h(n)=1819.0
+ g(n)= 227.0 h(n)=1813.0
+ g(n)= 229.0 h(n)=1807.0
+ g(n)= 229.0 h(n)=1806.0
+ g(n)= 231.0 h(n)=1797.0
+ g(n)= 231.0 h(n)=1788.0
+ g(n)= 231.0 h(n)=1779.0
+ g(n)= 233.0 h(n)=1773.0
+ g(n)= 233.0 h(n)=1761.0
+ g(n)= 233.0 h(n)=1749.0
+ g(n)= 247.0 h(n)=1726.0
+ g(n)= 253.0 h(n)=1717.0
+ g(n)= 255.0 h(n)=1714.0
+ g(n)= 257.0 h(n)=1711.0
+ g(n)= 255.0 h(n)=1702.0
+ g(n)= 257.0 h(n)=1699.0
+ g(n)= 272.0 h(n)=1677.0
+ g(n)= 274.0 h(n)=1662.0
+ g(n)= 278.0 h(n)=1637.0
+ g(n)= 282.0 h(n)=1612.0
+ g(n)= 286.0 h(n)=1563.0
+ g(n)= 290.0 h(n)=1542.0
+ g(n)= 291.0 h(n)=1443.0
+ g(n)= 306.0 h(n)=1425.0
+ g(n)= 307.0 h(n)=1423.0
+ g(n)= 307.0 h(n)=1375.0
+ g(n)= 308.0 h(n)=1329.0
+ g(n)= 320.0 h(n)=1320.0
+ g(n)= 322.0 h(n)=1319.0
+ g(n)= 324.0 h(n)=1301.0
+ g(n)= 326.0 h(n)=1300.0
+ g(n)= 328.0 h(n)=1282.0
+ g(n)= 330.0 h(n)=1281.0
+ g(n)= 331.0 h(n)=1230.0
+ g(n)= 332.0 h(n)=1173.0
+ g(n)= 333.0 h(n)=1167.0
+ g(n)= 335.0 h(n)=1155.0
+ g(n)= 336.0 h(n)=1095.0
+ g(n)= 337.0 h(n)=1005.0
+ g(n)= 338.0 h(n)=951.0
+ g(n)= 339.0 h(n)=885.0
+ g(n)= 351.0 h(n)=881.0
+ g(n)= 355.0 h(n)=854.0
+ g(n)= 356.0 h(n)=847.0
+ g(n)= 356.0 h(n)=820.0
+ g(n)= 357.0 h(n)=817.0
+ g(n)= 357.0 h(n)=790.0
+ g(n)= 358.0 h(n)=789.0
+ g(n)= 358.0 h(n)=762.0
+ g(n)= 364.0 h(n)=743.0
+ g(n)= 366.0 h(n)=737.0
+ g(n)= 368.0 h(n)=720.0
+ g(n)= 370.0 h(n)=714.0
+ g(n)= 372.0 h(n)=697.0
+ g(n)= 374.0 h(n)=691.0
+ g(n)= 376.0 h(n)=674.0
+ g(n)= 378.0 h(n)=668.0
+ g(n)= 380.0 h(n)=651.0
+ g(n)= 381.0 h(n)=588.0
+ g(n)= 382.0 h(n)=531.0
+ g(n)= 383.0 h(n)=492.0
+ g(n)= 384.0 h(n)=459.0
+ g(n)= 385.0 h(n)=420.0
+ g(n)= 386.0 h(n)=360.0
+ g(n)= 387.0 h(n)=285.0
+ g(n)= 388.0 h(n)=222.0
+ g(n)= 389.0 h(n)=150.0
+ g(n)= 390.0 h(n)=125.0
+ g(n)= 391.0 h(n)=100.0
+ g(n)= 392.0 h(n)=75.0
+ g(n)= 393.0 h(n)=50.0
+ g(n)= 394.0 h(n)=25.0
+ g(n)= 395.0 h(n)=0.0
+Problem Solved
+
+Found Plan:
+0.0: (move_down_left agent1)
+1.0: (move_down_left agent1)
+2.0: (move_left agent1)
+3.0: (move_left agent1)
+4.0: (move_down_left agent1)
+5.0: (load agent1 tap1)
+6.0: (load agent1 tap1)
+7.0: (load agent1 tap1)
+8.0: (load agent1 tap1)
+9.0: (load agent1 tap1)
+10.0: (load agent1 tap1)
+11.0: (load agent1 tap1)
+12.0: (load agent1 tap1)
+13.0: (load agent1 tap1)
+14.0: (load agent1 tap1)
+15.0: (move_up_right agent1)
+16.0: (pour agent1 plant2)
+17.0: (move_down_left agent1)
+18.0: (load agent1 tap1)
+19.0: (move_up_right agent1)
+20.0: (pour agent1 plant9)
+21.0: (move_down_left agent1)
+22.0: (load agent1 tap1)
+23.0: (move_up_right agent1)
+24.0: (pour agent1 plant5)
+25.0: (move_down_left agent1)
+26.0: (load agent1 tap1)
+27.0: (move_up_right agent1)
+28.0: (pour agent1 plant5)
+29.0: (move_down_left agent1)
+30.0: (load agent1 tap1)
+31.0: (move_up_right agent1)
+32.0: (pour agent1 plant5)
+33.0: (move_down_left agent1)
+34.0: (load agent1 tap1)
+35.0: (move_up_right agent1)
+36.0: (pour agent1 plant5)
+37.0: (move_down_left agent1)
+38.0: (load agent1 tap1)
+39.0: (load agent1 tap1)
+40.0: (load agent1 tap1)
+41.0: (load agent1 tap1)
+42.0: (load agent1 tap1)
+43.0: (move_up_right agent1)
+44.0: (move_up_right agent1)
+45.0: (pour agent1 plant11)
+46.0: (pour agent1 plant11)
+47.0: (pour agent1 plant11)
+48.0: (pour agent1 plant11)
+49.0: (pour agent1 plant11)
+50.0: (move_down_left agent1)
+51.0: (move_down_left agent1)
+52.0: (load agent1 tap1)
+53.0: (load agent1 tap1)
+54.0: (load agent1 tap1)
+55.0: (load agent1 tap1)
+56.0: (move_up_right agent1)
+57.0: (pour agent1 plant2)
+58.0: (pour agent1 plant2)
+59.0: (pour agent1 plant2)
+60.0: (pour agent1 plant2)
+61.0: (move_down_left agent1)
+62.0: (load agent1 tap1)
+63.0: (move_up_right agent1)
+64.0: (pour agent1 plant2)
+65.0: (move_up_right agent1)
+66.0: (move_up_right agent1)
+67.0: (move_up_right agent1)
+68.0: (move_up_right agent1)
+69.0: (move_up_right agent1)
+70.0: (move_up_right agent1)
+71.0: (pour agent1 plant3)
+72.0: (move_down_left agent1)
+73.0: (move_down_left agent1)
+74.0: (move_down_left agent1)
+75.0: (move_down_left agent1)
+76.0: (move_down_left agent1)
+77.0: (move_down_left agent1)
+78.0: (move_down_left agent1)
+79.0: (load agent1 tap1)
+80.0: (load agent1 tap1)
+81.0: (load agent1 tap1)
+82.0: (load agent1 tap1)
+83.0: (move_up_right agent1)
+84.0: (pour agent1 plant9)
+85.0: (pour agent1 plant9)
+86.0: (pour agent1 plant9)
+87.0: (move_down_left agent1)
+88.0: (load agent1 tap1)
+89.0: (move_up_right agent1)
+90.0: (pour agent1 plant9)
+91.0: (move_down_left agent1)
+92.0: (load agent1 tap1)
+93.0: (move_up_right agent1)
+94.0: (pour agent1 plant9)
+95.0: (move_down_left agent1)
+96.0: (load agent1 tap1)
+97.0: (move_up_right agent1)
+98.0: (move_up_right agent1)
+99.0: (move_up_right agent1)
+100.0: (move_up_right agent1)
+101.0: (move_up_right agent1)
+102.0: (move_up_right agent1)
+103.0: (move_up_right agent1)
+104.0: (pour agent1 plant3)
+105.0: (move_down_left agent1)
+106.0: (pour agent1 plant8)
+107.0: (move_down_left agent1)
+108.0: (move_down_left agent1)
+109.0: (move_down_left agent1)
+110.0: (move_down_left agent1)
+111.0: (move_down_left agent1)
+112.0: (move_down_left agent1)
+113.0: (load agent1 tap1)
+114.0: (load agent1 tap1)
+115.0: (move_up_right agent1)
+116.0: (move_up_right agent1)
+117.0: (move_up_right agent1)
+118.0: (move_up_right agent1)
+119.0: (move_up_right agent1)
+120.0: (move_up_right agent1)
+121.0: (pour agent1 plant7)
+122.0: (move_down_left agent1)
+123.0: (move_down_left agent1)
+124.0: (move_down_left agent1)
+125.0: (move_down_left agent1)
+126.0: (move_down_left agent1)
+127.0: (move_down_left agent1)
+128.0: (load agent1 tap1)
+129.0: (move_up_right agent1)
+130.0: (move_up_right agent1)
+131.0: (move_up_right agent1)
+132.0: (move_up_right agent1)
+133.0: (move_up_right agent1)
+134.0: (move_up_right agent1)
+135.0: (pour agent1 plant7)
+136.0: (move_down_left agent1)
+137.0: (move_down_left agent1)
+138.0: (move_down_left agent1)
+139.0: (move_down_left agent1)
+140.0: (move_down_left agent1)
+141.0: (move_down_left agent1)
+142.0: (load agent1 tap1)
+143.0: (move_up_right agent1)
+144.0: (move_up_right agent1)
+145.0: (move_up_right agent1)
+146.0: (move_up_right agent1)
+147.0: (move_up_right agent1)
+148.0: (move_up_right agent1)
+149.0: (pour agent1 plant7)
+150.0: (pour agent1 plant7)
+151.0: (pour agent1 plant7)
+152.0: (move_down_left agent1)
+153.0: (move_down_left agent1)
+154.0: (move_down_left agent1)
+155.0: (move_down_left agent1)
+156.0: (move_down_left agent1)
+157.0: (move_down_left agent1)
+158.0: (load agent1 tap1)
+159.0: (load agent1 tap1)
+160.0: (load agent1 tap1)
+161.0: (load agent1 tap1)
+162.0: (pour agent1 plant1)
+163.0: (pour agent1 plant1)
+164.0: (load agent1 tap1)
+165.0: (pour agent1 plant1)
+166.0: (load agent1 tap1)
+167.0: (pour agent1 plant1)
+168.0: (load agent1 tap1)
+169.0: (pour agent1 plant1)
+170.0: (load agent1 tap1)
+171.0: (pour agent1 plant1)
+172.0: (load agent1 tap1)
+173.0: (pour agent1 plant1)
+174.0: (load agent1 tap1)
+175.0: (pour agent1 plant1)
+176.0: (move_up_right agent1)
+177.0: (move_up_right agent1)
+178.0: (move_up_right agent1)
+179.0: (move_up_right agent1)
+180.0: (move_up_right agent1)
+181.0: (move_up_right agent1)
+182.0: (move_up_right agent1)
+183.0: (move_up_right agent1)
+184.0: (pour agent1 plant4)
+185.0: (move_down_left agent1)
+186.0: (move_down_left agent1)
+187.0: (move_down_left agent1)
+188.0: (move_down_left agent1)
+189.0: (move_down_left agent1)
+190.0: (move_down_left agent1)
+191.0: (move_down_left agent1)
+192.0: (move_down_left agent1)
+193.0: (load agent1 tap1)
+194.0: (load agent1 tap1)
+195.0: (load agent1 tap1)
+196.0: (load agent1 tap1)
+197.0: (move_up_right agent1)
+198.0: (move_up_right agent1)
+199.0: (move_up_right agent1)
+200.0: (move_up_right agent1)
+201.0: (move_up_right agent1)
+202.0: (move_up_right agent1)
+203.0: (move_up_right agent1)
+204.0: (move_up_right agent1)
+205.0: (pour agent1 plant4)
+206.0: (pour agent1 plant6)
+207.0: (move_down_left agent1)
+208.0: (pour agent1 plant3)
+209.0: (move_down_left agent1)
+210.0: (pour agent1 plant8)
+211.0: (move_down_left agent1)
+212.0: (move_down_left agent1)
+213.0: (move_down_left agent1)
+214.0: (move_down_left agent1)
+215.0: (move_down_left agent1)
+216.0: (move_down_left agent1)
+217.0: (load agent1 tap1)
+218.0: (load agent1 tap1)
+219.0: (load agent1 tap1)
+220.0: (move_up_right agent1)
+221.0: (move_up_right agent1)
+222.0: (move_up_right agent1)
+223.0: (move_up_right agent1)
+224.0: (move_up_right agent1)
+225.0: (move_up_right agent1)
+226.0: (move_up_right agent1)
+227.0: (move_up_right agent1)
+228.0: (pour agent1 plant4)
+229.0: (pour agent1 plant6)
+230.0: (move_down_left agent1)
+231.0: (pour agent1 plant3)
+232.0: (move_down_left agent1)
+233.0: (pour agent1 plant8)
+234.0: (move_down_left agent1)
+235.0: (move_down_left agent1)
+236.0: (move_down_left agent1)
+237.0: (move_down_left agent1)
+238.0: (move_down_left agent1)
+239.0: (move_down_left agent1)
+240.0: (load agent1 tap1)
+241.0: (load agent1 tap1)
+242.0: (load agent1 tap1)
+243.0: (load agent1 tap1)
+244.0: (load agent1 tap1)
+245.0: (move_up_right agent1)
+246.0: (move_up_right agent1)
+247.0: (move_up_right agent1)
+248.0: (move_up_right agent1)
+249.0: (move_up_right agent1)
+250.0: (move_up_right agent1)
+251.0: (move_up_right agent1)
+252.0: (pour agent1 plant3)
+253.0: (pour agent1 plant3)
+254.0: (pour agent1 plant3)
+255.0: (pour agent1 plant3)
+256.0: (pour agent1 plant3)
+257.0: (pour agent1 plant3)
+258.0: (move_down_left agent1)
+259.0: (move_down_left agent1)
+260.0: (move_down_left agent1)
+261.0: (move_down_left agent1)
+262.0: (move_down_left agent1)
+263.0: (move_down_left agent1)
+264.0: (move_down_left agent1)
+265.0: (load agent1 tap1)
+266.0: (load agent1 tap1)
+267.0: (load agent1 tap1)
+268.0: (load agent1 tap1)
+269.0: (load agent1 tap1)
+270.0: (move_down_left agent1)
+271.0: (pour agent1 plant12)
+272.0: (move_up_right agent1)
+273.0: (load agent1 tap1)
+274.0: (move_down_left agent1)
+275.0: (pour agent1 plant12)
+276.0: (move_up_right agent1)
+277.0: (load agent1 tap1)
+278.0: (move_down_left agent1)
+279.0: (pour agent1 plant12)
+280.0: (move_up_right agent1)
+281.0: (load agent1 tap1)
+282.0: (move_down_left agent1)
+283.0: (pour agent1 plant12)
+284.0: (move_up_right agent1)
+285.0: (move_up_right agent1)
+286.0: (move_up_right agent1)
+287.0: (move_up_right agent1)
+288.0: (move_up_right agent1)
+289.0: (move_up_right agent1)
+290.0: (move_up_right agent1)
+291.0: (pour agent1 plant8)
+292.0: (pour agent1 plant8)
+293.0: (pour agent1 plant8)
+294.0: (pour agent1 plant8)
+295.0: (pour agent1 plant8)
+296.0: (pour agent1 plant8)
+297.0: (move_down_left agent1)
+298.0: (move_down_left agent1)
+299.0: (move_down_left agent1)
+300.0: (move_down_left agent1)
+301.0: (move_down_left agent1)
+302.0: (move_down_left agent1)
+303.0: (load agent1 tap1)
+304.0: (load agent1 tap1)
+305.0: (load agent1 tap1)
+306.0: (load agent1 tap1)
+307.0: (load agent1 tap1)
+308.0: (load agent1 tap1)
+309.0: (load agent1 tap1)
+310.0: (load agent1 tap1)
+311.0: (move_down_left agent1)
+312.0: (pour agent1 plant10)
+313.0: (pour agent1 plant10)
+314.0: (move_up_right agent1)
+315.0: (load agent1 tap1)
+316.0: (move_down_left agent1)
+317.0: (pour agent1 plant10)
+318.0: (move_up_right agent1)
+319.0: (load agent1 tap1)
+320.0: (move_down_left agent1)
+321.0: (pour agent1 plant10)
+322.0: (move_up_right agent1)
+323.0: (load agent1 tap1)
+324.0: (move_down_left agent1)
+325.0: (pour agent1 plant10)
+326.0: (move_up_right agent1)
+327.0: (load agent1 tap1)
+328.0: (move_down_left agent1)
+329.0: (pour agent1 plant10)
+330.0: (move_up_right agent1)
+331.0: (move_up_right agent1)
+332.0: (move_up_right agent1)
+333.0: (move_up_right agent1)
+334.0: (move_up_right agent1)
+335.0: (move_up_right agent1)
+336.0: (move_up_right agent1)
+337.0: (move_up_right agent1)
+338.0: (move_up_right agent1)
+339.0: (pour agent1 plant4)
+340.0: (pour agent1 plant4)
+341.0: (pour agent1 plant4)
+342.0: (pour agent1 plant4)
+343.0: (pour agent1 plant4)
+344.0: (pour agent1 plant4)
+345.0: (move_down_left agent1)
+346.0: (move_down_left agent1)
+347.0: (move_down_left agent1)
+348.0: (move_down_left agent1)
+349.0: (move_down_left agent1)
+350.0: (move_down_left agent1)
+351.0: (move_down_left agent1)
+352.0: (move_down_left agent1)
+353.0: (load agent1 tap1)
+354.0: (load agent1 tap1)
+355.0: (load agent1 tap1)
+356.0: (load agent1 tap1)
+357.0: (load agent1 tap1)
+358.0: (load agent1 tap1)
+359.0: (load agent1 tap1)
+360.0: (load agent1 tap1)
+361.0: (move_down_left agent1)
+362.0: (pour agent1 plant12)
+363.0: (pour agent1 plant12)
+364.0: (move_up_right agent1)
+365.0: (load agent1 tap1)
+366.0: (move_down_left agent1)
+367.0: (pour agent1 plant12)
+368.0: (move_up_right agent1)
+369.0: (load agent1 tap1)
+370.0: (move_down_left agent1)
+371.0: (pour agent1 plant12)
+372.0: (move_up_right agent1)
+373.0: (load agent1 tap1)
+374.0: (move_down_left agent1)
+375.0: (pour agent1 plant12)
+376.0: (move_up_right agent1)
+377.0: (load agent1 tap1)
+378.0: (move_down_left agent1)
+379.0: (pour agent1 plant12)
+380.0: (move_up_right agent1)
+381.0: (move_up_right agent1)
+382.0: (move_up_right agent1)
+383.0: (move_up_right agent1)
+384.0: (move_up_right agent1)
+385.0: (move_up_right agent1)
+386.0: (move_up_right agent1)
+387.0: (move_up_right agent1)
+388.0: (move_up_right agent1)
+389.0: (pour agent1 plant6)
+390.0: (pour agent1 plant6)
+391.0: (pour agent1 plant6)
+392.0: (pour agent1 plant6)
+393.0: (pour agent1 plant6)
+394.0: (pour agent1 plant6)
+
+Plan-Length:395
+Metric (Search):395.0
+Planning Time (msec): 8864
+Heuristic Time (msec): 7888
+Search Time (msec): 8464
+Expanded Nodes:48988
+States Evaluated:168538
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:11954
+Number of Duplicates detected:236869
