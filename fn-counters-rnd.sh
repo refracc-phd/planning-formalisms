@@ -7,4 +7,4 @@
 #SBATCH -e slurm.%j.err # STDERR
 #SBATCH --ntasks-per-node=5
 
-./enhsp.sh ./enhsp/enhsp.jar ./benchmarks/fn-counters-rnd/domain.pddl ./benchmarks/fn-counters-rnd/problems
+./enhsp.sh ./enhsp/enhsp.jar ./benchmarks/fn-counters-rnd/domain.pddl ./benchmarks/fn-counters-rnd/problems/to-finish

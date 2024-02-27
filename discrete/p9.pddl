@@ -194,5 +194,4 @@
 		)
 	)
 
-	(:metric minimize (cost))
 )
