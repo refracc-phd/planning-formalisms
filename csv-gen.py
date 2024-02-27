@@ -112,14 +112,14 @@ with open(output_csv, 'w', newline='') as csvfile:
                     })
 
 
-    process_directory("./benchmarks/blocksworld/problems", "blocksworld")
-    process_directory("./benchmarks/farmland_ln/problems", "farmland")
-    process_directory("./benchmarks/fo_counters/problems", "fo_counters")
-    process_directory("./benchmarks/fo_counters_inv/problems", "fo_counters_inv")
-    process_directory("./benchmarks/fo_counters_rnd/problems", "fo_counters_rnd")
-    process_directory("./benchmarks/logistics/problems", "logistics")
-    process_directory("./benchmarks/sailing_ln/problems", "sailing_ln")
-    process_directory("./benchmarks/schedule/problems", "schedule")
-    process_directory("./benchmarks/tpp/problems", "tpp")
+    process_directory("./benchmarks/block-grouping/problems", "block-grouping")
+    process_directory("./benchmarks/farmland/problems", "farmland")
+    process_directory("./benchmarks/fn-counters/problems", "fn-counters")
+    process_directory("./benchmarks/fn-counters-inv/problems", "fn-counters-inv")
+    process_directory("./benchmarks/fn-counters-rnd/problems", "fn-counters-rnd")
+    process_directory("./benchmarks/plant-watering/problems", "plant-watering")
+    process_directory("./benchmarks/sailing/problems", "sailing")
+    process_directory("./continuous/", "continuous")
+    process_directory("./discrete/", "discrete")
 
 print("CSV generation complete.")
