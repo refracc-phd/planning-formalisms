@@ -1,0 +1,99 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 25
+Aibr Preprocessing
+|F|:0
+|X|:8
+|A|:16
+|P|:0
+|E|:0
+H1 Setup Time (msec): 22
+Wrong setting for break-ties. Arbitrary tie breaking
+Setting horizon to:NaN
+Helpful Action Pruning Activated
+Running Greedy Best First Search
+h(n = s_0)=28.0
+ g(n)= 14.0 h(n)=16.0
+ g(n)= 18.0 h(n)=12.0
+ g(n)= 25.0 h(n)=10.0
+ g(n)= 31.0 h(n)=7.0
+ g(n)= 33.0 h(n)=6.0
+ g(n)= 35.0 h(n)=5.0
+ g(n)= 41.0 h(n)=3.0
+ g(n)= 46.0 h(n)=2.0
+ g(n)= 47.0 h(n)=1.0
+ g(n)= 51.0 h(n)=0.0
+JUMP for (increment c6):2
+JUMP for (increment c7):2
+JUMP for (increment c6):2
+JUMP for (increment c7):3
+JUMP for (increment c6):3
+JUMP for (increment c4):7
+JUMP for (increment c7):4
+JUMP for (increment c2):14
+Problem Solved
+
+Found Plan:
+0.0: (increment c2)
+1.0: (increment c2)
+2.0: (increment c2)
+3.0: (increment c2)
+4.0: (increment c2)
+5.0: (increment c2)
+6.0: (increment c2)
+7.0: (increment c2)
+8.0: (increment c2)
+9.0: (increment c2)
+10.0: (increment c2)
+11.0: (increment c2)
+12.0: (increment c2)
+13.0: (increment c2)
+14.0: (increment c7)
+15.0: (increment c7)
+16.0: (increment c7)
+17.0: (increment c7)
+18.0: (increment c4)
+19.0: (increment c4)
+20.0: (increment c4)
+21.0: (increment c4)
+22.0: (increment c4)
+23.0: (increment c4)
+24.0: (increment c4)
+25.0: (increment c6)
+26.0: (increment c6)
+27.0: (increment c6)
+28.0: (increment c7)
+29.0: (increment c7)
+30.0: (increment c7)
+31.0: (decrement c2)
+32.0: (decrement c1)
+33.0: (decrement c2)
+34.0: (decrement c1)
+35.0: (increment c5)
+36.0: (increment c5)
+37.0: (increment c6)
+38.0: (increment c6)
+39.0: (increment c7)
+40.0: (increment c7)
+41.0: (increment c5)
+42.0: (increment c5)
+43.0: (increment c6)
+44.0: (increment c6)
+45.0: (increment c7)
+46.0: (increment c7)
+47.0: (decrement c4)
+48.0: (decrement c3)
+49.0: (decrement c2)
+50.0: (decrement c1)
+
+Plan-Length:51
+Metric (Search):51.0
+Planning Time (msec): 791
+Heuristic Time (msec): 40
+Search Time (msec): 66
+Expanded Nodes:34
+States Evaluated:142
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:0
+Number of Duplicates detected:37

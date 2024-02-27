@@ -1,0 +1,86 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 47
+Aibr Preprocessing
+|F|:0
+|X|:8
+|A|:16
+|P|:0
+|E|:0
+H1 Setup Time (msec): 30
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=22.0
+ g(n)= 1.0 h(n)=21.0
+ g(n)= 2.0 h(n)=20.0
+ g(n)= 3.0 h(n)=19.0
+ g(n)= 4.0 h(n)=18.0
+ g(n)= 5.0 h(n)=17.0
+ g(n)= 6.0 h(n)=16.0
+ g(n)= 7.0 h(n)=15.0
+ g(n)= 8.0 h(n)=14.0
+ g(n)= 9.0 h(n)=13.0
+ g(n)= 10.0 h(n)=12.0
+ g(n)= 11.0 h(n)=11.0
+ g(n)= 12.0 h(n)=10.0
+ g(n)= 13.0 h(n)=9.0
+ g(n)= 14.0 h(n)=8.0
+ g(n)= 15.0 h(n)=7.0
+ g(n)= 18.0 h(n)=6.0
+ g(n)= 21.0 h(n)=5.0
+ g(n)= 24.0 h(n)=4.0
+ g(n)= 27.0 h(n)=3.0
+ g(n)= 30.0 h(n)=2.0
+ g(n)= 33.0 h(n)=1.0
+ g(n)= 36.0 h(n)=0.0
+Problem Solved
+
+Found Plan:
+0.0: (increment c3)
+1.0: (increment c3)
+2.0: (increment c3)
+3.0: (increment c3)
+4.0: (increment c3)
+5.0: (increment c3)
+6.0: (increment c3)
+7.0: (increment c3)
+8.0: (increment c3)
+9.0: (increment c3)
+10.0: (increment c6)
+11.0: (increment c6)
+12.0: (increment c1)
+13.0: (increment c1)
+14.0: (decrement c2)
+15.0: (decrement c4)
+16.0: (decrement c3)
+17.0: (decrement c2)
+18.0: (increment c7)
+19.0: (increment c5)
+20.0: (increment c6)
+21.0: (increment c7)
+22.0: (increment c5)
+23.0: (increment c6)
+24.0: (increment c5)
+25.0: (increment c6)
+26.0: (increment c7)
+27.0: (increment c7)
+28.0: (increment c5)
+29.0: (increment c6)
+30.0: (increment c7)
+31.0: (increment c5)
+32.0: (increment c6)
+33.0: (increment c7)
+34.0: (increment c5)
+35.0: (increment c6)
+
+Plan-Length:36
+Metric (Search):36.0
+Planning Time (msec): 986
+Heuristic Time (msec): 61
+Search Time (msec): 126
+Expanded Nodes:69
+States Evaluated:902
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:0
+Number of Duplicates detected:186
