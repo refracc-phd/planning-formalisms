@@ -39,18 +39,26 @@ ground_events <- ggplot(df, aes(x = domain, y = grounded.predicates, fill = doma
 ground_events
 
 heuristic_informativeness <- ggplot(df, aes(x = initial.heuristic.val, y = metric.search, color = domain)) + 
-  geom_point() +
+  geom_point(position = "dodge") +
   labs(x = "Initial Heuristic Value", y = "Actual Heuristic Value", title = "Comparison: Heuristic Informativeness", color = "Domain") +
   scale_x_log10() + # Add this line for log10 scaling
   scale_colour_viridis_d(option = "turbo")
-  
+
 heuristic_informativeness
 
-dead_ends <- ggplot(df, aes(x = domain, y = ))
+
+initial_vs_actual_heuristic <- ggplot(df, aes(x = domain)) +
+  geom_bar(aes(y = initial.heuristic.val, fill = "Initial Heuristic Value"), stat = "identity", position = "dodge") +
+  geom_bar(aes(y = metric.search, fill = "Actual Heuristic Value"), stat = "identity", position = "dodge") +
+  scale_fill_manual(name = "", values = c("Initial Heuristic Value" = "blue", "Actual Heuristic Value" = "red")) +
+  labs(x = "Domain", y = "Values", title = "Comparison: Heuristic Informativeness") +
+  facet_wrap(~ domain, scales = "free")
+
+initial_vs_actual_heuristic
 
 # List of plots
 plots <- list(
-  ground_actions, ground_fluents, ground_external_actions, ground_predicates, ground_events, heuristic_informativeness 
+  ground_actions, ground_fluents, ground_external_actions, ground_predicates, ground_events, heuristic_informativeness, initial_vs_actual_heuristic
 )
 
 # Save each plot as a PDF
