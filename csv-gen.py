@@ -11,7 +11,7 @@ output_csv = "output.csv"
 with open(output_csv, 'w', newline='') as csvfile:
     fieldnames = ['problem', 'search.method', 'plan.length', 'metric.search', 'initial.heuristic.val', 'planning.time.msec',
                   'heuristic.time.msec', 'search.time.msec', 'grounding.time', 'expanded.nodes', 'states.evaluated',
-                  'duplicates.detected', 'domain', 'grounded.fluents', 'grounded.external.actions', 'grounded.actions',
+                  'duplicates.detected', 'dead.ends', 'domain', 'grounded.fluents', 'grounded.external.actions', 'grounded.actions',
                   'grounded.predicates', 'grounded.events']
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 
@@ -41,6 +41,7 @@ with open(output_csv, 'w', newline='') as csvfile:
                 expanded_nodes_match = re.search(r'Expanded Nodes:(\d+)', plan_content)
                 states_evaluated_match = re.search(r'States Evaluated:(\d+)', plan_content)
                 duplicates_detected_match = re.search(r'Number of Duplicates detected:(\d+)', plan_content)
+                dead_ends_match = re.search(r'Number of Dead-Ends detected:(\d+)', plan_content)
                 grounded_fluents_match = re.search(r'\|F\|:(\d+)', plan_content)
                 grounded_external_actions_match = re.search(r'\|X\|:(\d+)', plan_content)
                 grounded_actions_match = re.search(r'\|A\|:(\d+)', plan_content)
@@ -53,7 +54,7 @@ with open(output_csv, 'w', newline='') as csvfile:
                                                        initial_heuristic_val_match,
                                                        search_time_match, grounding_time_match,
                                                        expanded_nodes_match, states_evaluated_match,
-                                                       duplicates_detected_match, grounded_fluents_match,
+                                                       duplicates_detected_match, grounded_fluents_match, dead_ends_match,
                                                        grounded_external_actions_match, grounded_actions_match,
                                                        grounded_predicates_match, grounded_events_match]):
                     # Extract information from the matches
@@ -66,6 +67,7 @@ with open(output_csv, 'w', newline='') as csvfile:
                     grounding_time = int(grounding_time_match.group(1))
                     expanded_nodes = int(expanded_nodes_match.group(1))
                     states_evaluated = int(states_evaluated_match.group(1))
+                    dead_ends = int(grounded_events_match.group(1))
                     duplicates_detected = int(duplicates_detected_match.group(1))
                     grounded_fluents = int(grounded_fluents_match.group(1))
                     grounded_external_actions = int(grounded_external_actions_match.group(1))
@@ -103,6 +105,7 @@ with open(output_csv, 'w', newline='') as csvfile:
                         'expanded.nodes': expanded_nodes,
                         'states.evaluated': states_evaluated,
                         'duplicates.detected': duplicates_detected,
+                        'dead.ends': dead_ends,
                         'domain': problem_type,
                         'grounded.fluents': grounded_fluents,
                         'grounded.external.actions': grounded_external_actions,

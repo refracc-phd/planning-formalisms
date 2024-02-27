@@ -38,20 +38,19 @@ ground_events <- ggplot(df, aes(x = domain, y = grounded.predicates, fill = doma
 
 ground_events
 
-xs <- range(df$initial.heuristic.val, na.rm = TRUE)
-ys <- range(df$metric.search, na.rm = TRUE)
-maxs <- max(xs, ys)
-
-heuristic_informativeness_a <- ggplot(df, aes(x = initial.heuristic.val, y = metric.search, color = domain)) + 
+heuristic_informativeness <- ggplot(df, aes(x = initial.heuristic.val, y = metric.search, color = domain)) + 
   geom_point() +
   labs(x = "Initial Heuristic Value", y = "Actual Heuristic Value", title = "Comparison: Heuristic Informativeness", color = "Domain") +
-  scale_x_log10() # Add this line for log10 scaling
+  scale_x_log10() + # Add this line for log10 scaling
+  scale_colour_viridis_d(option = "turbo")
   
-heuristic_informativeness_a + scale_colour_viridis_d(option = "turbo")
+heuristic_informativeness
+
+dead_ends <- ggplot(df, aes(x = domain, y = ))
 
 # List of plots
 plots <- list(
-  ground_actions, ground_fluents, ground_external_actions, ground_predicates, ground_events, heuristic_informativeness_a 
+  ground_actions, ground_fluents, ground_external_actions, ground_predicates, ground_events, heuristic_informativeness 
 )
 
 # Save each plot as a PDF
