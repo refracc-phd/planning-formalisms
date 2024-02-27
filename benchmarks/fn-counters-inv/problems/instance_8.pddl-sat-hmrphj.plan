@@ -1,0 +1,99 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 77
+Aibr Preprocessing
+|F|:0
+|X|:8
+|A|:16
+|P|:0
+|E|:0
+H1 Setup Time (msec): 212
+Wrong setting for break-ties. Arbitrary tie breaking
+Setting horizon to:NaN
+Helpful Action Pruning Activated
+Running Greedy Best First Search
+h(n = s_0)=21.0
+ g(n)= 3.0 h(n)=18.0
+ g(n)= 4.0 h(n)=17.0
+ g(n)= 5.0 h(n)=16.0
+ g(n)= 6.0 h(n)=15.0
+ g(n)= 8.0 h(n)=14.0
+ g(n)= 10.0 h(n)=13.0
+ g(n)= 12.0 h(n)=12.0
+ g(n)= 19.0 h(n)=9.0
+ g(n)= 21.0 h(n)=8.0
+ g(n)= 24.0 h(n)=7.0
+ g(n)= 27.0 h(n)=6.0
+ g(n)= 31.0 h(n)=5.0
+ g(n)= 41.0 h(n)=2.0
+ g(n)= 44.0 h(n)=1.0
+ g(n)= 48.0 h(n)=0.0
+JUMP for (increment c7):3
+JUMP for (increment c6):3
+JUMP for (increment c5):3
+JUMP for (increment c7):3
+JUMP for (increment c6):3
+JUMP for (increment c7):3
+Problem Solved
+
+Found Plan:
+0.0: (increment c7)
+1.0: (increment c7)
+2.0: (increment c7)
+3.0: (decrement c0)
+4.0: (decrement c0)
+5.0: (decrement c0)
+6.0: (decrement c1)
+7.0: (decrement c0)
+8.0: (decrement c1)
+9.0: (decrement c0)
+10.0: (decrement c1)
+11.0: (decrement c0)
+12.0: (decrement c2)
+13.0: (increment c6)
+14.0: (increment c6)
+15.0: (increment c6)
+16.0: (increment c7)
+17.0: (increment c7)
+18.0: (increment c7)
+19.0: (decrement c1)
+20.0: (decrement c0)
+21.0: (decrement c2)
+22.0: (decrement c1)
+23.0: (decrement c0)
+24.0: (decrement c2)
+25.0: (decrement c1)
+26.0: (decrement c0)
+27.0: (increment c4)
+28.0: (increment c5)
+29.0: (increment c6)
+30.0: (increment c7)
+31.0: (decrement c3)
+32.0: (increment c5)
+33.0: (increment c5)
+34.0: (increment c5)
+35.0: (increment c6)
+36.0: (increment c6)
+37.0: (increment c6)
+38.0: (increment c7)
+39.0: (increment c7)
+40.0: (increment c7)
+41.0: (decrement c2)
+42.0: (decrement c1)
+43.0: (decrement c0)
+44.0: (increment c4)
+45.0: (increment c5)
+46.0: (increment c6)
+47.0: (increment c7)
+
+Plan-Length:48
+Metric (Search):48.0
+Planning Time (msec): 2390
+Heuristic Time (msec): 81
+Search Time (msec): 142
+Expanded Nodes:91
+States Evaluated:544
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:0
+Number of Duplicates detected:197
