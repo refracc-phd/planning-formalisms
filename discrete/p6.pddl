@@ -14,7 +14,6 @@
 	)
 
 	(:init
-		(= (cost) 0)
 		(takes-course travis urdu year-three)
 		(grade p travis urdu year-three)
 		(takes-course travis music-tech year-two)
