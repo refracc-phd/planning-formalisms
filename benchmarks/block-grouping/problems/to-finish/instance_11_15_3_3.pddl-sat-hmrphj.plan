@@ -1,0 +1,138 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 50
+Aibr Preprocessing
+|F|:0
+|X|:30
+|A|:60
+|P|:0
+|E|:0
+H1 Setup Time (msec): 26
+Wrong setting for break-ties. Arbitrary tie breaking
+Setting horizon to:NaN
+Helpful Action Pruning Activated
+Running Greedy Best First Search
+h(n = s_0)=141.0
+ g(n)= 9.0 h(n)=120.0
+ g(n)= 15.0 h(n)=90.0
+ g(n)= 18.0 h(n)=81.0
+ g(n)= 22.0 h(n)=73.0
+ g(n)= 28.0 h(n)=67.0
+ g(n)= 34.0 h(n)=61.0
+ g(n)= 36.0 h(n)=55.0
+ g(n)= 37.0 h(n)=51.0
+ g(n)= 41.0 h(n)=47.0
+ g(n)= 45.0 h(n)=43.0
+ g(n)= 46.0 h(n)=40.0
+ g(n)= 47.0 h(n)=37.0
+ g(n)= 51.0 h(n)=33.0
+ g(n)= 55.0 h(n)=27.0
+ g(n)= 57.0 h(n)=21.0
+ g(n)= 58.0 h(n)=19.0
+ g(n)= 59.0 h(n)=16.0
+ g(n)= 60.0 h(n)=14.0
+ g(n)= 61.0 h(n)=12.0
+ g(n)= 63.0 h(n)=8.0
+ g(n)= 64.0 h(n)=6.0
+ g(n)= 65.0 h(n)=5.0
+ g(n)= 66.0 h(n)=4.0
+ g(n)= 67.0 h(n)=3.0
+ g(n)= 68.0 h(n)=1.0
+ g(n)= 69.0 h(n)=0.0
+JUMP for (move_block_left b11):2
+JUMP for (move_block_down b9):2
+JUMP for (move_block_down b6):4
+JUMP for (move_block_down b12):4
+JUMP for (move_block_down b3):4
+JUMP for (move_block_right b12):4
+JUMP for (move_block_up b4):2
+JUMP for (move_block_up b5):6
+JUMP for (move_block_right b5):6
+JUMP for (move_block_up b11):4
+JUMP for (move_block_down b6):3
+JUMP for (move_block_right b6):6
+JUMP for (move_block_right b10):9
+Problem Solved
+
+Found Plan:
+0.0: (move_block_right b10)
+1.0: (move_block_right b10)
+2.0: (move_block_right b10)
+3.0: (move_block_right b10)
+4.0: (move_block_right b10)
+5.0: (move_block_right b10)
+6.0: (move_block_right b10)
+7.0: (move_block_right b10)
+8.0: (move_block_right b10)
+9.0: (move_block_right b6)
+10.0: (move_block_right b6)
+11.0: (move_block_right b6)
+12.0: (move_block_right b6)
+13.0: (move_block_right b6)
+14.0: (move_block_right b6)
+15.0: (move_block_down b6)
+16.0: (move_block_down b6)
+17.0: (move_block_down b6)
+18.0: (move_block_up b11)
+19.0: (move_block_up b11)
+20.0: (move_block_up b11)
+21.0: (move_block_up b11)
+22.0: (move_block_right b5)
+23.0: (move_block_right b5)
+24.0: (move_block_right b5)
+25.0: (move_block_right b5)
+26.0: (move_block_right b5)
+27.0: (move_block_right b5)
+28.0: (move_block_up b5)
+29.0: (move_block_up b5)
+30.0: (move_block_up b5)
+31.0: (move_block_up b5)
+32.0: (move_block_up b5)
+33.0: (move_block_up b5)
+34.0: (move_block_up b4)
+35.0: (move_block_up b4)
+36.0: (move_block_left b4)
+37.0: (move_block_right b12)
+38.0: (move_block_right b12)
+39.0: (move_block_right b12)
+40.0: (move_block_right b12)
+41.0: (move_block_down b3)
+42.0: (move_block_down b3)
+43.0: (move_block_down b3)
+44.0: (move_block_down b3)
+45.0: (move_block_down b2)
+46.0: (move_block_down b2)
+47.0: (move_block_down b12)
+48.0: (move_block_down b12)
+49.0: (move_block_down b12)
+50.0: (move_block_down b12)
+51.0: (move_block_down b6)
+52.0: (move_block_down b6)
+53.0: (move_block_down b6)
+54.0: (move_block_down b6)
+55.0: (move_block_down b9)
+56.0: (move_block_down b9)
+57.0: (move_block_left b3)
+58.0: (move_block_left b9)
+59.0: (move_block_left b4)
+60.0: (move_block_left b4)
+61.0: (move_block_left b11)
+62.0: (move_block_left b11)
+63.0: (move_block_up b7)
+64.0: (move_block_right b12)
+65.0: (move_block_right b13)
+66.0: (move_block_right b8)
+67.0: (move_block_right b7)
+68.0: (move_block_down b8)
+
+Plan-Length:69
+Metric (Search):69.0
+Planning Time (msec): 2170
+Heuristic Time (msec): 1173
+Search Time (msec): 1297
+Expanded Nodes:27
+States Evaluated:994
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:0
+Number of Duplicates detected:8

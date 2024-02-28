@@ -1,0 +1,196 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 39
+Aibr Preprocessing
+|F|:0
+|X|:30
+|A|:60
+|P|:0
+|E|:0
+H1 Setup Time (msec): 695
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=22129.0
+ g(n)= 1.0 h(n)=21708.0
+ g(n)= 2.0 h(n)=21335.0
+ g(n)= 3.0 h(n)=20985.0
+ g(n)= 4.0 h(n)=20641.0
+ g(n)= 5.0 h(n)=20316.0
+ g(n)= 6.0 h(n)=19959.0
+ g(n)= 7.0 h(n)=19640.0
+ g(n)= 8.0 h(n)=19294.0
+ g(n)= 9.0 h(n)=18974.0
+ g(n)= 10.0 h(n)=18659.0
+ g(n)= 11.0 h(n)=18317.0
+ g(n)= 12.0 h(n)=18018.0
+ g(n)= 13.0 h(n)=17687.0
+ g(n)= 14.0 h(n)=17392.0
+ g(n)= 15.0 h(n)=17070.0
+ g(n)= 16.0 h(n)=16778.0
+ g(n)= 17.0 h(n)=16492.0
+ g(n)= 18.0 h(n)=16211.0
+ g(n)= 19.0 h(n)=15942.0
+ g(n)= 20.0 h(n)=15633.0
+ g(n)= 21.0 h(n)=15356.0
+ g(n)= 22.0 h(n)=15044.0
+ g(n)= 23.0 h(n)=14768.0
+ g(n)= 24.0 h(n)=14494.0
+ g(n)= 25.0 h(n)=14220.0
+ g(n)= 26.0 h(n)=13944.0
+ g(n)= 27.0 h(n)=13673.0
+ g(n)= 28.0 h(n)=13431.0
+ g(n)= 29.0 h(n)=13145.0
+ g(n)= 30.0 h(n)=12884.0
+ g(n)= 31.0 h(n)=12580.0
+ g(n)= 32.0 h(n)=12328.0
+-------------Time: 10s ; Expanded Nodes: 33 (Avg-Speed 3.0 n/s); Evaluated States: 1798
+ g(n)= 33.0 h(n)=12072.0
+ g(n)= 34.0 h(n)=11827.0
+ g(n)= 35.0 h(n)=11526.0
+ g(n)= 36.0 h(n)=11278.0
+ g(n)= 37.0 h(n)=11026.0
+ g(n)= 38.0 h(n)=10774.0
+ g(n)= 39.0 h(n)=10470.0
+ g(n)= 40.0 h(n)=10236.0
+ g(n)= 41.0 h(n)=9950.0
+ g(n)= 42.0 h(n)=9697.0
+ g(n)= 43.0 h(n)=9393.0
+ g(n)= 44.0 h(n)=9154.0
+ g(n)= 45.0 h(n)=8859.0
+ g(n)= 46.0 h(n)=8639.0
+ g(n)= 47.0 h(n)=8420.0
+ g(n)= 48.0 h(n)=8147.0
+ g(n)= 49.0 h(n)=7927.0
+ g(n)= 50.0 h(n)=7703.0
+ g(n)= 51.0 h(n)=7411.0
+ g(n)= 52.0 h(n)=7168.0
+ g(n)= 53.0 h(n)=6858.0
+ g(n)= 54.0 h(n)=6658.0
+ g(n)= 55.0 h(n)=6390.0
+ g(n)= 56.0 h(n)=6190.0
+ g(n)= 57.0 h(n)=5922.0
+ g(n)= 58.0 h(n)=5727.0
+ g(n)= 59.0 h(n)=5458.0
+ g(n)= 60.0 h(n)=5228.0
+ g(n)= 61.0 h(n)=4912.0
+ g(n)= 62.0 h(n)=4731.0
+ g(n)= 63.0 h(n)=4464.0
+ g(n)= 64.0 h(n)=4267.0
+ g(n)= 65.0 h(n)=3977.0
+ g(n)= 66.0 h(n)=3809.0
+ g(n)= 67.0 h(n)=3541.0
+ g(n)= 68.0 h(n)=3357.0
+ g(n)= 69.0 h(n)=3073.0
+ g(n)= 70.0 h(n)=2981.0
+ g(n)= 71.0 h(n)=2774.0
+-------------Time: 20s ; Expanded Nodes: 72 (Avg-Speed 3.0 n/s); Evaluated States: 3997
+ g(n)= 72.0 h(n)=2658.0
+ g(n)= 73.0 h(n)=2405.0
+ g(n)= 74.0 h(n)=2335.0
+ g(n)= 75.0 h(n)=2113.0
+ g(n)= 76.0 h(n)=2035.0
+ g(n)= 77.0 h(n)=1789.0
+ g(n)= 78.0 h(n)=1704.0
+ g(n)= 79.0 h(n)=1445.0
+ g(n)= 80.0 h(n)=977.0
+ g(n)= 81.0 h(n)=874.0
+ g(n)= 82.0 h(n)=559.0
+ g(n)= 83.0 h(n)=0.0
+Problem Solved
+
+Found Plan:
+0.0: (move_block_left b5)
+1.0: (move_block_left b5)
+2.0: (move_block_right b12)
+3.0: (move_block_up b9)
+4.0: (move_block_left b11)
+5.0: (move_block_left b5)
+6.0: (move_block_right b7)
+7.0: (move_block_right b12)
+8.0: (move_block_up b9)
+9.0: (move_block_right b7)
+10.0: (move_block_right b12)
+11.0: (move_block_left b11)
+12.0: (move_block_left b5)
+13.0: (move_block_right b7)
+14.0: (move_block_right b12)
+15.0: (move_block_up b9)
+16.0: (move_block_up b2)
+17.0: (move_block_up b13)
+18.0: (move_block_left b11)
+19.0: (move_block_left b5)
+20.0: (move_block_right b7)
+21.0: (move_block_right b12)
+22.0: (move_block_down b10)
+23.0: (move_block_down b12)
+24.0: (move_block_up b2)
+25.0: (move_block_down b4)
+26.0: (move_block_left b14)
+27.0: (move_block_up b9)
+28.0: (move_block_up b7)
+29.0: (move_block_right b7)
+30.0: (move_block_right b12)
+31.0: (move_block_up b2)
+32.0: (move_block_down b4)
+33.0: (move_block_left b11)
+34.0: (move_block_left b5)
+35.0: (move_block_right b2)
+36.0: (move_block_left b14)
+37.0: (move_block_up b8)
+38.0: (move_block_up b13)
+39.0: (move_block_up b9)
+40.0: (move_block_up b7)
+41.0: (move_block_right b7)
+42.0: (move_block_right b12)
+43.0: (move_block_left b11)
+44.0: (move_block_left b5)
+45.0: (move_block_right b2)
+46.0: (move_block_down b10)
+47.0: (move_block_down b5)
+48.0: (move_block_left b14)
+49.0: (move_block_up b9)
+50.0: (move_block_up b7)
+51.0: (move_block_right b7)
+52.0: (move_block_right b12)
+53.0: (move_block_up b6)
+54.0: (move_block_up b2)
+55.0: (move_block_up b6)
+56.0: (move_block_up b2)
+57.0: (move_block_left b11)
+58.0: (move_block_left b5)
+59.0: (move_block_up b8)
+60.0: (move_block_up b13)
+61.0: (move_block_up b9)
+62.0: (move_block_up b7)
+63.0: (move_block_left b1)
+64.0: (move_block_left b3)
+65.0: (move_block_up b6)
+66.0: (move_block_up b2)
+67.0: (move_block_left b4)
+68.0: (move_block_left b14)
+69.0: (move_block_down b12)
+70.0: (move_block_down b1)
+71.0: (move_block_right b7)
+72.0: (move_block_right b12)
+73.0: (move_block_up b6)
+74.0: (move_block_up b2)
+75.0: (move_block_left b4)
+76.0: (move_block_left b14)
+77.0: (move_block_up b8)
+78.0: (move_block_up b13)
+79.0: (move_block_up b11)
+80.0: (move_block_left b11)
+81.0: (move_block_left b10)
+82.0: (move_block_left b5)
+
+Plan-Length:83
+Metric (Search):83.0
+Planning Time (msec): 25626
+Heuristic Time (msec): 23243
+Search Time (msec): 23866
+Expanded Nodes:84
+States Evaluated:4635
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:0
+Number of Duplicates detected:162

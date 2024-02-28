@@ -1,0 +1,123 @@
+! ====== ! Warning: Unknown planner configuration. Going with default: gbfs with hadd ! ====== !
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 26
+Aibr Preprocessing
+|F|:0
+|X|:20
+|A|:40
+|P|:0
+|E|:0
+H1 Setup Time (msec): 28
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=152.0
+ g(n)= 1.0 h(n)=148.0
+ g(n)= 2.0 h(n)=144.0
+ g(n)= 3.0 h(n)=140.0
+ g(n)= 4.0 h(n)=136.0
+ g(n)= 5.0 h(n)=132.0
+ g(n)= 6.0 h(n)=128.0
+ g(n)= 7.0 h(n)=124.0
+ g(n)= 8.0 h(n)=120.0
+ g(n)= 9.0 h(n)=116.0
+ g(n)= 10.0 h(n)=112.0
+ g(n)= 11.0 h(n)=108.0
+ g(n)= 12.0 h(n)=106.0
+ g(n)= 13.0 h(n)=102.0
+ g(n)= 14.0 h(n)=100.0
+ g(n)= 15.0 h(n)=96.0
+ g(n)= 16.0 h(n)=94.0
+ g(n)= 17.0 h(n)=90.0
+ g(n)= 18.0 h(n)=88.0
+ g(n)= 19.0 h(n)=84.0
+ g(n)= 20.0 h(n)=82.0
+ g(n)= 21.0 h(n)=78.0
+ g(n)= 22.0 h(n)=76.0
+ g(n)= 23.0 h(n)=72.0
+ g(n)= 24.0 h(n)=70.0
+ g(n)= 25.0 h(n)=66.0
+ g(n)= 26.0 h(n)=64.0
+ g(n)= 27.0 h(n)=60.0
+ g(n)= 28.0 h(n)=58.0
+ g(n)= 29.0 h(n)=54.0
+ g(n)= 30.0 h(n)=52.0
+ g(n)= 31.0 h(n)=48.0
+ g(n)= 32.0 h(n)=46.0
+ g(n)= 33.0 h(n)=42.0
+ g(n)= 34.0 h(n)=40.0
+ g(n)= 35.0 h(n)=36.0
+ g(n)= 36.0 h(n)=34.0
+ g(n)= 37.0 h(n)=30.0
+ g(n)= 38.0 h(n)=28.0
+ g(n)= 39.0 h(n)=24.0
+ g(n)= 40.0 h(n)=22.0
+ g(n)= 41.0 h(n)=18.0
+ g(n)= 42.0 h(n)=16.0
+ g(n)= 43.0 h(n)=12.0
+ g(n)= 44.0 h(n)=10.0
+ g(n)= 45.0 h(n)=6.0
+ g(n)= 46.0 h(n)=4.0
+ g(n)= 47.0 h(n)=0.0
+Problem Solved
+
+Found Plan:
+0.0: (move_block_down b7)
+1.0: (move_block_down b7)
+2.0: (move_block_down b7)
+3.0: (move_block_down b7)
+4.0: (move_block_left b10)
+5.0: (move_block_left b10)
+6.0: (move_block_left b10)
+7.0: (move_block_down b9)
+8.0: (move_block_left b4)
+9.0: (move_block_up b10)
+10.0: (move_block_up b10)
+11.0: (move_block_down b7)
+12.0: (move_block_down b1)
+13.0: (move_block_down b7)
+14.0: (move_block_down b1)
+15.0: (move_block_up b8)
+16.0: (move_block_up b4)
+17.0: (move_block_up b8)
+18.0: (move_block_up b4)
+19.0: (move_block_left b10)
+20.0: (move_block_left b7)
+21.0: (move_block_left b10)
+22.0: (move_block_left b7)
+23.0: (move_block_left b10)
+24.0: (move_block_left b7)
+25.0: (move_block_left b10)
+26.0: (move_block_left b7)
+27.0: (move_block_left b10)
+28.0: (move_block_left b7)
+29.0: (move_block_right b8)
+30.0: (move_block_right b2)
+31.0: (move_block_right b8)
+32.0: (move_block_right b2)
+33.0: (move_block_right b8)
+34.0: (move_block_right b2)
+35.0: (move_block_right b8)
+36.0: (move_block_right b2)
+37.0: (move_block_down b9)
+38.0: (move_block_down b3)
+39.0: (move_block_down b9)
+40.0: (move_block_down b3)
+41.0: (move_block_down b9)
+42.0: (move_block_down b3)
+43.0: (move_block_left b9)
+44.0: (move_block_left b4)
+45.0: (move_block_right b5)
+46.0: (move_block_right b1)
+
+Plan-Length:47
+Metric (Search):47.0
+Planning Time (msec): 1138
+Heuristic Time (msec): 250
+Search Time (msec): 330
+Expanded Nodes:48
+States Evaluated:1772
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:0
+Number of Duplicates detected:85

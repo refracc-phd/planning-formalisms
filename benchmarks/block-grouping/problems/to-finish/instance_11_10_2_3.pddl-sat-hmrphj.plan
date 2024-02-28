@@ -1,0 +1,98 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 22
+Aibr Preprocessing
+|F|:0
+|X|:20
+|A|:40
+|P|:0
+|E|:0
+H1 Setup Time (msec): 16
+Wrong setting for break-ties. Arbitrary tie breaking
+Setting horizon to:NaN
+Helpful Action Pruning Activated
+Running Greedy Best First Search
+h(n = s_0)=67.0
+ g(n)= 6.0 h(n)=50.0
+ g(n)= 11.0 h(n)=43.0
+ g(n)= 15.0 h(n)=36.0
+ g(n)= 16.0 h(n)=32.0
+ g(n)= 20.0 h(n)=28.0
+ g(n)= 23.0 h(n)=24.0
+ g(n)= 25.0 h(n)=20.0
+ g(n)= 27.0 h(n)=16.0
+ g(n)= 30.0 h(n)=13.0
+ g(n)= 34.0 h(n)=9.0
+ g(n)= 35.0 h(n)=7.0
+ g(n)= 37.0 h(n)=5.0
+ g(n)= 38.0 h(n)=4.0
+ g(n)= 39.0 h(n)=3.0
+ g(n)= 40.0 h(n)=1.0
+ g(n)= 41.0 h(n)=0.0
+JUMP for (move_block_left b10):2
+JUMP for (move_block_up b7):4
+JUMP for (move_block_up b9):3
+JUMP for (move_block_left b9):2
+JUMP for (move_block_left b9):2
+JUMP for (move_block_left b3):3
+JUMP for (move_block_left b6):4
+JUMP for (move_block_left b5):4
+JUMP for (move_block_left b1):5
+JUMP for (move_block_up b3):6
+Problem Solved
+
+Found Plan:
+0.0: (move_block_up b3)
+1.0: (move_block_up b3)
+2.0: (move_block_up b3)
+3.0: (move_block_up b3)
+4.0: (move_block_up b3)
+5.0: (move_block_up b3)
+6.0: (move_block_left b1)
+7.0: (move_block_left b1)
+8.0: (move_block_left b1)
+9.0: (move_block_left b1)
+10.0: (move_block_left b1)
+11.0: (move_block_left b5)
+12.0: (move_block_left b5)
+13.0: (move_block_left b5)
+14.0: (move_block_left b5)
+15.0: (move_block_up b2)
+16.0: (move_block_left b6)
+17.0: (move_block_left b6)
+18.0: (move_block_left b6)
+19.0: (move_block_left b6)
+20.0: (move_block_left b3)
+21.0: (move_block_left b3)
+22.0: (move_block_left b3)
+23.0: (move_block_left b9)
+24.0: (move_block_left b9)
+25.0: (move_block_left b9)
+26.0: (move_block_left b9)
+27.0: (move_block_up b9)
+28.0: (move_block_up b9)
+29.0: (move_block_up b9)
+30.0: (move_block_up b7)
+31.0: (move_block_up b7)
+32.0: (move_block_up b7)
+33.0: (move_block_up b7)
+34.0: (move_block_right b7)
+35.0: (move_block_left b10)
+36.0: (move_block_left b10)
+37.0: (move_block_left b6)
+38.0: (move_block_left b8)
+39.0: (move_block_up b2)
+40.0: (move_block_up b5)
+41.0: (move_block_up b1)
+
+Plan-Length:42
+Metric (Search):42.0
+Planning Time (msec): 2533
+Heuristic Time (msec): 1652
+Search Time (msec): 1826
+Expanded Nodes:245
+States Evaluated:9047
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:0
+Number of Duplicates detected:1357

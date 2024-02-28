@@ -1,0 +1,242 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 26
+Aibr Preprocessing
+|F|:0
+|X|:50
+|A|:100
+|P|:0
+|E|:0
+H1 Setup Time (msec): 52
+Wrong setting for break-ties. Arbitrary tie breaking
+Setting horizon to:NaN
+Helpful Action Pruning Activated
+Running Greedy Best First Search
+h(n = s_0)=201.0
+ g(n)= 4.0 h(n)=188.0
+ g(n)= 13.0 h(n)=175.0
+ g(n)= 19.0 h(n)=168.0
+ g(n)= 28.0 h(n)=157.0
+ g(n)= 35.0 h(n)=150.0
+ g(n)= 36.0 h(n)=144.0
+ g(n)= 37.0 h(n)=138.0
+ g(n)= 38.0 h(n)=132.0
+ g(n)= 44.0 h(n)=126.0
+ g(n)= 50.0 h(n)=120.0
+ g(n)= 53.0 h(n)=114.0
+ g(n)= 55.0 h(n)=108.0
+ g(n)= 61.0 h(n)=102.0
+ g(n)= 68.0 h(n)=95.0
+ g(n)= 75.0 h(n)=88.0
+ g(n)= 83.0 h(n)=80.0
+ g(n)= 84.0 h(n)=75.0
+ g(n)= 86.0 h(n)=70.0
+ g(n)= 87.0 h(n)=66.0
+ g(n)= 88.0 h(n)=62.0
+ g(n)= 89.0 h(n)=58.0
+ g(n)= 90.0 h(n)=54.0
+ g(n)= 94.0 h(n)=50.0
+ g(n)= 99.0 h(n)=45.0
+ g(n)= 100.0 h(n)=42.0
+ g(n)= 103.0 h(n)=39.0
+-------------Time: 10s ; Expanded Nodes: 27 (Avg-Speed 2.0 n/s); Evaluated States: 2266
+ g(n)= 104.0 h(n)=37.0
+ g(n)= 105.0 h(n)=35.0
+ g(n)= 106.0 h(n)=33.0
+ g(n)= 107.0 h(n)=31.0
+ g(n)= 108.0 h(n)=29.0
+ g(n)= 110.0 h(n)=27.0
+ g(n)= 114.0 h(n)=23.0
+ g(n)= 115.0 h(n)=22.0
+ g(n)= 116.0 h(n)=21.0
+ g(n)= 117.0 h(n)=20.0
+ g(n)= 119.0 h(n)=18.0
+ g(n)= 121.0 h(n)=16.0
+ g(n)= 123.0 h(n)=14.0
+ g(n)= 125.0 h(n)=12.0
+ g(n)= 126.0 h(n)=11.0
+ g(n)= 127.0 h(n)=10.0
+ g(n)= 128.0 h(n)=9.0
+ g(n)= 131.0 h(n)=6.0
+ g(n)= 132.0 h(n)=5.0
+ g(n)= 134.0 h(n)=3.0
+ g(n)= 135.0 h(n)=2.0
+ g(n)= 136.0 h(n)=1.0
+ g(n)= 137.0 h(n)=0.0
+JUMP for (move_block_up b9):2
+JUMP for (move_block_up b1):3
+JUMP for (move_block_right b17):2
+JUMP for (move_block_right b12):2
+JUMP for (move_block_right b24):2
+JUMP for (move_block_right b1):2
+JUMP for (move_block_right b12):4
+JUMP for (move_block_right b1):2
+JUMP for (move_block_up b19):3
+JUMP for (move_block_up b10):5
+JUMP for (move_block_up b13):4
+JUMP for (move_block_down b11):2
+JUMP for (move_block_right b13):8
+JUMP for (move_block_right b18):7
+JUMP for (move_block_right b2):7
+JUMP for (move_block_right b10):6
+JUMP for (move_block_up b23):2
+JUMP for (move_block_up b18):3
+JUMP for (move_block_right b25):6
+JUMP for (move_block_right b8):6
+JUMP for (move_block_right b4):7
+JUMP for (move_block_down b17):9
+JUMP for (move_block_up b5):6
+JUMP for (move_block_up b14):9
+JUMP for (move_block_up b12):4
+Problem Solved
+
+Found Plan:
+0.0: (move_block_up b12)
+1.0: (move_block_up b12)
+2.0: (move_block_up b12)
+3.0: (move_block_up b12)
+4.0: (move_block_up b14)
+5.0: (move_block_up b14)
+6.0: (move_block_up b14)
+7.0: (move_block_up b14)
+8.0: (move_block_up b14)
+9.0: (move_block_up b14)
+10.0: (move_block_up b14)
+11.0: (move_block_up b14)
+12.0: (move_block_up b14)
+13.0: (move_block_up b5)
+14.0: (move_block_up b5)
+15.0: (move_block_up b5)
+16.0: (move_block_up b5)
+17.0: (move_block_up b5)
+18.0: (move_block_up b5)
+19.0: (move_block_down b17)
+20.0: (move_block_down b17)
+21.0: (move_block_down b17)
+22.0: (move_block_down b17)
+23.0: (move_block_down b17)
+24.0: (move_block_down b17)
+25.0: (move_block_down b17)
+26.0: (move_block_down b17)
+27.0: (move_block_down b17)
+28.0: (move_block_right b4)
+29.0: (move_block_right b4)
+30.0: (move_block_right b4)
+31.0: (move_block_right b4)
+32.0: (move_block_right b4)
+33.0: (move_block_right b4)
+34.0: (move_block_right b4)
+35.0: (move_block_left b11)
+36.0: (move_block_left b11)
+37.0: (move_block_left b23)
+38.0: (move_block_right b8)
+39.0: (move_block_right b8)
+40.0: (move_block_right b8)
+41.0: (move_block_right b8)
+42.0: (move_block_right b8)
+43.0: (move_block_right b8)
+44.0: (move_block_right b25)
+45.0: (move_block_right b25)
+46.0: (move_block_right b25)
+47.0: (move_block_right b25)
+48.0: (move_block_right b25)
+49.0: (move_block_right b25)
+50.0: (move_block_up b18)
+51.0: (move_block_up b18)
+52.0: (move_block_up b18)
+53.0: (move_block_up b23)
+54.0: (move_block_up b23)
+55.0: (move_block_right b10)
+56.0: (move_block_right b10)
+57.0: (move_block_right b10)
+58.0: (move_block_right b10)
+59.0: (move_block_right b10)
+60.0: (move_block_right b10)
+61.0: (move_block_right b2)
+62.0: (move_block_right b2)
+63.0: (move_block_right b2)
+64.0: (move_block_right b2)
+65.0: (move_block_right b2)
+66.0: (move_block_right b2)
+67.0: (move_block_right b2)
+68.0: (move_block_right b18)
+69.0: (move_block_right b18)
+70.0: (move_block_right b18)
+71.0: (move_block_right b18)
+72.0: (move_block_right b18)
+73.0: (move_block_right b18)
+74.0: (move_block_right b18)
+75.0: (move_block_right b13)
+76.0: (move_block_right b13)
+77.0: (move_block_right b13)
+78.0: (move_block_right b13)
+79.0: (move_block_right b13)
+80.0: (move_block_right b13)
+81.0: (move_block_right b13)
+82.0: (move_block_right b13)
+83.0: (move_block_up b17)
+84.0: (move_block_down b11)
+85.0: (move_block_down b11)
+86.0: (move_block_down b2)
+87.0: (move_block_up b17)
+88.0: (move_block_up b17)
+89.0: (move_block_up b17)
+90.0: (move_block_up b13)
+91.0: (move_block_up b13)
+92.0: (move_block_up b13)
+93.0: (move_block_up b13)
+94.0: (move_block_up b10)
+95.0: (move_block_up b10)
+96.0: (move_block_up b10)
+97.0: (move_block_up b10)
+98.0: (move_block_up b10)
+99.0: (move_block_down b6)
+100.0: (move_block_up b19)
+101.0: (move_block_up b19)
+102.0: (move_block_up b19)
+103.0: (move_block_down b25)
+104.0: (move_block_left b14)
+105.0: (move_block_down b16)
+106.0: (move_block_down b16)
+107.0: (move_block_down b16)
+108.0: (move_block_right b1)
+109.0: (move_block_right b1)
+110.0: (move_block_right b12)
+111.0: (move_block_right b12)
+112.0: (move_block_right b12)
+113.0: (move_block_right b12)
+114.0: (move_block_right b7)
+115.0: (move_block_up b8)
+116.0: (move_block_right b6)
+117.0: (move_block_right b1)
+118.0: (move_block_right b1)
+119.0: (move_block_right b24)
+120.0: (move_block_right b24)
+121.0: (move_block_right b12)
+122.0: (move_block_right b12)
+123.0: (move_block_right b17)
+124.0: (move_block_right b17)
+125.0: (move_block_right b13)
+126.0: (move_block_right b18)
+127.0: (move_block_up b1)
+128.0: (move_block_up b1)
+129.0: (move_block_up b1)
+130.0: (move_block_up b1)
+131.0: (move_block_up b9)
+132.0: (move_block_up b9)
+133.0: (move_block_up b9)
+134.0: (move_block_right b15)
+135.0: (move_block_right b2)
+136.0: (move_block_right b10)
+
+Plan-Length:137
+Metric (Search):137.0
+Planning Time (msec): 17510
+Heuristic Time (msec): 14355
+Search Time (msec): 15066
+Expanded Nodes:50
+States Evaluated:3484
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:0
+Number of Duplicates detected:28

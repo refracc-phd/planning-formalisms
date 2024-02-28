@@ -1,0 +1,2312 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 602
+Aibr Preprocessing
+|F|:653
+|X|:0
+|A|:653
+|P|:0
+|E|:0
+H1 Setup Time (msec): 281
+Wrong setting for break-ties. Arbitrary tie breaking
+Setting horizon to:NaN
+Helpful Action Pruning Activated
+Running Greedy Best First Search
+h(n = s_0)=600.0
+ g(n)= 1.0 h(n)=599.0
+ g(n)= 2.0 h(n)=598.0
+ g(n)= 3.0 h(n)=597.0
+ g(n)= 4.0 h(n)=596.0
+ g(n)= 5.0 h(n)=595.0
+ g(n)= 6.0 h(n)=594.0
+ g(n)= 7.0 h(n)=593.0
+ g(n)= 8.0 h(n)=592.0
+ g(n)= 9.0 h(n)=591.0
+ g(n)= 10.0 h(n)=590.0
+ g(n)= 11.0 h(n)=589.0
+ g(n)= 12.0 h(n)=588.0
+ g(n)= 13.0 h(n)=587.0
+ g(n)= 14.0 h(n)=586.0
+ g(n)= 15.0 h(n)=585.0
+ g(n)= 16.0 h(n)=584.0
+ g(n)= 17.0 h(n)=583.0
+ g(n)= 18.0 h(n)=582.0
+ g(n)= 19.0 h(n)=581.0
+ g(n)= 20.0 h(n)=580.0
+ g(n)= 21.0 h(n)=579.0
+ g(n)= 22.0 h(n)=578.0
+ g(n)= 23.0 h(n)=577.0
+ g(n)= 24.0 h(n)=576.0
+ g(n)= 25.0 h(n)=575.0
+ g(n)= 26.0 h(n)=574.0
+ g(n)= 27.0 h(n)=573.0
+ g(n)= 28.0 h(n)=572.0
+ g(n)= 29.0 h(n)=571.0
+ g(n)= 30.0 h(n)=570.0
+ g(n)= 31.0 h(n)=569.0
+ g(n)= 32.0 h(n)=568.0
+ g(n)= 33.0 h(n)=567.0
+ g(n)= 34.0 h(n)=566.0
+ g(n)= 35.0 h(n)=565.0
+ g(n)= 36.0 h(n)=564.0
+ g(n)= 37.0 h(n)=563.0
+ g(n)= 38.0 h(n)=562.0
+ g(n)= 39.0 h(n)=561.0
+ g(n)= 40.0 h(n)=560.0
+ g(n)= 41.0 h(n)=559.0
+ g(n)= 42.0 h(n)=558.0
+ g(n)= 43.0 h(n)=557.0
+ g(n)= 44.0 h(n)=556.0
+ g(n)= 45.0 h(n)=555.0
+ g(n)= 46.0 h(n)=554.0
+ g(n)= 47.0 h(n)=553.0
+ g(n)= 48.0 h(n)=552.0
+ g(n)= 49.0 h(n)=551.0
+ g(n)= 50.0 h(n)=550.0
+ g(n)= 51.0 h(n)=549.0
+ g(n)= 52.0 h(n)=548.0
+ g(n)= 53.0 h(n)=547.0
+ g(n)= 54.0 h(n)=546.0
+ g(n)= 55.0 h(n)=545.0
+ g(n)= 56.0 h(n)=544.0
+ g(n)= 57.0 h(n)=543.0
+ g(n)= 58.0 h(n)=542.0
+ g(n)= 59.0 h(n)=541.0
+ g(n)= 60.0 h(n)=540.0
+ g(n)= 61.0 h(n)=539.0
+ g(n)= 62.0 h(n)=538.0
+ g(n)= 63.0 h(n)=537.0
+ g(n)= 64.0 h(n)=536.0
+ g(n)= 65.0 h(n)=535.0
+ g(n)= 66.0 h(n)=534.0
+ g(n)= 67.0 h(n)=533.0
+ g(n)= 68.0 h(n)=532.0
+ g(n)= 69.0 h(n)=531.0
+ g(n)= 70.0 h(n)=530.0
+ g(n)= 71.0 h(n)=529.0
+ g(n)= 72.0 h(n)=528.0
+ g(n)= 73.0 h(n)=527.0
+ g(n)= 74.0 h(n)=526.0
+ g(n)= 75.0 h(n)=525.0
+ g(n)= 76.0 h(n)=524.0
+ g(n)= 77.0 h(n)=523.0
+ g(n)= 78.0 h(n)=522.0
+ g(n)= 79.0 h(n)=521.0
+ g(n)= 80.0 h(n)=520.0
+ g(n)= 81.0 h(n)=519.0
+ g(n)= 82.0 h(n)=518.0
+ g(n)= 83.0 h(n)=517.0
+ g(n)= 84.0 h(n)=516.0
+ g(n)= 85.0 h(n)=515.0
+ g(n)= 86.0 h(n)=514.0
+ g(n)= 87.0 h(n)=513.0
+ g(n)= 88.0 h(n)=512.0
+ g(n)= 89.0 h(n)=511.0
+ g(n)= 90.0 h(n)=510.0
+ g(n)= 91.0 h(n)=509.0
+ g(n)= 92.0 h(n)=508.0
+ g(n)= 93.0 h(n)=507.0
+ g(n)= 94.0 h(n)=506.0
+ g(n)= 95.0 h(n)=505.0
+ g(n)= 96.0 h(n)=504.0
+ g(n)= 97.0 h(n)=503.0
+ g(n)= 98.0 h(n)=502.0
+ g(n)= 99.0 h(n)=501.0
+ g(n)= 100.0 h(n)=500.0
+ g(n)= 101.0 h(n)=499.0
+ g(n)= 102.0 h(n)=498.0
+ g(n)= 103.0 h(n)=497.0
+ g(n)= 104.0 h(n)=496.0
+ g(n)= 105.0 h(n)=495.0
+ g(n)= 106.0 h(n)=494.0
+ g(n)= 107.0 h(n)=493.0
+ g(n)= 108.0 h(n)=492.0
+ g(n)= 109.0 h(n)=491.0
+ g(n)= 110.0 h(n)=490.0
+ g(n)= 111.0 h(n)=489.0
+ g(n)= 112.0 h(n)=488.0
+ g(n)= 113.0 h(n)=487.0
+ g(n)= 114.0 h(n)=486.0
+ g(n)= 115.0 h(n)=485.0
+ g(n)= 116.0 h(n)=484.0
+ g(n)= 117.0 h(n)=483.0
+ g(n)= 118.0 h(n)=482.0
+ g(n)= 119.0 h(n)=481.0
+ g(n)= 120.0 h(n)=480.0
+ g(n)= 121.0 h(n)=479.0
+ g(n)= 122.0 h(n)=478.0
+ g(n)= 123.0 h(n)=477.0
+ g(n)= 124.0 h(n)=476.0
+ g(n)= 125.0 h(n)=475.0
+ g(n)= 126.0 h(n)=474.0
+ g(n)= 127.0 h(n)=473.0
+ g(n)= 128.0 h(n)=472.0
+ g(n)= 129.0 h(n)=471.0
+ g(n)= 130.0 h(n)=470.0
+ g(n)= 131.0 h(n)=469.0
+ g(n)= 132.0 h(n)=468.0
+ g(n)= 133.0 h(n)=467.0
+ g(n)= 134.0 h(n)=466.0
+ g(n)= 135.0 h(n)=465.0
+ g(n)= 136.0 h(n)=464.0
+ g(n)= 137.0 h(n)=463.0
+ g(n)= 138.0 h(n)=462.0
+ g(n)= 139.0 h(n)=461.0
+ g(n)= 140.0 h(n)=460.0
+ g(n)= 141.0 h(n)=459.0
+ g(n)= 142.0 h(n)=458.0
+ g(n)= 143.0 h(n)=457.0
+ g(n)= 144.0 h(n)=456.0
+ g(n)= 145.0 h(n)=455.0
+ g(n)= 146.0 h(n)=454.0
+ g(n)= 147.0 h(n)=453.0
+ g(n)= 148.0 h(n)=452.0
+ g(n)= 149.0 h(n)=451.0
+ g(n)= 150.0 h(n)=450.0
+ g(n)= 151.0 h(n)=449.0
+ g(n)= 152.0 h(n)=448.0
+ g(n)= 153.0 h(n)=447.0
+ g(n)= 154.0 h(n)=446.0
+ g(n)= 155.0 h(n)=445.0
+ g(n)= 156.0 h(n)=444.0
+ g(n)= 157.0 h(n)=443.0
+ g(n)= 158.0 h(n)=442.0
+ g(n)= 159.0 h(n)=441.0
+ g(n)= 160.0 h(n)=440.0
+ g(n)= 161.0 h(n)=439.0
+ g(n)= 162.0 h(n)=438.0
+ g(n)= 163.0 h(n)=437.0
+ g(n)= 164.0 h(n)=436.0
+ g(n)= 165.0 h(n)=435.0
+ g(n)= 166.0 h(n)=434.0
+ g(n)= 167.0 h(n)=433.0
+ g(n)= 168.0 h(n)=432.0
+ g(n)= 169.0 h(n)=431.0
+ g(n)= 170.0 h(n)=430.0
+ g(n)= 171.0 h(n)=429.0
+ g(n)= 172.0 h(n)=428.0
+ g(n)= 173.0 h(n)=427.0
+ g(n)= 174.0 h(n)=426.0
+ g(n)= 175.0 h(n)=425.0
+ g(n)= 176.0 h(n)=424.0
+ g(n)= 177.0 h(n)=423.0
+ g(n)= 178.0 h(n)=422.0
+ g(n)= 179.0 h(n)=421.0
+ g(n)= 180.0 h(n)=420.0
+ g(n)= 181.0 h(n)=419.0
+ g(n)= 182.0 h(n)=418.0
+ g(n)= 183.0 h(n)=417.0
+ g(n)= 184.0 h(n)=416.0
+ g(n)= 185.0 h(n)=415.0
+ g(n)= 186.0 h(n)=414.0
+ g(n)= 187.0 h(n)=413.0
+ g(n)= 188.0 h(n)=412.0
+ g(n)= 189.0 h(n)=411.0
+ g(n)= 190.0 h(n)=410.0
+ g(n)= 191.0 h(n)=409.0
+ g(n)= 192.0 h(n)=408.0
+ g(n)= 193.0 h(n)=407.0
+ g(n)= 194.0 h(n)=406.0
+ g(n)= 195.0 h(n)=405.0
+ g(n)= 196.0 h(n)=404.0
+ g(n)= 197.0 h(n)=403.0
+ g(n)= 198.0 h(n)=402.0
+ g(n)= 199.0 h(n)=401.0
+ g(n)= 200.0 h(n)=400.0
+ g(n)= 201.0 h(n)=399.0
+ g(n)= 202.0 h(n)=398.0
+ g(n)= 203.0 h(n)=397.0
+ g(n)= 204.0 h(n)=396.0
+ g(n)= 205.0 h(n)=395.0
+ g(n)= 206.0 h(n)=394.0
+ g(n)= 207.0 h(n)=393.0
+ g(n)= 208.0 h(n)=392.0
+ g(n)= 209.0 h(n)=391.0
+ g(n)= 210.0 h(n)=390.0
+ g(n)= 211.0 h(n)=389.0
+ g(n)= 212.0 h(n)=388.0
+ g(n)= 213.0 h(n)=387.0
+ g(n)= 214.0 h(n)=386.0
+ g(n)= 215.0 h(n)=385.0
+ g(n)= 216.0 h(n)=384.0
+ g(n)= 217.0 h(n)=383.0
+ g(n)= 218.0 h(n)=382.0
+ g(n)= 219.0 h(n)=381.0
+ g(n)= 220.0 h(n)=380.0
+ g(n)= 221.0 h(n)=379.0
+ g(n)= 222.0 h(n)=378.0
+ g(n)= 223.0 h(n)=377.0
+ g(n)= 224.0 h(n)=376.0
+ g(n)= 225.0 h(n)=375.0
+ g(n)= 226.0 h(n)=374.0
+ g(n)= 227.0 h(n)=373.0
+ g(n)= 228.0 h(n)=372.0
+ g(n)= 229.0 h(n)=371.0
+ g(n)= 230.0 h(n)=370.0
+ g(n)= 231.0 h(n)=369.0
+ g(n)= 232.0 h(n)=368.0
+ g(n)= 233.0 h(n)=367.0
+ g(n)= 234.0 h(n)=366.0
+ g(n)= 235.0 h(n)=365.0
+-------------Time: 10s ; Expanded Nodes: 236 (Avg-Speed 23.0 n/s); Evaluated States: 10740
+ g(n)= 236.0 h(n)=364.0
+ g(n)= 237.0 h(n)=363.0
+ g(n)= 238.0 h(n)=362.0
+ g(n)= 239.0 h(n)=361.0
+ g(n)= 240.0 h(n)=360.0
+ g(n)= 241.0 h(n)=359.0
+ g(n)= 242.0 h(n)=358.0
+ g(n)= 243.0 h(n)=357.0
+ g(n)= 244.0 h(n)=356.0
+ g(n)= 245.0 h(n)=355.0
+ g(n)= 246.0 h(n)=354.0
+ g(n)= 247.0 h(n)=353.0
+ g(n)= 248.0 h(n)=352.0
+ g(n)= 249.0 h(n)=351.0
+ g(n)= 250.0 h(n)=350.0
+ g(n)= 251.0 h(n)=349.0
+ g(n)= 252.0 h(n)=348.0
+ g(n)= 253.0 h(n)=347.0
+ g(n)= 254.0 h(n)=346.0
+ g(n)= 255.0 h(n)=345.0
+ g(n)= 256.0 h(n)=344.0
+ g(n)= 257.0 h(n)=343.0
+ g(n)= 258.0 h(n)=342.0
+ g(n)= 259.0 h(n)=341.0
+ g(n)= 260.0 h(n)=340.0
+ g(n)= 261.0 h(n)=339.0
+ g(n)= 262.0 h(n)=338.0
+ g(n)= 263.0 h(n)=337.0
+ g(n)= 264.0 h(n)=336.0
+ g(n)= 265.0 h(n)=335.0
+ g(n)= 266.0 h(n)=334.0
+ g(n)= 267.0 h(n)=333.0
+ g(n)= 268.0 h(n)=332.0
+ g(n)= 269.0 h(n)=331.0
+ g(n)= 270.0 h(n)=330.0
+ g(n)= 271.0 h(n)=329.0
+ g(n)= 272.0 h(n)=328.0
+ g(n)= 273.0 h(n)=327.0
+ g(n)= 274.0 h(n)=326.0
+ g(n)= 275.0 h(n)=325.0
+ g(n)= 276.0 h(n)=324.0
+ g(n)= 277.0 h(n)=323.0
+ g(n)= 278.0 h(n)=322.0
+ g(n)= 279.0 h(n)=321.0
+ g(n)= 280.0 h(n)=320.0
+ g(n)= 281.0 h(n)=319.0
+ g(n)= 282.0 h(n)=318.0
+ g(n)= 283.0 h(n)=317.0
+ g(n)= 284.0 h(n)=316.0
+ g(n)= 285.0 h(n)=315.0
+ g(n)= 286.0 h(n)=314.0
+ g(n)= 287.0 h(n)=313.0
+ g(n)= 288.0 h(n)=312.0
+ g(n)= 289.0 h(n)=311.0
+ g(n)= 290.0 h(n)=310.0
+ g(n)= 291.0 h(n)=309.0
+ g(n)= 292.0 h(n)=308.0
+ g(n)= 293.0 h(n)=307.0
+ g(n)= 294.0 h(n)=306.0
+ g(n)= 295.0 h(n)=305.0
+ g(n)= 296.0 h(n)=304.0
+ g(n)= 297.0 h(n)=303.0
+ g(n)= 298.0 h(n)=302.0
+ g(n)= 299.0 h(n)=301.0
+ g(n)= 300.0 h(n)=300.0
+ g(n)= 301.0 h(n)=299.0
+ g(n)= 302.0 h(n)=298.0
+ g(n)= 303.0 h(n)=297.0
+ g(n)= 304.0 h(n)=296.0
+ g(n)= 305.0 h(n)=295.0
+ g(n)= 306.0 h(n)=294.0
+ g(n)= 307.0 h(n)=293.0
+ g(n)= 308.0 h(n)=292.0
+ g(n)= 309.0 h(n)=291.0
+ g(n)= 310.0 h(n)=290.0
+ g(n)= 311.0 h(n)=289.0
+ g(n)= 312.0 h(n)=288.0
+ g(n)= 313.0 h(n)=287.0
+ g(n)= 314.0 h(n)=286.0
+ g(n)= 315.0 h(n)=285.0
+ g(n)= 316.0 h(n)=284.0
+ g(n)= 317.0 h(n)=283.0
+ g(n)= 318.0 h(n)=282.0
+ g(n)= 319.0 h(n)=281.0
+ g(n)= 320.0 h(n)=280.0
+ g(n)= 321.0 h(n)=279.0
+ g(n)= 322.0 h(n)=278.0
+ g(n)= 323.0 h(n)=277.0
+ g(n)= 324.0 h(n)=276.0
+ g(n)= 325.0 h(n)=275.0
+ g(n)= 326.0 h(n)=274.0
+ g(n)= 327.0 h(n)=273.0
+ g(n)= 328.0 h(n)=272.0
+ g(n)= 329.0 h(n)=271.0
+ g(n)= 330.0 h(n)=270.0
+ g(n)= 331.0 h(n)=269.0
+ g(n)= 332.0 h(n)=268.0
+ g(n)= 333.0 h(n)=267.0
+ g(n)= 334.0 h(n)=266.0
+ g(n)= 335.0 h(n)=265.0
+ g(n)= 336.0 h(n)=264.0
+ g(n)= 337.0 h(n)=263.0
+ g(n)= 338.0 h(n)=262.0
+ g(n)= 339.0 h(n)=261.0
+ g(n)= 340.0 h(n)=260.0
+ g(n)= 341.0 h(n)=259.0
+ g(n)= 342.0 h(n)=258.0
+ g(n)= 343.0 h(n)=257.0
+ g(n)= 344.0 h(n)=256.0
+ g(n)= 345.0 h(n)=255.0
+ g(n)= 346.0 h(n)=254.0
+ g(n)= 347.0 h(n)=253.0
+ g(n)= 348.0 h(n)=252.0
+ g(n)= 349.0 h(n)=251.0
+ g(n)= 350.0 h(n)=250.0
+ g(n)= 351.0 h(n)=249.0
+ g(n)= 352.0 h(n)=248.0
+ g(n)= 353.0 h(n)=247.0
+ g(n)= 354.0 h(n)=246.0
+ g(n)= 355.0 h(n)=245.0
+ g(n)= 356.0 h(n)=244.0
+ g(n)= 357.0 h(n)=243.0
+ g(n)= 358.0 h(n)=242.0
+ g(n)= 359.0 h(n)=241.0
+ g(n)= 360.0 h(n)=240.0
+ g(n)= 361.0 h(n)=239.0
+ g(n)= 362.0 h(n)=238.0
+ g(n)= 363.0 h(n)=237.0
+ g(n)= 364.0 h(n)=236.0
+ g(n)= 365.0 h(n)=235.0
+ g(n)= 366.0 h(n)=234.0
+ g(n)= 367.0 h(n)=233.0
+ g(n)= 368.0 h(n)=232.0
+ g(n)= 369.0 h(n)=231.0
+ g(n)= 370.0 h(n)=230.0
+ g(n)= 371.0 h(n)=229.0
+ g(n)= 372.0 h(n)=228.0
+ g(n)= 373.0 h(n)=227.0
+ g(n)= 374.0 h(n)=226.0
+ g(n)= 375.0 h(n)=225.0
+ g(n)= 384.0 h(n)=224.0
+ g(n)= 393.0 h(n)=223.0
+ g(n)= 402.0 h(n)=222.0
+ g(n)= 403.0 h(n)=221.0
+ g(n)= 404.0 h(n)=220.0
+ g(n)= 413.0 h(n)=219.0
+ g(n)= 422.0 h(n)=218.0
+ g(n)= 431.0 h(n)=217.0
+ g(n)= 432.0 h(n)=216.0
+ g(n)= 433.0 h(n)=215.0
+ g(n)= 442.0 h(n)=214.0
+ g(n)= 451.0 h(n)=213.0
+ g(n)= 460.0 h(n)=212.0
+ g(n)= 461.0 h(n)=211.0
+ g(n)= 462.0 h(n)=210.0
+ g(n)= 471.0 h(n)=209.0
+ g(n)= 480.0 h(n)=208.0
+ g(n)= 489.0 h(n)=207.0
+ g(n)= 490.0 h(n)=206.0
+ g(n)= 491.0 h(n)=205.0
+ g(n)= 500.0 h(n)=204.0
+ g(n)= 509.0 h(n)=203.0
+ g(n)= 518.0 h(n)=202.0
+ g(n)= 519.0 h(n)=201.0
+ g(n)= 520.0 h(n)=200.0
+ g(n)= 529.0 h(n)=199.0
+ g(n)= 538.0 h(n)=198.0
+ g(n)= 547.0 h(n)=197.0
+ g(n)= 548.0 h(n)=196.0
+ g(n)= 549.0 h(n)=195.0
+ g(n)= 558.0 h(n)=194.0
+ g(n)= 567.0 h(n)=193.0
+ g(n)= 576.0 h(n)=192.0
+ g(n)= 577.0 h(n)=191.0
+ g(n)= 578.0 h(n)=190.0
+ g(n)= 587.0 h(n)=189.0
+ g(n)= 596.0 h(n)=188.0
+ g(n)= 605.0 h(n)=187.0
+ g(n)= 606.0 h(n)=186.0
+ g(n)= 607.0 h(n)=185.0
+ g(n)= 616.0 h(n)=184.0
+ g(n)= 625.0 h(n)=183.0
+ g(n)= 634.0 h(n)=182.0
+ g(n)= 635.0 h(n)=181.0
+ g(n)= 636.0 h(n)=180.0
+ g(n)= 645.0 h(n)=179.0
+ g(n)= 654.0 h(n)=178.0
+ g(n)= 663.0 h(n)=177.0
+ g(n)= 664.0 h(n)=176.0
+ g(n)= 665.0 h(n)=175.0
+ g(n)= 674.0 h(n)=174.0
+-------------Time: 20s ; Expanded Nodes: 676 (Avg-Speed 33.0 n/s); Evaluated States: 29125
+ g(n)= 683.0 h(n)=173.0
+ g(n)= 692.0 h(n)=172.0
+ g(n)= 693.0 h(n)=171.0
+ g(n)= 694.0 h(n)=170.0
+ g(n)= 703.0 h(n)=169.0
+ g(n)= 712.0 h(n)=168.0
+ g(n)= 721.0 h(n)=167.0
+ g(n)= 722.0 h(n)=166.0
+ g(n)= 723.0 h(n)=165.0
+ g(n)= 732.0 h(n)=164.0
+ g(n)= 741.0 h(n)=163.0
+ g(n)= 750.0 h(n)=162.0
+ g(n)= 751.0 h(n)=161.0
+ g(n)= 752.0 h(n)=160.0
+ g(n)= 761.0 h(n)=159.0
+ g(n)= 770.0 h(n)=158.0
+ g(n)= 779.0 h(n)=157.0
+ g(n)= 780.0 h(n)=156.0
+ g(n)= 781.0 h(n)=155.0
+ g(n)= 790.0 h(n)=154.0
+ g(n)= 799.0 h(n)=153.0
+ g(n)= 808.0 h(n)=152.0
+ g(n)= 809.0 h(n)=151.0
+ g(n)= 810.0 h(n)=150.0
+ g(n)= 819.0 h(n)=149.0
+ g(n)= 828.0 h(n)=148.0
+ g(n)= 837.0 h(n)=147.0
+ g(n)= 838.0 h(n)=146.0
+ g(n)= 839.0 h(n)=145.0
+ g(n)= 848.0 h(n)=144.0
+ g(n)= 857.0 h(n)=143.0
+ g(n)= 866.0 h(n)=142.0
+ g(n)= 867.0 h(n)=141.0
+ g(n)= 868.0 h(n)=140.0
+ g(n)= 877.0 h(n)=139.0
+ g(n)= 886.0 h(n)=138.0
+ g(n)= 895.0 h(n)=137.0
+ g(n)= 896.0 h(n)=136.0
+ g(n)= 897.0 h(n)=135.0
+ g(n)= 906.0 h(n)=134.0
+ g(n)= 915.0 h(n)=133.0
+ g(n)= 924.0 h(n)=132.0
+ g(n)= 925.0 h(n)=131.0
+ g(n)= 926.0 h(n)=130.0
+ g(n)= 935.0 h(n)=129.0
+ g(n)= 944.0 h(n)=128.0
+ g(n)= 953.0 h(n)=127.0
+ g(n)= 954.0 h(n)=126.0
+ g(n)= 955.0 h(n)=125.0
+ g(n)= 964.0 h(n)=124.0
+ g(n)= 973.0 h(n)=123.0
+ g(n)= 982.0 h(n)=122.0
+ g(n)= 983.0 h(n)=121.0
+ g(n)= 984.0 h(n)=120.0
+ g(n)= 993.0 h(n)=119.0
+ g(n)= 1002.0 h(n)=118.0
+ g(n)= 1011.0 h(n)=117.0
+ g(n)= 1012.0 h(n)=116.0
+ g(n)= 1013.0 h(n)=115.0
+ g(n)= 1022.0 h(n)=114.0
+ g(n)= 1031.0 h(n)=113.0
+ g(n)= 1040.0 h(n)=112.0
+ g(n)= 1041.0 h(n)=111.0
+ g(n)= 1042.0 h(n)=110.0
+ g(n)= 1051.0 h(n)=109.0
+ g(n)= 1060.0 h(n)=108.0
+ g(n)= 1069.0 h(n)=107.0
+ g(n)= 1070.0 h(n)=106.0
+ g(n)= 1071.0 h(n)=105.0
+ g(n)= 1080.0 h(n)=104.0
+ g(n)= 1089.0 h(n)=103.0
+ g(n)= 1098.0 h(n)=102.0
+ g(n)= 1099.0 h(n)=101.0
+ g(n)= 1100.0 h(n)=100.0
+ g(n)= 1109.0 h(n)=99.0
+ g(n)= 1118.0 h(n)=98.0
+ g(n)= 1127.0 h(n)=97.0
+ g(n)= 1128.0 h(n)=96.0
+ g(n)= 1129.0 h(n)=95.0
+ g(n)= 1138.0 h(n)=94.0
+ g(n)= 1147.0 h(n)=93.0
+ g(n)= 1156.0 h(n)=92.0
+ g(n)= 1157.0 h(n)=91.0
+ g(n)= 1158.0 h(n)=90.0
+ g(n)= 1167.0 h(n)=89.0
+ g(n)= 1176.0 h(n)=88.0
+ g(n)= 1185.0 h(n)=87.0
+ g(n)= 1186.0 h(n)=86.0
+ g(n)= 1187.0 h(n)=85.0
+ g(n)= 1196.0 h(n)=84.0
+ g(n)= 1205.0 h(n)=83.0
+ g(n)= 1214.0 h(n)=82.0
+ g(n)= 1215.0 h(n)=81.0
+ g(n)= 1216.0 h(n)=80.0
+ g(n)= 1225.0 h(n)=79.0
+ g(n)= 1234.0 h(n)=78.0
+ g(n)= 1243.0 h(n)=77.0
+ g(n)= 1244.0 h(n)=76.0
+ g(n)= 1245.0 h(n)=75.0
+ g(n)= 1254.0 h(n)=74.0
+ g(n)= 1263.0 h(n)=73.0
+ g(n)= 1272.0 h(n)=72.0
+ g(n)= 1273.0 h(n)=71.0
+ g(n)= 1274.0 h(n)=70.0
+ g(n)= 1283.0 h(n)=69.0
+ g(n)= 1292.0 h(n)=68.0
+ g(n)= 1301.0 h(n)=67.0
+ g(n)= 1302.0 h(n)=66.0
+ g(n)= 1303.0 h(n)=65.0
+ g(n)= 1312.0 h(n)=64.0
+ g(n)= 1321.0 h(n)=63.0
+ g(n)= 1330.0 h(n)=62.0
+ g(n)= 1331.0 h(n)=61.0
+ g(n)= 1332.0 h(n)=60.0
+ g(n)= 1341.0 h(n)=59.0
+ g(n)= 1350.0 h(n)=58.0
+ g(n)= 1359.0 h(n)=57.0
+ g(n)= 1360.0 h(n)=56.0
+ g(n)= 1361.0 h(n)=55.0
+ g(n)= 1370.0 h(n)=54.0
+ g(n)= 1379.0 h(n)=53.0
+ g(n)= 1388.0 h(n)=52.0
+ g(n)= 1389.0 h(n)=51.0
+ g(n)= 1390.0 h(n)=50.0
+ g(n)= 1399.0 h(n)=49.0
+ g(n)= 1408.0 h(n)=48.0
+ g(n)= 1417.0 h(n)=47.0
+ g(n)= 1418.0 h(n)=46.0
+ g(n)= 1419.0 h(n)=45.0
+ g(n)= 1428.0 h(n)=44.0
+ g(n)= 1437.0 h(n)=43.0
+ g(n)= 1446.0 h(n)=42.0
+ g(n)= 1447.0 h(n)=41.0
+ g(n)= 1448.0 h(n)=40.0
+ g(n)= 1457.0 h(n)=39.0
+ g(n)= 1466.0 h(n)=38.0
+ g(n)= 1475.0 h(n)=37.0
+ g(n)= 1476.0 h(n)=36.0
+ g(n)= 1477.0 h(n)=35.0
+ g(n)= 1486.0 h(n)=34.0
+ g(n)= 1495.0 h(n)=33.0
+ g(n)= 1504.0 h(n)=32.0
+ g(n)= 1505.0 h(n)=31.0
+ g(n)= 1506.0 h(n)=30.0
+ g(n)= 1515.0 h(n)=29.0
+ g(n)= 1524.0 h(n)=28.0
+ g(n)= 1533.0 h(n)=27.0
+ g(n)= 1534.0 h(n)=26.0
+ g(n)= 1535.0 h(n)=25.0
+ g(n)= 1544.0 h(n)=24.0
+ g(n)= 1553.0 h(n)=23.0
+ g(n)= 1562.0 h(n)=22.0
+ g(n)= 1563.0 h(n)=21.0
+ g(n)= 1564.0 h(n)=20.0
+ g(n)= 1573.0 h(n)=19.0
+ g(n)= 1582.0 h(n)=18.0
+ g(n)= 1591.0 h(n)=17.0
+ g(n)= 1592.0 h(n)=16.0
+ g(n)= 1593.0 h(n)=15.0
+ g(n)= 1602.0 h(n)=14.0
+ g(n)= 1611.0 h(n)=13.0
+ g(n)= 1620.0 h(n)=12.0
+ g(n)= 1621.0 h(n)=11.0
+ g(n)= 1622.0 h(n)=10.0
+ g(n)= 1631.0 h(n)=9.0
+ g(n)= 1640.0 h(n)=8.0
+ g(n)= 1649.0 h(n)=7.0
+ g(n)= 1650.0 h(n)=6.0
+ g(n)= 1651.0 h(n)=5.0
+ g(n)= 1660.0 h(n)=4.0
+ g(n)= 1669.0 h(n)=3.0
+ g(n)= 1678.0 h(n)=2.0
+ g(n)= 1679.0 h(n)=1.0
+ g(n)= 1680.0 h(n)=0.0
+Problem Solved
+
+Found Plan:
+0.0: (comms-workshop grace)
+1.0: (technological-assistance grace)
+2.0: (gamify grace)
+3.0: (technological-assistance esme)
+4.0: (technological-assistance jackson)
+5.0: (gamify oscar)
+6.0: (comms-workshop jasper)
+7.0: (technological-assistance jasper)
+8.0: (gamify jasper)
+9.0: (comms-workshop layla)
+10.0: (comms-workshop emily)
+11.0: (comms-workshop ada)
+12.0: (comms-workshop david)
+13.0: (technological-assistance david)
+14.0: (gamify david)
+15.0: (do-week-one grace numeracy higher)
+16.0: (do-week-two grace numeracy higher)
+17.0: (do-week-three grace numeracy higher)
+18.0: (do-week-four grace numeracy higher)
+19.0: (do-week-five grace numeracy higher)
+20.0: (do-week-six grace numeracy higher)
+21.0: (do-week-seven grace numeracy higher)
+22.0: (do-week-eight grace numeracy higher)
+23.0: (do-week-one grace design-manufacture adv-higher)
+24.0: (do-week-two grace design-manufacture adv-higher)
+25.0: (do-week-three grace design-manufacture adv-higher)
+26.0: (do-week-four grace design-manufacture adv-higher)
+27.0: (do-week-five grace design-manufacture adv-higher)
+28.0: (do-week-six grace design-manufacture adv-higher)
+29.0: (do-week-seven grace design-manufacture adv-higher)
+30.0: (do-week-eight grace design-manufacture adv-higher)
+31.0: (do-week-one grace landscape-gardening year-two)
+32.0: (do-week-two grace landscape-gardening year-two)
+33.0: (do-week-three grace landscape-gardening year-two)
+34.0: (do-week-four grace landscape-gardening year-two)
+35.0: (do-week-five grace landscape-gardening year-two)
+36.0: (do-week-six grace landscape-gardening year-two)
+37.0: (do-week-seven grace landscape-gardening year-two)
+38.0: (do-week-eight grace landscape-gardening year-two)
+39.0: (do-week-one grace spanish year-two)
+40.0: (do-week-two grace spanish year-two)
+41.0: (do-week-three grace spanish year-two)
+42.0: (do-week-four grace spanish year-two)
+43.0: (do-week-five grace spanish year-two)
+44.0: (do-week-six grace spanish year-two)
+45.0: (do-week-seven grace spanish year-two)
+46.0: (do-week-eight grace spanish year-two)
+47.0: (do-week-one grace esol year-one)
+48.0: (do-week-two grace esol year-one)
+49.0: (do-week-three grace esol year-one)
+50.0: (do-week-four grace esol year-one)
+51.0: (do-week-five grace esol year-one)
+52.0: (do-week-six grace esol year-one)
+53.0: (do-week-seven grace esol year-one)
+54.0: (do-week-eight grace esol year-one)
+55.0: (do-week-one esme esol national-five)
+56.0: (do-week-two esme esol national-five)
+57.0: (do-week-three esme esol national-five)
+58.0: (do-week-four esme esol national-five)
+59.0: (do-week-five esme esol national-five)
+60.0: (do-week-six esme esol national-five)
+61.0: (do-week-seven esme esol national-five)
+62.0: (do-week-eight esme esol national-five)
+63.0: (do-week-one esme politics adv-higher)
+64.0: (do-week-two esme politics adv-higher)
+65.0: (do-week-three esme politics adv-higher)
+66.0: (do-week-four esme politics adv-higher)
+67.0: (do-week-five esme politics adv-higher)
+68.0: (do-week-six esme politics adv-higher)
+69.0: (do-week-seven esme politics adv-higher)
+70.0: (do-week-eight esme politics adv-higher)
+71.0: (do-week-one esme home-economics year-three)
+72.0: (do-week-two esme home-economics year-three)
+73.0: (do-week-three esme home-economics year-three)
+74.0: (do-week-four esme home-economics year-three)
+75.0: (do-week-five esme home-economics year-three)
+76.0: (do-week-six esme home-economics year-three)
+77.0: (do-week-seven esme home-economics year-three)
+78.0: (do-week-eight esme home-economics year-three)
+79.0: (do-week-one esme maths higher)
+80.0: (do-week-two esme maths higher)
+81.0: (do-week-three esme maths higher)
+82.0: (do-week-four esme maths higher)
+83.0: (do-week-five esme maths higher)
+84.0: (do-week-six esme maths higher)
+85.0: (do-week-seven esme maths higher)
+86.0: (do-week-eight esme maths higher)
+87.0: (do-week-one esme drama national-four)
+88.0: (do-week-two esme drama national-four)
+89.0: (do-week-three esme drama national-four)
+90.0: (do-week-four esme drama national-four)
+91.0: (do-week-five esme drama national-four)
+92.0: (do-week-six esme drama national-four)
+93.0: (do-week-seven esme drama national-four)
+94.0: (do-week-eight esme drama national-four)
+95.0: (do-week-one jackson italian year-two)
+96.0: (do-week-two jackson italian year-two)
+97.0: (do-week-three jackson italian year-two)
+98.0: (do-week-four jackson italian year-two)
+99.0: (do-week-five jackson italian year-two)
+100.0: (do-week-six jackson italian year-two)
+101.0: (do-week-seven jackson italian year-two)
+102.0: (do-week-eight jackson italian year-two)
+103.0: (do-week-one jackson rmps year-three)
+104.0: (do-week-two jackson rmps year-three)
+105.0: (do-week-three jackson rmps year-three)
+106.0: (do-week-four jackson rmps year-three)
+107.0: (do-week-five jackson rmps year-three)
+108.0: (do-week-six jackson rmps year-three)
+109.0: (do-week-seven jackson rmps year-three)
+110.0: (do-week-eight jackson rmps year-three)
+111.0: (do-week-one jackson philosophy national-five)
+112.0: (do-week-two jackson philosophy national-five)
+113.0: (do-week-three jackson philosophy national-five)
+114.0: (do-week-four jackson philosophy national-five)
+115.0: (do-week-five jackson philosophy national-five)
+116.0: (do-week-six jackson philosophy national-five)
+117.0: (do-week-seven jackson philosophy national-five)
+118.0: (do-week-eight jackson philosophy national-five)
+119.0: (do-week-one jackson chemistry higher)
+120.0: (do-week-two jackson chemistry higher)
+121.0: (do-week-three jackson chemistry higher)
+122.0: (do-week-four jackson chemistry higher)
+123.0: (do-week-five jackson chemistry higher)
+124.0: (do-week-six jackson chemistry higher)
+125.0: (do-week-seven jackson chemistry higher)
+126.0: (do-week-eight jackson chemistry higher)
+127.0: (do-week-one jackson graph-comm year-three)
+128.0: (do-week-two jackson graph-comm year-three)
+129.0: (do-week-three jackson graph-comm year-three)
+130.0: (do-week-four jackson graph-comm year-three)
+131.0: (do-week-five jackson graph-comm year-three)
+132.0: (do-week-six jackson graph-comm year-three)
+133.0: (do-week-seven jackson graph-comm year-three)
+134.0: (do-week-eight jackson graph-comm year-three)
+135.0: (do-week-one oscar cantonese year-two)
+136.0: (do-week-two oscar cantonese year-two)
+137.0: (do-week-three oscar cantonese year-two)
+138.0: (do-week-four oscar cantonese year-two)
+139.0: (do-week-five oscar cantonese year-two)
+140.0: (do-week-six oscar cantonese year-two)
+141.0: (do-week-seven oscar cantonese year-two)
+142.0: (do-week-eight oscar cantonese year-two)
+143.0: (do-week-one oscar geography higher)
+144.0: (do-week-two oscar geography higher)
+145.0: (do-week-three oscar geography higher)
+146.0: (do-week-four oscar geography higher)
+147.0: (do-week-five oscar geography higher)
+148.0: (do-week-six oscar geography higher)
+149.0: (do-week-seven oscar geography higher)
+150.0: (do-week-eight oscar geography higher)
+151.0: (do-week-one oscar geography year-two)
+152.0: (do-week-two oscar geography year-two)
+153.0: (do-week-three oscar geography year-two)
+154.0: (do-week-four oscar geography year-two)
+155.0: (do-week-five oscar geography year-two)
+156.0: (do-week-six oscar geography year-two)
+157.0: (do-week-seven oscar geography year-two)
+158.0: (do-week-eight oscar geography year-two)
+159.0: (do-week-one oscar physics national-four)
+160.0: (do-week-two oscar physics national-four)
+161.0: (do-week-three oscar physics national-four)
+162.0: (do-week-four oscar physics national-four)
+163.0: (do-week-five oscar physics national-four)
+164.0: (do-week-six oscar physics national-four)
+165.0: (do-week-seven oscar physics national-four)
+166.0: (do-week-eight oscar physics national-four)
+167.0: (do-week-one oscar music-tech national-five)
+168.0: (do-week-two oscar music-tech national-five)
+169.0: (do-week-three oscar music-tech national-five)
+170.0: (do-week-four oscar music-tech national-five)
+171.0: (do-week-five oscar music-tech national-five)
+172.0: (do-week-six oscar music-tech national-five)
+173.0: (do-week-seven oscar music-tech national-five)
+174.0: (do-week-eight oscar music-tech national-five)
+175.0: (do-week-one jasper textiles year-one)
+176.0: (do-week-two jasper textiles year-one)
+177.0: (do-week-three jasper textiles year-one)
+178.0: (do-week-four jasper textiles year-one)
+179.0: (do-week-five jasper textiles year-one)
+180.0: (do-week-six jasper textiles year-one)
+181.0: (do-week-seven jasper textiles year-one)
+182.0: (do-week-eight jasper textiles year-one)
+183.0: (do-week-one jasper dance higher)
+184.0: (do-week-two jasper dance higher)
+185.0: (do-week-three jasper dance higher)
+186.0: (do-week-four jasper dance higher)
+187.0: (do-week-five jasper dance higher)
+188.0: (do-week-six jasper dance higher)
+189.0: (do-week-seven jasper dance higher)
+190.0: (do-week-eight jasper dance higher)
+191.0: (do-week-one jasper latin higher)
+192.0: (do-week-two jasper latin higher)
+193.0: (do-week-three jasper latin higher)
+194.0: (do-week-four jasper latin higher)
+195.0: (do-week-five jasper latin higher)
+196.0: (do-week-six jasper latin higher)
+197.0: (do-week-seven jasper latin higher)
+198.0: (do-week-eight jasper latin higher)
+199.0: (do-week-one jasper rmps year-two)
+200.0: (do-week-two jasper rmps year-two)
+201.0: (do-week-three jasper rmps year-two)
+202.0: (do-week-four jasper rmps year-two)
+203.0: (do-week-five jasper rmps year-two)
+204.0: (do-week-six jasper rmps year-two)
+205.0: (do-week-seven jasper rmps year-two)
+206.0: (do-week-eight jasper rmps year-two)
+207.0: (do-week-one jasper practical-woodwork year-one)
+208.0: (do-week-two jasper practical-woodwork year-one)
+209.0: (do-week-three jasper practical-woodwork year-one)
+210.0: (do-week-four jasper practical-woodwork year-one)
+211.0: (do-week-five jasper practical-woodwork year-one)
+212.0: (do-week-six jasper practical-woodwork year-one)
+213.0: (do-week-seven jasper practical-woodwork year-one)
+214.0: (do-week-eight jasper practical-woodwork year-one)
+215.0: (do-week-one layla home-economics national-four)
+216.0: (do-week-two layla home-economics national-four)
+217.0: (do-week-three layla home-economics national-four)
+218.0: (do-week-four layla home-economics national-four)
+219.0: (do-week-five layla home-economics national-four)
+220.0: (do-week-six layla home-economics national-four)
+221.0: (do-week-seven layla home-economics national-four)
+222.0: (do-week-eight layla home-economics national-four)
+223.0: (do-week-one layla landscape-gardening adv-higher)
+224.0: (do-week-two layla landscape-gardening adv-higher)
+225.0: (do-week-three layla landscape-gardening adv-higher)
+226.0: (do-week-four layla landscape-gardening adv-higher)
+227.0: (do-week-five layla landscape-gardening adv-higher)
+228.0: (do-week-six layla landscape-gardening adv-higher)
+229.0: (do-week-seven layla landscape-gardening adv-higher)
+230.0: (do-week-eight layla landscape-gardening adv-higher)
+231.0: (do-week-one layla physics year-two)
+232.0: (do-week-two layla physics year-two)
+233.0: (do-week-three layla physics year-two)
+234.0: (do-week-four layla physics year-two)
+235.0: (do-week-five layla physics year-two)
+236.0: (do-week-six layla physics year-two)
+237.0: (do-week-seven layla physics year-two)
+238.0: (do-week-eight layla physics year-two)
+239.0: (do-week-one layla lifeskills adv-higher)
+240.0: (do-week-two layla lifeskills adv-higher)
+241.0: (do-week-three layla lifeskills adv-higher)
+242.0: (do-week-four layla lifeskills adv-higher)
+243.0: (do-week-five layla lifeskills adv-higher)
+244.0: (do-week-six layla lifeskills adv-higher)
+245.0: (do-week-seven layla lifeskills adv-higher)
+246.0: (do-week-eight layla lifeskills adv-higher)
+247.0: (do-week-one layla chemistry adv-higher)
+248.0: (do-week-two layla chemistry adv-higher)
+249.0: (do-week-three layla chemistry adv-higher)
+250.0: (do-week-four layla chemistry adv-higher)
+251.0: (do-week-five layla chemistry adv-higher)
+252.0: (do-week-six layla chemistry adv-higher)
+253.0: (do-week-seven layla chemistry adv-higher)
+254.0: (do-week-eight layla chemistry adv-higher)
+255.0: (do-week-one emily rmps year-three)
+256.0: (do-week-two emily rmps year-three)
+257.0: (do-week-three emily rmps year-three)
+258.0: (do-week-four emily rmps year-three)
+259.0: (do-week-five emily rmps year-three)
+260.0: (do-week-six emily rmps year-three)
+261.0: (do-week-seven emily rmps year-three)
+262.0: (do-week-eight emily rmps year-three)
+263.0: (do-week-one emily comp-sci higher)
+264.0: (do-week-two emily comp-sci higher)
+265.0: (do-week-three emily comp-sci higher)
+266.0: (do-week-four emily comp-sci higher)
+267.0: (do-week-five emily comp-sci higher)
+268.0: (do-week-six emily comp-sci higher)
+269.0: (do-week-seven emily comp-sci higher)
+270.0: (do-week-eight emily comp-sci higher)
+271.0: (do-week-one emily german higher)
+272.0: (do-week-two emily german higher)
+273.0: (do-week-three emily german higher)
+274.0: (do-week-four emily german higher)
+275.0: (do-week-five emily german higher)
+276.0: (do-week-six emily german higher)
+277.0: (do-week-seven emily german higher)
+278.0: (do-week-eight emily german higher)
+279.0: (do-week-one emily landscape-gardening national-four)
+280.0: (do-week-two emily landscape-gardening national-four)
+281.0: (do-week-three emily landscape-gardening national-four)
+282.0: (do-week-four emily landscape-gardening national-four)
+283.0: (do-week-five emily landscape-gardening national-four)
+284.0: (do-week-six emily landscape-gardening national-four)
+285.0: (do-week-seven emily landscape-gardening national-four)
+286.0: (do-week-eight emily landscape-gardening national-four)
+287.0: (do-week-one emily rmps higher)
+288.0: (do-week-two emily rmps higher)
+289.0: (do-week-three emily rmps higher)
+290.0: (do-week-four emily rmps higher)
+291.0: (do-week-five emily rmps higher)
+292.0: (do-week-six emily rmps higher)
+293.0: (do-week-seven emily rmps higher)
+294.0: (do-week-eight emily rmps higher)
+295.0: (do-week-one ada physics national-five)
+296.0: (do-week-two ada physics national-five)
+297.0: (do-week-three ada physics national-five)
+298.0: (do-week-four ada physics national-five)
+299.0: (do-week-five ada physics national-five)
+300.0: (do-week-six ada physics national-five)
+301.0: (do-week-seven ada physics national-five)
+302.0: (do-week-eight ada physics national-five)
+303.0: (do-week-one ada comp-sci higher)
+304.0: (do-week-two ada comp-sci higher)
+305.0: (do-week-three ada comp-sci higher)
+306.0: (do-week-four ada comp-sci higher)
+307.0: (do-week-five ada comp-sci higher)
+308.0: (do-week-six ada comp-sci higher)
+309.0: (do-week-seven ada comp-sci higher)
+310.0: (do-week-eight ada comp-sci higher)
+311.0: (do-week-one ada drama year-two)
+312.0: (do-week-two ada drama year-two)
+313.0: (do-week-three ada drama year-two)
+314.0: (do-week-four ada drama year-two)
+315.0: (do-week-five ada drama year-two)
+316.0: (do-week-six ada drama year-two)
+317.0: (do-week-seven ada drama year-two)
+318.0: (do-week-eight ada drama year-two)
+319.0: (do-week-one ada graph-comm year-three)
+320.0: (do-week-two ada graph-comm year-three)
+321.0: (do-week-three ada graph-comm year-three)
+322.0: (do-week-four ada graph-comm year-three)
+323.0: (do-week-five ada graph-comm year-three)
+324.0: (do-week-six ada graph-comm year-three)
+325.0: (do-week-seven ada graph-comm year-three)
+326.0: (do-week-eight ada graph-comm year-three)
+327.0: (do-week-one ada physics higher)
+328.0: (do-week-two ada physics higher)
+329.0: (do-week-three ada physics higher)
+330.0: (do-week-four ada physics higher)
+331.0: (do-week-five ada physics higher)
+332.0: (do-week-six ada physics higher)
+333.0: (do-week-seven ada physics higher)
+334.0: (do-week-eight ada physics higher)
+335.0: (do-week-one david cantonese year-one)
+336.0: (do-week-two david cantonese year-one)
+337.0: (do-week-three david cantonese year-one)
+338.0: (do-week-four david cantonese year-one)
+339.0: (do-week-five david cantonese year-one)
+340.0: (do-week-six david cantonese year-one)
+341.0: (do-week-seven david cantonese year-one)
+342.0: (do-week-eight david cantonese year-one)
+343.0: (do-week-one david esol higher)
+344.0: (do-week-two david esol higher)
+345.0: (do-week-three david esol higher)
+346.0: (do-week-four david esol higher)
+347.0: (do-week-five david esol higher)
+348.0: (do-week-six david esol higher)
+349.0: (do-week-seven david esol higher)
+350.0: (do-week-eight david esol higher)
+351.0: (do-week-one david design-manufacture year-three)
+352.0: (do-week-two david design-manufacture year-three)
+353.0: (do-week-three david design-manufacture year-three)
+354.0: (do-week-four david design-manufacture year-three)
+355.0: (do-week-five david design-manufacture year-three)
+356.0: (do-week-six david design-manufacture year-three)
+357.0: (do-week-seven david design-manufacture year-three)
+358.0: (do-week-eight david design-manufacture year-three)
+359.0: (do-week-one david numeracy national-five)
+360.0: (do-week-two david numeracy national-five)
+361.0: (do-week-three david numeracy national-five)
+362.0: (do-week-four david numeracy national-five)
+363.0: (do-week-five david numeracy national-five)
+364.0: (do-week-six david numeracy national-five)
+365.0: (do-week-seven david numeracy national-five)
+366.0: (do-week-eight david numeracy national-five)
+367.0: (do-week-one david italian national-five)
+368.0: (do-week-two david italian national-five)
+369.0: (do-week-three david italian national-five)
+370.0: (do-week-four david italian national-five)
+371.0: (do-week-five david italian national-five)
+372.0: (do-week-six david italian national-five)
+373.0: (do-week-seven david italian national-five)
+374.0: (do-week-eight david italian national-five)
+375.0: (take-unit-one grace numeracy higher)
+376.0: (do-week-one grace numeracy higher)
+377.0: (do-week-two grace numeracy higher)
+378.0: (do-week-three grace numeracy higher)
+379.0: (do-week-four grace numeracy higher)
+380.0: (do-week-five grace numeracy higher)
+381.0: (do-week-six grace numeracy higher)
+382.0: (do-week-seven grace numeracy higher)
+383.0: (do-week-eight grace numeracy higher)
+384.0: (take-unit-two grace numeracy higher)
+385.0: (do-week-one grace numeracy higher)
+386.0: (do-week-two grace numeracy higher)
+387.0: (do-week-three grace numeracy higher)
+388.0: (do-week-four grace numeracy higher)
+389.0: (do-week-five grace numeracy higher)
+390.0: (do-week-six grace numeracy higher)
+391.0: (do-week-seven grace numeracy higher)
+392.0: (do-week-eight grace numeracy higher)
+393.0: (take-unit-three grace numeracy higher)
+394.0: (do-week-one grace numeracy higher)
+395.0: (do-week-two grace numeracy higher)
+396.0: (do-week-three grace numeracy higher)
+397.0: (do-week-four grace numeracy higher)
+398.0: (do-week-five grace numeracy higher)
+399.0: (do-week-six grace numeracy higher)
+400.0: (do-week-seven grace numeracy higher)
+401.0: (do-week-eight grace numeracy higher)
+402.0: (take-unit-four grace numeracy higher)
+403.0: (finish-course grace numeracy higher)
+404.0: (take-unit-one grace design-manufacture adv-higher)
+405.0: (do-week-one grace design-manufacture adv-higher)
+406.0: (do-week-two grace design-manufacture adv-higher)
+407.0: (do-week-three grace design-manufacture adv-higher)
+408.0: (do-week-four grace design-manufacture adv-higher)
+409.0: (do-week-five grace design-manufacture adv-higher)
+410.0: (do-week-six grace design-manufacture adv-higher)
+411.0: (do-week-seven grace design-manufacture adv-higher)
+412.0: (do-week-eight grace design-manufacture adv-higher)
+413.0: (take-unit-two grace design-manufacture adv-higher)
+414.0: (do-week-one grace design-manufacture adv-higher)
+415.0: (do-week-two grace design-manufacture adv-higher)
+416.0: (do-week-three grace design-manufacture adv-higher)
+417.0: (do-week-four grace design-manufacture adv-higher)
+418.0: (do-week-five grace design-manufacture adv-higher)
+419.0: (do-week-six grace design-manufacture adv-higher)
+420.0: (do-week-seven grace design-manufacture adv-higher)
+421.0: (do-week-eight grace design-manufacture adv-higher)
+422.0: (take-unit-three grace design-manufacture adv-higher)
+423.0: (do-week-one grace design-manufacture adv-higher)
+424.0: (do-week-two grace design-manufacture adv-higher)
+425.0: (do-week-three grace design-manufacture adv-higher)
+426.0: (do-week-four grace design-manufacture adv-higher)
+427.0: (do-week-five grace design-manufacture adv-higher)
+428.0: (do-week-six grace design-manufacture adv-higher)
+429.0: (do-week-seven grace design-manufacture adv-higher)
+430.0: (do-week-eight grace design-manufacture adv-higher)
+431.0: (take-unit-four grace design-manufacture adv-higher)
+432.0: (finish-course grace design-manufacture adv-higher)
+433.0: (take-unit-one grace landscape-gardening year-two)
+434.0: (do-week-one grace landscape-gardening year-two)
+435.0: (do-week-two grace landscape-gardening year-two)
+436.0: (do-week-three grace landscape-gardening year-two)
+437.0: (do-week-four grace landscape-gardening year-two)
+438.0: (do-week-five grace landscape-gardening year-two)
+439.0: (do-week-six grace landscape-gardening year-two)
+440.0: (do-week-seven grace landscape-gardening year-two)
+441.0: (do-week-eight grace landscape-gardening year-two)
+442.0: (take-unit-two grace landscape-gardening year-two)
+443.0: (do-week-one grace landscape-gardening year-two)
+444.0: (do-week-two grace landscape-gardening year-two)
+445.0: (do-week-three grace landscape-gardening year-two)
+446.0: (do-week-four grace landscape-gardening year-two)
+447.0: (do-week-five grace landscape-gardening year-two)
+448.0: (do-week-six grace landscape-gardening year-two)
+449.0: (do-week-seven grace landscape-gardening year-two)
+450.0: (do-week-eight grace landscape-gardening year-two)
+451.0: (take-unit-three grace landscape-gardening year-two)
+452.0: (do-week-one grace landscape-gardening year-two)
+453.0: (do-week-two grace landscape-gardening year-two)
+454.0: (do-week-three grace landscape-gardening year-two)
+455.0: (do-week-four grace landscape-gardening year-two)
+456.0: (do-week-five grace landscape-gardening year-two)
+457.0: (do-week-six grace landscape-gardening year-two)
+458.0: (do-week-seven grace landscape-gardening year-two)
+459.0: (do-week-eight grace landscape-gardening year-two)
+460.0: (take-unit-four grace landscape-gardening year-two)
+461.0: (finish-course grace landscape-gardening year-two)
+462.0: (take-unit-one grace spanish year-two)
+463.0: (do-week-one grace spanish year-two)
+464.0: (do-week-two grace spanish year-two)
+465.0: (do-week-three grace spanish year-two)
+466.0: (do-week-four grace spanish year-two)
+467.0: (do-week-five grace spanish year-two)
+468.0: (do-week-six grace spanish year-two)
+469.0: (do-week-seven grace spanish year-two)
+470.0: (do-week-eight grace spanish year-two)
+471.0: (take-unit-two grace spanish year-two)
+472.0: (do-week-one grace spanish year-two)
+473.0: (do-week-two grace spanish year-two)
+474.0: (do-week-three grace spanish year-two)
+475.0: (do-week-four grace spanish year-two)
+476.0: (do-week-five grace spanish year-two)
+477.0: (do-week-six grace spanish year-two)
+478.0: (do-week-seven grace spanish year-two)
+479.0: (do-week-eight grace spanish year-two)
+480.0: (take-unit-three grace spanish year-two)
+481.0: (do-week-one grace spanish year-two)
+482.0: (do-week-two grace spanish year-two)
+483.0: (do-week-three grace spanish year-two)
+484.0: (do-week-four grace spanish year-two)
+485.0: (do-week-five grace spanish year-two)
+486.0: (do-week-six grace spanish year-two)
+487.0: (do-week-seven grace spanish year-two)
+488.0: (do-week-eight grace spanish year-two)
+489.0: (take-unit-four grace spanish year-two)
+490.0: (finish-course grace spanish year-two)
+491.0: (take-unit-one grace esol year-one)
+492.0: (do-week-one grace esol year-one)
+493.0: (do-week-two grace esol year-one)
+494.0: (do-week-three grace esol year-one)
+495.0: (do-week-four grace esol year-one)
+496.0: (do-week-five grace esol year-one)
+497.0: (do-week-six grace esol year-one)
+498.0: (do-week-seven grace esol year-one)
+499.0: (do-week-eight grace esol year-one)
+500.0: (take-unit-two grace esol year-one)
+501.0: (do-week-one grace esol year-one)
+502.0: (do-week-two grace esol year-one)
+503.0: (do-week-three grace esol year-one)
+504.0: (do-week-four grace esol year-one)
+505.0: (do-week-five grace esol year-one)
+506.0: (do-week-six grace esol year-one)
+507.0: (do-week-seven grace esol year-one)
+508.0: (do-week-eight grace esol year-one)
+509.0: (take-unit-three grace esol year-one)
+510.0: (do-week-one grace esol year-one)
+511.0: (do-week-two grace esol year-one)
+512.0: (do-week-three grace esol year-one)
+513.0: (do-week-four grace esol year-one)
+514.0: (do-week-five grace esol year-one)
+515.0: (do-week-six grace esol year-one)
+516.0: (do-week-seven grace esol year-one)
+517.0: (do-week-eight grace esol year-one)
+518.0: (take-unit-four grace esol year-one)
+519.0: (finish-course grace esol year-one)
+520.0: (take-unit-one esme esol national-five)
+521.0: (do-week-one esme esol national-five)
+522.0: (do-week-two esme esol national-five)
+523.0: (do-week-three esme esol national-five)
+524.0: (do-week-four esme esol national-five)
+525.0: (do-week-five esme esol national-five)
+526.0: (do-week-six esme esol national-five)
+527.0: (do-week-seven esme esol national-five)
+528.0: (do-week-eight esme esol national-five)
+529.0: (take-unit-two esme esol national-five)
+530.0: (do-week-one esme esol national-five)
+531.0: (do-week-two esme esol national-five)
+532.0: (do-week-three esme esol national-five)
+533.0: (do-week-four esme esol national-five)
+534.0: (do-week-five esme esol national-five)
+535.0: (do-week-six esme esol national-five)
+536.0: (do-week-seven esme esol national-five)
+537.0: (do-week-eight esme esol national-five)
+538.0: (take-unit-three esme esol national-five)
+539.0: (do-week-one esme esol national-five)
+540.0: (do-week-two esme esol national-five)
+541.0: (do-week-three esme esol national-five)
+542.0: (do-week-four esme esol national-five)
+543.0: (do-week-five esme esol national-five)
+544.0: (do-week-six esme esol national-five)
+545.0: (do-week-seven esme esol national-five)
+546.0: (do-week-eight esme esol national-five)
+547.0: (take-unit-four esme esol national-five)
+548.0: (finish-course esme esol national-five)
+549.0: (take-unit-one esme politics adv-higher)
+550.0: (do-week-one esme politics adv-higher)
+551.0: (do-week-two esme politics adv-higher)
+552.0: (do-week-three esme politics adv-higher)
+553.0: (do-week-four esme politics adv-higher)
+554.0: (do-week-five esme politics adv-higher)
+555.0: (do-week-six esme politics adv-higher)
+556.0: (do-week-seven esme politics adv-higher)
+557.0: (do-week-eight esme politics adv-higher)
+558.0: (take-unit-two esme politics adv-higher)
+559.0: (do-week-one esme politics adv-higher)
+560.0: (do-week-two esme politics adv-higher)
+561.0: (do-week-three esme politics adv-higher)
+562.0: (do-week-four esme politics adv-higher)
+563.0: (do-week-five esme politics adv-higher)
+564.0: (do-week-six esme politics adv-higher)
+565.0: (do-week-seven esme politics adv-higher)
+566.0: (do-week-eight esme politics adv-higher)
+567.0: (take-unit-three esme politics adv-higher)
+568.0: (do-week-one esme politics adv-higher)
+569.0: (do-week-two esme politics adv-higher)
+570.0: (do-week-three esme politics adv-higher)
+571.0: (do-week-four esme politics adv-higher)
+572.0: (do-week-five esme politics adv-higher)
+573.0: (do-week-six esme politics adv-higher)
+574.0: (do-week-seven esme politics adv-higher)
+575.0: (do-week-eight esme politics adv-higher)
+576.0: (take-unit-four esme politics adv-higher)
+577.0: (finish-course esme politics adv-higher)
+578.0: (take-unit-one esme home-economics year-three)
+579.0: (do-week-one esme home-economics year-three)
+580.0: (do-week-two esme home-economics year-three)
+581.0: (do-week-three esme home-economics year-three)
+582.0: (do-week-four esme home-economics year-three)
+583.0: (do-week-five esme home-economics year-three)
+584.0: (do-week-six esme home-economics year-three)
+585.0: (do-week-seven esme home-economics year-three)
+586.0: (do-week-eight esme home-economics year-three)
+587.0: (take-unit-two esme home-economics year-three)
+588.0: (do-week-one esme home-economics year-three)
+589.0: (do-week-two esme home-economics year-three)
+590.0: (do-week-three esme home-economics year-three)
+591.0: (do-week-four esme home-economics year-three)
+592.0: (do-week-five esme home-economics year-three)
+593.0: (do-week-six esme home-economics year-three)
+594.0: (do-week-seven esme home-economics year-three)
+595.0: (do-week-eight esme home-economics year-three)
+596.0: (take-unit-three esme home-economics year-three)
+597.0: (do-week-one esme home-economics year-three)
+598.0: (do-week-two esme home-economics year-three)
+599.0: (do-week-three esme home-economics year-three)
+600.0: (do-week-four esme home-economics year-three)
+601.0: (do-week-five esme home-economics year-three)
+602.0: (do-week-six esme home-economics year-three)
+603.0: (do-week-seven esme home-economics year-three)
+604.0: (do-week-eight esme home-economics year-three)
+605.0: (take-unit-four esme home-economics year-three)
+606.0: (finish-course esme home-economics year-three)
+607.0: (take-unit-one esme maths higher)
+608.0: (do-week-one esme maths higher)
+609.0: (do-week-two esme maths higher)
+610.0: (do-week-three esme maths higher)
+611.0: (do-week-four esme maths higher)
+612.0: (do-week-five esme maths higher)
+613.0: (do-week-six esme maths higher)
+614.0: (do-week-seven esme maths higher)
+615.0: (do-week-eight esme maths higher)
+616.0: (take-unit-two esme maths higher)
+617.0: (do-week-one esme maths higher)
+618.0: (do-week-two esme maths higher)
+619.0: (do-week-three esme maths higher)
+620.0: (do-week-four esme maths higher)
+621.0: (do-week-five esme maths higher)
+622.0: (do-week-six esme maths higher)
+623.0: (do-week-seven esme maths higher)
+624.0: (do-week-eight esme maths higher)
+625.0: (take-unit-three esme maths higher)
+626.0: (do-week-one esme maths higher)
+627.0: (do-week-two esme maths higher)
+628.0: (do-week-three esme maths higher)
+629.0: (do-week-four esme maths higher)
+630.0: (do-week-five esme maths higher)
+631.0: (do-week-six esme maths higher)
+632.0: (do-week-seven esme maths higher)
+633.0: (do-week-eight esme maths higher)
+634.0: (take-unit-four esme maths higher)
+635.0: (finish-course esme maths higher)
+636.0: (take-unit-one esme drama national-four)
+637.0: (do-week-one esme drama national-four)
+638.0: (do-week-two esme drama national-four)
+639.0: (do-week-three esme drama national-four)
+640.0: (do-week-four esme drama national-four)
+641.0: (do-week-five esme drama national-four)
+642.0: (do-week-six esme drama national-four)
+643.0: (do-week-seven esme drama national-four)
+644.0: (do-week-eight esme drama national-four)
+645.0: (take-unit-two esme drama national-four)
+646.0: (do-week-one esme drama national-four)
+647.0: (do-week-two esme drama national-four)
+648.0: (do-week-three esme drama national-four)
+649.0: (do-week-four esme drama national-four)
+650.0: (do-week-five esme drama national-four)
+651.0: (do-week-six esme drama national-four)
+652.0: (do-week-seven esme drama national-four)
+653.0: (do-week-eight esme drama national-four)
+654.0: (take-unit-three esme drama national-four)
+655.0: (do-week-one esme drama national-four)
+656.0: (do-week-two esme drama national-four)
+657.0: (do-week-three esme drama national-four)
+658.0: (do-week-four esme drama national-four)
+659.0: (do-week-five esme drama national-four)
+660.0: (do-week-six esme drama national-four)
+661.0: (do-week-seven esme drama national-four)
+662.0: (do-week-eight esme drama national-four)
+663.0: (take-unit-four esme drama national-four)
+664.0: (finish-course esme drama national-four)
+665.0: (take-unit-one jackson italian year-two)
+666.0: (do-week-one jackson italian year-two)
+667.0: (do-week-two jackson italian year-two)
+668.0: (do-week-three jackson italian year-two)
+669.0: (do-week-four jackson italian year-two)
+670.0: (do-week-five jackson italian year-two)
+671.0: (do-week-six jackson italian year-two)
+672.0: (do-week-seven jackson italian year-two)
+673.0: (do-week-eight jackson italian year-two)
+674.0: (take-unit-two jackson italian year-two)
+675.0: (do-week-one jackson italian year-two)
+676.0: (do-week-two jackson italian year-two)
+677.0: (do-week-three jackson italian year-two)
+678.0: (do-week-four jackson italian year-two)
+679.0: (do-week-five jackson italian year-two)
+680.0: (do-week-six jackson italian year-two)
+681.0: (do-week-seven jackson italian year-two)
+682.0: (do-week-eight jackson italian year-two)
+683.0: (take-unit-three jackson italian year-two)
+684.0: (do-week-one jackson italian year-two)
+685.0: (do-week-two jackson italian year-two)
+686.0: (do-week-three jackson italian year-two)
+687.0: (do-week-four jackson italian year-two)
+688.0: (do-week-five jackson italian year-two)
+689.0: (do-week-six jackson italian year-two)
+690.0: (do-week-seven jackson italian year-two)
+691.0: (do-week-eight jackson italian year-two)
+692.0: (take-unit-four jackson italian year-two)
+693.0: (finish-course jackson italian year-two)
+694.0: (take-unit-one jackson rmps year-three)
+695.0: (do-week-one jackson rmps year-three)
+696.0: (do-week-two jackson rmps year-three)
+697.0: (do-week-three jackson rmps year-three)
+698.0: (do-week-four jackson rmps year-three)
+699.0: (do-week-five jackson rmps year-three)
+700.0: (do-week-six jackson rmps year-three)
+701.0: (do-week-seven jackson rmps year-three)
+702.0: (do-week-eight jackson rmps year-three)
+703.0: (take-unit-two jackson rmps year-three)
+704.0: (do-week-one jackson rmps year-three)
+705.0: (do-week-two jackson rmps year-three)
+706.0: (do-week-three jackson rmps year-three)
+707.0: (do-week-four jackson rmps year-three)
+708.0: (do-week-five jackson rmps year-three)
+709.0: (do-week-six jackson rmps year-three)
+710.0: (do-week-seven jackson rmps year-three)
+711.0: (do-week-eight jackson rmps year-three)
+712.0: (take-unit-three jackson rmps year-three)
+713.0: (do-week-one jackson rmps year-three)
+714.0: (do-week-two jackson rmps year-three)
+715.0: (do-week-three jackson rmps year-three)
+716.0: (do-week-four jackson rmps year-three)
+717.0: (do-week-five jackson rmps year-three)
+718.0: (do-week-six jackson rmps year-three)
+719.0: (do-week-seven jackson rmps year-three)
+720.0: (do-week-eight jackson rmps year-three)
+721.0: (take-unit-four jackson rmps year-three)
+722.0: (finish-course jackson rmps year-three)
+723.0: (take-unit-one jackson philosophy national-five)
+724.0: (do-week-one jackson philosophy national-five)
+725.0: (do-week-two jackson philosophy national-five)
+726.0: (do-week-three jackson philosophy national-five)
+727.0: (do-week-four jackson philosophy national-five)
+728.0: (do-week-five jackson philosophy national-five)
+729.0: (do-week-six jackson philosophy national-five)
+730.0: (do-week-seven jackson philosophy national-five)
+731.0: (do-week-eight jackson philosophy national-five)
+732.0: (take-unit-two jackson philosophy national-five)
+733.0: (do-week-one jackson philosophy national-five)
+734.0: (do-week-two jackson philosophy national-five)
+735.0: (do-week-three jackson philosophy national-five)
+736.0: (do-week-four jackson philosophy national-five)
+737.0: (do-week-five jackson philosophy national-five)
+738.0: (do-week-six jackson philosophy national-five)
+739.0: (do-week-seven jackson philosophy national-five)
+740.0: (do-week-eight jackson philosophy national-five)
+741.0: (take-unit-three jackson philosophy national-five)
+742.0: (do-week-one jackson philosophy national-five)
+743.0: (do-week-two jackson philosophy national-five)
+744.0: (do-week-three jackson philosophy national-five)
+745.0: (do-week-four jackson philosophy national-five)
+746.0: (do-week-five jackson philosophy national-five)
+747.0: (do-week-six jackson philosophy national-five)
+748.0: (do-week-seven jackson philosophy national-five)
+749.0: (do-week-eight jackson philosophy national-five)
+750.0: (take-unit-four jackson philosophy national-five)
+751.0: (finish-course jackson philosophy national-five)
+752.0: (take-unit-one jackson chemistry higher)
+753.0: (do-week-one jackson chemistry higher)
+754.0: (do-week-two jackson chemistry higher)
+755.0: (do-week-three jackson chemistry higher)
+756.0: (do-week-four jackson chemistry higher)
+757.0: (do-week-five jackson chemistry higher)
+758.0: (do-week-six jackson chemistry higher)
+759.0: (do-week-seven jackson chemistry higher)
+760.0: (do-week-eight jackson chemistry higher)
+761.0: (take-unit-two jackson chemistry higher)
+762.0: (do-week-one jackson chemistry higher)
+763.0: (do-week-two jackson chemistry higher)
+764.0: (do-week-three jackson chemistry higher)
+765.0: (do-week-four jackson chemistry higher)
+766.0: (do-week-five jackson chemistry higher)
+767.0: (do-week-six jackson chemistry higher)
+768.0: (do-week-seven jackson chemistry higher)
+769.0: (do-week-eight jackson chemistry higher)
+770.0: (take-unit-three jackson chemistry higher)
+771.0: (do-week-one jackson chemistry higher)
+772.0: (do-week-two jackson chemistry higher)
+773.0: (do-week-three jackson chemistry higher)
+774.0: (do-week-four jackson chemistry higher)
+775.0: (do-week-five jackson chemistry higher)
+776.0: (do-week-six jackson chemistry higher)
+777.0: (do-week-seven jackson chemistry higher)
+778.0: (do-week-eight jackson chemistry higher)
+779.0: (take-unit-four jackson chemistry higher)
+780.0: (finish-course jackson chemistry higher)
+781.0: (take-unit-one jackson graph-comm year-three)
+782.0: (do-week-one jackson graph-comm year-three)
+783.0: (do-week-two jackson graph-comm year-three)
+784.0: (do-week-three jackson graph-comm year-three)
+785.0: (do-week-four jackson graph-comm year-three)
+786.0: (do-week-five jackson graph-comm year-three)
+787.0: (do-week-six jackson graph-comm year-three)
+788.0: (do-week-seven jackson graph-comm year-three)
+789.0: (do-week-eight jackson graph-comm year-three)
+790.0: (take-unit-two jackson graph-comm year-three)
+791.0: (do-week-one jackson graph-comm year-three)
+792.0: (do-week-two jackson graph-comm year-three)
+793.0: (do-week-three jackson graph-comm year-three)
+794.0: (do-week-four jackson graph-comm year-three)
+795.0: (do-week-five jackson graph-comm year-three)
+796.0: (do-week-six jackson graph-comm year-three)
+797.0: (do-week-seven jackson graph-comm year-three)
+798.0: (do-week-eight jackson graph-comm year-three)
+799.0: (take-unit-three jackson graph-comm year-three)
+800.0: (do-week-one jackson graph-comm year-three)
+801.0: (do-week-two jackson graph-comm year-three)
+802.0: (do-week-three jackson graph-comm year-three)
+803.0: (do-week-four jackson graph-comm year-three)
+804.0: (do-week-five jackson graph-comm year-three)
+805.0: (do-week-six jackson graph-comm year-three)
+806.0: (do-week-seven jackson graph-comm year-three)
+807.0: (do-week-eight jackson graph-comm year-three)
+808.0: (take-unit-four jackson graph-comm year-three)
+809.0: (finish-course jackson graph-comm year-three)
+810.0: (take-unit-one oscar cantonese year-two)
+811.0: (do-week-one oscar cantonese year-two)
+812.0: (do-week-two oscar cantonese year-two)
+813.0: (do-week-three oscar cantonese year-two)
+814.0: (do-week-four oscar cantonese year-two)
+815.0: (do-week-five oscar cantonese year-two)
+816.0: (do-week-six oscar cantonese year-two)
+817.0: (do-week-seven oscar cantonese year-two)
+818.0: (do-week-eight oscar cantonese year-two)
+819.0: (take-unit-two oscar cantonese year-two)
+820.0: (do-week-one oscar cantonese year-two)
+821.0: (do-week-two oscar cantonese year-two)
+822.0: (do-week-three oscar cantonese year-two)
+823.0: (do-week-four oscar cantonese year-two)
+824.0: (do-week-five oscar cantonese year-two)
+825.0: (do-week-six oscar cantonese year-two)
+826.0: (do-week-seven oscar cantonese year-two)
+827.0: (do-week-eight oscar cantonese year-two)
+828.0: (take-unit-three oscar cantonese year-two)
+829.0: (do-week-one oscar cantonese year-two)
+830.0: (do-week-two oscar cantonese year-two)
+831.0: (do-week-three oscar cantonese year-two)
+832.0: (do-week-four oscar cantonese year-two)
+833.0: (do-week-five oscar cantonese year-two)
+834.0: (do-week-six oscar cantonese year-two)
+835.0: (do-week-seven oscar cantonese year-two)
+836.0: (do-week-eight oscar cantonese year-two)
+837.0: (take-unit-four oscar cantonese year-two)
+838.0: (finish-course oscar cantonese year-two)
+839.0: (take-unit-one oscar geography higher)
+840.0: (do-week-one oscar geography higher)
+841.0: (do-week-two oscar geography higher)
+842.0: (do-week-three oscar geography higher)
+843.0: (do-week-four oscar geography higher)
+844.0: (do-week-five oscar geography higher)
+845.0: (do-week-six oscar geography higher)
+846.0: (do-week-seven oscar geography higher)
+847.0: (do-week-eight oscar geography higher)
+848.0: (take-unit-two oscar geography higher)
+849.0: (do-week-one oscar geography higher)
+850.0: (do-week-two oscar geography higher)
+851.0: (do-week-three oscar geography higher)
+852.0: (do-week-four oscar geography higher)
+853.0: (do-week-five oscar geography higher)
+854.0: (do-week-six oscar geography higher)
+855.0: (do-week-seven oscar geography higher)
+856.0: (do-week-eight oscar geography higher)
+857.0: (take-unit-three oscar geography higher)
+858.0: (do-week-one oscar geography higher)
+859.0: (do-week-two oscar geography higher)
+860.0: (do-week-three oscar geography higher)
+861.0: (do-week-four oscar geography higher)
+862.0: (do-week-five oscar geography higher)
+863.0: (do-week-six oscar geography higher)
+864.0: (do-week-seven oscar geography higher)
+865.0: (do-week-eight oscar geography higher)
+866.0: (take-unit-four oscar geography higher)
+867.0: (finish-course oscar geography higher)
+868.0: (take-unit-one oscar geography year-two)
+869.0: (do-week-one oscar geography year-two)
+870.0: (do-week-two oscar geography year-two)
+871.0: (do-week-three oscar geography year-two)
+872.0: (do-week-four oscar geography year-two)
+873.0: (do-week-five oscar geography year-two)
+874.0: (do-week-six oscar geography year-two)
+875.0: (do-week-seven oscar geography year-two)
+876.0: (do-week-eight oscar geography year-two)
+877.0: (take-unit-two oscar geography year-two)
+878.0: (do-week-one oscar geography year-two)
+879.0: (do-week-two oscar geography year-two)
+880.0: (do-week-three oscar geography year-two)
+881.0: (do-week-four oscar geography year-two)
+882.0: (do-week-five oscar geography year-two)
+883.0: (do-week-six oscar geography year-two)
+884.0: (do-week-seven oscar geography year-two)
+885.0: (do-week-eight oscar geography year-two)
+886.0: (take-unit-three oscar geography year-two)
+887.0: (do-week-one oscar geography year-two)
+888.0: (do-week-two oscar geography year-two)
+889.0: (do-week-three oscar geography year-two)
+890.0: (do-week-four oscar geography year-two)
+891.0: (do-week-five oscar geography year-two)
+892.0: (do-week-six oscar geography year-two)
+893.0: (do-week-seven oscar geography year-two)
+894.0: (do-week-eight oscar geography year-two)
+895.0: (take-unit-four oscar geography year-two)
+896.0: (finish-course oscar geography year-two)
+897.0: (take-unit-one oscar physics national-four)
+898.0: (do-week-one oscar physics national-four)
+899.0: (do-week-two oscar physics national-four)
+900.0: (do-week-three oscar physics national-four)
+901.0: (do-week-four oscar physics national-four)
+902.0: (do-week-five oscar physics national-four)
+903.0: (do-week-six oscar physics national-four)
+904.0: (do-week-seven oscar physics national-four)
+905.0: (do-week-eight oscar physics national-four)
+906.0: (take-unit-two oscar physics national-four)
+907.0: (do-week-one oscar physics national-four)
+908.0: (do-week-two oscar physics national-four)
+909.0: (do-week-three oscar physics national-four)
+910.0: (do-week-four oscar physics national-four)
+911.0: (do-week-five oscar physics national-four)
+912.0: (do-week-six oscar physics national-four)
+913.0: (do-week-seven oscar physics national-four)
+914.0: (do-week-eight oscar physics national-four)
+915.0: (take-unit-three oscar physics national-four)
+916.0: (do-week-one oscar physics national-four)
+917.0: (do-week-two oscar physics national-four)
+918.0: (do-week-three oscar physics national-four)
+919.0: (do-week-four oscar physics national-four)
+920.0: (do-week-five oscar physics national-four)
+921.0: (do-week-six oscar physics national-four)
+922.0: (do-week-seven oscar physics national-four)
+923.0: (do-week-eight oscar physics national-four)
+924.0: (take-unit-four oscar physics national-four)
+925.0: (finish-course oscar physics national-four)
+926.0: (take-unit-one oscar music-tech national-five)
+927.0: (do-week-one oscar music-tech national-five)
+928.0: (do-week-two oscar music-tech national-five)
+929.0: (do-week-three oscar music-tech national-five)
+930.0: (do-week-four oscar music-tech national-five)
+931.0: (do-week-five oscar music-tech national-five)
+932.0: (do-week-six oscar music-tech national-five)
+933.0: (do-week-seven oscar music-tech national-five)
+934.0: (do-week-eight oscar music-tech national-five)
+935.0: (take-unit-two oscar music-tech national-five)
+936.0: (do-week-one oscar music-tech national-five)
+937.0: (do-week-two oscar music-tech national-five)
+938.0: (do-week-three oscar music-tech national-five)
+939.0: (do-week-four oscar music-tech national-five)
+940.0: (do-week-five oscar music-tech national-five)
+941.0: (do-week-six oscar music-tech national-five)
+942.0: (do-week-seven oscar music-tech national-five)
+943.0: (do-week-eight oscar music-tech national-five)
+944.0: (take-unit-three oscar music-tech national-five)
+945.0: (do-week-one oscar music-tech national-five)
+946.0: (do-week-two oscar music-tech national-five)
+947.0: (do-week-three oscar music-tech national-five)
+948.0: (do-week-four oscar music-tech national-five)
+949.0: (do-week-five oscar music-tech national-five)
+950.0: (do-week-six oscar music-tech national-five)
+951.0: (do-week-seven oscar music-tech national-five)
+952.0: (do-week-eight oscar music-tech national-five)
+953.0: (take-unit-four oscar music-tech national-five)
+954.0: (finish-course oscar music-tech national-five)
+955.0: (take-unit-one jasper textiles year-one)
+956.0: (do-week-one jasper textiles year-one)
+957.0: (do-week-two jasper textiles year-one)
+958.0: (do-week-three jasper textiles year-one)
+959.0: (do-week-four jasper textiles year-one)
+960.0: (do-week-five jasper textiles year-one)
+961.0: (do-week-six jasper textiles year-one)
+962.0: (do-week-seven jasper textiles year-one)
+963.0: (do-week-eight jasper textiles year-one)
+964.0: (take-unit-two jasper textiles year-one)
+965.0: (do-week-one jasper textiles year-one)
+966.0: (do-week-two jasper textiles year-one)
+967.0: (do-week-three jasper textiles year-one)
+968.0: (do-week-four jasper textiles year-one)
+969.0: (do-week-five jasper textiles year-one)
+970.0: (do-week-six jasper textiles year-one)
+971.0: (do-week-seven jasper textiles year-one)
+972.0: (do-week-eight jasper textiles year-one)
+973.0: (take-unit-three jasper textiles year-one)
+974.0: (do-week-one jasper textiles year-one)
+975.0: (do-week-two jasper textiles year-one)
+976.0: (do-week-three jasper textiles year-one)
+977.0: (do-week-four jasper textiles year-one)
+978.0: (do-week-five jasper textiles year-one)
+979.0: (do-week-six jasper textiles year-one)
+980.0: (do-week-seven jasper textiles year-one)
+981.0: (do-week-eight jasper textiles year-one)
+982.0: (take-unit-four jasper textiles year-one)
+983.0: (finish-course jasper textiles year-one)
+984.0: (take-unit-one jasper dance higher)
+985.0: (do-week-one jasper dance higher)
+986.0: (do-week-two jasper dance higher)
+987.0: (do-week-three jasper dance higher)
+988.0: (do-week-four jasper dance higher)
+989.0: (do-week-five jasper dance higher)
+990.0: (do-week-six jasper dance higher)
+991.0: (do-week-seven jasper dance higher)
+992.0: (do-week-eight jasper dance higher)
+993.0: (take-unit-two jasper dance higher)
+994.0: (do-week-one jasper dance higher)
+995.0: (do-week-two jasper dance higher)
+996.0: (do-week-three jasper dance higher)
+997.0: (do-week-four jasper dance higher)
+998.0: (do-week-five jasper dance higher)
+999.0: (do-week-six jasper dance higher)
+1000.0: (do-week-seven jasper dance higher)
+1001.0: (do-week-eight jasper dance higher)
+1002.0: (take-unit-three jasper dance higher)
+1003.0: (do-week-one jasper dance higher)
+1004.0: (do-week-two jasper dance higher)
+1005.0: (do-week-three jasper dance higher)
+1006.0: (do-week-four jasper dance higher)
+1007.0: (do-week-five jasper dance higher)
+1008.0: (do-week-six jasper dance higher)
+1009.0: (do-week-seven jasper dance higher)
+1010.0: (do-week-eight jasper dance higher)
+1011.0: (take-unit-four jasper dance higher)
+1012.0: (finish-course jasper dance higher)
+1013.0: (take-unit-one jasper latin higher)
+1014.0: (do-week-one jasper latin higher)
+1015.0: (do-week-two jasper latin higher)
+1016.0: (do-week-three jasper latin higher)
+1017.0: (do-week-four jasper latin higher)
+1018.0: (do-week-five jasper latin higher)
+1019.0: (do-week-six jasper latin higher)
+1020.0: (do-week-seven jasper latin higher)
+1021.0: (do-week-eight jasper latin higher)
+1022.0: (take-unit-two jasper latin higher)
+1023.0: (do-week-one jasper latin higher)
+1024.0: (do-week-two jasper latin higher)
+1025.0: (do-week-three jasper latin higher)
+1026.0: (do-week-four jasper latin higher)
+1027.0: (do-week-five jasper latin higher)
+1028.0: (do-week-six jasper latin higher)
+1029.0: (do-week-seven jasper latin higher)
+1030.0: (do-week-eight jasper latin higher)
+1031.0: (take-unit-three jasper latin higher)
+1032.0: (do-week-one jasper latin higher)
+1033.0: (do-week-two jasper latin higher)
+1034.0: (do-week-three jasper latin higher)
+1035.0: (do-week-four jasper latin higher)
+1036.0: (do-week-five jasper latin higher)
+1037.0: (do-week-six jasper latin higher)
+1038.0: (do-week-seven jasper latin higher)
+1039.0: (do-week-eight jasper latin higher)
+1040.0: (take-unit-four jasper latin higher)
+1041.0: (finish-course jasper latin higher)
+1042.0: (take-unit-one jasper rmps year-two)
+1043.0: (do-week-one jasper rmps year-two)
+1044.0: (do-week-two jasper rmps year-two)
+1045.0: (do-week-three jasper rmps year-two)
+1046.0: (do-week-four jasper rmps year-two)
+1047.0: (do-week-five jasper rmps year-two)
+1048.0: (do-week-six jasper rmps year-two)
+1049.0: (do-week-seven jasper rmps year-two)
+1050.0: (do-week-eight jasper rmps year-two)
+1051.0: (take-unit-two jasper rmps year-two)
+1052.0: (do-week-one jasper rmps year-two)
+1053.0: (do-week-two jasper rmps year-two)
+1054.0: (do-week-three jasper rmps year-two)
+1055.0: (do-week-four jasper rmps year-two)
+1056.0: (do-week-five jasper rmps year-two)
+1057.0: (do-week-six jasper rmps year-two)
+1058.0: (do-week-seven jasper rmps year-two)
+1059.0: (do-week-eight jasper rmps year-two)
+1060.0: (take-unit-three jasper rmps year-two)
+1061.0: (do-week-one jasper rmps year-two)
+1062.0: (do-week-two jasper rmps year-two)
+1063.0: (do-week-three jasper rmps year-two)
+1064.0: (do-week-four jasper rmps year-two)
+1065.0: (do-week-five jasper rmps year-two)
+1066.0: (do-week-six jasper rmps year-two)
+1067.0: (do-week-seven jasper rmps year-two)
+1068.0: (do-week-eight jasper rmps year-two)
+1069.0: (take-unit-four jasper rmps year-two)
+1070.0: (finish-course jasper rmps year-two)
+1071.0: (take-unit-one jasper practical-woodwork year-one)
+1072.0: (do-week-one jasper practical-woodwork year-one)
+1073.0: (do-week-two jasper practical-woodwork year-one)
+1074.0: (do-week-three jasper practical-woodwork year-one)
+1075.0: (do-week-four jasper practical-woodwork year-one)
+1076.0: (do-week-five jasper practical-woodwork year-one)
+1077.0: (do-week-six jasper practical-woodwork year-one)
+1078.0: (do-week-seven jasper practical-woodwork year-one)
+1079.0: (do-week-eight jasper practical-woodwork year-one)
+1080.0: (take-unit-two jasper practical-woodwork year-one)
+1081.0: (do-week-one jasper practical-woodwork year-one)
+1082.0: (do-week-two jasper practical-woodwork year-one)
+1083.0: (do-week-three jasper practical-woodwork year-one)
+1084.0: (do-week-four jasper practical-woodwork year-one)
+1085.0: (do-week-five jasper practical-woodwork year-one)
+1086.0: (do-week-six jasper practical-woodwork year-one)
+1087.0: (do-week-seven jasper practical-woodwork year-one)
+1088.0: (do-week-eight jasper practical-woodwork year-one)
+1089.0: (take-unit-three jasper practical-woodwork year-one)
+1090.0: (do-week-one jasper practical-woodwork year-one)
+1091.0: (do-week-two jasper practical-woodwork year-one)
+1092.0: (do-week-three jasper practical-woodwork year-one)
+1093.0: (do-week-four jasper practical-woodwork year-one)
+1094.0: (do-week-five jasper practical-woodwork year-one)
+1095.0: (do-week-six jasper practical-woodwork year-one)
+1096.0: (do-week-seven jasper practical-woodwork year-one)
+1097.0: (do-week-eight jasper practical-woodwork year-one)
+1098.0: (take-unit-four jasper practical-woodwork year-one)
+1099.0: (finish-course jasper practical-woodwork year-one)
+1100.0: (take-unit-one layla home-economics national-four)
+1101.0: (do-week-one layla home-economics national-four)
+1102.0: (do-week-two layla home-economics national-four)
+1103.0: (do-week-three layla home-economics national-four)
+1104.0: (do-week-four layla home-economics national-four)
+1105.0: (do-week-five layla home-economics national-four)
+1106.0: (do-week-six layla home-economics national-four)
+1107.0: (do-week-seven layla home-economics national-four)
+1108.0: (do-week-eight layla home-economics national-four)
+1109.0: (take-unit-two layla home-economics national-four)
+1110.0: (do-week-one layla home-economics national-four)
+1111.0: (do-week-two layla home-economics national-four)
+1112.0: (do-week-three layla home-economics national-four)
+1113.0: (do-week-four layla home-economics national-four)
+1114.0: (do-week-five layla home-economics national-four)
+1115.0: (do-week-six layla home-economics national-four)
+1116.0: (do-week-seven layla home-economics national-four)
+1117.0: (do-week-eight layla home-economics national-four)
+1118.0: (take-unit-three layla home-economics national-four)
+1119.0: (do-week-one layla home-economics national-four)
+1120.0: (do-week-two layla home-economics national-four)
+1121.0: (do-week-three layla home-economics national-four)
+1122.0: (do-week-four layla home-economics national-four)
+1123.0: (do-week-five layla home-economics national-four)
+1124.0: (do-week-six layla home-economics national-four)
+1125.0: (do-week-seven layla home-economics national-four)
+1126.0: (do-week-eight layla home-economics national-four)
+1127.0: (take-unit-four layla home-economics national-four)
+1128.0: (finish-course layla home-economics national-four)
+1129.0: (take-unit-one layla landscape-gardening adv-higher)
+1130.0: (do-week-one layla landscape-gardening adv-higher)
+1131.0: (do-week-two layla landscape-gardening adv-higher)
+1132.0: (do-week-three layla landscape-gardening adv-higher)
+1133.0: (do-week-four layla landscape-gardening adv-higher)
+1134.0: (do-week-five layla landscape-gardening adv-higher)
+1135.0: (do-week-six layla landscape-gardening adv-higher)
+1136.0: (do-week-seven layla landscape-gardening adv-higher)
+1137.0: (do-week-eight layla landscape-gardening adv-higher)
+1138.0: (take-unit-two layla landscape-gardening adv-higher)
+1139.0: (do-week-one layla landscape-gardening adv-higher)
+1140.0: (do-week-two layla landscape-gardening adv-higher)
+1141.0: (do-week-three layla landscape-gardening adv-higher)
+1142.0: (do-week-four layla landscape-gardening adv-higher)
+1143.0: (do-week-five layla landscape-gardening adv-higher)
+1144.0: (do-week-six layla landscape-gardening adv-higher)
+1145.0: (do-week-seven layla landscape-gardening adv-higher)
+1146.0: (do-week-eight layla landscape-gardening adv-higher)
+1147.0: (take-unit-three layla landscape-gardening adv-higher)
+1148.0: (do-week-one layla landscape-gardening adv-higher)
+1149.0: (do-week-two layla landscape-gardening adv-higher)
+1150.0: (do-week-three layla landscape-gardening adv-higher)
+1151.0: (do-week-four layla landscape-gardening adv-higher)
+1152.0: (do-week-five layla landscape-gardening adv-higher)
+1153.0: (do-week-six layla landscape-gardening adv-higher)
+1154.0: (do-week-seven layla landscape-gardening adv-higher)
+1155.0: (do-week-eight layla landscape-gardening adv-higher)
+1156.0: (take-unit-four layla landscape-gardening adv-higher)
+1157.0: (finish-course layla landscape-gardening adv-higher)
+1158.0: (take-unit-one layla physics year-two)
+1159.0: (do-week-one layla physics year-two)
+1160.0: (do-week-two layla physics year-two)
+1161.0: (do-week-three layla physics year-two)
+1162.0: (do-week-four layla physics year-two)
+1163.0: (do-week-five layla physics year-two)
+1164.0: (do-week-six layla physics year-two)
+1165.0: (do-week-seven layla physics year-two)
+1166.0: (do-week-eight layla physics year-two)
+1167.0: (take-unit-two layla physics year-two)
+1168.0: (do-week-one layla physics year-two)
+1169.0: (do-week-two layla physics year-two)
+1170.0: (do-week-three layla physics year-two)
+1171.0: (do-week-four layla physics year-two)
+1172.0: (do-week-five layla physics year-two)
+1173.0: (do-week-six layla physics year-two)
+1174.0: (do-week-seven layla physics year-two)
+1175.0: (do-week-eight layla physics year-two)
+1176.0: (take-unit-three layla physics year-two)
+1177.0: (do-week-one layla physics year-two)
+1178.0: (do-week-two layla physics year-two)
+1179.0: (do-week-three layla physics year-two)
+1180.0: (do-week-four layla physics year-two)
+1181.0: (do-week-five layla physics year-two)
+1182.0: (do-week-six layla physics year-two)
+1183.0: (do-week-seven layla physics year-two)
+1184.0: (do-week-eight layla physics year-two)
+1185.0: (take-unit-four layla physics year-two)
+1186.0: (finish-course layla physics year-two)
+1187.0: (take-unit-one layla lifeskills adv-higher)
+1188.0: (do-week-one layla lifeskills adv-higher)
+1189.0: (do-week-two layla lifeskills adv-higher)
+1190.0: (do-week-three layla lifeskills adv-higher)
+1191.0: (do-week-four layla lifeskills adv-higher)
+1192.0: (do-week-five layla lifeskills adv-higher)
+1193.0: (do-week-six layla lifeskills adv-higher)
+1194.0: (do-week-seven layla lifeskills adv-higher)
+1195.0: (do-week-eight layla lifeskills adv-higher)
+1196.0: (take-unit-two layla lifeskills adv-higher)
+1197.0: (do-week-one layla lifeskills adv-higher)
+1198.0: (do-week-two layla lifeskills adv-higher)
+1199.0: (do-week-three layla lifeskills adv-higher)
+1200.0: (do-week-four layla lifeskills adv-higher)
+1201.0: (do-week-five layla lifeskills adv-higher)
+1202.0: (do-week-six layla lifeskills adv-higher)
+1203.0: (do-week-seven layla lifeskills adv-higher)
+1204.0: (do-week-eight layla lifeskills adv-higher)
+1205.0: (take-unit-three layla lifeskills adv-higher)
+1206.0: (do-week-one layla lifeskills adv-higher)
+1207.0: (do-week-two layla lifeskills adv-higher)
+1208.0: (do-week-three layla lifeskills adv-higher)
+1209.0: (do-week-four layla lifeskills adv-higher)
+1210.0: (do-week-five layla lifeskills adv-higher)
+1211.0: (do-week-six layla lifeskills adv-higher)
+1212.0: (do-week-seven layla lifeskills adv-higher)
+1213.0: (do-week-eight layla lifeskills adv-higher)
+1214.0: (take-unit-four layla lifeskills adv-higher)
+1215.0: (finish-course layla lifeskills adv-higher)
+1216.0: (take-unit-one layla chemistry adv-higher)
+1217.0: (do-week-one layla chemistry adv-higher)
+1218.0: (do-week-two layla chemistry adv-higher)
+1219.0: (do-week-three layla chemistry adv-higher)
+1220.0: (do-week-four layla chemistry adv-higher)
+1221.0: (do-week-five layla chemistry adv-higher)
+1222.0: (do-week-six layla chemistry adv-higher)
+1223.0: (do-week-seven layla chemistry adv-higher)
+1224.0: (do-week-eight layla chemistry adv-higher)
+1225.0: (take-unit-two layla chemistry adv-higher)
+1226.0: (do-week-one layla chemistry adv-higher)
+1227.0: (do-week-two layla chemistry adv-higher)
+1228.0: (do-week-three layla chemistry adv-higher)
+1229.0: (do-week-four layla chemistry adv-higher)
+1230.0: (do-week-five layla chemistry adv-higher)
+1231.0: (do-week-six layla chemistry adv-higher)
+1232.0: (do-week-seven layla chemistry adv-higher)
+1233.0: (do-week-eight layla chemistry adv-higher)
+1234.0: (take-unit-three layla chemistry adv-higher)
+1235.0: (do-week-one layla chemistry adv-higher)
+1236.0: (do-week-two layla chemistry adv-higher)
+1237.0: (do-week-three layla chemistry adv-higher)
+1238.0: (do-week-four layla chemistry adv-higher)
+1239.0: (do-week-five layla chemistry adv-higher)
+1240.0: (do-week-six layla chemistry adv-higher)
+1241.0: (do-week-seven layla chemistry adv-higher)
+1242.0: (do-week-eight layla chemistry adv-higher)
+1243.0: (take-unit-four layla chemistry adv-higher)
+1244.0: (finish-course layla chemistry adv-higher)
+1245.0: (take-unit-one emily rmps year-three)
+1246.0: (do-week-one emily rmps year-three)
+1247.0: (do-week-two emily rmps year-three)
+1248.0: (do-week-three emily rmps year-three)
+1249.0: (do-week-four emily rmps year-three)
+1250.0: (do-week-five emily rmps year-three)
+1251.0: (do-week-six emily rmps year-three)
+1252.0: (do-week-seven emily rmps year-three)
+1253.0: (do-week-eight emily rmps year-three)
+1254.0: (take-unit-two emily rmps year-three)
+1255.0: (do-week-one emily rmps year-three)
+1256.0: (do-week-two emily rmps year-three)
+1257.0: (do-week-three emily rmps year-three)
+1258.0: (do-week-four emily rmps year-three)
+1259.0: (do-week-five emily rmps year-three)
+1260.0: (do-week-six emily rmps year-three)
+1261.0: (do-week-seven emily rmps year-three)
+1262.0: (do-week-eight emily rmps year-three)
+1263.0: (take-unit-three emily rmps year-three)
+1264.0: (do-week-one emily rmps year-three)
+1265.0: (do-week-two emily rmps year-three)
+1266.0: (do-week-three emily rmps year-three)
+1267.0: (do-week-four emily rmps year-three)
+1268.0: (do-week-five emily rmps year-three)
+1269.0: (do-week-six emily rmps year-three)
+1270.0: (do-week-seven emily rmps year-three)
+1271.0: (do-week-eight emily rmps year-three)
+1272.0: (take-unit-four emily rmps year-three)
+1273.0: (finish-course emily rmps year-three)
+1274.0: (take-unit-one emily comp-sci higher)
+1275.0: (do-week-one emily comp-sci higher)
+1276.0: (do-week-two emily comp-sci higher)
+1277.0: (do-week-three emily comp-sci higher)
+1278.0: (do-week-four emily comp-sci higher)
+1279.0: (do-week-five emily comp-sci higher)
+1280.0: (do-week-six emily comp-sci higher)
+1281.0: (do-week-seven emily comp-sci higher)
+1282.0: (do-week-eight emily comp-sci higher)
+1283.0: (take-unit-two emily comp-sci higher)
+1284.0: (do-week-one emily comp-sci higher)
+1285.0: (do-week-two emily comp-sci higher)
+1286.0: (do-week-three emily comp-sci higher)
+1287.0: (do-week-four emily comp-sci higher)
+1288.0: (do-week-five emily comp-sci higher)
+1289.0: (do-week-six emily comp-sci higher)
+1290.0: (do-week-seven emily comp-sci higher)
+1291.0: (do-week-eight emily comp-sci higher)
+1292.0: (take-unit-three emily comp-sci higher)
+1293.0: (do-week-one emily comp-sci higher)
+1294.0: (do-week-two emily comp-sci higher)
+1295.0: (do-week-three emily comp-sci higher)
+1296.0: (do-week-four emily comp-sci higher)
+1297.0: (do-week-five emily comp-sci higher)
+1298.0: (do-week-six emily comp-sci higher)
+1299.0: (do-week-seven emily comp-sci higher)
+1300.0: (do-week-eight emily comp-sci higher)
+1301.0: (take-unit-four emily comp-sci higher)
+1302.0: (finish-course emily comp-sci higher)
+1303.0: (take-unit-one emily german higher)
+1304.0: (do-week-one emily german higher)
+1305.0: (do-week-two emily german higher)
+1306.0: (do-week-three emily german higher)
+1307.0: (do-week-four emily german higher)
+1308.0: (do-week-five emily german higher)
+1309.0: (do-week-six emily german higher)
+1310.0: (do-week-seven emily german higher)
+1311.0: (do-week-eight emily german higher)
+1312.0: (take-unit-two emily german higher)
+1313.0: (do-week-one emily german higher)
+1314.0: (do-week-two emily german higher)
+1315.0: (do-week-three emily german higher)
+1316.0: (do-week-four emily german higher)
+1317.0: (do-week-five emily german higher)
+1318.0: (do-week-six emily german higher)
+1319.0: (do-week-seven emily german higher)
+1320.0: (do-week-eight emily german higher)
+1321.0: (take-unit-three emily german higher)
+1322.0: (do-week-one emily german higher)
+1323.0: (do-week-two emily german higher)
+1324.0: (do-week-three emily german higher)
+1325.0: (do-week-four emily german higher)
+1326.0: (do-week-five emily german higher)
+1327.0: (do-week-six emily german higher)
+1328.0: (do-week-seven emily german higher)
+1329.0: (do-week-eight emily german higher)
+1330.0: (take-unit-four emily german higher)
+1331.0: (finish-course emily german higher)
+1332.0: (take-unit-one emily landscape-gardening national-four)
+1333.0: (do-week-one emily landscape-gardening national-four)
+1334.0: (do-week-two emily landscape-gardening national-four)
+1335.0: (do-week-three emily landscape-gardening national-four)
+1336.0: (do-week-four emily landscape-gardening national-four)
+1337.0: (do-week-five emily landscape-gardening national-four)
+1338.0: (do-week-six emily landscape-gardening national-four)
+1339.0: (do-week-seven emily landscape-gardening national-four)
+1340.0: (do-week-eight emily landscape-gardening national-four)
+1341.0: (take-unit-two emily landscape-gardening national-four)
+1342.0: (do-week-one emily landscape-gardening national-four)
+1343.0: (do-week-two emily landscape-gardening national-four)
+1344.0: (do-week-three emily landscape-gardening national-four)
+1345.0: (do-week-four emily landscape-gardening national-four)
+1346.0: (do-week-five emily landscape-gardening national-four)
+1347.0: (do-week-six emily landscape-gardening national-four)
+1348.0: (do-week-seven emily landscape-gardening national-four)
+1349.0: (do-week-eight emily landscape-gardening national-four)
+1350.0: (take-unit-three emily landscape-gardening national-four)
+1351.0: (do-week-one emily landscape-gardening national-four)
+1352.0: (do-week-two emily landscape-gardening national-four)
+1353.0: (do-week-three emily landscape-gardening national-four)
+1354.0: (do-week-four emily landscape-gardening national-four)
+1355.0: (do-week-five emily landscape-gardening national-four)
+1356.0: (do-week-six emily landscape-gardening national-four)
+1357.0: (do-week-seven emily landscape-gardening national-four)
+1358.0: (do-week-eight emily landscape-gardening national-four)
+1359.0: (take-unit-four emily landscape-gardening national-four)
+1360.0: (finish-course emily landscape-gardening national-four)
+1361.0: (take-unit-one emily rmps higher)
+1362.0: (do-week-one emily rmps higher)
+1363.0: (do-week-two emily rmps higher)
+1364.0: (do-week-three emily rmps higher)
+1365.0: (do-week-four emily rmps higher)
+1366.0: (do-week-five emily rmps higher)
+1367.0: (do-week-six emily rmps higher)
+1368.0: (do-week-seven emily rmps higher)
+1369.0: (do-week-eight emily rmps higher)
+1370.0: (take-unit-two emily rmps higher)
+1371.0: (do-week-one emily rmps higher)
+1372.0: (do-week-two emily rmps higher)
+1373.0: (do-week-three emily rmps higher)
+1374.0: (do-week-four emily rmps higher)
+1375.0: (do-week-five emily rmps higher)
+1376.0: (do-week-six emily rmps higher)
+1377.0: (do-week-seven emily rmps higher)
+1378.0: (do-week-eight emily rmps higher)
+1379.0: (take-unit-three emily rmps higher)
+1380.0: (do-week-one emily rmps higher)
+1381.0: (do-week-two emily rmps higher)
+1382.0: (do-week-three emily rmps higher)
+1383.0: (do-week-four emily rmps higher)
+1384.0: (do-week-five emily rmps higher)
+1385.0: (do-week-six emily rmps higher)
+1386.0: (do-week-seven emily rmps higher)
+1387.0: (do-week-eight emily rmps higher)
+1388.0: (take-unit-four emily rmps higher)
+1389.0: (finish-course emily rmps higher)
+1390.0: (take-unit-one ada physics national-five)
+1391.0: (do-week-one ada physics national-five)
+1392.0: (do-week-two ada physics national-five)
+1393.0: (do-week-three ada physics national-five)
+1394.0: (do-week-four ada physics national-five)
+1395.0: (do-week-five ada physics national-five)
+1396.0: (do-week-six ada physics national-five)
+1397.0: (do-week-seven ada physics national-five)
+1398.0: (do-week-eight ada physics national-five)
+1399.0: (take-unit-two ada physics national-five)
+1400.0: (do-week-one ada physics national-five)
+1401.0: (do-week-two ada physics national-five)
+1402.0: (do-week-three ada physics national-five)
+1403.0: (do-week-four ada physics national-five)
+1404.0: (do-week-five ada physics national-five)
+1405.0: (do-week-six ada physics national-five)
+1406.0: (do-week-seven ada physics national-five)
+1407.0: (do-week-eight ada physics national-five)
+1408.0: (take-unit-three ada physics national-five)
+1409.0: (do-week-one ada physics national-five)
+1410.0: (do-week-two ada physics national-five)
+1411.0: (do-week-three ada physics national-five)
+1412.0: (do-week-four ada physics national-five)
+1413.0: (do-week-five ada physics national-five)
+1414.0: (do-week-six ada physics national-five)
+1415.0: (do-week-seven ada physics national-five)
+1416.0: (do-week-eight ada physics national-five)
+1417.0: (take-unit-four ada physics national-five)
+1418.0: (finish-course ada physics national-five)
+1419.0: (take-unit-one ada comp-sci higher)
+1420.0: (do-week-one ada comp-sci higher)
+1421.0: (do-week-two ada comp-sci higher)
+1422.0: (do-week-three ada comp-sci higher)
+1423.0: (do-week-four ada comp-sci higher)
+1424.0: (do-week-five ada comp-sci higher)
+1425.0: (do-week-six ada comp-sci higher)
+1426.0: (do-week-seven ada comp-sci higher)
+1427.0: (do-week-eight ada comp-sci higher)
+1428.0: (take-unit-two ada comp-sci higher)
+1429.0: (do-week-one ada comp-sci higher)
+1430.0: (do-week-two ada comp-sci higher)
+1431.0: (do-week-three ada comp-sci higher)
+1432.0: (do-week-four ada comp-sci higher)
+1433.0: (do-week-five ada comp-sci higher)
+1434.0: (do-week-six ada comp-sci higher)
+1435.0: (do-week-seven ada comp-sci higher)
+1436.0: (do-week-eight ada comp-sci higher)
+1437.0: (take-unit-three ada comp-sci higher)
+1438.0: (do-week-one ada comp-sci higher)
+1439.0: (do-week-two ada comp-sci higher)
+1440.0: (do-week-three ada comp-sci higher)
+1441.0: (do-week-four ada comp-sci higher)
+1442.0: (do-week-five ada comp-sci higher)
+1443.0: (do-week-six ada comp-sci higher)
+1444.0: (do-week-seven ada comp-sci higher)
+1445.0: (do-week-eight ada comp-sci higher)
+1446.0: (take-unit-four ada comp-sci higher)
+1447.0: (finish-course ada comp-sci higher)
+1448.0: (take-unit-one ada drama year-two)
+1449.0: (do-week-one ada drama year-two)
+1450.0: (do-week-two ada drama year-two)
+1451.0: (do-week-three ada drama year-two)
+1452.0: (do-week-four ada drama year-two)
+1453.0: (do-week-five ada drama year-two)
+1454.0: (do-week-six ada drama year-two)
+1455.0: (do-week-seven ada drama year-two)
+1456.0: (do-week-eight ada drama year-two)
+1457.0: (take-unit-two ada drama year-two)
+1458.0: (do-week-one ada drama year-two)
+1459.0: (do-week-two ada drama year-two)
+1460.0: (do-week-three ada drama year-two)
+1461.0: (do-week-four ada drama year-two)
+1462.0: (do-week-five ada drama year-two)
+1463.0: (do-week-six ada drama year-two)
+1464.0: (do-week-seven ada drama year-two)
+1465.0: (do-week-eight ada drama year-two)
+1466.0: (take-unit-three ada drama year-two)
+1467.0: (do-week-one ada drama year-two)
+1468.0: (do-week-two ada drama year-two)
+1469.0: (do-week-three ada drama year-two)
+1470.0: (do-week-four ada drama year-two)
+1471.0: (do-week-five ada drama year-two)
+1472.0: (do-week-six ada drama year-two)
+1473.0: (do-week-seven ada drama year-two)
+1474.0: (do-week-eight ada drama year-two)
+1475.0: (take-unit-four ada drama year-two)
+1476.0: (finish-course ada drama year-two)
+1477.0: (take-unit-one ada graph-comm year-three)
+1478.0: (do-week-one ada graph-comm year-three)
+1479.0: (do-week-two ada graph-comm year-three)
+1480.0: (do-week-three ada graph-comm year-three)
+1481.0: (do-week-four ada graph-comm year-three)
+1482.0: (do-week-five ada graph-comm year-three)
+1483.0: (do-week-six ada graph-comm year-three)
+1484.0: (do-week-seven ada graph-comm year-three)
+1485.0: (do-week-eight ada graph-comm year-three)
+1486.0: (take-unit-two ada graph-comm year-three)
+1487.0: (do-week-one ada graph-comm year-three)
+1488.0: (do-week-two ada graph-comm year-three)
+1489.0: (do-week-three ada graph-comm year-three)
+1490.0: (do-week-four ada graph-comm year-three)
+1491.0: (do-week-five ada graph-comm year-three)
+1492.0: (do-week-six ada graph-comm year-three)
+1493.0: (do-week-seven ada graph-comm year-three)
+1494.0: (do-week-eight ada graph-comm year-three)
+1495.0: (take-unit-three ada graph-comm year-three)
+1496.0: (do-week-one ada graph-comm year-three)
+1497.0: (do-week-two ada graph-comm year-three)
+1498.0: (do-week-three ada graph-comm year-three)
+1499.0: (do-week-four ada graph-comm year-three)
+1500.0: (do-week-five ada graph-comm year-three)
+1501.0: (do-week-six ada graph-comm year-three)
+1502.0: (do-week-seven ada graph-comm year-three)
+1503.0: (do-week-eight ada graph-comm year-three)
+1504.0: (take-unit-four ada graph-comm year-three)
+1505.0: (finish-course ada graph-comm year-three)
+1506.0: (take-unit-one ada physics higher)
+1507.0: (do-week-one ada physics higher)
+1508.0: (do-week-two ada physics higher)
+1509.0: (do-week-three ada physics higher)
+1510.0: (do-week-four ada physics higher)
+1511.0: (do-week-five ada physics higher)
+1512.0: (do-week-six ada physics higher)
+1513.0: (do-week-seven ada physics higher)
+1514.0: (do-week-eight ada physics higher)
+1515.0: (take-unit-two ada physics higher)
+1516.0: (do-week-one ada physics higher)
+1517.0: (do-week-two ada physics higher)
+1518.0: (do-week-three ada physics higher)
+1519.0: (do-week-four ada physics higher)
+1520.0: (do-week-five ada physics higher)
+1521.0: (do-week-six ada physics higher)
+1522.0: (do-week-seven ada physics higher)
+1523.0: (do-week-eight ada physics higher)
+1524.0: (take-unit-three ada physics higher)
+1525.0: (do-week-one ada physics higher)
+1526.0: (do-week-two ada physics higher)
+1527.0: (do-week-three ada physics higher)
+1528.0: (do-week-four ada physics higher)
+1529.0: (do-week-five ada physics higher)
+1530.0: (do-week-six ada physics higher)
+1531.0: (do-week-seven ada physics higher)
+1532.0: (do-week-eight ada physics higher)
+1533.0: (take-unit-four ada physics higher)
+1534.0: (finish-course ada physics higher)
+1535.0: (take-unit-one david cantonese year-one)
+1536.0: (do-week-one david cantonese year-one)
+1537.0: (do-week-two david cantonese year-one)
+1538.0: (do-week-three david cantonese year-one)
+1539.0: (do-week-four david cantonese year-one)
+1540.0: (do-week-five david cantonese year-one)
+1541.0: (do-week-six david cantonese year-one)
+1542.0: (do-week-seven david cantonese year-one)
+1543.0: (do-week-eight david cantonese year-one)
+1544.0: (take-unit-two david cantonese year-one)
+1545.0: (do-week-one david cantonese year-one)
+1546.0: (do-week-two david cantonese year-one)
+1547.0: (do-week-three david cantonese year-one)
+1548.0: (do-week-four david cantonese year-one)
+1549.0: (do-week-five david cantonese year-one)
+1550.0: (do-week-six david cantonese year-one)
+1551.0: (do-week-seven david cantonese year-one)
+1552.0: (do-week-eight david cantonese year-one)
+1553.0: (take-unit-three david cantonese year-one)
+1554.0: (do-week-one david cantonese year-one)
+1555.0: (do-week-two david cantonese year-one)
+1556.0: (do-week-three david cantonese year-one)
+1557.0: (do-week-four david cantonese year-one)
+1558.0: (do-week-five david cantonese year-one)
+1559.0: (do-week-six david cantonese year-one)
+1560.0: (do-week-seven david cantonese year-one)
+1561.0: (do-week-eight david cantonese year-one)
+1562.0: (take-unit-four david cantonese year-one)
+1563.0: (finish-course david cantonese year-one)
+1564.0: (take-unit-one david esol higher)
+1565.0: (do-week-one david esol higher)
+1566.0: (do-week-two david esol higher)
+1567.0: (do-week-three david esol higher)
+1568.0: (do-week-four david esol higher)
+1569.0: (do-week-five david esol higher)
+1570.0: (do-week-six david esol higher)
+1571.0: (do-week-seven david esol higher)
+1572.0: (do-week-eight david esol higher)
+1573.0: (take-unit-two david esol higher)
+1574.0: (do-week-one david esol higher)
+1575.0: (do-week-two david esol higher)
+1576.0: (do-week-three david esol higher)
+1577.0: (do-week-four david esol higher)
+1578.0: (do-week-five david esol higher)
+1579.0: (do-week-six david esol higher)
+1580.0: (do-week-seven david esol higher)
+1581.0: (do-week-eight david esol higher)
+1582.0: (take-unit-three david esol higher)
+1583.0: (do-week-one david esol higher)
+1584.0: (do-week-two david esol higher)
+1585.0: (do-week-three david esol higher)
+1586.0: (do-week-four david esol higher)
+1587.0: (do-week-five david esol higher)
+1588.0: (do-week-six david esol higher)
+1589.0: (do-week-seven david esol higher)
+1590.0: (do-week-eight david esol higher)
+1591.0: (take-unit-four david esol higher)
+1592.0: (finish-course david esol higher)
+1593.0: (take-unit-one david design-manufacture year-three)
+1594.0: (do-week-one david design-manufacture year-three)
+1595.0: (do-week-two david design-manufacture year-three)
+1596.0: (do-week-three david design-manufacture year-three)
+1597.0: (do-week-four david design-manufacture year-three)
+1598.0: (do-week-five david design-manufacture year-three)
+1599.0: (do-week-six david design-manufacture year-three)
+1600.0: (do-week-seven david design-manufacture year-three)
+1601.0: (do-week-eight david design-manufacture year-three)
+1602.0: (take-unit-two david design-manufacture year-three)
+1603.0: (do-week-one david design-manufacture year-three)
+1604.0: (do-week-two david design-manufacture year-three)
+1605.0: (do-week-three david design-manufacture year-three)
+1606.0: (do-week-four david design-manufacture year-three)
+1607.0: (do-week-five david design-manufacture year-three)
+1608.0: (do-week-six david design-manufacture year-three)
+1609.0: (do-week-seven david design-manufacture year-three)
+1610.0: (do-week-eight david design-manufacture year-three)
+1611.0: (take-unit-three david design-manufacture year-three)
+1612.0: (do-week-one david design-manufacture year-three)
+1613.0: (do-week-two david design-manufacture year-three)
+1614.0: (do-week-three david design-manufacture year-three)
+1615.0: (do-week-four david design-manufacture year-three)
+1616.0: (do-week-five david design-manufacture year-three)
+1617.0: (do-week-six david design-manufacture year-three)
+1618.0: (do-week-seven david design-manufacture year-three)
+1619.0: (do-week-eight david design-manufacture year-three)
+1620.0: (take-unit-four david design-manufacture year-three)
+1621.0: (finish-course david design-manufacture year-three)
+1622.0: (take-unit-one david numeracy national-five)
+1623.0: (do-week-one david numeracy national-five)
+1624.0: (do-week-two david numeracy national-five)
+1625.0: (do-week-three david numeracy national-five)
+1626.0: (do-week-four david numeracy national-five)
+1627.0: (do-week-five david numeracy national-five)
+1628.0: (do-week-six david numeracy national-five)
+1629.0: (do-week-seven david numeracy national-five)
+1630.0: (do-week-eight david numeracy national-five)
+1631.0: (take-unit-two david numeracy national-five)
+1632.0: (do-week-one david numeracy national-five)
+1633.0: (do-week-two david numeracy national-five)
+1634.0: (do-week-three david numeracy national-five)
+1635.0: (do-week-four david numeracy national-five)
+1636.0: (do-week-five david numeracy national-five)
+1637.0: (do-week-six david numeracy national-five)
+1638.0: (do-week-seven david numeracy national-five)
+1639.0: (do-week-eight david numeracy national-five)
+1640.0: (take-unit-three david numeracy national-five)
+1641.0: (do-week-one david numeracy national-five)
+1642.0: (do-week-two david numeracy national-five)
+1643.0: (do-week-three david numeracy national-five)
+1644.0: (do-week-four david numeracy national-five)
+1645.0: (do-week-five david numeracy national-five)
+1646.0: (do-week-six david numeracy national-five)
+1647.0: (do-week-seven david numeracy national-five)
+1648.0: (do-week-eight david numeracy national-five)
+1649.0: (take-unit-four david numeracy national-five)
+1650.0: (finish-course david numeracy national-five)
+1651.0: (take-unit-one david italian national-five)
+1652.0: (do-week-one david italian national-five)
+1653.0: (do-week-two david italian national-five)
+1654.0: (do-week-three david italian national-five)
+1655.0: (do-week-four david italian national-five)
+1656.0: (do-week-five david italian national-five)
+1657.0: (do-week-six david italian national-five)
+1658.0: (do-week-seven david italian national-five)
+1659.0: (do-week-eight david italian national-five)
+1660.0: (take-unit-two david italian national-five)
+1661.0: (do-week-one david italian national-five)
+1662.0: (do-week-two david italian national-five)
+1663.0: (do-week-three david italian national-five)
+1664.0: (do-week-four david italian national-five)
+1665.0: (do-week-five david italian national-five)
+1666.0: (do-week-six david italian national-five)
+1667.0: (do-week-seven david italian national-five)
+1668.0: (do-week-eight david italian national-five)
+1669.0: (take-unit-three david italian national-five)
+1670.0: (do-week-one david italian national-five)
+1671.0: (do-week-two david italian national-five)
+1672.0: (do-week-three david italian national-five)
+1673.0: (do-week-four david italian national-five)
+1674.0: (do-week-five david italian national-five)
+1675.0: (do-week-six david italian national-five)
+1676.0: (do-week-seven david italian national-five)
+1677.0: (do-week-eight david italian national-five)
+1678.0: (take-unit-four david italian national-five)
+1679.0: (finish-course david italian national-five)
+
+Plan-Length:1680
+Metric (Search):1680.0
+Planning Time (msec): 39973
+Heuristic Time (msec): 26765
+Search Time (msec): 27806
+Expanded Nodes:1681
+States Evaluated:47010
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:0
+Number of Duplicates detected:0

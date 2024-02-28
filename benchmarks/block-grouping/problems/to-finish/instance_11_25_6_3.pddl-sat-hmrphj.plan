@@ -1,0 +1,223 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 189
+Aibr Preprocessing
+|F|:0
+|X|:50
+|A|:100
+|P|:0
+|E|:0
+H1 Setup Time (msec): 85
+Wrong setting for break-ties. Arbitrary tie breaking
+Setting horizon to:NaN
+Helpful Action Pruning Activated
+Running Greedy Best First Search
+h(n = s_0)=197.0
+ g(n)= 6.0 h(n)=179.0
+ g(n)= 11.0 h(n)=164.0
+ g(n)= 13.0 h(n)=152.0
+ g(n)= 20.0 h(n)=142.0
+ g(n)= 29.0 h(n)=133.0
+ g(n)= 38.0 h(n)=124.0
+ g(n)= 40.0 h(n)=116.0
+ g(n)= 47.0 h(n)=109.0
+ g(n)= 54.0 h(n)=84.0
+ g(n)= 60.0 h(n)=78.0
+ g(n)= 61.0 h(n)=73.0
+ g(n)= 65.0 h(n)=69.0
+ g(n)= 69.0 h(n)=65.0
+ g(n)= 73.0 h(n)=61.0
+ g(n)= 77.0 h(n)=57.0
+ g(n)= 82.0 h(n)=52.0
+ g(n)= 89.0 h(n)=45.0
+ g(n)= 96.0 h(n)=38.0
+ g(n)= 99.0 h(n)=35.0
+ g(n)= 102.0 h(n)=32.0
+ g(n)= 106.0 h(n)=28.0
+ g(n)= 109.0 h(n)=25.0
+ g(n)= 110.0 h(n)=23.0
+ g(n)= 111.0 h(n)=21.0
+ g(n)= 112.0 h(n)=19.0
+ g(n)= 114.0 h(n)=17.0
+ g(n)= 115.0 h(n)=16.0
+ g(n)= 116.0 h(n)=15.0
+ g(n)= 122.0 h(n)=9.0
+ g(n)= 123.0 h(n)=8.0
+ g(n)= 125.0 h(n)=6.0
+ g(n)= 127.0 h(n)=4.0
+-------------Time: 10s ; Expanded Nodes: 33 (Avg-Speed 3.0 n/s); Evaluated States: 2055
+ g(n)= 128.0 h(n)=3.0
+ g(n)= 129.0 h(n)=2.0
+ g(n)= 130.0 h(n)=1.0
+ g(n)= 131.0 h(n)=0.0
+JUMP for (move_block_right b6):2
+JUMP for (move_block_right b3):2
+JUMP for (move_block_up b9):6
+JUMP for (move_block_right b14):2
+JUMP for (move_block_right b6):3
+JUMP for (move_block_right b16):4
+JUMP for (move_block_right b7):3
+JUMP for (move_block_up b1):3
+JUMP for (move_block_right b19):7
+JUMP for (move_block_right b9):7
+JUMP for (move_block_right b4):5
+JUMP for (move_block_right b17):4
+JUMP for (move_block_up b5):4
+JUMP for (move_block_right b2):4
+JUMP for (move_block_right b23):4
+JUMP for (move_block_up b12):6
+JUMP for (move_block_up b20):7
+JUMP for (move_block_up b13):7
+JUMP for (move_block_up b13):2
+JUMP for (move_block_right b22):9
+JUMP for (move_block_right b18):9
+JUMP for (move_block_up b17):7
+JUMP for (move_block_down b4):2
+JUMP for (move_block_up b19):5
+JUMP for (move_block_down b22):6
+Problem Solved
+
+Found Plan:
+0.0: (move_block_down b22)
+1.0: (move_block_down b22)
+2.0: (move_block_down b22)
+3.0: (move_block_down b22)
+4.0: (move_block_down b22)
+5.0: (move_block_down b22)
+6.0: (move_block_up b19)
+7.0: (move_block_up b19)
+8.0: (move_block_up b19)
+9.0: (move_block_up b19)
+10.0: (move_block_up b19)
+11.0: (move_block_down b4)
+12.0: (move_block_down b4)
+13.0: (move_block_up b17)
+14.0: (move_block_up b17)
+15.0: (move_block_up b17)
+16.0: (move_block_up b17)
+17.0: (move_block_up b17)
+18.0: (move_block_up b17)
+19.0: (move_block_up b17)
+20.0: (move_block_right b18)
+21.0: (move_block_right b18)
+22.0: (move_block_right b18)
+23.0: (move_block_right b18)
+24.0: (move_block_right b18)
+25.0: (move_block_right b18)
+26.0: (move_block_right b18)
+27.0: (move_block_right b18)
+28.0: (move_block_right b18)
+29.0: (move_block_right b22)
+30.0: (move_block_right b22)
+31.0: (move_block_right b22)
+32.0: (move_block_right b22)
+33.0: (move_block_right b22)
+34.0: (move_block_right b22)
+35.0: (move_block_right b22)
+36.0: (move_block_right b22)
+37.0: (move_block_right b22)
+38.0: (move_block_up b13)
+39.0: (move_block_up b13)
+40.0: (move_block_up b13)
+41.0: (move_block_up b13)
+42.0: (move_block_up b13)
+43.0: (move_block_up b13)
+44.0: (move_block_up b13)
+45.0: (move_block_up b13)
+46.0: (move_block_up b13)
+47.0: (move_block_up b20)
+48.0: (move_block_up b20)
+49.0: (move_block_up b20)
+50.0: (move_block_up b20)
+51.0: (move_block_up b20)
+52.0: (move_block_up b20)
+53.0: (move_block_up b20)
+54.0: (move_block_up b12)
+55.0: (move_block_up b12)
+56.0: (move_block_up b12)
+57.0: (move_block_up b12)
+58.0: (move_block_up b12)
+59.0: (move_block_up b12)
+60.0: (move_block_left b11)
+61.0: (move_block_right b23)
+62.0: (move_block_right b23)
+63.0: (move_block_right b23)
+64.0: (move_block_right b23)
+65.0: (move_block_right b2)
+66.0: (move_block_right b2)
+67.0: (move_block_right b2)
+68.0: (move_block_right b2)
+69.0: (move_block_up b5)
+70.0: (move_block_up b5)
+71.0: (move_block_up b5)
+72.0: (move_block_up b5)
+73.0: (move_block_right b17)
+74.0: (move_block_right b17)
+75.0: (move_block_right b17)
+76.0: (move_block_right b17)
+77.0: (move_block_right b4)
+78.0: (move_block_right b4)
+79.0: (move_block_right b4)
+80.0: (move_block_right b4)
+81.0: (move_block_right b4)
+82.0: (move_block_right b9)
+83.0: (move_block_right b9)
+84.0: (move_block_right b9)
+85.0: (move_block_right b9)
+86.0: (move_block_right b9)
+87.0: (move_block_right b9)
+88.0: (move_block_right b9)
+89.0: (move_block_right b19)
+90.0: (move_block_right b19)
+91.0: (move_block_right b19)
+92.0: (move_block_right b19)
+93.0: (move_block_right b19)
+94.0: (move_block_right b19)
+95.0: (move_block_right b19)
+96.0: (move_block_up b1)
+97.0: (move_block_up b1)
+98.0: (move_block_up b1)
+99.0: (move_block_right b7)
+100.0: (move_block_right b7)
+101.0: (move_block_right b7)
+102.0: (move_block_right b16)
+103.0: (move_block_right b16)
+104.0: (move_block_right b16)
+105.0: (move_block_right b16)
+106.0: (move_block_right b6)
+107.0: (move_block_right b6)
+108.0: (move_block_right b6)
+109.0: (move_block_left b25)
+110.0: (move_block_up b23)
+111.0: (move_block_up b11)
+112.0: (move_block_right b14)
+113.0: (move_block_right b14)
+114.0: (move_block_up b6)
+115.0: (move_block_up b9)
+116.0: (move_block_up b9)
+117.0: (move_block_up b9)
+118.0: (move_block_up b9)
+119.0: (move_block_up b9)
+120.0: (move_block_up b9)
+121.0: (move_block_up b9)
+122.0: (move_block_right b20)
+123.0: (move_block_right b3)
+124.0: (move_block_right b3)
+125.0: (move_block_right b6)
+126.0: (move_block_right b6)
+127.0: (move_block_right b3)
+128.0: (move_block_right b20)
+129.0: (move_block_right b6)
+130.0: (move_block_down b10)
+
+Plan-Length:131
+Metric (Search):131.0
+Planning Time (msec): 12429
+Heuristic Time (msec): 9737
+Search Time (msec): 10307
+Expanded Nodes:37
+States Evaluated:2110
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:0
+Number of Duplicates detected:8

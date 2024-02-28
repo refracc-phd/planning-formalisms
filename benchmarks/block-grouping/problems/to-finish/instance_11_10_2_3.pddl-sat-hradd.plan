@@ -1,0 +1,88 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 25
+Aibr Preprocessing
+|F|:0
+|X|:20
+|A|:40
+|P|:0
+|E|:0
+H1 Setup Time (msec): 174
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=4914.0
+ g(n)= 1.0 h(n)=4694.0
+ g(n)= 2.0 h(n)=4501.0
+ g(n)= 3.0 h(n)=4316.0
+ g(n)= 4.0 h(n)=4135.0
+ g(n)= 5.0 h(n)=3972.0
+ g(n)= 6.0 h(n)=3819.0
+ g(n)= 7.0 h(n)=3630.0
+ g(n)= 8.0 h(n)=3457.0
+ g(n)= 9.0 h(n)=3248.0
+ g(n)= 10.0 h(n)=3119.0
+ g(n)= 11.0 h(n)=2954.0
+ g(n)= 12.0 h(n)=2805.0
+ g(n)= 13.0 h(n)=2620.0
+ g(n)= 14.0 h(n)=2451.0
+ g(n)= 15.0 h(n)=2246.0
+ g(n)= 16.0 h(n)=2118.0
+ g(n)= 17.0 h(n)=2012.0
+ g(n)= 18.0 h(n)=1860.0
+ g(n)= 19.0 h(n)=1738.0
+ g(n)= 20.0 h(n)=1562.0
+ g(n)= 21.0 h(n)=1424.0
+ g(n)= 22.0 h(n)=1224.0
+ g(n)= 23.0 h(n)=1166.0
+ g(n)= 24.0 h(n)=1026.0
+ g(n)= 25.0 h(n)=944.0
+ g(n)= 26.0 h(n)=756.0
+ g(n)= 27.0 h(n)=650.0
+ g(n)= 28.0 h(n)=414.0
+ g(n)= 29.0 h(n)=284.0
+ g(n)= 30.0 h(n)=0.0
+Problem Solved
+
+Found Plan:
+0.0: (move_block_up b3)
+1.0: (move_block_right b2)
+2.0: (move_block_up b3)
+3.0: (move_block_right b7)
+4.0: (move_block_left b9)
+5.0: (move_block_right b8)
+6.0: (move_block_right b2)
+7.0: (move_block_down b10)
+8.0: (move_block_down b4)
+9.0: (move_block_right b7)
+10.0: (move_block_right b4)
+11.0: (move_block_right b8)
+12.0: (move_block_right b2)
+13.0: (move_block_down b10)
+14.0: (move_block_down b4)
+15.0: (move_block_up b2)
+16.0: (move_block_up b7)
+17.0: (move_block_up b3)
+18.0: (move_block_right b7)
+19.0: (move_block_right b4)
+20.0: (move_block_left b6)
+21.0: (move_block_left b1)
+22.0: (move_block_down b8)
+23.0: (move_block_down b6)
+24.0: (move_block_right b8)
+25.0: (move_block_right b2)
+26.0: (move_block_left b9)
+27.0: (move_block_left b3)
+28.0: (move_block_down b10)
+29.0: (move_block_down b4)
+
+Plan-Length:30
+Metric (Search):30.0
+Planning Time (msec): 3187
+Heuristic Time (msec): 1695
+Search Time (msec): 2083
+Expanded Nodes:31
+States Evaluated:1096
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:0
+Number of Duplicates detected:57

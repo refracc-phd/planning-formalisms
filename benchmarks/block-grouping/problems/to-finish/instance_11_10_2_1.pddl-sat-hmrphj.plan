@@ -1,0 +1,112 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 33
+Aibr Preprocessing
+|F|:0
+|X|:20
+|A|:40
+|P|:0
+|E|:0
+H1 Setup Time (msec): 18
+Wrong setting for break-ties. Arbitrary tie breaking
+Setting horizon to:NaN
+Helpful Action Pruning Activated
+Running Greedy Best First Search
+h(n = s_0)=83.0
+ g(n)= 6.0 h(n)=73.0
+ g(n)= 12.0 h(n)=63.0
+ g(n)= 15.0 h(n)=57.0
+ g(n)= 17.0 h(n)=51.0
+ g(n)= 22.0 h(n)=46.0
+ g(n)= 30.0 h(n)=38.0
+ g(n)= 35.0 h(n)=33.0
+ g(n)= 36.0 h(n)=29.0
+ g(n)= 37.0 h(n)=25.0
+ g(n)= 41.0 h(n)=21.0
+ g(n)= 46.0 h(n)=11.0
+ g(n)= 47.0 h(n)=8.0
+ g(n)= 48.0 h(n)=7.0
+ g(n)= 49.0 h(n)=6.0
+ g(n)= 50.0 h(n)=5.0
+ g(n)= 51.0 h(n)=4.0
+ g(n)= 55.0 h(n)=0.0
+JUMP for (move_block_up b8):4
+JUMP for (move_block_left b9):5
+JUMP for (move_block_left b3):4
+JUMP for (move_block_up b4):5
+JUMP for (move_block_left b10):8
+JUMP for (move_block_left b7):5
+JUMP for (move_block_down b1):2
+JUMP for (move_block_up b2):3
+JUMP for (move_block_left b4):6
+JUMP for (move_block_down b7):6
+Problem Solved
+
+Found Plan:
+0.0: (move_block_down b7)
+1.0: (move_block_down b7)
+2.0: (move_block_down b7)
+3.0: (move_block_down b7)
+4.0: (move_block_down b7)
+5.0: (move_block_down b7)
+6.0: (move_block_left b4)
+7.0: (move_block_left b4)
+8.0: (move_block_left b4)
+9.0: (move_block_left b4)
+10.0: (move_block_left b4)
+11.0: (move_block_left b4)
+12.0: (move_block_up b2)
+13.0: (move_block_up b2)
+14.0: (move_block_up b2)
+15.0: (move_block_down b1)
+16.0: (move_block_down b1)
+17.0: (move_block_left b7)
+18.0: (move_block_left b7)
+19.0: (move_block_left b7)
+20.0: (move_block_left b7)
+21.0: (move_block_left b7)
+22.0: (move_block_left b10)
+23.0: (move_block_left b10)
+24.0: (move_block_left b10)
+25.0: (move_block_left b10)
+26.0: (move_block_left b10)
+27.0: (move_block_left b10)
+28.0: (move_block_left b10)
+29.0: (move_block_left b10)
+30.0: (move_block_up b4)
+31.0: (move_block_up b4)
+32.0: (move_block_up b4)
+33.0: (move_block_up b4)
+34.0: (move_block_up b4)
+35.0: (move_block_up b10)
+36.0: (move_block_up b10)
+37.0: (move_block_left b3)
+38.0: (move_block_left b3)
+39.0: (move_block_left b3)
+40.0: (move_block_left b3)
+41.0: (move_block_left b9)
+42.0: (move_block_left b9)
+43.0: (move_block_left b9)
+44.0: (move_block_left b9)
+45.0: (move_block_left b9)
+46.0: (move_block_down b9)
+47.0: (move_block_left b10)
+48.0: (move_block_left b6)
+49.0: (move_block_left b7)
+50.0: (move_block_up b8)
+51.0: (move_block_up b8)
+52.0: (move_block_up b8)
+53.0: (move_block_up b8)
+54.0: (move_block_up b8)
+
+Plan-Length:55
+Metric (Search):55.0
+Planning Time (msec): 1394
+Heuristic Time (msec): 239
+Search Time (msec): 383
+Expanded Nodes:18
+States Evaluated:432
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:0
+Number of Duplicates detected:3
