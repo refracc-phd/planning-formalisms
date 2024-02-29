@@ -1,14 +1,14 @@
 Domain parsed
 Problem parsed
 Grounding..
-Grounding Time: 552
+Grounding Time: 579
 Aibr Preprocessing
 |F|:203
 |X|:0
 |A|:203
 |P|:0
 |E|:0
-H1 Setup Time (msec): 16
+H1 Setup Time (msec): 127
 Wrong setting for break-ties. Arbitrary tie breaking
 Setting horizon to:NaN
 Running Greedy Best First Search
@@ -192,18 +192,18 @@ h(n = s_0)=200.0
  g(n)= 523.0 h(n)=23.0
  g(n)= 524.0 h(n)=22.0
  g(n)= 525.0 h(n)=21.0
--------------Time: 10s ; Expanded Nodes: 9204 (Avg-Speed 920.0 n/s); Evaluated States: 98112
+-------------Time: 10s ; Expanded Nodes: 8058 (Avg-Speed 805.0 n/s); Evaluated States: 89076
  g(n)= 534.0 h(n)=20.0
  g(n)= 535.0 h(n)=19.0
  g(n)= 536.0 h(n)=18.0
--------------Time: 20s ; Expanded Nodes: 28217 (Avg-Speed 1410.0 n/s); Evaluated States: 232690
+-------------Time: 20s ; Expanded Nodes: 27917 (Avg-Speed 1395.0 n/s); Evaluated States: 230608
  g(n)= 567.0 h(n)=17.0
  g(n)= 568.0 h(n)=16.0
  g(n)= 569.0 h(n)=15.0
  g(n)= 578.0 h(n)=14.0
  g(n)= 579.0 h(n)=13.0
  g(n)= 580.0 h(n)=12.0
--------------Time: 30s ; Expanded Nodes: 51087 (Avg-Speed 1702.0 n/s); Evaluated States: 378849
+-------------Time: 30s ; Expanded Nodes: 54698 (Avg-Speed 1823.0 n/s); Evaluated States: 396848
  g(n)= 616.0 h(n)=11.0
  g(n)= 617.0 h(n)=10.0
  g(n)= 618.0 h(n)=9.0
@@ -897,9 +897,9 @@ Found Plan:
 
 Plan-Length:675
 Metric (Search):675.0
-Planning Time (msec): 37113
-Heuristic Time (msec): 31103
-Search Time (msec): 34552
+Planning Time (msec): 34334
+Heuristic Time (msec): 29004
+Search Time (msec): 32052
 Expanded Nodes:65446
 States Evaluated:449735
 Fixed constraint violations during search (zero-crossing):0

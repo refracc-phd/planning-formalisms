@@ -1,14 +1,14 @@
 Domain parsed
 Problem parsed
 Grounding..
-Grounding Time: 272
+Grounding Time: 278
 Aibr Preprocessing
 |F|:706
 |X|:0
 |A|:706
 |P|:0
 |E|:0
-H1 Setup Time (msec): 36
+H1 Setup Time (msec): 61
 Wrong setting for break-ties. Arbitrary tie breaking
 Setting horizon to:NaN
 Helpful Action Pruning Activated
@@ -297,7 +297,6 @@ h(n = s_0)=662.0
  g(n)= 281.0 h(n)=381.0
  g(n)= 282.0 h(n)=380.0
  g(n)= 283.0 h(n)=379.0
--------------Time: 10s ; Expanded Nodes: 284 (Avg-Speed 28.0 n/s); Evaluated States: 14278
  g(n)= 284.0 h(n)=378.0
  g(n)= 285.0 h(n)=377.0
  g(n)= 286.0 h(n)=376.0
@@ -364,6 +363,7 @@ h(n = s_0)=662.0
  g(n)= 347.0 h(n)=315.0
  g(n)= 348.0 h(n)=314.0
  g(n)= 349.0 h(n)=313.0
+-------------Time: 10s ; Expanded Nodes: 350 (Avg-Speed 35.0 n/s); Evaluated States: 17578
  g(n)= 350.0 h(n)=312.0
  g(n)= 351.0 h(n)=311.0
  g(n)= 352.0 h(n)=310.0
@@ -457,7 +457,6 @@ h(n = s_0)=662.0
  g(n)= 584.0 h(n)=222.0
  g(n)= 585.0 h(n)=221.0
  g(n)= 586.0 h(n)=220.0
--------------Time: 20s ; Expanded Nodes: 595 (Avg-Speed 29.0 n/s); Evaluated States: 29339
  g(n)= 595.0 h(n)=219.0
  g(n)= 604.0 h(n)=218.0
  g(n)= 613.0 h(n)=217.0
@@ -479,6 +478,7 @@ h(n = s_0)=662.0
  g(n)= 701.0 h(n)=201.0
  g(n)= 702.0 h(n)=200.0
  g(n)= 711.0 h(n)=199.0
+-------------Time: 20s ; Expanded Nodes: 715 (Avg-Speed 35.0 n/s); Evaluated States: 34393
  g(n)= 720.0 h(n)=198.0
  g(n)= 729.0 h(n)=197.0
  g(n)= 730.0 h(n)=196.0
@@ -545,7 +545,6 @@ h(n = s_0)=662.0
  g(n)= 1079.0 h(n)=135.0
  g(n)= 1088.0 h(n)=134.0
  g(n)= 1097.0 h(n)=133.0
--------------Time: 30s ; Expanded Nodes: 1101 (Avg-Speed 36.0 n/s); Evaluated States: 47285
  g(n)= 1106.0 h(n)=132.0
  g(n)= 1107.0 h(n)=131.0
  g(n)= 1108.0 h(n)=130.0
@@ -621,6 +620,7 @@ h(n = s_0)=662.0
  g(n)= 1514.0 h(n)=60.0
  g(n)= 1523.0 h(n)=59.0
  g(n)= 1532.0 h(n)=58.0
+-------------Time: 30s ; Expanded Nodes: 1541 (Avg-Speed 51.0 n/s); Evaluated States: 55715
  g(n)= 1541.0 h(n)=57.0
  g(n)= 1542.0 h(n)=56.0
  g(n)= 1543.0 h(n)=55.0
@@ -2547,9 +2547,9 @@ Found Plan:
 
 Plan-Length:1862
 Metric (Search):1862.0
-Planning Time (msec): 38073
-Heuristic Time (msec): 32702
-Search Time (msec): 33530
+Planning Time (msec): 33227
+Heuristic Time (msec): 29474
+Search Time (msec): 30641
 Expanded Nodes:1863
 States Evaluated:57653
 Fixed constraint violations during search (zero-crossing):0

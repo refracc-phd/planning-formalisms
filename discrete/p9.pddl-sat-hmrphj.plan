@@ -1,14 +1,14 @@
 Domain parsed
 Problem parsed
 Grounding..
-Grounding Time: 275
+Grounding Time: 340
 Aibr Preprocessing
 |F|:706
 |X|:0
 |A|:706
 |P|:0
 |E|:0
-H1 Setup Time (msec): 111
+H1 Setup Time (msec): 270
 Wrong setting for break-ties. Arbitrary tie breaking
 Setting horizon to:NaN
 Helpful Action Pruning Activated
@@ -207,7 +207,6 @@ h(n = s_0)=662.0
  g(n)= 191.0 h(n)=471.0
  g(n)= 192.0 h(n)=470.0
  g(n)= 193.0 h(n)=469.0
--------------Time: 10s ; Expanded Nodes: 194 (Avg-Speed 19.0 n/s); Evaluated States: 9778
  g(n)= 194.0 h(n)=468.0
  g(n)= 195.0 h(n)=467.0
  g(n)= 196.0 h(n)=466.0
@@ -305,6 +304,7 @@ h(n = s_0)=662.0
  g(n)= 288.0 h(n)=374.0
  g(n)= 289.0 h(n)=373.0
  g(n)= 290.0 h(n)=372.0
+-------------Time: 10s ; Expanded Nodes: 291 (Avg-Speed 29.0 n/s); Evaluated States: 14628
  g(n)= 291.0 h(n)=371.0
  g(n)= 292.0 h(n)=370.0
  g(n)= 293.0 h(n)=369.0
@@ -447,7 +447,6 @@ h(n = s_0)=662.0
  g(n)= 526.0 h(n)=232.0
  g(n)= 527.0 h(n)=231.0
  g(n)= 528.0 h(n)=230.0
--------------Time: 20s ; Expanded Nodes: 530 (Avg-Speed 26.0 n/s); Evaluated States: 26396
  g(n)= 537.0 h(n)=229.0
  g(n)= 546.0 h(n)=228.0
  g(n)= 555.0 h(n)=227.0
@@ -508,6 +507,7 @@ h(n = s_0)=662.0
  g(n)= 874.0 h(n)=172.0
  g(n)= 875.0 h(n)=171.0
  g(n)= 876.0 h(n)=170.0
+-------------Time: 20s ; Expanded Nodes: 882 (Avg-Speed 44.0 n/s); Evaluated States: 40602
  g(n)= 885.0 h(n)=169.0
  g(n)= 894.0 h(n)=168.0
  g(n)= 903.0 h(n)=167.0
@@ -640,7 +640,6 @@ h(n = s_0)=662.0
  g(n)= 1630.0 h(n)=40.0
  g(n)= 1639.0 h(n)=39.0
  g(n)= 1648.0 h(n)=38.0
--------------Time: 30s ; Expanded Nodes: 1655 (Avg-Speed 55.0 n/s); Evaluated States: 56809
  g(n)= 1657.0 h(n)=37.0
  g(n)= 1658.0 h(n)=36.0
  g(n)= 1659.0 h(n)=35.0
@@ -2547,9 +2546,9 @@ Found Plan:
 
 Plan-Length:1862
 Metric (Search):1862.0
-Planning Time (msec): 35900
-Heuristic Time (msec): 29443
-Search Time (msec): 30354
+Planning Time (msec): 35322
+Heuristic Time (msec): 25764
+Search Time (msec): 26903
 Expanded Nodes:1863
 States Evaluated:57653
 Fixed constraint violations during search (zero-crossing):0
