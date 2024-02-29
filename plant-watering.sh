@@ -7,4 +7,4 @@
 #SBATCH -e slurm.%j.err # STDERR
 #SBATCH --ntasks-per-node=5
 
-./enhsp.sh ./enhsp/enhsp.jar ./benchmarks/plant-watering/domain.pddl ./benchmarks/plant-watering/problems
+./enhsp.sh ./enhsp/enhsp.jar ./benchmarks/plant-watering/domain.pddl ./benchmarks/plant-watering/problems/to-finish
