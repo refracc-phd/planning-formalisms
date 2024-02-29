@@ -1,0 +1,142 @@
+! ====== ! Warning: Unknown planner configuration. Going with default: gbfs with hadd ! ====== !
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 37
+Aibr Preprocessing
+|F|:0
+|X|:9
+|A|:13
+|P|:0
+|E|:0
+H1 Setup Time (msec): 28
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=51.0
+ g(n)= 1.0 h(n)=41.0
+ g(n)= 2.0 h(n)=37.0
+ g(n)= 3.0 h(n)=33.0
+ g(n)= 5.0 h(n)=32.0
+ g(n)= 7.0 h(n)=31.0
+ g(n)= 9.0 h(n)=30.0
+ g(n)= 11.0 h(n)=29.0
+ g(n)= 13.0 h(n)=28.0
+ g(n)= 15.0 h(n)=27.0
+ g(n)= 17.0 h(n)=26.0
+ g(n)= 19.0 h(n)=25.0
+ g(n)= 21.0 h(n)=24.0
+ g(n)= 23.0 h(n)=23.0
+ g(n)= 24.0 h(n)=21.0
+ g(n)= 25.0 h(n)=19.0
+ g(n)= 27.0 h(n)=18.0
+ g(n)= 33.0 h(n)=17.0
+ g(n)= 39.0 h(n)=16.0
+ g(n)= 45.0 h(n)=15.0
+ g(n)= 51.0 h(n)=14.0
+ g(n)= 56.0 h(n)=13.0
+ g(n)= 60.0 h(n)=12.0
+ g(n)= 64.0 h(n)=11.0
+ g(n)= 68.0 h(n)=10.0
+ g(n)= 72.0 h(n)=9.0
+ g(n)= 76.0 h(n)=8.0
+ g(n)= 77.0 h(n)=6.0
+ g(n)= 78.0 h(n)=4.0
+ g(n)= 79.0 h(n)=2.0
+ g(n)= 81.0 h(n)=1.0
+ g(n)= 82.0 h(n)=0.0
+Problem Solved
+
+Found Plan:
+0.0: (move_up_left agent1)
+1.0: (move_up agent1)
+2.0: (load agent1 tap1)
+3.0: (load agent1 tap1)
+4.0: (pour agent1 plant1)
+5.0: (load agent1 tap1)
+6.0: (pour agent1 plant1)
+7.0: (load agent1 tap1)
+8.0: (pour agent1 plant1)
+9.0: (load agent1 tap1)
+10.0: (pour agent1 plant1)
+11.0: (load agent1 tap1)
+12.0: (pour agent1 plant1)
+13.0: (load agent1 tap1)
+14.0: (pour agent1 plant1)
+15.0: (load agent1 tap1)
+16.0: (pour agent1 plant1)
+17.0: (load agent1 tap1)
+18.0: (pour agent1 plant1)
+19.0: (load agent1 tap1)
+20.0: (pour agent1 plant1)
+21.0: (load agent1 tap1)
+22.0: (pour agent1 plant1)
+23.0: (load agent1 tap1)
+24.0: (move_down_left agent1)
+25.0: (move_down_left agent1)
+26.0: (pour agent1 plant3)
+27.0: (move_up_right agent1)
+28.0: (move_up_right agent1)
+29.0: (load agent1 tap1)
+30.0: (move_down_left agent1)
+31.0: (move_down_left agent1)
+32.0: (pour agent1 plant3)
+33.0: (move_up_right agent1)
+34.0: (move_up_right agent1)
+35.0: (load agent1 tap1)
+36.0: (move_down_left agent1)
+37.0: (move_down_left agent1)
+38.0: (pour agent1 plant2)
+39.0: (move_up_right agent1)
+40.0: (move_up_right agent1)
+41.0: (load agent1 tap1)
+42.0: (move_down_left agent1)
+43.0: (move_down_left agent1)
+44.0: (pour agent1 plant3)
+45.0: (move_up_right agent1)
+46.0: (move_up_right agent1)
+47.0: (load agent1 tap1)
+48.0: (move_down_left agent1)
+49.0: (move_down_left agent1)
+50.0: (pour agent1 plant3)
+51.0: (move_up_right agent1)
+52.0: (move_up_right agent1)
+53.0: (load agent1 tap1)
+54.0: (move_up_right agent1)
+55.0: (pour agent1 plant4)
+56.0: (move_down_left agent1)
+57.0: (load agent1 tap1)
+58.0: (move_up_right agent1)
+59.0: (pour agent1 plant4)
+60.0: (move_down_left agent1)
+61.0: (load agent1 tap1)
+62.0: (move_up_right agent1)
+63.0: (pour agent1 plant4)
+64.0: (move_down_left agent1)
+65.0: (load agent1 tap1)
+66.0: (move_up_right agent1)
+67.0: (pour agent1 plant4)
+68.0: (move_down_left agent1)
+69.0: (load agent1 tap1)
+70.0: (move_up_right agent1)
+71.0: (pour agent1 plant4)
+72.0: (move_down_left agent1)
+73.0: (load agent1 tap1)
+74.0: (move_up_right agent1)
+75.0: (pour agent1 plant4)
+76.0: (move_down_left agent1)
+77.0: (load agent1 tap1)
+78.0: (move_down_left agent1)
+79.0: (move_down_left agent1)
+80.0: (pour agent1 plant2)
+81.0: (pour agent1 plant2)
+
+Plan-Length:82
+Metric (Search):82.0
+Planning Time (msec): 1085
+Heuristic Time (msec): 126
+Search Time (msec): 226
+Expanded Nodes:366
+States Evaluated:814
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:38
+Number of Duplicates detected:1457
