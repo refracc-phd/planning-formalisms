@@ -30,7 +30,8 @@ heuristic_informativeness <- ggplot(df, aes(x = initial.heuristic.val, y = metri
   geom_point() +
   labs(x = "Initial Heuristic Value", y = "Actual Heuristic Value", title = "Comparison: Heuristic Informativeness", color = "Domain") +
   scale_x_log10() + # Add this line for log10 scaling
-  scale_colour_viridis_d(option = "turbo")+
+  scale_y_log10() + # Add this line for log10 scaling
+  scale_colour_viridis_d(option = "turbo") +
   theme(element_text(size = 18))
 
 heuristic_informativeness
@@ -77,10 +78,14 @@ grounding_time <- ggplot(df, aes(x = domain, y = mean(grounding.time), fill = do
 
 grounding_time
 
-states_eval_vs_search_time <- ggplot(df, aes(x = states.evaluated, y = search.time.msec, color = domain)) +
-  geom_line(show.legend = FALSE) + 
+states_eval_vs_search_time <- ggplot(df, aes(x = states.evaluated, y = search.time.msec, color = domain), log10="y") +
+  geom_point(show.legend = FALSE, size = 0.5) + 
+  geom_smooth(method = "GAM", formula = "y ~ x") +
   labs(x = "States Evaluated", y = "Search Time (msec)", title = "States Evaluated vs Search Time") +
-  facet_wrap(~domain, scales = "free")+
+  facet_wrap(~domain, scales = "free") +
+  scale_x_log10() + # Add this line for log10 scaling
+  scale_y_log10() + # Add this line for log10 scaling
+  scale_colour_viridis_d(option = "turbo") +
   theme(element_text(size = 18))
 
 states_eval_vs_search_time
