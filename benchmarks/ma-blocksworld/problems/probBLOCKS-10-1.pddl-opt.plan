@@ -1,0 +1,91 @@
+! ====== ! Warning: Unknown planner configuration. Going with default: gbfs with hadd ! ====== !
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 89
+Aibr Preprocessing
+|F|:164
+|X|:0
+|A|:880
+|P|:0
+|E|:0
+H1 Setup Time (msec): 74
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=62.0
+ g(n)= 1.0 h(n)=50.0
+ g(n)= 2.0 h(n)=41.0
+ g(n)= 3.0 h(n)=34.0
+ g(n)= 5.0 h(n)=29.0
+ g(n)= 7.0 h(n)=25.0
+ g(n)= 9.0 h(n)=22.0
+ g(n)= 10.0 h(n)=21.0
+ g(n)= 11.0 h(n)=19.0
+ g(n)= 12.0 h(n)=18.0
+ g(n)= 13.0 h(n)=16.0
+ g(n)= 14.0 h(n)=15.0
+ g(n)= 15.0 h(n)=14.0
+ g(n)= 17.0 h(n)=13.0
+ g(n)= 19.0 h(n)=12.0
+ g(n)= 22.0 h(n)=11.0
+ g(n)= 23.0 h(n)=9.0
+ g(n)= 33.0 h(n)=8.0
+ g(n)= 32.0 h(n)=7.0
+ g(n)= 33.0 h(n)=5.0
+ g(n)= 38.0 h(n)=3.0
+ g(n)= 39.0 h(n)=1.0
+ g(n)= 40.0 h(n)=0.0
+Problem Solved
+
+Found Plan:
+0.0: (unstack a3 c g)
+1.0: (unstack a4 g e)
+2.0: (unstack a1 e i)
+3.0: (put-down a4 g)
+4.0: (unstack a4 i j)
+5.0: (put-down a1 e)
+6.0: (unstack a2 f d)
+7.0: (put-down a2 f)
+8.0: (unstack a1 j a)
+9.0: (put-down a1 j)
+10.0: (unstack a1 d h)
+11.0: (stack a1 d f)
+12.0: (unstack a1 a b)
+13.0: (stack a1 a e)
+14.0: (stack a4 i a)
+15.0: (pick-up a1 h)
+16.0: (stack a1 h g)
+17.0: (pick-up a1 b)
+18.0: (stack a1 b d)
+19.0: (unstack a2 h g)
+20.0: (pick-up a1 g)
+21.0: (stack a1 g j)
+22.0: (stack a2 h g)
+23.0: (unstack a4 i a)
+24.0: (unstack a1 a e)
+25.0: (put-down a1 a)
+26.0: (stack a4 i a)
+27.0: (pick-up a1 e)
+28.0: (stack a1 e h)
+29.0: (unstack a1 i a)
+30.0: (pick-up a4 a)
+31.0: (stack a4 a e)
+32.0: (stack a1 i a)
+33.0: (unstack a4 b d)
+34.0: (unstack a1 d f)
+35.0: (pick-up a2 f)
+36.0: (stack a2 f i)
+37.0: (stack a1 d f)
+38.0: (stack a4 b d)
+39.0: (stack a3 c b)
+
+Plan-Length:40
+Metric (Search):40.0
+Planning Time (msec): 3525
+Heuristic Time (msec): 2146
+Search Time (msec): 2367
+Expanded Nodes:376
+States Evaluated:2742
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:0
+Number of Duplicates detected:2298

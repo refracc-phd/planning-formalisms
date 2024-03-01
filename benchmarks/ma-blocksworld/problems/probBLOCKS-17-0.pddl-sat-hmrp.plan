@@ -1,0 +1,299 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 141
+Aibr Preprocessing
+|F|:395
+|X|:0
+|A|:2448
+|P|:0
+|E|:0
+H1 Setup Time (msec): 375
+Wrong setting for break-ties. Arbitrary tie breaking
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=44.0
+ g(n)= 1.0 h(n)=40.0
+ g(n)= 5.0 h(n)=37.0
+ g(n)= 7.0 h(n)=36.0
+ g(n)= 9.0 h(n)=35.0
+ g(n)= 13.0 h(n)=34.0
+ g(n)= 14.0 h(n)=33.0
+ g(n)= 24.0 h(n)=32.0
+ g(n)= 25.0 h(n)=31.0
+ g(n)= 28.0 h(n)=30.0
+ g(n)= 28.0 h(n)=29.0
+ g(n)= 33.0 h(n)=28.0
+ g(n)= 37.0 h(n)=27.0
+ g(n)= 47.0 h(n)=26.0
+ g(n)= 48.0 h(n)=25.0
+ g(n)= 53.0 h(n)=24.0
+-------------Time: 10s ; Expanded Nodes: 636 (Avg-Speed 63.0 n/s); Evaluated States: 8471
+-------------Time: 20s ; Expanded Nodes: 1460 (Avg-Speed 73.0 n/s); Evaluated States: 18275
+ g(n)= 80.0 h(n)=23.0
+ g(n)= 81.0 h(n)=22.0
+ g(n)= 83.0 h(n)=21.0
+ g(n)= 85.0 h(n)=20.0
+ g(n)= 91.0 h(n)=19.0
+ g(n)= 99.0 h(n)=18.0
+-------------Time: 30s ; Expanded Nodes: 2488 (Avg-Speed 82.0 n/s); Evaluated States: 28212
+-------------Time: 40s ; Expanded Nodes: 3803 (Avg-Speed 95.0 n/s); Evaluated States: 38248
+-------------Time: 50s ; Expanded Nodes: 4979 (Avg-Speed 99.0 n/s); Evaluated States: 48258
+-------------Time: 60s ; Expanded Nodes: 5909 (Avg-Speed 98.0 n/s); Evaluated States: 56442
+-------------Time: 70s ; Expanded Nodes: 7020 (Avg-Speed 100.0 n/s); Evaluated States: 66058
+ g(n)= 120.0 h(n)=17.0
+-------------Time: 80s ; Expanded Nodes: 8702 (Avg-Speed 108.0 n/s); Evaluated States: 76239
+-------------Time: 90s ; Expanded Nodes: 10600 (Avg-Speed 117.0 n/s); Evaluated States: 86494
+-------------Time: 100s ; Expanded Nodes: 12537 (Avg-Speed 125.0 n/s); Evaluated States: 96781
+-------------Time: 110s ; Expanded Nodes: 14234 (Avg-Speed 129.0 n/s); Evaluated States: 107054
+-------------Time: 120s ; Expanded Nodes: 16156 (Avg-Speed 134.0 n/s); Evaluated States: 117684
+-------------Time: 130s ; Expanded Nodes: 17691 (Avg-Speed 136.0 n/s); Evaluated States: 128216
+-------------Time: 140s ; Expanded Nodes: 19397 (Avg-Speed 138.0 n/s); Evaluated States: 138901
+-------------Time: 150s ; Expanded Nodes: 21053 (Avg-Speed 140.0 n/s); Evaluated States: 149680
+-------------Time: 160s ; Expanded Nodes: 22533 (Avg-Speed 140.0 n/s); Evaluated States: 160363
+-------------Time: 170s ; Expanded Nodes: 24028 (Avg-Speed 141.0 n/s); Evaluated States: 171120
+-------------Time: 180s ; Expanded Nodes: 25444 (Avg-Speed 141.0 n/s); Evaluated States: 181775
+-------------Time: 190s ; Expanded Nodes: 26820 (Avg-Speed 141.0 n/s); Evaluated States: 192392
+-------------Time: 200s ; Expanded Nodes: 28169 (Avg-Speed 140.0 n/s); Evaluated States: 202827
+-------------Time: 210s ; Expanded Nodes: 29866 (Avg-Speed 142.0 n/s); Evaluated States: 213275
+-------------Time: 220s ; Expanded Nodes: 31145 (Avg-Speed 141.0 n/s); Evaluated States: 223783
+-------------Time: 230s ; Expanded Nodes: 32456 (Avg-Speed 141.0 n/s); Evaluated States: 234224
+-------------Time: 240s ; Expanded Nodes: 33924 (Avg-Speed 141.0 n/s); Evaluated States: 244657
+-------------Time: 250s ; Expanded Nodes: 35176 (Avg-Speed 140.0 n/s); Evaluated States: 255109
+ g(n)= 159.0 h(n)=16.0
+ g(n)= 160.0 h(n)=14.0
+ g(n)= 167.0 h(n)=13.0
+ g(n)= 168.0 h(n)=12.0
+ g(n)= 171.0 h(n)=11.0
+ g(n)= 172.0 h(n)=9.0
+-------------Time: 260s ; Expanded Nodes: 37231 (Avg-Speed 143.0 n/s); Evaluated States: 269841
+ g(n)= 195.0 h(n)=8.0
+ g(n)= 196.0 h(n)=6.0
+ g(n)= 205.0 h(n)=4.0
+ g(n)= 208.0 h(n)=2.0
+ g(n)= 209.0 h(n)=1.0
+ g(n)= 210.0 h(n)=0.0
+Problem Solved
+
+Found Plan:
+0.0: (pick-up a4 p)
+1.0: (unstack a2 q a)
+2.0: (unstack a3 a j)
+3.0: (stack a4 p l)
+4.0: (unstack a1 j i)
+5.0: (stack a3 a g)
+6.0: (unstack a4 i b)
+7.0: (stack a1 j a)
+8.0: (unstack a3 j a)
+9.0: (put-down a4 i)
+10.0: (unstack a1 p l)
+11.0: (put-down a3 j)
+12.0: (unstack a3 b m)
+13.0: (put-down a3 b)
+14.0: (pick-up a4 j)
+15.0: (stack a1 p a)
+16.0: (pick-up a3 m)
+17.0: (stack a3 m p)
+18.0: (pick-up a1 b)
+19.0: (put-down a4 j)
+20.0: (unstack a3 h n)
+21.0: (put-down a3 h)
+22.0: (unstack a4 l f)
+23.0: (pick-up a3 j)
+24.0: (stack a1 b i)
+25.0: (stack a3 j h)
+26.0: (pick-up a1 n)
+27.0: (stack a4 l m)
+28.0: (stack a1 n l)
+29.0: (unstack a1 f e)
+30.0: (put-down a1 f)
+31.0: (unstack a4 e k)
+32.0: (pick-up a3 k)
+33.0: (stack a2 q n)
+34.0: (put-down a4 e)
+35.0: (stack a3 k f)
+36.0: (unstack a3 q n)
+37.0: (pick-up a1 e)
+38.0: (unstack a2 n l)
+39.0: (put-down a2 n)
+40.0: (unstack a4 l m)
+41.0: (stack a3 q n)
+42.0: (stack a1 e m)
+43.0: (put-down a4 l)
+44.0: (unstack a4 q n)
+45.0: (pick-up a1 n)
+46.0: (stack a1 n l)
+47.0: (unstack a2 b i)
+48.0: (pick-up a3 i)
+49.0: (stack a3 i k)
+50.0: (stack a2 b i)
+51.0: (stack a4 q n)
+52.0: (unstack a4 j h)
+53.0: (unstack a2 e m)
+54.0: (unstack a1 m p)
+55.0: (put-down a1 m)
+56.0: (stack a2 e m)
+57.0: (unstack a2 p a)
+58.0: (unstack a1 b i)
+59.0: (put-down a1 b)
+60.0: (unstack a3 e m)
+61.0: (put-down a3 e)
+62.0: (stack a4 j h)
+63.0: (pick-up a1 m)
+64.0: (pick-up a3 b)
+65.0: (pick-up a4 e)
+66.0: (stack a4 e q)
+67.0: (stack a3 b i)
+68.0: (unstack a3 e q)
+69.0: (stack a3 e b)
+70.0: (unstack a4 a g)
+71.0: (put-down a4 a)
+72.0: (unstack a3 e b)
+73.0: (unstack a4 g d)
+74.0: (stack a4 g b)
+75.0: (put-down a1 m)
+76.0: (unstack a1 d c)
+77.0: (unstack a4 c o)
+78.0: (put-down a1 d)
+79.0: (stack a3 e m)
+80.0: (stack a4 c e)
+81.0: (pick-up a1 o)
+82.0: (stack a1 o j)
+83.0: (pick-up a4 a)
+84.0: (stack a4 a g)
+85.0: (unstack a1 q n)
+86.0: (unstack a4 n l)
+87.0: (pick-up a3 l)
+88.0: (stack a3 l o)
+89.0: (stack a4 n l)
+90.0: (stack a1 q n)
+91.0: (stack a2 p a)
+92.0: (unstack a1 c e)
+93.0: (unstack a4 e m)
+94.0: (pick-up a3 m)
+95.0: (stack a3 m p)
+96.0: (stack a4 e m)
+97.0: (stack a1 c e)
+98.0: (unstack a1 q n)
+99.0: (unstack a3 n l)
+100.0: (put-down a3 n)
+101.0: (unstack a2 l o)
+102.0: (unstack a3 o j)
+103.0: (put-down a3 o)
+104.0: (stack a2 l o)
+105.0: (pick-up a2 n)
+106.0: (stack a2 n l)
+107.0: (stack a1 q n)
+108.0: (unstack a2 q n)
+109.0: (unstack a1 c e)
+110.0: (put-down a1 c)
+111.0: (unstack a1 e m)
+112.0: (put-down a1 e)
+113.0: (stack a2 q n)
+114.0: (unstack a1 q n)
+115.0: (unstack a3 n l)
+116.0: (pick-up a2 c)
+117.0: (unstack a4 j h)
+118.0: (stack a2 c e)
+119.0: (pick-up a2 h)
+120.0: (stack a3 n l)
+121.0: (stack a2 h c)
+122.0: (stack a1 q n)
+123.0: (stack a4 j h)
+124.0: (unstack a4 q n)
+125.0: (unstack a3 n l)
+126.0: (unstack a1 l o)
+127.0: (put-down a1 l)
+128.0: (pick-up a2 o)
+129.0: (stack a2 o j)
+130.0: (put-down a3 n)
+131.0: (pick-up a1 l)
+132.0: (stack a1 l o)
+133.0: (pick-up a3 n)
+134.0: (stack a3 n l)
+135.0: (stack a4 q n)
+136.0: (unstack a3 m p)
+137.0: (unstack a2 p a)
+138.0: (put-down a2 p)
+139.0: (stack a3 m p)
+140.0: (unstack a3 a g)
+141.0: (unstack a2 g b)
+142.0: (put-down a2 g)
+143.0: (stack a3 a g)
+144.0: (unstack a3 m p)
+145.0: (pick-up a2 p)
+146.0: (stack a2 p a)
+147.0: (stack a3 m p)
+148.0: (unstack a1 b i)
+149.0: (unstack a4 i k)
+150.0: (put-down a4 i)
+151.0: (stack a1 b i)
+152.0: (unstack a3 k f)
+153.0: (pick-up a2 f)
+154.0: (stack a2 f d)
+155.0: (stack a3 k f)
+156.0: (unstack a2 b i)
+157.0: (pick-up a4 i)
+158.0: (stack a4 i k)
+159.0: (stack a2 b i)
+160.0: (unstack a1 m p)
+161.0: (unstack a2 p a)
+162.0: (put-down a2 p)
+163.0: (stack a1 m p)
+164.0: (unstack a4 a g)
+165.0: (pick-up a1 g)
+166.0: (stack a1 g b)
+167.0: (stack a4 a g)
+168.0: (unstack a1 m p)
+169.0: (pick-up a2 p)
+170.0: (stack a2 p a)
+171.0: (stack a1 m p)
+172.0: (unstack a1 q n)
+173.0: (unstack a2 n l)
+174.0: (unstack a4 l o)
+175.0: (put-down a4 l)
+176.0: (stack a2 n l)
+177.0: (unstack a2 o j)
+178.0: (unstack a4 j h)
+179.0: (put-down a4 j)
+180.0: (unstack a4 n l)
+181.0: (stack a2 o j)
+182.0: (pick-up a2 l)
+183.0: (stack a2 l o)
+184.0: (stack a4 n l)
+185.0: (stack a1 q n)
+186.0: (unstack a2 h c)
+187.0: (unstack a1 c e)
+188.0: (put-down a1 c)
+189.0: (stack a2 h c)
+190.0: (pick-up a1 e)
+191.0: (stack a1 e m)
+192.0: (unstack a2 h c)
+193.0: (pick-up a3 c)
+194.0: (stack a3 c e)
+195.0: (stack a2 h c)
+196.0: (unstack a1 q n)
+197.0: (unstack a4 n l)
+198.0: (unstack a2 l o)
+199.0: (put-down a2 l)
+200.0: (stack a4 n l)
+201.0: (unstack a4 o j)
+202.0: (pick-up a2 j)
+203.0: (stack a2 j h)
+204.0: (stack a4 o j)
+205.0: (unstack a2 n l)
+206.0: (pick-up a3 l)
+207.0: (stack a3 l o)
+208.0: (stack a2 n l)
+209.0: (stack a1 q n)
+
+Plan-Length:210
+Metric (Search):210.0
+Planning Time (msec): 262267
+Heuristic Time (msec): 255096
+Search Time (msec): 260503
+Expanded Nodes:37393
+States Evaluated:270880
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:0
+Number of Duplicates detected:301868

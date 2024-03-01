@@ -1,0 +1,117 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 287
+Aibr Preprocessing
+|F|:191
+|X|:0
+|A|:1056
+|P|:0
+|E|:0
+H1 Setup Time (msec): 118
+Wrong setting for break-ties. Arbitrary tie breaking
+Setting horizon to:NaN
+Helpful Action Pruning Activated
+Running Greedy Best First Search
+h(n = s_0)=23.0
+ g(n)= 2.0 h(n)=21.0
+ g(n)= 9.0 h(n)=20.0
+ g(n)= 10.0 h(n)=18.0
+ g(n)= 12.0 h(n)=17.0
+ g(n)= 15.0 h(n)=16.0
+ g(n)= 17.0 h(n)=13.0
+ g(n)= 21.0 h(n)=12.0
+ g(n)= 34.0 h(n)=10.0
+ g(n)= 40.0 h(n)=9.0
+ g(n)= 60.0 h(n)=8.0
+ g(n)= 63.0 h(n)=7.0
+ g(n)= 64.0 h(n)=5.0
+ g(n)= 70.0 h(n)=3.0
+ g(n)= 71.0 h(n)=1.0
+ g(n)= 72.0 h(n)=0.0
+Problem Solved
+
+Found Plan:
+0.0: (unstack a4 i e)
+1.0: (unstack a1 e g)
+2.0: (put-down a1 e)
+3.0: (stack a4 i g)
+4.0: (unstack a2 b h)
+5.0: (unstack a3 h k)
+6.0: (unstack a4 k f)
+7.0: (unstack a1 f c)
+8.0: (put-down a4 k)
+9.0: (stack a1 f k)
+10.0: (put-down a3 h)
+11.0: (stack a2 b h)
+12.0: (pick-up a2 e)
+13.0: (unstack a4 c d)
+14.0: (unstack a1 d j)
+15.0: (stack a2 e j)
+16.0: (stack a1 d e)
+17.0: (unstack a3 i g)
+18.0: (pick-up a2 g)
+19.0: (put-down a3 i)
+20.0: (put-down a4 c)
+21.0: (stack a2 g c)
+22.0: (pick-up a1 i)
+23.0: (stack a1 i g)
+24.0: (unstack a1 d e)
+25.0: (unstack a2 i g)
+26.0: (unstack a3 e j)
+27.0: (unstack a4 j a)
+28.0: (stack a2 i g)
+29.0: (stack a4 j b)
+30.0: (stack a3 e j)
+31.0: (stack a1 d e)
+32.0: (pick-up a2 a)
+33.0: (stack a2 a f)
+34.0: (unstack a3 i g)
+35.0: (unstack a1 g c)
+36.0: (pick-up a4 c)
+37.0: (put-down a1 g)
+38.0: (unstack a1 d e)
+39.0: (put-down a1 d)
+40.0: (stack a4 c d)
+41.0: (pick-up a4 g)
+42.0: (stack a4 g c)
+43.0: (stack a3 i g)
+44.0: (unstack a3 e j)
+45.0: (unstack a1 j b)
+46.0: (unstack a2 i g)
+47.0: (unstack a4 b h)
+48.0: (put-down a4 b)
+49.0: (stack a1 j b)
+50.0: (stack a3 e j)
+51.0: (pick-up a1 h)
+52.0: (stack a1 h a)
+53.0: (stack a2 i g)
+54.0: (unstack a1 e j)
+55.0: (unstack a4 j b)
+56.0: (put-down a4 j)
+57.0: (stack a1 e j)
+58.0: (pick-up a3 b)
+59.0: (stack a3 b h)
+60.0: (unstack a2 e j)
+61.0: (pick-up a1 j)
+62.0: (stack a1 j b)
+63.0: (stack a2 e j)
+64.0: (unstack a1 i g)
+65.0: (unstack a2 g c)
+66.0: (unstack a3 c d)
+67.0: (pick-up a4 d)
+68.0: (stack a4 d e)
+69.0: (stack a3 c d)
+70.0: (stack a2 g c)
+71.0: (stack a1 i g)
+
+Plan-Length:72
+Metric (Search):72.0
+Planning Time (msec): 6292
+Heuristic Time (msec): 4328
+Search Time (msec): 4807
+Expanded Nodes:1041
+States Evaluated:6096
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:0
+Number of Duplicates detected:4836

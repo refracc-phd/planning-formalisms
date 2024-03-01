@@ -1,0 +1,62 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 110
+Aibr Preprocessing
+|F|:76
+|X|:0
+|A|:336
+|P|:0
+|E|:0
+H1 Setup Time (msec): 96
+Wrong setting for break-ties. Arbitrary tie breaking
+Setting horizon to:NaN
+Helpful Action Pruning Activated
+Running Greedy Best First Search
+h(n = s_0)=15.0
+ g(n)= 1.0 h(n)=14.0
+ g(n)= 2.0 h(n)=13.0
+ g(n)= 3.0 h(n)=11.0
+ g(n)= 7.0 h(n)=10.0
+ g(n)= 9.0 h(n)=8.0
+ g(n)= 11.0 h(n)=6.0
+ g(n)= 15.0 h(n)=4.0
+ g(n)= 20.0 h(n)=3.0
+ g(n)= 21.0 h(n)=1.0
+ g(n)= 22.0 h(n)=0.0
+Problem Solved
+
+Found Plan:
+0.0: (unstack a3 a d)
+1.0: (unstack a2 d b)
+2.0: (stack a3 a b)
+3.0: (put-down a2 d)
+4.0: (unstack a2 a b)
+5.0: (unstack a3 b f)
+6.0: (unstack a4 f e)
+7.0: (unstack a1 e c)
+8.0: (stack a3 b c)
+9.0: (put-down a2 a)
+10.0: (stack a4 f a)
+11.0: (unstack a4 b c)
+12.0: (pick-up a2 c)
+13.0: (stack a2 c d)
+14.0: (stack a4 b c)
+15.0: (stack a1 e f)
+16.0: (unstack a2 e f)
+17.0: (unstack a3 f a)
+18.0: (pick-up a4 a)
+19.0: (stack a4 a b)
+20.0: (stack a3 f a)
+21.0: (stack a2 e f)
+
+Plan-Length:22
+Metric (Search):22.0
+Planning Time (msec): 1205
+Heuristic Time (msec): 164
+Search Time (msec): 269
+Expanded Nodes:65
+States Evaluated:256
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:0
+Number of Duplicates detected:137
