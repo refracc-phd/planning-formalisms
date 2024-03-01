@@ -1,0 +1,761 @@
+! ====== ! Warning: Unknown planner configuration. Going with default: gbfs with hadd ! ====== !
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 146920
+Aibr Preprocessing
+|F|:312
+|X|:0
+|A|:996
+|P|:0
+|E|:0
+H1 Setup Time (msec): 100
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=44.0
+ g(n)= 1.0 h(n)=37.0
+-------------Time: 10s ; Expanded Nodes: 6517 (Avg-Speed 651.0 n/s); Evaluated States: 18191
+-------------Time: 20s ; Expanded Nodes: 13638 (Avg-Speed 681.0 n/s); Evaluated States: 38501
+-------------Time: 30s ; Expanded Nodes: 21455 (Avg-Speed 715.0 n/s); Evaluated States: 59567
+ g(n)= 3.0 h(n)=35.0
+ g(n)= 4.0 h(n)=34.0
+ g(n)= 5.0 h(n)=31.0
+ g(n)= 6.0 h(n)=30.0
+-------------Time: 40s ; Expanded Nodes: 50923 (Avg-Speed 1273.0 n/s); Evaluated States: 81846
+-------------Time: 50s ; Expanded Nodes: 63467 (Avg-Speed 1269.0 n/s); Evaluated States: 107057
+-------------Time: 60s ; Expanded Nodes: 75337 (Avg-Speed 1255.0 n/s); Evaluated States: 133844
+-------------Time: 70s ; Expanded Nodes: 103744 (Avg-Speed 1482.0 n/s); Evaluated States: 163548
+-------------Time: 80s ; Expanded Nodes: 116114 (Avg-Speed 1451.0 n/s); Evaluated States: 191954
+-------------Time: 90s ; Expanded Nodes: 138084 (Avg-Speed 1534.0 n/s); Evaluated States: 222762
+-------------Time: 100s ; Expanded Nodes: 160420 (Avg-Speed 1604.0 n/s); Evaluated States: 245284
+-------------Time: 110s ; Expanded Nodes: 171503 (Avg-Speed 1559.0 n/s); Evaluated States: 266434
+-------------Time: 120s ; Expanded Nodes: 182737 (Avg-Speed 1522.0 n/s); Evaluated States: 288532
+-------------Time: 130s ; Expanded Nodes: 203998 (Avg-Speed 1569.0 n/s); Evaluated States: 312124
+-------------Time: 140s ; Expanded Nodes: 215723 (Avg-Speed 1540.0 n/s); Evaluated States: 337746
+-------------Time: 150s ; Expanded Nodes: 229191 (Avg-Speed 1527.0 n/s); Evaluated States: 362857
+-------------Time: 160s ; Expanded Nodes: 251321 (Avg-Speed 1570.0 n/s); Evaluated States: 388123
+-------------Time: 170s ; Expanded Nodes: 262616 (Avg-Speed 1544.0 n/s); Evaluated States: 412972
+-------------Time: 180s ; Expanded Nodes: 275192 (Avg-Speed 1528.0 n/s); Evaluated States: 438336
+-------------Time: 190s ; Expanded Nodes: 304691 (Avg-Speed 1603.0 n/s); Evaluated States: 465813
+-------------Time: 200s ; Expanded Nodes: 313690 (Avg-Speed 1568.0 n/s); Evaluated States: 490736
+-------------Time: 210s ; Expanded Nodes: 326548 (Avg-Speed 1554.0 n/s); Evaluated States: 516403
+ g(n)= 8.0 h(n)=28.0
+ g(n)= 9.0 h(n)=27.0
+ g(n)= 10.0 h(n)=24.0
+ g(n)= 11.0 h(n)=23.0
+ g(n)= 12.0 h(n)=22.0
+-------------Time: 220s ; Expanded Nodes: 357744 (Avg-Speed 1626.0 n/s); Evaluated States: 543259
+-------------Time: 230s ; Expanded Nodes: 372077 (Avg-Speed 1617.0 n/s); Evaluated States: 568759
+-------------Time: 240s ; Expanded Nodes: 387770 (Avg-Speed 1615.0 n/s); Evaluated States: 593921
+-------------Time: 250s ; Expanded Nodes: 410087 (Avg-Speed 1640.0 n/s); Evaluated States: 618887
+-------------Time: 260s ; Expanded Nodes: 424625 (Avg-Speed 1633.0 n/s); Evaluated States: 642144
+-------------Time: 270s ; Expanded Nodes: 440801 (Avg-Speed 1632.0 n/s); Evaluated States: 666413
+-------------Time: 280s ; Expanded Nodes: 461697 (Avg-Speed 1648.0 n/s); Evaluated States: 690426
+-------------Time: 290s ; Expanded Nodes: 476297 (Avg-Speed 1642.0 n/s); Evaluated States: 715125
+-------------Time: 300s ; Expanded Nodes: 492286 (Avg-Speed 1640.0 n/s); Evaluated States: 739699
+ g(n)= 14.0 h(n)=20.0
+ g(n)= 15.0 h(n)=19.0
+ g(n)= 16.0 h(n)=17.0
+ g(n)= 17.0 h(n)=16.0
+-------------Time: 310s ; Expanded Nodes: 517134 (Avg-Speed 1668.0 n/s); Evaluated States: 769705
+-------------Time: 320s ; Expanded Nodes: 537474 (Avg-Speed 1679.0 n/s); Evaluated States: 804005
+-------------Time: 330s ; Expanded Nodes: 567780 (Avg-Speed 1720.0 n/s); Evaluated States: 835453
+-------------Time: 340s ; Expanded Nodes: 585576 (Avg-Speed 1722.0 n/s); Evaluated States: 865347
+-------------Time: 350s ; Expanded Nodes: 612979 (Avg-Speed 1751.0 n/s); Evaluated States: 895053
+-------------Time: 360s ; Expanded Nodes: 630325 (Avg-Speed 1750.0 n/s); Evaluated States: 925336
+-------------Time: 370s ; Expanded Nodes: 649176 (Avg-Speed 1754.0 n/s); Evaluated States: 952709
+-------------Time: 380s ; Expanded Nodes: 670137 (Avg-Speed 1763.0 n/s); Evaluated States: 980771
+-------------Time: 390s ; Expanded Nodes: 687805 (Avg-Speed 1763.0 n/s); Evaluated States: 1010120
+ g(n)= 19.0 h(n)=14.0
+ g(n)= 20.0 h(n)=13.0
+ g(n)= 21.0 h(n)=11.0
+-------------Time: 400s ; Expanded Nodes: 718524 (Avg-Speed 1796.0 n/s); Evaluated States: 1039538
+-------------Time: 410s ; Expanded Nodes: 738901 (Avg-Speed 1802.0 n/s); Evaluated States: 1071382
+ g(n)= 23.0 h(n)=9.0
+ g(n)= 24.0 h(n)=8.0
+-------------Time: 420s ; Expanded Nodes: 767260 (Avg-Speed 1826.0 n/s); Evaluated States: 1103711
+-------------Time: 430s ; Expanded Nodes: 787957 (Avg-Speed 1832.0 n/s); Evaluated States: 1138531
+ g(n)= 26.0 h(n)=6.0
+ g(n)= 28.0 h(n)=4.0
+-------------Time: 440s ; Expanded Nodes: 820037 (Avg-Speed 1863.0 n/s); Evaluated States: 1177219
+-------------Time: 450s ; Expanded Nodes: 865176 (Avg-Speed 1922.0 n/s); Evaluated States: 1221585
+-------------Time: 460s ; Expanded Nodes: 891315 (Avg-Speed 1937.0 n/s); Evaluated States: 1255860
+-------------Time: 470s ; Expanded Nodes: 914524 (Avg-Speed 1945.0 n/s); Evaluated States: 1293242
+-------------Time: 480s ; Expanded Nodes: 941305 (Avg-Speed 1961.0 n/s); Evaluated States: 1329916
+-------------Time: 490s ; Expanded Nodes: 973203 (Avg-Speed 1986.0 n/s); Evaluated States: 1364574
+-------------Time: 500s ; Expanded Nodes: 994611 (Avg-Speed 1989.0 n/s); Evaluated States: 1399265
+-------------Time: 510s ; Expanded Nodes: 1018803 (Avg-Speed 1997.0 n/s); Evaluated States: 1436059
+-------------Time: 520s ; Expanded Nodes: 1038310 (Avg-Speed 1996.0 n/s); Evaluated States: 1468737
+-------------Time: 530s ; Expanded Nodes: 1075032 (Avg-Speed 2028.0 n/s); Evaluated States: 1498888
+-------------Time: 540s ; Expanded Nodes: 1096072 (Avg-Speed 2029.0 n/s); Evaluated States: 1530643
+-------------Time: 550s ; Expanded Nodes: 1127761 (Avg-Speed 2050.0 n/s); Evaluated States: 1562524
+-------------Time: 560s ; Expanded Nodes: 1148432 (Avg-Speed 2050.0 n/s); Evaluated States: 1595258
+-------------Time: 570s ; Expanded Nodes: 1177018 (Avg-Speed 2064.0 n/s); Evaluated States: 1626405
+-------------Time: 580s ; Expanded Nodes: 1201996 (Avg-Speed 2072.0 n/s); Evaluated States: 1663901
+-------------Time: 590s ; Expanded Nodes: 1231146 (Avg-Speed 2086.0 n/s); Evaluated States: 1701393
+-------------Time: 600s ; Expanded Nodes: 1254227 (Avg-Speed 2090.0 n/s); Evaluated States: 1736442
+-------------Time: 610s ; Expanded Nodes: 1273411 (Avg-Speed 2087.0 n/s); Evaluated States: 1769779
+-------------Time: 620s ; Expanded Nodes: 1317140 (Avg-Speed 2124.0 n/s); Evaluated States: 1802472
+-------------Time: 630s ; Expanded Nodes: 1340289 (Avg-Speed 2127.0 n/s); Evaluated States: 1835085
+-------------Time: 640s ; Expanded Nodes: 1360309 (Avg-Speed 2125.0 n/s); Evaluated States: 1867953
+-------------Time: 650s ; Expanded Nodes: 1380751 (Avg-Speed 2124.0 n/s); Evaluated States: 1900349
+-------------Time: 660s ; Expanded Nodes: 1422271 (Avg-Speed 2154.0 n/s); Evaluated States: 1930411
+-------------Time: 671s ; Expanded Nodes: 1454361 (Avg-Speed 2167.0 n/s); Evaluated States: 1961413
+-------------Time: 681s ; Expanded Nodes: 1473020 (Avg-Speed 2163.0 n/s); Evaluated States: 1992719
+-------------Time: 691s ; Expanded Nodes: 1507082 (Avg-Speed 2181.0 n/s); Evaluated States: 2022936
+-------------Time: 701s ; Expanded Nodes: 1531384 (Avg-Speed 2184.0 n/s); Evaluated States: 2057027
+-------------Time: 711s ; Expanded Nodes: 1568584 (Avg-Speed 2206.0 n/s); Evaluated States: 2086891
+-------------Time: 721s ; Expanded Nodes: 1589287 (Avg-Speed 2204.0 n/s); Evaluated States: 2119217
+-------------Time: 731s ; Expanded Nodes: 1618372 (Avg-Speed 2213.0 n/s); Evaluated States: 2148792
+-------------Time: 741s ; Expanded Nodes: 1642836 (Avg-Speed 2217.0 n/s); Evaluated States: 2180654
+-------------Time: 751s ; Expanded Nodes: 1662368 (Avg-Speed 2213.0 n/s); Evaluated States: 2212543
+-------------Time: 761s ; Expanded Nodes: 1691457 (Avg-Speed 2222.0 n/s); Evaluated States: 2242059
+-------------Time: 771s ; Expanded Nodes: 1720310 (Avg-Speed 2231.0 n/s); Evaluated States: 2274680
+-------------Time: 781s ; Expanded Nodes: 1746204 (Avg-Speed 2235.0 n/s); Evaluated States: 2308379
+-------------Time: 791s ; Expanded Nodes: 1774055 (Avg-Speed 2242.0 n/s); Evaluated States: 2340832
+-------------Time: 801s ; Expanded Nodes: 1791965 (Avg-Speed 2237.0 n/s); Evaluated States: 2371926
+-------------Time: 811s ; Expanded Nodes: 1841917 (Avg-Speed 2271.0 n/s); Evaluated States: 2400476
+-------------Time: 821s ; Expanded Nodes: 1856250 (Avg-Speed 2260.0 n/s); Evaluated States: 2435639
+-------------Time: 831s ; Expanded Nodes: 1877058 (Avg-Speed 2258.0 n/s); Evaluated States: 2468107
+-------------Time: 841s ; Expanded Nodes: 1912228 (Avg-Speed 2273.0 n/s); Evaluated States: 2499661
+-------------Time: 851s ; Expanded Nodes: 1945515 (Avg-Speed 2286.0 n/s); Evaluated States: 2531810
+-------------Time: 861s ; Expanded Nodes: 1980376 (Avg-Speed 2300.0 n/s); Evaluated States: 2563642
+-------------Time: 871s ; Expanded Nodes: 2002141 (Avg-Speed 2298.0 n/s); Evaluated States: 2594404
+-------------Time: 881s ; Expanded Nodes: 2028841 (Avg-Speed 2302.0 n/s); Evaluated States: 2625414
+-------------Time: 891s ; Expanded Nodes: 2049804 (Avg-Speed 2300.0 n/s); Evaluated States: 2658166
+-------------Time: 901s ; Expanded Nodes: 2089195 (Avg-Speed 2318.0 n/s); Evaluated States: 2688777
+-------------Time: 911s ; Expanded Nodes: 2105481 (Avg-Speed 2311.0 n/s); Evaluated States: 2721741
+-------------Time: 921s ; Expanded Nodes: 2143882 (Avg-Speed 2327.0 n/s); Evaluated States: 2752957
+-------------Time: 931s ; Expanded Nodes: 2159907 (Avg-Speed 2319.0 n/s); Evaluated States: 2785561
+-------------Time: 941s ; Expanded Nodes: 2197817 (Avg-Speed 2335.0 n/s); Evaluated States: 2817608
+-------------Time: 951s ; Expanded Nodes: 2218564 (Avg-Speed 2332.0 n/s); Evaluated States: 2849618
+-------------Time: 961s ; Expanded Nodes: 2248588 (Avg-Speed 2339.0 n/s); Evaluated States: 2882144
+-------------Time: 971s ; Expanded Nodes: 2269936 (Avg-Speed 2337.0 n/s); Evaluated States: 2915842
+-------------Time: 981s ; Expanded Nodes: 2300589 (Avg-Speed 2345.0 n/s); Evaluated States: 2946460
+-------------Time: 991s ; Expanded Nodes: 2331861 (Avg-Speed 2353.0 n/s); Evaluated States: 2977668
+-------------Time: 1001s ; Expanded Nodes: 2350878 (Avg-Speed 2348.0 n/s); Evaluated States: 3011435
+-------------Time: 1011s ; Expanded Nodes: 2386983 (Avg-Speed 2361.0 n/s); Evaluated States: 3044211
+-------------Time: 1021s ; Expanded Nodes: 2405845 (Avg-Speed 2356.0 n/s); Evaluated States: 3076825
+-------------Time: 1031s ; Expanded Nodes: 2441919 (Avg-Speed 2368.0 n/s); Evaluated States: 3108416
+-------------Time: 1041s ; Expanded Nodes: 2461922 (Avg-Speed 2364.0 n/s); Evaluated States: 3142527
+-------------Time: 1051s ; Expanded Nodes: 2495017 (Avg-Speed 2373.0 n/s); Evaluated States: 3174554
+-------------Time: 1061s ; Expanded Nodes: 2519480 (Avg-Speed 2374.0 n/s); Evaluated States: 3206443
+-------------Time: 1071s ; Expanded Nodes: 2550276 (Avg-Speed 2381.0 n/s); Evaluated States: 3239798
+-------------Time: 1081s ; Expanded Nodes: 2586091 (Avg-Speed 2392.0 n/s); Evaluated States: 3272306
+-------------Time: 1091s ; Expanded Nodes: 2608791 (Avg-Speed 2391.0 n/s); Evaluated States: 3302963
+-------------Time: 1101s ; Expanded Nodes: 2626564 (Avg-Speed 2385.0 n/s); Evaluated States: 3335302
+-------------Time: 1111s ; Expanded Nodes: 2646248 (Avg-Speed 2381.0 n/s); Evaluated States: 3367218
+-------------Time: 1121s ; Expanded Nodes: 2666064 (Avg-Speed 2378.0 n/s); Evaluated States: 3398684
+-------------Time: 1131s ; Expanded Nodes: 2717370 (Avg-Speed 2402.0 n/s); Evaluated States: 3427773
+-------------Time: 1141s ; Expanded Nodes: 2752035 (Avg-Speed 2411.0 n/s); Evaluated States: 3459848
+-------------Time: 1151s ; Expanded Nodes: 2783221 (Avg-Speed 2418.0 n/s); Evaluated States: 3490041
+-------------Time: 1161s ; Expanded Nodes: 2808052 (Avg-Speed 2418.0 n/s); Evaluated States: 3523082
+-------------Time: 1171s ; Expanded Nodes: 2839028 (Avg-Speed 2424.0 n/s); Evaluated States: 3555056
+-------------Time: 1181s ; Expanded Nodes: 2875552 (Avg-Speed 2434.0 n/s); Evaluated States: 3585771
+-------------Time: 1191s ; Expanded Nodes: 2895189 (Avg-Speed 2430.0 n/s); Evaluated States: 3618105
+-------------Time: 1201s ; Expanded Nodes: 2925752 (Avg-Speed 2436.0 n/s); Evaluated States: 3648909
+-------------Time: 1211s ; Expanded Nodes: 2961160 (Avg-Speed 2445.0 n/s); Evaluated States: 3697355
+-------------Time: 1221s ; Expanded Nodes: 2994389 (Avg-Speed 2452.0 n/s); Evaluated States: 3732846
+-------------Time: 1231s ; Expanded Nodes: 3017612 (Avg-Speed 2451.0 n/s); Evaluated States: 3768704
+-------------Time: 1241s ; Expanded Nodes: 3042022 (Avg-Speed 2451.0 n/s); Evaluated States: 3803739
+-------------Time: 1251s ; Expanded Nodes: 3075876 (Avg-Speed 2458.0 n/s); Evaluated States: 3837533
+-------------Time: 1261s ; Expanded Nodes: 3095965 (Avg-Speed 2455.0 n/s); Evaluated States: 3871347
+-------------Time: 1271s ; Expanded Nodes: 3120408 (Avg-Speed 2455.0 n/s); Evaluated States: 3905588
+-------------Time: 1281s ; Expanded Nodes: 3141277 (Avg-Speed 2452.0 n/s); Evaluated States: 3939224
+-------------Time: 1291s ; Expanded Nodes: 3161113 (Avg-Speed 2448.0 n/s); Evaluated States: 3972716
+-------------Time: 1301s ; Expanded Nodes: 3204228 (Avg-Speed 2462.0 n/s); Evaluated States: 4005783
+-------------Time: 1311s ; Expanded Nodes: 3227118 (Avg-Speed 2461.0 n/s); Evaluated States: 4037079
+-------------Time: 1321s ; Expanded Nodes: 3248543 (Avg-Speed 2459.0 n/s); Evaluated States: 4068391
+-------------Time: 1331s ; Expanded Nodes: 3281796 (Avg-Speed 2465.0 n/s); Evaluated States: 4100291
+-------------Time: 1341s ; Expanded Nodes: 3307542 (Avg-Speed 2466.0 n/s); Evaluated States: 4131692
+-------------Time: 1351s ; Expanded Nodes: 3335986 (Avg-Speed 2469.0 n/s); Evaluated States: 4167308
+-------------Time: 1361s ; Expanded Nodes: 3363681 (Avg-Speed 2471.0 n/s); Evaluated States: 4200175
+-------------Time: 1371s ; Expanded Nodes: 3387916 (Avg-Speed 2471.0 n/s); Evaluated States: 4233440
+-------------Time: 1381s ; Expanded Nodes: 3415399 (Avg-Speed 2473.0 n/s); Evaluated States: 4266209
+-------------Time: 1391s ; Expanded Nodes: 3442939 (Avg-Speed 2475.0 n/s); Evaluated States: 4300921
+-------------Time: 1401s ; Expanded Nodes: 3471740 (Avg-Speed 2478.0 n/s); Evaluated States: 4338229
+-------------Time: 1411s ; Expanded Nodes: 3495551 (Avg-Speed 2477.0 n/s); Evaluated States: 4373242
+-------------Time: 1421s ; Expanded Nodes: 3513560 (Avg-Speed 2472.0 n/s); Evaluated States: 4407600
+-------------Time: 1431s ; Expanded Nodes: 3557933 (Avg-Speed 2486.0 n/s); Evaluated States: 4439618
+-------------Time: 1441s ; Expanded Nodes: 3581636 (Avg-Speed 2485.0 n/s); Evaluated States: 4471735
+-------------Time: 1451s ; Expanded Nodes: 3621094 (Avg-Speed 2495.0 n/s); Evaluated States: 4503606
+-------------Time: 1461s ; Expanded Nodes: 3630659 (Avg-Speed 2485.0 n/s); Evaluated States: 4526656
+-------------Time: 1471s ; Expanded Nodes: 3655546 (Avg-Speed 2485.0 n/s); Evaluated States: 4556165
+-------------Time: 1481s ; Expanded Nodes: 3684043 (Avg-Speed 2487.0 n/s); Evaluated States: 4588599
+-------------Time: 1491s ; Expanded Nodes: 3720551 (Avg-Speed 2495.0 n/s); Evaluated States: 4620880
+-------------Time: 1501s ; Expanded Nodes: 3737100 (Avg-Speed 2489.0 n/s); Evaluated States: 4654118
+-------------Time: 1511s ; Expanded Nodes: 3770503 (Avg-Speed 2495.0 n/s); Evaluated States: 4685142
+-------------Time: 1521s ; Expanded Nodes: 3785876 (Avg-Speed 2489.0 n/s); Evaluated States: 4716168
+-------------Time: 1531s ; Expanded Nodes: 3806086 (Avg-Speed 2486.0 n/s); Evaluated States: 4747013
+-------------Time: 1541s ; Expanded Nodes: 3846636 (Avg-Speed 2496.0 n/s); Evaluated States: 4774681
+-------------Time: 1551s ; Expanded Nodes: 3866792 (Avg-Speed 2493.0 n/s); Evaluated States: 4806085
+-------------Time: 1561s ; Expanded Nodes: 3893567 (Avg-Speed 2494.0 n/s); Evaluated States: 4835929
+-------------Time: 1571s ; Expanded Nodes: 3922883 (Avg-Speed 2497.0 n/s); Evaluated States: 4867417
+-------------Time: 1581s ; Expanded Nodes: 3948198 (Avg-Speed 2497.0 n/s); Evaluated States: 4900565
+-------------Time: 1591s ; Expanded Nodes: 3979684 (Avg-Speed 2501.0 n/s); Evaluated States: 4931919
+-------------Time: 1601s ; Expanded Nodes: 4005394 (Avg-Speed 2501.0 n/s); Evaluated States: 4963202
+-------------Time: 1611s ; Expanded Nodes: 4023095 (Avg-Speed 2497.0 n/s); Evaluated States: 4995996
+-------------Time: 1621s ; Expanded Nodes: 4061639 (Avg-Speed 2505.0 n/s); Evaluated States: 5026884
+-------------Time: 1631s ; Expanded Nodes: 4094260 (Avg-Speed 2510.0 n/s); Evaluated States: 5058331
+-------------Time: 1641s ; Expanded Nodes: 4112494 (Avg-Speed 2506.0 n/s); Evaluated States: 5090894
+-------------Time: 1651s ; Expanded Nodes: 4145928 (Avg-Speed 2511.0 n/s); Evaluated States: 5123139
+-------------Time: 1661s ; Expanded Nodes: 4173640 (Avg-Speed 2512.0 n/s); Evaluated States: 5155011
+-------------Time: 1671s ; Expanded Nodes: 4202388 (Avg-Speed 2514.0 n/s); Evaluated States: 5186218
+-------------Time: 1681s ; Expanded Nodes: 4240361 (Avg-Speed 2522.0 n/s); Evaluated States: 5215834
+-------------Time: 1691s ; Expanded Nodes: 4253852 (Avg-Speed 2515.0 n/s); Evaluated States: 5246785
+-------------Time: 1701s ; Expanded Nodes: 4294695 (Avg-Speed 2524.0 n/s); Evaluated States: 5277424
+-------------Time: 1711s ; Expanded Nodes: 4308580 (Avg-Speed 2518.0 n/s); Evaluated States: 5312649
+-------------Time: 1721s ; Expanded Nodes: 4347370 (Avg-Speed 2526.0 n/s); Evaluated States: 5344457
+-------------Time: 1731s ; Expanded Nodes: 4367887 (Avg-Speed 2523.0 n/s); Evaluated States: 5376874
+-------------Time: 1741s ; Expanded Nodes: 4406696 (Avg-Speed 2531.0 n/s); Evaluated States: 5407385
+-------------Time: 1751s ; Expanded Nodes: 4430376 (Avg-Speed 2530.0 n/s); Evaluated States: 5438224
+-------------Time: 1761s ; Expanded Nodes: 4446977 (Avg-Speed 2525.0 n/s); Evaluated States: 5470079
+-------------Time: 1771s ; Expanded Nodes: 4468381 (Avg-Speed 2523.0 n/s); Evaluated States: 5500629
+-------------Time: 1781s ; Expanded Nodes: 4515915 (Avg-Speed 2535.0 n/s); Evaluated States: 5529427
+-------------Time: 1791s ; Expanded Nodes: 4532715 (Avg-Speed 2530.0 n/s); Evaluated States: 5558837
+-------------Time: 1801s ; Expanded Nodes: 4565026 (Avg-Speed 2534.0 n/s); Evaluated States: 5588952
+-------------Time: 1811s ; Expanded Nodes: 4599381 (Avg-Speed 2539.0 n/s); Evaluated States: 5621203
+-------------Time: 1821s ; Expanded Nodes: 4630305 (Avg-Speed 2542.0 n/s); Evaluated States: 5653476
+-------------Time: 1831s ; Expanded Nodes: 4657465 (Avg-Speed 2543.0 n/s); Evaluated States: 5683555
+-------------Time: 1841s ; Expanded Nodes: 4690388 (Avg-Speed 2547.0 n/s); Evaluated States: 5715530
+-------------Time: 1851s ; Expanded Nodes: 4709633 (Avg-Speed 2544.0 n/s); Evaluated States: 5747673
+-------------Time: 1861s ; Expanded Nodes: 4742371 (Avg-Speed 2548.0 n/s); Evaluated States: 5778760
+-------------Time: 1871s ; Expanded Nodes: 4759981 (Avg-Speed 2544.0 n/s); Evaluated States: 5812849
+-------------Time: 1881s ; Expanded Nodes: 4795041 (Avg-Speed 2549.0 n/s); Evaluated States: 5844765
+-------------Time: 1891s ; Expanded Nodes: 4815262 (Avg-Speed 2546.0 n/s); Evaluated States: 5877157
+-------------Time: 1901s ; Expanded Nodes: 4849597 (Avg-Speed 2551.0 n/s); Evaluated States: 5909815
+-------------Time: 1911s ; Expanded Nodes: 4887979 (Avg-Speed 2557.0 n/s); Evaluated States: 5942645
+-------------Time: 1921s ; Expanded Nodes: 4903305 (Avg-Speed 2552.0 n/s); Evaluated States: 5976217
+-------------Time: 1931s ; Expanded Nodes: 4943406 (Avg-Speed 2560.0 n/s); Evaluated States: 6007286
+-------------Time: 1941s ; Expanded Nodes: 4958025 (Avg-Speed 2554.0 n/s); Evaluated States: 6038552
+-------------Time: 1951s ; Expanded Nodes: 4979441 (Avg-Speed 2552.0 n/s); Evaluated States: 6069938
+-------------Time: 1961s ; Expanded Nodes: 5019560 (Avg-Speed 2559.0 n/s); Evaluated States: 6099976
+-------------Time: 1971s ; Expanded Nodes: 5039391 (Avg-Speed 2556.0 n/s); Evaluated States: 6132645
+-------------Time: 1981s ; Expanded Nodes: 5071950 (Avg-Speed 2560.0 n/s); Evaluated States: 6166442
+-------------Time: 1991s ; Expanded Nodes: 5107016 (Avg-Speed 2565.0 n/s); Evaluated States: 6198194
+-------------Time: 2001s ; Expanded Nodes: 5141023 (Avg-Speed 2569.0 n/s); Evaluated States: 6230570
+-------------Time: 2011s ; Expanded Nodes: 5155891 (Avg-Speed 2563.0 n/s); Evaluated States: 6263586
+-------------Time: 2021s ; Expanded Nodes: 5192466 (Avg-Speed 2569.0 n/s); Evaluated States: 6294232
+-------------Time: 2031s ; Expanded Nodes: 5215957 (Avg-Speed 2568.0 n/s); Evaluated States: 6324907
+-------------Time: 2041s ; Expanded Nodes: 5235650 (Avg-Speed 2565.0 n/s); Evaluated States: 6356603
+-------------Time: 2051s ; Expanded Nodes: 5269948 (Avg-Speed 2569.0 n/s); Evaluated States: 6387746
+-------------Time: 2061s ; Expanded Nodes: 5282899 (Avg-Speed 2563.0 n/s); Evaluated States: 6421461
+-------------Time: 2071s ; Expanded Nodes: 5300118 (Avg-Speed 2559.0 n/s); Evaluated States: 6453935
+-------------Time: 2081s ; Expanded Nodes: 5320817 (Avg-Speed 2556.0 n/s); Evaluated States: 6484834
+-------------Time: 2091s ; Expanded Nodes: 5349554 (Avg-Speed 2558.0 n/s); Evaluated States: 6513864
+-------------Time: 2101s ; Expanded Nodes: 5391939 (Avg-Speed 2566.0 n/s); Evaluated States: 6545172
+-------------Time: 2111s ; Expanded Nodes: 5429662 (Avg-Speed 2572.0 n/s); Evaluated States: 6576397
+-------------Time: 2121s ; Expanded Nodes: 5470553 (Avg-Speed 2579.0 n/s); Evaluated States: 6607358
+-------------Time: 2131s ; Expanded Nodes: 5485946 (Avg-Speed 2574.0 n/s); Evaluated States: 6639488
+-------------Time: 2141s ; Expanded Nodes: 5522119 (Avg-Speed 2579.0 n/s); Evaluated States: 6669495
+-------------Time: 2151s ; Expanded Nodes: 5537432 (Avg-Speed 2574.0 n/s); Evaluated States: 6702549
+-------------Time: 2161s ; Expanded Nodes: 5556972 (Avg-Speed 2571.0 n/s); Evaluated States: 6734387
+-------------Time: 2171s ; Expanded Nodes: 5597108 (Avg-Speed 2578.0 n/s); Evaluated States: 6765794
+-------------Time: 2181s ; Expanded Nodes: 5633316 (Avg-Speed 2582.0 n/s); Evaluated States: 6797899
+-------------Time: 2191s ; Expanded Nodes: 5672649 (Avg-Speed 2589.0 n/s); Evaluated States: 6828699
+-------------Time: 2201s ; Expanded Nodes: 5690869 (Avg-Speed 2585.0 n/s); Evaluated States: 6859876
+-------------Time: 2211s ; Expanded Nodes: 5727317 (Avg-Speed 2590.0 n/s); Evaluated States: 6890947
+-------------Time: 2221s ; Expanded Nodes: 5745265 (Avg-Speed 2586.0 n/s); Evaluated States: 6923707
+-------------Time: 2231s ; Expanded Nodes: 5776224 (Avg-Speed 2589.0 n/s); Evaluated States: 6956913
+-------------Time: 2241s ; Expanded Nodes: 5791851 (Avg-Speed 2584.0 n/s); Evaluated States: 6990029
+-------------Time: 2251s ; Expanded Nodes: 5812326 (Avg-Speed 2582.0 n/s); Evaluated States: 7022165
+-------------Time: 2261s ; Expanded Nodes: 5832795 (Avg-Speed 2579.0 n/s); Evaluated States: 7053088
+-------------Time: 2271s ; Expanded Nodes: 5883771 (Avg-Speed 2590.0 n/s); Evaluated States: 7078444
+-------------Time: 2281s ; Expanded Nodes: 5902790 (Avg-Speed 2587.0 n/s); Evaluated States: 7104852
+-------------Time: 2291s ; Expanded Nodes: 5926764 (Avg-Speed 2586.0 n/s); Evaluated States: 7133462
+-------------Time: 2301s ; Expanded Nodes: 5951509 (Avg-Speed 2586.0 n/s); Evaluated States: 7172125
+ g(n)= 31.0 h(n)=3.0
+ g(n)= 32.0 h(n)=2.0
+-------------Time: 2311s ; Expanded Nodes: 5986384 (Avg-Speed 2590.0 n/s); Evaluated States: 7213635
+-------------Time: 2321s ; Expanded Nodes: 6025283 (Avg-Speed 2595.0 n/s); Evaluated States: 7259841
+-------------Time: 2331s ; Expanded Nodes: 6062245 (Avg-Speed 2600.0 n/s); Evaluated States: 7306010
+-------------Time: 2341s ; Expanded Nodes: 6106832 (Avg-Speed 2608.0 n/s); Evaluated States: 7345869
+ g(n)= 34.0 h(n)=1.0
+ g(n)= 35.0 h(n)=0.0
+Problem Solved
+
+Found Plan:
+0.0: (move player-01 pos-07-03 pos-06-03 dir-left)
+1.0: (move player-01 pos-06-03 pos-05-03 dir-left)
+2.0: (move player-01 pos-05-03 pos-04-03 dir-left)
+3.0: (move player-01 pos-04-03 pos-04-02 dir-up)
+4.0: (move player-01 pos-04-02 pos-03-02 dir-left)
+5.0: (move player-01 pos-03-02 pos-02-02 dir-left)
+6.0: (move player-01 pos-02-02 pos-02-03 dir-down)
+7.0: (move player-01 pos-02-03 pos-02-04 dir-down)
+8.0: (move player-01 pos-02-04 pos-03-04 dir-right)
+9.0: (move player-01 pos-03-04 pos-03-05 dir-down)
+10.0: (move player-01 pos-03-05 pos-04-05 dir-right)
+11.0: (move player-01 pos-04-05 pos-04-06 dir-down)
+12.0: (move player-01 pos-04-06 pos-05-06 dir-right)
+13.0: (move player-01 pos-05-06 pos-06-06 dir-right)
+14.0: (move player-01 pos-06-06 pos-07-06 dir-right)
+15.0: (move player-01 pos-07-06 pos-07-05 dir-up)
+16.0: (move player-03 pos-08-06 pos-09-06 dir-right)
+17.0: (move player-03 pos-09-06 pos-10-06 dir-right)
+18.0: (move player-01 pos-07-05 pos-07-06 dir-down)
+19.0: (move player-01 pos-07-06 pos-06-06 dir-left)
+20.0: (move player-01 pos-06-06 pos-05-06 dir-left)
+21.0: (move player-01 pos-05-06 pos-04-06 dir-left)
+22.0: (move player-01 pos-04-06 pos-04-05 dir-up)
+23.0: (move player-01 pos-04-05 pos-03-05 dir-left)
+24.0: (move player-01 pos-03-05 pos-03-04 dir-up)
+25.0: (move player-01 pos-03-04 pos-02-04 dir-left)
+26.0: (move player-01 pos-02-04 pos-02-03 dir-up)
+27.0: (move player-01 pos-02-03 pos-02-02 dir-up)
+28.0: (move player-01 pos-02-02 pos-03-02 dir-right)
+29.0: (move player-01 pos-03-02 pos-04-02 dir-right)
+30.0: (move player-01 pos-04-02 pos-04-03 dir-down)
+31.0: (move player-01 pos-04-03 pos-05-03 dir-right)
+32.0: (move player-01 pos-05-03 pos-05-04 dir-down)
+33.0: (move player-01 pos-05-04 pos-06-04 dir-right)
+34.0: (move player-03 pos-10-06 pos-09-06 dir-left)
+35.0: (move player-02 pos-08-04 pos-08-03 dir-up)
+36.0: (move player-01 pos-06-04 pos-05-04 dir-left)
+37.0: (move player-01 pos-05-04 pos-05-03 dir-up)
+38.0: (move player-01 pos-05-03 pos-04-03 dir-left)
+39.0: (move player-01 pos-04-03 pos-04-02 dir-up)
+40.0: (move player-01 pos-04-02 pos-03-02 dir-left)
+41.0: (move player-01 pos-03-02 pos-02-02 dir-left)
+42.0: (move player-01 pos-02-02 pos-02-03 dir-down)
+43.0: (move player-01 pos-02-03 pos-02-04 dir-down)
+44.0: (move player-01 pos-02-04 pos-03-04 dir-right)
+45.0: (move player-01 pos-03-04 pos-03-05 dir-down)
+46.0: (move player-01 pos-03-05 pos-04-05 dir-right)
+47.0: (move player-01 pos-04-05 pos-04-06 dir-down)
+48.0: (move player-01 pos-04-06 pos-05-06 dir-right)
+49.0: (move player-01 pos-05-06 pos-06-06 dir-right)
+50.0: (move player-01 pos-06-06 pos-07-06 dir-right)
+51.0: (move player-01 pos-07-06 pos-08-06 dir-right)
+52.0: (push-to-nongoal player-01 stone-01 pos-08-06 pos-08-05 pos-08-04 dir-up)
+53.0: (move player-03 pos-09-06 pos-10-06 dir-right)
+54.0: (move player-03 pos-10-06 pos-11-06 dir-right)
+55.0: (move player-03 pos-11-06 pos-12-06 dir-right)
+56.0: (move player-02 pos-08-03 pos-09-03 dir-right)
+57.0: (move player-02 pos-09-03 pos-10-03 dir-right)
+58.0: (move player-01 pos-08-05 pos-07-05 dir-left)
+59.0: (move player-03 pos-12-06 pos-11-06 dir-left)
+60.0: (move player-02 pos-10-03 pos-10-02 dir-up)
+61.0: (move player-03 pos-11-06 pos-10-06 dir-left)
+62.0: (move player-03 pos-10-06 pos-09-06 dir-left)
+63.0: (move player-03 pos-09-06 pos-08-06 dir-left)
+64.0: (move player-01 pos-07-05 pos-07-06 dir-down)
+65.0: (move player-01 pos-07-06 pos-06-06 dir-left)
+66.0: (move player-03 pos-08-06 pos-07-06 dir-left)
+67.0: (move player-02 pos-10-02 pos-10-03 dir-down)
+68.0: (move player-01 pos-06-06 pos-05-06 dir-left)
+69.0: (move player-01 pos-05-06 pos-04-06 dir-left)
+70.0: (move player-03 pos-07-06 pos-06-06 dir-left)
+71.0: (move player-01 pos-04-06 pos-04-05 dir-up)
+72.0: (move player-01 pos-04-05 pos-03-05 dir-left)
+73.0: (move player-03 pos-06-06 pos-05-06 dir-left)
+74.0: (move player-01 pos-03-05 pos-03-04 dir-up)
+75.0: (move player-01 pos-03-04 pos-02-04 dir-left)
+76.0: (move player-02 pos-10-03 pos-09-03 dir-left)
+77.0: (move player-03 pos-05-06 pos-04-06 dir-left)
+78.0: (move player-01 pos-02-04 pos-02-03 dir-up)
+79.0: (move player-01 pos-02-03 pos-02-02 dir-up)
+80.0: (move player-01 pos-02-02 pos-03-02 dir-right)
+81.0: (move player-01 pos-03-02 pos-04-02 dir-right)
+82.0: (move player-03 pos-04-06 pos-04-05 dir-up)
+83.0: (move player-03 pos-04-05 pos-03-05 dir-left)
+84.0: (move player-03 pos-03-05 pos-03-04 dir-up)
+85.0: (move player-03 pos-03-04 pos-02-04 dir-left)
+86.0: (move player-03 pos-02-04 pos-02-03 dir-up)
+87.0: (move player-03 pos-02-03 pos-02-02 dir-up)
+88.0: (move player-03 pos-02-02 pos-03-02 dir-right)
+89.0: (move player-01 pos-04-02 pos-04-03 dir-down)
+90.0: (move player-03 pos-03-02 pos-04-02 dir-right)
+91.0: (move player-03 pos-04-02 pos-05-02 dir-right)
+92.0: (move player-03 pos-05-02 pos-06-02 dir-right)
+93.0: (move player-03 pos-06-02 pos-06-03 dir-down)
+94.0: (move player-03 pos-06-03 pos-06-04 dir-down)
+95.0: (move player-03 pos-06-04 pos-05-04 dir-left)
+96.0: (move player-01 pos-04-03 pos-05-03 dir-right)
+97.0: (move player-02 pos-09-03 pos-08-03 dir-left)
+98.0: (move player-03 pos-05-04 pos-06-04 dir-right)
+99.0: (move player-01 pos-05-03 pos-06-03 dir-right)
+100.0: (move player-02 pos-08-03 pos-08-02 dir-up)
+101.0: (move player-03 pos-06-04 pos-05-04 dir-left)
+102.0: (move player-03 pos-05-04 pos-05-03 dir-up)
+103.0: (move player-03 pos-05-03 pos-05-02 dir-up)
+104.0: (move player-01 pos-06-03 pos-05-03 dir-left)
+105.0: (move player-01 pos-05-03 pos-04-03 dir-left)
+106.0: (move player-03 pos-05-02 pos-04-02 dir-left)
+107.0: (move player-03 pos-04-02 pos-03-02 dir-left)
+108.0: (move player-01 pos-04-03 pos-04-02 dir-up)
+109.0: (move player-03 pos-03-02 pos-02-02 dir-left)
+110.0: (move player-03 pos-02-02 pos-02-03 dir-down)
+111.0: (move player-01 pos-04-02 pos-03-02 dir-left)
+112.0: (move player-02 pos-08-02 pos-09-02 dir-right)
+113.0: (move player-03 pos-02-03 pos-02-02 dir-up)
+114.0: (move player-02 pos-09-02 pos-10-02 dir-right)
+115.0: (move player-01 pos-03-02 pos-04-02 dir-right)
+116.0: (move player-03 pos-02-02 pos-02-03 dir-down)
+117.0: (move player-03 pos-02-03 pos-02-04 dir-down)
+118.0: (move player-03 pos-02-04 pos-03-04 dir-right)
+119.0: (move player-03 pos-03-04 pos-03-05 dir-down)
+120.0: (move player-03 pos-03-05 pos-04-05 dir-right)
+121.0: (move player-03 pos-04-05 pos-04-06 dir-down)
+122.0: (move player-01 pos-04-02 pos-03-02 dir-left)
+123.0: (move player-01 pos-03-02 pos-02-02 dir-left)
+124.0: (move player-03 pos-04-06 pos-04-05 dir-up)
+125.0: (move player-03 pos-04-05 pos-03-05 dir-left)
+126.0: (move player-03 pos-03-05 pos-03-04 dir-up)
+127.0: (move player-03 pos-03-04 pos-02-04 dir-left)
+128.0: (move player-01 pos-02-02 pos-02-03 dir-down)
+129.0: (move player-02 pos-10-02 pos-09-02 dir-left)
+130.0: (move player-03 pos-02-04 pos-03-04 dir-right)
+131.0: (move player-01 pos-02-03 pos-02-04 dir-down)
+132.0: (move player-02 pos-09-02 pos-10-02 dir-right)
+133.0: (move player-03 pos-03-04 pos-03-05 dir-down)
+134.0: (move player-01 pos-02-04 pos-03-04 dir-right)
+135.0: (move player-02 pos-10-02 pos-09-02 dir-left)
+136.0: (move player-02 pos-09-02 pos-08-02 dir-left)
+137.0: (move player-01 pos-03-04 pos-02-04 dir-left)
+138.0: (move player-03 pos-03-05 pos-04-05 dir-right)
+139.0: (move player-01 pos-02-04 pos-02-03 dir-up)
+140.0: (move player-03 pos-04-05 pos-04-06 dir-down)
+141.0: (move player-01 pos-02-03 pos-02-02 dir-up)
+142.0: (move player-03 pos-04-06 pos-05-06 dir-right)
+143.0: (move player-01 pos-02-02 pos-03-02 dir-right)
+144.0: (move player-03 pos-05-06 pos-06-06 dir-right)
+145.0: (move player-01 pos-03-02 pos-04-02 dir-right)
+146.0: (move player-01 pos-04-02 pos-04-03 dir-down)
+147.0: (move player-01 pos-04-03 pos-05-03 dir-right)
+148.0: (move player-01 pos-05-03 pos-05-04 dir-down)
+149.0: (move player-01 pos-05-04 pos-06-04 dir-right)
+150.0: (move player-03 pos-06-06 pos-05-06 dir-left)
+151.0: (move player-01 pos-06-04 pos-06-03 dir-up)
+152.0: (move player-03 pos-05-06 pos-04-06 dir-left)
+153.0: (move player-02 pos-08-02 pos-08-03 dir-down)
+154.0: (move player-01 pos-06-03 pos-06-02 dir-up)
+155.0: (move player-03 pos-04-06 pos-04-05 dir-up)
+156.0: (move player-03 pos-04-05 pos-03-05 dir-left)
+157.0: (move player-02 pos-08-03 pos-09-03 dir-right)
+158.0: (move player-03 pos-03-05 pos-03-04 dir-up)
+159.0: (move player-02 pos-09-03 pos-09-02 dir-up)
+160.0: (move player-02 pos-09-02 pos-10-02 dir-right)
+161.0: (move player-03 pos-03-04 pos-03-05 dir-down)
+162.0: (move player-03 pos-03-05 pos-04-05 dir-right)
+163.0: (move player-03 pos-04-05 pos-04-06 dir-down)
+164.0: (move player-02 pos-10-02 pos-10-03 dir-down)
+165.0: (move player-03 pos-04-06 pos-05-06 dir-right)
+166.0: (move player-03 pos-05-06 pos-06-06 dir-right)
+167.0: (move player-02 pos-10-03 pos-10-02 dir-up)
+168.0: (move player-03 pos-06-06 pos-07-06 dir-right)
+169.0: (move player-01 pos-06-02 pos-05-02 dir-left)
+170.0: (move player-02 pos-10-02 pos-10-03 dir-down)
+171.0: (move player-02 pos-10-03 pos-09-03 dir-left)
+172.0: (move player-03 pos-07-06 pos-07-05 dir-up)
+173.0: (move player-03 pos-07-05 pos-08-05 dir-right)
+174.0: (move player-02 pos-09-03 pos-10-03 dir-right)
+175.0: (push-to-nongoal player-03 stone-01 pos-08-05 pos-08-04 pos-08-03 dir-up)
+176.0: (move player-03 pos-08-04 pos-08-05 dir-down)
+177.0: (move player-02 pos-10-03 pos-09-03 dir-left)
+178.0: (push-to-nongoal player-02 stone-01 pos-09-03 pos-08-03 pos-07-03 dir-left)
+179.0: (push-to-nongoal player-02 stone-01 pos-08-03 pos-07-03 pos-06-03 dir-left)
+180.0: (push-to-nongoal player-02 stone-01 pos-07-03 pos-06-03 pos-05-03 dir-left)
+181.0: (push-to-goal player-02 stone-01 pos-06-03 pos-05-03 pos-04-03 dir-left)
+182.0: (move player-03 pos-08-05 pos-08-04 dir-up)
+183.0: (move player-03 pos-08-04 pos-08-03 dir-up)
+184.0: (move player-03 pos-08-03 pos-07-03 dir-left)
+185.0: (move player-03 pos-07-03 pos-06-03 dir-left)
+186.0: (move player-03 pos-06-03 pos-06-02 dir-up)
+187.0: (move player-02 pos-05-03 pos-06-03 dir-right)
+188.0: (move player-02 pos-06-03 pos-07-03 dir-right)
+189.0: (move player-01 pos-05-02 pos-05-03 dir-down)
+190.0: (move player-01 pos-05-03 pos-05-04 dir-down)
+191.0: (move player-03 pos-06-02 pos-05-02 dir-left)
+192.0: (move player-01 pos-05-04 pos-06-04 dir-right)
+193.0: (move player-02 pos-07-03 pos-08-03 dir-right)
+194.0: (move player-03 pos-05-02 pos-06-02 dir-right)
+195.0: (move player-02 pos-08-03 pos-09-03 dir-right)
+196.0: (move player-02 pos-09-03 pos-09-02 dir-up)
+197.0: (move player-01 pos-06-04 pos-06-03 dir-up)
+198.0: (move player-02 pos-09-02 pos-10-02 dir-right)
+199.0: (move player-03 pos-06-02 pos-05-02 dir-left)
+200.0: (move player-01 pos-06-03 pos-07-03 dir-right)
+201.0: (move player-01 pos-07-03 pos-08-03 dir-right)
+202.0: (move player-02 pos-10-02 pos-10-03 dir-down)
+203.0: (move player-03 pos-05-02 pos-06-02 dir-right)
+204.0: (move player-01 pos-08-03 pos-09-03 dir-right)
+205.0: (move player-03 pos-06-02 pos-06-03 dir-down)
+206.0: (move player-03 pos-06-03 pos-07-03 dir-right)
+207.0: (move player-03 pos-07-03 pos-08-03 dir-right)
+208.0: (move player-03 pos-08-03 pos-08-04 dir-down)
+209.0: (move player-03 pos-08-04 pos-08-05 dir-down)
+210.0: (move player-03 pos-08-05 pos-08-06 dir-down)
+211.0: (move player-01 pos-09-03 pos-09-02 dir-up)
+212.0: (move player-03 pos-08-06 pos-09-06 dir-right)
+213.0: (move player-02 pos-10-03 pos-09-03 dir-left)
+214.0: (move player-01 pos-09-02 pos-10-02 dir-right)
+215.0: (move player-01 pos-10-02 pos-10-03 dir-down)
+216.0: (move player-02 pos-09-03 pos-09-02 dir-up)
+217.0: (move player-02 pos-09-02 pos-10-02 dir-right)
+218.0: (move player-03 pos-09-06 pos-10-06 dir-right)
+219.0: (move player-03 pos-10-06 pos-10-05 dir-up)
+220.0: (move player-02 pos-10-02 pos-09-02 dir-left)
+221.0: (move player-01 pos-10-03 pos-09-03 dir-left)
+222.0: (move player-03 pos-10-05 pos-10-06 dir-down)
+223.0: (move player-03 pos-10-06 pos-11-06 dir-right)
+224.0: (move player-03 pos-11-06 pos-12-06 dir-right)
+225.0: (move player-03 pos-12-06 pos-12-05 dir-up)
+226.0: (move player-02 pos-09-02 pos-08-02 dir-left)
+227.0: (move player-01 pos-09-03 pos-10-03 dir-right)
+228.0: (move player-03 pos-12-05 pos-12-06 dir-down)
+229.0: (move player-03 pos-12-06 pos-11-06 dir-left)
+230.0: (move player-03 pos-11-06 pos-10-06 dir-left)
+231.0: (move player-01 pos-10-03 pos-10-02 dir-up)
+232.0: (move player-01 pos-10-02 pos-09-02 dir-left)
+233.0: (move player-03 pos-10-06 pos-11-06 dir-right)
+234.0: (move player-03 pos-11-06 pos-12-06 dir-right)
+235.0: (move player-03 pos-12-06 pos-13-06 dir-right)
+236.0: (move player-03 pos-13-06 pos-14-06 dir-right)
+237.0: (move player-01 pos-09-02 pos-09-03 dir-down)
+238.0: (move player-02 pos-08-02 pos-08-03 dir-down)
+239.0: (move player-03 pos-14-06 pos-13-06 dir-left)
+240.0: (move player-03 pos-13-06 pos-12-06 dir-left)
+241.0: (move player-03 pos-12-06 pos-11-06 dir-left)
+242.0: (move player-02 pos-08-03 pos-08-04 dir-down)
+243.0: (move player-01 pos-09-03 pos-10-03 dir-right)
+244.0: (move player-01 pos-10-03 pos-10-02 dir-up)
+245.0: (move player-02 pos-08-04 pos-08-05 dir-down)
+246.0: (move player-03 pos-11-06 pos-12-06 dir-right)
+247.0: (move player-03 pos-12-06 pos-12-05 dir-up)
+248.0: (move player-01 pos-10-02 pos-10-03 dir-down)
+249.0: (move player-02 pos-08-05 pos-08-04 dir-up)
+250.0: (move player-01 pos-10-03 pos-09-03 dir-left)
+251.0: (move player-01 pos-09-03 pos-08-03 dir-left)
+252.0: (move player-03 pos-12-05 pos-12-06 dir-down)
+253.0: (move player-03 pos-12-06 pos-13-06 dir-right)
+254.0: (move player-03 pos-13-06 pos-14-06 dir-right)
+255.0: (move player-03 pos-14-06 pos-14-05 dir-up)
+256.0: (move player-02 pos-08-04 pos-08-05 dir-down)
+257.0: (move player-02 pos-08-05 pos-08-06 dir-down)
+258.0: (move player-01 pos-08-03 pos-07-03 dir-left)
+259.0: (move player-02 pos-08-06 pos-07-06 dir-left)
+260.0: (move player-03 pos-14-05 pos-14-06 dir-down)
+261.0: (move player-02 pos-07-06 pos-06-06 dir-left)
+262.0: (move player-02 pos-06-06 pos-05-06 dir-left)
+263.0: (move player-02 pos-05-06 pos-04-06 dir-left)
+264.0: (move player-02 pos-04-06 pos-04-05 dir-up)
+265.0: (move player-02 pos-04-05 pos-03-05 dir-left)
+266.0: (move player-02 pos-03-05 pos-03-04 dir-up)
+267.0: (move player-02 pos-03-04 pos-02-04 dir-left)
+268.0: (move player-02 pos-02-04 pos-02-03 dir-up)
+269.0: (move player-02 pos-02-03 pos-02-02 dir-up)
+270.0: (move player-02 pos-02-02 pos-03-02 dir-right)
+271.0: (move player-03 pos-14-06 pos-13-06 dir-left)
+272.0: (move player-03 pos-13-06 pos-12-06 dir-left)
+273.0: (move player-02 pos-03-02 pos-02-02 dir-left)
+274.0: (move player-03 pos-12-06 pos-12-05 dir-up)
+275.0: (move player-02 pos-02-02 pos-02-03 dir-down)
+276.0: (move player-01 pos-07-03 pos-08-03 dir-right)
+277.0: (move player-02 pos-02-03 pos-02-04 dir-down)
+278.0: (move player-02 pos-02-04 pos-03-04 dir-right)
+279.0: (move player-02 pos-03-04 pos-03-05 dir-down)
+280.0: (move player-02 pos-03-05 pos-04-05 dir-right)
+281.0: (move player-02 pos-04-05 pos-04-06 dir-down)
+282.0: (move player-02 pos-04-06 pos-05-06 dir-right)
+283.0: (move player-02 pos-05-06 pos-06-06 dir-right)
+284.0: (move player-01 pos-08-03 pos-08-02 dir-up)
+285.0: (move player-03 pos-12-05 pos-12-06 dir-down)
+286.0: (move player-02 pos-06-06 pos-05-06 dir-left)
+287.0: (move player-02 pos-05-06 pos-04-06 dir-left)
+288.0: (move player-02 pos-04-06 pos-04-05 dir-up)
+289.0: (move player-02 pos-04-05 pos-03-05 dir-left)
+290.0: (move player-02 pos-03-05 pos-03-04 dir-up)
+291.0: (move player-02 pos-03-04 pos-02-04 dir-left)
+292.0: (move player-02 pos-02-04 pos-02-03 dir-up)
+293.0: (move player-02 pos-02-03 pos-02-02 dir-up)
+294.0: (move player-02 pos-02-02 pos-03-02 dir-right)
+295.0: (move player-03 pos-12-06 pos-11-06 dir-left)
+296.0: (move player-01 pos-08-02 pos-09-02 dir-right)
+297.0: (move player-02 pos-03-02 pos-02-02 dir-left)
+298.0: (move player-02 pos-02-02 pos-02-03 dir-down)
+299.0: (move player-01 pos-09-02 pos-10-02 dir-right)
+300.0: (move player-03 pos-11-06 pos-12-06 dir-right)
+301.0: (move player-02 pos-02-03 pos-02-02 dir-up)
+302.0: (move player-02 pos-02-02 pos-03-02 dir-right)
+303.0: (move player-02 pos-03-02 pos-04-02 dir-right)
+304.0: (move player-03 pos-12-06 pos-13-06 dir-right)
+305.0: (move player-01 pos-10-02 pos-09-02 dir-left)
+306.0: (move player-02 pos-04-02 pos-05-02 dir-right)
+307.0: (move player-02 pos-05-02 pos-06-02 dir-right)
+308.0: (move player-03 pos-13-06 pos-14-06 dir-right)
+309.0: (move player-03 pos-14-06 pos-14-05 dir-up)
+310.0: (move player-01 pos-09-02 pos-08-02 dir-left)
+311.0: (move player-01 pos-08-02 pos-08-03 dir-down)
+312.0: (move player-03 pos-14-05 pos-14-06 dir-down)
+313.0: (move player-03 pos-14-06 pos-13-06 dir-left)
+314.0: (move player-03 pos-13-06 pos-12-06 dir-left)
+315.0: (move player-01 pos-08-03 pos-08-04 dir-down)
+316.0: (move player-02 pos-06-02 pos-05-02 dir-left)
+317.0: (move player-02 pos-05-02 pos-04-02 dir-left)
+318.0: (move player-03 pos-12-06 pos-13-06 dir-right)
+319.0: (move player-02 pos-04-02 pos-03-02 dir-left)
+320.0: (move player-03 pos-13-06 pos-14-06 dir-right)
+321.0: (move player-03 pos-14-06 pos-14-05 dir-up)
+322.0: (move player-02 pos-03-02 pos-02-02 dir-left)
+323.0: (move player-02 pos-02-02 pos-02-03 dir-down)
+324.0: (move player-02 pos-02-03 pos-02-04 dir-down)
+325.0: (move player-01 pos-08-04 pos-08-05 dir-down)
+326.0: (move player-01 pos-08-05 pos-07-05 dir-left)
+327.0: (move player-03 pos-14-05 pos-14-06 dir-down)
+328.0: (move player-02 pos-02-04 pos-02-03 dir-up)
+329.0: (move player-03 pos-14-06 pos-13-06 dir-left)
+330.0: (move player-02 pos-02-03 pos-02-02 dir-up)
+331.0: (move player-02 pos-02-02 pos-03-02 dir-right)
+332.0: (move player-02 pos-03-02 pos-04-02 dir-right)
+333.0: (move player-03 pos-13-06 pos-12-06 dir-left)
+334.0: (move player-01 pos-07-05 pos-07-06 dir-down)
+335.0: (move player-01 pos-07-06 pos-08-06 dir-right)
+336.0: (move player-01 pos-08-06 pos-09-06 dir-right)
+337.0: (move player-03 pos-12-06 pos-11-06 dir-left)
+338.0: (move player-03 pos-11-06 pos-10-06 dir-left)
+339.0: (move player-02 pos-04-02 pos-05-02 dir-right)
+340.0: (move player-03 pos-10-06 pos-10-05 dir-up)
+341.0: (move player-01 pos-09-06 pos-08-06 dir-left)
+342.0: (push-to-nongoal player-03 stone-02 pos-10-05 pos-09-05 pos-08-05 dir-left)
+343.0: (push-to-nongoal player-01 stone-02 pos-08-06 pos-08-05 pos-08-04 dir-up)
+344.0: (move player-01 pos-08-05 pos-08-06 dir-down)
+345.0: (move player-02 pos-05-02 pos-04-02 dir-left)
+346.0: (move player-02 pos-04-02 pos-03-02 dir-left)
+347.0: (move player-01 pos-08-06 pos-09-06 dir-right)
+348.0: (move player-01 pos-09-06 pos-10-06 dir-right)
+349.0: (move player-01 pos-10-06 pos-11-06 dir-right)
+350.0: (move player-01 pos-11-06 pos-12-06 dir-right)
+351.0: (move player-01 pos-12-06 pos-12-05 dir-up)
+352.0: (push-to-nongoal player-01 stone-03 pos-12-05 pos-11-05 pos-10-05 dir-left)
+353.0: (move player-03 pos-09-05 pos-09-06 dir-down)
+354.0: (push-to-nongoal player-01 stone-03 pos-11-05 pos-10-05 pos-09-05 dir-left)
+355.0: (move player-01 pos-10-05 pos-11-05 dir-right)
+356.0: (move player-01 pos-11-05 pos-12-05 dir-right)
+357.0: (move player-01 pos-12-05 pos-12-06 dir-down)
+358.0: (move player-03 pos-09-06 pos-10-06 dir-right)
+359.0: (move player-01 pos-12-06 pos-13-06 dir-right)
+360.0: (move player-01 pos-13-06 pos-14-06 dir-right)
+361.0: (move player-03 pos-10-06 pos-09-06 dir-left)
+362.0: (move player-01 pos-14-06 pos-14-05 dir-up)
+363.0: (push-to-nongoal player-01 stone-04 pos-14-05 pos-13-05 pos-12-05 dir-left)
+364.0: (push-to-nongoal player-01 stone-04 pos-13-05 pos-12-05 pos-11-05 dir-left)
+365.0: (move player-02 pos-03-02 pos-04-02 dir-right)
+366.0: (move player-01 pos-12-05 pos-13-05 dir-right)
+367.0: (move player-01 pos-13-05 pos-14-05 dir-right)
+368.0: (move player-02 pos-04-02 pos-05-02 dir-right)
+369.0: (move player-02 pos-05-02 pos-05-03 dir-down)
+370.0: (move player-02 pos-05-03 pos-06-03 dir-right)
+371.0: (move player-01 pos-14-05 pos-13-05 dir-left)
+372.0: (move player-03 pos-09-06 pos-08-06 dir-left)
+373.0: (move player-03 pos-08-06 pos-08-05 dir-up)
+374.0: (move player-02 pos-06-03 pos-07-03 dir-right)
+375.0: (move player-02 pos-07-03 pos-08-03 dir-right)
+376.0: (move player-02 pos-08-03 pos-09-03 dir-right)
+377.0: (push-to-nongoal player-03 stone-02 pos-08-05 pos-08-04 pos-08-03 dir-up)
+378.0: (push-to-nongoal player-02 stone-02 pos-09-03 pos-08-03 pos-07-03 dir-left)
+379.0: (push-to-nongoal player-02 stone-02 pos-08-03 pos-07-03 pos-06-03 dir-left)
+380.0: (push-to-nongoal player-02 stone-02 pos-07-03 pos-06-03 pos-05-03 dir-left)
+381.0: (move player-02 pos-06-03 pos-06-04 dir-down)
+382.0: (move player-03 pos-08-04 pos-08-03 dir-up)
+383.0: (move player-02 pos-06-04 pos-05-04 dir-left)
+384.0: (move player-01 pos-13-05 pos-14-05 dir-right)
+385.0: (push-to-nongoal player-02 stone-02 pos-05-04 pos-05-03 pos-05-02 dir-up)
+386.0: (move player-02 pos-05-03 pos-06-03 dir-right)
+387.0: (move player-02 pos-06-03 pos-06-02 dir-up)
+388.0: (push-to-goal player-02 stone-02 pos-06-02 pos-05-02 pos-04-02 dir-left)
+389.0: (move player-03 pos-08-03 pos-08-04 dir-down)
+390.0: (move player-02 pos-05-02 pos-06-02 dir-right)
+391.0: (move player-02 pos-06-02 pos-06-03 dir-down)
+392.0: (move player-01 pos-14-05 pos-13-05 dir-left)
+393.0: (move player-02 pos-06-03 pos-07-03 dir-right)
+394.0: (move player-01 pos-13-05 pos-12-05 dir-left)
+395.0: (move player-02 pos-07-03 pos-08-03 dir-right)
+396.0: (move player-03 pos-08-04 pos-08-05 dir-down)
+397.0: (move player-02 pos-08-03 pos-08-02 dir-up)
+398.0: (move player-03 pos-08-05 pos-08-06 dir-down)
+399.0: (move player-03 pos-08-06 pos-09-06 dir-right)
+400.0: (move player-01 pos-12-05 pos-12-06 dir-down)
+401.0: (move player-02 pos-08-02 pos-09-02 dir-right)
+402.0: (move player-01 pos-12-06 pos-11-06 dir-left)
+403.0: (move player-01 pos-11-06 pos-10-06 dir-left)
+404.0: (move player-01 pos-10-06 pos-10-05 dir-up)
+405.0: (move player-03 pos-09-06 pos-10-06 dir-right)
+406.0: (move player-03 pos-10-06 pos-11-06 dir-right)
+407.0: (move player-03 pos-11-06 pos-12-06 dir-right)
+408.0: (move player-03 pos-12-06 pos-12-05 dir-up)
+409.0: (push-to-nongoal player-01 stone-03 pos-10-05 pos-09-05 pos-08-05 dir-left)
+410.0: (push-to-nongoal player-03 stone-04 pos-12-05 pos-11-05 pos-10-05 dir-left)
+411.0: (move player-01 pos-09-05 pos-09-06 dir-down)
+412.0: (push-to-nongoal player-03 stone-04 pos-11-05 pos-10-05 pos-09-05 dir-left)
+413.0: (move player-01 pos-09-06 pos-08-06 dir-left)
+414.0: (push-to-nongoal player-01 stone-03 pos-08-06 pos-08-05 pos-08-04 dir-up)
+415.0: (move player-02 pos-09-02 pos-09-03 dir-down)
+416.0: (push-to-nongoal player-01 stone-03 pos-08-05 pos-08-04 pos-08-03 dir-up)
+417.0: (push-to-nongoal player-02 stone-03 pos-09-03 pos-08-03 pos-07-03 dir-left)
+418.0: (push-to-nongoal player-02 stone-03 pos-08-03 pos-07-03 pos-06-03 dir-left)
+419.0: (push-to-nongoal player-02 stone-03 pos-07-03 pos-06-03 pos-05-03 dir-left)
+420.0: (move player-03 pos-10-05 pos-10-06 dir-down)
+421.0: (move player-02 pos-06-03 pos-06-02 dir-up)
+422.0: (move player-02 pos-06-02 pos-05-02 dir-left)
+423.0: (push-to-goal player-02 stone-03 pos-05-02 pos-05-03 pos-05-04 dir-down)
+424.0: (move player-03 pos-10-06 pos-10-05 dir-up)
+425.0: (move player-01 pos-08-04 pos-08-05 dir-down)
+426.0: (move player-01 pos-08-05 pos-08-06 dir-down)
+427.0: (push-to-nongoal player-03 stone-04 pos-10-05 pos-09-05 pos-08-05 dir-left)
+428.0: (push-to-nongoal player-01 stone-04 pos-08-06 pos-08-05 pos-08-04 dir-up)
+429.0: (move player-01 pos-08-05 pos-08-06 dir-down)
+430.0: (move player-01 pos-08-06 pos-07-06 dir-left)
+431.0: (move player-01 pos-07-06 pos-06-06 dir-left)
+432.0: (move player-03 pos-09-05 pos-10-05 dir-right)
+433.0: (move player-03 pos-10-05 pos-11-05 dir-right)
+434.0: (move player-03 pos-11-05 pos-12-05 dir-right)
+435.0: (move player-01 pos-06-06 pos-05-06 dir-left)
+436.0: (move player-01 pos-05-06 pos-04-06 dir-left)
+437.0: (move player-01 pos-04-06 pos-04-05 dir-up)
+438.0: (move player-01 pos-04-05 pos-03-05 dir-left)
+439.0: (move player-01 pos-03-05 pos-03-04 dir-up)
+440.0: (move player-01 pos-03-04 pos-02-04 dir-left)
+441.0: (move player-03 pos-12-05 pos-13-05 dir-right)
+442.0: (move player-01 pos-02-04 pos-02-03 dir-up)
+443.0: (move player-01 pos-02-03 pos-02-02 dir-up)
+444.0: (move player-01 pos-02-02 pos-03-02 dir-right)
+445.0: (move player-03 pos-13-05 pos-12-05 dir-left)
+446.0: (move player-02 pos-05-03 pos-06-03 dir-right)
+447.0: (move player-03 pos-12-05 pos-11-05 dir-left)
+448.0: (move player-03 pos-11-05 pos-11-06 dir-down)
+449.0: (move player-02 pos-06-03 pos-07-03 dir-right)
+450.0: (move player-03 pos-11-06 pos-10-06 dir-left)
+451.0: (move player-01 pos-03-02 pos-02-02 dir-left)
+452.0: (move player-03 pos-10-06 pos-09-06 dir-left)
+453.0: (move player-03 pos-09-06 pos-09-05 dir-up)
+454.0: (move player-03 pos-09-05 pos-08-05 dir-left)
+455.0: (push-to-nongoal player-03 stone-04 pos-08-05 pos-08-04 pos-08-03 dir-up)
+456.0: (push-to-nongoal player-02 stone-04 pos-07-03 pos-08-03 pos-09-03 dir-right)
+457.0: (move player-02 pos-08-03 pos-08-02 dir-up)
+458.0: (move player-02 pos-08-02 pos-09-02 dir-right)
+459.0: (move player-02 pos-09-02 pos-10-02 dir-right)
+460.0: (move player-03 pos-08-04 pos-08-03 dir-up)
+461.0: (move player-01 pos-02-02 pos-02-03 dir-down)
+462.0: (move player-03 pos-08-03 pos-07-03 dir-left)
+463.0: (move player-01 pos-02-03 pos-02-04 dir-down)
+464.0: (move player-01 pos-02-04 pos-03-04 dir-right)
+465.0: (move player-01 pos-03-04 pos-03-05 dir-down)
+466.0: (move player-02 pos-10-02 pos-10-03 dir-down)
+467.0: (push-to-nongoal player-02 stone-04 pos-10-03 pos-09-03 pos-08-03 dir-left)
+468.0: (move player-03 pos-07-03 pos-06-03 dir-left)
+469.0: (push-to-nongoal player-02 stone-04 pos-09-03 pos-08-03 pos-07-03 dir-left)
+470.0: (move player-03 pos-06-03 pos-06-02 dir-up)
+471.0: (push-to-nongoal player-02 stone-04 pos-08-03 pos-07-03 pos-06-03 dir-left)
+472.0: (push-to-goal player-03 stone-04 pos-06-02 pos-06-03 pos-06-04 dir-down)
+
+Plan-Length:473
+Metric (Search):35.0
+Planning Time (msec): 2492307
+Heuristic Time (msec): 2127589
+Search Time (msec): 2343743
+Expanded Nodes:6113354
+States Evaluated:7353616
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:803789
+Number of Duplicates detected:35072766
