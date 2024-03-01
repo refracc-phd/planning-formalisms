@@ -1,4 +1,6 @@
-sbatch --parition=uoa-compute sh ./sokoban.sh
-sbatch --parition=uoa-compute sh ./blocks-strips.sh
-sbatch --parition=uoa-compute sh ./ma-sokoban.sh
-sbatch --parition=uoa-compute sh ./ma-blocks-strips.sh
+#!/bin/sh
+
+sbatch --partition=uoa-compute ./sokoban.sh
+sbatch --partition=uoa-compute ./blocks-strips.sh
+sbatch --partition=uoa-compute ./ma-sokoban.sh
+sbatch --partition=uoa-compute ./ma-blocks-strips.sh

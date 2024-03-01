@@ -1,0 +1,231 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 27608
+Aibr Preprocessing
+|F|:162
+|X|:0
+|A|:404
+|P|:0
+|E|:0
+H1 Setup Time (msec): 26
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=35.0
+ g(n)= 1.0 h(n)=29.0
+ g(n)= 3.0 h(n)=28.0
+ g(n)= 4.0 h(n)=27.0
+ g(n)= 5.0 h(n)=26.0
+ g(n)= 6.0 h(n)=22.0
+ g(n)= 7.0 h(n)=21.0
+ g(n)= 8.0 h(n)=20.0
+ g(n)= 9.0 h(n)=19.0
+ g(n)= 10.0 h(n)=17.0
+ g(n)= 14.0 h(n)=16.0
+ g(n)= 15.0 h(n)=15.0
+ g(n)= 16.0 h(n)=12.0
+ g(n)= 17.0 h(n)=11.0
+ g(n)= 18.0 h(n)=10.0
+ g(n)= 20.0 h(n)=9.0
+ g(n)= 21.0 h(n)=8.0
+ g(n)= 22.0 h(n)=7.0
+ g(n)= 23.0 h(n)=5.0
+ g(n)= 24.0 h(n)=4.0
+ g(n)= 26.0 h(n)=3.0
+ g(n)= 27.0 h(n)=2.0
+ g(n)= 28.0 h(n)=1.0
+ g(n)= 29.0 h(n)=0.0
+Problem Solved
+
+Found Plan:
+0.0: (move player-01 pos-11-03 pos-11-04 dir-down)
+1.0: (move player-01 pos-11-04 pos-10-04 dir-left)
+2.0: (move player-01 pos-10-04 pos-09-04 dir-left)
+3.0: (move player-01 pos-09-04 pos-09-03 dir-up)
+4.0: (move player-01 pos-09-03 pos-09-02 dir-up)
+5.0: (move player-01 pos-09-02 pos-10-02 dir-right)
+6.0: (move player-02 pos-04-04 pos-04-05 dir-down)
+7.0: (move player-02 pos-04-05 pos-03-05 dir-left)
+8.0: (move player-02 pos-03-05 pos-02-05 dir-left)
+9.0: (move player-02 pos-02-05 pos-02-04 dir-up)
+10.0: (move player-02 pos-02-04 pos-02-03 dir-up)
+11.0: (move player-02 pos-02-03 pos-02-02 dir-up)
+12.0: (move player-02 pos-02-02 pos-03-02 dir-right)
+13.0: (move player-02 pos-03-02 pos-04-02 dir-right)
+14.0: (push-to-nongoal player-02 stone-02 pos-04-02 pos-04-03 pos-04-04 dir-down)
+15.0: (move player-01 pos-10-02 pos-09-02 dir-left)
+16.0: (move player-01 pos-09-02 pos-09-03 dir-down)
+17.0: (move player-01 pos-09-03 pos-08-03 dir-left)
+18.0: (move player-01 pos-08-03 pos-07-03 dir-left)
+19.0: (move player-02 pos-04-03 pos-04-02 dir-up)
+20.0: (move player-01 pos-07-03 pos-06-03 dir-left)
+21.0: (move player-01 pos-06-03 pos-05-03 dir-left)
+22.0: (move player-01 pos-05-03 pos-04-03 dir-left)
+23.0: (move player-02 pos-04-02 pos-05-02 dir-right)
+24.0: (move player-01 pos-04-03 pos-04-02 dir-up)
+25.0: (move player-02 pos-05-02 pos-05-03 dir-down)
+26.0: (move player-01 pos-04-02 pos-05-02 dir-right)
+27.0: (move player-02 pos-05-03 pos-06-03 dir-right)
+28.0: (move player-01 pos-05-02 pos-05-03 dir-down)
+29.0: (move player-01 pos-05-03 pos-04-03 dir-left)
+30.0: (move player-02 pos-06-03 pos-06-04 dir-down)
+31.0: (move player-01 pos-04-03 pos-04-02 dir-up)
+32.0: (move player-02 pos-06-04 pos-07-04 dir-right)
+33.0: (move player-01 pos-04-02 pos-05-02 dir-right)
+34.0: (move player-01 pos-05-02 pos-05-03 dir-down)
+35.0: (move player-01 pos-05-03 pos-06-03 dir-right)
+36.0: (move player-01 pos-06-03 pos-07-03 dir-right)
+37.0: (move player-02 pos-07-04 pos-08-04 dir-right)
+38.0: (move player-02 pos-08-04 pos-09-04 dir-right)
+39.0: (move player-01 pos-07-03 pos-06-03 dir-left)
+40.0: (move player-02 pos-09-04 pos-10-04 dir-right)
+41.0: (move player-02 pos-10-04 pos-11-04 dir-right)
+42.0: (move player-01 pos-06-03 pos-05-03 dir-left)
+43.0: (move player-01 pos-05-03 pos-04-03 dir-left)
+44.0: (move player-02 pos-11-04 pos-11-03 dir-up)
+45.0: (move player-02 pos-11-03 pos-11-02 dir-up)
+46.0: (move player-02 pos-11-02 pos-10-02 dir-left)
+47.0: (move player-01 pos-04-03 pos-05-03 dir-right)
+48.0: (move player-01 pos-05-03 pos-05-02 dir-up)
+49.0: (move player-02 pos-10-02 pos-09-02 dir-left)
+50.0: (move player-02 pos-09-02 pos-09-03 dir-down)
+51.0: (move player-01 pos-05-02 pos-05-03 dir-down)
+52.0: (move player-01 pos-05-03 pos-04-03 dir-left)
+53.0: (move player-02 pos-09-03 pos-09-04 dir-down)
+54.0: (move player-01 pos-04-03 pos-04-02 dir-up)
+55.0: (move player-01 pos-04-02 pos-03-02 dir-left)
+56.0: (move player-01 pos-03-02 pos-02-02 dir-left)
+57.0: (move player-01 pos-02-02 pos-02-03 dir-down)
+58.0: (move player-01 pos-02-03 pos-02-04 dir-down)
+59.0: (move player-02 pos-09-04 pos-10-04 dir-right)
+60.0: (move player-02 pos-10-04 pos-11-04 dir-right)
+61.0: (move player-01 pos-02-04 pos-02-03 dir-up)
+62.0: (move player-02 pos-11-04 pos-11-03 dir-up)
+63.0: (push-to-nongoal player-01 stone-01 pos-02-03 pos-03-03 pos-04-03 dir-right)
+64.0: (push-to-nongoal player-01 stone-01 pos-03-03 pos-04-03 pos-05-03 dir-right)
+65.0: (push-to-nongoal player-01 stone-01 pos-04-03 pos-05-03 pos-06-03 dir-right)
+66.0: (push-to-nongoal player-01 stone-01 pos-05-03 pos-06-03 pos-07-03 dir-right)
+67.0: (push-to-nongoal player-01 stone-01 pos-06-03 pos-07-03 pos-08-03 dir-right)
+68.0: (push-to-nongoal player-01 stone-01 pos-07-03 pos-08-03 pos-09-03 dir-right)
+69.0: (move player-01 pos-08-03 pos-07-03 dir-left)
+70.0: (move player-02 pos-11-03 pos-11-02 dir-up)
+71.0: (move player-02 pos-11-02 pos-10-02 dir-left)
+72.0: (move player-02 pos-10-02 pos-09-02 dir-left)
+73.0: (push-to-nongoal player-02 stone-01 pos-09-02 pos-09-03 pos-09-04 dir-down)
+74.0: (move player-02 pos-09-03 pos-09-02 dir-up)
+75.0: (move player-02 pos-09-02 pos-10-02 dir-right)
+76.0: (move player-02 pos-10-02 pos-11-02 dir-right)
+77.0: (move player-02 pos-11-02 pos-11-03 dir-down)
+78.0: (move player-02 pos-11-03 pos-11-04 dir-down)
+79.0: (move player-02 pos-11-04 pos-10-04 dir-left)
+80.0: (push-to-goal player-02 stone-01 pos-10-04 pos-09-04 pos-08-04 dir-left)
+81.0: (push-to-goal player-02 stone-01 pos-09-04 pos-08-04 pos-07-04 dir-left)
+82.0: (move player-02 pos-08-04 pos-09-04 dir-right)
+83.0: (move player-02 pos-09-04 pos-10-04 dir-right)
+84.0: (move player-02 pos-10-04 pos-11-04 dir-right)
+85.0: (move player-01 pos-07-03 pos-08-03 dir-right)
+86.0: (move player-02 pos-11-04 pos-11-03 dir-up)
+87.0: (move player-01 pos-08-03 pos-08-04 dir-down)
+88.0: (move player-01 pos-08-04 pos-09-04 dir-right)
+89.0: (move player-02 pos-11-03 pos-11-02 dir-up)
+90.0: (move player-02 pos-11-02 pos-10-02 dir-left)
+91.0: (move player-02 pos-10-02 pos-09-02 dir-left)
+92.0: (move player-01 pos-09-04 pos-10-04 dir-right)
+93.0: (move player-01 pos-10-04 pos-11-04 dir-right)
+94.0: (move player-01 pos-11-04 pos-11-03 dir-up)
+95.0: (move player-01 pos-11-03 pos-11-02 dir-up)
+96.0: (move player-02 pos-09-02 pos-09-03 dir-down)
+97.0: (move player-02 pos-09-03 pos-08-03 dir-left)
+98.0: (move player-01 pos-11-02 pos-10-02 dir-left)
+99.0: (move player-02 pos-08-03 pos-07-03 dir-left)
+100.0: (move player-02 pos-07-03 pos-06-03 dir-left)
+101.0: (move player-01 pos-10-02 pos-11-02 dir-right)
+102.0: (move player-02 pos-06-03 pos-05-03 dir-left)
+103.0: (move player-02 pos-05-03 pos-04-03 dir-left)
+104.0: (move player-02 pos-04-03 pos-03-03 dir-left)
+105.0: (move player-01 pos-11-02 pos-11-03 dir-down)
+106.0: (move player-02 pos-03-03 pos-02-03 dir-left)
+107.0: (move player-02 pos-02-03 pos-02-02 dir-up)
+108.0: (move player-01 pos-11-03 pos-11-02 dir-up)
+109.0: (move player-01 pos-11-02 pos-10-02 dir-left)
+110.0: (move player-02 pos-02-02 pos-02-03 dir-down)
+111.0: (move player-02 pos-02-03 pos-02-04 dir-down)
+112.0: (move player-02 pos-02-04 pos-02-05 dir-down)
+113.0: (move player-02 pos-02-05 pos-03-05 dir-right)
+114.0: (push-to-nongoal player-02 stone-03 pos-03-05 pos-03-04 pos-03-03 dir-up)
+115.0: (move player-02 pos-03-04 pos-02-04 dir-left)
+116.0: (move player-02 pos-02-04 pos-02-03 dir-up)
+117.0: (move player-01 pos-10-02 pos-11-02 dir-right)
+118.0: (move player-02 pos-02-03 pos-02-02 dir-up)
+119.0: (move player-01 pos-11-02 pos-11-03 dir-down)
+120.0: (move player-01 pos-11-03 pos-11-04 dir-down)
+121.0: (move player-02 pos-02-02 pos-02-03 dir-down)
+122.0: (move player-01 pos-11-04 pos-10-04 dir-left)
+123.0: (push-to-nongoal player-02 stone-03 pos-02-03 pos-03-03 pos-04-03 dir-right)
+124.0: (push-to-nongoal player-02 stone-03 pos-03-03 pos-04-03 pos-05-03 dir-right)
+125.0: (push-to-nongoal player-02 stone-03 pos-04-03 pos-05-03 pos-06-03 dir-right)
+126.0: (push-to-nongoal player-02 stone-03 pos-05-03 pos-06-03 pos-07-03 dir-right)
+127.0: (push-to-nongoal player-02 stone-03 pos-06-03 pos-07-03 pos-08-03 dir-right)
+128.0: (push-to-nongoal player-02 stone-03 pos-07-03 pos-08-03 pos-09-03 dir-right)
+129.0: (move player-01 pos-10-04 pos-11-04 dir-right)
+130.0: (move player-01 pos-11-04 pos-11-03 dir-up)
+131.0: (move player-01 pos-11-03 pos-11-02 dir-up)
+132.0: (move player-01 pos-11-02 pos-10-02 dir-left)
+133.0: (move player-01 pos-10-02 pos-09-02 dir-left)
+134.0: (push-to-nongoal player-01 stone-03 pos-09-02 pos-09-03 pos-09-04 dir-down)
+135.0: (move player-01 pos-09-03 pos-09-02 dir-up)
+136.0: (move player-02 pos-08-03 pos-07-03 dir-left)
+137.0: (move player-02 pos-07-03 pos-06-03 dir-left)
+138.0: (move player-02 pos-06-03 pos-05-03 dir-left)
+139.0: (move player-02 pos-05-03 pos-04-03 dir-left)
+140.0: (move player-01 pos-09-02 pos-10-02 dir-right)
+141.0: (move player-02 pos-04-03 pos-03-03 dir-left)
+142.0: (move player-02 pos-03-03 pos-03-04 dir-down)
+143.0: (move player-02 pos-03-04 pos-03-05 dir-down)
+144.0: (move player-02 pos-03-05 pos-04-05 dir-right)
+145.0: (push-to-nongoal player-02 stone-02 pos-04-05 pos-04-04 pos-04-03 dir-up)
+146.0: (move player-02 pos-04-04 pos-03-04 dir-left)
+147.0: (move player-02 pos-03-04 pos-03-03 dir-up)
+148.0: (push-to-nongoal player-02 stone-02 pos-03-03 pos-04-03 pos-05-03 dir-right)
+149.0: (push-to-nongoal player-02 stone-02 pos-04-03 pos-05-03 pos-06-03 dir-right)
+150.0: (push-to-nongoal player-02 stone-02 pos-05-03 pos-06-03 pos-07-03 dir-right)
+151.0: (push-to-nongoal player-02 stone-02 pos-06-03 pos-07-03 pos-08-03 dir-right)
+152.0: (push-to-nongoal player-02 stone-02 pos-07-03 pos-08-03 pos-09-03 dir-right)
+153.0: (move player-01 pos-10-02 pos-11-02 dir-right)
+154.0: (move player-01 pos-11-02 pos-11-03 dir-down)
+155.0: (move player-01 pos-11-03 pos-11-04 dir-down)
+156.0: (move player-01 pos-11-04 pos-10-04 dir-left)
+157.0: (move player-02 pos-08-03 pos-08-04 dir-down)
+158.0: (push-to-goal player-02 stone-01 pos-08-04 pos-07-04 pos-06-04 dir-left)
+159.0: (push-to-goal player-01 stone-03 pos-10-04 pos-09-04 pos-08-04 dir-left)
+160.0: (move player-02 pos-07-04 pos-07-03 dir-up)
+161.0: (push-to-goal player-01 stone-03 pos-09-04 pos-08-04 pos-07-04 dir-left)
+162.0: (move player-01 pos-08-04 pos-09-04 dir-right)
+163.0: (move player-01 pos-09-04 pos-10-04 dir-right)
+164.0: (move player-01 pos-10-04 pos-11-04 dir-right)
+165.0: (move player-01 pos-11-04 pos-11-03 dir-up)
+166.0: (move player-01 pos-11-03 pos-11-02 dir-up)
+167.0: (move player-01 pos-11-02 pos-10-02 dir-left)
+168.0: (move player-01 pos-10-02 pos-09-02 dir-left)
+169.0: (push-to-nongoal player-01 stone-02 pos-09-02 pos-09-03 pos-09-04 dir-down)
+170.0: (move player-02 pos-07-03 pos-08-03 dir-right)
+171.0: (move player-01 pos-09-03 pos-09-02 dir-up)
+172.0: (move player-01 pos-09-02 pos-10-02 dir-right)
+173.0: (move player-02 pos-08-03 pos-09-03 dir-right)
+174.0: (move player-02 pos-09-03 pos-09-02 dir-up)
+175.0: (move player-01 pos-10-02 pos-11-02 dir-right)
+176.0: (move player-01 pos-11-02 pos-11-03 dir-down)
+177.0: (move player-01 pos-11-03 pos-11-04 dir-down)
+178.0: (move player-01 pos-11-04 pos-10-04 dir-left)
+179.0: (push-to-goal player-01 stone-02 pos-10-04 pos-09-04 pos-08-04 dir-left)
+
+Plan-Length:180
+Metric (Search):29.0
+Planning Time (msec): 29563
+Heuristic Time (msec): 894
+Search Time (msec): 1047
+Expanded Nodes:3561
+States Evaluated:5303
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:645
+Number of Duplicates detected:11989
