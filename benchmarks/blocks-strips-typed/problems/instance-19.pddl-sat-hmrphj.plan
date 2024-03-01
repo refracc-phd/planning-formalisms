@@ -1,0 +1,109 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 14
+Aibr Preprocessing
+|F|:131
+|X|:0
+|A|:220
+|P|:0
+|E|:0
+H1 Setup Time (msec): 8
+Wrong setting for break-ties. Arbitrary tie breaking
+Setting horizon to:NaN
+Helpful Action Pruning Activated
+Running Greedy Best First Search
+h(n = s_0)=18.0
+ g(n)= 2.0 h(n)=17.0
+ g(n)= 5.0 h(n)=16.0
+ g(n)= 18.0 h(n)=15.0
+ g(n)= 14.0 h(n)=14.0
+ g(n)= 21.0 h(n)=13.0
+ g(n)= 23.0 h(n)=12.0
+ g(n)= 28.0 h(n)=11.0
+ g(n)= 30.0 h(n)=9.0
+ g(n)= 47.0 h(n)=8.0
+ g(n)= 42.0 h(n)=7.0
+ g(n)= 46.0 h(n)=6.0
+ g(n)= 47.0 h(n)=5.0
+ g(n)= 48.0 h(n)=4.0
+ g(n)= 56.0 h(n)=3.0
+ g(n)= 60.0 h(n)=2.0
+ g(n)= 61.0 h(n)=1.0
+ g(n)= 62.0 h(n)=0.0
+Problem Solved
+
+Found Plan:
+0.0: (unstack c e)
+1.0: (stack c f)
+2.0: (unstack e j)
+3.0: (stack e c)
+4.0: (unstack j b)
+5.0: (stack j e)
+6.0: (unstack b g)
+7.0: (put-down b)
+8.0: (unstack g h)
+9.0: (put-down g)
+10.0: (unstack h a)
+11.0: (stack h b)
+12.0: (unstack a d)
+13.0: (stack a g)
+14.0: (unstack d i)
+15.0: (stack d a)
+16.0: (unstack j e)
+17.0: (put-down j)
+18.0: (unstack e c)
+19.0: (stack e h)
+20.0: (unstack d a)
+21.0: (stack d c)
+22.0: (pick-up j)
+23.0: (stack j e)
+24.0: (unstack a g)
+25.0: (stack a d)
+26.0: (pick-up g)
+27.0: (stack g i)
+28.0: (unstack a d)
+29.0: (stack a g)
+30.0: (unstack j e)
+31.0: (put-down j)
+32.0: (unstack e h)
+33.0: (stack e d)
+34.0: (pick-up j)
+35.0: (stack j e)
+36.0: (unstack h b)
+37.0: (put-down h)
+38.0: (pick-up b)
+39.0: (stack b a)
+40.0: (pick-up h)
+41.0: (stack h b)
+42.0: (unstack j e)
+43.0: (put-down j)
+44.0: (unstack e d)
+45.0: (stack e h)
+46.0: (pick-up j)
+47.0: (stack j e)
+48.0: (unstack d c)
+49.0: (stack d j)
+50.0: (unstack c f)
+51.0: (put-down c)
+52.0: (unstack d j)
+53.0: (stack d c)
+54.0: (pick-up f)
+55.0: (stack f j)
+56.0: (unstack d c)
+57.0: (put-down d)
+58.0: (pick-up c)
+59.0: (stack c f)
+60.0: (pick-up d)
+61.0: (stack d c)
+
+Plan-Length:62
+Metric (Search):62.0
+Planning Time (msec): 325
+Heuristic Time (msec): 139
+Search Time (msec): 177
+Expanded Nodes:389
+States Evaluated:805
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:0
+Number of Duplicates detected:443

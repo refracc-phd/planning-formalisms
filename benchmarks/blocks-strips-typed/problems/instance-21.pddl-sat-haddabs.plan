@@ -1,0 +1,104 @@
+! ====== ! Warning: Unknown planner configuration. Going with default: gbfs with hadd ! ====== !
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 7
+Aibr Preprocessing
+|F|:131
+|X|:0
+|A|:220
+|P|:0
+|E|:0
+H1 Setup Time (msec): 5
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=79.0
+ g(n)= 2.0 h(n)=65.0
+ g(n)= 4.0 h(n)=53.0
+ g(n)= 6.0 h(n)=42.0
+ g(n)= 8.0 h(n)=33.0
+ g(n)= 10.0 h(n)=26.0
+ g(n)= 12.0 h(n)=20.0
+ g(n)= 14.0 h(n)=16.0
+ g(n)= 16.0 h(n)=13.0
+ g(n)= 18.0 h(n)=12.0
+ g(n)= 22.0 h(n)=11.0
+ g(n)= 26.0 h(n)=10.0
+ g(n)= 28.0 h(n)=8.0
+ g(n)= 42.0 h(n)=7.0
+ g(n)= 40.0 h(n)=6.0
+ g(n)= 42.0 h(n)=4.0
+ g(n)= 50.0 h(n)=3.0
+ g(n)= 54.0 h(n)=2.0
+ g(n)= 55.0 h(n)=1.0
+ g(n)= 56.0 h(n)=0.0
+Problem Solved
+
+Found Plan:
+0.0: (unstack j i)
+1.0: (put-down j)
+2.0: (unstack i h)
+3.0: (put-down i)
+4.0: (unstack h f)
+5.0: (stack h c)
+6.0: (unstack f d)
+7.0: (stack f j)
+8.0: (unstack d e)
+9.0: (put-down d)
+10.0: (unstack e g)
+11.0: (stack e i)
+12.0: (unstack g b)
+13.0: (stack g h)
+14.0: (unstack b a)
+15.0: (stack b e)
+16.0: (unstack f j)
+17.0: (put-down f)
+18.0: (pick-up a)
+19.0: (stack a f)
+20.0: (pick-up j)
+21.0: (stack j d)
+22.0: (unstack a f)
+23.0: (put-down a)
+24.0: (pick-up f)
+25.0: (stack f j)
+26.0: (pick-up a)
+27.0: (stack a f)
+28.0: (unstack g h)
+29.0: (put-down g)
+30.0: (unstack h c)
+31.0: (put-down h)
+32.0: (pick-up g)
+33.0: (stack g h)
+34.0: (pick-up c)
+35.0: (stack c a)
+36.0: (unstack g h)
+37.0: (put-down g)
+38.0: (pick-up h)
+39.0: (stack h c)
+40.0: (pick-up g)
+41.0: (stack g h)
+42.0: (unstack b e)
+43.0: (put-down b)
+44.0: (unstack e i)
+45.0: (put-down e)
+46.0: (pick-up b)
+47.0: (stack b e)
+48.0: (pick-up i)
+49.0: (stack i g)
+50.0: (unstack b e)
+51.0: (put-down b)
+52.0: (pick-up e)
+53.0: (stack e i)
+54.0: (pick-up b)
+55.0: (stack b e)
+
+Plan-Length:56
+Metric (Search):56.0
+Planning Time (msec): 174
+Heuristic Time (msec): 57
+Search Time (msec): 71
+Expanded Nodes:243
+States Evaluated:719
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:0
+Number of Duplicates detected:305
