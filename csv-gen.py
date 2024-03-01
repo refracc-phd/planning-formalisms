@@ -117,6 +117,11 @@ with open(output_csv, 'w', newline='') as csvfile:
 
     process_directory("./benchmarks/block-grouping/problems", "block-grouping")
     process_directory("./benchmarks/farmland/problems", "farmland")
+    process_directory("./benchmarks/sokoban/problems", "sokoban")
+    process_directory("./benchmarks/ma-sokoban/problems", "ma-sokoban")
+    process_directory("./benchmarks/blocks-strips-typed/problems", "blocksworld")
+    process_directory("./benchmarks/ma-blocksworld/problems", "ma-blocksworld")
+    process_directory("./benchmarks/farmland/problems", "farmland")
     process_directory("./benchmarks/fn-counters/problems", "fn-counters")
     process_directory("./benchmarks/fn-counters-inv/problems", "fn-counters-inv")
     process_directory("./benchmarks/fn-counters-rnd/problems", "fn-counters-rnd")
