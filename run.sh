@@ -1,9 +1,2 @@
-sbatch --partition=uoa-compute ./block-grouping.sh
-#sbatch --partition=uoa-compute ./sailing.sh
-#sbatch --partition=uoa-compute ./fn-counters.sh
-#sbatch --partition=uoa-compute ./fn-counters-inv.sh
-#sbatch --partition=uoa-compute ./fn-counters-rnd.sh
-#sbatch --partition=uoa-compute ./farmland.sh
-sbatch --partition=uoa-compute ./plant-watering.sh
-#sbatch --partition=uoa-compute ./discrete.sh
-#sbatch --partition=uoa-compute ./continuous.sh
+sbatch --parition=uoa-compute sh ./sokoban.sh
+sbatch --parition=uoa-compute sh ./blocks-strips.sh

@@ -32,15 +32,17 @@ heuristic_informativeness <- ggplot(df, aes(x = initial.heuristic.val, y = metri
   scale_x_log10() + # Add this line for log10 scaling
   scale_y_log10() + # Add this line for log10 scaling
   scale_colour_viridis_d(option = "turbo") +
-  theme(element_text(size = 18))
+  theme(element_text(size = 18))+
+  geom_abline(intercept = 0, slope = 1, size = 0.5) + 
+  facet_wrap(scales = "free", ~ search.method)
 
 heuristic_informativeness
 
 initial_vs_actual_heuristic <- ggplot(df, aes(x = domain)) +
-  geom_bar(aes(y = initial.heuristic.val, fill = "Initial Heuristic Value"), stat = "identity", position = "dodge") +
-  geom_bar(aes(y = metric.search, fill = "Actual Heuristic Value"), stat = "identity", position = "dodge") +
+  geom_bar(aes(y = initial.heuristic.val, fill = "Initial Heuristic Value"), stat = "identity", position = "jitter") +
+  geom_bar(aes(y = metric.search, fill = "Actual Heuristic Value"), stat = "identity", position = "jitter") +
   scale_fill_manual(name = "", values = c("Initial Heuristic Value" = "blue", "Actual Heuristic Value" = "red")) +
-  labs(x = "Domain", y = "Values", title = "Comparison: Heuristic Informativeness") +
+  labs(x = "Domain", y = "Heuristic Values", title = "Comparison: Heuristic Informativeness") +
   facet_wrap(~ domain, scales = "free")+
   theme(element_text(size = 18))
 
@@ -78,14 +80,14 @@ grounding_time <- ggplot(df, aes(x = domain, y = mean(grounding.time), fill = do
 
 grounding_time
 
-states_eval_vs_search_time <- ggplot(df, aes(x = states.evaluated, y = search.time.msec, color = domain), log10="y") +
+states_eval_vs_search_time <- ggplot(df, aes(x = states.evaluated, y = search.time.msec, color = search.method), log10="y") +
   geom_point(show.legend = FALSE, size = 0.5) + 
-  geom_smooth(method = "GAM", formula = "y ~ x") +
   labs(x = "States Evaluated", y = "Search Time (msec)", title = "States Evaluated vs Search Time") +
-  facet_wrap(~domain, scales = "free") +
+  facet_wrap(~search.method, scales = "free") +
   scale_x_log10() + # Add this line for log10 scaling
   scale_y_log10() + # Add this line for log10 scaling
   scale_colour_viridis_d(option = "turbo") +
+  geom_abline(intercept = 0, slope = 1, size = 0.5) + 
   theme(element_text(size = 18))
 
 states_eval_vs_search_time
