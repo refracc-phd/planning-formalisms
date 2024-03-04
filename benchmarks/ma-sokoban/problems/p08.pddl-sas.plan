@@ -2,20 +2,19 @@
 Domain parsed
 Problem parsed
 Grounding..
-Grounding Time: 343241
+Grounding Time: 369876
 Aibr Preprocessing
 |F|:230
 |X|:0
 |A|:544
 |P|:0
 |E|:0
-H1 Setup Time (msec): 94
+H1 Setup Time (msec): 76
 Setting horizon to:NaN
 Running Greedy Best First Search
 h(n = s_0)=20.0
  g(n)= 3.0 h(n)=18.0
  g(n)= 6.0 h(n)=16.0
--------------Time: 10s ; Expanded Nodes: 12832 (Avg-Speed 1283.0 n/s); Evaluated States: 16207
  g(n)= 8.0 h(n)=15.0
  g(n)= 10.0 h(n)=14.0
  g(n)= 11.0 h(n)=12.0
@@ -23,10 +22,10 @@ h(n = s_0)=20.0
  g(n)= 14.0 h(n)=9.0
  g(n)= 18.0 h(n)=8.0
  g(n)= 20.0 h(n)=7.0
+-------------Time: 10s ; Expanded Nodes: 34935 (Avg-Speed 3493.0 n/s); Evaluated States: 42323
  g(n)= 25.0 h(n)=6.0
  g(n)= 26.0 h(n)=5.0
  g(n)= 27.0 h(n)=4.0
--------------Time: 20s ; Expanded Nodes: 52237 (Avg-Speed 2611.0 n/s); Evaluated States: 61651
  g(n)= 30.0 h(n)=3.0
  g(n)= 31.0 h(n)=2.0
  g(n)= 35.0 h(n)=1.0
@@ -490,9 +489,9 @@ Found Plan:
 
 Plan-Length:453
 Metric (Search):36.0
-Planning Time (msec): 381576
-Heuristic Time (msec): 22545
-Search Time (msec): 25901
+Planning Time (msec): 390680
+Heuristic Time (msec): 17667
+Search Time (msec): 19437
 Expanded Nodes:84683
 States Evaluated:99065
 Fixed constraint violations during search (zero-crossing):0

@@ -1,14 +1,14 @@
 Domain parsed
 Problem parsed
 Grounding..
-Grounding Time: 381080
+Grounding Time: 383723
 Aibr Preprocessing
 |F|:230
 |X|:0
 |A|:544
 |P|:0
 |E|:0
-H1 Setup Time (msec): 76
+H1 Setup Time (msec): 634
 Wrong setting for break-ties. Arbitrary tie breaking
 Setting horizon to:NaN
 Helpful Action Pruning Activated
@@ -28,7 +28,7 @@ h(n = s_0)=19.0
  g(n)= 17.0 h(n)=6.0
  g(n)= 21.0 h(n)=5.0
  g(n)= 20.0 h(n)=4.0
--------------Time: 10s ; Expanded Nodes: 39079 (Avg-Speed 3907.0 n/s); Evaluated States: 44534
+-------------Time: 10s ; Expanded Nodes: 39436 (Avg-Speed 3943.0 n/s); Evaluated States: 44978
  g(n)= 27.0 h(n)=3.0
  g(n)= 31.0 h(n)=2.0
  g(n)= 35.0 h(n)=1.0
@@ -316,9 +316,9 @@ Found Plan:
 
 Plan-Length:277
 Metric (Search):36.0
-Planning Time (msec): 400452
-Heuristic Time (msec): 16930
-Search Time (msec): 17599
+Planning Time (msec): 407340
+Heuristic Time (msec): 14833
+Search Time (msec): 15820
 Expanded Nodes:73276
 States Evaluated:84614
 Fixed constraint violations during search (zero-crossing):0

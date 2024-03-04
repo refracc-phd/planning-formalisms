@@ -2,14 +2,14 @@
 Domain parsed
 Problem parsed
 Grounding..
-Grounding Time: 48839
+Grounding Time: 62666
 Aibr Preprocessing
 |F|:244
 |X|:0
 |A|:906
 |P|:0
 |E|:0
-H1 Setup Time (msec): 122
+H1 Setup Time (msec): 186
 Setting horizon to:NaN
 Running Greedy Best First Search
 h(n = s_0)=24.0
@@ -21,27 +21,27 @@ h(n = s_0)=24.0
  g(n)= 9.0 h(n)=14.0
  g(n)= 10.0 h(n)=12.0
  g(n)= 11.0 h(n)=11.0
--------------Time: 10s ; Expanded Nodes: 8552 (Avg-Speed 855.0 n/s); Evaluated States: 18026
--------------Time: 20s ; Expanded Nodes: 18603 (Avg-Speed 930.0 n/s); Evaluated States: 37650
+-------------Time: 10s ; Expanded Nodes: 7272 (Avg-Speed 727.0 n/s); Evaluated States: 15125
+-------------Time: 20s ; Expanded Nodes: 15148 (Avg-Speed 757.0 n/s); Evaluated States: 32289
  g(n)= 13.0 h(n)=10.0
  g(n)= 15.0 h(n)=9.0
  g(n)= 16.0 h(n)=8.0
  g(n)= 18.0 h(n)=7.0
--------------Time: 30s ; Expanded Nodes: 31349 (Avg-Speed 1044.0 n/s); Evaluated States: 60673
--------------Time: 40s ; Expanded Nodes: 44308 (Avg-Speed 1107.0 n/s); Evaluated States: 83738
--------------Time: 50s ; Expanded Nodes: 58623 (Avg-Speed 1172.0 n/s); Evaluated States: 108668
--------------Time: 60s ; Expanded Nodes: 73004 (Avg-Speed 1216.0 n/s); Evaluated States: 132570
--------------Time: 70s ; Expanded Nodes: 87387 (Avg-Speed 1248.0 n/s); Evaluated States: 156779
--------------Time: 80s ; Expanded Nodes: 99993 (Avg-Speed 1249.0 n/s); Evaluated States: 180539
--------------Time: 90s ; Expanded Nodes: 118412 (Avg-Speed 1315.0 n/s); Evaluated States: 203665
--------------Time: 100s ; Expanded Nodes: 134520 (Avg-Speed 1345.0 n/s); Evaluated States: 227578
--------------Time: 110s ; Expanded Nodes: 145327 (Avg-Speed 1321.0 n/s); Evaluated States: 247524
--------------Time: 120s ; Expanded Nodes: 155337 (Avg-Speed 1294.0 n/s); Evaluated States: 267839
+-------------Time: 30s ; Expanded Nodes: 26560 (Avg-Speed 885.0 n/s); Evaluated States: 52300
+-------------Time: 40s ; Expanded Nodes: 38444 (Avg-Speed 961.0 n/s); Evaluated States: 74200
+-------------Time: 50s ; Expanded Nodes: 51333 (Avg-Speed 1026.0 n/s); Evaluated States: 97254
+-------------Time: 60s ; Expanded Nodes: 66337 (Avg-Speed 1105.0 n/s); Evaluated States: 120267
+-------------Time: 70s ; Expanded Nodes: 78216 (Avg-Speed 1117.0 n/s); Evaluated States: 142898
+-------------Time: 80s ; Expanded Nodes: 94614 (Avg-Speed 1182.0 n/s); Evaluated States: 169452
+-------------Time: 90s ; Expanded Nodes: 104501 (Avg-Speed 1161.0 n/s); Evaluated States: 191375
+-------------Time: 100s ; Expanded Nodes: 124303 (Avg-Speed 1243.0 n/s); Evaluated States: 213922
+-------------Time: 110s ; Expanded Nodes: 139406 (Avg-Speed 1267.0 n/s); Evaluated States: 235071
+-------------Time: 120s ; Expanded Nodes: 148045 (Avg-Speed 1233.0 n/s); Evaluated States: 253768
+-------------Time: 130s ; Expanded Nodes: 157740 (Avg-Speed 1213.0 n/s); Evaluated States: 272257
  g(n)= 20.0 h(n)=6.0
--------------Time: 130s ; Expanded Nodes: 167659 (Avg-Speed 1289.0 n/s); Evaluated States: 290704
+-------------Time: 140s ; Expanded Nodes: 170121 (Avg-Speed 1215.0 n/s); Evaluated States: 295354
  g(n)= 22.0 h(n)=4.0
  g(n)= 23.0 h(n)=3.0
--------------Time: 140s ; Expanded Nodes: 185796 (Avg-Speed 1327.0 n/s); Evaluated States: 322737
  g(n)= 27.0 h(n)=2.0
  g(n)= 28.0 h(n)=1.0
  g(n)= 29.0 h(n)=0.0
@@ -291,9 +291,9 @@ Found Plan:
 
 Plan-Length:240
 Metric (Search):29.0
-Planning Time (msec): 191321
-Heuristic Time (msec): 134276
-Search Time (msec): 141030
+Planning Time (msec): 214354
+Heuristic Time (msec): 140828
+Search Time (msec): 149884
 Expanded Nodes:189055
 States Evaluated:327107
 Fixed constraint violations during search (zero-crossing):0
