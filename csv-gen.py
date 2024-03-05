@@ -8,7 +8,7 @@ import re
 output_csv = "output.csv"
 
 # Initialize the CSV file with headers
-with open(output_csv, 'w', newline='') as csvfile:
+with open(output_csv, 'a', newline='') as csvfile:
     fieldnames = ['problem', 'search.method', 'plan.length', 'metric.search', 'initial.heuristic.val', 'planning.time.msec',
                   'heuristic.time.msec', 'search.time.msec', 'grounding.time', 'expanded.nodes', 'states.evaluated',
                   'duplicates.detected', 'dead.ends', 'domain', 'grounded.fluents', 'grounded.external.actions', 'grounded.actions',
