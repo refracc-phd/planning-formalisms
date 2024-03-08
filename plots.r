@@ -33,8 +33,20 @@ ground_external_actions <- ggplot(df, aes(x = domain, y = grounded.external.acti
 ground_external_actions
 
 heuristic_informativeness <- ggplot(df, aes(x = initial.heuristic.val, y = metric.search, color = domain)) + 
+  geom_point(position = "dodge", size = 0.75) +
+  labs(x = "Initial Heuristic Value [log10]", y = "Actual Heuristic Value [log10]", title = "Comparison: Heuristic Informativeness (Search Method)", color = "Domain") +
+  scale_x_log10() + # Add this line for log10 scaling
+  scale_y_log10() + # Add this line for log10 scaling
+  scale_colour_viridis_d(option = "turbo") +
+  theme(element_text(size = 18))+
+  geom_abline(intercept = 0, slope = 1, size = 0.5) + 
+  facet_wrap(scales = "free", ~ search.method)
+
+heuristic_informativeness
+
+heuristic_informativeness_pr <- ggplot(df, aes(x = initial.heuristic.val, y = metric.search, color = domain)) + 
   geom_point(position = "dodge", show.legend = FALSE, size = 0.75) +
-  labs(x = "Initial Heuristic Value [log10]", y = "Actual Heuristic Value [log10]", title = "Comparison: Heuristic Informativeness", color = "Domain") +
+  labs(x = "Initial Heuristic Value [log10]", y = "Actual Heuristic Value [log10]", title = "Comparison: Heuristic Informativeness (Domain)", color = "Domain") +
   scale_x_log10() + # Add this line for log10 scaling
   scale_y_log10() + # Add this line for log10 scaling
   scale_colour_viridis_d(option = "turbo") +
@@ -42,12 +54,12 @@ heuristic_informativeness <- ggplot(df, aes(x = initial.heuristic.val, y = metri
   geom_abline(intercept = 0, slope = 1, size = 0.5) + 
   facet_wrap(scales = "free", ~ domain)
 
-heuristic_informativeness
+heuristic_informativeness_pr
 
 initial_vs_actual_heuristic <- ggplot(df, aes(x = domain)) +
   geom_bar(aes(y = initial.heuristic.val, fill = "Initial Heuristic Value"), stat = "identity", position = "jitter") +
-  geom_bar(aes(y = metric.search, fill = "Actual Heuristic Value"), stat = "identity", position = "jitter") +
-  scale_fill_manual(name = "", values = c("Initial Heuristic Value" = "blue", "Actual Heuristic Value" = "red")) +
+  geom_bar(aes(y = metric.search, fill = "Actual Cost"), stat = "identity", position = "jitter") +
+  scale_fill_manual(name = "", values = c("Initial Heuristic Value" = "blue", "Actual Cost" = "red")) +
   labs(x = "Domain", y = "Heuristic Values", title = "Comparison: Heuristic Informativeness") +
   facet_wrap(~ domain, scales = "free")+
   theme(element_text(size = 18))
@@ -86,8 +98,8 @@ grounding_time <- ggplot(df, aes(x = domain, y = mean(grounding.time), fill = do
 
 grounding_time
 
-states_eval_vs_search_time <- ggplot(df, aes(x = states.evaluated, y = search.time.msec, color = search.method), log10="y") +
-  geom_point(show.legend = FALSE, size = 0.5) + 
+states_eval_vs_search_time <- ggplot(df, aes(x = states.evaluated, y = search.time.msec, color = domain), log10="y") +
+  geom_point(size = 0.5) + 
   labs(x = "States Evaluated", y = "Search Time (msec)", title = "States Evaluated vs Search Time") +
   facet_wrap(~search.method, scales = "free") +
   scale_x_log10() + # Add this line for log10 scaling
@@ -101,7 +113,7 @@ states_eval_vs_search_time
 
 # List of plots
 plots <- list(
-  ground_actions, ground_fluents, ground_external_actions, heuristic_informativeness, initial_vs_actual_heuristic, search_time, states_eval_vs_search_time
+  ground_actions, ground_fluents, ground_external_actions, heuristic_informativeness, initial_vs_actual_heuristic, search_time, states_eval_vs_search_time, heuristic_informativeness_pr, duplicates, plan_length, grounding_time
 )
 
 # Save each plot as a PDF
