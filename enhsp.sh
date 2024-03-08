@@ -27,7 +27,7 @@ heuristics=("opt-hmax" "opt-hrmax")
 run_heuristic() {
   problem_file="$1"
   heuristic="$2"
-  java -Xmx250G -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "$heuristic" > "$problem_file-$heuristic.plan"
+  java -Xmx200G -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "$heuristic" > "$problem_file-$heuristic.plan"
   echo "Task completed: $problem_file - $heuristic"
 }
 
