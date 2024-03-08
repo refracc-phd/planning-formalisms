@@ -1,0 +1,13 @@
+sbatch --partition=uoa-compute ./block-grouping
+sbatch --partition=uoa-compute ./blocks-strips-typed
+sbatch --partition=uoa-compute ./continuous.sh
+sbatch --partition=uoa-compute ./discrete.sh
+sbatch --partition=uoa-compute ./farmland
+sbatch --partition=uoa-compute ./fn-counters
+sbatch --partition=uoa-compute ./fn-counters-inv
+sbatch --partition=uoa-compute ./fn-counters-rnd
+sbatch --partition=uoa-compute ./ma-blocksworld
+sbatch --partition=uoa-compute ./ma-sokoban
+sbatch --partition=uoa-compute ./plant-watering
+sbatch --partition=uoa-compute ./sailing
+sbatch --partition=uoa-compute ./sokoban

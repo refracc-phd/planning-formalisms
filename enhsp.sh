@@ -21,13 +21,13 @@ find "$problem_dir" -type f -name "*.plan" -exec rm -f {} \;
 find "$problem_dir" -type f -name "*.sp_log*" -exec rm -f {} \;
 
 # Heuristics to run
-heuristics=("sas" "opt" "aibr" "lm_opt" "sat-hmrp" "sat-hmrph" "sat-hmrphj" "sat-hadd" "sat-hradd" "sat-haddabs")
+heuristics=("opt-hmax" "opt-hrmax")
 
 # Function to run a heuristic for a given problem file
 run_heuristic() {
   problem_file="$1"
   heuristic="$2"
-  java -Xmx200G -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "$heuristic" > "$problem_file-$heuristic.plan"
+  java -Xmx250G -jar "$executable_location" -o "$domain_file" -f "$problem_file" -planner "$heuristic" > "$problem_file-$heuristic.plan"
   echo "Task completed: $problem_file - $heuristic"
 }
 
