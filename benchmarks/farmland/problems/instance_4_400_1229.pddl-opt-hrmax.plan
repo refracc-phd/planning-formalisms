@@ -1,0 +1,295 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 35
+Aibr Preprocessing
+|F|:0
+|X|:4
+|A|:16
+|P|:0
+|E|:0
+H1 Setup Time (msec): 23
+Setting horizon to:NaN
+Running WA-STAR
+h(n = s_0)=226.14284
+f(n) = 226.14284 (Expanded Nodes: 0, Evaluated States: 0, Time: 0.008) Frontier Size: 0
+f(n) = 226.14285 (Expanded Nodes: 99, Evaluated States: 595, Time: 0.134) Frontier Size: 496
+f(n) = 226.24998 (Expanded Nodes: 217, Evaluated States: 1303, Time: 0.176) Frontier Size: 1086
+f(n) = 226.37498 (Expanded Nodes: 218, Evaluated States: 1309, Time: 0.176) Frontier Size: 1091
+f(n) = 226.49998 (Expanded Nodes: 219, Evaluated States: 1315, Time: 0.176) Frontier Size: 1096
+f(n) = 226.62498 (Expanded Nodes: 220, Evaluated States: 1321, Time: 0.177) Frontier Size: 1101
+f(n) = 226.71426 (Expanded Nodes: 221, Evaluated States: 1327, Time: 0.177) Frontier Size: 1106
+f(n) = 226.74998 (Expanded Nodes: 437, Evaluated States: 2618, Time: 0.263) Frontier Size: 2181
+f(n) = 226.87498 (Expanded Nodes: 439, Evaluated States: 2629, Time: 0.264) Frontier Size: 2190
+f(n) = 226.99998 (Expanded Nodes: 441, Evaluated States: 2640, Time: 0.264) Frontier Size: 2199
+f(n) = 227.12498 (Expanded Nodes: 443, Evaluated States: 2651, Time: 0.265) Frontier Size: 2208
+f(n) = 227.24998 (Expanded Nodes: 445, Evaluated States: 2662, Time: 0.265) Frontier Size: 2217
+f(n) = 227.2857 (Expanded Nodes: 447, Evaluated States: 2673, Time: 0.265) Frontier Size: 2226
+f(n) = 227.37498 (Expanded Nodes: 663, Evaluated States: 3536, Time: 0.322) Frontier Size: 2873
+f(n) = 227.49998 (Expanded Nodes: 666, Evaluated States: 3551, Time: 0.323) Frontier Size: 2885
+f(n) = 227.62498 (Expanded Nodes: 668, Evaluated States: 3560, Time: 0.323) Frontier Size: 2892
+f(n) = 227.74998 (Expanded Nodes: 670, Evaluated States: 3569, Time: 0.323) Frontier Size: 2899
+f(n) = 227.85712 (Expanded Nodes: 672, Evaluated States: 3578, Time: 0.323) Frontier Size: 2906
+f(n) = 227.85713 (Expanded Nodes: 736, Evaluated States: 3834, Time: 0.329) Frontier Size: 3098
+f(n) = 227.87498 (Expanded Nodes: 887, Evaluated States: 4437, Time: 0.341) Frontier Size: 3550
+f(n) = 227.99998 (Expanded Nodes: 890, Evaluated States: 4450, Time: 0.341) Frontier Size: 3560
+f(n) = 228.0 (Expanded Nodes: 1337, Evaluated States: 6457, Time: 0.383) Frontier Size: 5120
+f(n) = 228.12498 (Expanded Nodes: 1338, Evaluated States: 6461, Time: 0.383) Frontier Size: 5123
+f(n) = 228.14284 (Expanded Nodes: 1341, Evaluated States: 6472, Time: 0.383) Frontier Size: 5131
+f(n) = 228.24998 (Expanded Nodes: 1342, Evaluated States: 6473, Time: 0.383) Frontier Size: 5131
+f(n) = 228.30768 (Expanded Nodes: 1345, Evaluated States: 6484, Time: 0.383) Frontier Size: 5139
+f(n) = 228.37498 (Expanded Nodes: 1346, Evaluated States: 6488, Time: 0.384) Frontier Size: 5142
+f(n) = 228.42856 (Expanded Nodes: 1349, Evaluated States: 6499, Time: 0.384) Frontier Size: 5150
+f(n) = 228.49998 (Expanded Nodes: 1564, Evaluated States: 7358, Time: 0.604) Frontier Size: 5794
+f(n) = 228.5 (Expanded Nodes: 1568, Evaluated States: 7373, Time: 0.604) Frontier Size: 5805
+f(n) = 228.57141 (Expanded Nodes: 1569, Evaluated States: 7380, Time: 0.604) Frontier Size: 5811
+f(n) = 228.62498 (Expanded Nodes: 2013, Evaluated States: 9375, Time: 0.628) Frontier Size: 7362
+f(n) = 228.71426 (Expanded Nodes: 2018, Evaluated States: 9393, Time: 0.628) Frontier Size: 7375
+f(n) = 228.74998 (Expanded Nodes: 2019, Evaluated States: 9394, Time: 0.628) Frontier Size: 7375
+f(n) = 228.76923 (Expanded Nodes: 2023, Evaluated States: 9408, Time: 0.629) Frontier Size: 7385
+f(n) = 228.87498 (Expanded Nodes: 2024, Evaluated States: 9411, Time: 0.629) Frontier Size: 7387
+f(n) = 228.99998 (Expanded Nodes: 2028, Evaluated States: 9425, Time: 0.629) Frontier Size: 7397
+f(n) = 229.0 (Expanded Nodes: 2247, Evaluated States: 10298, Time: 0.705) Frontier Size: 8051
+Problem Solved
+
+Found Plan:
+0.0: (move-slow farm0 farm1)
+1.0: (move-slow farm0 farm1)
+2.0: (move-slow farm0 farm1)
+3.0: (move-slow farm0 farm1)
+4.0: (move-slow farm0 farm1)
+5.0: (move-slow farm0 farm1)
+6.0: (move-slow farm0 farm1)
+7.0: (move-slow farm0 farm1)
+8.0: (move-slow farm0 farm1)
+9.0: (move-slow farm0 farm1)
+10.0: (move-slow farm0 farm1)
+11.0: (move-slow farm0 farm1)
+12.0: (move-slow farm0 farm1)
+13.0: (move-slow farm0 farm1)
+14.0: (move-slow farm0 farm1)
+15.0: (move-slow farm0 farm1)
+16.0: (move-slow farm0 farm1)
+17.0: (move-slow farm0 farm1)
+18.0: (move-slow farm0 farm1)
+19.0: (move-slow farm0 farm1)
+20.0: (move-slow farm0 farm1)
+21.0: (move-slow farm0 farm1)
+22.0: (move-slow farm0 farm1)
+23.0: (move-slow farm0 farm1)
+24.0: (move-slow farm0 farm1)
+25.0: (move-slow farm0 farm1)
+26.0: (move-slow farm0 farm1)
+27.0: (move-slow farm0 farm1)
+28.0: (move-slow farm0 farm1)
+29.0: (move-slow farm0 farm1)
+30.0: (move-slow farm0 farm1)
+31.0: (move-slow farm0 farm1)
+32.0: (move-slow farm0 farm1)
+33.0: (move-slow farm0 farm1)
+34.0: (move-slow farm0 farm1)
+35.0: (move-slow farm0 farm1)
+36.0: (move-slow farm0 farm1)
+37.0: (move-slow farm0 farm1)
+38.0: (move-slow farm0 farm1)
+39.0: (move-slow farm0 farm1)
+40.0: (move-slow farm0 farm1)
+41.0: (move-slow farm0 farm1)
+42.0: (move-slow farm0 farm1)
+43.0: (move-slow farm0 farm1)
+44.0: (move-slow farm0 farm1)
+45.0: (move-slow farm0 farm1)
+46.0: (move-slow farm0 farm1)
+47.0: (move-slow farm0 farm1)
+48.0: (move-slow farm0 farm1)
+49.0: (move-slow farm0 farm1)
+50.0: (move-slow farm0 farm1)
+51.0: (move-slow farm0 farm1)
+52.0: (move-slow farm0 farm1)
+53.0: (move-slow farm0 farm1)
+54.0: (move-slow farm0 farm1)
+55.0: (move-slow farm0 farm1)
+56.0: (move-slow farm0 farm1)
+57.0: (move-slow farm0 farm1)
+58.0: (move-slow farm0 farm1)
+59.0: (move-slow farm0 farm1)
+60.0: (move-slow farm0 farm1)
+61.0: (move-slow farm0 farm1)
+62.0: (move-slow farm0 farm1)
+63.0: (move-slow farm0 farm1)
+64.0: (move-slow farm0 farm1)
+65.0: (move-slow farm0 farm1)
+66.0: (move-slow farm0 farm1)
+67.0: (move-slow farm0 farm1)
+68.0: (move-slow farm0 farm1)
+69.0: (move-slow farm0 farm1)
+70.0: (move-slow farm0 farm1)
+71.0: (move-slow farm0 farm1)
+72.0: (move-slow farm0 farm1)
+73.0: (move-slow farm0 farm1)
+74.0: (move-slow farm0 farm1)
+75.0: (move-slow farm0 farm1)
+76.0: (move-slow farm0 farm1)
+77.0: (move-slow farm0 farm1)
+78.0: (move-slow farm0 farm1)
+79.0: (move-slow farm0 farm1)
+80.0: (move-slow farm0 farm1)
+81.0: (move-slow farm0 farm1)
+82.0: (move-slow farm0 farm1)
+83.0: (move-slow farm0 farm1)
+84.0: (move-slow farm0 farm1)
+85.0: (move-slow farm0 farm1)
+86.0: (move-slow farm0 farm1)
+87.0: (move-slow farm0 farm1)
+88.0: (move-slow farm0 farm1)
+89.0: (move-slow farm0 farm1)
+90.0: (move-slow farm0 farm1)
+91.0: (move-slow farm0 farm1)
+92.0: (move-slow farm0 farm1)
+93.0: (move-slow farm0 farm1)
+94.0: (move-slow farm0 farm1)
+95.0: (move-slow farm0 farm1)
+96.0: (move-slow farm0 farm1)
+97.0: (move-slow farm0 farm1)
+98.0: (move-slow farm0 farm1)
+99.0: (move-slow farm0 farm1)
+100.0: (move-slow farm0 farm1)
+101.0: (move-slow farm0 farm1)
+102.0: (move-slow farm0 farm1)
+103.0: (move-slow farm0 farm1)
+104.0: (move-slow farm0 farm1)
+105.0: (move-slow farm0 farm1)
+106.0: (move-slow farm0 farm1)
+107.0: (move-slow farm0 farm1)
+108.0: (move-slow farm0 farm1)
+109.0: (move-slow farm0 farm1)
+110.0: (move-slow farm0 farm1)
+111.0: (move-slow farm0 farm1)
+112.0: (move-slow farm0 farm1)
+113.0: (move-slow farm0 farm1)
+114.0: (move-slow farm0 farm1)
+115.0: (move-slow farm0 farm1)
+116.0: (move-slow farm0 farm1)
+117.0: (move-slow farm0 farm1)
+118.0: (move-slow farm0 farm1)
+119.0: (move-slow farm0 farm1)
+120.0: (move-slow farm0 farm1)
+121.0: (move-slow farm0 farm1)
+122.0: (move-slow farm0 farm1)
+123.0: (move-slow farm0 farm1)
+124.0: (move-slow farm0 farm1)
+125.0: (move-slow farm0 farm1)
+126.0: (move-slow farm0 farm1)
+127.0: (move-slow farm0 farm1)
+128.0: (move-slow farm0 farm1)
+129.0: (move-slow farm0 farm1)
+130.0: (move-slow farm0 farm1)
+131.0: (move-slow farm0 farm1)
+132.0: (move-slow farm0 farm1)
+133.0: (move-slow farm0 farm1)
+134.0: (move-slow farm0 farm1)
+135.0: (move-slow farm0 farm1)
+136.0: (move-slow farm0 farm1)
+137.0: (move-slow farm0 farm1)
+138.0: (move-slow farm0 farm1)
+139.0: (move-slow farm0 farm1)
+140.0: (move-slow farm0 farm1)
+141.0: (move-slow farm0 farm1)
+142.0: (move-slow farm0 farm1)
+143.0: (move-slow farm0 farm1)
+144.0: (move-slow farm0 farm1)
+145.0: (move-slow farm0 farm1)
+146.0: (move-slow farm0 farm1)
+147.0: (move-slow farm0 farm1)
+148.0: (move-slow farm0 farm1)
+149.0: (move-slow farm0 farm1)
+150.0: (move-slow farm0 farm1)
+151.0: (move-slow farm0 farm1)
+152.0: (move-slow farm0 farm1)
+153.0: (move-slow farm0 farm1)
+154.0: (move-slow farm0 farm1)
+155.0: (move-slow farm0 farm1)
+156.0: (move-slow farm0 farm1)
+157.0: (move-slow farm0 farm1)
+158.0: (move-slow farm0 farm1)
+159.0: (move-slow farm0 farm1)
+160.0: (move-slow farm0 farm1)
+161.0: (move-slow farm0 farm1)
+162.0: (move-slow farm0 farm1)
+163.0: (move-slow farm0 farm1)
+164.0: (move-slow farm0 farm1)
+165.0: (move-slow farm0 farm1)
+166.0: (move-slow farm0 farm1)
+167.0: (move-slow farm0 farm1)
+168.0: (move-slow farm0 farm1)
+169.0: (move-slow farm0 farm1)
+170.0: (move-slow farm0 farm1)
+171.0: (move-slow farm0 farm1)
+172.0: (move-slow farm0 farm1)
+173.0: (move-slow farm0 farm1)
+174.0: (move-slow farm0 farm1)
+175.0: (move-slow farm0 farm1)
+176.0: (move-slow farm0 farm1)
+177.0: (move-slow farm0 farm1)
+178.0: (move-slow farm0 farm1)
+179.0: (move-slow farm0 farm1)
+180.0: (move-slow farm0 farm1)
+181.0: (move-slow farm0 farm1)
+182.0: (move-slow farm0 farm1)
+183.0: (move-slow farm0 farm1)
+184.0: (move-slow farm0 farm1)
+185.0: (move-slow farm0 farm1)
+186.0: (move-slow farm0 farm1)
+187.0: (move-slow farm0 farm1)
+188.0: (move-slow farm0 farm1)
+189.0: (move-slow farm0 farm1)
+190.0: (move-slow farm0 farm1)
+191.0: (move-slow farm0 farm1)
+192.0: (move-slow farm0 farm1)
+193.0: (move-slow farm0 farm1)
+194.0: (move-slow farm0 farm1)
+195.0: (move-slow farm0 farm1)
+196.0: (move-slow farm0 farm1)
+197.0: (move-slow farm0 farm1)
+198.0: (move-slow farm0 farm1)
+199.0: (move-slow farm0 farm1)
+200.0: (move-slow farm0 farm1)
+201.0: (move-slow farm0 farm1)
+202.0: (move-slow farm0 farm1)
+203.0: (move-slow farm0 farm1)
+204.0: (move-slow farm0 farm1)
+205.0: (move-slow farm0 farm1)
+206.0: (move-slow farm0 farm1)
+207.0: (move-slow farm0 farm1)
+208.0: (move-slow farm0 farm1)
+209.0: (move-slow farm0 farm1)
+210.0: (move-slow farm0 farm1)
+211.0: (move-slow farm0 farm1)
+212.0: (move-slow farm0 farm1)
+213.0: (move-slow farm0 farm1)
+214.0: (move-slow farm0 farm1)
+215.0: (move-slow farm0 farm1)
+216.0: (move-slow farm0 farm1)
+217.0: (move-slow farm0 farm1)
+218.0: (move-slow farm0 farm1)
+219.0: (move-slow farm0 farm1)
+220.0: (move-slow farm0 farm1)
+221.0: (move-slow farm0 farm1)
+222.0: (move-slow farm0 farm1)
+223.0: (move-slow farm0 farm1)
+224.0: (move-slow farm0 farm1)
+225.0: (move-slow farm0 farm1)
+226.0: (move-slow farm0 farm2)
+227.0: (move-slow farm0 farm1)
+228.0: (move-slow farm1 farm3)
+
+Plan-Length:229
+Metric (Search):229.0
+Planning Time (msec): 1267
+Heuristic Time (msec): 319
+Search Time (msec): 705
+Expanded Nodes:2248
+States Evaluated:10298
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:0
+Number of Duplicates detected:12518

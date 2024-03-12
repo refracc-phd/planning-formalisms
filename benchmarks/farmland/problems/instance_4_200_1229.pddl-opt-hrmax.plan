@@ -1,0 +1,186 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 36
+Aibr Preprocessing
+|F|:0
+|X|:4
+|A|:16
+|P|:0
+|E|:0
+H1 Setup Time (msec): 23
+Setting horizon to:NaN
+Running WA-STAR
+h(n = s_0)=111.85713
+f(n) = 111.85713 (Expanded Nodes: 0, Evaluated States: 0, Time: 0.008) Frontier Size: 0
+f(n) = 111.87499 (Expanded Nodes: 102, Evaluated States: 613, Time: 0.136) Frontier Size: 511
+f(n) = 111.99999 (Expanded Nodes: 103, Evaluated States: 619, Time: 0.136) Frontier Size: 516
+f(n) = 112.12499 (Expanded Nodes: 104, Evaluated States: 625, Time: 0.137) Frontier Size: 521
+f(n) = 112.24999 (Expanded Nodes: 105, Evaluated States: 631, Time: 0.137) Frontier Size: 526
+f(n) = 112.37499 (Expanded Nodes: 106, Evaluated States: 637, Time: 0.138) Frontier Size: 531
+f(n) = 112.42856 (Expanded Nodes: 107, Evaluated States: 643, Time: 0.138) Frontier Size: 536
+f(n) = 112.428566 (Expanded Nodes: 139, Evaluated States: 835, Time: 0.151) Frontier Size: 696
+f(n) = 112.49999 (Expanded Nodes: 209, Evaluated States: 1244, Time: 0.177) Frontier Size: 1035
+f(n) = 112.62499 (Expanded Nodes: 211, Evaluated States: 1255, Time: 0.178) Frontier Size: 1044
+f(n) = 112.74999 (Expanded Nodes: 213, Evaluated States: 1266, Time: 0.179) Frontier Size: 1053
+f(n) = 112.87499 (Expanded Nodes: 215, Evaluated States: 1277, Time: 0.179) Frontier Size: 1062
+f(n) = 112.99999 (Expanded Nodes: 217, Evaluated States: 1288, Time: 0.18) Frontier Size: 1071
+f(n) = 113.12499 (Expanded Nodes: 321, Evaluated States: 1706, Time: 0.314) Frontier Size: 1385
+f(n) = 113.24999 (Expanded Nodes: 324, Evaluated States: 1721, Time: 0.315) Frontier Size: 1397
+f(n) = 113.37499 (Expanded Nodes: 326, Evaluated States: 1730, Time: 0.315) Frontier Size: 1404
+f(n) = 113.49999 (Expanded Nodes: 328, Evaluated States: 1739, Time: 0.316) Frontier Size: 1411
+f(n) = 113.57142 (Expanded Nodes: 330, Evaluated States: 1748, Time: 0.316) Frontier Size: 1418
+f(n) = 113.57143 (Expanded Nodes: 399, Evaluated States: 2023, Time: 0.32) Frontier Size: 1624
+f(n) = 113.62499 (Expanded Nodes: 431, Evaluated States: 2151, Time: 0.322) Frontier Size: 1720
+f(n) = 113.71428 (Expanded Nodes: 434, Evaluated States: 2164, Time: 0.323) Frontier Size: 1730
+f(n) = 113.74999 (Expanded Nodes: 649, Evaluated States: 3126, Time: 0.338) Frontier Size: 2477
+f(n) = 113.85713 (Expanded Nodes: 653, Evaluated States: 3144, Time: 0.338) Frontier Size: 2491
+f(n) = 113.87499 (Expanded Nodes: 654, Evaluated States: 3145, Time: 0.338) Frontier Size: 2491
+f(n) = 113.99999 (Expanded Nodes: 657, Evaluated States: 3156, Time: 0.339) Frontier Size: 2499
+f(n) = 114.0 (Expanded Nodes: 660, Evaluated States: 3167, Time: 0.339) Frontier Size: 2507
+f(n) = 114.12499 (Expanded Nodes: 661, Evaluated States: 3171, Time: 0.339) Frontier Size: 2510
+f(n) = 114.14285 (Expanded Nodes: 664, Evaluated States: 3182, Time: 0.339) Frontier Size: 2518
+f(n) = 114.15384 (Expanded Nodes: 765, Evaluated States: 3585, Time: 0.347) Frontier Size: 2820
+f(n) = 114.24999 (Expanded Nodes: 766, Evaluated States: 3589, Time: 0.348) Frontier Size: 2823
+f(n) = 114.285706 (Expanded Nodes: 770, Evaluated States: 3604, Time: 0.348) Frontier Size: 2834
+f(n) = 114.37499 (Expanded Nodes: 986, Evaluated States: 4574, Time: 0.368) Frontier Size: 3588
+f(n) = 114.428566 (Expanded Nodes: 990, Evaluated States: 4588, Time: 0.369) Frontier Size: 3598
+f(n) = 114.49999 (Expanded Nodes: 991, Evaluated States: 4589, Time: 0.369) Frontier Size: 3598
+f(n) = 114.5 (Expanded Nodes: 995, Evaluated States: 4603, Time: 0.369) Frontier Size: 3608
+f(n) = 114.61538 (Expanded Nodes: 997, Evaluated States: 4613, Time: 0.369) Frontier Size: 3616
+f(n) = 114.62499 (Expanded Nodes: 998, Evaluated States: 4616, Time: 0.369) Frontier Size: 3618
+f(n) = 114.71428 (Expanded Nodes: 1002, Evaluated States: 4630, Time: 0.37) Frontier Size: 3628
+f(n) = 114.74999 (Expanded Nodes: 1102, Evaluated States: 5029, Time: 0.376) Frontier Size: 3927
+f(n) = 114.85713 (Expanded Nodes: 1107, Evaluated States: 5047, Time: 0.377) Frontier Size: 3940
+f(n) = 114.87499 (Expanded Nodes: 1323, Evaluated States: 5589, Time: 0.387) Frontier Size: 4266
+f(n) = 114.99999 (Expanded Nodes: 1329, Evaluated States: 5608, Time: 0.387) Frontier Size: 4279
+f(n) = 115.0 (Expanded Nodes: 1334, Evaluated States: 5622, Time: 0.388) Frontier Size: 4288
+Problem Solved
+
+Found Plan:
+0.0: (move-slow farm0 farm1)
+1.0: (move-slow farm0 farm1)
+2.0: (move-slow farm0 farm1)
+3.0: (move-slow farm0 farm1)
+4.0: (move-slow farm0 farm1)
+5.0: (move-slow farm0 farm1)
+6.0: (move-slow farm0 farm1)
+7.0: (move-slow farm0 farm1)
+8.0: (move-slow farm0 farm1)
+9.0: (move-slow farm0 farm1)
+10.0: (move-slow farm0 farm1)
+11.0: (move-slow farm0 farm1)
+12.0: (move-slow farm0 farm1)
+13.0: (move-slow farm0 farm1)
+14.0: (move-slow farm0 farm1)
+15.0: (move-slow farm0 farm1)
+16.0: (move-slow farm0 farm1)
+17.0: (move-slow farm0 farm1)
+18.0: (move-slow farm0 farm1)
+19.0: (move-slow farm0 farm1)
+20.0: (move-slow farm0 farm1)
+21.0: (move-slow farm0 farm1)
+22.0: (move-slow farm0 farm1)
+23.0: (move-slow farm0 farm1)
+24.0: (move-slow farm0 farm1)
+25.0: (move-slow farm0 farm1)
+26.0: (move-slow farm0 farm1)
+27.0: (move-slow farm0 farm1)
+28.0: (move-slow farm0 farm1)
+29.0: (move-slow farm0 farm1)
+30.0: (move-slow farm0 farm1)
+31.0: (move-slow farm0 farm1)
+32.0: (move-slow farm0 farm1)
+33.0: (move-slow farm0 farm1)
+34.0: (move-slow farm0 farm1)
+35.0: (move-slow farm0 farm1)
+36.0: (move-slow farm0 farm1)
+37.0: (move-slow farm0 farm1)
+38.0: (move-slow farm0 farm1)
+39.0: (move-slow farm0 farm1)
+40.0: (move-slow farm0 farm1)
+41.0: (move-slow farm0 farm1)
+42.0: (move-slow farm0 farm1)
+43.0: (move-slow farm0 farm1)
+44.0: (move-slow farm0 farm1)
+45.0: (move-slow farm0 farm1)
+46.0: (move-slow farm0 farm1)
+47.0: (move-slow farm0 farm1)
+48.0: (move-slow farm0 farm1)
+49.0: (move-slow farm0 farm1)
+50.0: (move-slow farm0 farm1)
+51.0: (move-slow farm0 farm1)
+52.0: (move-slow farm0 farm1)
+53.0: (move-slow farm0 farm1)
+54.0: (move-slow farm0 farm1)
+55.0: (move-slow farm0 farm1)
+56.0: (move-slow farm0 farm1)
+57.0: (move-slow farm0 farm1)
+58.0: (move-slow farm0 farm1)
+59.0: (move-slow farm0 farm1)
+60.0: (move-slow farm0 farm1)
+61.0: (move-slow farm0 farm1)
+62.0: (move-slow farm0 farm1)
+63.0: (move-slow farm0 farm1)
+64.0: (move-slow farm0 farm1)
+65.0: (move-slow farm0 farm1)
+66.0: (move-slow farm0 farm1)
+67.0: (move-slow farm0 farm1)
+68.0: (move-slow farm0 farm1)
+69.0: (move-slow farm0 farm1)
+70.0: (move-slow farm0 farm1)
+71.0: (move-slow farm0 farm1)
+72.0: (move-slow farm0 farm1)
+73.0: (move-slow farm0 farm1)
+74.0: (move-slow farm0 farm1)
+75.0: (move-slow farm0 farm1)
+76.0: (move-slow farm0 farm1)
+77.0: (move-slow farm0 farm1)
+78.0: (move-slow farm0 farm1)
+79.0: (move-slow farm0 farm1)
+80.0: (move-slow farm0 farm1)
+81.0: (move-slow farm0 farm1)
+82.0: (move-slow farm0 farm1)
+83.0: (move-slow farm0 farm1)
+84.0: (move-slow farm0 farm1)
+85.0: (move-slow farm0 farm1)
+86.0: (move-slow farm0 farm1)
+87.0: (move-slow farm0 farm1)
+88.0: (move-slow farm0 farm1)
+89.0: (move-slow farm0 farm1)
+90.0: (move-slow farm0 farm1)
+91.0: (move-slow farm0 farm1)
+92.0: (move-slow farm0 farm1)
+93.0: (move-slow farm0 farm1)
+94.0: (move-slow farm0 farm1)
+95.0: (move-slow farm0 farm1)
+96.0: (move-slow farm0 farm1)
+97.0: (move-slow farm0 farm1)
+98.0: (move-slow farm0 farm1)
+99.0: (move-slow farm0 farm1)
+100.0: (move-slow farm0 farm1)
+101.0: (move-slow farm0 farm1)
+102.0: (move-slow farm0 farm1)
+103.0: (move-slow farm0 farm1)
+104.0: (move-slow farm0 farm1)
+105.0: (move-slow farm0 farm1)
+106.0: (move-slow farm0 farm1)
+107.0: (move-slow farm0 farm1)
+108.0: (move-slow farm0 farm1)
+109.0: (move-slow farm0 farm1)
+110.0: (move-slow farm0 farm1)
+111.0: (move-slow farm0 farm1)
+112.0: (move-slow farm0 farm2)
+113.0: (move-slow farm1 farm3)
+114.0: (move-slow farm0 farm1)
+
+Plan-Length:115
+Metric (Search):115.0
+Planning Time (msec): 952
+Heuristic Time (msec): 161
+Search Time (msec): 388
+Expanded Nodes:1335
+States Evaluated:5622
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:0
+Number of Duplicates detected:8046

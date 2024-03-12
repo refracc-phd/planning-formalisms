@@ -1,0 +1,67 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 31
+Aibr Preprocessing
+|F|:71
+|X|:0
+|A|:112
+|P|:0
+|E|:0
+H1 Setup Time (msec): 34
+Setting horizon to:NaN
+Running WA-STAR
+h(n = s_0)=6.0
+f(n) = 6.0 (Expanded Nodes: 0, Evaluated States: 0, Time: 0.018) Frontier Size: 0
+f(n) = 7.0 (Expanded Nodes: 1, Evaluated States: 2, Time: 0.046) Frontier Size: 1
+f(n) = 8.0 (Expanded Nodes: 4, Evaluated States: 7, Time: 0.055) Frontier Size: 3
+f(n) = 9.0 (Expanded Nodes: 12, Evaluated States: 24, Time: 0.064) Frontier Size: 12
+f(n) = 10.0 (Expanded Nodes: 26, Evaluated States: 58, Time: 0.083) Frontier Size: 32
+f(n) = 11.0 (Expanded Nodes: 62, Evaluated States: 135, Time: 0.138) Frontier Size: 73
+f(n) = 12.0 (Expanded Nodes: 157, Evaluated States: 375, Time: 0.172) Frontier Size: 218
+f(n) = 13.0 (Expanded Nodes: 300, Evaluated States: 671, Time: 0.216) Frontier Size: 371
+f(n) = 14.0 (Expanded Nodes: 728, Evaluated States: 1694, Time: 0.418) Frontier Size: 966
+f(n) = 15.0 (Expanded Nodes: 1297, Evaluated States: 2767, Time: 0.532) Frontier Size: 1470
+f(n) = 16.0 (Expanded Nodes: 2844, Evaluated States: 5919, Time: 0.86) Frontier Size: 3075
+f(n) = 17.0 (Expanded Nodes: 4933, Evaluated States: 9228, Time: 0.989) Frontier Size: 4295
+f(n) = 18.0 (Expanded Nodes: 8190, Evaluated States: 14547, Time: 1.248) Frontier Size: 6357
+f(n) = 19.0 (Expanded Nodes: 13686, Evaluated States: 21587, Time: 1.58) Frontier Size: 7901
+f(n) = 20.0 (Expanded Nodes: 18309, Evaluated States: 27376, Time: 1.828) Frontier Size: 9067
+f(n) = 21.0 (Expanded Nodes: 26061, Evaluated States: 35727, Time: 2.297) Frontier Size: 9666
+f(n) = 22.0 (Expanded Nodes: 33190, Evaluated States: 41984, Time: 2.492) Frontier Size: 8794
+Problem Solved
+
+Found Plan:
+0.0: (unstack a g)
+1.0: (put-down a)
+2.0: (unstack c d)
+3.0: (stack c a)
+4.0: (unstack d b)
+5.0: (put-down d)
+6.0: (unstack c a)
+7.0: (stack c d)
+8.0: (pick-up g)
+9.0: (stack g c)
+10.0: (unstack b e)
+11.0: (put-down b)
+12.0: (unstack e f)
+13.0: (put-down e)
+14.0: (pick-up f)
+15.0: (stack f g)
+16.0: (pick-up b)
+17.0: (stack b f)
+18.0: (pick-up e)
+19.0: (stack e b)
+20.0: (pick-up a)
+21.0: (stack a e)
+
+Plan-Length:22
+Metric (Search):22.0
+Planning Time (msec): 3050
+Heuristic Time (msec): 1865
+Search Time (msec): 2492
+Expanded Nodes:33194
+States Evaluated:41987
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:0
+Number of Duplicates detected:70563

@@ -1,0 +1,85 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 4958
+Aibr Preprocessing
+|F|:91
+|X|:0
+|A|:204
+|P|:0
+|E|:0
+H1 Setup Time (msec): 31
+Setting horizon to:NaN
+Running WA-STAR
+h(n = s_0)=6.0
+f(n) = 6.0 (Expanded Nodes: 0, Evaluated States: 0, Time: 0.045) Frontier Size: 0
+f(n) = 7.0 (Expanded Nodes: 112, Evaluated States: 149, Time: 0.166) Frontier Size: 10
+f(n) = 8.0 (Expanded Nodes: 504, Evaluated States: 751, Time: 0.409) Frontier Size: 172
+f(n) = 9.0 (Expanded Nodes: 3328, Evaluated States: 4437, Time: 0.85) Frontier Size: 664
+Problem Solved
+
+Found Plan:
+0.0: (move player-01 pos-6-3 pos-6-2 dir-up)
+1.0: (move player-01 pos-6-2 pos-5-2 dir-left)
+2.0: (move player-01 pos-5-2 pos-4-2 dir-left)
+3.0: (move player-02 pos-4-4 pos-4-5 dir-down)
+4.0: (push-to-nongoal player-01 stone-01 pos-4-2 pos-4-3 pos-4-4 dir-down)
+5.0: (move player-02 pos-4-5 pos-4-6 dir-down)
+6.0: (move player-02 pos-4-6 pos-3-6 dir-left)
+7.0: (move player-02 pos-3-6 pos-2-6 dir-left)
+8.0: (push-to-nongoal player-01 stone-01 pos-4-3 pos-4-4 pos-4-5 dir-down)
+9.0: (move player-01 pos-4-4 pos-3-4 dir-left)
+10.0: (move player-01 pos-3-4 pos-2-4 dir-left)
+11.0: (move player-02 pos-2-6 pos-3-6 dir-right)
+12.0: (move player-02 pos-3-6 pos-3-5 dir-up)
+13.0: (move player-02 pos-3-5 pos-3-4 dir-up)
+14.0: (move player-02 pos-3-4 pos-4-4 dir-right)
+15.0: (move player-02 pos-4-4 pos-4-3 dir-up)
+16.0: (move player-01 pos-2-4 pos-3-4 dir-right)
+17.0: (move player-01 pos-3-4 pos-3-5 dir-down)
+18.0: (move player-01 pos-3-5 pos-3-6 dir-down)
+19.0: (move player-01 pos-3-6 pos-4-6 dir-right)
+20.0: (move player-02 pos-4-3 pos-4-2 dir-up)
+21.0: (move player-02 pos-4-2 pos-5-2 dir-right)
+22.0: (move player-02 pos-5-2 pos-6-2 dir-right)
+23.0: (move player-02 pos-6-2 pos-6-3 dir-down)
+24.0: (push-to-nongoal player-02 stone-02 pos-6-3 pos-5-3 pos-4-3 dir-left)
+25.0: (move player-01 pos-4-6 pos-3-6 dir-left)
+26.0: (move player-01 pos-3-6 pos-3-5 dir-up)
+27.0: (move player-01 pos-3-5 pos-3-4 dir-up)
+28.0: (move player-01 pos-3-4 pos-4-4 dir-right)
+29.0: (move player-02 pos-5-3 pos-5-2 dir-up)
+30.0: (move player-02 pos-5-2 pos-6-2 dir-right)
+31.0: (push-to-nongoal player-01 stone-01 pos-4-4 pos-4-5 pos-4-6 dir-down)
+32.0: (move player-01 pos-4-5 pos-4-4 dir-up)
+33.0: (move player-01 pos-4-4 pos-3-4 dir-left)
+34.0: (move player-02 pos-6-2 pos-5-2 dir-left)
+35.0: (move player-02 pos-5-2 pos-4-2 dir-left)
+36.0: (push-to-nongoal player-02 stone-02 pos-4-2 pos-4-3 pos-4-4 dir-down)
+37.0: (move player-01 pos-3-4 pos-3-5 dir-down)
+38.0: (move player-01 pos-3-5 pos-4-5 dir-right)
+39.0: (move player-01 pos-4-5 pos-5-5 dir-right)
+40.0: (push-to-nongoal player-02 stone-02 pos-4-3 pos-4-4 pos-4-5 dir-down)
+41.0: (push-to-nongoal player-01 stone-02 pos-5-5 pos-4-5 pos-3-5 dir-left)
+42.0: (move player-02 pos-4-4 pos-4-3 dir-up)
+43.0: (move player-01 pos-4-5 pos-4-4 dir-up)
+44.0: (move player-01 pos-4-4 pos-3-4 dir-left)
+45.0: (move player-02 pos-4-3 pos-4-4 dir-down)
+46.0: (move player-01 pos-3-4 pos-2-4 dir-left)
+47.0: (move player-02 pos-4-4 pos-3-4 dir-left)
+48.0: (move player-01 pos-2-4 pos-2-5 dir-down)
+49.0: (move player-01 pos-2-5 pos-2-6 dir-down)
+50.0: (move player-01 pos-2-6 pos-3-6 dir-right)
+51.0: (push-to-goal player-01 stone-01 pos-3-6 pos-4-6 pos-5-6 dir-right)
+52.0: (push-to-goal player-02 stone-02 pos-3-4 pos-3-5 pos-3-6 dir-down)
+
+Plan-Length:53
+Metric (Search):9.0
+Planning Time (msec): 6962
+Heuristic Time (msec): 624
+Search Time (msec): 851
+Expanded Nodes:3335
+States Evaluated:4460
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:449
+Number of Duplicates detected:11648

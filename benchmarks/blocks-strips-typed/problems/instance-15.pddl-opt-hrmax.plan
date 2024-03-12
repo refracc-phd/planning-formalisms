@@ -1,0 +1,56 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 34
+Aibr Preprocessing
+|F|:89
+|X|:0
+|A|:144
+|P|:0
+|E|:0
+H1 Setup Time (msec): 30
+Setting horizon to:NaN
+Running WA-STAR
+h(n = s_0)=5.0
+f(n) = 5.0 (Expanded Nodes: 0, Evaluated States: 0, Time: 0.023) Frontier Size: 0
+f(n) = 6.0 (Expanded Nodes: 1, Evaluated States: 5, Time: 0.067) Frontier Size: 4
+f(n) = 7.0 (Expanded Nodes: 7, Evaluated States: 31, Time: 0.084) Frontier Size: 24
+f(n) = 8.0 (Expanded Nodes: 51, Evaluated States: 196, Time: 0.163) Frontier Size: 145
+f(n) = 9.0 (Expanded Nodes: 160, Evaluated States: 528, Time: 0.289) Frontier Size: 368
+f(n) = 10.0 (Expanded Nodes: 638, Evaluated States: 1939, Time: 0.424) Frontier Size: 1301
+f(n) = 11.0 (Expanded Nodes: 1309, Evaluated States: 3525, Time: 0.563) Frontier Size: 2216
+f(n) = 12.0 (Expanded Nodes: 3979, Evaluated States: 10542, Time: 0.984) Frontier Size: 6563
+f(n) = 13.0 (Expanded Nodes: 7386, Evaluated States: 17523, Time: 1.321) Frontier Size: 10137
+f(n) = 14.0 (Expanded Nodes: 16651, Evaluated States: 37971, Time: 2.268) Frontier Size: 21320
+f(n) = 15.0 (Expanded Nodes: 33166, Evaluated States: 66597, Time: 3.656) Frontier Size: 33431
+f(n) = 16.0 (Expanded Nodes: 52707, Evaluated States: 102357, Time: 5.23) Frontier Size: 49650
+Problem Solved
+
+Found Plan:
+0.0: (unstack d b)
+1.0: (stack d h)
+2.0: (pick-up a)
+3.0: (stack a d)
+4.0: (unstack b f)
+5.0: (put-down b)
+6.0: (unstack f g)
+7.0: (stack f a)
+8.0: (pick-up g)
+9.0: (stack g f)
+10.0: (pick-up e)
+11.0: (stack e g)
+12.0: (pick-up b)
+13.0: (stack b e)
+14.0: (pick-up c)
+15.0: (stack c b)
+
+Plan-Length:16
+Metric (Search):16.0
+Planning Time (msec): 5773
+Heuristic Time (msec): 4700
+Search Time (msec): 5230
+Expanded Nodes:52711
+States Evaluated:102360
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:0
+Number of Duplicates detected:131267
