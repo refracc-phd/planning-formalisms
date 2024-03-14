@@ -27,7 +27,7 @@ heuristics=("aibr" "hmax" "hrmax" "hmrp")
 run_heuristic() {
   problem_file="$1"
   heuristic="$2"
-  java -Xmx250G -jar "$executable_location" -o "$domain_file" -f "$problem_file" -h "$heuristic" > "$problem_file-$heuristic.plan"
+  java -Xmx100G -jar "$executable_location" -o "$domain_file" -f "$problem_file" -h "$heuristic" > "$problem_file-$heuristic.plan"
   echo "Task completed: $problem_file - $heuristic"
 }
 
@@ -41,7 +41,7 @@ for problem_file in "$problem_dir"/*.pddl; do
   for heuristic in "${heuristics[@]}"; do
     run_heuristic "$problem_file" "$heuristic" &
     # Limit the number of background tasks to 10
-    if (( $(jobs | wc -l) >= 1 )); then
+    if (( $(jobs | wc -l) >= 5 )); then
       wait -n
     fi
   done

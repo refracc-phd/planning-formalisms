@@ -1,0 +1,107 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 45
+Aibr Preprocessing
+|F|:0
+|X|:8
+|A|:40
+|P|:0
+|E|:0
+AIBR selected
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=20.0
+ g(n)= 1.0 h(n)=19.0
+ g(n)= 4.0 h(n)=18.0
+ g(n)= 6.0 h(n)=17.0
+ g(n)= 8.0 h(n)=16.0
+ g(n)= 13.0 h(n)=15.0
+ g(n)= 16.0 h(n)=14.0
+ g(n)= 19.0 h(n)=13.0
+ g(n)= 20.0 h(n)=12.0
+ g(n)= 22.0 h(n)=11.0
+ g(n)= 25.0 h(n)=10.0
+ g(n)= 28.0 h(n)=9.0
+ g(n)= 29.0 h(n)=8.0
+ g(n)= 31.0 h(n)=7.0
+ g(n)= 33.0 h(n)=6.0
+ g(n)= 35.0 h(n)=5.0
+ g(n)= 47.0 h(n)=4.0
+ g(n)= 50.0 h(n)=3.0
+ g(n)= 55.0 h(n)=2.0
+ g(n)= 57.0 h(n)=1.0
+ g(n)= 59.0 h(n)=0.0
+Problem Solved
+
+Found Plan:
+0.0: (move-slow farm0 farm4)
+1.0: (move-slow farm1 farm5)
+2.0: (move-slow farm1 farm2)
+3.0: (move-slow farm6 farm7)
+4.0: (move-slow farm1 farm5)
+5.0: (move-slow farm1 farm5)
+6.0: (move-slow farm1 farm2)
+7.0: (move-slow farm1 farm5)
+8.0: (move-slow farm1 farm2)
+9.0: (move-fast farm1 farm5)
+10.0: (move-slow farm1 farm5)
+11.0: (move-slow farm1 farm5)
+12.0: (move-slow farm1 farm5)
+13.0: (move-slow farm1 farm5)
+14.0: (move-slow farm1 farm5)
+15.0: (move-slow farm1 farm5)
+16.0: (move-slow farm1 farm2)
+17.0: (move-slow farm1 farm5)
+18.0: (move-slow farm1 farm5)
+19.0: (move-slow farm1 farm5)
+20.0: (move-slow farm1 farm2)
+21.0: (move-slow farm1 farm5)
+22.0: (move-slow farm1 farm2)
+23.0: (move-slow farm1 farm5)
+24.0: (move-slow farm1 farm5)
+25.0: (move-slow farm1 farm2)
+26.0: (move-slow farm2 farm3)
+27.0: (move-slow farm1 farm5)
+28.0: (move-slow farm1 farm5)
+29.0: (move-slow farm1 farm5)
+30.0: (move-slow farm1 farm5)
+31.0: (move-slow farm1 farm5)
+32.0: (move-slow farm1 farm5)
+33.0: (move-slow farm1 farm5)
+34.0: (move-slow farm1 farm5)
+35.0: (move-slow farm2 farm3)
+36.0: (move-slow farm2 farm3)
+37.0: (move-slow farm2 farm6)
+38.0: (move-slow farm5 farm4)
+39.0: (move-slow farm2 farm6)
+40.0: (move-slow farm2 farm6)
+41.0: (move-slow farm6 farm7)
+42.0: (move-slow farm6 farm5)
+43.0: (move-slow farm1 farm5)
+44.0: (move-slow farm3 farm7)
+45.0: (move-slow farm1 farm5)
+46.0: (move-slow farm1 farm5)
+47.0: (move-slow farm1 farm5)
+48.0: (move-slow farm1 farm5)
+49.0: (move-slow farm1 farm5)
+50.0: (move-slow farm1 farm5)
+51.0: (move-slow farm1 farm5)
+52.0: (move-slow farm1 farm5)
+53.0: (move-slow farm1 farm5)
+54.0: (move-slow farm1 farm0)
+55.0: (move-slow farm1 farm2)
+56.0: (move-slow farm1 farm5)
+57.0: (move-slow farm1 farm2)
+58.0: (move-slow farm1 farm5)
+
+Plan-Length:59
+Metric (Search):59.0
+Planning Time (msec): 1985
+Heuristic Time (msec): 1261
+Search Time (msec): 1386
+Expanded Nodes:1091
+States Evaluated:15839
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:0
+Number of Duplicates detected:10353

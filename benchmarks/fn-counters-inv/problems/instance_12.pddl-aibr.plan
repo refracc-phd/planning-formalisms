@@ -1,0 +1,175 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 19
+Aibr Preprocessing
+|F|:0
+|X|:12
+|A|:24
+|P|:0
+|E|:0
+AIBR selected
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=44.0
+ g(n)= 2.0 h(n)=42.0
+ g(n)= 3.0 h(n)=37.0
+ g(n)= 5.0 h(n)=35.0
+ g(n)= 13.0 h(n)=34.0
+ g(n)= 16.0 h(n)=33.0
+ g(n)= 22.0 h(n)=31.0
+ g(n)= 25.0 h(n)=30.0
+ g(n)= 26.0 h(n)=29.0
+ g(n)= 27.0 h(n)=28.0
+ g(n)= 30.0 h(n)=27.0
+ g(n)= 34.0 h(n)=26.0
+ g(n)= 39.0 h(n)=25.0
+ g(n)= 40.0 h(n)=23.0
+ g(n)= 41.0 h(n)=22.0
+ g(n)= 44.0 h(n)=21.0
+ g(n)= 46.0 h(n)=20.0
+ g(n)= 48.0 h(n)=19.0
+ g(n)= 53.0 h(n)=18.0
+ g(n)= 54.0 h(n)=17.0
+ g(n)= 58.0 h(n)=15.0
+ g(n)= 63.0 h(n)=14.0
+ g(n)= 69.0 h(n)=13.0
+ g(n)= 75.0 h(n)=12.0
+ g(n)= 78.0 h(n)=11.0
+ g(n)= 83.0 h(n)=10.0
+ g(n)= 87.0 h(n)=9.0
+ g(n)= 91.0 h(n)=8.0
+ g(n)= 92.0 h(n)=7.0
+ g(n)= 95.0 h(n)=6.0
+ g(n)= 97.0 h(n)=5.0
+ g(n)= 99.0 h(n)=4.0
+ g(n)= 102.0 h(n)=3.0
+ g(n)= 106.0 h(n)=2.0
+ g(n)= 111.0 h(n)=1.0
+ g(n)= 112.0 h(n)=0.0
+Problem Solved
+
+Found Plan:
+0.0: (decrement c0)
+1.0: (decrement c1)
+2.0: (decrement c0)
+3.0: (increment c7)
+4.0: (increment c6)
+5.0: (increment c11)
+6.0: (increment c11)
+7.0: (increment c11)
+8.0: (increment c9)
+9.0: (increment c8)
+10.0: (increment c7)
+11.0: (increment c6)
+12.0: (increment c5)
+13.0: (increment c10)
+14.0: (increment c9)
+15.0: (increment c8)
+16.0: (increment c10)
+17.0: (increment c9)
+18.0: (decrement c0)
+19.0: (decrement c1)
+20.0: (decrement c2)
+21.0: (decrement c3)
+22.0: (decrement c0)
+23.0: (decrement c1)
+24.0: (decrement c2)
+25.0: (increment c10)
+26.0: (decrement c9)
+27.0: (increment c11)
+28.0: (increment c10)
+29.0: (increment c9)
+30.0: (increment c11)
+31.0: (increment c10)
+32.0: (increment c9)
+33.0: (increment c8)
+34.0: (increment c11)
+35.0: (increment c10)
+36.0: (increment c9)
+37.0: (increment c8)
+38.0: (increment c7)
+39.0: (increment c11)
+40.0: (decrement c0)
+41.0: (decrement c0)
+42.0: (decrement c1)
+43.0: (decrement c2)
+44.0: (decrement c0)
+45.0: (decrement c1)
+46.0: (decrement c0)
+47.0: (decrement c1)
+48.0: (decrement c0)
+49.0: (decrement c1)
+50.0: (decrement c2)
+51.0: (decrement c3)
+52.0: (decrement c4)
+53.0: (decrement c0)
+54.0: (decrement c0)
+55.0: (decrement c1)
+56.0: (decrement c2)
+57.0: (decrement c3)
+58.0: (increment c11)
+59.0: (increment c10)
+60.0: (increment c9)
+61.0: (increment c8)
+62.0: (increment c7)
+63.0: (increment c11)
+64.0: (increment c10)
+65.0: (increment c9)
+66.0: (increment c8)
+67.0: (increment c7)
+68.0: (increment c6)
+69.0: (increment c11)
+70.0: (increment c10)
+71.0: (increment c9)
+72.0: (increment c8)
+73.0: (increment c7)
+74.0: (increment c6)
+75.0: (increment c11)
+76.0: (increment c10)
+77.0: (increment c9)
+78.0: (decrement c0)
+79.0: (decrement c1)
+80.0: (decrement c2)
+81.0: (decrement c3)
+82.0: (decrement c4)
+83.0: (increment c11)
+84.0: (increment c10)
+85.0: (increment c9)
+86.0: (increment c8)
+87.0: (decrement c0)
+88.0: (decrement c1)
+89.0: (decrement c2)
+90.0: (decrement c3)
+91.0: (increment c11)
+92.0: (decrement c0)
+93.0: (decrement c1)
+94.0: (decrement c2)
+95.0: (increment c11)
+96.0: (increment c10)
+97.0: (increment c11)
+98.0: (increment c10)
+99.0: (increment c11)
+100.0: (increment c10)
+101.0: (increment c9)
+102.0: (increment c11)
+103.0: (increment c10)
+104.0: (increment c9)
+105.0: (increment c8)
+106.0: (increment c11)
+107.0: (increment c10)
+108.0: (increment c9)
+109.0: (increment c8)
+110.0: (increment c7)
+111.0: (increment c11)
+
+Plan-Length:112
+Metric (Search):112.0
+Planning Time (msec): 2300
+Heuristic Time (msec): 1336
+Search Time (msec): 1673
+Expanded Nodes:538
+States Evaluated:10854
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:0
+Number of Duplicates detected:1999

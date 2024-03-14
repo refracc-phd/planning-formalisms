@@ -1,0 +1,434 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 47
+Aibr Preprocessing
+|F|:0
+|X|:15
+|A|:19
+|P|:0
+|E|:0
+H1 Setup Time (msec): 29
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=12.0
+-------------Time: 10s ; Expanded Nodes: 158280 (Avg-Speed 15828.0 n/s); Evaluated States: 422461
+-------------Time: 20s ; Expanded Nodes: 340214 (Avg-Speed 17010.0 n/s); Evaluated States: 895448
+-------------Time: 30s ; Expanded Nodes: 519648 (Avg-Speed 17321.0 n/s); Evaluated States: 1358982
+-------------Time: 40s ; Expanded Nodes: 701393 (Avg-Speed 17534.0 n/s); Evaluated States: 1820675
+-------------Time: 50s ; Expanded Nodes: 877914 (Avg-Speed 17558.0 n/s); Evaluated States: 2277537
+-------------Time: 60s ; Expanded Nodes: 1072240 (Avg-Speed 17870.0 n/s); Evaluated States: 2765511
+-------------Time: 70s ; Expanded Nodes: 1254476 (Avg-Speed 17921.0 n/s); Evaluated States: 3220434
+-------------Time: 80s ; Expanded Nodes: 1444078 (Avg-Speed 18050.0 n/s); Evaluated States: 3692245
+-------------Time: 90s ; Expanded Nodes: 1630188 (Avg-Speed 18113.0 n/s); Evaluated States: 4163064
+-------------Time: 100s ; Expanded Nodes: 1797866 (Avg-Speed 17978.0 n/s); Evaluated States: 4589915
+-------------Time: 110s ; Expanded Nodes: 1984120 (Avg-Speed 18037.0 n/s); Evaluated States: 5054147
+-------------Time: 120s ; Expanded Nodes: 2177088 (Avg-Speed 18142.0 n/s); Evaluated States: 5535834
+-------------Time: 130s ; Expanded Nodes: 2366211 (Avg-Speed 18201.0 n/s); Evaluated States: 6008143
+-------------Time: 140s ; Expanded Nodes: 2555984 (Avg-Speed 18257.0 n/s); Evaluated States: 6478744
+-------------Time: 150s ; Expanded Nodes: 2746285 (Avg-Speed 18308.0 n/s); Evaluated States: 6951223
+-------------Time: 160s ; Expanded Nodes: 2935991 (Avg-Speed 18349.0 n/s); Evaluated States: 7420952
+-------------Time: 170s ; Expanded Nodes: 3134213 (Avg-Speed 18436.0 n/s); Evaluated States: 7902021
+-------------Time: 180s ; Expanded Nodes: 3320952 (Avg-Speed 18449.0 n/s); Evaluated States: 8379791
+-------------Time: 190s ; Expanded Nodes: 3503791 (Avg-Speed 18441.0 n/s); Evaluated States: 8853783
+-------------Time: 200s ; Expanded Nodes: 3698933 (Avg-Speed 18494.0 n/s); Evaluated States: 9339718
+-------------Time: 210s ; Expanded Nodes: 3884657 (Avg-Speed 18498.0 n/s); Evaluated States: 9801609
+-------------Time: 220s ; Expanded Nodes: 4068397 (Avg-Speed 18492.0 n/s); Evaluated States: 10253984
+-------------Time: 230s ; Expanded Nodes: 4259266 (Avg-Speed 18518.0 n/s); Evaluated States: 10723103
+-------------Time: 240s ; Expanded Nodes: 4412109 (Avg-Speed 18383.0 n/s); Evaluated States: 11098595
+-------------Time: 250s ; Expanded Nodes: 4609913 (Avg-Speed 18439.0 n/s); Evaluated States: 11583415
+-------------Time: 260s ; Expanded Nodes: 4808375 (Avg-Speed 18493.0 n/s); Evaluated States: 12066371
+-------------Time: 270s ; Expanded Nodes: 5006109 (Avg-Speed 18541.0 n/s); Evaluated States: 12533498
+-------------Time: 280s ; Expanded Nodes: 5201016 (Avg-Speed 18575.0 n/s); Evaluated States: 13015329
+-------------Time: 290s ; Expanded Nodes: 5398606 (Avg-Speed 18615.0 n/s); Evaluated States: 13499522
+-------------Time: 300s ; Expanded Nodes: 5593730 (Avg-Speed 18645.0 n/s); Evaluated States: 13971266
+-------------Time: 310s ; Expanded Nodes: 5793454 (Avg-Speed 18688.0 n/s); Evaluated States: 14445799
+-------------Time: 320s ; Expanded Nodes: 5989139 (Avg-Speed 18716.0 n/s); Evaluated States: 14908137
+-------------Time: 330s ; Expanded Nodes: 6183792 (Avg-Speed 18738.0 n/s); Evaluated States: 15365865
+-------------Time: 340s ; Expanded Nodes: 6378153 (Avg-Speed 18759.0 n/s); Evaluated States: 15855208
+-------------Time: 350s ; Expanded Nodes: 6576726 (Avg-Speed 18790.0 n/s); Evaluated States: 16308397
+-------------Time: 360s ; Expanded Nodes: 6789560 (Avg-Speed 18859.0 n/s); Evaluated States: 16792689
+-------------Time: 370s ; Expanded Nodes: 6993877 (Avg-Speed 18902.0 n/s); Evaluated States: 17274718
+-------------Time: 380s ; Expanded Nodes: 7190687 (Avg-Speed 18922.0 n/s); Evaluated States: 17756938
+-------------Time: 390s ; Expanded Nodes: 7383052 (Avg-Speed 18930.0 n/s); Evaluated States: 18223573
+-------------Time: 400s ; Expanded Nodes: 7584574 (Avg-Speed 18961.0 n/s); Evaluated States: 18710076
+-------------Time: 410s ; Expanded Nodes: 7785483 (Avg-Speed 18988.0 n/s); Evaluated States: 19196008
+-------------Time: 420s ; Expanded Nodes: 7982133 (Avg-Speed 19005.0 n/s); Evaluated States: 19671083
+-------------Time: 430s ; Expanded Nodes: 8179638 (Avg-Speed 19022.0 n/s); Evaluated States: 20148778
+-------------Time: 440s ; Expanded Nodes: 8380737 (Avg-Speed 19047.0 n/s); Evaluated States: 20634694
+-------------Time: 450s ; Expanded Nodes: 8583319 (Avg-Speed 19074.0 n/s); Evaluated States: 21120141
+-------------Time: 460s ; Expanded Nodes: 8779402 (Avg-Speed 19085.0 n/s); Evaluated States: 21590129
+-------------Time: 470s ; Expanded Nodes: 8978027 (Avg-Speed 19102.0 n/s); Evaluated States: 22067166
+-------------Time: 480s ; Expanded Nodes: 9172795 (Avg-Speed 19109.0 n/s); Evaluated States: 22534023
+-------------Time: 490s ; Expanded Nodes: 9366103 (Avg-Speed 19114.0 n/s); Evaluated States: 22996777
+-------------Time: 500s ; Expanded Nodes: 9565086 (Avg-Speed 19130.0 n/s); Evaluated States: 23472839
+-------------Time: 510s ; Expanded Nodes: 9777576 (Avg-Speed 19171.0 n/s); Evaluated States: 23949261
+-------------Time: 520s ; Expanded Nodes: 9970721 (Avg-Speed 19174.0 n/s); Evaluated States: 24410572
+-------------Time: 530s ; Expanded Nodes: 10163476 (Avg-Speed 19176.0 n/s); Evaluated States: 24867123
+-------------Time: 540s ; Expanded Nodes: 10361064 (Avg-Speed 19187.0 n/s); Evaluated States: 25346912
+-------------Time: 550s ; Expanded Nodes: 10560345 (Avg-Speed 19200.0 n/s); Evaluated States: 25825701
+-------------Time: 560s ; Expanded Nodes: 10751125 (Avg-Speed 19198.0 n/s); Evaluated States: 26283186
+-------------Time: 570s ; Expanded Nodes: 10952187 (Avg-Speed 19214.0 n/s); Evaluated States: 26760020
+-------------Time: 580s ; Expanded Nodes: 11143250 (Avg-Speed 19212.0 n/s); Evaluated States: 27247890
+-------------Time: 590s ; Expanded Nodes: 11339136 (Avg-Speed 19218.0 n/s); Evaluated States: 27721825
+-------------Time: 600s ; Expanded Nodes: 11541183 (Avg-Speed 19235.0 n/s); Evaluated States: 28206081
+-------------Time: 610s ; Expanded Nodes: 11744178 (Avg-Speed 19252.0 n/s); Evaluated States: 28690224
+-------------Time: 620s ; Expanded Nodes: 11946652 (Avg-Speed 19268.0 n/s); Evaluated States: 29174349
+-------------Time: 630s ; Expanded Nodes: 12137725 (Avg-Speed 19266.0 n/s); Evaluated States: 29628640
+-------------Time: 640s ; Expanded Nodes: 12333683 (Avg-Speed 19271.0 n/s); Evaluated States: 30095020
+-------------Time: 650s ; Expanded Nodes: 12536120 (Avg-Speed 19286.0 n/s); Evaluated States: 30577136
+-------------Time: 660s ; Expanded Nodes: 12735863 (Avg-Speed 19296.0 n/s); Evaluated States: 31052917
+-------------Time: 670s ; Expanded Nodes: 12938209 (Avg-Speed 19310.0 n/s); Evaluated States: 31537791
+-------------Time: 680s ; Expanded Nodes: 13140662 (Avg-Speed 19324.0 n/s); Evaluated States: 32029868
+-------------Time: 690s ; Expanded Nodes: 13350352 (Avg-Speed 19348.0 n/s); Evaluated States: 32518409
+-------------Time: 700s ; Expanded Nodes: 13548886 (Avg-Speed 19355.0 n/s); Evaluated States: 32982605
+-------------Time: 710s ; Expanded Nodes: 13755105 (Avg-Speed 19373.0 n/s); Evaluated States: 33463495
+-------------Time: 720s ; Expanded Nodes: 13967810 (Avg-Speed 19399.0 n/s); Evaluated States: 33948768
+-------------Time: 730s ; Expanded Nodes: 14168313 (Avg-Speed 19408.0 n/s); Evaluated States: 34413010
+-------------Time: 740s ; Expanded Nodes: 14374677 (Avg-Speed 19425.0 n/s); Evaluated States: 34895420
+ g(n)= 143.0 h(n)=11.0
+-------------Time: 750s ; Expanded Nodes: 14587721 (Avg-Speed 19450.0 n/s); Evaluated States: 35373754
+-------------Time: 760s ; Expanded Nodes: 14799952 (Avg-Speed 19473.0 n/s); Evaluated States: 35832159
+-------------Time: 770s ; Expanded Nodes: 15012845 (Avg-Speed 19497.0 n/s); Evaluated States: 36289064
+ g(n)= 148.0 h(n)=10.0
+-------------Time: 780s ; Expanded Nodes: 15228686 (Avg-Speed 19523.0 n/s); Evaluated States: 36753314
+-------------Time: 790s ; Expanded Nodes: 15441278 (Avg-Speed 19545.0 n/s); Evaluated States: 37224061
+-------------Time: 800s ; Expanded Nodes: 15610407 (Avg-Speed 19513.0 n/s); Evaluated States: 37592285
+ g(n)= 167.0 h(n)=9.0
+-------------Time: 810s ; Expanded Nodes: 15785474 (Avg-Speed 19488.0 n/s); Evaluated States: 37970057
+ g(n)= 182.0 h(n)=8.0
+ g(n)= 196.0 h(n)=7.0
+ g(n)= 294.0 h(n)=6.0
+ g(n)= 304.0 h(n)=5.0
+ g(n)= 306.0 h(n)=4.0
+ g(n)= 307.0 h(n)=3.0
+ g(n)= 308.0 h(n)=2.0
+ g(n)= 312.0 h(n)=1.0
+ g(n)= 313.0 h(n)=0.0
+Problem Solved
+
+Found Plan:
+0.0: (move_down agent1)
+1.0: (move_down_left agent1)
+2.0: (load agent1 tap1)
+3.0: (load agent1 tap1)
+4.0: (load agent1 tap1)
+5.0: (load agent1 tap1)
+6.0: (load agent1 tap1)
+7.0: (load agent1 tap1)
+8.0: (load agent1 tap1)
+9.0: (load agent1 tap1)
+10.0: (load agent1 tap1)
+11.0: (load agent1 tap1)
+12.0: (load agent1 tap1)
+13.0: (load agent1 tap1)
+14.0: (load agent1 tap1)
+15.0: (load agent1 tap1)
+16.0: (load agent1 tap1)
+17.0: (load agent1 tap1)
+18.0: (move_up_right agent1)
+19.0: (move_up_right agent1)
+20.0: (pour agent1 plant3)
+21.0: (move_up_right agent1)
+22.0: (pour agent1 plant6)
+23.0: (pour agent1 plant6)
+24.0: (pour agent1 plant6)
+25.0: (pour agent1 plant6)
+26.0: (pour agent1 plant6)
+27.0: (pour agent1 plant8)
+28.0: (move_down_left agent1)
+29.0: (pour agent1 plant3)
+30.0: (pour agent1 plant3)
+31.0: (move_down_left agent1)
+32.0: (move_down_left agent1)
+33.0: (load agent1 tap1)
+34.0: (load agent1 tap1)
+35.0: (load agent1 tap1)
+36.0: (load agent1 tap1)
+37.0: (load agent1 tap1)
+38.0: (pour agent1 plant9)
+39.0: (load agent1 tap1)
+40.0: (load agent1 tap1)
+41.0: (load agent1 tap1)
+42.0: (load agent1 tap1)
+43.0: (load agent1 tap1)
+44.0: (load agent1 tap1)
+45.0: (load agent1 tap1)
+46.0: (load agent1 tap1)
+47.0: (load agent1 tap1)
+48.0: (load agent1 tap1)
+49.0: (load agent1 tap1)
+50.0: (load agent1 tap1)
+51.0: (load agent1 tap1)
+52.0: (load agent1 tap1)
+53.0: (load agent1 tap1)
+54.0: (load agent1 tap1)
+55.0: (load agent1 tap1)
+56.0: (load agent1 tap1)
+57.0: (load agent1 tap1)
+58.0: (load agent1 tap1)
+59.0: (load agent1 tap1)
+60.0: (load agent1 tap1)
+61.0: (load agent1 tap1)
+62.0: (load agent1 tap1)
+63.0: (load agent1 tap1)
+64.0: (load agent1 tap1)
+65.0: (load agent1 tap1)
+66.0: (load agent1 tap1)
+67.0: (load agent1 tap1)
+68.0: (load agent1 tap1)
+69.0: (load agent1 tap1)
+70.0: (load agent1 tap1)
+71.0: (load agent1 tap1)
+72.0: (load agent1 tap1)
+73.0: (load agent1 tap1)
+74.0: (load agent1 tap1)
+75.0: (load agent1 tap1)
+76.0: (load agent1 tap1)
+77.0: (load agent1 tap1)
+78.0: (load agent1 tap1)
+79.0: (load agent1 tap1)
+80.0: (load agent1 tap1)
+81.0: (load agent1 tap1)
+82.0: (load agent1 tap1)
+83.0: (load agent1 tap1)
+84.0: (load agent1 tap1)
+85.0: (load agent1 tap1)
+86.0: (load agent1 tap1)
+87.0: (load agent1 tap1)
+88.0: (load agent1 tap1)
+89.0: (load agent1 tap1)
+90.0: (load agent1 tap1)
+91.0: (load agent1 tap1)
+92.0: (load agent1 tap1)
+93.0: (load agent1 tap1)
+94.0: (load agent1 tap1)
+95.0: (load agent1 tap1)
+96.0: (load agent1 tap1)
+97.0: (pour agent1 plant10)
+98.0: (load agent1 tap1)
+99.0: (load agent1 tap1)
+100.0: (load agent1 tap1)
+101.0: (load agent1 tap1)
+102.0: (load agent1 tap1)
+103.0: (load agent1 tap1)
+104.0: (load agent1 tap1)
+105.0: (load agent1 tap1)
+106.0: (load agent1 tap1)
+107.0: (load agent1 tap1)
+108.0: (load agent1 tap1)
+109.0: (load agent1 tap1)
+110.0: (load agent1 tap1)
+111.0: (load agent1 tap1)
+112.0: (load agent1 tap1)
+113.0: (pour agent1 plant10)
+114.0: (load agent1 tap1)
+115.0: (load agent1 tap1)
+116.0: (load agent1 tap1)
+117.0: (load agent1 tap1)
+118.0: (load agent1 tap1)
+119.0: (load agent1 tap1)
+120.0: (load agent1 tap1)
+121.0: (load agent1 tap1)
+122.0: (pour agent1 plant10)
+123.0: (load agent1 tap1)
+124.0: (load agent1 tap1)
+125.0: (load agent1 tap1)
+126.0: (load agent1 tap1)
+127.0: (load agent1 tap1)
+128.0: (load agent1 tap1)
+129.0: (load agent1 tap1)
+130.0: (load agent1 tap1)
+131.0: (load agent1 tap1)
+132.0: (load agent1 tap1)
+133.0: (load agent1 tap1)
+134.0: (pour agent1 plant10)
+135.0: (load agent1 tap1)
+136.0: (load agent1 tap1)
+137.0: (load agent1 tap1)
+138.0: (load agent1 tap1)
+139.0: (load agent1 tap1)
+140.0: (move_down_left agent1)
+141.0: (pour agent1 plant5)
+142.0: (pour agent1 plant5)
+143.0: (pour agent1 plant5)
+144.0: (move_up_right agent1)
+145.0: (move_up_right agent1)
+146.0: (move_up_right agent1)
+147.0: (move_up_right agent1)
+148.0: (pour agent1 plant8)
+149.0: (move_up_right agent1)
+150.0: (pour agent1 plant1)
+151.0: (pour agent1 plant1)
+152.0: (move_up_right agent1)
+153.0: (move_up_right agent1)
+154.0: (pour agent1 plant2)
+155.0: (move_down_left agent1)
+156.0: (move_down_left agent1)
+157.0: (move_down_left agent1)
+158.0: (move_down_left agent1)
+159.0: (move_down_left agent1)
+160.0: (move_down_left agent1)
+161.0: (move_down_left agent1)
+162.0: (pour agent1 plant5)
+163.0: (move_up_right agent1)
+164.0: (move_up_right agent1)
+165.0: (move_up_right agent1)
+166.0: (move_up_right agent1)
+167.0: (move_up_right agent1)
+168.0: (pour agent1 plant1)
+169.0: (move_up_right agent1)
+170.0: (pour agent1 plant7)
+171.0: (pour agent1 plant7)
+172.0: (pour agent1 plant7)
+173.0: (pour agent1 plant7)
+174.0: (pour agent1 plant7)
+175.0: (move_up_right agent1)
+176.0: (pour agent1 plant2)
+177.0: (pour agent1 plant2)
+178.0: (move_down_left agent1)
+179.0: (move_down_left agent1)
+180.0: (move_down_left agent1)
+181.0: (move_down_left agent1)
+182.0: (move_down_left agent1)
+183.0: (move_down_left agent1)
+184.0: (load agent1 tap1)
+185.0: (load agent1 tap1)
+186.0: (load agent1 tap1)
+187.0: (load agent1 tap1)
+188.0: (load agent1 tap1)
+189.0: (move_down_left agent1)
+190.0: (pour agent1 plant5)
+191.0: (pour agent1 plant5)
+192.0: (move_up_right agent1)
+193.0: (load agent1 tap1)
+194.0: (move_up_right agent1)
+195.0: (move_up_right agent1)
+196.0: (move_up_right agent1)
+197.0: (move_up_right agent1)
+198.0: (move_up_right agent1)
+199.0: (move_up_right agent1)
+200.0: (pour agent1 plant2)
+201.0: (move_down_left agent1)
+202.0: (move_down_left agent1)
+203.0: (move_down_left agent1)
+204.0: (move_down_left agent1)
+205.0: (move_down_left agent1)
+206.0: (move_down_left agent1)
+207.0: (load agent1 tap1)
+208.0: (load agent1 tap1)
+209.0: (load agent1 tap1)
+210.0: (load agent1 tap1)
+211.0: (load agent1 tap1)
+212.0: (load agent1 tap1)
+213.0: (load agent1 tap1)
+214.0: (load agent1 tap1)
+215.0: (load agent1 tap1)
+216.0: (load agent1 tap1)
+217.0: (load agent1 tap1)
+218.0: (load agent1 tap1)
+219.0: (load agent1 tap1)
+220.0: (load agent1 tap1)
+221.0: (load agent1 tap1)
+222.0: (load agent1 tap1)
+223.0: (load agent1 tap1)
+224.0: (load agent1 tap1)
+225.0: (load agent1 tap1)
+226.0: (load agent1 tap1)
+227.0: (load agent1 tap1)
+228.0: (load agent1 tap1)
+229.0: (load agent1 tap1)
+230.0: (load agent1 tap1)
+231.0: (load agent1 tap1)
+232.0: (load agent1 tap1)
+233.0: (load agent1 tap1)
+234.0: (load agent1 tap1)
+235.0: (load agent1 tap1)
+236.0: (load agent1 tap1)
+237.0: (load agent1 tap1)
+238.0: (load agent1 tap1)
+239.0: (load agent1 tap1)
+240.0: (load agent1 tap1)
+241.0: (load agent1 tap1)
+242.0: (load agent1 tap1)
+243.0: (load agent1 tap1)
+244.0: (load agent1 tap1)
+245.0: (load agent1 tap1)
+246.0: (load agent1 tap1)
+247.0: (load agent1 tap1)
+248.0: (load agent1 tap1)
+249.0: (load agent1 tap1)
+250.0: (load agent1 tap1)
+251.0: (load agent1 tap1)
+252.0: (load agent1 tap1)
+253.0: (load agent1 tap1)
+254.0: (load agent1 tap1)
+255.0: (load agent1 tap1)
+256.0: (load agent1 tap1)
+257.0: (load agent1 tap1)
+258.0: (load agent1 tap1)
+259.0: (load agent1 tap1)
+260.0: (load agent1 tap1)
+261.0: (load agent1 tap1)
+262.0: (load agent1 tap1)
+263.0: (load agent1 tap1)
+264.0: (load agent1 tap1)
+265.0: (load agent1 tap1)
+266.0: (load agent1 tap1)
+267.0: (load agent1 tap1)
+268.0: (load agent1 tap1)
+269.0: (load agent1 tap1)
+270.0: (load agent1 tap1)
+271.0: (load agent1 tap1)
+272.0: (load agent1 tap1)
+273.0: (load agent1 tap1)
+274.0: (load agent1 tap1)
+275.0: (load agent1 tap1)
+276.0: (load agent1 tap1)
+277.0: (load agent1 tap1)
+278.0: (load agent1 tap1)
+279.0: (load agent1 tap1)
+280.0: (load agent1 tap1)
+281.0: (load agent1 tap1)
+282.0: (load agent1 tap1)
+283.0: (move_up_right agent1)
+284.0: (move_up_right agent1)
+285.0: (move_up_right agent1)
+286.0: (move_up_right agent1)
+287.0: (move_up_right agent1)
+288.0: (move_up_right agent1)
+289.0: (pour agent1 plant2)
+290.0: (move_down_left agent1)
+291.0: (pour agent1 plant7)
+292.0: (move_down_left agent1)
+293.0: (move_down_left agent1)
+294.0: (move_down_left agent1)
+295.0: (move_down_left agent1)
+296.0: (move_down_left agent1)
+297.0: (move_down_left agent1)
+298.0: (pour agent1 plant5)
+299.0: (pour agent1 plant5)
+300.0: (pour agent1 plant5)
+301.0: (move_up_right agent1)
+302.0: (move_up_right agent1)
+303.0: (move_up_right agent1)
+304.0: (move_up_right agent1)
+305.0: (move_up_right agent1)
+306.0: (move_up_right agent1)
+307.0: (pour agent1 plant7)
+308.0: (move_up_right agent1)
+309.0: (pour agent1 plant2)
+310.0: (pour agent1 plant2)
+311.0: (move_up_right agent1)
+312.0: (pour agent1 plant4)
+
+Plan-Length:313
+Metric (Search):313.0
+Planning Time (msec): 817510
+Heuristic Time (msec): 649468
+Search Time (msec): 816763
+Expanded Nodes:15922154
+States Evaluated:38274310
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:1256131
+Number of Duplicates detected:93409225

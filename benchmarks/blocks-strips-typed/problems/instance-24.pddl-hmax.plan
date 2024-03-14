@@ -1,0 +1,95 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 24
+Aibr Preprocessing
+|F|:155
+|X|:0
+|A|:264
+|P|:0
+|E|:0
+H1 Setup Time (msec): 28
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=9.0
+ g(n)= 2.0 h(n)=8.0
+ g(n)= 4.0 h(n)=7.0
+ g(n)= 6.0 h(n)=6.0
+ g(n)= 10.0 h(n)=5.0
+ g(n)= 14.0 h(n)=4.0
+ g(n)= 32.0 h(n)=3.0
+ g(n)= 36.0 h(n)=2.0
+ g(n)= 57.0 h(n)=1.0
+ g(n)= 58.0 h(n)=0.0
+Problem Solved
+
+Found Plan:
+0.0: (unstack b h)
+1.0: (stack b i)
+2.0: (unstack h k)
+3.0: (stack h b)
+4.0: (unstack k f)
+5.0: (put-down k)
+6.0: (unstack f c)
+7.0: (put-down f)
+8.0: (unstack h b)
+9.0: (stack h f)
+10.0: (unstack c d)
+11.0: (put-down c)
+12.0: (unstack b i)
+13.0: (stack b h)
+14.0: (pick-up k)
+15.0: (stack k c)
+16.0: (unstack d j)
+17.0: (put-down d)
+18.0: (unstack j a)
+19.0: (stack j d)
+20.0: (pick-up a)
+21.0: (stack a j)
+22.0: (unstack k c)
+23.0: (put-down k)
+24.0: (unstack a j)
+25.0: (stack a k)
+26.0: (unstack j d)
+27.0: (put-down j)
+28.0: (unstack i e)
+29.0: (put-down i)
+30.0: (unstack b h)
+31.0: (put-down b)
+32.0: (unstack e g)
+33.0: (put-down e)
+34.0: (unstack h f)
+35.0: (put-down h)
+36.0: (unstack a k)
+37.0: (put-down a)
+38.0: (pick-up f)
+39.0: (stack f k)
+40.0: (pick-up a)
+41.0: (stack a f)
+42.0: (pick-up h)
+43.0: (stack h a)
+44.0: (pick-up b)
+45.0: (stack b h)
+46.0: (pick-up j)
+47.0: (stack j b)
+48.0: (pick-up e)
+49.0: (stack e j)
+50.0: (pick-up d)
+51.0: (stack d e)
+52.0: (pick-up c)
+53.0: (stack c d)
+54.0: (pick-up g)
+55.0: (stack g c)
+56.0: (pick-up i)
+57.0: (stack i g)
+
+Plan-Length:58
+Metric (Search):58.0
+Planning Time (msec): 2636
+Heuristic Time (msec): 1889
+Search Time (msec): 2096
+Expanded Nodes:2171
+States Evaluated:13153
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:0
+Number of Duplicates detected:3286

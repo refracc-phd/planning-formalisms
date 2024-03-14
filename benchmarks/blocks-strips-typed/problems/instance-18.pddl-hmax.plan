@@ -1,0 +1,107 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 54
+Aibr Preprocessing
+|F|:109
+|X|:0
+|A|:180
+|P|:0
+|E|:0
+H1 Setup Time (msec): 22
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=9.0
+ g(n)= 2.0 h(n)=8.0
+ g(n)= 4.0 h(n)=7.0
+ g(n)= 6.0 h(n)=6.0
+ g(n)= 8.0 h(n)=5.0
+ g(n)= 10.0 h(n)=4.0
+ g(n)= 14.0 h(n)=3.0
+ g(n)= 52.0 h(n)=2.0
+ g(n)= 69.0 h(n)=1.0
+ g(n)= 70.0 h(n)=0.0
+Problem Solved
+
+Found Plan:
+0.0: (unstack h a)
+1.0: (stack h f)
+2.0: (unstack a d)
+3.0: (stack a h)
+4.0: (unstack d e)
+5.0: (put-down d)
+6.0: (unstack e c)
+7.0: (put-down e)
+8.0: (unstack c i)
+9.0: (put-down c)
+10.0: (unstack a h)
+11.0: (put-down a)
+12.0: (unstack i b)
+13.0: (put-down i)
+14.0: (pick-up e)
+15.0: (stack e i)
+16.0: (pick-up a)
+17.0: (stack a d)
+18.0: (unstack b g)
+19.0: (put-down b)
+20.0: (unstack h f)
+21.0: (stack h b)
+22.0: (pick-up g)
+23.0: (stack g f)
+24.0: (unstack h b)
+25.0: (put-down h)
+26.0: (pick-up b)
+27.0: (stack b c)
+28.0: (unstack g f)
+29.0: (put-down g)
+30.0: (unstack e i)
+31.0: (stack e f)
+32.0: (unstack b c)
+33.0: (stack b i)
+34.0: (pick-up g)
+35.0: (stack g h)
+36.0: (unstack a d)
+37.0: (put-down a)
+38.0: (unstack g h)
+39.0: (stack g d)
+40.0: (unstack b i)
+41.0: (stack b c)
+42.0: (unstack g d)
+43.0: (stack g h)
+44.0: (pick-up i)
+45.0: (stack i a)
+46.0: (unstack g h)
+47.0: (put-down g)
+48.0: (unstack b c)
+49.0: (put-down b)
+50.0: (unstack e f)
+51.0: (put-down e)
+52.0: (unstack i a)
+53.0: (put-down i)
+54.0: (pick-up c)
+55.0: (stack c a)
+56.0: (pick-up b)
+57.0: (stack b c)
+58.0: (pick-up e)
+59.0: (stack e b)
+60.0: (pick-up i)
+61.0: (stack i e)
+62.0: (pick-up d)
+63.0: (stack d i)
+64.0: (pick-up h)
+65.0: (stack h d)
+66.0: (pick-up g)
+67.0: (stack g h)
+68.0: (pick-up f)
+69.0: (stack f g)
+
+Plan-Length:70
+Metric (Search):70.0
+Planning Time (msec): 1807
+Heuristic Time (msec): 953
+Search Time (msec): 1192
+Expanded Nodes:1492
+States Evaluated:6639
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:0
+Number of Duplicates detected:2212

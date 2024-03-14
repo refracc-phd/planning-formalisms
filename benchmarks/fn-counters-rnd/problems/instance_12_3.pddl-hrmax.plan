@@ -1,0 +1,174 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 31
+Aibr Preprocessing
+|F|:0
+|X|:12
+|A|:24
+|P|:0
+|E|:0
+H1 Setup Time (msec): 29
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=24.0
+ g(n)= 1.0 h(n)=23.0
+ g(n)= 2.0 h(n)=22.0
+ g(n)= 3.0 h(n)=21.0
+ g(n)= 4.0 h(n)=20.0
+ g(n)= 5.0 h(n)=19.0
+ g(n)= 6.0 h(n)=18.0
+ g(n)= 7.0 h(n)=17.0
+ g(n)= 8.0 h(n)=16.0
+ g(n)= 9.0 h(n)=15.0
+ g(n)= 10.0 h(n)=14.0
+ g(n)= 15.0 h(n)=13.0
+ g(n)= 16.0 h(n)=12.0
+ g(n)= 21.0 h(n)=11.0
+ g(n)= 23.0 h(n)=10.0
+ g(n)= 42.0 h(n)=9.0
+ g(n)= 44.0 h(n)=8.0
+ g(n)= 57.0 h(n)=7.0
+ g(n)= 60.0 h(n)=6.0
+ g(n)= 72.0 h(n)=5.0
+ g(n)= 75.0 h(n)=4.0
+-------------Time: 10s ; Expanded Nodes: 24957 (Avg-Speed 2495.0 n/s); Evaluated States: 332445
+ g(n)= 89.0 h(n)=3.0
+ g(n)= 92.0 h(n)=2.0
+-------------Time: 20s ; Expanded Nodes: 52199 (Avg-Speed 2609.0 n/s); Evaluated States: 688951
+-------------Time: 30s ; Expanded Nodes: 81907 (Avg-Speed 2730.0 n/s); Evaluated States: 1053241
+-------------Time: 40s ; Expanded Nodes: 114084 (Avg-Speed 2852.0 n/s); Evaluated States: 1426077
+ g(n)= 113.0 h(n)=1.0
+ g(n)= 118.0 h(n)=0.0
+Problem Solved
+
+Found Plan:
+0.0: (decrement c6)
+1.0: (increment c2)
+2.0: (increment c2)
+3.0: (increment c2)
+4.0: (increment c2)
+5.0: (increment c2)
+6.0: (decrement c1)
+7.0: (decrement c1)
+8.0: (decrement c1)
+9.0: (decrement c1)
+10.0: (increment c8)
+11.0: (decrement c0)
+12.0: (decrement c11)
+13.0: (increment c3)
+14.0: (decrement c6)
+15.0: (decrement c1)
+16.0: (increment c11)
+17.0: (increment c9)
+18.0: (decrement c1)
+19.0: (increment c3)
+20.0: (decrement c6)
+21.0: (decrement c7)
+22.0: (decrement c6)
+23.0: (decrement c11)
+24.0: (increment c5)
+25.0: (decrement c4)
+26.0: (decrement c4)
+27.0: (decrement c4)
+28.0: (decrement c4)
+29.0: (increment c11)
+30.0: (decrement c5)
+31.0: (decrement c5)
+32.0: (decrement c5)
+33.0: (increment c11)
+34.0: (increment c10)
+35.0: (decrement c6)
+36.0: (decrement c6)
+37.0: (increment c9)
+38.0: (increment c10)
+39.0: (increment c3)
+40.0: (decrement c0)
+41.0: (decrement c7)
+42.0: (increment c3)
+43.0: (increment c2)
+44.0: (increment c10)
+45.0: (decrement c0)
+46.0: (decrement c0)
+47.0: (decrement c0)
+48.0: (increment c11)
+49.0: (increment c10)
+50.0: (increment c3)
+51.0: (increment c3)
+52.0: (decrement c5)
+53.0: (decrement c5)
+54.0: (increment c9)
+55.0: (decrement c6)
+56.0: (increment c2)
+57.0: (increment c8)
+58.0: (increment c9)
+59.0: (increment c10)
+60.0: (increment c11)
+61.0: (increment c11)
+62.0: (increment c10)
+63.0: (decrement c5)
+64.0: (decrement c1)
+65.0: (decrement c1)
+66.0: (decrement c2)
+67.0: (decrement c0)
+68.0: (increment c9)
+69.0: (increment c10)
+70.0: (decrement c5)
+71.0: (decrement c6)
+72.0: (increment c8)
+73.0: (increment c9)
+74.0: (increment c10)
+75.0: (increment c11)
+76.0: (increment c11)
+77.0: (increment c10)
+78.0: (increment c9)
+79.0: (increment c8)
+80.0: (increment c10)
+81.0: (increment c10)
+82.0: (decrement c5)
+83.0: (decrement c4)
+84.0: (decrement c0)
+85.0: (increment c9)
+86.0: (increment c3)
+87.0: (increment c3)
+88.0: (increment c2)
+89.0: (decrement c6)
+90.0: (decrement c5)
+91.0: (decrement c4)
+92.0: (decrement c11)
+93.0: (decrement c11)
+94.0: (decrement c11)
+95.0: (increment c10)
+96.0: (increment c9)
+97.0: (increment c8)
+98.0: (increment c7)
+99.0: (increment c3)
+100.0: (increment c3)
+101.0: (decrement c4)
+102.0: (decrement c5)
+103.0: (decrement c0)
+104.0: (increment c10)
+105.0: (increment c10)
+106.0: (increment c10)
+107.0: (decrement c3)
+108.0: (increment c9)
+109.0: (increment c8)
+110.0: (increment c9)
+111.0: (decrement c1)
+112.0: (decrement c0)
+113.0: (decrement c4)
+114.0: (decrement c0)
+115.0: (decrement c1)
+116.0: (decrement c2)
+117.0: (decrement c3)
+
+Plan-Length:118
+Metric (Search):118.0
+Planning Time (msec): 41902
+Heuristic Time (msec): 37218
+Search Time (msec): 41299
+Expanded Nodes:118758
+States Evaluated:1476809
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:0
+Number of Duplicates detected:1368789
