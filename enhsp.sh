@@ -21,7 +21,7 @@ find "$problem_dir" -type f -name "*.plan" -exec rm -f {} \;
 find "$problem_dir" -type f -name "*.sp_log*" -exec rm -f {} \;
 
 # Heuristics to run
-heuristics=("aibr" "hmax" "hrmax" "hmrp")
+heuristics=("hmax" "hrmax" "hmrp")
 
 # Function to run a heuristic for a given problem file
 run_heuristic() {

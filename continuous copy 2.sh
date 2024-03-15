@@ -7,4 +7,4 @@
 #SBATCH -e slurm.%j.err # STDERR
 #SBATCH --ntasks-per-node=5
 
-./enhsp.sh ./enhsp/enhsp.jar ./domain-d.pddl ./discrete/4
+./enhsp.sh ./enhsp/enhsp.jar ./domain-c.pddl ./continuous/9
