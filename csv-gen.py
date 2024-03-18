@@ -5,7 +5,7 @@ import re
 # Set the directories
 
 # Set the output CSV file name
-output_csv = "output.csv"
+output_csv = "data.csv"
 
 # Initialize the CSV file with headers
 with open(output_csv, 'a', newline='') as csvfile:
