@@ -16,7 +16,6 @@ ground_actions
 ground_fluents <- ggplot(df, aes(x = domain, y = grounded.fluents, fill = domain)) +
   geom_boxplot() +
   labs(x = 'Domain', y = "Number of Grounded Fluents [log10]", title = "Number of Grounded Fluents for each Domain")+
-  theme(element_text(size = 18)) +
   scale_x_discrete(labels = c("bg", "bw", "c", "d", "farm", "fn-cntrs", "fn-inv", "fn-rnd", "ma-bw", "ma-sban", "plant", "sail", "sban")) +
   scale_y_log10()
 
@@ -26,8 +25,7 @@ ground_external_actions <- ggplot(df, aes(x = domain, y = grounded.external.acti
   geom_boxplot() +
   labs(x = 'Domain', y = "Number of Grounded External Actions [log10]", title = "Number of Grounded External Actions for each Domain") +
   scale_x_discrete(labels = c("bg", "bw", "c", "d", "farm", "fn-cntrs", "fn-inv", "fn-rnd", "ma-bw", "ma-sban", "plant", "sail", "sban")) +
-  scale_y_log10() +
-  theme(element_text(size = 18))
+  scale_y_log10()
 
 ground_external_actions
 
@@ -36,7 +34,6 @@ heuristic_informativeness <- ggplot(df, aes(y = initial.heuristic.val, x = metri
   labs(y = "Initial Heuristic Value [log10]", x = "Actual Cost [log10]", title = "Comparison: Heuristic Informativeness (Search Method)", color = "Domain") +
   scale_x_log10() + # Add this line for log10 scaling
   scale_y_log10() + # Add this line for log10 scaling
-  theme(element_text(size = 18))+
   facet_wrap(~ search.method, scales="free") +
   geom_abline(intercept = 0, slope = 1, size = 0.5)
 
@@ -47,40 +44,35 @@ initial_vs_actual_heuristic <- ggplot(df, aes(x = domain)) +
   geom_bar(aes(y = metric.search, fill = "Actual Cost"), stat = "identity", position = "jitter") +
   scale_fill_manual(name = "", values = c("Initial Heuristic Value" = "blue", "Actual Cost" = "red")) +
   labs(x = "Domain", y = "Heuristic Values", title = "Comparison: Heuristic Informativeness") +
-  facet_wrap(~ domain, scales = "free")+
-  theme(element_text(size = 18))
+  facet_wrap(~ domain, scales = "free")
 
 initial_vs_actual_heuristic
 
 search_time <- ggplot(df, aes(x = domain, y = mean(search.time.msec), fill = domain), log10="y") +
-  geom_col(show.legend = FALSE) +
+  geom_col() +
   labs(x = "Domain", y = "Search Time (msec) [log10]", title = "Average Search Time per Domain") +
-  scale_x_discrete(labels = c("bg", "bw", "c", "d", "farm", "fn-cntrs", "fn-inv", "fn-rnd", "ma-bw", "ma-sban", "plant", "sail", "sban")) +
-  theme(element_text(size = 18))
+  scale_x_discrete(labels = c("bg", "bw", "c", "d", "farm", "fn-cntrs", "fn-inv", "fn-rnd", "ma-bw", "ma-sban", "plant", "sail", "sban"))
 
 search_time
 
 duplicates <- ggplot(df, aes(x = domain, y = duplicates.detected, fill = domain), log10="y") +
-  geom_col(show.legend = FALSE) +
+  geom_col() +
   labs(x = "Domain", y = "Duplicates Detected [log10]", title = "Number of Duplicates Detected per Domain") +
-  scale_x_discrete(labels = c("bg", "bw", "c", "d", "farm", "fn-cntrs", "fn-inv", "fn-rnd", "ma-bw", "ma-sban", "plant", "sail", "sban")) +
-  theme(element_text(size = 18))
+  scale_x_discrete(labels = c("bg", "bw", "c", "d", "farm", "fn-cntrs", "fn-inv", "fn-rnd", "ma-bw", "ma-sban", "plant", "sail", "sban"))
 
 duplicates
 
 plan_length <- ggplot(df, aes(x = domain, y = plan.length, fill = domain)) +
   geom_col() +
   labs(x = "Domain", y = "Plan Length [log10]", title = "Length of Plans per Domain") +
-  scale_x_discrete(labels = c("bg", "bw", "c", "d", "farm", "fn-cntrs", "fn-inv", "fn-rnd", "ma-bw", "ma-sban", "plant", "sail", "sban")) +
-  theme(element_text(size = 18))
+  scale_x_discrete(labels = c("bg", "bw", "c", "d", "farm", "fn-cntrs", "fn-inv", "fn-rnd", "ma-bw", "ma-sban", "plant", "sail", "sban"))
 
 plan_length
 
 grounding_time <- ggplot(df, aes(x = domain, y = mean(grounding.time), fill = domain)) +
   geom_col() +
   labs(x = "Domain", y = "Grounding Time (msec)", title = "Average Grounding Time per Domain") +
-  scale_x_discrete(labels = c("bg", "bw", "c", "d", "farm", "fn-cntrs", "fn-inv", "fn-rnd", "ma-bw", "ma-sban", "plant", "sail", "sban")) +
-  theme(element_text(size = 18))
+  scale_x_discrete(labels = c("bg", "bw", "c", "d", "farm", "fn-cntrs", "fn-inv", "fn-rnd", "ma-bw", "ma-sban", "plant", "sail", "sban"))
 
 grounding_time
 
@@ -91,8 +83,7 @@ states_eval_vs_search_time <- ggplot(df, aes(x = states.evaluated, y = search.ti
   scale_x_log10() + # Add this line for log10 scaling
   scale_y_log10() + # Add this line for log10 scaling
   scale_colour_viridis_d(option = "turbo") +
-  geom_abline(intercept = 0, slope = 1, size = 0.5) + 
-  theme(element_text(size = 18))
+  geom_abline(intercept = 0, slope = 1, size = 0.5)
 
 states_eval_vs_search_time
 
