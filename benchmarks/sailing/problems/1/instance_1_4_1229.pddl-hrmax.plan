@@ -1,0 +1,1416 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 40
+Aibr Preprocessing
+|F|:4
+|X|:2
+|A|:11
+|P|:0
+|E|:0
+H1 Setup Time (msec): 12
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=323.0
+ g(n)= 1.0 h(n)=322.0
+ g(n)= 2.0 h(n)=321.0
+ g(n)= 3.0 h(n)=320.0
+ g(n)= 4.0 h(n)=319.0
+ g(n)= 5.0 h(n)=318.0
+ g(n)= 6.0 h(n)=317.0
+ g(n)= 7.0 h(n)=316.0
+ g(n)= 8.0 h(n)=315.0
+ g(n)= 9.0 h(n)=314.0
+ g(n)= 10.0 h(n)=313.0
+ g(n)= 11.0 h(n)=312.0
+ g(n)= 12.0 h(n)=311.0
+ g(n)= 13.0 h(n)=310.0
+ g(n)= 14.0 h(n)=309.0
+ g(n)= 15.0 h(n)=308.0
+ g(n)= 16.0 h(n)=307.0
+ g(n)= 17.0 h(n)=306.0
+ g(n)= 18.0 h(n)=305.0
+ g(n)= 19.0 h(n)=304.0
+ g(n)= 20.0 h(n)=303.0
+ g(n)= 21.0 h(n)=302.0
+ g(n)= 22.0 h(n)=301.0
+ g(n)= 23.0 h(n)=300.0
+ g(n)= 24.0 h(n)=299.0
+ g(n)= 25.0 h(n)=298.0
+ g(n)= 26.0 h(n)=297.0
+ g(n)= 27.0 h(n)=296.0
+ g(n)= 28.0 h(n)=295.0
+ g(n)= 29.0 h(n)=294.0
+ g(n)= 30.0 h(n)=293.0
+ g(n)= 31.0 h(n)=292.0
+ g(n)= 32.0 h(n)=291.0
+ g(n)= 33.0 h(n)=290.0
+ g(n)= 34.0 h(n)=289.0
+ g(n)= 35.0 h(n)=288.0
+ g(n)= 36.0 h(n)=287.0
+ g(n)= 37.0 h(n)=286.0
+ g(n)= 38.0 h(n)=285.0
+ g(n)= 39.0 h(n)=284.0
+ g(n)= 40.0 h(n)=283.0
+ g(n)= 41.0 h(n)=282.0
+ g(n)= 42.0 h(n)=281.0
+ g(n)= 43.0 h(n)=280.0
+ g(n)= 44.0 h(n)=279.0
+ g(n)= 45.0 h(n)=278.0
+ g(n)= 46.0 h(n)=277.0
+ g(n)= 47.0 h(n)=276.0
+ g(n)= 48.0 h(n)=275.0
+ g(n)= 49.0 h(n)=274.0
+ g(n)= 50.0 h(n)=273.0
+ g(n)= 51.0 h(n)=272.0
+ g(n)= 52.0 h(n)=271.0
+ g(n)= 53.0 h(n)=270.0
+ g(n)= 54.0 h(n)=269.0
+ g(n)= 55.0 h(n)=268.0
+ g(n)= 56.0 h(n)=267.0
+ g(n)= 57.0 h(n)=266.0
+ g(n)= 58.0 h(n)=265.0
+ g(n)= 59.0 h(n)=264.0
+ g(n)= 60.0 h(n)=263.0
+ g(n)= 61.0 h(n)=262.0
+ g(n)= 62.0 h(n)=261.0
+ g(n)= 63.0 h(n)=260.0
+ g(n)= 64.0 h(n)=259.0
+ g(n)= 65.0 h(n)=258.0
+ g(n)= 66.0 h(n)=257.0
+ g(n)= 67.0 h(n)=256.0
+ g(n)= 68.0 h(n)=255.0
+ g(n)= 69.0 h(n)=254.0
+ g(n)= 70.0 h(n)=253.0
+ g(n)= 71.0 h(n)=252.0
+ g(n)= 72.0 h(n)=251.0
+ g(n)= 73.0 h(n)=250.0
+ g(n)= 74.0 h(n)=249.0
+ g(n)= 75.0 h(n)=248.0
+ g(n)= 76.0 h(n)=247.0
+ g(n)= 77.0 h(n)=246.0
+ g(n)= 78.0 h(n)=245.0
+ g(n)= 79.0 h(n)=244.0
+ g(n)= 80.0 h(n)=243.0
+ g(n)= 81.0 h(n)=242.0
+ g(n)= 82.0 h(n)=241.0
+ g(n)= 83.0 h(n)=240.0
+ g(n)= 84.0 h(n)=239.0
+ g(n)= 85.0 h(n)=238.0
+ g(n)= 119.0 h(n)=237.75
+ g(n)= 124.0 h(n)=237.66667
+-------------Time: 10s ; Expanded Nodes: 713185 (Avg-Speed 71318.0 n/s); Evaluated States: 846446
+-------------Time: 20s ; Expanded Nodes: 1483919 (Avg-Speed 74195.0 n/s); Evaluated States: 1740903
+-------------Time: 30s ; Expanded Nodes: 2256407 (Avg-Speed 75213.0 n/s); Evaluated States: 2615523
+-------------Time: 40s ; Expanded Nodes: 3060262 (Avg-Speed 76506.0 n/s); Evaluated States: 3487212
+-------------Time: 50s ; Expanded Nodes: 3854936 (Avg-Speed 77098.0 n/s); Evaluated States: 4327670
+-------------Time: 60s ; Expanded Nodes: 4677097 (Avg-Speed 77951.0 n/s); Evaluated States: 5198857
+-------------Time: 70s ; Expanded Nodes: 5502736 (Avg-Speed 78610.0 n/s); Evaluated States: 6071562
+-------------Time: 80s ; Expanded Nodes: 6337593 (Avg-Speed 79219.0 n/s); Evaluated States: 6950810
+-------------Time: 90s ; Expanded Nodes: 7169074 (Avg-Speed 79656.0 n/s); Evaluated States: 7826781
+-------------Time: 100s ; Expanded Nodes: 7986449 (Avg-Speed 79864.0 n/s); Evaluated States: 8686672
+-------------Time: 110s ; Expanded Nodes: 8799863 (Avg-Speed 79998.0 n/s); Evaluated States: 9542084
+-------------Time: 120s ; Expanded Nodes: 9602688 (Avg-Speed 80022.0 n/s); Evaluated States: 10380821
+-------------Time: 130s ; Expanded Nodes: 10424884 (Avg-Speed 80191.0 n/s); Evaluated States: 11238395
+-------------Time: 140s ; Expanded Nodes: 11221877 (Avg-Speed 80156.0 n/s); Evaluated States: 12073810
+-------------Time: 150s ; Expanded Nodes: 12016636 (Avg-Speed 80110.0 n/s); Evaluated States: 12897251
+-------------Time: 160s ; Expanded Nodes: 12812387 (Avg-Speed 80077.0 n/s); Evaluated States: 13731625
+-------------Time: 170s ; Expanded Nodes: 13603941 (Avg-Speed 80023.0 n/s); Evaluated States: 14550279
+-------------Time: 180s ; Expanded Nodes: 14392200 (Avg-Speed 79956.0 n/s); Evaluated States: 15376026
+-------------Time: 190s ; Expanded Nodes: 15227975 (Avg-Speed 80147.0 n/s); Evaluated States: 16249614
+-------------Time: 200s ; Expanded Nodes: 16070258 (Avg-Speed 80351.0 n/s); Evaluated States: 17129412
+-------------Time: 210s ; Expanded Nodes: 16901958 (Avg-Speed 80485.0 n/s); Evaluated States: 17997980
+-------------Time: 220s ; Expanded Nodes: 17739020 (Avg-Speed 80631.0 n/s); Evaluated States: 18868233
+-------------Time: 230s ; Expanded Nodes: 18591124 (Avg-Speed 80830.0 n/s); Evaluated States: 19767125
+-------------Time: 240s ; Expanded Nodes: 19423890 (Avg-Speed 80932.0 n/s); Evaluated States: 20647603
+-------------Time: 250s ; Expanded Nodes: 20274667 (Avg-Speed 81098.0 n/s); Evaluated States: 21536721
+-------------Time: 260s ; Expanded Nodes: 21127515 (Avg-Speed 81259.0 n/s); Evaluated States: 22427609
+-------------Time: 270s ; Expanded Nodes: 21976150 (Avg-Speed 81393.0 n/s); Evaluated States: 23315070
+-------------Time: 280s ; Expanded Nodes: 22826362 (Avg-Speed 81522.0 n/s); Evaluated States: 24205937
+-------------Time: 290s ; Expanded Nodes: 23676804 (Avg-Speed 81644.0 n/s); Evaluated States: 25091588
+-------------Time: 300s ; Expanded Nodes: 24270755 (Avg-Speed 80902.0 n/s); Evaluated States: 25851821
+-------------Time: 310s ; Expanded Nodes: 24980054 (Avg-Speed 80580.0 n/s); Evaluated States: 26689849
+-------------Time: 320s ; Expanded Nodes: 25739168 (Avg-Speed 80434.0 n/s); Evaluated States: 27532788
+-------------Time: 330s ; Expanded Nodes: 26475267 (Avg-Speed 80228.0 n/s); Evaluated States: 28397875
+-------------Time: 340s ; Expanded Nodes: 27242188 (Avg-Speed 80124.0 n/s); Evaluated States: 29224605
+-------------Time: 350s ; Expanded Nodes: 27989416 (Avg-Speed 79969.0 n/s); Evaluated States: 30029853
+-------------Time: 360s ; Expanded Nodes: 28749538 (Avg-Speed 79859.0 n/s); Evaluated States: 30837194
+-------------Time: 370s ; Expanded Nodes: 29505349 (Avg-Speed 79744.0 n/s); Evaluated States: 31639540
+-------------Time: 380s ; Expanded Nodes: 30270055 (Avg-Speed 79658.0 n/s); Evaluated States: 32440368
+-------------Time: 390s ; Expanded Nodes: 31024739 (Avg-Speed 79550.0 n/s); Evaluated States: 33237584
+-------------Time: 400s ; Expanded Nodes: 31783159 (Avg-Speed 79457.0 n/s); Evaluated States: 34038206
+-------------Time: 410s ; Expanded Nodes: 32536922 (Avg-Speed 79358.0 n/s); Evaluated States: 34833532
+-------------Time: 420s ; Expanded Nodes: 33295537 (Avg-Speed 79275.0 n/s); Evaluated States: 35622671
+-------------Time: 430s ; Expanded Nodes: 34049936 (Avg-Speed 79185.0 n/s); Evaluated States: 36416409
+-------------Time: 440s ; Expanded Nodes: 34796223 (Avg-Speed 79082.0 n/s); Evaluated States: 37201247
+-------------Time: 450s ; Expanded Nodes: 35551950 (Avg-Speed 79004.0 n/s); Evaluated States: 37985782
+-------------Time: 460s ; Expanded Nodes: 36287474 (Avg-Speed 78885.0 n/s); Evaluated States: 38758175
+-------------Time: 470s ; Expanded Nodes: 37046415 (Avg-Speed 78822.0 n/s); Evaluated States: 39544932
+-------------Time: 480s ; Expanded Nodes: 37792494 (Avg-Speed 78734.0 n/s); Evaluated States: 40317742
+-------------Time: 490s ; Expanded Nodes: 38520991 (Avg-Speed 78614.0 n/s); Evaluated States: 41081441
+-------------Time: 500s ; Expanded Nodes: 39273263 (Avg-Speed 78546.0 n/s); Evaluated States: 41860380
+-------------Time: 510s ; Expanded Nodes: 40011649 (Avg-Speed 78454.0 n/s); Evaluated States: 42625085
+-------------Time: 520s ; Expanded Nodes: 40756320 (Avg-Speed 78377.0 n/s); Evaluated States: 43394754
+-------------Time: 530s ; Expanded Nodes: 41498177 (Avg-Speed 78298.0 n/s); Evaluated States: 44161351
+-------------Time: 540s ; Expanded Nodes: 42223003 (Avg-Speed 78190.0 n/s); Evaluated States: 44910056
+-------------Time: 550s ; Expanded Nodes: 42936851 (Avg-Speed 78067.0 n/s); Evaluated States: 45657645
+-------------Time: 560s ; Expanded Nodes: 43670329 (Avg-Speed 77982.0 n/s); Evaluated States: 46414923
+-------------Time: 570s ; Expanded Nodes: 44398419 (Avg-Speed 77891.0 n/s); Evaluated States: 47168487
+-------------Time: 580s ; Expanded Nodes: 45123678 (Avg-Speed 77799.0 n/s); Evaluated States: 47917023
+-------------Time: 590s ; Expanded Nodes: 45848857 (Avg-Speed 77709.0 n/s); Evaluated States: 48665540
+-------------Time: 600s ; Expanded Nodes: 46556280 (Avg-Speed 77593.0 n/s); Evaluated States: 49394483
+-------------Time: 610s ; Expanded Nodes: 47278480 (Avg-Speed 77505.0 n/s); Evaluated States: 50141113
+-------------Time: 620s ; Expanded Nodes: 47995436 (Avg-Speed 77411.0 n/s); Evaluated States: 50881547
+-------------Time: 630s ; Expanded Nodes: 48594713 (Avg-Speed 77134.0 n/s); Evaluated States: 51499545
+-------------Time: 640s ; Expanded Nodes: 49411766 (Avg-Speed 77205.0 n/s); Evaluated States: 52342702
+-------------Time: 650s ; Expanded Nodes: 50212825 (Avg-Speed 77250.0 n/s); Evaluated States: 53176079
+-------------Time: 660s ; Expanded Nodes: 51018276 (Avg-Speed 77300.0 n/s); Evaluated States: 54007193
+-------------Time: 670s ; Expanded Nodes: 51825420 (Avg-Speed 77351.0 n/s); Evaluated States: 54839523
+-------------Time: 680s ; Expanded Nodes: 52641916 (Avg-Speed 77414.0 n/s); Evaluated States: 55688094
+-------------Time: 690s ; Expanded Nodes: 53461091 (Avg-Speed 77479.0 n/s); Evaluated States: 56533682
+-------------Time: 700s ; Expanded Nodes: 54285755 (Avg-Speed 77551.0 n/s); Evaluated States: 57396474
+-------------Time: 710s ; Expanded Nodes: 55108542 (Avg-Speed 77617.0 n/s); Evaluated States: 58257317
+-------------Time: 720s ; Expanded Nodes: 55934742 (Avg-Speed 77687.0 n/s); Evaluated States: 59111305
+-------------Time: 730s ; Expanded Nodes: 56760389 (Avg-Speed 77753.0 n/s); Evaluated States: 59974771
+-------------Time: 740s ; Expanded Nodes: 57585419 (Avg-Speed 77818.0 n/s); Evaluated States: 60831332
+-------------Time: 750s ; Expanded Nodes: 58429517 (Avg-Speed 77906.0 n/s); Evaluated States: 61709460
+-------------Time: 760s ; Expanded Nodes: 59273382 (Avg-Speed 77991.0 n/s); Evaluated States: 62580254
+-------------Time: 770s ; Expanded Nodes: 60119364 (Avg-Speed 78077.0 n/s); Evaluated States: 63464401
+-------------Time: 780s ; Expanded Nodes: 60954604 (Avg-Speed 78146.0 n/s); Evaluated States: 64327315
+-------------Time: 790s ; Expanded Nodes: 61779814 (Avg-Speed 78202.0 n/s); Evaluated States: 65180365
+-------------Time: 800s ; Expanded Nodes: 62595625 (Avg-Speed 78244.0 n/s); Evaluated States: 66029916
+-------------Time: 810s ; Expanded Nodes: 63421680 (Avg-Speed 78298.0 n/s); Evaluated States: 66886496
+-------------Time: 820s ; Expanded Nodes: 64180623 (Avg-Speed 78269.0 n/s); Evaluated States: 67760863
+-------------Time: 830s ; Expanded Nodes: 64989024 (Avg-Speed 78300.0 n/s); Evaluated States: 68598043
+-------------Time: 840s ; Expanded Nodes: 65772062 (Avg-Speed 78300.0 n/s); Evaluated States: 69439593
+-------------Time: 850s ; Expanded Nodes: 66548516 (Avg-Speed 78292.0 n/s); Evaluated States: 70272715
+-------------Time: 860s ; Expanded Nodes: 67359578 (Avg-Speed 78325.0 n/s); Evaluated States: 71117546
+-------------Time: 870s ; Expanded Nodes: 68157529 (Avg-Speed 78341.0 n/s); Evaluated States: 71944256
+-------------Time: 880s ; Expanded Nodes: 68867105 (Avg-Speed 78258.0 n/s); Evaluated States: 72752470
+-------------Time: 890s ; Expanded Nodes: 69484027 (Avg-Speed 78071.0 n/s); Evaluated States: 73528385
+-------------Time: 900s ; Expanded Nodes: 70076254 (Avg-Speed 77862.0 n/s); Evaluated States: 74267104
+-------------Time: 910s ; Expanded Nodes: 70596413 (Avg-Speed 77578.0 n/s); Evaluated States: 74909826
+-------------Time: 920s ; Expanded Nodes: 71027954 (Avg-Speed 77204.0 n/s); Evaluated States: 75440549
+-------------Time: 930s ; Expanded Nodes: 71670120 (Avg-Speed 77064.0 n/s); Evaluated States: 76224268
+-------------Time: 940s ; Expanded Nodes: 72302869 (Avg-Speed 76917.0 n/s); Evaluated States: 76991006
+-------------Time: 950s ; Expanded Nodes: 72939806 (Avg-Speed 76778.0 n/s); Evaluated States: 77758307
+ g(n)= 508.0 h(n)=237.0
+ g(n)= 509.0 h(n)=236.0
+ g(n)= 510.0 h(n)=235.0
+ g(n)= 511.0 h(n)=234.0
+ g(n)= 512.0 h(n)=233.0
+ g(n)= 513.0 h(n)=232.0
+ g(n)= 514.0 h(n)=231.0
+ g(n)= 515.0 h(n)=230.0
+ g(n)= 516.0 h(n)=229.0
+ g(n)= 517.0 h(n)=228.0
+ g(n)= 518.0 h(n)=227.0
+ g(n)= 519.0 h(n)=226.0
+ g(n)= 520.0 h(n)=225.0
+ g(n)= 521.0 h(n)=224.0
+ g(n)= 522.0 h(n)=223.0
+ g(n)= 523.0 h(n)=222.0
+ g(n)= 524.0 h(n)=221.0
+ g(n)= 525.0 h(n)=220.0
+ g(n)= 526.0 h(n)=219.0
+ g(n)= 527.0 h(n)=218.0
+ g(n)= 528.0 h(n)=217.0
+ g(n)= 529.0 h(n)=216.0
+ g(n)= 530.0 h(n)=215.0
+ g(n)= 531.0 h(n)=214.0
+ g(n)= 532.0 h(n)=213.0
+ g(n)= 533.0 h(n)=212.0
+ g(n)= 534.0 h(n)=211.0
+ g(n)= 535.0 h(n)=210.0
+ g(n)= 536.0 h(n)=209.0
+ g(n)= 537.0 h(n)=208.0
+ g(n)= 538.0 h(n)=207.0
+ g(n)= 539.0 h(n)=206.0
+ g(n)= 540.0 h(n)=205.0
+ g(n)= 541.0 h(n)=204.0
+ g(n)= 542.0 h(n)=203.0
+ g(n)= 543.0 h(n)=202.0
+ g(n)= 544.0 h(n)=201.0
+ g(n)= 545.0 h(n)=200.0
+ g(n)= 546.0 h(n)=199.0
+ g(n)= 547.0 h(n)=198.0
+ g(n)= 548.0 h(n)=197.0
+ g(n)= 549.0 h(n)=196.0
+ g(n)= 550.0 h(n)=195.0
+ g(n)= 551.0 h(n)=194.0
+ g(n)= 552.0 h(n)=193.0
+ g(n)= 553.0 h(n)=192.0
+ g(n)= 554.0 h(n)=191.0
+ g(n)= 555.0 h(n)=190.0
+ g(n)= 556.0 h(n)=189.0
+ g(n)= 557.0 h(n)=188.0
+ g(n)= 558.0 h(n)=187.0
+ g(n)= 559.0 h(n)=186.0
+ g(n)= 560.0 h(n)=185.0
+ g(n)= 561.0 h(n)=184.0
+ g(n)= 562.0 h(n)=183.0
+ g(n)= 563.0 h(n)=182.0
+ g(n)= 564.0 h(n)=181.0
+ g(n)= 565.0 h(n)=180.0
+ g(n)= 566.0 h(n)=179.0
+ g(n)= 567.0 h(n)=178.0
+ g(n)= 568.0 h(n)=177.0
+ g(n)= 569.0 h(n)=176.0
+ g(n)= 570.0 h(n)=175.0
+ g(n)= 571.0 h(n)=174.0
+ g(n)= 572.0 h(n)=173.0
+ g(n)= 573.0 h(n)=172.0
+ g(n)= 574.0 h(n)=171.0
+ g(n)= 575.0 h(n)=170.0
+ g(n)= 576.0 h(n)=169.0
+ g(n)= 577.0 h(n)=168.0
+ g(n)= 578.0 h(n)=167.0
+ g(n)= 579.0 h(n)=166.0
+ g(n)= 580.0 h(n)=165.0
+ g(n)= 581.0 h(n)=164.0
+ g(n)= 582.0 h(n)=163.0
+ g(n)= 583.0 h(n)=162.0
+ g(n)= 584.0 h(n)=161.0
+ g(n)= 585.0 h(n)=160.0
+ g(n)= 586.0 h(n)=159.0
+ g(n)= 587.0 h(n)=158.0
+ g(n)= 588.0 h(n)=157.0
+ g(n)= 589.0 h(n)=156.0
+ g(n)= 590.0 h(n)=155.0
+ g(n)= 591.0 h(n)=154.0
+ g(n)= 592.0 h(n)=153.0
+ g(n)= 593.0 h(n)=152.0
+ g(n)= 594.0 h(n)=151.0
+ g(n)= 595.0 h(n)=150.0
+ g(n)= 596.0 h(n)=149.0
+ g(n)= 597.0 h(n)=148.0
+ g(n)= 598.0 h(n)=147.0
+ g(n)= 599.0 h(n)=146.0
+ g(n)= 600.0 h(n)=145.0
+ g(n)= 601.0 h(n)=144.0
+ g(n)= 602.0 h(n)=143.0
+ g(n)= 603.0 h(n)=142.0
+ g(n)= 604.0 h(n)=141.0
+ g(n)= 605.0 h(n)=140.0
+ g(n)= 606.0 h(n)=139.0
+ g(n)= 607.0 h(n)=138.0
+ g(n)= 608.0 h(n)=137.0
+ g(n)= 610.0 h(n)=136.0
+ g(n)= 612.0 h(n)=135.0
+ g(n)= 614.0 h(n)=134.0
+ g(n)= 616.0 h(n)=133.0
+ g(n)= 618.0 h(n)=132.0
+ g(n)= 620.0 h(n)=131.0
+ g(n)= 622.0 h(n)=130.0
+ g(n)= 624.0 h(n)=129.0
+ g(n)= 626.0 h(n)=128.0
+ g(n)= 628.0 h(n)=127.0
+ g(n)= 630.0 h(n)=126.0
+ g(n)= 632.0 h(n)=125.0
+ g(n)= 634.0 h(n)=124.0
+ g(n)= 636.0 h(n)=123.0
+ g(n)= 638.0 h(n)=122.0
+ g(n)= 640.0 h(n)=121.0
+ g(n)= 642.0 h(n)=120.0
+ g(n)= 644.0 h(n)=119.0
+ g(n)= 646.0 h(n)=118.0
+ g(n)= 648.0 h(n)=117.75
+ g(n)= 650.0 h(n)=117.666664
+-------------Time: 960s ; Expanded Nodes: 73589278 (Avg-Speed 76655.0 n/s); Evaluated States: 78617430
+-------------Time: 970s ; Expanded Nodes: 74325370 (Avg-Speed 76624.0 n/s); Evaluated States: 79475155
+-------------Time: 980s ; Expanded Nodes: 74974212 (Avg-Speed 76504.0 n/s); Evaluated States: 80317243
+ g(n)= 846.0 h(n)=117.0
+ g(n)= 847.0 h(n)=116.0
+ g(n)= 848.0 h(n)=115.0
+ g(n)= 849.0 h(n)=114.0
+ g(n)= 850.0 h(n)=113.0
+ g(n)= 851.0 h(n)=112.0
+ g(n)= 852.0 h(n)=111.0
+ g(n)= 853.0 h(n)=110.0
+ g(n)= 854.0 h(n)=109.0
+ g(n)= 855.0 h(n)=108.0
+ g(n)= 856.0 h(n)=107.0
+ g(n)= 857.0 h(n)=106.0
+ g(n)= 858.0 h(n)=105.0
+ g(n)= 859.0 h(n)=104.0
+ g(n)= 860.0 h(n)=103.0
+ g(n)= 861.0 h(n)=102.0
+ g(n)= 862.0 h(n)=101.0
+ g(n)= 863.0 h(n)=100.0
+ g(n)= 864.0 h(n)=99.0
+ g(n)= 865.0 h(n)=98.0
+ g(n)= 866.0 h(n)=97.0
+ g(n)= 867.0 h(n)=96.0
+ g(n)= 868.0 h(n)=95.0
+ g(n)= 869.0 h(n)=94.0
+ g(n)= 870.0 h(n)=93.0
+ g(n)= 871.0 h(n)=92.0
+ g(n)= 872.0 h(n)=91.0
+ g(n)= 873.0 h(n)=90.0
+ g(n)= 874.0 h(n)=89.0
+ g(n)= 875.0 h(n)=88.0
+ g(n)= 876.0 h(n)=87.0
+ g(n)= 877.0 h(n)=86.0
+ g(n)= 878.0 h(n)=85.0
+ g(n)= 879.0 h(n)=84.0
+ g(n)= 880.0 h(n)=83.0
+ g(n)= 881.0 h(n)=82.0
+ g(n)= 882.0 h(n)=81.0
+ g(n)= 883.0 h(n)=80.0
+ g(n)= 884.0 h(n)=79.0
+ g(n)= 885.0 h(n)=78.0
+ g(n)= 886.0 h(n)=77.0
+ g(n)= 887.0 h(n)=76.0
+ g(n)= 888.0 h(n)=75.0
+ g(n)= 889.0 h(n)=74.0
+ g(n)= 890.0 h(n)=73.0
+ g(n)= 891.0 h(n)=72.0
+ g(n)= 892.0 h(n)=71.0
+ g(n)= 893.0 h(n)=70.0
+ g(n)= 894.0 h(n)=69.0
+ g(n)= 895.0 h(n)=68.0
+ g(n)= 896.0 h(n)=67.0
+ g(n)= 897.0 h(n)=66.0
+ g(n)= 898.0 h(n)=65.0
+ g(n)= 899.0 h(n)=64.0
+ g(n)= 900.0 h(n)=63.0
+ g(n)= 901.0 h(n)=62.0
+ g(n)= 902.0 h(n)=61.0
+ g(n)= 903.0 h(n)=60.0
+ g(n)= 904.0 h(n)=59.0
+ g(n)= 905.0 h(n)=58.0
+ g(n)= 906.0 h(n)=57.0
+ g(n)= 907.0 h(n)=56.0
+ g(n)= 908.0 h(n)=55.0
+ g(n)= 909.0 h(n)=54.0
+ g(n)= 910.0 h(n)=53.0
+ g(n)= 911.0 h(n)=52.0
+ g(n)= 912.0 h(n)=51.0
+ g(n)= 913.0 h(n)=50.0
+ g(n)= 914.0 h(n)=49.0
+ g(n)= 915.0 h(n)=48.0
+ g(n)= 916.0 h(n)=47.0
+ g(n)= 917.0 h(n)=46.0
+ g(n)= 918.0 h(n)=45.0
+ g(n)= 919.0 h(n)=44.0
+ g(n)= 920.0 h(n)=43.0
+ g(n)= 921.0 h(n)=42.0
+ g(n)= 922.0 h(n)=41.0
+ g(n)= 923.0 h(n)=40.0
+ g(n)= 924.0 h(n)=39.0
+ g(n)= 925.0 h(n)=38.0
+ g(n)= 926.0 h(n)=37.0
+ g(n)= 927.0 h(n)=36.0
+ g(n)= 928.0 h(n)=35.0
+ g(n)= 929.0 h(n)=34.0
+ g(n)= 930.0 h(n)=33.0
+ g(n)= 931.0 h(n)=32.0
+ g(n)= 932.0 h(n)=31.0
+ g(n)= 933.0 h(n)=30.0
+ g(n)= 934.0 h(n)=29.0
+ g(n)= 935.0 h(n)=28.0
+ g(n)= 936.0 h(n)=27.0
+ g(n)= 937.0 h(n)=26.0
+ g(n)= 938.0 h(n)=25.0
+ g(n)= 939.0 h(n)=24.0
+ g(n)= 940.0 h(n)=23.0
+ g(n)= 941.0 h(n)=22.0
+ g(n)= 942.0 h(n)=21.0
+ g(n)= 943.0 h(n)=20.0
+ g(n)= 944.0 h(n)=19.0
+ g(n)= 945.0 h(n)=18.0
+ g(n)= 946.0 h(n)=17.0
+ g(n)= 947.0 h(n)=16.0
+ g(n)= 948.0 h(n)=15.0
+ g(n)= 949.0 h(n)=14.0
+ g(n)= 950.0 h(n)=13.0
+ g(n)= 951.0 h(n)=12.0
+ g(n)= 952.0 h(n)=11.0
+ g(n)= 953.0 h(n)=10.0
+ g(n)= 954.0 h(n)=9.0
+ g(n)= 955.0 h(n)=8.0
+ g(n)= 956.0 h(n)=7.0
+ g(n)= 957.0 h(n)=6.0
+ g(n)= 958.0 h(n)=5.0
+ g(n)= 959.0 h(n)=4.0
+ g(n)= 960.0 h(n)=3.0
+ g(n)= 961.0 h(n)=2.0
+ g(n)= 962.0 h(n)=1.0
+ g(n)= 963.0 h(n)=0.0
+Problem Solved
+
+Found Plan:
+0.0: (go_north_east b0)
+1.0: (go_north_east b0)
+2.0: (go_north_east b0)
+3.0: (go_north_east b0)
+4.0: (go_north_east b0)
+5.0: (go_north_east b0)
+6.0: (go_north_east b0)
+7.0: (go_north_east b0)
+8.0: (go_north_east b0)
+9.0: (go_north_east b0)
+10.0: (go_north_east b0)
+11.0: (go_north_east b0)
+12.0: (go_north_east b0)
+13.0: (go_north_east b0)
+14.0: (go_north_east b0)
+15.0: (go_north_east b0)
+16.0: (go_north_east b0)
+17.0: (go_north_east b0)
+18.0: (go_north_east b0)
+19.0: (go_north_east b0)
+20.0: (go_north_east b0)
+21.0: (go_north_east b0)
+22.0: (go_north_east b0)
+23.0: (go_north_east b0)
+24.0: (go_north_east b0)
+25.0: (go_north_east b0)
+26.0: (go_north_east b0)
+27.0: (go_north_east b0)
+28.0: (go_north_east b0)
+29.0: (go_north_east b0)
+30.0: (go_north_east b0)
+31.0: (go_north_east b0)
+32.0: (go_north_east b0)
+33.0: (go_north_east b0)
+34.0: (go_north_east b0)
+35.0: (go_north_east b0)
+36.0: (go_north_east b0)
+37.0: (go_north_east b0)
+38.0: (go_north_east b0)
+39.0: (go_north_east b0)
+40.0: (go_north_east b0)
+41.0: (go_north_east b0)
+42.0: (go_north_east b0)
+43.0: (go_north_east b0)
+44.0: (go_north_east b0)
+45.0: (go_north_east b0)
+46.0: (go_north_east b0)
+47.0: (go_north_east b0)
+48.0: (go_north_east b0)
+49.0: (go_north_east b0)
+50.0: (go_north_east b0)
+51.0: (go_north_east b0)
+52.0: (go_north_east b0)
+53.0: (go_north_east b0)
+54.0: (go_north_east b0)
+55.0: (go_north_east b0)
+56.0: (go_north_east b0)
+57.0: (go_north_east b0)
+58.0: (go_north_east b0)
+59.0: (go_north_east b0)
+60.0: (go_north_east b0)
+61.0: (go_north_east b0)
+62.0: (go_north_east b0)
+63.0: (go_north_east b0)
+64.0: (go_north_east b0)
+65.0: (go_north_east b0)
+66.0: (go_north_east b0)
+67.0: (go_north_east b0)
+68.0: (go_north_east b0)
+69.0: (go_north_east b0)
+70.0: (go_north_east b0)
+71.0: (go_north_east b0)
+72.0: (go_north_east b0)
+73.0: (go_north_east b0)
+74.0: (go_north_east b0)
+75.0: (go_north_east b0)
+76.0: (go_north_east b0)
+77.0: (go_north_east b0)
+78.0: (go_north_east b0)
+79.0: (go_north_east b0)
+80.0: (go_north_east b0)
+81.0: (go_north_east b0)
+82.0: (go_north_east b0)
+83.0: (go_north_east b0)
+84.0: (go_north_east b0)
+85.0: (go_north_west b0)
+86.0: (go_south b0)
+87.0: (go_north_east b0)
+88.0: (go_north_east b0)
+89.0: (go_south_west b0)
+90.0: (go_north_east b0)
+91.0: (go_south_west b0)
+92.0: (go_north_east b0)
+93.0: (go_north_east b0)
+94.0: (go_north_west b0)
+95.0: (go_north_east b0)
+96.0: (go_north_east b0)
+97.0: (go_north_east b0)
+98.0: (go_north_east b0)
+99.0: (go_north_east b0)
+100.0: (go_north_east b0)
+101.0: (go_north_east b0)
+102.0: (go_north_east b0)
+103.0: (go_north_east b0)
+104.0: (go_north_east b0)
+105.0: (go_north_east b0)
+106.0: (go_north_west b0)
+107.0: (go_north_east b0)
+108.0: (go_north_west b0)
+109.0: (go_north_west b0)
+110.0: (go_north_west b0)
+111.0: (go_north_west b0)
+112.0: (go_north_west b0)
+113.0: (go_north_west b0)
+114.0: (go_north_west b0)
+115.0: (go_north_east b0)
+116.0: (go_north_east b0)
+117.0: (go_north_east b0)
+118.0: (go_north_east b0)
+119.0: (go_north_west b0)
+120.0: (go_north_east b0)
+121.0: (go_north_east b0)
+122.0: (go_north_east b0)
+123.0: (go_north_east b0)
+124.0: (go_north_west b0)
+125.0: (go_north_east b0)
+126.0: (go_north_east b0)
+127.0: (go_north_west b0)
+128.0: (go_north_west b0)
+129.0: (go_north_east b0)
+130.0: (go_north_west b0)
+131.0: (go_north_west b0)
+132.0: (go_north_west b0)
+133.0: (go_north_west b0)
+134.0: (go_north_west b0)
+135.0: (go_north_east b0)
+136.0: (go_north_west b0)
+137.0: (go_north_east b0)
+138.0: (go_north_east b0)
+139.0: (go_north_west b0)
+140.0: (go_north_west b0)
+141.0: (go_north_east b0)
+142.0: (go_north_west b0)
+143.0: (go_north_west b0)
+144.0: (go_north_west b0)
+145.0: (go_north_west b0)
+146.0: (go_north_east b0)
+147.0: (go_north_west b0)
+148.0: (go_north_west b0)
+149.0: (go_north_east b0)
+150.0: (go_north_east b0)
+151.0: (go_north_east b0)
+152.0: (go_north_west b0)
+153.0: (go_north_west b0)
+154.0: (go_north_east b0)
+155.0: (go_north_west b0)
+156.0: (go_north_east b0)
+157.0: (go_north_east b0)
+158.0: (go_north_west b0)
+159.0: (go_north_west b0)
+160.0: (go_north_east b0)
+161.0: (go_north_west b0)
+162.0: (go_north_east b0)
+163.0: (go_north_west b0)
+164.0: (go_north_west b0)
+165.0: (go_north_west b0)
+166.0: (go_north_west b0)
+167.0: (go_north_east b0)
+168.0: (go_north_east b0)
+169.0: (go_north_west b0)
+170.0: (go_north_east b0)
+171.0: (go_north_west b0)
+172.0: (go_north_east b0)
+173.0: (go_north_east b0)
+174.0: (go_north_east b0)
+175.0: (go_north_east b0)
+176.0: (go_north_east b0)
+177.0: (go_north_east b0)
+178.0: (go_north_east b0)
+179.0: (go_north_east b0)
+180.0: (go_north_east b0)
+181.0: (go_north_east b0)
+182.0: (go_north_east b0)
+183.0: (go_north_east b0)
+184.0: (go_north_east b0)
+185.0: (go_north_east b0)
+186.0: (go_north_west b0)
+187.0: (go_north_east b0)
+188.0: (go_north_west b0)
+189.0: (go_north_west b0)
+190.0: (go_north_west b0)
+191.0: (go_north_east b0)
+192.0: (go_north_east b0)
+193.0: (go_north_east b0)
+194.0: (go_north_east b0)
+195.0: (go_north_east b0)
+196.0: (go_north_west b0)
+197.0: (go_north_west b0)
+198.0: (go_north_west b0)
+199.0: (go_north_west b0)
+200.0: (go_north_west b0)
+201.0: (go_north_west b0)
+202.0: (go_north_west b0)
+203.0: (go_north_west b0)
+204.0: (go_north_west b0)
+205.0: (go_north_west b0)
+206.0: (go_north_west b0)
+207.0: (go_north_west b0)
+208.0: (go_north_east b0)
+209.0: (go_north_east b0)
+210.0: (go_north_east b0)
+211.0: (go_north_west b0)
+212.0: (go_north_west b0)
+213.0: (go_north_west b0)
+214.0: (go_north_west b0)
+215.0: (go_north_west b0)
+216.0: (go_north_west b0)
+217.0: (go_north_east b0)
+218.0: (go_north_west b0)
+219.0: (go_north_east b0)
+220.0: (go_north_west b0)
+221.0: (go_north_west b0)
+222.0: (go_north_west b0)
+223.0: (go_north_west b0)
+224.0: (go_north_west b0)
+225.0: (go_north_west b0)
+226.0: (go_north_west b0)
+227.0: (go_north_east b0)
+228.0: (go_north_west b0)
+229.0: (go_north_west b0)
+230.0: (go_north_west b0)
+231.0: (go_north_west b0)
+232.0: (go_north_west b0)
+233.0: (go_north_west b0)
+234.0: (go_north_west b0)
+235.0: (go_north_west b0)
+236.0: (go_north_west b0)
+237.0: (go_north_east b0)
+238.0: (go_north_east b0)
+239.0: (go_north_west b0)
+240.0: (go_north_east b0)
+241.0: (go_north_east b0)
+242.0: (go_north_west b0)
+243.0: (go_north_east b0)
+244.0: (go_north_west b0)
+245.0: (go_north_east b0)
+246.0: (go_north_west b0)
+247.0: (go_north_east b0)
+248.0: (go_north_west b0)
+249.0: (go_north_west b0)
+250.0: (go_north_west b0)
+251.0: (go_north_west b0)
+252.0: (go_north_west b0)
+253.0: (go_north_west b0)
+254.0: (go_north_west b0)
+255.0: (go_north_west b0)
+256.0: (go_north_west b0)
+257.0: (go_north_west b0)
+258.0: (go_north_west b0)
+259.0: (go_north_west b0)
+260.0: (go_north_west b0)
+261.0: (go_north_west b0)
+262.0: (go_north_west b0)
+263.0: (go_north_west b0)
+264.0: (go_north_west b0)
+265.0: (go_north_west b0)
+266.0: (go_north_west b0)
+267.0: (go_north_west b0)
+268.0: (go_north_west b0)
+269.0: (go_north_west b0)
+270.0: (go_north_west b0)
+271.0: (go_north_west b0)
+272.0: (go_north_west b0)
+273.0: (go_north_west b0)
+274.0: (go_north_west b0)
+275.0: (go_north_east b0)
+276.0: (go_north_west b0)
+277.0: (go_north_west b0)
+278.0: (go_north_east b0)
+279.0: (go_north_west b0)
+280.0: (go_north_west b0)
+281.0: (go_north_west b0)
+282.0: (go_north_west b0)
+283.0: (go_north_west b0)
+284.0: (go_north_west b0)
+285.0: (go_north_west b0)
+286.0: (go_north_west b0)
+287.0: (go_north_west b0)
+288.0: (go_north_west b0)
+289.0: (go_north_west b0)
+290.0: (go_north_west b0)
+291.0: (go_north_west b0)
+292.0: (go_north_west b0)
+293.0: (go_north_west b0)
+294.0: (go_north_west b0)
+295.0: (go_north_west b0)
+296.0: (go_north_west b0)
+297.0: (go_north_west b0)
+298.0: (go_north_west b0)
+299.0: (go_north_west b0)
+300.0: (go_north_west b0)
+301.0: (go_north_west b0)
+302.0: (go_north_west b0)
+303.0: (go_north_west b0)
+304.0: (go_north_west b0)
+305.0: (go_north_west b0)
+306.0: (go_north_west b0)
+307.0: (go_north_west b0)
+308.0: (go_north_west b0)
+309.0: (go_north_west b0)
+310.0: (go_north_west b0)
+311.0: (go_north_west b0)
+312.0: (go_north_west b0)
+313.0: (go_north_west b0)
+314.0: (go_north_west b0)
+315.0: (go_north_west b0)
+316.0: (go_north_west b0)
+317.0: (go_north_west b0)
+318.0: (go_north_west b0)
+319.0: (go_north_west b0)
+320.0: (go_north_west b0)
+321.0: (go_north_west b0)
+322.0: (go_north_west b0)
+323.0: (go_north_west b0)
+324.0: (go_north_west b0)
+325.0: (go_north_west b0)
+326.0: (go_north_west b0)
+327.0: (go_north_west b0)
+328.0: (go_north_west b0)
+329.0: (save_person b0 p3)
+330.0: (go_south_east b0)
+331.0: (go_south_east b0)
+332.0: (go_south_east b0)
+333.0: (go_south_east b0)
+334.0: (go_south_east b0)
+335.0: (go_south_east b0)
+336.0: (go_south_east b0)
+337.0: (go_south_east b0)
+338.0: (go_south_east b0)
+339.0: (go_south_east b0)
+340.0: (go_south_east b0)
+341.0: (go_south_east b0)
+342.0: (go_south_east b0)
+343.0: (go_south_east b0)
+344.0: (go_south_east b0)
+345.0: (go_south_east b0)
+346.0: (go_south_east b0)
+347.0: (go_south_east b0)
+348.0: (go_south_east b0)
+349.0: (go_south_east b0)
+350.0: (go_south_east b0)
+351.0: (go_south_east b0)
+352.0: (go_south_east b0)
+353.0: (go_south_east b0)
+354.0: (go_south_east b0)
+355.0: (go_south_east b0)
+356.0: (go_south_east b0)
+357.0: (go_south_east b0)
+358.0: (go_south_east b0)
+359.0: (go_south_east b0)
+360.0: (go_south_east b0)
+361.0: (go_south_east b0)
+362.0: (go_south_east b0)
+363.0: (go_south_east b0)
+364.0: (go_south_east b0)
+365.0: (go_south_east b0)
+366.0: (go_south_east b0)
+367.0: (go_south_east b0)
+368.0: (go_south_east b0)
+369.0: (go_south_east b0)
+370.0: (go_south_east b0)
+371.0: (go_south_east b0)
+372.0: (go_south_east b0)
+373.0: (go_south_east b0)
+374.0: (go_south_east b0)
+375.0: (go_south_east b0)
+376.0: (go_south_east b0)
+377.0: (go_south_east b0)
+378.0: (go_south_east b0)
+379.0: (go_south_east b0)
+380.0: (go_south_east b0)
+381.0: (go_south_east b0)
+382.0: (go_south_east b0)
+383.0: (go_south_east b0)
+384.0: (go_south_east b0)
+385.0: (go_south_east b0)
+386.0: (go_south_east b0)
+387.0: (go_south_east b0)
+388.0: (go_south_east b0)
+389.0: (go_south_east b0)
+390.0: (go_south_east b0)
+391.0: (go_south_east b0)
+392.0: (go_south_east b0)
+393.0: (go_south_east b0)
+394.0: (go_south_east b0)
+395.0: (go_south_east b0)
+396.0: (go_south_east b0)
+397.0: (go_south_east b0)
+398.0: (go_south_east b0)
+399.0: (go_south_east b0)
+400.0: (go_south_east b0)
+401.0: (go_south_east b0)
+402.0: (go_south_east b0)
+403.0: (go_south_east b0)
+404.0: (go_south_east b0)
+405.0: (go_south_east b0)
+406.0: (go_south_east b0)
+407.0: (go_south_east b0)
+408.0: (go_south_east b0)
+409.0: (go_south_east b0)
+410.0: (go_south_east b0)
+411.0: (go_south_east b0)
+412.0: (go_south_east b0)
+413.0: (go_south_east b0)
+414.0: (go_south_east b0)
+415.0: (go_south_east b0)
+416.0: (go_south_east b0)
+417.0: (go_south_east b0)
+418.0: (go_south_east b0)
+419.0: (go_south_east b0)
+420.0: (go_south_east b0)
+421.0: (go_south_east b0)
+422.0: (go_south_east b0)
+423.0: (go_south_east b0)
+424.0: (go_south_east b0)
+425.0: (go_south_east b0)
+426.0: (go_south_east b0)
+427.0: (go_south_east b0)
+428.0: (go_south_east b0)
+429.0: (go_south_east b0)
+430.0: (go_south_east b0)
+431.0: (go_south_east b0)
+432.0: (go_south_east b0)
+433.0: (go_south_east b0)
+434.0: (go_south_east b0)
+435.0: (go_south_east b0)
+436.0: (go_south_east b0)
+437.0: (go_south_east b0)
+438.0: (go_south_east b0)
+439.0: (go_south_east b0)
+440.0: (go_south_east b0)
+441.0: (go_south_east b0)
+442.0: (go_south_east b0)
+443.0: (go_south_east b0)
+444.0: (go_south_east b0)
+445.0: (go_south_east b0)
+446.0: (go_south_east b0)
+447.0: (go_south_east b0)
+448.0: (go_south_east b0)
+449.0: (go_south_east b0)
+450.0: (go_south_east b0)
+451.0: (go_south_east b0)
+452.0: (go_south_east b0)
+453.0: (go_south_east b0)
+454.0: (go_south_east b0)
+455.0: (go_south_east b0)
+456.0: (go_south_east b0)
+457.0: (go_south_east b0)
+458.0: (go_south_east b0)
+459.0: (go_south_east b0)
+460.0: (go_south_east b0)
+461.0: (go_south_east b0)
+462.0: (go_south_east b0)
+463.0: (go_south_east b0)
+464.0: (go_south_east b0)
+465.0: (go_south_east b0)
+466.0: (go_south_east b0)
+467.0: (go_south_east b0)
+468.0: (go_south_east b0)
+469.0: (go_south_east b0)
+470.0: (go_south_east b0)
+471.0: (go_south_east b0)
+472.0: (go_south_east b0)
+473.0: (go_south_east b0)
+474.0: (go_south_east b0)
+475.0: (go_south_east b0)
+476.0: (go_south_east b0)
+477.0: (go_south_east b0)
+478.0: (go_south_east b0)
+479.0: (go_south_east b0)
+480.0: (go_south_east b0)
+481.0: (go_south_east b0)
+482.0: (go_south_east b0)
+483.0: (go_south_east b0)
+484.0: (go_south_east b0)
+485.0: (go_south_east b0)
+486.0: (go_south_east b0)
+487.0: (go_south_east b0)
+488.0: (go_south_east b0)
+489.0: (go_south_east b0)
+490.0: (go_south_east b0)
+491.0: (go_south_east b0)
+492.0: (go_south_east b0)
+493.0: (go_south_east b0)
+494.0: (go_south_east b0)
+495.0: (go_south_east b0)
+496.0: (go_south_east b0)
+497.0: (go_south_east b0)
+498.0: (go_south_east b0)
+499.0: (go_south_east b0)
+500.0: (go_south_east b0)
+501.0: (go_south_east b0)
+502.0: (go_south_east b0)
+503.0: (go_south_east b0)
+504.0: (go_south_east b0)
+505.0: (go_south_east b0)
+506.0: (go_south_east b0)
+507.0: (go_south_east b0)
+508.0: (go_south_east b0)
+509.0: (go_south_east b0)
+510.0: (go_south_east b0)
+511.0: (go_south_east b0)
+512.0: (go_south_east b0)
+513.0: (go_south_east b0)
+514.0: (go_south_east b0)
+515.0: (go_south_east b0)
+516.0: (go_south_east b0)
+517.0: (go_south_east b0)
+518.0: (go_south_east b0)
+519.0: (go_south_east b0)
+520.0: (go_south_east b0)
+521.0: (go_south_east b0)
+522.0: (go_south_east b0)
+523.0: (go_south_east b0)
+524.0: (go_south_east b0)
+525.0: (go_south_east b0)
+526.0: (go_south_east b0)
+527.0: (go_south_east b0)
+528.0: (go_south_east b0)
+529.0: (go_south_east b0)
+530.0: (go_south_east b0)
+531.0: (go_south_east b0)
+532.0: (go_south_east b0)
+533.0: (go_south_east b0)
+534.0: (go_south_east b0)
+535.0: (go_south_east b0)
+536.0: (go_south_east b0)
+537.0: (go_south_west b0)
+538.0: (go_south_west b0)
+539.0: (go_south_west b0)
+540.0: (go_south_west b0)
+541.0: (go_south_west b0)
+542.0: (go_south_west b0)
+543.0: (go_south_west b0)
+544.0: (go_south_west b0)
+545.0: (go_south_west b0)
+546.0: (go_south_west b0)
+547.0: (go_south_west b0)
+548.0: (go_south_west b0)
+549.0: (go_south_west b0)
+550.0: (go_south_west b0)
+551.0: (go_south_west b0)
+552.0: (go_south_west b0)
+553.0: (go_south_west b0)
+554.0: (go_south_west b0)
+555.0: (go_south_west b0)
+556.0: (go_south_west b0)
+557.0: (go_south_west b0)
+558.0: (go_south_west b0)
+559.0: (go_south_west b0)
+560.0: (go_south_west b0)
+561.0: (go_south_west b0)
+562.0: (go_south_west b0)
+563.0: (go_south_west b0)
+564.0: (go_south_west b0)
+565.0: (go_south_west b0)
+566.0: (go_south_west b0)
+567.0: (go_south_west b0)
+568.0: (go_south_west b0)
+569.0: (go_south_west b0)
+570.0: (go_south_west b0)
+571.0: (go_south_west b0)
+572.0: (go_south_west b0)
+573.0: (go_south_west b0)
+574.0: (go_south_west b0)
+575.0: (go_south_west b0)
+576.0: (go_south_west b0)
+577.0: (go_south_west b0)
+578.0: (go_south_west b0)
+579.0: (go_south_west b0)
+580.0: (go_south_west b0)
+581.0: (go_south_west b0)
+582.0: (go_south_west b0)
+583.0: (go_south_west b0)
+584.0: (go_south_west b0)
+585.0: (go_south_west b0)
+586.0: (go_south_west b0)
+587.0: (go_south_west b0)
+588.0: (go_est b0)
+589.0: (go_est b0)
+590.0: (go_est b0)
+591.0: (go_est b0)
+592.0: (go_est b0)
+593.0: (go_est b0)
+594.0: (go_est b0)
+595.0: (go_est b0)
+596.0: (go_est b0)
+597.0: (go_est b0)
+598.0: (go_est b0)
+599.0: (go_est b0)
+600.0: (go_est b0)
+601.0: (go_est b0)
+602.0: (go_est b0)
+603.0: (go_est b0)
+604.0: (go_est b0)
+605.0: (go_est b0)
+606.0: (go_est b0)
+607.0: (go_est b0)
+608.0: (go_est b0)
+609.0: (go_est b0)
+610.0: (go_est b0)
+611.0: (go_est b0)
+612.0: (go_est b0)
+613.0: (go_est b0)
+614.0: (go_est b0)
+615.0: (go_est b0)
+616.0: (go_est b0)
+617.0: (go_est b0)
+618.0: (go_est b0)
+619.0: (go_est b0)
+620.0: (go_est b0)
+621.0: (go_est b0)
+622.0: (go_est b0)
+623.0: (go_est b0)
+624.0: (go_est b0)
+625.0: (go_est b0)
+626.0: (go_est b0)
+627.0: (go_est b0)
+628.0: (go_est b0)
+629.0: (go_est b0)
+630.0: (go_est b0)
+631.0: (go_est b0)
+632.0: (go_est b0)
+633.0: (go_est b0)
+634.0: (go_est b0)
+635.0: (go_est b0)
+636.0: (go_est b0)
+637.0: (go_est b0)
+638.0: (go_est b0)
+639.0: (go_est b0)
+640.0: (go_est b0)
+641.0: (go_est b0)
+642.0: (go_est b0)
+643.0: (go_est b0)
+644.0: (go_est b0)
+645.0: (go_est b0)
+646.0: (go_est b0)
+647.0: (go_est b0)
+648.0: (go_est b0)
+649.0: (go_est b0)
+650.0: (go_est b0)
+651.0: (go_est b0)
+652.0: (go_est b0)
+653.0: (go_est b0)
+654.0: (go_est b0)
+655.0: (go_est b0)
+656.0: (go_est b0)
+657.0: (go_est b0)
+658.0: (go_est b0)
+659.0: (go_est b0)
+660.0: (go_est b0)
+661.0: (go_est b0)
+662.0: (go_est b0)
+663.0: (go_est b0)
+664.0: (go_est b0)
+665.0: (go_est b0)
+666.0: (go_est b0)
+667.0: (go_est b0)
+668.0: (go_est b0)
+669.0: (go_est b0)
+670.0: (go_est b0)
+671.0: (go_est b0)
+672.0: (go_est b0)
+673.0: (go_est b0)
+674.0: (go_est b0)
+675.0: (go_est b0)
+676.0: (go_est b0)
+677.0: (go_est b0)
+678.0: (go_est b0)
+679.0: (go_est b0)
+680.0: (go_est b0)
+681.0: (go_est b0)
+682.0: (go_est b0)
+683.0: (go_est b0)
+684.0: (go_est b0)
+685.0: (go_est b0)
+686.0: (go_est b0)
+687.0: (go_est b0)
+688.0: (go_est b0)
+689.0: (go_est b0)
+690.0: (go_est b0)
+691.0: (go_est b0)
+692.0: (save_person b0 p1)
+693.0: (go_north_east b0)
+694.0: (go_north_east b0)
+695.0: (go_north_east b0)
+696.0: (go_north_east b0)
+697.0: (go_north_east b0)
+698.0: (go_north_east b0)
+699.0: (go_north_east b0)
+700.0: (go_north_east b0)
+701.0: (go_north_east b0)
+702.0: (go_north_west b0)
+703.0: (go_north_east b0)
+704.0: (go_north_east b0)
+705.0: (go_north_west b0)
+706.0: (go_north_west b0)
+707.0: (go_north_east b0)
+708.0: (go_north_east b0)
+709.0: (go_north_west b0)
+710.0: (go_north_west b0)
+711.0: (go_north_west b0)
+712.0: (go_north_west b0)
+713.0: (go_north_west b0)
+714.0: (go_north_west b0)
+715.0: (go_north_west b0)
+716.0: (go_north_west b0)
+717.0: (go_north_west b0)
+718.0: (go_north_west b0)
+719.0: (go_north_east b0)
+720.0: (go_north_east b0)
+721.0: (go_north_east b0)
+722.0: (go_north_east b0)
+723.0: (go_north_east b0)
+724.0: (go_north_east b0)
+725.0: (go_north_east b0)
+726.0: (go_north_east b0)
+727.0: (go_north_east b0)
+728.0: (go_north_west b0)
+729.0: (go_north_west b0)
+730.0: (go_north_west b0)
+731.0: (go_north_east b0)
+732.0: (go_north_east b0)
+733.0: (go_north_east b0)
+734.0: (go_north_east b0)
+735.0: (go_north_east b0)
+736.0: (go_north_east b0)
+737.0: (go_north_east b0)
+738.0: (go_north_west b0)
+739.0: (go_north_west b0)
+740.0: (go_north_east b0)
+741.0: (go_north_west b0)
+742.0: (go_north_west b0)
+743.0: (go_north_west b0)
+744.0: (go_north_west b0)
+745.0: (go_north_west b0)
+746.0: (go_north_west b0)
+747.0: (go_north_west b0)
+748.0: (go_north_west b0)
+749.0: (go_north_east b0)
+750.0: (go_north_west b0)
+751.0: (go_north_west b0)
+752.0: (go_north_west b0)
+753.0: (go_north_west b0)
+754.0: (go_north_west b0)
+755.0: (go_north_west b0)
+756.0: (go_north_east b0)
+757.0: (save_person b0 p2)
+758.0: (go_south_east b0)
+759.0: (go_south_east b0)
+760.0: (go_south_east b0)
+761.0: (go_south_east b0)
+762.0: (go_south_east b0)
+763.0: (go_south_east b0)
+764.0: (go_south_east b0)
+765.0: (go_south_east b0)
+766.0: (go_south_east b0)
+767.0: (go_south_east b0)
+768.0: (go_south_east b0)
+769.0: (go_south_east b0)
+770.0: (go_south_east b0)
+771.0: (go_south_east b0)
+772.0: (go_south_east b0)
+773.0: (go_south_east b0)
+774.0: (go_south_east b0)
+775.0: (go_south_east b0)
+776.0: (go_south_east b0)
+777.0: (go_south_east b0)
+778.0: (go_south_east b0)
+779.0: (go_south_east b0)
+780.0: (go_south_east b0)
+781.0: (go_south_east b0)
+782.0: (go_south_east b0)
+783.0: (go_south_east b0)
+784.0: (go_south_east b0)
+785.0: (go_south_east b0)
+786.0: (go_south_east b0)
+787.0: (go_south_east b0)
+788.0: (go_south_east b0)
+789.0: (go_south_east b0)
+790.0: (go_south_east b0)
+791.0: (go_south_east b0)
+792.0: (go_south_east b0)
+793.0: (go_south_east b0)
+794.0: (go_south_east b0)
+795.0: (go_south_east b0)
+796.0: (go_south_east b0)
+797.0: (go_south_east b0)
+798.0: (go_south_east b0)
+799.0: (go_south_east b0)
+800.0: (go_south_east b0)
+801.0: (go_south_east b0)
+802.0: (go_south_east b0)
+803.0: (go_south_east b0)
+804.0: (go_south_east b0)
+805.0: (go_south_east b0)
+806.0: (go_south_east b0)
+807.0: (go_south_east b0)
+808.0: (go_south_east b0)
+809.0: (go_south_east b0)
+810.0: (go_south_east b0)
+811.0: (go_south_east b0)
+812.0: (go_south_east b0)
+813.0: (go_south_east b0)
+814.0: (go_south_east b0)
+815.0: (go_south_east b0)
+816.0: (go_south_east b0)
+817.0: (go_south_east b0)
+818.0: (go_south_east b0)
+819.0: (go_south_east b0)
+820.0: (go_south_east b0)
+821.0: (go_south_east b0)
+822.0: (go_south_east b0)
+823.0: (go_south_east b0)
+824.0: (go_south_east b0)
+825.0: (go_south_east b0)
+826.0: (go_south_east b0)
+827.0: (go_south_east b0)
+828.0: (go_south_east b0)
+829.0: (go_south_east b0)
+830.0: (go_south_east b0)
+831.0: (go_south_east b0)
+832.0: (go_south_east b0)
+833.0: (go_south_east b0)
+834.0: (go_south_east b0)
+835.0: (go_south_east b0)
+836.0: (go_south_east b0)
+837.0: (go_south_east b0)
+838.0: (go_south_east b0)
+839.0: (go_south_east b0)
+840.0: (go_south_east b0)
+841.0: (go_south_east b0)
+842.0: (go_south_east b0)
+843.0: (go_south_east b0)
+844.0: (go_south_east b0)
+845.0: (go_south_east b0)
+846.0: (go_south_east b0)
+847.0: (go_south_east b0)
+848.0: (go_south_east b0)
+849.0: (go_south_east b0)
+850.0: (go_south_east b0)
+851.0: (go_south_east b0)
+852.0: (go_south_east b0)
+853.0: (go_south_east b0)
+854.0: (go_south_east b0)
+855.0: (go_south_east b0)
+856.0: (go_south_east b0)
+857.0: (go_south_east b0)
+858.0: (go_south_east b0)
+859.0: (go_south_east b0)
+860.0: (go_south_west b0)
+861.0: (go_south_west b0)
+862.0: (go_south_west b0)
+863.0: (go_south_west b0)
+864.0: (go_south_west b0)
+865.0: (go_south_west b0)
+866.0: (go_south_west b0)
+867.0: (go_south_west b0)
+868.0: (go_south_west b0)
+869.0: (go_south_west b0)
+870.0: (go_south_west b0)
+871.0: (go_south_west b0)
+872.0: (go_south_west b0)
+873.0: (go_south_west b0)
+874.0: (go_south_west b0)
+875.0: (go_south_west b0)
+876.0: (go_south_west b0)
+877.0: (go_south_west b0)
+878.0: (go_south_west b0)
+879.0: (go_south_west b0)
+880.0: (go_south_west b0)
+881.0: (go_south_west b0)
+882.0: (go_south_west b0)
+883.0: (go_south_west b0)
+884.0: (go_south_west b0)
+885.0: (go_south_west b0)
+886.0: (go_south_west b0)
+887.0: (go_south_west b0)
+888.0: (go_south_west b0)
+889.0: (go_south_west b0)
+890.0: (go_south_west b0)
+891.0: (go_south_west b0)
+892.0: (go_south_west b0)
+893.0: (go_south_west b0)
+894.0: (go_south_west b0)
+895.0: (go_south_west b0)
+896.0: (go_south_west b0)
+897.0: (go_south_west b0)
+898.0: (go_south_west b0)
+899.0: (go_south_west b0)
+900.0: (go_south_west b0)
+901.0: (go_south_west b0)
+902.0: (go_south_west b0)
+903.0: (go_south_west b0)
+904.0: (go_south_west b0)
+905.0: (go_south_west b0)
+906.0: (go_south_west b0)
+907.0: (go_south_west b0)
+908.0: (go_south_west b0)
+909.0: (go_south_west b0)
+910.0: (go_south_west b0)
+911.0: (go_south_west b0)
+912.0: (go_south_west b0)
+913.0: (go_south_west b0)
+914.0: (go_south_west b0)
+915.0: (go_south_west b0)
+916.0: (go_south_west b0)
+917.0: (go_south_west b0)
+918.0: (go_south_west b0)
+919.0: (go_south_west b0)
+920.0: (go_south_west b0)
+921.0: (go_south_west b0)
+922.0: (go_south_west b0)
+923.0: (go_south_west b0)
+924.0: (go_south_west b0)
+925.0: (go_south_west b0)
+926.0: (go_south_west b0)
+927.0: (go_south_west b0)
+928.0: (go_south_west b0)
+929.0: (go_south_west b0)
+930.0: (go_south_west b0)
+931.0: (go_south_west b0)
+932.0: (go_south_west b0)
+933.0: (go_south_west b0)
+934.0: (go_south_west b0)
+935.0: (go_south_west b0)
+936.0: (go_south_west b0)
+937.0: (go_south_west b0)
+938.0: (go_south_west b0)
+939.0: (go_south_west b0)
+940.0: (go_south_west b0)
+941.0: (go_south_west b0)
+942.0: (go_south_west b0)
+943.0: (go_south_west b0)
+944.0: (go_south_west b0)
+945.0: (go_south_west b0)
+946.0: (go_south_west b0)
+947.0: (go_south_west b0)
+948.0: (go_south_west b0)
+949.0: (go_south_west b0)
+950.0: (go_south_west b0)
+951.0: (go_south_west b0)
+952.0: (go_south_west b0)
+953.0: (go_south_west b0)
+954.0: (go_south_west b0)
+955.0: (go_south_west b0)
+956.0: (go_south_west b0)
+957.0: (go_south_west b0)
+958.0: (go_south_west b0)
+959.0: (go_south_west b0)
+960.0: (go_south_west b0)
+961.0: (go_south_west b0)
+962.0: (save_person b0 p0)
+
+Plan-Length:963
+Metric (Search):963.0
+Planning Time (msec): 980999
+Heuristic Time (msec): 580693
+Search Time (msec): 980473
+Expanded Nodes:75000023
+States Evaluated:80351036
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:0
+Number of Duplicates detected:444735860
