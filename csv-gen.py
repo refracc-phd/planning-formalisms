@@ -12,7 +12,7 @@ with open(output_csv, 'a', newline='') as csvfile:
     fieldnames = ['problem', 'search.method', 'plan.length', 'metric.search', 'initial.heuristic.val', 'planning.time.msec',
                   'heuristic.time.msec', 'search.time.msec', 'grounding.time', 'expanded.nodes', 'states.evaluated',
                   'duplicates.detected', 'dead.ends', 'domain', 'grounded.fluents', 'grounded.external.actions', 'grounded.actions',
-                  'grounded.predicates', 'grounded.events']
+                  'grounded.predicates', 'grounded.events', 'type']
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 
     # Write headers to the CSV file
@@ -91,6 +91,14 @@ with open(output_csv, 'a', newline='') as csvfile:
 
                     problem = problem_instance or problem_p
 
+                    problem_t = ""
+
+                    if problem_type in ["sokoban", "ma-sokoban", "blocksworld", "ma-blocksworld", "learns-discrete"]:
+                        problem_t = "discrete"
+                    else:
+                        problem_t = "continuous"
+
+
                     # Write the information to the CSV file
                     writer.writerow({
                         'problem': problem,
@@ -111,7 +119,8 @@ with open(output_csv, 'a', newline='') as csvfile:
                         'grounded.external.actions': grounded_external_actions,
                         'grounded.actions': grounded_actions,
                         'grounded.predicates': grounded_predicates,
-                        'grounded.events': grounded_events
+                        'grounded.events': grounded_events,
+                        'type': problem_t
                     })
 
 
@@ -127,7 +136,7 @@ with open(output_csv, 'a', newline='') as csvfile:
     process_directory("./benchmarks/fn-counters-rnd/problems", "fn-counters-rnd")
     process_directory("./benchmarks/plant-watering/problems", "plant-watering")
     process_directory("./benchmarks/sailing/problems", "sailing")
-    process_directory("./continuous/", "continuous")
-    process_directory("./discrete/", "discrete")
+    process_directory("./continuous/", "learns-continuous")
+    process_directory("./discrete/", "learns-discrete")
 
 print("CSV generation complete.")
