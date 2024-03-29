@@ -1,8 +1,0 @@
-(define (problem blocks-12-1)
-(:domain blocks)
-(:objects e l a b f i h g d j k c a1 a2 a3 a4)
-(:init (agent a1) (agent a2) (agent a3) (agent a4) (handempty a1) (handempty a2) (handempty a3) (handempty a4) (clear c) (clear k) (ontable j) (ontable d) (on c g) (on g h) (on h i)
- (on i f) (on f b) (on b a) (on a l) (on l e) (on e j) (on k d) )
-(:goal (and (on j c) (on c e) (on e k) (on k h) (on h a) (on a f) (on f l)
-            (on l g) (on g b) (on b i) (on i d)))
-)
