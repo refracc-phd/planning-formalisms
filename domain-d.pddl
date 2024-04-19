@@ -41,107 +41,154 @@
         (given-support ?s - student ?g - support-given)
     )
 
-    (:action comms-workshop
+    (:action comms-workshop-asc-asd
         :parameters (?s - student)
-        :precondition (and
-            (or
-                (support-req ?s asc-asd)
-                (support-req ?s language)
-                (uses-strategy ?s teamwork)
-                (uses-strategy ?s project-based)
-                (uses-strategy ?s blended-learning)
-                (uses-strategy ?s flex-seating)
-                (uses-strategy ?s student-led-class)
-            )
-        )
-        :effect (and 
-            (given-support ?s improving-comms-workshop)
-            
-        )
+        :precondition (and (support-req ?s asc-asd))
+        :effect (and (given-support ?s improving-comms-workshop))
     )
 
-    (:action read-group
+    (:action comms-workshop-language
         :parameters (?s - student)
-        :precondition (and
-            (or
-                (support-req ?s language)
-                (support-req ?s blind-visual)
-            )
-        )
-        :effect (and 
-            (given-support ?s reading-group)
-
-        )
+        :precondition (and (support-req ?s language))
+        :effect (and (given-support ?s improving-comms-workshop))
     )
 
-    (:action technological-assistance
+    (:action comms-workshop-teamwork
         :parameters (?s - student)
-        :precondition (and 
-            (or
-                (support-req ?s asc-asd)
-                (support-req ?s language)
-                (support-req ?s deaf-hearing)
-                (support-req ?s blind-visual)
-                (uses-strategy ?s tech)
-                (uses-strategy ?s blended-learning)
-            )
-        )
-        :effect (and 
-            (given-support ?s tech-assist)
-            
-
-        )
+        :precondition (and (uses-strategy ?s teamwork))
+        :effect (and (given-support ?s improving-comms-workshop))
     )
 
-    (:action pomo-study
+    (:action comms-workshop-project-based
         :parameters (?s - student)
-        :precondition (and 
-            (or
-                (support-req ?s asc-asd)
-                (support-req ?s tourettes)
-                (uses-strategy ?s pomodoro)
-                (uses-strategy ?s teamwork)
-            )
-        )
-        :effect (and 
-            (given-support ?s pomo)
-            
-
-        )
+        :precondition (and (uses-strategy ?s project-based))
+        :effect (and (given-support ?s improving-comms-workshop))
     )
 
-    (:action isolated-study
+    (:action comms-workshop-blended-learning
         :parameters (?s - student)
-        :precondition (and 
-            (or
-                (support-req ?s tourettes)
-                (support-req ?s asc-asd)
-                (support-req ?s social-other)
-            )
-        )
-        :effect (and 
-            
-            (given-support ?s isolated)
-
-        )
+        :precondition (and (uses-strategy ?s blended-learning))
+        :effect (and (given-support ?s improving-comms-workshop))
     )
+
+    (:action comms-workshop-flex-seating
+        :parameters (?s - student)
+        :precondition (and (uses-strategy ?s flex-seating))
+        :effect (and (given-support ?s improving-comms-workshop))
+    )
+
+    (:action comms-workshop-student-led-class
+        :parameters (?s - student)
+        :precondition (and (uses-strategy ?s student-led-class))
+        :effect (and (given-support ?s improving-comms-workshop))
+    )
+
+    (:action read-group-language
+        :parameters (?s - student)
+        :precondition (and (support-req ?s language))
+        :effect (and (given-support ?s reading-group))
+    )
+
+    (:action read-group-blind-visual
+        :parameters (?s - student)
+        :precondition (and (support-req ?s blind-visual))
+        :effect (and (given-support ?s reading-group))
+    )
+
+
+    (:action tech-assist-asc-asd
+        :parameters (?s - student)
+        :precondition (and (support-req ?s asc-asd))
+        :effect (and (given-support ?s tech-assist))
+    )
+
+    (:action tech-assist-language
+        :parameters (?s - student)
+        :precondition (and (support-req ?s language))
+        :effect (and (given-support ?s tech-assist))
+    )
+
+    (:action tech-assist-deaf-hearing
+        :parameters (?s - student)
+        :precondition (and (support-req ?s deaf-hearing))
+        :effect (and (given-support ?s tech-assist))
+    )
+
+    (:action tech-assist-blind-visual
+        :parameters (?s - student)
+        :precondition (and (support-req ?s blind-visual))
+        :effect (and (given-support ?s tech-assist))
+    )
+
+    (:action tech-assist-tech
+        :parameters (?s - student)
+        :precondition (and (uses-strategy ?s tech))
+        :effect (and (given-support ?s tech-assist))
+    )
+
+    (:action tech-assist-blended-learning
+        :parameters (?s - student)
+        :precondition (and (uses-strategy ?s blended-learning))
+        :effect (and (given-support ?s tech-assist))
+    )
+
+
+    (:action pomo-study-asc-asd
+        :parameters (?s - student)
+        :precondition (and (support-req ?s asc-asd))
+        :effect (and (given-support ?s pomo))
+    )
+
+    (:action pomo-study-tourettes
+        :parameters (?s - student)
+        :precondition (and (support-req ?s tourettes))
+        :effect (and (given-support ?s pomo))
+    )
+
+    (:action pomo-study-pomodoro
+        :parameters (?s - student)
+        :precondition (and (uses-strategy ?s pomodoro))
+        :effect (and (given-support ?s pomo))
+    )
+
+    (:action pomo-study-teamwork
+        :parameters (?s - student)
+        :precondition (and (uses-strategy ?s teamwork))
+        :effect (and (given-support ?s pomo))
+    )
+
+
+    (:action isolated-study-asc-asd
+        :parameters (?s - student)
+        :precondition (and (support-req ?s asc-asd))
+        :effect (and (given-support ?s isolated))
+    )
+
+    (:action isolated-study-social-other
+        :parameters (?s - student)
+        :precondition (and (support-req ?s social-other))
+        :effect (and (given-support ?s isolated))
+    )
+
     
-    (:action gamify
+    (:action gamify-asc-asd
         :parameters (?s - student)
-        :precondition (and
-            (or
-                (support-req ?s asc-asd)
-                (support-req ?s tourettes)
-                (uses-strategy ?s gamification)
-                (uses-strategy ?s blended-learning)
-            )
-        )
-        :effect (and 
-            (given-support ?s gamify-learning)
-            
-
-        )
+        :precondition (and (support-req ?s asc-asd))
+        :effect (and (given-support ?s gamify-learning))
     )
+
+    (:action gamify-gamification
+        :parameters (?s - student)
+        :precondition (and (uses-strategy ?s gamification))
+        :effect (and (given-support ?s gamify-learning))
+    )
+
+    (:action gamify-blended-learning
+        :parameters (?s - student)
+        :precondition (and (uses-strategy ?s blended-learning))
+        :effect (and (given-support ?s gamify-learning))
+    )
+
     
     
     (:action finish-course
@@ -157,24 +204,31 @@
         )
     )
 
-    (:action do-ec-one
+    (:action do-ec-one-grade-a
         :parameters (?s - student ?c - course ?l - course-level)
         :precondition (and 
             (takes-course ?s ?c ?l)
-            (or
-                (grade a ?s ?c ?l)
-                (grade b ?s ?c ?l)
-            )
-            (not
-                (done-ec ec-one ?s ?c ?l)
-            )
+            (grade a ?s ?c ?l)
+            (not (done-ec ec-one ?s ?c ?l))
         )
         :effect (and 
             (done-ec ec-one ?s ?c ?l)
-            
-
         )
     )
+
+    (:action do-ec-one-grade-b
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (grade b ?s ?c ?l)
+            (not (done-ec ec-one ?s ?c ?l))
+        )
+        :effect (and 
+            (done-ec ec-one ?s ?c ?l)
+        )
+    )
+
+
 
     (:action do-ec-two
         :parameters (?s - student ?c - course ?l - course-level)
@@ -193,24 +247,31 @@
         )
     )
 
-    (:action do-ec-three
+    (:action do-ec-three-grade-a
         :parameters (?s - student ?c - course ?l - course-level)
         :precondition (and 
             (takes-course ?s ?c ?l)
-            (or
-                (grade a ?s ?c ?l)
-                (grade b ?s ?c ?l)
-            )
-            (not
-                (done-ec ec-three ?s ?c ?l)
-            )
+            (grade a ?s ?c ?l)
+            (not (done-ec ec-three ?s ?c ?l))
             (done-ec ec-two ?s ?c ?l)
             (done-unit unit-one ?s ?c ?l)
         )
         :effect (and 
             (done-ec ec-three ?s ?c ?l)
-            
+        )
+    )
 
+    (:action do-ec-three-grade-b
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (grade b ?s ?c ?l)
+            (not (done-ec ec-three ?s ?c ?l))
+            (done-ec ec-two ?s ?c ?l)
+            (done-unit unit-one ?s ?c ?l)
+        )
+        :effect (and 
+            (done-ec ec-three ?s ?c ?l)
         )
     )
 
@@ -232,24 +293,31 @@
         )
     )
 
-    (:action do-ec-five
+    (:action do-ec-five-grade-a
         :parameters (?s - student ?c - course ?l - course-level)
         :precondition (and 
             (takes-course ?s ?c ?l)
-            (or
-                (grade a ?s ?c ?l)
-                (grade b ?s ?c ?l)
-            )
-            (not
-                (done-ec ec-five ?s ?c ?l)
-            )
+            (grade a ?s ?c ?l)
+            (not (done-ec ec-five ?s ?c ?l))
             (done-ec ec-four ?s ?c ?l)
             (done-unit unit-two ?s ?c ?l)
         )
         :effect (and 
             (done-ec ec-five ?s ?c ?l)
-            
+        )
+    )
 
+    (:action do-ec-five-grade-b
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (grade b ?s ?c ?l)
+            (not (done-ec ec-five ?s ?c ?l))
+            (done-ec ec-four ?s ?c ?l)
+            (done-unit unit-two ?s ?c ?l)
+        )
+        :effect (and 
+            (done-ec ec-five ?s ?c ?l)
         )
     )
 
@@ -271,24 +339,31 @@
         )
     )
 
-    (:action do-ec-seven
+    (:action do-ec-seven-grade-a
         :parameters (?s - student ?c - course ?l - course-level)
         :precondition (and 
             (takes-course ?s ?c ?l)
-            (or
-                (grade a ?s ?c ?l)
-                (grade b ?s ?c ?l)
-            )
-            (not
-                (done-ec ec-seven ?s ?c ?l)
-            )
+            (grade a ?s ?c ?l)
+            (not (done-ec ec-seven ?s ?c ?l))
             (done-ec ec-six ?s ?c ?l)
             (done-unit unit-three ?s ?c ?l)
         )
         :effect (and 
             (done-ec ec-seven ?s ?c ?l)
-            
+        )
+    )
 
+    (:action do-ec-seven-grade-b
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (grade b ?s ?c ?l)
+            (not (done-ec ec-seven ?s ?c ?l))
+            (done-ec ec-six ?s ?c ?l)
+            (done-unit unit-three ?s ?c ?l)
+        )
+        :effect (and 
+            (done-ec ec-seven ?s ?c ?l)
         )
     )
 
@@ -310,24 +385,31 @@
         )
     )
 
-    (:action do-team-ec-one
+    (:action do-team-ec-one-grade-a
         :parameters (?s - student ?c - course ?l - course-level)
         :precondition (and 
             (takes-course ?s ?c ?l)
-            (or
-                (grade a ?s ?c ?l)
-                (grade b ?s ?c ?l)
-            )
+            (grade a ?s ?c ?l)
             (study-group ?c ?l)
             (uses-strategy ?s teamwork)
-            (not
-                (done-ec ec-one ?s ?c ?l)
-            )
+            (not (done-ec ec-one ?s ?c ?l))
         )
         :effect (and 
             (done-ec ec-one ?s ?c ?l)
-            
+        )
+    )
 
+    (:action do-team-ec-one-grade-b
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (grade b ?s ?c ?l)
+            (study-group ?c ?l)
+            (uses-strategy ?s teamwork)
+            (not (done-ec ec-one ?s ?c ?l))
+        )
+        :effect (and 
+            (done-ec ec-one ?s ?c ?l)
         )
     )
 
@@ -350,24 +432,35 @@
         )
     )
 
-    (:action do-team-ec-three
+    (:action do-team-ec-three-grade-a
         :parameters (?s - student ?c - course ?l - course-level)
         :precondition (and 
             (takes-course ?s ?c ?l)
-            (or
-                (grade a ?s ?c ?l)
-                (grade b ?s ?c ?l)
-            )
+            (grade a ?s ?c ?l)
             (study-group ?c ?l)
             (uses-strategy ?s teamwork)
-            (not(done-ec ec-three ?s ?c ?l))
+            (not (done-ec ec-three ?s ?c ?l))
             (done-ec ec-two ?s ?c ?l)
             (done-unit unit-one ?s ?c ?l)
         )
         :effect (and 
             (done-ec ec-three ?s ?c ?l)
-            
+        )
+    )
 
+    (:action do-team-ec-three-grade-b
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (grade b ?s ?c ?l)
+            (study-group ?c ?l)
+            (uses-strategy ?s teamwork)
+            (not (done-ec ec-three ?s ?c ?l))
+            (done-ec ec-two ?s ?c ?l)
+            (done-unit unit-one ?s ?c ?l)
+        )
+        :effect (and 
+            (done-ec ec-three ?s ?c ?l)
         )
     )
 
@@ -389,24 +482,35 @@
         )
     )
 
-    (:action do-team-ec-five
+    (:action do-team-ec-five-grade-a
         :parameters (?s - student ?c - course ?l - course-level)
         :precondition (and 
             (takes-course ?s ?c ?l)
-            (or
-                (grade a ?s ?c ?l)
-                (grade b ?s ?c ?l)
-            )
+            (grade a ?s ?c ?l)
             (study-group ?c ?l)
             (uses-strategy ?s teamwork)
-            (not(done-ec ec-five ?s ?c ?l))
+            (not (done-ec ec-five ?s ?c ?l))
             (done-ec ec-four ?s ?c ?l)
             (done-unit unit-two ?s ?c ?l)
         )
         :effect (and 
             (done-ec ec-five ?s ?c ?l)
-            
+        )
+    )
 
+    (:action do-team-ec-five-grade-b
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (grade b ?s ?c ?l)
+            (study-group ?c ?l)
+            (uses-strategy ?s teamwork)
+            (not (done-ec ec-five ?s ?c ?l))
+            (done-ec ec-four ?s ?c ?l)
+            (done-unit unit-two ?s ?c ?l)
+        )
+        :effect (and 
+            (done-ec ec-five ?s ?c ?l)
         )
     )
 
@@ -428,24 +532,35 @@
         )
     )
 
-    (:action do-team-ec-seven
+    (:action do-team-ec-seven-grade-a
         :parameters (?s - student ?c - course ?l - course-level)
         :precondition (and 
             (takes-course ?s ?c ?l)
-            (or
-                (grade a ?s ?c ?l)
-                (grade b ?s ?c ?l)
-            )
+            (grade a ?s ?c ?l)
             (study-group ?c ?l)
             (uses-strategy ?s teamwork)
-            (not(done-ec ec-seven ?s ?c ?l))
+            (not (done-ec ec-seven ?s ?c ?l))
             (done-ec ec-six ?s ?c ?l)
             (done-unit unit-three ?s ?c ?l)
         )
         :effect (and 
             (done-ec ec-seven ?s ?c ?l)
-            
+        )
+    )
 
+    (:action do-team-ec-seven-grade-b
+        :parameters (?s - student ?c - course ?l - course-level)
+        :precondition (and 
+            (takes-course ?s ?c ?l)
+            (grade b ?s ?c ?l)
+            (study-group ?c ?l)
+            (uses-strategy ?s teamwork)
+            (not (done-ec ec-seven ?s ?c ?l))
+            (done-ec ec-six ?s ?c ?l)
+            (done-unit unit-three ?s ?c ?l)
+        )
+        :effect (and 
+            (done-ec ec-seven ?s ?c ?l)
         )
     )
 
@@ -454,10 +569,8 @@
         :precondition (and 
             (takes-course ?s ?c ?l)
             (grade a ?s ?c ?l)
-            (or
-                (study-group ?c ?l)
-                (uses-strategy ?s teamwork)
-            )
+            (study-group ?c ?l)
+            (uses-strategy ?s teamwork)
             (not(done-ec ec-eight ?s ?c ?l))
             (done-ec ec-seven ?s ?c ?l)
             (done-unit unit-three ?s ?c ?l)

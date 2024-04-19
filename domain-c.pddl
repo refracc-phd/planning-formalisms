@@ -46,100 +46,152 @@
         (cost)
     )
 
-    (:action comms-workshop
+    (:action comms-workshop-asc-asd
         :parameters (?s - student)
-        :precondition (and
-            (or
-                (support-req ?s asc-asd)
-                (support-req ?s language)
-                (uses-strategy ?s teamwork)
-                (uses-strategy ?s project-based)
-                (uses-strategy ?s blended-learning)
-                (uses-strategy ?s flex-seating)
-                (uses-strategy ?s student-led-class)
-            )
-        )
-        :effect (and 
-            (given-support ?s improving-comms-workshop)
-            (increase (cost) 1)
-        )
+        :precondition (and (support-req ?s asc-asd))
+        :effect (and (given-support ?s improving-comms-workshop) (increase (cost) 1))
     )
 
-    (:action read-group
+    (:action comms-workshop-language
         :parameters (?s - student)
-        :precondition (and 
-            (support-req ?s language)
-            (support-req ?s blind-visual)
-        )
-        :effect (and 
-            (given-support ?s reading-group)
-            (increase (cost) 1)
-        )
+        :precondition (and (support-req ?s language))
+        :effect (and (given-support ?s improving-comms-workshop) (increase (cost) 1))
     )
 
-    (:action technological-assistance
+    (:action comms-workshop-teamwork
         :parameters (?s - student)
-        :precondition (and 
-            (or
-                (support-req ?s asc-asd)
-                (support-req ?s language)
-                (support-req ?s deaf-hearing)
-                (support-req ?s blind-visual)
-                (uses-strategy ?s tech)
-                (uses-strategy ?s blended-learning)
-            )
-        )
-        :effect (and 
-            (given-support ?s tech-assist)
-            (increase (cost) 1)
-        )
+        :precondition (and (uses-strategy ?s teamwork))
+        :effect (and (given-support ?s improving-comms-workshop) (increase (cost) 1))
     )
 
-    (:action pomo-study
+    (:action comms-workshop-project-based
         :parameters (?s - student)
-        :precondition (and 
-            (or
-                (support-req ?s asc-asd)
-                (support-req ?s tourettes)
-                (uses-strategy ?s pomodoro)
-                (uses-strategy ?s teamwork)
-            )
-        )
-        :effect (and 
-            (given-support ?s pomo)
-            (increase (cost) 1)
-        )
+        :precondition (and (uses-strategy ?s project-based))
+        :effect (and (given-support ?s improving-comms-workshop) (increase (cost) 1))
     )
 
-    (:action isolated-study
+    (:action comms-workshop-blended-learning
         :parameters (?s - student)
-        :precondition (and 
-            (or
-                (support-req ?s tourettes)
-                (support-req ?s asc-asd)
-                (support-req ?s social-other)
-            )
-        )
-        :effect (and 
-            (given-support ?s isolated)
-            (increase (cost) 1)
-        )
+        :precondition (and (uses-strategy ?s blended-learning))
+        :effect (and (given-support ?s improving-comms-workshop) (increase (cost) 1))
     )
+
+    (:action comms-workshop-flex-seating
+        :parameters (?s - student)
+        :precondition (and (uses-strategy ?s flex-seating))
+        :effect (and (given-support ?s improving-comms-workshop) (increase (cost) 1))
+    )
+
+    (:action comms-workshop-student-led-class
+        :parameters (?s - student)
+        :precondition (and (uses-strategy ?s student-led-class))
+        :effect (and (given-support ?s improving-comms-workshop) (increase (cost) 1))
+    )
+
+    (:action read-group-language
+        :parameters (?s - student)
+        :precondition (and (support-req ?s language))
+        :effect (and (given-support ?s reading-group) (increase (cost) 1))
+    )
+
+    (:action read-group-blind-visual
+        :parameters (?s - student)
+        :precondition (and (support-req ?s blind-visual))
+        :effect (and (given-support ?s reading-group) (increase (cost) 1))
+    )
+
+
+    (:action tech-assist-asc-asd
+        :parameters (?s - student)
+        :precondition (and (support-req ?s asc-asd))
+        :effect (and (given-support ?s tech-assist) (increase (cost) 1))
+    )
+
+    (:action tech-assist-language
+        :parameters (?s - student)
+        :precondition (and (support-req ?s language))
+        :effect (and (given-support ?s tech-assist) (increase (cost) 1))
+    )
+
+    (:action tech-assist-deaf-hearing
+        :parameters (?s - student)
+        :precondition (and (support-req ?s deaf-hearing))
+        :effect (and (given-support ?s tech-assist) (increase (cost) 1))
+    )
+
+    (:action tech-assist-blind-visual
+        :parameters (?s - student)
+        :precondition (and (support-req ?s blind-visual))
+        :effect (and (given-support ?s tech-assist) (increase (cost) 1))
+    )
+
+    (:action tech-assist-tech
+        :parameters (?s - student)
+        :precondition (and (uses-strategy ?s tech))
+        :effect (and (given-support ?s tech-assist) (increase (cost) 1))
+    )
+
+    (:action tech-assist-blended-learning
+        :parameters (?s - student)
+        :precondition (and (uses-strategy ?s blended-learning))
+        :effect (and (given-support ?s tech-assist) (increase (cost) 1))
+    )
+
+
+    (:action pomo-study-asc-asd
+        :parameters (?s - student)
+        :precondition (and (support-req ?s asc-asd))
+        :effect (and (given-support ?s pomo) (increase (cost) 1))
+    )
+
+    (:action pomo-study-tourettes
+        :parameters (?s - student)
+        :precondition (and (support-req ?s tourettes))
+        :effect (and (given-support ?s pomo) (increase (cost) 1))
+    )
+
+    (:action pomo-study-pomodoro
+        :parameters (?s - student)
+        :precondition (and (uses-strategy ?s pomodoro))
+        :effect (and (given-support ?s pomo) (increase (cost) 1))
+    )
+
+    (:action pomo-study-teamwork
+        :parameters (?s - student)
+        :precondition (and (uses-strategy ?s teamwork))
+        :effect (and (given-support ?s pomo) (increase (cost) 1))
+    )
+
+
+    (:action isolated-study-asc-asd
+        :parameters (?s - student)
+        :precondition (and (support-req ?s asc-asd))
+        :effect (and (given-support ?s isolated) (increase (cost) 1))
+    )
+
+    (:action isolated-study-social-other
+        :parameters (?s - student)
+        :precondition (and (support-req ?s social-other))
+        :effect (and (given-support ?s isolated) (increase (cost) 1))
+    )
+
     
-    (:action gamify
+    (:action gamify-asc-asd
         :parameters (?s - student)
-        :precondition (and
-            (or
-                (support-req ?s asc-asd)
-                (support-req ?s tourettes)
-                (uses-strategy ?s gamification)
-                (uses-strategy ?s blended-learning)
-            )
-        )
-        :effect (and 
-            (given-support ?s gamify-learning)
-            (increase (cost) 1)
-        )
+        :precondition (and (support-req ?s asc-asd))
+        :effect (and (given-support ?s gamify-learning) (increase (cost) 1))
+    )
+
+    (:action gamify-gamification
+        :parameters (?s - student)
+        :precondition (and (uses-strategy ?s gamification))
+        :effect (and (given-support ?s gamify-learning) (increase (cost) 1))
+    )
+
+    (:action gamify-blended-learning
+        :parameters (?s - student)
+        :precondition (and (uses-strategy ?s blended-learning))
+        :effect (and (given-support ?s gamify-learning) (increase (cost) 1))
     )
     
     

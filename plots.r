@@ -19,7 +19,7 @@ ground_actions
 heuristic_informativeness <- ggplot(df, aes(y = initial.heuristic.val, x = metric.search, color = domain)) + 
   geom_point(position = "dodge") +
   labs(y = "Initial Heuristic Value [log10]", x = "Actual Cost [log10]", title = "Comparison: Heuristic Informativeness (Search Method)", color = "Domain") +
-  facet_wrap(~ search.method, scales="free") +
+  facet_wrap(type ~ search.method, scales="free") +
   scale_x_log10() + # Add this line for log10 scaling
   scale_y_log10() + # Add this line for log10 scaling
   geom_abline(intercept = 0, slope = 1, size = 0.5)
