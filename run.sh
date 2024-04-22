@@ -1,20 +1,20 @@
-sbatch --partition=uoa-compute ./discrete-0.sh
-sbatch --partition=uoa-compute ./discrete-1.sh
-sbatch --partition=uoa-compute ./discrete-2.sh
-sbatch --partition=uoa-compute ./discrete-3.sh
-sbatch --partition=uoa-compute ./discrete-4.sh
-sbatch --partition=uoa-compute ./discrete-5.sh
-sbatch --partition=uoa-compute ./discrete-6.sh
-sbatch --partition=uoa-compute ./discrete-7.sh
-sbatch --partition=uoa-compute ./discrete-8.sh
-sbatch --partition=uoa-compute ./discrete-9.sh
-sbatch --partition=uoa-compute ./continuous-0.sh
-sbatch --partition=uoa-compute ./continuous-1.sh
-sbatch --partition=uoa-compute ./continuous-2.sh
-sbatch --partition=uoa-compute ./continuous-3.sh
-sbatch --partition=uoa-compute ./continuous-4.sh
-sbatch --partition=uoa-compute ./continuous-5.sh
-sbatch --partition=uoa-compute ./continuous-6.sh
-sbatch --partition=uoa-compute ./continuous-7.sh
-sbatch --partition=uoa-compute ./continuous-8.sh
-sbatch --partition=uoa-compute ./continuous-9.sh
+sbatch -p spot-compute ./discrete-0.sh
+sbatch -p spot-compute ./discrete-1.sh
+sbatch -p spot-compute ./discrete-2.sh
+sbatch -p spot-compute ./discrete-3.sh
+sbatch -p spot-compute ./discrete-4.sh
+sbatch -p spot-compute ./discrete-5.sh
+sbatch -p spot-compute ./discrete-6.sh
+sbatch -p spot-compute ./discrete-7.sh
+sbatch -p spot-compute ./discrete-8.sh
+sbatch -p spot-compute ./discrete-9.sh
+sbatch -p spot-compute ./continuous-0.sh
+sbatch -p spot-compute ./continuous-1.sh
+sbatch -p spot-compute ./continuous-2.sh
+sbatch -p spot-compute ./continuous-3.sh
+sbatch -p spot-compute ./continuous-4.sh
+sbatch -p spot-compute ./continuous-5.sh
+sbatch -p spot-compute ./continuous-6.sh
+sbatch -p spot-compute ./continuous-7.sh
+sbatch -p spot-compute ./continuous-8.sh
+sbatch -p spot-compute ./continuous-9.sh
