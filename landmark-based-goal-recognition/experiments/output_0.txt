@@ -1,0 +1,48 @@
+Parsed Domain file domain.pddl successfully
+Parsed Problem file templateInitial.pddl successfully
+
+Grounding...
+Grounding complete!
+
+$$$> Computing achieved landmarks from observations for all candidate goals: 
+
+# Initial state: 
+
+# Observations: 
+	>$ take-unit-four lily lifeskills year-three
+	>$ take-unit-four lily cantonese national-four
+	>$ take-unit-four lily urdu national-five
+	>$ take-unit-four lily comp-sci national-four
+	>$ take-unit-four lily pc-passport higher
+
+---> Goal: (and (finished-course lily lifeskills year-three)  (given-support lily improving-comms-workshop)  (finished-course lily urdu national-five)  (finished-course lily pc-passport higher)  (finished-course lily comp-sci national-four)  (finished-course lily cantonese national-four) )
+		 #> Ordered Landmarks: 
+		 # given-support lily improving-comms-workshop -> [[given-support lily improving-comms-workshop]]
+		 # finished-course lily lifeskills year-three -> [[done-week week-one lily lifeskills year-three], [done-week week-two lily lifeskills year-three], [done-week week-three lily lifeskills year-three], [done-week week-four lily lifeskills year-three], [done-week week-five lily lifeskills year-three], [done-week week-six lily lifeskills year-three], [done-week week-seven lily lifeskills year-three], [done-unit unit-one lily lifeskills year-three], [done-unit unit-two lily lifeskills year-three, done-week week-eight lily lifeskills year-three], [done-unit unit-three lily lifeskills year-three, done-week week-eight lily lifeskills year-three], [done-unit unit-four lily lifeskills year-three], [finished-course lily lifeskills year-three]]
+		 # finished-course lily urdu national-five -> [[done-unit unit-one lily urdu national-five], [done-unit unit-two lily urdu national-five], [done-week week-one lily urdu national-five], [done-week week-two lily urdu national-five], [done-week week-three lily urdu national-five], [done-week week-four lily urdu national-five], [done-week week-five lily urdu national-five], [done-week week-six lily urdu national-five], [done-week week-seven lily urdu national-five], [done-week week-eight lily urdu national-five, done-unit unit-three lily urdu national-five], [done-unit unit-four lily urdu national-five], [finished-course lily urdu national-five]]
+		 # finished-course lily pc-passport higher -> [[done-unit unit-one lily pc-passport higher], [done-unit unit-two lily pc-passport higher], [done-week week-one lily pc-passport higher], [done-week week-two lily pc-passport higher], [done-week week-three lily pc-passport higher], [done-week week-four lily pc-passport higher], [done-week week-five lily pc-passport higher], [done-week week-six lily pc-passport higher], [done-week week-seven lily pc-passport higher], [done-week week-eight lily pc-passport higher, done-unit unit-three lily pc-passport higher], [done-unit unit-four lily pc-passport higher], [finished-course lily pc-passport higher]]
+		 # finished-course lily comp-sci national-four -> [[done-week week-eight lily comp-sci national-four], [done-week week-eight lily comp-sci national-four, done-unit unit-one lily comp-sci national-four], [done-unit unit-two lily comp-sci national-four, done-week week-eight lily comp-sci national-four], [done-week week-one lily comp-sci national-four], [done-week week-two lily comp-sci national-four], [done-week week-three lily comp-sci national-four], [done-week week-four lily comp-sci national-four], [done-week week-five lily comp-sci national-four], [done-week week-six lily comp-sci national-four], [done-week week-seven lily comp-sci national-four], [done-week week-eight lily comp-sci national-four, done-unit unit-three lily comp-sci national-four], [done-unit unit-four lily comp-sci national-four], [finished-course lily comp-sci national-four]]
+		 # finished-course lily cantonese national-four -> [[done-unit unit-one lily cantonese national-four], [done-week week-eight lily cantonese national-four, done-unit unit-two lily cantonese national-four], [done-week week-one lily cantonese national-four], [done-week week-two lily cantonese national-four], [done-week week-three lily cantonese national-four], [done-week week-four lily cantonese national-four], [done-week week-five lily cantonese national-four], [done-week week-six lily cantonese national-four], [done-week week-seven lily cantonese national-four], [done-week week-eight lily cantonese national-four, done-unit unit-three lily cantonese national-four], [done-unit unit-four lily cantonese national-four], [finished-course lily cantonese national-four]]
+
+	>$ take-unit-four lily lifeskills year-three
+	>$ take-unit-four lily cantonese national-four
+	>$ take-unit-four lily urdu national-five
+	>$ take-unit-four lily comp-sci national-four
+	>$ take-unit-four lily pc-passport higher
+
+	># Total number of Landmarks: 62
+	># Achieved Landmarks in Observations [11]:  
+		[[done-unit unit-three lily lifeskills year-three, done-week week-eight lily lifeskills year-three], [done-unit unit-four lily lifeskills year-three], [done-week week-eight lily cantonese national-four, done-unit unit-three lily cantonese national-four], [done-week week-eight lily comp-sci national-four, done-unit unit-three lily comp-sci national-four], [done-unit unit-four lily comp-sci national-four], [done-unit unit-four lily cantonese national-four], [done-week week-eight lily urdu national-five, done-unit unit-three lily urdu national-five], [done-week week-eight lily comp-sci national-four], [done-unit unit-four lily urdu national-five], [done-week week-eight lily pc-passport higher, done-unit unit-three lily pc-passport higher], [done-unit unit-four lily pc-passport higher]]
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$ Goal Completion Heuristic $$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+$> (and (finished-course lily lifeskills year-three)  (given-support lily improving-comms-workshop)  (finished-course lily urdu national-five)  (finished-course lily pc-passport higher)  (finished-course lily comp-sci national-four)  (finished-course lily cantonese national-four) ): 0.17741935
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$> Recognized goal(s) within the threshold 0.15: 
+$> (and (finished-course lily lifeskills year-three)  (given-support lily improving-comms-workshop)  (finished-course lily urdu national-five)  (finished-course lily pc-passport higher)  (finished-course lily comp-sci national-four)  (finished-course lily cantonese national-four) ): 0.17741935
+
+<?> Correct goal: (and (finished-course lily lifeskills year-three)  (given-support lily improving-comms-workshop)  (finished-course lily urdu national-five)  (finished-course lily pc-passport higher)  (finished-course lily comp-sci national-four)  (finished-course lily cantonese national-four) )
+<?> Was the correct goal recognized correctly? true
